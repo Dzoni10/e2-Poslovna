@@ -1,0 +1,24 @@
+# Build artifacts
+dist
+node_modules
+
+# Test scaffold
+teststestProject
+
+# Površinskezavisne datoteke
+.log
+.env
+
+# Keširani CSS i mape za teme
+theme-cache
+theme-cacheweb
+
+# Ostali privremeni build folderi
+vendorlib
+javascriptsource
+theme
+themesource
+widgets
+
+# Mendix project cache
+.mendix_cache
