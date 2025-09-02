@@ -1,16 +1,17 @@
-import { reactExports, asPluginWidgets, selectTranslation } from '../index-CQ-IKJjd.js';
-import { PageFragment, ExpressionProperty } from '../ScrollContainer-DlejSEhb.js';
-import { ActionButton, TextProperty, ActionProperty } from '../ActionButton-DoPSCzFf.js';
-import { AssociationObjectProperty } from '../AssociationObjectProperty-DobAnpQh.js';
-import { FormGroup, TextBox, DerivedUniqueIdProperty, ValidationProperty } from '../TextBox-D09YvROK.js';
-import { DataView } from '../DataView-JyfAcGpG.js';
-import { content as content$1 } from '../Atlas_Core.PopupLayout-Bwr_LeXW.js';
-import { AttributeProperty } from '../D5tDSKpV-CkbH4xgb.js';
-import '../uEIG9e6s-DAM45jdO.js';
-import '../bdxqAC6d-DTrzMP7S.js';
+import { reactExports, asPluginWidgets, selectTranslation } from '../index-BEJ1cYf_.js';
+import { PageFragment, ExpressionProperty } from '../ScrollContainer-T_87vxEU.js';
+import { ActionButton, TextProperty, ActionProperty } from '../ActionButton-_caBVZhy.js';
+import { AssociationObjectProperty } from '../AssociationObjectProperty-CzuOM2jD.js';
+import { FormGroup, TextBox, DerivedUniqueIdProperty, ValidationProperty } from '../TextBox-aVUfu_f0.js';
+import { ConditionalVisibilityWrapper } from '../ConditionalVisibilityWrapper-B7dKHkv6.js';
+import { DataView } from '../DataView-DA-1dPs7.js';
+import { content as content$1 } from '../Atlas_Core.PopupLayout-UMcWk5Qe.js';
+import { AttributeProperty } from '../D5tDSKpV-CLkYeYhq.js';
+import '../uEIG9e6s-DU5WxZZl.js';
+import '../bdxqAC6d-ChbNEgGm.js';
 
 const React = { createElement: reactExports.createElement };
-const { $DataView, $FormGroup, $TextBox, $ActionButton } = asPluginWidgets({ DataView, FormGroup, TextBox, ActionButton });
+const { $DataView, $FormGroup, $TextBox, $ConditionalVisibilityWrapper, $ActionButton } = asPluginWidgets({ DataView, FormGroup, TextBox, ConditionalVisibilityWrapper, ActionButton });
 const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragment, { renderKey: historyId }, [
   /* @__PURE__ */ React.createElement(
     $DataView,
@@ -221,32 +222,44 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
       hideFooter: false,
       footer: [
         /* @__PURE__ */ React.createElement(
-          $ActionButton,
+          $ConditionalVisibilityWrapper,
           {
-            key: "p8.Administration.ChangeMyPasswordForm.microflowButton1",
-            $widgetId: "p8.Administration.ChangeMyPasswordForm.microflowButton1",
-            buttonId: "p8.Administration.ChangeMyPasswordForm.microflowButton1",
-            class: "mx-name-microflowButton1",
-            style: void 0,
-            tabIndex: void 0,
-            renderType: "button",
-            role: void 0,
-            buttonClass: "btn-success",
-            caption: selectTranslation([
-              ExpressionProperty({
-                "expression": { "expr": { "type": "literal", "value": "Change" }, "args": {} }
-              })
-            ]),
-            tooltip: TextProperty({
-              "value": selectTranslation([
-                ""
-              ])
+            key: "p8.Administration.ChangeMyPasswordForm.microflowButton1$visibility",
+            $widgetId: "p8.Administration.ChangeMyPasswordForm.microflowButton1$visibility",
+            visible: ExpressionProperty({
+              "expression": { "expr": { "type": "function", "name": "_hasSomeRole", "parameters": [{ "type": "literal", "value": "Administrator" }, { "type": "literal", "value": "User" }] }, "args": {} }
             }),
-            icon: void 0,
-            action: ActionProperty({
-              "action": { "type": "callMicroflow", "argMap": { "AccountPasswordData": { "widget": "$AccountPasswordData", "source": "object" } }, "config": { "operationId": "Pe/yycporlK7D5XMyx5D2g", "validate": "view" }, "disabledDuringExecution": false },
-              "abortOnServerValidation": true
-            })
+            contents: [
+              /* @__PURE__ */ React.createElement(
+                $ActionButton,
+                {
+                  key: "p8.Administration.ChangeMyPasswordForm.microflowButton1",
+                  $widgetId: "p8.Administration.ChangeMyPasswordForm.microflowButton1",
+                  buttonId: "p8.Administration.ChangeMyPasswordForm.microflowButton1",
+                  class: "mx-name-microflowButton1",
+                  style: void 0,
+                  tabIndex: void 0,
+                  renderType: "button",
+                  role: void 0,
+                  buttonClass: "btn-success",
+                  caption: selectTranslation([
+                    ExpressionProperty({
+                      "expression": { "expr": { "type": "literal", "value": "Change" }, "args": {} }
+                    })
+                  ]),
+                  tooltip: TextProperty({
+                    "value": selectTranslation([
+                      ""
+                    ])
+                  }),
+                  icon: void 0,
+                  action: ActionProperty({
+                    "action": { "type": "callMicroflow", "argMap": { "AccountPasswordData": { "widget": "$AccountPasswordData", "source": "object" } }, "config": { "operationId": "Pe/yycporlK7D5XMyx5D2g", "validate": "view", "allowedRoles": ["Administrator", "User"] }, "disabledDuringExecution": false },
+                    "abortOnServerValidation": true
+                  })
+                }
+              )
+            ]
           }
         ),
         /* @__PURE__ */ React.createElement(

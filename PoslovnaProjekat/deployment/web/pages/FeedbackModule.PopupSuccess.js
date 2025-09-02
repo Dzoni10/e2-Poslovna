@@ -23,28 +23,28 @@ import { content as parentContent } from "../layouts/Atlas_Core.PopupLayout.js";
 const { $Div, $DataView, $Container, $Image, $Text, $ActionButton } = asPluginWidgets({ Div, DataView, Container, Image, Text, ActionButton });
 
 const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
-    <$Div key="p10.FeedbackModule.PopupSuccess.layoutGrid1"
-        $widgetId="p10.FeedbackModule.PopupSuccess.layoutGrid1"
+    <$Div key="p11.FeedbackModule.PopupSuccess.layoutGrid1"
+        $widgetId="p11.FeedbackModule.PopupSuccess.layoutGrid1"
         class={"mx-name-layoutGrid1 mx-layoutgrid mx-layoutgrid-fluid container-fluid"}
         style={undefined}
         content={[
-            <$Div key="p10.FeedbackModule.PopupSuccess.layoutGrid1$row0"
-                $widgetId="p10.FeedbackModule.PopupSuccess.layoutGrid1$row0"
+            <$Div key="p11.FeedbackModule.PopupSuccess.layoutGrid1$row0"
+                $widgetId="p11.FeedbackModule.PopupSuccess.layoutGrid1$row0"
                 class={"row"}
                 style={undefined}
                 content={[
-                    <$Div key="p10.FeedbackModule.PopupSuccess.layoutGrid1$row0$column0"
-                        $widgetId="p10.FeedbackModule.PopupSuccess.layoutGrid1$row0$column0"
+                    <$Div key="p11.FeedbackModule.PopupSuccess.layoutGrid1$row0$column0"
+                        $widgetId="p11.FeedbackModule.PopupSuccess.layoutGrid1$row0$column0"
                         class={"col-lg col-md col"}
                         style={undefined}
                         content={[
-                            <$DataView key="p10.FeedbackModule.PopupSuccess.dataView1"
-                                $widgetId="p10.FeedbackModule.PopupSuccess.dataView1"
+                            <$DataView key="p11.FeedbackModule.PopupSuccess.dataView1"
+                                $widgetId="p11.FeedbackModule.PopupSuccess.dataView1"
                                 class={"mx-name-dataView1 form-vertical"}
                                 style={undefined}
                                 tabIndex={undefined}
                                 object={AssociationObjectProperty({
-                                    "dataSourceId": "p10.10",
+                                    "dataSourceId": "p11.10",
                                     "scope": "$Response",
                                     "editable": true
                                 })}
@@ -54,15 +54,15 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                     ])
                                 })}
                                 body={[
-                                    <$Container key="p10.FeedbackModule.PopupSuccess.container1"
-                                        $widgetId="p10.FeedbackModule.PopupSuccess.container1"
+                                    <$Container key="p11.FeedbackModule.PopupSuccess.container1"
+                                        $widgetId="p11.FeedbackModule.PopupSuccess.container1"
                                         class={"mx-name-container1"}
                                         style={undefined}
                                         renderMode={"div"}
                                         onClick={undefined}
                                         content={[
-                                            <$Image key="p10.FeedbackModule.PopupSuccess.image1"
-                                                $widgetId="p10.FeedbackModule.PopupSuccess.image1"
+                                            <$Image key="p11.FeedbackModule.PopupSuccess.image1"
+                                                $widgetId="p11.FeedbackModule.PopupSuccess.image1"
                                                 datasource={"image"}
                                                 imageObject={WebStaticImageProperty({
                                                     "image": { "uri": "img/FeedbackModule$Images$Success.png" }
@@ -93,8 +93,8 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                                 class={"mx-name-image1 img-center"}
                                                 style={undefined}
                                                 tabIndex={undefined} />,
-                                            <$Text key="p10.FeedbackModule.PopupSuccess.text1"
-                                                $widgetId="p10.FeedbackModule.PopupSuccess.text1"
+                                            <$Text key="p11.FeedbackModule.PopupSuccess.text1"
+                                                $widgetId="p11.FeedbackModule.PopupSuccess.text1"
                                                 class={"mx-name-text1 text-center d-block spacing-outer-top-large spacing-outer-bottom-medium"}
                                                 style={undefined}
                                                 caption={t([
@@ -103,9 +103,9 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                                     })
                                                 ])}
                                                 renderMode={"h3"} />,
-                                            <$ActionButton key="p10.FeedbackModule.PopupSuccess.actionButton2"
-                                                $widgetId="p10.FeedbackModule.PopupSuccess.actionButton2"
-                                                buttonId={"p10.FeedbackModule.PopupSuccess.actionButton2"}
+                                            <$ActionButton key="p11.FeedbackModule.PopupSuccess.actionButton2"
+                                                $widgetId="p11.FeedbackModule.PopupSuccess.actionButton2"
+                                                buttonId={"p11.FeedbackModule.PopupSuccess.actionButton2"}
                                                 class={"mx-name-actionButton2 d-block center-block"}
                                                 style={undefined}
                                                 tabIndex={undefined}

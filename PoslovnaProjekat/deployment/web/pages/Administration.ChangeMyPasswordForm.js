@@ -11,6 +11,7 @@ import { TextProperty } from "mendix/TextProperty";
 import { ValidationProperty } from "mendix/ValidationProperty";
 
 import { ActionButton } from "mendix/widgets/web/ActionButton";
+import { ConditionalVisibilityWrapper } from "mendix/widgets/web/ConditionalVisibilityWrapper";
 import { DataView } from "mendix/widgets/web/DataView";
 import { FormGroup } from "mendix/widgets/web/FormGroup";
 import { TextBox } from "mendix/widgets/web/TextBox";
@@ -18,7 +19,7 @@ import { addEnumerations, asPluginWidgets, t } from "mendix";
 
 import { content as parentContent } from "../layouts/Atlas_Core.PopupLayout.js";
 
-const { $DataView, $FormGroup, $TextBox, $ActionButton } = asPluginWidgets({ DataView, FormGroup, TextBox, ActionButton });
+const { $DataView, $FormGroup, $TextBox, $ConditionalVisibilityWrapper, $ActionButton } = asPluginWidgets({ DataView, FormGroup, TextBox, ConditionalVisibilityWrapper, ActionButton });
 
 const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
     <$DataView key="p8.Administration.ChangeMyPasswordForm.dataView2"
@@ -196,30 +197,37 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
         ]}
         hideFooter={false}
         footer={[
-            <$ActionButton key="p8.Administration.ChangeMyPasswordForm.microflowButton1"
-                $widgetId="p8.Administration.ChangeMyPasswordForm.microflowButton1"
-                buttonId={"p8.Administration.ChangeMyPasswordForm.microflowButton1"}
-                class={"mx-name-microflowButton1"}
-                style={undefined}
-                tabIndex={undefined}
-                renderType={"button"}
-                role={undefined}
-                buttonClass={"btn-success"}
-                caption={t([
-                    ExpressionProperty({
-                        "expression": { "expr": { "type": "literal", "value": "Change" }, "args": {} }
-                    })
-                ])}
-                tooltip={TextProperty({
-                    "value": t([
-                        ""
-                    ])
+            <$ConditionalVisibilityWrapper key="p8.Administration.ChangeMyPasswordForm.microflowButton1$visibility"
+                $widgetId="p8.Administration.ChangeMyPasswordForm.microflowButton1$visibility"
+                visible={ExpressionProperty({
+                    "expression": { "expr": { "type": "function", "name": "_hasSomeRole", "parameters": [ { "type": "literal", "value": "Administrator" }, { "type": "literal", "value": "User" } ] }, "args": {} }
                 })}
-                icon={undefined}
-                action={ActionProperty({
-                    "action": { "type": "callMicroflow", "argMap": { "AccountPasswordData": { "widget": "$AccountPasswordData", "source": "object" } }, "config": { "operationId": "Pe/yycporlK7D5XMyx5D2g", "validate": "view" }, "disabledDuringExecution": false },
-                    "abortOnServerValidation": true
-                })} />,
+                contents={[
+                    <$ActionButton key="p8.Administration.ChangeMyPasswordForm.microflowButton1"
+                        $widgetId="p8.Administration.ChangeMyPasswordForm.microflowButton1"
+                        buttonId={"p8.Administration.ChangeMyPasswordForm.microflowButton1"}
+                        class={"mx-name-microflowButton1"}
+                        style={undefined}
+                        tabIndex={undefined}
+                        renderType={"button"}
+                        role={undefined}
+                        buttonClass={"btn-success"}
+                        caption={t([
+                            ExpressionProperty({
+                                "expression": { "expr": { "type": "literal", "value": "Change" }, "args": {} }
+                            })
+                        ])}
+                        tooltip={TextProperty({
+                            "value": t([
+                                ""
+                            ])
+                        })}
+                        icon={undefined}
+                        action={ActionProperty({
+                            "action": { "type": "callMicroflow", "argMap": { "AccountPasswordData": { "widget": "$AccountPasswordData", "source": "object" } }, "config": { "operationId": "Pe/yycporlK7D5XMyx5D2g", "validate": "view", "allowedRoles": [ "Administrator", "User" ] }, "disabledDuringExecution": false },
+                            "abortOnServerValidation": true
+                        })} />
+                ]} />,
             <$ActionButton key="p8.Administration.ChangeMyPasswordForm.cancelButton1"
                 $widgetId="p8.Administration.ChangeMyPasswordForm.cancelButton1"
                 buttonId={"p8.Administration.ChangeMyPasswordForm.cancelButton1"}

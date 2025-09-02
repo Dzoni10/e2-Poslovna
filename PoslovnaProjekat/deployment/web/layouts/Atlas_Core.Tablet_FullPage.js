@@ -10,8 +10,8 @@ import { addEnumerations, asPluginWidgets, t } from "mendix";
 const { $ScrollContainer, $Placeholder } = asPluginWidgets({ ScrollContainer, Placeholder });
 
 const region$Main = [
-    <$ScrollContainer key="l18.Atlas_Core.Tablet_FullPage.layoutContainer"
-        $widgetId="l18.Atlas_Core.Tablet_FullPage.layoutContainer"
+    <$ScrollContainer key="l19.Atlas_Core.Tablet_FullPage.layoutContainer"
+        $widgetId="l19.Atlas_Core.Tablet_FullPage.layoutContainer"
         class={"mx-name-layoutContainer"}
         style={undefined}
         scrollPerRegion={true}
@@ -30,8 +30,8 @@ const region$Main = [
         }}
         center={{
             "content": [
-                <$Placeholder key="l18.Atlas_Core.Tablet_FullPage.Main"
-                    $widgetId="l18.Atlas_Core.Tablet_FullPage.Main"
+                <$Placeholder key="l19.Atlas_Core.Tablet_FullPage.Main"
+                    $widgetId="l19.Atlas_Core.Tablet_FullPage.Main"
                     content={PlaceholderProperty({
                         "id": "Atlas_Core.Tablet_FullPage.Main"
                     })} />
