@@ -18,30 +18,30 @@ import { content as parentContent } from "../layouts/Atlas_Core.PopupLayout.js";
 const { $Div, $Container, $Image, $Text } = asPluginWidgets({ Div, Container, Image, Text });
 
 const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
-    <$Div key="p27.FeedbackModule.PopupFailure.layoutGrid1"
-        $widgetId="p27.FeedbackModule.PopupFailure.layoutGrid1"
+    <$Div key="p10.FeedbackModule.PopupFailure.layoutGrid1"
+        $widgetId="p10.FeedbackModule.PopupFailure.layoutGrid1"
         class={"mx-name-layoutGrid1 mx-layoutgrid mx-layoutgrid-fluid container-fluid"}
         style={undefined}
         content={[
-            <$Div key="p27.FeedbackModule.PopupFailure.layoutGrid1$row0"
-                $widgetId="p27.FeedbackModule.PopupFailure.layoutGrid1$row0"
+            <$Div key="p10.FeedbackModule.PopupFailure.layoutGrid1$row0"
+                $widgetId="p10.FeedbackModule.PopupFailure.layoutGrid1$row0"
                 class={"row"}
                 style={undefined}
                 content={[
-                    <$Div key="p27.FeedbackModule.PopupFailure.layoutGrid1$row0$column0"
-                        $widgetId="p27.FeedbackModule.PopupFailure.layoutGrid1$row0$column0"
+                    <$Div key="p10.FeedbackModule.PopupFailure.layoutGrid1$row0$column0"
+                        $widgetId="p10.FeedbackModule.PopupFailure.layoutGrid1$row0$column0"
                         class={"col-lg col-md col"}
                         style={undefined}
                         content={[
-                            <$Container key="p27.FeedbackModule.PopupFailure.container1"
-                                $widgetId="p27.FeedbackModule.PopupFailure.container1"
+                            <$Container key="p10.FeedbackModule.PopupFailure.container1"
+                                $widgetId="p10.FeedbackModule.PopupFailure.container1"
                                 class={"mx-name-container1"}
                                 style={undefined}
                                 renderMode={"div"}
                                 onClick={undefined}
                                 content={[
-                                    <$Image key="p27.FeedbackModule.PopupFailure.image1"
-                                        $widgetId="p27.FeedbackModule.PopupFailure.image1"
+                                    <$Image key="p10.FeedbackModule.PopupFailure.image1"
+                                        $widgetId="p10.FeedbackModule.PopupFailure.image1"
                                         datasource={"image"}
                                         imageObject={WebStaticImageProperty({
                                             "image": { "uri": "img/FeedbackModule$Images$Failure.png" }
@@ -72,8 +72,8 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                         class={"mx-name-image1 img-center"}
                                         style={undefined}
                                         tabIndex={undefined} />,
-                                    <$Text key="p27.FeedbackModule.PopupFailure.text1"
-                                        $widgetId="p27.FeedbackModule.PopupFailure.text1"
+                                    <$Text key="p10.FeedbackModule.PopupFailure.text1"
+                                        $widgetId="p10.FeedbackModule.PopupFailure.text1"
                                         class={"mx-name-text1 text-center d-block spacing-outer-top-large spacing-outer-bottom"}
                                         style={undefined}
                                         caption={t([
@@ -82,8 +82,8 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                             })
                                         ])}
                                         renderMode={"h3"} />,
-                                    <$Text key="p27.FeedbackModule.PopupFailure.text2"
-                                        $widgetId="p27.FeedbackModule.PopupFailure.text2"
+                                    <$Text key="p10.FeedbackModule.PopupFailure.text2"
+                                        $widgetId="p10.FeedbackModule.PopupFailure.text2"
                                         class={"mx-name-text2 text-center d-block"}
                                         style={undefined}
                                         caption={t([

@@ -1,18 +1,18 @@
-import { getAugmentedNamespace, getUserRoleNames, hideProgress, showProgress, selectTranslation, handleError, HandledError, toFriendlyId, LogManager, asProperty, getSession, DescribedError, fromConstant$, dynUnavailable, pageScope, getNanoflowArguments$, nanoflowEngine, ensure, readUntracked, MxObject, available, unavailable, reactExports, jsxRuntimeExports, classNames, asPluginWidgets } from '../index-CQ-IKJjd.js';
-import { PageFragment, ExpressionProperty } from '../ScrollContainer-DlejSEhb.js';
-import { fromObjectProperty$, ActionButton, TextProperty, ActionProperty } from '../ActionButton-DoPSCzFf.js';
-import { debounce, Alert, getAriaLabelProps, getValidationAriaProps, FormGroup, TextBox, DerivedUniqueIdProperty, ValidationProperty } from '../TextBox-D09YvROK.js';
-import { WebIconProperty } from '../WebIconProperty-n0H7skUW.js';
-import { ConditionalVisibilityWrapper } from '../ConditionalVisibilityWrapper-gVbvC_o0.js';
-import { ImageWidgetModule, Container, Text } from '../Image-S1d5HOnB.js';
-import { DataView } from '../DataView-JyfAcGpG.js';
-import { Div } from '../Div-D7PY9yAR.js';
-import { Label } from '../Label-Boa-Ut9p.js';
-import { content as content$1 } from '../Atlas_Core.PopupLayout-Bwr_LeXW.js';
-import { AttributeProperty } from '../D5tDSKpV-CkbH4xgb.js';
-import '../uEIG9e6s-DAM45jdO.js';
-import '../InlineText-BrhPLDGu.js';
-import '../bdxqAC6d-DTrzMP7S.js';
+import { getAugmentedNamespace, getUserRoleNames, hideProgress, showProgress, selectTranslation, handleError, HandledError, toFriendlyId, LogManager, asProperty, getSession, DescribedError, fromConstant$, dynUnavailable, pageScope, getNanoflowArguments$, nanoflowEngine, ensure, readUntracked, MxObject, available, unavailable, reactExports, jsxRuntimeExports, classNames, asPluginWidgets } from '../index-BEJ1cYf_.js';
+import { PageFragment, ExpressionProperty } from '../ScrollContainer-T_87vxEU.js';
+import { fromObjectProperty$, ActionButton, TextProperty, ActionProperty } from '../ActionButton-_caBVZhy.js';
+import { debounce, Alert, getAriaLabelProps, getValidationAriaProps, FormGroup, TextBox, DerivedUniqueIdProperty, ValidationProperty } from '../TextBox-aVUfu_f0.js';
+import { WebIconProperty } from '../WebIconProperty-CuljiodT.js';
+import { ConditionalVisibilityWrapper } from '../ConditionalVisibilityWrapper-B7dKHkv6.js';
+import { ImageWidgetModule, Container, Text } from '../Image-BnSXKlV8.js';
+import { DataView } from '../DataView-DA-1dPs7.js';
+import { Div } from '../Div-BjJtHDbv.js';
+import { Label } from '../Label-xEpDCuYx.js';
+import { content as content$1 } from '../Atlas_Core.PopupLayout-UMcWk5Qe.js';
+import { AttributeProperty } from '../D5tDSKpV-CLkYeYhq.js';
+import '../uEIG9e6s-DU5WxZZl.js';
+import '../InlineText-BN7qT_GR.js';
+import '../bdxqAC6d-ChbNEgGm.js';
 
 // BEGIN EXTRA CODE
 // END EXTRA CODE
@@ -2524,7 +2524,7 @@ class TextArea extends reactExports.Component {
 
 const React = { createElement: reactExports.createElement };
 const Image = Object.getOwnPropertyDescriptor(ImageWidgetModule, "Image")?.value || Object.getOwnPropertyDescriptor(ImageWidgetModule, "default")?.value;
-const { $Div, $DataView, $Container, $Text, $FormGroup, $TextBox, $TextArea, $Label, $ActionButton, $ConditionalVisibilityWrapper, $Image } = asPluginWidgets({ Div, DataView, Container, Text, FormGroup, TextBox, TextArea, Label, ActionButton, ConditionalVisibilityWrapper, Image });
+const { $Div, $DataView, $Container, $Text, $FormGroup, $TextBox, $TextArea, $Label, $ConditionalVisibilityWrapper, $ActionButton, $Image } = asPluginWidgets({ Div, DataView, Container, Text, FormGroup, TextBox, TextArea, Label, ConditionalVisibilityWrapper, ActionButton, Image });
 const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragment, { renderKey: historyId }, [
   /* @__PURE__ */ React.createElement(
     $Div,
@@ -2561,7 +2561,7 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                         object: NanoflowObjectProperty({
                           "dataSourceId": "p9.20",
                           "editable": true,
-                          "source": { "nanoflow": () => require$$0$3.DS_Feedback_Populate },
+                          "source": { "nanoflow": () => require$$0$3.DS_Feedback_Populate, "allowedRoles": [] },
                           "argMap": {}
                         }),
                         emptyMessage: TextProperty({
@@ -2613,7 +2613,7 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                             "path": "",
                                             "entity": "FeedbackModule.Feedback",
                                             "attribute": "Subject",
-                                            "onChange": { "type": "callNanoflow", "argMap": { "Feedback": { "widget": "p9.FeedbackModule.ShareFeedback.dataView5", "source": "object" } }, "config": { "nanoflow": () => require$$1$1.OCH_Feedback_SaveToLocalStorage }, "disabledDuringExecution": false },
+                                            "onChange": { "type": "callNanoflow", "argMap": { "Feedback": { "widget": "p9.FeedbackModule.ShareFeedback.dataView5", "source": "object" } }, "config": { "nanoflow": () => require$$1$1.OCH_Feedback_SaveToLocalStorage, "allowedRoles": [] }, "disabledDuringExecution": false },
                                             "isList": false,
                                             "validation": null,
                                             "formatting": {}
@@ -2675,7 +2675,7 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                             "path": "",
                                             "entity": "FeedbackModule.Feedback",
                                             "attribute": "Description",
-                                            "onChange": { "type": "callNanoflow", "argMap": { "Feedback": { "widget": "p9.FeedbackModule.ShareFeedback.dataView5", "source": "object" } }, "config": { "nanoflow": () => require$$1$1.OCH_Feedback_SaveToLocalStorage }, "disabledDuringExecution": false },
+                                            "onChange": { "type": "callNanoflow", "argMap": { "Feedback": { "widget": "p9.FeedbackModule.ShareFeedback.dataView5", "source": "object" } }, "config": { "nanoflow": () => require$$1$1.OCH_Feedback_SaveToLocalStorage, "allowedRoles": [] }, "disabledDuringExecution": false },
                                             "isList": false,
                                             "validation": null
                                           }),
@@ -2781,65 +2781,89 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                               onClick: void 0,
                               content: [
                                 /* @__PURE__ */ React.createElement(
-                                  $ActionButton,
+                                  $ConditionalVisibilityWrapper,
                                   {
-                                    key: "p9.FeedbackModule.ShareFeedback.actionButton4",
-                                    $widgetId: "p9.FeedbackModule.ShareFeedback.actionButton4",
-                                    buttonId: "p9.FeedbackModule.ShareFeedback.actionButton4",
-                                    class: "mx-name-actionButton4",
-                                    style: void 0,
-                                    tabIndex: void 0,
-                                    renderType: "button",
-                                    role: void 0,
-                                    buttonClass: "btn-default",
-                                    caption: selectTranslation([
-                                      ExpressionProperty({
-                                        "expression": { "expr": { "type": "literal", "value": "Take Screenshot" }, "args": {} }
-                                      })
-                                    ]),
-                                    tooltip: TextProperty({
-                                      "value": selectTranslation([
-                                        ""
-                                      ])
+                                    key: "p9.FeedbackModule.ShareFeedback.actionButton4$visibility",
+                                    $widgetId: "p9.FeedbackModule.ShareFeedback.actionButton4$visibility",
+                                    visible: ExpressionProperty({
+                                      "expression": { "expr": { "type": "function", "name": "_hasSomeRole", "parameters": [] }, "args": {} }
                                     }),
-                                    icon: WebIconProperty({
-                                      "icon": { "type": "glyph", "iconClass": "glyphicon-camera" }
-                                    }),
-                                    action: ActionProperty({
-                                      "action": { "type": "callNanoflow", "argMap": { "Feedback": { "widget": "p9.FeedbackModule.ShareFeedback.dataView5", "source": "object" } }, "config": { "nanoflow": () => require$$2.ACT_Feedback_TriggerScreenshotMode }, "disabledDuringExecution": true },
-                                      "abortOnServerValidation": true
-                                    })
+                                    contents: [
+                                      /* @__PURE__ */ React.createElement(
+                                        $ActionButton,
+                                        {
+                                          key: "p9.FeedbackModule.ShareFeedback.actionButton4",
+                                          $widgetId: "p9.FeedbackModule.ShareFeedback.actionButton4",
+                                          buttonId: "p9.FeedbackModule.ShareFeedback.actionButton4",
+                                          class: "mx-name-actionButton4",
+                                          style: void 0,
+                                          tabIndex: void 0,
+                                          renderType: "button",
+                                          role: void 0,
+                                          buttonClass: "btn-default",
+                                          caption: selectTranslation([
+                                            ExpressionProperty({
+                                              "expression": { "expr": { "type": "literal", "value": "Take Screenshot" }, "args": {} }
+                                            })
+                                          ]),
+                                          tooltip: TextProperty({
+                                            "value": selectTranslation([
+                                              ""
+                                            ])
+                                          }),
+                                          icon: WebIconProperty({
+                                            "icon": { "type": "glyph", "iconClass": "glyphicon-camera" }
+                                          }),
+                                          action: ActionProperty({
+                                            "action": { "type": "callNanoflow", "argMap": { "Feedback": { "widget": "p9.FeedbackModule.ShareFeedback.dataView5", "source": "object" } }, "config": { "nanoflow": () => require$$2.ACT_Feedback_TriggerScreenshotMode, "allowedRoles": [] }, "disabledDuringExecution": true },
+                                            "abortOnServerValidation": true
+                                          })
+                                        }
+                                      )
+                                    ]
                                   }
                                 ),
                                 /* @__PURE__ */ React.createElement(
-                                  $ActionButton,
+                                  $ConditionalVisibilityWrapper,
                                   {
-                                    key: "p9.FeedbackModule.ShareFeedback.actionButton5",
-                                    $widgetId: "p9.FeedbackModule.ShareFeedback.actionButton5",
-                                    buttonId: "p9.FeedbackModule.ShareFeedback.actionButton5",
-                                    class: "mx-name-actionButton5",
-                                    style: void 0,
-                                    tabIndex: void 0,
-                                    renderType: "button",
-                                    role: void 0,
-                                    buttonClass: "btn-default",
-                                    caption: selectTranslation([
-                                      ExpressionProperty({
-                                        "expression": { "expr": { "type": "literal", "value": "Upload" }, "args": {} }
-                                      })
-                                    ]),
-                                    tooltip: TextProperty({
-                                      "value": selectTranslation([
-                                        ""
-                                      ])
+                                    key: "p9.FeedbackModule.ShareFeedback.actionButton5$visibility",
+                                    $widgetId: "p9.FeedbackModule.ShareFeedback.actionButton5$visibility",
+                                    visible: ExpressionProperty({
+                                      "expression": { "expr": { "type": "function", "name": "_hasSomeRole", "parameters": [] }, "args": {} }
                                     }),
-                                    icon: WebIconProperty({
-                                      "icon": { "type": "glyph", "iconClass": "glyphicon-open" }
-                                    }),
-                                    action: ActionProperty({
-                                      "action": { "type": "callNanoflow", "argMap": { "Feedback": { "widget": "p9.FeedbackModule.ShareFeedback.dataView5", "source": "object" } }, "config": { "nanoflow": () => require$$3.ACT_Feedback_UploadImage }, "disabledDuringExecution": true },
-                                      "abortOnServerValidation": true
-                                    })
+                                    contents: [
+                                      /* @__PURE__ */ React.createElement(
+                                        $ActionButton,
+                                        {
+                                          key: "p9.FeedbackModule.ShareFeedback.actionButton5",
+                                          $widgetId: "p9.FeedbackModule.ShareFeedback.actionButton5",
+                                          buttonId: "p9.FeedbackModule.ShareFeedback.actionButton5",
+                                          class: "mx-name-actionButton5",
+                                          style: void 0,
+                                          tabIndex: void 0,
+                                          renderType: "button",
+                                          role: void 0,
+                                          buttonClass: "btn-default",
+                                          caption: selectTranslation([
+                                            ExpressionProperty({
+                                              "expression": { "expr": { "type": "literal", "value": "Upload" }, "args": {} }
+                                            })
+                                          ]),
+                                          tooltip: TextProperty({
+                                            "value": selectTranslation([
+                                              ""
+                                            ])
+                                          }),
+                                          icon: WebIconProperty({
+                                            "icon": { "type": "glyph", "iconClass": "glyphicon-open" }
+                                          }),
+                                          action: ActionProperty({
+                                            "action": { "type": "callNanoflow", "argMap": { "Feedback": { "widget": "p9.FeedbackModule.ShareFeedback.dataView5", "source": "object" } }, "config": { "nanoflow": () => require$$3.ACT_Feedback_UploadImage, "allowedRoles": [] }, "disabledDuringExecution": true },
+                                            "abortOnServerValidation": true
+                                          })
+                                        }
+                                      )
+                                    ]
                                   }
                                 )
                               ],
@@ -2878,34 +2902,46 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                           onClick: void 0,
                                           content: [
                                             /* @__PURE__ */ React.createElement(
-                                              $ActionButton,
+                                              $ConditionalVisibilityWrapper,
                                               {
-                                                key: "p9.FeedbackModule.ShareFeedback.actionButton1",
-                                                $widgetId: "p9.FeedbackModule.ShareFeedback.actionButton1",
-                                                buttonId: "p9.FeedbackModule.ShareFeedback.actionButton1",
-                                                class: "mx-name-actionButton1 mxfeedback-screenshot-preview__delete-button",
-                                                style: void 0,
-                                                tabIndex: void 0,
-                                                renderType: "button",
-                                                role: void 0,
-                                                buttonClass: "btn-default",
-                                                caption: selectTranslation([
-                                                  ExpressionProperty({
-                                                    "expression": { "expr": { "type": "literal", "value": "" }, "args": {} }
-                                                  })
-                                                ]),
-                                                tooltip: TextProperty({
-                                                  "value": selectTranslation([
-                                                    ""
-                                                  ])
+                                                key: "p9.FeedbackModule.ShareFeedback.actionButton1$visibility",
+                                                $widgetId: "p9.FeedbackModule.ShareFeedback.actionButton1$visibility",
+                                                visible: ExpressionProperty({
+                                                  "expression": { "expr": { "type": "function", "name": "_hasSomeRole", "parameters": [] }, "args": {} }
                                                 }),
-                                                icon: WebIconProperty({
-                                                  "icon": { "type": "glyph", "iconClass": "glyphicon-remove" }
-                                                }),
-                                                action: ActionProperty({
-                                                  "action": { "type": "callNanoflow", "argMap": { "Feedback": { "widget": "p9.FeedbackModule.ShareFeedback.dataView5", "source": "object" } }, "config": { "nanoflow": () => require$$4.ACT_Feedback_ClearImage }, "disabledDuringExecution": true },
-                                                  "abortOnServerValidation": true
-                                                })
+                                                contents: [
+                                                  /* @__PURE__ */ React.createElement(
+                                                    $ActionButton,
+                                                    {
+                                                      key: "p9.FeedbackModule.ShareFeedback.actionButton1",
+                                                      $widgetId: "p9.FeedbackModule.ShareFeedback.actionButton1",
+                                                      buttonId: "p9.FeedbackModule.ShareFeedback.actionButton1",
+                                                      class: "mx-name-actionButton1 mxfeedback-screenshot-preview__delete-button",
+                                                      style: void 0,
+                                                      tabIndex: void 0,
+                                                      renderType: "button",
+                                                      role: void 0,
+                                                      buttonClass: "btn-default",
+                                                      caption: selectTranslation([
+                                                        ExpressionProperty({
+                                                          "expression": { "expr": { "type": "literal", "value": "" }, "args": {} }
+                                                        })
+                                                      ]),
+                                                      tooltip: TextProperty({
+                                                        "value": selectTranslation([
+                                                          ""
+                                                        ])
+                                                      }),
+                                                      icon: WebIconProperty({
+                                                        "icon": { "type": "glyph", "iconClass": "glyphicon-remove" }
+                                                      }),
+                                                      action: ActionProperty({
+                                                        "action": { "type": "callNanoflow", "argMap": { "Feedback": { "widget": "p9.FeedbackModule.ShareFeedback.dataView5", "source": "object" } }, "config": { "nanoflow": () => require$$4.ACT_Feedback_ClearImage, "allowedRoles": [] }, "disabledDuringExecution": true },
+                                                        "abortOnServerValidation": true
+                                                      })
+                                                    }
+                                                  )
+                                                ]
                                               }
                                             ),
                                             /* @__PURE__ */ React.createElement(
@@ -2983,7 +3019,7 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                             "path": "",
                                             "entity": "FeedbackModule.Feedback",
                                             "attribute": "SubmitterEmail",
-                                            "onChange": { "type": "callNanoflow", "argMap": { "Feedback": { "widget": "p9.FeedbackModule.ShareFeedback.dataView5", "source": "object" } }, "config": { "nanoflow": () => require$$1$1.OCH_Feedback_SaveToLocalStorage }, "disabledDuringExecution": false },
+                                            "onChange": { "type": "callNanoflow", "argMap": { "Feedback": { "widget": "p9.FeedbackModule.ShareFeedback.dataView5", "source": "object" } }, "config": { "nanoflow": () => require$$1$1.OCH_Feedback_SaveToLocalStorage, "allowedRoles": [] }, "disabledDuringExecution": false },
                                             "isList": false,
                                             "validation": null,
                                             "formatting": {}
@@ -3074,61 +3110,85 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                   }
                                 ),
                                 /* @__PURE__ */ React.createElement(
-                                  $ActionButton,
+                                  $ConditionalVisibilityWrapper,
                                   {
-                                    key: "p9.FeedbackModule.ShareFeedback.feedback_clear",
-                                    $widgetId: "p9.FeedbackModule.ShareFeedback.feedback_clear",
-                                    buttonId: "p9.FeedbackModule.ShareFeedback.feedback_clear",
-                                    class: "mx-name-feedback_clear btn-bordered",
-                                    style: void 0,
-                                    tabIndex: void 0,
-                                    renderType: "button",
-                                    role: void 0,
-                                    buttonClass: "btn-default",
-                                    caption: selectTranslation([
-                                      ExpressionProperty({
-                                        "expression": { "expr": { "type": "literal", "value": "Clear" }, "args": {} }
-                                      })
-                                    ]),
-                                    tooltip: TextProperty({
-                                      "value": selectTranslation([
-                                        ""
-                                      ])
+                                    key: "p9.FeedbackModule.ShareFeedback.feedback_clear$visibility",
+                                    $widgetId: "p9.FeedbackModule.ShareFeedback.feedback_clear$visibility",
+                                    visible: ExpressionProperty({
+                                      "expression": { "expr": { "type": "function", "name": "_hasSomeRole", "parameters": [] }, "args": {} }
                                     }),
-                                    icon: void 0,
-                                    action: ActionProperty({
-                                      "action": { "type": "callNanoflow", "argMap": { "Feedback": { "widget": "p9.FeedbackModule.ShareFeedback.dataView5", "source": "object" } }, "config": { "nanoflow": () => require$$5.ACT_Feedback_ClearForm }, "disabledDuringExecution": true },
-                                      "abortOnServerValidation": true
-                                    })
+                                    contents: [
+                                      /* @__PURE__ */ React.createElement(
+                                        $ActionButton,
+                                        {
+                                          key: "p9.FeedbackModule.ShareFeedback.feedback_clear",
+                                          $widgetId: "p9.FeedbackModule.ShareFeedback.feedback_clear",
+                                          buttonId: "p9.FeedbackModule.ShareFeedback.feedback_clear",
+                                          class: "mx-name-feedback_clear btn-bordered",
+                                          style: void 0,
+                                          tabIndex: void 0,
+                                          renderType: "button",
+                                          role: void 0,
+                                          buttonClass: "btn-default",
+                                          caption: selectTranslation([
+                                            ExpressionProperty({
+                                              "expression": { "expr": { "type": "literal", "value": "Clear" }, "args": {} }
+                                            })
+                                          ]),
+                                          tooltip: TextProperty({
+                                            "value": selectTranslation([
+                                              ""
+                                            ])
+                                          }),
+                                          icon: void 0,
+                                          action: ActionProperty({
+                                            "action": { "type": "callNanoflow", "argMap": { "Feedback": { "widget": "p9.FeedbackModule.ShareFeedback.dataView5", "source": "object" } }, "config": { "nanoflow": () => require$$5.ACT_Feedback_ClearForm, "allowedRoles": [] }, "disabledDuringExecution": true },
+                                            "abortOnServerValidation": true
+                                          })
+                                        }
+                                      )
+                                    ]
                                   }
                                 ),
                                 /* @__PURE__ */ React.createElement(
-                                  $ActionButton,
+                                  $ConditionalVisibilityWrapper,
                                   {
-                                    key: "p9.FeedbackModule.ShareFeedback.feedback_submit",
-                                    $widgetId: "p9.FeedbackModule.ShareFeedback.feedback_submit",
-                                    buttonId: "p9.FeedbackModule.ShareFeedback.feedback_submit",
-                                    class: "mx-name-feedback_submit",
-                                    style: void 0,
-                                    tabIndex: void 0,
-                                    renderType: "button",
-                                    role: void 0,
-                                    buttonClass: "btn-primary",
-                                    caption: selectTranslation([
-                                      ExpressionProperty({
-                                        "expression": { "expr": { "type": "literal", "value": "Submit" }, "args": {} }
-                                      })
-                                    ]),
-                                    tooltip: TextProperty({
-                                      "value": selectTranslation([
-                                        ""
-                                      ])
+                                    key: "p9.FeedbackModule.ShareFeedback.feedback_submit$visibility",
+                                    $widgetId: "p9.FeedbackModule.ShareFeedback.feedback_submit$visibility",
+                                    visible: ExpressionProperty({
+                                      "expression": { "expr": { "type": "function", "name": "_hasSomeRole", "parameters": [] }, "args": {} }
                                     }),
-                                    icon: void 0,
-                                    action: ActionProperty({
-                                      "action": { "type": "callNanoflow", "argMap": { "Feedback": { "widget": "p9.FeedbackModule.ShareFeedback.dataView5", "source": "object" } }, "config": { "nanoflow": () => require$$6.ACT_SubmitFeedback }, "disabledDuringExecution": true },
-                                      "abortOnServerValidation": true
-                                    })
+                                    contents: [
+                                      /* @__PURE__ */ React.createElement(
+                                        $ActionButton,
+                                        {
+                                          key: "p9.FeedbackModule.ShareFeedback.feedback_submit",
+                                          $widgetId: "p9.FeedbackModule.ShareFeedback.feedback_submit",
+                                          buttonId: "p9.FeedbackModule.ShareFeedback.feedback_submit",
+                                          class: "mx-name-feedback_submit",
+                                          style: void 0,
+                                          tabIndex: void 0,
+                                          renderType: "button",
+                                          role: void 0,
+                                          buttonClass: "btn-primary",
+                                          caption: selectTranslation([
+                                            ExpressionProperty({
+                                              "expression": { "expr": { "type": "literal", "value": "Submit" }, "args": {} }
+                                            })
+                                          ]),
+                                          tooltip: TextProperty({
+                                            "value": selectTranslation([
+                                              ""
+                                            ])
+                                          }),
+                                          icon: void 0,
+                                          action: ActionProperty({
+                                            "action": { "type": "callNanoflow", "argMap": { "Feedback": { "widget": "p9.FeedbackModule.ShareFeedback.dataView5", "source": "object" } }, "config": { "nanoflow": () => require$$6.ACT_SubmitFeedback, "allowedRoles": [] }, "disabledDuringExecution": true },
+                                            "abortOnServerValidation": true
+                                          })
+                                        }
+                                      )
+                                    ]
                                   }
                                 )
                               ],

@@ -13,5 +13,5 @@
     "FeedbackModule.ClientIdentifier": "Feedback Module 4.0.1",
     "FeedbackModule.LocalStorageKey": "mxfeedback-form-data"
   },
-  "AdminPassword": null
+  "AdminPassword": "admin"
 }

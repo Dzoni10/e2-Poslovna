@@ -1,23 +1,23 @@
-import { asProperty, fromConstant$, ensureAssociationId, registerAssociationType, registerFilterAttribute, fromComputation$, asReloadable$, available, getObjectsByPath$, getObjectByPath$, getSession, getFocus, getHTMLElement, ensure, isNavigableElement, isHTMLElement, reactExports, newId, Big, useForceUpdate, tuple, repeat, reaction, useStoreBackendValue, readUntracked, jsxRuntimeExports, classNames, NestedStoreProvider, asPluginWidgets, selectTranslation } from '../index-CQ-IKJjd.js';
-import { PageFragment, ExpressionProperty } from '../ScrollContainer-DlejSEhb.js';
-import { ActionButton, TextProperty, ActionProperty } from '../ActionButton-DoPSCzFf.js';
-import { listItemProperty, DatabaseObjectListProperty } from '../CTcC6PjV-46kwFl8r.js';
-import { getCurrentRefObjectItem$ } from '../AssociationProperty-D9Iu6z-_.js';
-import '../uEIG9e6s-DAM45jdO.js';
-import '../D5tDSKpV-CkbH4xgb.js';
-import { ListAttributeProperty } from '../ListAttributeProperty-DlEJt7zt.js';
-import { ListExpressionProperty } from '../ListExpressionProperty-DwNNiLgK.js';
-import { DatagridDateFilterWidgetModule, DatagridTextFilterWidgetModule, TemplatedWidgetProperty } from '../DatagridTextFilter-tat6MgDp.js';
-import { WebIconProperty } from '../WebIconProperty-n0H7skUW.js';
-import { ConditionalVisibilityWrapper } from '../ConditionalVisibilityWrapper-gVbvC_o0.js';
-import { Container, Text } from '../Image-S1d5HOnB.js';
-import { DatagridWidgetModule } from '../Datagrid-M-ajfIyD.js';
-import { DatagridDropdownFilterWidgetModule } from '../DatagridDropdownFilter-DmTupx00.js';
-import { Div } from '../Div-D7PY9yAR.js';
-import { useLegacyResize, getBox } from '../bdxqAC6d-DTrzMP7S.js';
-import { usePersistentState, content as content$1 } from '../Atlas_Core.Atlas_Default-7qOKIung.js';
-import '../InlineText-BrhPLDGu.js';
-import '../WebStaticImageProperty-DpFXTIJx.js';
+import { asProperty, fromConstant$, ensureAssociationId, registerAssociationType, registerFilterAttribute, fromComputation$, asReloadable$, available, getObjectsByPath$, getObjectByPath$, getSession, getFocus, getHTMLElement, ensure, isNavigableElement, isHTMLElement, reactExports, newId, Big, useForceUpdate, tuple, repeat, reaction, useStoreBackendValue, readUntracked, jsxRuntimeExports, classNames, NestedStoreProvider, asPluginWidgets, selectTranslation } from '../index-BEJ1cYf_.js';
+import { PageFragment, ExpressionProperty } from '../ScrollContainer-T_87vxEU.js';
+import { ActionButton, TextProperty, ActionProperty } from '../ActionButton-_caBVZhy.js';
+import { listItemProperty, DatabaseObjectListProperty } from '../CTcC6PjV-CPkyqKwE.js';
+import { getCurrentRefObjectItem$ } from '../AssociationProperty-BK_XpGU8.js';
+import '../uEIG9e6s-DU5WxZZl.js';
+import '../D5tDSKpV-CLkYeYhq.js';
+import { ListAttributeProperty } from '../ListAttributeProperty-DWbl65CC.js';
+import { ListExpressionProperty } from '../ListExpressionProperty-CZIn0qql.js';
+import { DatagridDateFilterWidgetModule, DatagridTextFilterWidgetModule, TemplatedWidgetProperty } from '../DatagridTextFilter-BWg2PJ9m.js';
+import { WebIconProperty } from '../WebIconProperty-CuljiodT.js';
+import { ConditionalVisibilityWrapper } from '../ConditionalVisibilityWrapper-B7dKHkv6.js';
+import { Container, Text } from '../Image-BnSXKlV8.js';
+import { DatagridWidgetModule } from '../Datagrid-CwZVdiKh.js';
+import { DatagridDropdownFilterWidgetModule } from '../DatagridDropdownFilter-CJc1WlqF.js';
+import { Div } from '../Div-BjJtHDbv.js';
+import { useLegacyResize, getBox } from '../bdxqAC6d-ChbNEgGm.js';
+import { usePersistentState, content as content$1 } from '../Atlas_Core.Atlas_Default-d1ptF7q4.js';
+import '../InlineText-BN7qT_GR.js';
+import '../WebStaticImageProperty-B-d3FKAx.js';
 
 const AssociationMetaDataProperty = asProperty((config) => {
   const { id, filterable } = listAssociationMetaData(config);
@@ -318,8 +318,8 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
   /* @__PURE__ */ React.createElement(
     $Container,
     {
-      key: "p4.Administration.Account_Overview.container1",
-      $widgetId: "p4.Administration.Account_Overview.container1",
+      key: "p2.Administration.Account_Overview.container1",
+      $widgetId: "p2.Administration.Account_Overview.container1",
       class: "mx-name-container1 pageheader pageheader-fullwidth",
       style: void 0,
       renderMode: "div",
@@ -328,32 +328,32 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
         /* @__PURE__ */ React.createElement(
           $Div,
           {
-            key: "p4.Administration.Account_Overview.layoutGrid1",
-            $widgetId: "p4.Administration.Account_Overview.layoutGrid1",
+            key: "p2.Administration.Account_Overview.layoutGrid1",
+            $widgetId: "p2.Administration.Account_Overview.layoutGrid1",
             class: "mx-name-layoutGrid1 mx-layoutgrid mx-layoutgrid-fluid container-fluid",
             style: void 0,
             content: [
               /* @__PURE__ */ React.createElement(
                 $Div,
                 {
-                  key: "p4.Administration.Account_Overview.layoutGrid1$row0",
-                  $widgetId: "p4.Administration.Account_Overview.layoutGrid1$row0",
+                  key: "p2.Administration.Account_Overview.layoutGrid1$row0",
+                  $widgetId: "p2.Administration.Account_Overview.layoutGrid1$row0",
                   class: "row",
                   style: void 0,
                   content: [
                     /* @__PURE__ */ React.createElement(
                       $Div,
                       {
-                        key: "p4.Administration.Account_Overview.layoutGrid1$row0$column0",
-                        $widgetId: "p4.Administration.Account_Overview.layoutGrid1$row0$column0",
+                        key: "p2.Administration.Account_Overview.layoutGrid1$row0$column0",
+                        $widgetId: "p2.Administration.Account_Overview.layoutGrid1$row0$column0",
                         class: "col-lg-12 col-md-12 col-12",
                         style: void 0,
                         content: [
                           /* @__PURE__ */ React.createElement(
                             $Text,
                             {
-                              key: "p4.Administration.Account_Overview.label1",
-                              $widgetId: "p4.Administration.Account_Overview.label1",
+                              key: "p2.Administration.Account_Overview.label1",
+                              $widgetId: "p2.Administration.Account_Overview.label1",
                               class: "mx-name-label1 pageheader-title",
                               style: void 0,
                               caption: selectTranslation([
@@ -367,8 +367,8 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                           /* @__PURE__ */ React.createElement(
                             $Text,
                             {
-                              key: "p4.Administration.Account_Overview.label2",
-                              $widgetId: "p4.Administration.Account_Overview.label2",
+                              key: "p2.Administration.Account_Overview.label2",
+                              $widgetId: "p2.Administration.Account_Overview.label2",
                               class: "mx-name-label2 pageheader-subtitle",
                               style: void 0,
                               caption: selectTranslation([
@@ -395,36 +395,36 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
   /* @__PURE__ */ React.createElement(
     $Div,
     {
-      key: "p4.Administration.Account_Overview.layoutGrid4",
-      $widgetId: "p4.Administration.Account_Overview.layoutGrid4",
+      key: "p2.Administration.Account_Overview.layoutGrid4",
+      $widgetId: "p2.Administration.Account_Overview.layoutGrid4",
       class: "mx-name-layoutGrid4 mx-layoutgrid mx-layoutgrid-fluid container-fluid",
       style: void 0,
       content: [
         /* @__PURE__ */ React.createElement(
           $Div,
           {
-            key: "p4.Administration.Account_Overview.layoutGrid4$row0",
-            $widgetId: "p4.Administration.Account_Overview.layoutGrid4$row0",
+            key: "p2.Administration.Account_Overview.layoutGrid4$row0",
+            $widgetId: "p2.Administration.Account_Overview.layoutGrid4$row0",
             class: "row",
             style: void 0,
             content: [
               /* @__PURE__ */ React.createElement(
                 $Div,
                 {
-                  key: "p4.Administration.Account_Overview.layoutGrid4$row0$column0",
-                  $widgetId: "p4.Administration.Account_Overview.layoutGrid4$row0$column0",
+                  key: "p2.Administration.Account_Overview.layoutGrid4$row0$column0",
+                  $widgetId: "p2.Administration.Account_Overview.layoutGrid4$row0$column0",
                   class: "col-lg-12 col-md-12 col-12",
                   style: void 0,
                   content: [
                     /* @__PURE__ */ React.createElement(
                       $TabContainer,
                       {
-                        key: "p4.Administration.Account_Overview.tabControl",
-                        $widgetId: "p4.Administration.Account_Overview.tabControl",
+                        key: "p2.Administration.Account_Overview.tabControl",
+                        $widgetId: "p2.Administration.Account_Overview.tabControl",
                         class: "mx-name-tabControl tabsfullwidth",
                         style: void 0,
                         tabIndex: void 0,
-                        widgetId: "p4.Administration.Account_Overview.tabControl",
+                        widgetId: "p2.Administration.Account_Overview.tabControl",
                         defaultTab: 0,
                         tabs: [
                           {
@@ -440,11 +440,11 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                               /* @__PURE__ */ React.createElement(
                                 $Datagrid,
                                 {
-                                  key: "p4.Administration.Account_Overview.dataGrid21",
-                                  $widgetId: "p4.Administration.Account_Overview.dataGrid21",
+                                  key: "p2.Administration.Account_Overview.dataGrid21",
+                                  $widgetId: "p2.Administration.Account_Overview.dataGrid21",
                                   advanced: false,
                                   datasource: DatabaseObjectListProperty({
-                                    "dataSourceId": "p4.14",
+                                    "dataSourceId": "p2.14",
                                     "entity": "Administration.Account",
                                     "operationId": "8z1qdSUNAl+HD4FIOPvSFQ",
                                     "sort": [
@@ -468,7 +468,7 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                         "attributeType": "String",
                                         "sortable": true,
                                         "filterable": true,
-                                        "dataSourceId": "p4.14",
+                                        "dataSourceId": "p2.14",
                                         "isList": false
                                       }),
                                       "content": void 0,
@@ -487,8 +487,8 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                         /* @__PURE__ */ React.createElement(
                                           $DatagridTextFilter,
                                           {
-                                            key: "p4.Administration.Account_Overview.textFilter1",
-                                            $widgetId: "p4.Administration.Account_Overview.textFilter1",
+                                            key: "p2.Administration.Account_Overview.textFilter1",
+                                            $widgetId: "p2.Administration.Account_Overview.textFilter1",
                                             advanced: false,
                                             defaultValue: void 0,
                                             defaultFilter: "contains",
@@ -545,7 +545,7 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                         "attributeType": "String",
                                         "sortable": true,
                                         "filterable": true,
-                                        "dataSourceId": "p4.14",
+                                        "dataSourceId": "p2.14",
                                         "isList": false
                                       }),
                                       "content": void 0,
@@ -564,8 +564,8 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                         /* @__PURE__ */ React.createElement(
                                           $DatagridTextFilter,
                                           {
-                                            key: "p4.Administration.Account_Overview.textFilter2",
-                                            $widgetId: "p4.Administration.Account_Overview.textFilter2",
+                                            key: "p2.Administration.Account_Overview.textFilter2",
+                                            $widgetId: "p2.Administration.Account_Overview.textFilter2",
                                             advanced: false,
                                             defaultValue: void 0,
                                             defaultFilter: "contains",
@@ -622,7 +622,7 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                         "attributeType": "String",
                                         "sortable": false,
                                         "filterable": false,
-                                        "dataSourceId": "p4.14",
+                                        "dataSourceId": "p2.14",
                                         "isList": true
                                       }),
                                       "content": void 0,
@@ -641,8 +641,8 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                         /* @__PURE__ */ React.createElement(
                                           $DatagridDropdownFilter,
                                           {
-                                            key: "p4.Administration.Account_Overview.drop_downFilter1",
-                                            $widgetId: "p4.Administration.Account_Overview.drop_downFilter1",
+                                            key: "p2.Administration.Account_Overview.drop_downFilter1",
+                                            $widgetId: "p2.Administration.Account_Overview.drop_downFilter1",
                                             auto: true,
                                             defaultValue: void 0,
                                             filterOptions: [],
@@ -674,12 +674,12 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                         "path": "",
                                         "attribute": "System.UserRoles",
                                         "endpointEntity": "System.UserRole",
-                                        "selectableObjectsId": "p4.15",
+                                        "selectableObjectsId": "p2.15",
                                         "filterable": true,
-                                        "dataSourceId": "p4.14"
+                                        "dataSourceId": "p2.14"
                                       }),
                                       "filterAssociationOptions": DatabaseObjectListProperty({
-                                        "dataSourceId": "p4.15",
+                                        "dataSourceId": "p2.15",
                                         "entity": "System.UserRole",
                                         "operationId": "kFKwe8NWy1a5u/M7ZgeK3w",
                                         "sort": [
@@ -690,8 +690,8 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                         ]
                                       }),
                                       "filterAssociationOptionLabel": ListExpressionProperty({
-                                        "expression": { "expr": { "type": "variable", "variable": "currentObject", "path": "Name" }, "args": { "currentObject": { "widget": "p4.Administration.Account_Overview.dataGrid21", "source": "object" } } },
-                                        "dataSourceId": "p4.15"
+                                        "expression": { "expr": { "type": "variable", "variable": "currentObject", "path": "Name" }, "args": { "currentObject": { "widget": "p2.Administration.Account_Overview.dataGrid21", "source": "object" } } },
+                                        "dataSourceId": "p2.15"
                                       }),
                                       "visible": ExpressionProperty({
                                         "expression": { "expr": { "type": "literal", "value": true }, "args": {} }
@@ -722,14 +722,14 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                         "attributeType": "DateTime",
                                         "sortable": true,
                                         "filterable": true,
-                                        "dataSourceId": "p4.14",
+                                        "dataSourceId": "p2.14",
                                         "isList": false
                                       }),
                                       "content": void 0,
                                       "dynamicText": selectTranslation([
                                         ListExpressionProperty({
-                                          "expression": { "expr": { "type": "function", "name": "_format", "parameters": [{ "type": "variable", "variable": "currentObject", "path": "LastLogin" }, { "type": "literal", "value": '{"type":"datetime"}' }] }, "args": { "currentObject": { "widget": "p4.Administration.Account_Overview.dataGrid21", "source": "object" } } },
-                                          "dataSourceId": "p4.14"
+                                          "expression": { "expr": { "type": "function", "name": "_format", "parameters": [{ "type": "variable", "variable": "currentObject", "path": "LastLogin" }, { "type": "literal", "value": '{"type":"datetime"}' }] }, "args": { "currentObject": { "widget": "p2.Administration.Account_Overview.dataGrid21", "source": "object" } } },
+                                          "dataSourceId": "p2.14"
                                         })
                                       ]),
                                       "header": selectTranslation([
@@ -744,8 +744,8 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                         /* @__PURE__ */ React.createElement(
                                           $DatagridDateFilter,
                                           {
-                                            key: "p4.Administration.Account_Overview.dateFilter1",
-                                            $widgetId: "p4.Administration.Account_Overview.dateFilter1",
+                                            key: "p2.Administration.Account_Overview.dateFilter1",
+                                            $widgetId: "p2.Administration.Account_Overview.dateFilter1",
                                             advanced: false,
                                             defaultValue: void 0,
                                             defaultStartDate: void 0,
@@ -808,27 +808,27 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                         "attributeType": "Boolean",
                                         "sortable": true,
                                         "filterable": true,
-                                        "dataSourceId": "p4.14",
+                                        "dataSourceId": "p2.14",
                                         "isList": false
                                       }),
                                       "content": TemplatedWidgetProperty({
-                                        "dataSourceId": "p4.14",
+                                        "dataSourceId": "p2.14",
                                         "editable": false,
                                         "children": () => [
                                           /* @__PURE__ */ React.createElement(
                                             $ConditionalVisibilityWrapper,
                                             {
-                                              key: "p4.Administration.Account_Overview.text2$visibility",
-                                              $widgetId: "p4.Administration.Account_Overview.text2$visibility",
+                                              key: "p2.Administration.Account_Overview.text2$visibility",
+                                              $widgetId: "p2.Administration.Account_Overview.text2$visibility",
                                               visible: ExpressionProperty({
-                                                "expression": { "expr": { "type": "variable", "variable": "currentObject", "path": "Active" }, "args": { "currentObject": { "widget": "p4.Administration.Account_Overview.dataGrid21", "source": "object" } } }
+                                                "expression": { "expr": { "type": "variable", "variable": "currentObject", "path": "Active" }, "args": { "currentObject": { "widget": "p2.Administration.Account_Overview.dataGrid21", "source": "object" } } }
                                               }),
                                               contents: [
                                                 /* @__PURE__ */ React.createElement(
                                                   $Text,
                                                   {
-                                                    key: "p4.Administration.Account_Overview.text2",
-                                                    $widgetId: "p4.Administration.Account_Overview.text2",
+                                                    key: "p2.Administration.Account_Overview.text2",
+                                                    $widgetId: "p2.Administration.Account_Overview.text2",
                                                     class: "mx-name-text2 badge label-success",
                                                     style: void 0,
                                                     caption: selectTranslation([
@@ -845,17 +845,17 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                           /* @__PURE__ */ React.createElement(
                                             $ConditionalVisibilityWrapper,
                                             {
-                                              key: "p4.Administration.Account_Overview.text3$visibility",
-                                              $widgetId: "p4.Administration.Account_Overview.text3$visibility",
+                                              key: "p2.Administration.Account_Overview.text3$visibility",
+                                              $widgetId: "p2.Administration.Account_Overview.text3$visibility",
                                               visible: ExpressionProperty({
-                                                "expression": { "expr": { "type": "function", "name": "not", "parameters": [{ "type": "variable", "variable": "currentObject", "path": "Active" }] }, "args": { "currentObject": { "widget": "p4.Administration.Account_Overview.dataGrid21", "source": "object" } } }
+                                                "expression": { "expr": { "type": "function", "name": "not", "parameters": [{ "type": "variable", "variable": "currentObject", "path": "Active" }] }, "args": { "currentObject": { "widget": "p2.Administration.Account_Overview.dataGrid21", "source": "object" } } }
                                               }),
                                               contents: [
                                                 /* @__PURE__ */ React.createElement(
                                                   $Text,
                                                   {
-                                                    key: "p4.Administration.Account_Overview.text3",
-                                                    $widgetId: "p4.Administration.Account_Overview.text3",
+                                                    key: "p2.Administration.Account_Overview.text3",
+                                                    $widgetId: "p2.Administration.Account_Overview.text3",
                                                     class: "mx-name-text3 badge label-secondary",
                                                     style: void 0,
                                                     caption: selectTranslation([
@@ -886,8 +886,8 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                         /* @__PURE__ */ React.createElement(
                                           $DatagridDropdownFilter,
                                           {
-                                            key: "p4.Administration.Account_Overview.drop_downFilter2",
-                                            $widgetId: "p4.Administration.Account_Overview.drop_downFilter2",
+                                            key: "p2.Administration.Account_Overview.drop_downFilter2",
+                                            $widgetId: "p2.Administration.Account_Overview.drop_downFilter2",
                                             auto: true,
                                             defaultValue: void 0,
                                             filterOptions: [],
@@ -942,7 +942,7 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                         "attributeType": "Boolean",
                                         "sortable": true,
                                         "filterable": true,
-                                        "dataSourceId": "p4.14",
+                                        "dataSourceId": "p2.14",
                                         "isList": false
                                       }),
                                       "content": void 0,
@@ -961,8 +961,8 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                         /* @__PURE__ */ React.createElement(
                                           $DatagridDropdownFilter,
                                           {
-                                            key: "p4.Administration.Account_Overview.drop_downFilter3",
-                                            $widgetId: "p4.Administration.Account_Overview.drop_downFilter3",
+                                            key: "p2.Administration.Account_Overview.drop_downFilter3",
+                                            $widgetId: "p2.Administration.Account_Overview.drop_downFilter3",
                                             auto: true,
                                             defaultValue: void 0,
                                             filterOptions: [],
@@ -1017,7 +1017,7 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                         "attributeType": "Boolean",
                                         "sortable": true,
                                         "filterable": true,
-                                        "dataSourceId": "p4.14",
+                                        "dataSourceId": "p2.14",
                                         "isList": false
                                       }),
                                       "content": void 0,
@@ -1036,8 +1036,8 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                         /* @__PURE__ */ React.createElement(
                                           $DatagridDropdownFilter,
                                           {
-                                            key: "p4.Administration.Account_Overview.drop_downFilter4",
-                                            $widgetId: "p4.Administration.Account_Overview.drop_downFilter4",
+                                            key: "p2.Administration.Account_Overview.drop_downFilter4",
+                                            $widgetId: "p2.Administration.Account_Overview.drop_downFilter4",
                                             auto: true,
                                             defaultValue: void 0,
                                             filterOptions: [],
@@ -1092,50 +1092,62 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                         "attributeType": "String",
                                         "sortable": true,
                                         "filterable": true,
-                                        "dataSourceId": "p4.14",
+                                        "dataSourceId": "p2.14",
                                         "isList": false
                                       }),
                                       "content": TemplatedWidgetProperty({
-                                        "dataSourceId": "p4.14",
+                                        "dataSourceId": "p2.14",
                                         "editable": false,
                                         "children": () => [
                                           /* @__PURE__ */ React.createElement(
-                                            $ActionButton,
+                                            $ConditionalVisibilityWrapper,
                                             {
-                                              key: "p4.Administration.Account_Overview.actionButton3",
-                                              $widgetId: "p4.Administration.Account_Overview.actionButton3",
-                                              buttonId: "p4.Administration.Account_Overview.actionButton3",
-                                              class: "mx-name-actionButton3 btn-lg",
-                                              style: void 0,
-                                              tabIndex: void 0,
-                                              renderType: "link",
-                                              role: "button",
-                                              buttonClass: "btn-default",
-                                              caption: selectTranslation([
-                                                ExpressionProperty({
-                                                  "expression": { "expr": { "type": "literal", "value": "" }, "args": {} }
-                                                })
-                                              ]),
-                                              tooltip: TextProperty({
-                                                "value": selectTranslation([
-                                                  ""
-                                                ])
+                                              key: "p2.Administration.Account_Overview.actionButton3$visibility",
+                                              $widgetId: "p2.Administration.Account_Overview.actionButton3$visibility",
+                                              visible: ExpressionProperty({
+                                                "expression": { "expr": { "type": "function", "name": "_hasSomeRole", "parameters": [{ "type": "literal", "value": "Administrator" }] }, "args": {} }
                                               }),
-                                              icon: WebIconProperty({
-                                                "icon": { "type": "icon", "iconClass": "mx-icon-filled mx-icon-pencil" }
-                                              }),
-                                              action: ActionProperty({
-                                                "action": { "type": "openPage", "argMap": { "param$Account": { "widget": "p4.Administration.Account_Overview.dataGrid21", "source": "object" } }, "config": { "name": "Administration/Account_Edit.page.xml", "location": "modal", "resizable": true }, "disabledDuringExecution": true },
-                                                "abortOnServerValidation": true
-                                              })
+                                              contents: [
+                                                /* @__PURE__ */ React.createElement(
+                                                  $ActionButton,
+                                                  {
+                                                    key: "p2.Administration.Account_Overview.actionButton3",
+                                                    $widgetId: "p2.Administration.Account_Overview.actionButton3",
+                                                    buttonId: "p2.Administration.Account_Overview.actionButton3",
+                                                    class: "mx-name-actionButton3 btn-lg",
+                                                    style: void 0,
+                                                    tabIndex: void 0,
+                                                    renderType: "link",
+                                                    role: "button",
+                                                    buttonClass: "btn-default",
+                                                    caption: selectTranslation([
+                                                      ExpressionProperty({
+                                                        "expression": { "expr": { "type": "literal", "value": "" }, "args": {} }
+                                                      })
+                                                    ]),
+                                                    tooltip: TextProperty({
+                                                      "value": selectTranslation([
+                                                        ""
+                                                      ])
+                                                    }),
+                                                    icon: WebIconProperty({
+                                                      "icon": { "type": "icon", "iconClass": "mx-icon-filled mx-icon-pencil" }
+                                                    }),
+                                                    action: ActionProperty({
+                                                      "action": { "type": "openPage", "argMap": { "param$Account": { "widget": "p2.Administration.Account_Overview.dataGrid21", "source": "object" } }, "config": { "name": "Administration/Account_Edit.page.xml", "location": "modal", "resizable": true, "allowedRoles": ["Administrator"] }, "disabledDuringExecution": true },
+                                                      "abortOnServerValidation": true
+                                                    })
+                                                  }
+                                                )
+                                              ]
                                             }
                                           ),
                                           /* @__PURE__ */ React.createElement(
                                             $ActionButton,
                                             {
-                                              key: "p4.Administration.Account_Overview.actionButton4",
-                                              $widgetId: "p4.Administration.Account_Overview.actionButton4",
-                                              buttonId: "p4.Administration.Account_Overview.actionButton4",
+                                              key: "p2.Administration.Account_Overview.actionButton4",
+                                              $widgetId: "p2.Administration.Account_Overview.actionButton4",
+                                              buttonId: "p2.Administration.Account_Overview.actionButton4",
                                               class: "mx-name-actionButton4 btn-lg spacing-outer-left-medium",
                                               style: void 0,
                                               tabIndex: void 0,
@@ -1156,7 +1168,7 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                                 "icon": { "type": "icon", "iconClass": "mx-icon-filled mx-icon-trash-can" }
                                               }),
                                               action: ActionProperty({
-                                                "action": { "type": "deleteObject", "argMap": { "$object": { "widget": "p4.Administration.Account_Overview.dataGrid21", "source": "object" } }, "config": { "closePage": false, "operationId": "SPfp4EsyJFC/G161OYF1Cw" }, "disabledDuringExecution": true },
+                                                "action": { "type": "deleteObject", "argMap": { "$object": { "widget": "p2.Administration.Account_Overview.dataGrid21", "source": "object" } }, "config": { "closePage": false, "operationId": "SPfp4EsyJFC/G161OYF1Cw" }, "disabledDuringExecution": true },
                                                 "abortOnServerValidation": true
                                               })
                                             }
@@ -1213,61 +1225,85 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                   filterList: [],
                                   filtersPlaceholder: [
                                     /* @__PURE__ */ React.createElement(
-                                      $ActionButton,
+                                      $ConditionalVisibilityWrapper,
                                       {
-                                        key: "p4.Administration.Account_Overview.actionButton1",
-                                        $widgetId: "p4.Administration.Account_Overview.actionButton1",
-                                        buttonId: "p4.Administration.Account_Overview.actionButton1",
-                                        class: "mx-name-actionButton1 spacing-outer-bottom",
-                                        style: void 0,
-                                        tabIndex: void 0,
-                                        renderType: "button",
-                                        role: void 0,
-                                        buttonClass: "btn-success",
-                                        caption: selectTranslation([
-                                          ExpressionProperty({
-                                            "expression": { "expr": { "type": "literal", "value": "New local user" }, "args": {} }
-                                          })
-                                        ]),
-                                        tooltip: TextProperty({
-                                          "value": selectTranslation([
-                                            ""
-                                          ])
+                                        key: "p2.Administration.Account_Overview.actionButton1$visibility",
+                                        $widgetId: "p2.Administration.Account_Overview.actionButton1$visibility",
+                                        visible: ExpressionProperty({
+                                          "expression": { "expr": { "type": "function", "name": "_hasSomeRole", "parameters": [{ "type": "literal", "value": "Administrator" }] }, "args": {} }
                                         }),
-                                        icon: void 0,
-                                        action: ActionProperty({
-                                          "action": { "type": "callMicroflow", "argMap": {}, "config": { "operationId": "Q1L9db4hbF6hAeX0y9Riyw", "validate": "view" }, "disabledDuringExecution": true },
-                                          "abortOnServerValidation": true
-                                        })
+                                        contents: [
+                                          /* @__PURE__ */ React.createElement(
+                                            $ActionButton,
+                                            {
+                                              key: "p2.Administration.Account_Overview.actionButton1",
+                                              $widgetId: "p2.Administration.Account_Overview.actionButton1",
+                                              buttonId: "p2.Administration.Account_Overview.actionButton1",
+                                              class: "mx-name-actionButton1 spacing-outer-bottom",
+                                              style: void 0,
+                                              tabIndex: void 0,
+                                              renderType: "button",
+                                              role: void 0,
+                                              buttonClass: "btn-success",
+                                              caption: selectTranslation([
+                                                ExpressionProperty({
+                                                  "expression": { "expr": { "type": "literal", "value": "New local user" }, "args": {} }
+                                                })
+                                              ]),
+                                              tooltip: TextProperty({
+                                                "value": selectTranslation([
+                                                  ""
+                                                ])
+                                              }),
+                                              icon: void 0,
+                                              action: ActionProperty({
+                                                "action": { "type": "callMicroflow", "argMap": {}, "config": { "operationId": "Q1L9db4hbF6hAeX0y9Riyw", "validate": "view", "allowedRoles": ["Administrator"] }, "disabledDuringExecution": true },
+                                                "abortOnServerValidation": true
+                                              })
+                                            }
+                                          )
+                                        ]
                                       }
                                     ),
                                     /* @__PURE__ */ React.createElement(
-                                      $ActionButton,
+                                      $ConditionalVisibilityWrapper,
                                       {
-                                        key: "p4.Administration.Account_Overview.actionButton2",
-                                        $widgetId: "p4.Administration.Account_Overview.actionButton2",
-                                        buttonId: "p4.Administration.Account_Overview.actionButton2",
-                                        class: "mx-name-actionButton2 spacing-outer-left spacing-outer-bottom",
-                                        style: void 0,
-                                        tabIndex: void 0,
-                                        renderType: "button",
-                                        role: void 0,
-                                        buttonClass: "btn-default",
-                                        caption: selectTranslation([
-                                          ExpressionProperty({
-                                            "expression": { "expr": { "type": "literal", "value": "New web service user" }, "args": {} }
-                                          })
-                                        ]),
-                                        tooltip: TextProperty({
-                                          "value": selectTranslation([
-                                            ""
-                                          ])
+                                        key: "p2.Administration.Account_Overview.actionButton2$visibility",
+                                        $widgetId: "p2.Administration.Account_Overview.actionButton2$visibility",
+                                        visible: ExpressionProperty({
+                                          "expression": { "expr": { "type": "function", "name": "_hasSomeRole", "parameters": [{ "type": "literal", "value": "Administrator" }] }, "args": {} }
                                         }),
-                                        icon: void 0,
-                                        action: ActionProperty({
-                                          "action": { "type": "callMicroflow", "argMap": {}, "config": { "operationId": "1mx97TyhqVqicxHyTE7eQw", "validate": "view" }, "disabledDuringExecution": true },
-                                          "abortOnServerValidation": true
-                                        })
+                                        contents: [
+                                          /* @__PURE__ */ React.createElement(
+                                            $ActionButton,
+                                            {
+                                              key: "p2.Administration.Account_Overview.actionButton2",
+                                              $widgetId: "p2.Administration.Account_Overview.actionButton2",
+                                              buttonId: "p2.Administration.Account_Overview.actionButton2",
+                                              class: "mx-name-actionButton2 spacing-outer-left spacing-outer-bottom",
+                                              style: void 0,
+                                              tabIndex: void 0,
+                                              renderType: "button",
+                                              role: void 0,
+                                              buttonClass: "btn-default",
+                                              caption: selectTranslation([
+                                                ExpressionProperty({
+                                                  "expression": { "expr": { "type": "literal", "value": "New web service user" }, "args": {} }
+                                                })
+                                              ]),
+                                              tooltip: TextProperty({
+                                                "value": selectTranslation([
+                                                  ""
+                                                ])
+                                              }),
+                                              icon: void 0,
+                                              action: ActionProperty({
+                                                "action": { "type": "callMicroflow", "argMap": {}, "config": { "operationId": "1mx97TyhqVqicxHyTE7eQw", "validate": "view", "allowedRoles": ["Administrator"] }, "disabledDuringExecution": true },
+                                                "abortOnServerValidation": true
+                                              })
+                                            }
+                                          )
+                                        ]
                                       }
                                     )
                                   ],

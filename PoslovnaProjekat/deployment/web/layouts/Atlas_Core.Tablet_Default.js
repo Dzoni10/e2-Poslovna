@@ -16,8 +16,8 @@ import { addEnumerations, asPluginWidgets, t } from "mendix";
 const { $ScrollContainer, $Header, $Title, $Placeholder, $SimpleMenuBar } = asPluginWidgets({ ScrollContainer, Header, Title, Placeholder, SimpleMenuBar });
 
 const region$Main = [
-    <$ScrollContainer key="l19.Atlas_Core.Tablet_Default.layoutContainer"
-        $widgetId="l19.Atlas_Core.Tablet_Default.layoutContainer"
+    <$ScrollContainer key="l21.Atlas_Core.Tablet_Default.layoutContainer"
+        $widgetId="l21.Atlas_Core.Tablet_Default.layoutContainer"
         class={"mx-name-layoutContainer"}
         style={undefined}
         scrollPerRegion={true}
@@ -25,13 +25,13 @@ const region$Main = [
         top={{
             "enabled": true,
             "content": [
-                <$Header key="l19.Atlas_Core.Tablet_Default.header1"
-                    $widgetId="l19.Atlas_Core.Tablet_Default.header1"
+                <$Header key="l21.Atlas_Core.Tablet_Default.header1"
+                    $widgetId="l21.Atlas_Core.Tablet_Default.header1"
                     class={"mx-name-header1"}
                     style={undefined}
                     content={[
-                        <$Title key="l19.4"
-                            $widgetId="l19.4"
+                        <$Title key="l21.4"
+                            $widgetId="l21.4"
                             class={""}
                             style={undefined}
                             caption={ExpressionProperty({
@@ -39,15 +39,15 @@ const region$Main = [
                             })} />
                     ]}
                     leftWidgets={[
-                        <$Placeholder key="l19.Atlas_Core.Tablet_Default.HeaderLeft"
-                            $widgetId="l19.Atlas_Core.Tablet_Default.HeaderLeft"
+                        <$Placeholder key="l21.Atlas_Core.Tablet_Default.HeaderLeft"
+                            $widgetId="l21.Atlas_Core.Tablet_Default.HeaderLeft"
                             content={PlaceholderProperty({
                                 "id": "Atlas_Core.Tablet_Default.HeaderLeft"
                             })} />
                     ]}
                     rightWidgets={[
-                        <$Placeholder key="l19.Atlas_Core.Tablet_Default.HeaderRight"
-                            $widgetId="l19.Atlas_Core.Tablet_Default.HeaderRight"
+                        <$Placeholder key="l21.Atlas_Core.Tablet_Default.HeaderRight"
+                            $widgetId="l21.Atlas_Core.Tablet_Default.HeaderRight"
                             content={PlaceholderProperty({
                                 "id": "Atlas_Core.Tablet_Default.HeaderRight"
                             })} />
@@ -59,8 +59,8 @@ const region$Main = [
         bottom={{
             "enabled": true,
             "content": [
-                <$SimpleMenuBar key="l19.Atlas_Core.Tablet_Default.simpleMenuBar1"
-                    $widgetId="l19.Atlas_Core.Tablet_Default.simpleMenuBar1"
+                <$SimpleMenuBar key="l21.Atlas_Core.Tablet_Default.simpleMenuBar1"
+                    $widgetId="l21.Atlas_Core.Tablet_Default.simpleMenuBar1"
                     class={"mx-name-simpleMenuBar1 bottom-nav-text-icons"}
                     style={undefined}
                     menu={[
@@ -122,8 +122,8 @@ const region$Main = [
         }}
         center={{
             "content": [
-                <$Placeholder key="l19.Atlas_Core.Tablet_Default.Main"
-                    $widgetId="l19.Atlas_Core.Tablet_Default.Main"
+                <$Placeholder key="l21.Atlas_Core.Tablet_Default.Main"
+                    $widgetId="l21.Atlas_Core.Tablet_Default.Main"
                     content={PlaceholderProperty({
                         "id": "Atlas_Core.Tablet_Default.Main"
                     })} />
