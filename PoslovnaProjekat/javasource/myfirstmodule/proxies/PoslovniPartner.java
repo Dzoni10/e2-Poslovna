@@ -21,8 +21,7 @@ public class PoslovniPartner implements com.mendix.systemwideinterfaces.core.IEn
 	public enum MemberNames
 	{
 		vrstaPartnera("vrstaPartnera"),
-		PoslovniPartner_Preduzece("MyFirstModule.PoslovniPartner_Preduzece"),
-		PoslovniPartner_RobaIliUsluga("MyFirstModule.PoslovniPartner_RobaIliUsluga");
+		PoslovniPartner_Preduzece("MyFirstModule.PoslovniPartner_Preduzece");
 
 		private final java.lang.String metaName;
 
@@ -173,58 +172,6 @@ public class PoslovniPartner implements com.mendix.systemwideinterfaces.core.IEn
 		} else {
 			getMendixObject().setValue(context, MemberNames.PoslovniPartner_Preduzece.toString(), poslovnipartner_preduzece.getMendixObject().getId());
 		}
-	}
-
-	/**
-	 * @throws com.mendix.core.CoreException
-	 * @return value of PoslovniPartner_RobaIliUsluga
-	 */
-	public final java.util.List<myfirstmodule.proxies.RobaIliUsluga> getPoslovniPartner_RobaIliUsluga() throws com.mendix.core.CoreException
-	{
-		return getPoslovniPartner_RobaIliUsluga(getContext());
-	}
-
-	/**
-	 * @param context
-	 * @return value of PoslovniPartner_RobaIliUsluga
-	 * @throws com.mendix.core.CoreException
-	 */
-	@SuppressWarnings("unchecked")
-	public final java.util.List<myfirstmodule.proxies.RobaIliUsluga> getPoslovniPartner_RobaIliUsluga(com.mendix.systemwideinterfaces.core.IContext context) throws com.mendix.core.CoreException
-	{
-		java.util.List<myfirstmodule.proxies.RobaIliUsluga> result = new java.util.ArrayList<>();
-		Object valueObject = getMendixObject().getValue(context, MemberNames.PoslovniPartner_RobaIliUsluga.toString());
-		if (valueObject == null) {
-			return result;
-		}
-		for (com.mendix.systemwideinterfaces.core.IMendixObject mendixObject : com.mendix.core.Core.retrieveIdList(context, (java.util.List<com.mendix.systemwideinterfaces.core.IMendixIdentifier>) valueObject)) {
-			result.add(myfirstmodule.proxies.RobaIliUsluga.initialize(context, mendixObject));
-		}
-		return result;
-	}
-
-	/**
-	 * Set value of PoslovniPartner_RobaIliUsluga
-	 * @param poslovnipartner_robailiusluga
-	 */
-	public final void setPoslovniPartner_RobaIliUsluga(java.util.List<myfirstmodule.proxies.RobaIliUsluga> poslovnipartner_robailiusluga)
-	{
-		setPoslovniPartner_RobaIliUsluga(getContext(), poslovnipartner_robailiusluga);
-	}
-
-	/**
-	 * Set value of PoslovniPartner_RobaIliUsluga
-	 * @param context
-	 * @param poslovnipartner_robailiusluga
-	 */
-	public final void setPoslovniPartner_RobaIliUsluga(com.mendix.systemwideinterfaces.core.IContext context, java.util.List<myfirstmodule.proxies.RobaIliUsluga> poslovnipartner_robailiusluga)
-	{
-		var identifiers = poslovnipartner_robailiusluga
-			.stream()
-			.map(proxyObject -> proxyObject.getMendixObject().getId())
-			.collect(java.util.stream.Collectors.toList());
-		
-		getMendixObject().setValue(context, MemberNames.PoslovniPartner_RobaIliUsluga.toString(), identifiers);
 	}
 
 	@java.lang.Override

@@ -1,10 +1,10 @@
-import { reactExports, asPluginWidgets, selectTranslation } from '../index-BEJ1cYf_.js';
-import { PageFragment, ExpressionProperty } from '../ScrollContainer-T_87vxEU.js';
-import { WebStaticImageProperty } from '../WebStaticImageProperty-B-d3FKAx.js';
-import { ImageWidgetModule, Container, Text } from '../Image-BnSXKlV8.js';
-import { Div } from '../Div-BjJtHDbv.js';
-import { content as content$1 } from '../Atlas_Core.PopupLayout-UMcWk5Qe.js';
-import '../InlineText-BN7qT_GR.js';
+import { reactExports, asPluginWidgets, selectTranslation } from '../index-DZt3m621.js';
+import { PageFragment, ExpressionProperty } from '../ScrollContainer-7frAKGuI.js';
+import { WebStaticImageProperty } from '../WebStaticImageProperty-D06_LAui.js';
+import { ImageWidgetModule, Container, Text } from '../Image-B1CdR09q.js';
+import { Div } from '../Div-CyIrW3s-.js';
+import { content as content$1 } from '../Atlas_Core.PopupLayout-CjwEn0XB.js';
+import '../InlineText-Bj8eFZTT.js';
 
 const React = { createElement: reactExports.createElement };
 const Image = Object.getOwnPropertyDescriptor(ImageWidgetModule, "Image")?.value || Object.getOwnPropertyDescriptor(ImageWidgetModule, "default")?.value;

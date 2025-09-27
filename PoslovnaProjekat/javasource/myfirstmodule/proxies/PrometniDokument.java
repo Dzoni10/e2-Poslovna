@@ -25,11 +25,10 @@ public class PrometniDokument implements com.mendix.systemwideinterfaces.core.IE
 		datumKnjizenja("datumKnjizenja"),
 		status("status"),
 		vrstaDokumenta("vrstaDokumenta"),
-		PrometniDokument_RobaIliUsluga("MyFirstModule.PrometniDokument_RobaIliUsluga"),
 		PrometniDokument_PoslovnaGodina("MyFirstModule.PrometniDokument_PoslovnaGodina"),
-		PrometniDokument_PoslovniPartner("MyFirstModule.PrometniDokument_PoslovniPartner"),
 		PrometniDokument_Magacin("MyFirstModule.PrometniDokument_Magacin"),
-		PrometniDokument_Magacin_2("MyFirstModule.PrometniDokument_Magacin_2");
+		PrometniDokument_Magacin_2("MyFirstModule.PrometniDokument_Magacin_2"),
+		PrometniDokument_PoslovniPartner("MyFirstModule.PrometniDokument_PoslovniPartner");
 
 		private final java.lang.String metaName;
 
@@ -290,53 +289,6 @@ public class PrometniDokument implements com.mendix.systemwideinterfaces.core.IE
 
 	/**
 	 * @throws com.mendix.core.CoreException
-	 * @return value of PrometniDokument_RobaIliUsluga
-	 */
-	public final myfirstmodule.proxies.RobaIliUsluga getPrometniDokument_RobaIliUsluga() throws com.mendix.core.CoreException
-	{
-		return getPrometniDokument_RobaIliUsluga(getContext());
-	}
-
-	/**
-	 * @param context
-	 * @return value of PrometniDokument_RobaIliUsluga
-	 * @throws com.mendix.core.CoreException
-	 */
-	public final myfirstmodule.proxies.RobaIliUsluga getPrometniDokument_RobaIliUsluga(com.mendix.systemwideinterfaces.core.IContext context) throws com.mendix.core.CoreException
-	{
-		myfirstmodule.proxies.RobaIliUsluga result = null;
-		com.mendix.systemwideinterfaces.core.IMendixIdentifier identifier = getMendixObject().getValue(context, MemberNames.PrometniDokument_RobaIliUsluga.toString());
-		if (identifier != null) {
-			result = myfirstmodule.proxies.RobaIliUsluga.load(context, identifier);
-		}
-		return result;
-	}
-
-	/**
-	 * Set value of PrometniDokument_RobaIliUsluga
-	 * @param prometnidokument_robailiusluga
-	 */
-	public final void setPrometniDokument_RobaIliUsluga(myfirstmodule.proxies.RobaIliUsluga prometnidokument_robailiusluga)
-	{
-		setPrometniDokument_RobaIliUsluga(getContext(), prometnidokument_robailiusluga);
-	}
-
-	/**
-	 * Set value of PrometniDokument_RobaIliUsluga
-	 * @param context
-	 * @param prometnidokument_robailiusluga
-	 */
-	public final void setPrometniDokument_RobaIliUsluga(com.mendix.systemwideinterfaces.core.IContext context, myfirstmodule.proxies.RobaIliUsluga prometnidokument_robailiusluga)
-	{
-		if (prometnidokument_robailiusluga == null) {
-			getMendixObject().setValue(context, MemberNames.PrometniDokument_RobaIliUsluga.toString(), null);
-		} else {
-			getMendixObject().setValue(context, MemberNames.PrometniDokument_RobaIliUsluga.toString(), prometnidokument_robailiusluga.getMendixObject().getId());
-		}
-	}
-
-	/**
-	 * @throws com.mendix.core.CoreException
 	 * @return value of PrometniDokument_PoslovnaGodina
 	 */
 	public final myfirstmodule.proxies.PoslovnaGodina getPrometniDokument_PoslovnaGodina() throws com.mendix.core.CoreException
@@ -380,58 +332,6 @@ public class PrometniDokument implements com.mendix.systemwideinterfaces.core.IE
 		} else {
 			getMendixObject().setValue(context, MemberNames.PrometniDokument_PoslovnaGodina.toString(), prometnidokument_poslovnagodina.getMendixObject().getId());
 		}
-	}
-
-	/**
-	 * @throws com.mendix.core.CoreException
-	 * @return value of PrometniDokument_PoslovniPartner
-	 */
-	public final java.util.List<myfirstmodule.proxies.PoslovniPartner> getPrometniDokument_PoslovniPartner() throws com.mendix.core.CoreException
-	{
-		return getPrometniDokument_PoslovniPartner(getContext());
-	}
-
-	/**
-	 * @param context
-	 * @return value of PrometniDokument_PoslovniPartner
-	 * @throws com.mendix.core.CoreException
-	 */
-	@SuppressWarnings("unchecked")
-	public final java.util.List<myfirstmodule.proxies.PoslovniPartner> getPrometniDokument_PoslovniPartner(com.mendix.systemwideinterfaces.core.IContext context) throws com.mendix.core.CoreException
-	{
-		java.util.List<myfirstmodule.proxies.PoslovniPartner> result = new java.util.ArrayList<>();
-		Object valueObject = getMendixObject().getValue(context, MemberNames.PrometniDokument_PoslovniPartner.toString());
-		if (valueObject == null) {
-			return result;
-		}
-		for (com.mendix.systemwideinterfaces.core.IMendixObject mendixObject : com.mendix.core.Core.retrieveIdList(context, (java.util.List<com.mendix.systemwideinterfaces.core.IMendixIdentifier>) valueObject)) {
-			result.add(myfirstmodule.proxies.PoslovniPartner.initialize(context, mendixObject));
-		}
-		return result;
-	}
-
-	/**
-	 * Set value of PrometniDokument_PoslovniPartner
-	 * @param prometnidokument_poslovnipartner
-	 */
-	public final void setPrometniDokument_PoslovniPartner(java.util.List<myfirstmodule.proxies.PoslovniPartner> prometnidokument_poslovnipartner)
-	{
-		setPrometniDokument_PoslovniPartner(getContext(), prometnidokument_poslovnipartner);
-	}
-
-	/**
-	 * Set value of PrometniDokument_PoslovniPartner
-	 * @param context
-	 * @param prometnidokument_poslovnipartner
-	 */
-	public final void setPrometniDokument_PoslovniPartner(com.mendix.systemwideinterfaces.core.IContext context, java.util.List<myfirstmodule.proxies.PoslovniPartner> prometnidokument_poslovnipartner)
-	{
-		var identifiers = prometnidokument_poslovnipartner
-			.stream()
-			.map(proxyObject -> proxyObject.getMendixObject().getId())
-			.collect(java.util.stream.Collectors.toList());
-		
-		getMendixObject().setValue(context, MemberNames.PrometniDokument_PoslovniPartner.toString(), identifiers);
 	}
 
 	/**
@@ -525,6 +425,53 @@ public class PrometniDokument implements com.mendix.systemwideinterfaces.core.IE
 			getMendixObject().setValue(context, MemberNames.PrometniDokument_Magacin_2.toString(), null);
 		} else {
 			getMendixObject().setValue(context, MemberNames.PrometniDokument_Magacin_2.toString(), prometnidokument_magacin_2.getMendixObject().getId());
+		}
+	}
+
+	/**
+	 * @throws com.mendix.core.CoreException
+	 * @return value of PrometniDokument_PoslovniPartner
+	 */
+	public final myfirstmodule.proxies.PoslovniPartner getPrometniDokument_PoslovniPartner() throws com.mendix.core.CoreException
+	{
+		return getPrometniDokument_PoslovniPartner(getContext());
+	}
+
+	/**
+	 * @param context
+	 * @return value of PrometniDokument_PoslovniPartner
+	 * @throws com.mendix.core.CoreException
+	 */
+	public final myfirstmodule.proxies.PoslovniPartner getPrometniDokument_PoslovniPartner(com.mendix.systemwideinterfaces.core.IContext context) throws com.mendix.core.CoreException
+	{
+		myfirstmodule.proxies.PoslovniPartner result = null;
+		com.mendix.systemwideinterfaces.core.IMendixIdentifier identifier = getMendixObject().getValue(context, MemberNames.PrometniDokument_PoslovniPartner.toString());
+		if (identifier != null) {
+			result = myfirstmodule.proxies.PoslovniPartner.load(context, identifier);
+		}
+		return result;
+	}
+
+	/**
+	 * Set value of PrometniDokument_PoslovniPartner
+	 * @param prometnidokument_poslovnipartner
+	 */
+	public final void setPrometniDokument_PoslovniPartner(myfirstmodule.proxies.PoslovniPartner prometnidokument_poslovnipartner)
+	{
+		setPrometniDokument_PoslovniPartner(getContext(), prometnidokument_poslovnipartner);
+	}
+
+	/**
+	 * Set value of PrometniDokument_PoslovniPartner
+	 * @param context
+	 * @param prometnidokument_poslovnipartner
+	 */
+	public final void setPrometniDokument_PoslovniPartner(com.mendix.systemwideinterfaces.core.IContext context, myfirstmodule.proxies.PoslovniPartner prometnidokument_poslovnipartner)
+	{
+		if (prometnidokument_poslovnipartner == null) {
+			getMendixObject().setValue(context, MemberNames.PrometniDokument_PoslovniPartner.toString(), null);
+		} else {
+			getMendixObject().setValue(context, MemberNames.PrometniDokument_PoslovniPartner.toString(), prometnidokument_poslovnipartner.getMendixObject().getId());
 		}
 	}
 

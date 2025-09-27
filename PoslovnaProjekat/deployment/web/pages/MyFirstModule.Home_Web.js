@@ -14,30 +14,30 @@ import { content as parentContent } from "../layouts/Atlas_Core.Atlas_Default.js
 const { $Container, $Div, $Text } = asPluginWidgets({ Container, Div, Text });
 
 const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
-    <$Container key="p20.MyFirstModule.Home_Web.container1"
-        $widgetId="p20.MyFirstModule.Home_Web.container1"
+    <$Container key="p26.MyFirstModule.Home_Web.container1"
+        $widgetId="p26.MyFirstModule.Home_Web.container1"
         class={"mx-name-container1 pageheader"}
         style={undefined}
         renderMode={"div"}
         onClick={undefined}
         content={[
-            <$Div key="p20.MyFirstModule.Home_Web.layoutGrid2"
-                $widgetId="p20.MyFirstModule.Home_Web.layoutGrid2"
+            <$Div key="p26.MyFirstModule.Home_Web.layoutGrid2"
+                $widgetId="p26.MyFirstModule.Home_Web.layoutGrid2"
                 class={"mx-name-layoutGrid2 mx-layoutgrid mx-layoutgrid-fluid container-fluid"}
                 style={undefined}
                 content={[
-                    <$Div key="p20.MyFirstModule.Home_Web.layoutGrid2$row0"
-                        $widgetId="p20.MyFirstModule.Home_Web.layoutGrid2$row0"
+                    <$Div key="p26.MyFirstModule.Home_Web.layoutGrid2$row0"
+                        $widgetId="p26.MyFirstModule.Home_Web.layoutGrid2$row0"
                         class={"row"}
                         style={undefined}
                         content={[
-                            <$Div key="p20.MyFirstModule.Home_Web.layoutGrid2$row0$column0"
-                                $widgetId="p20.MyFirstModule.Home_Web.layoutGrid2$row0$column0"
+                            <$Div key="p26.MyFirstModule.Home_Web.layoutGrid2$row0$column0"
+                                $widgetId="p26.MyFirstModule.Home_Web.layoutGrid2$row0$column0"
                                 class={"col-lg col-md col"}
                                 style={undefined}
                                 content={[
-                                    <$Text key="p20.MyFirstModule.Home_Web.text1"
-                                        $widgetId="p20.MyFirstModule.Home_Web.text1"
+                                    <$Text key="p26.MyFirstModule.Home_Web.text1"
+                                        $widgetId="p26.MyFirstModule.Home_Web.text1"
                                         class={"mx-name-text1 pageheader-title spacing-outer-bottom"}
                                         style={undefined}
                                         caption={t([
@@ -46,8 +46,8 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                             })
                                         ])}
                                         renderMode={"h3"} />,
-                                    <$Text key="p20.MyFirstModule.Home_Web.text3"
-                                        $widgetId="p20.MyFirstModule.Home_Web.text3"
+                                    <$Text key="p26.MyFirstModule.Home_Web.text3"
+                                        $widgetId="p26.MyFirstModule.Home_Web.text3"
                                         class={"mx-name-text3 pageheader-subtitle text-detail"}
                                         style={undefined}
                                         caption={t([
@@ -61,18 +61,18 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                 ]} />
         ]}
         ariaHidden={false} />,
-    <$Div key="p20.MyFirstModule.Home_Web.layoutGrid1"
-        $widgetId="p20.MyFirstModule.Home_Web.layoutGrid1"
+    <$Div key="p26.MyFirstModule.Home_Web.layoutGrid1"
+        $widgetId="p26.MyFirstModule.Home_Web.layoutGrid1"
         class={"mx-name-layoutGrid1 mx-layoutgrid mx-layoutgrid-fluid container-fluid"}
         style={undefined}
         content={[
-            <$Div key="p20.MyFirstModule.Home_Web.layoutGrid1$row0"
-                $widgetId="p20.MyFirstModule.Home_Web.layoutGrid1$row0"
+            <$Div key="p26.MyFirstModule.Home_Web.layoutGrid1$row0"
+                $widgetId="p26.MyFirstModule.Home_Web.layoutGrid1$row0"
                 class={"row"}
                 style={undefined}
                 content={[
-                    <$Div key="p20.MyFirstModule.Home_Web.layoutGrid1$row0$column0"
-                        $widgetId="p20.MyFirstModule.Home_Web.layoutGrid1$row0$column0"
+                    <$Div key="p26.MyFirstModule.Home_Web.layoutGrid1$row0$column0"
+                        $widgetId="p26.MyFirstModule.Home_Web.layoutGrid1$row0$column0"
                         class={"col-lg col-md col"}
                         style={undefined}
                         content={undefined} />

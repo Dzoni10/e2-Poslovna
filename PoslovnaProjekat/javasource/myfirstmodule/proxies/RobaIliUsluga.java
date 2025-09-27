@@ -23,7 +23,7 @@ public class RobaIliUsluga implements com.mendix.systemwideinterfaces.core.IEnti
 		naziv("naziv"),
 		opis("opis"),
 		roba("roba"),
-		PoslovniPartner_RobaIliUsluga("MyFirstModule.PoslovniPartner_RobaIliUsluga");
+		RobaIliUsluga_JedinicaMere("MyFirstModule.RobaIliUsluga_JedinicaMere");
 
 		private final java.lang.String metaName;
 
@@ -194,54 +194,49 @@ public class RobaIliUsluga implements com.mendix.systemwideinterfaces.core.IEnti
 
 	/**
 	 * @throws com.mendix.core.CoreException
-	 * @return value of PoslovniPartner_RobaIliUsluga
+	 * @return value of RobaIliUsluga_JedinicaMere
 	 */
-	public final java.util.List<myfirstmodule.proxies.PoslovniPartner> getPoslovniPartner_RobaIliUsluga() throws com.mendix.core.CoreException
+	public final myfirstmodule.proxies.JedinicaMere getRobaIliUsluga_JedinicaMere() throws com.mendix.core.CoreException
 	{
-		return getPoslovniPartner_RobaIliUsluga(getContext());
+		return getRobaIliUsluga_JedinicaMere(getContext());
 	}
 
 	/**
 	 * @param context
-	 * @return value of PoslovniPartner_RobaIliUsluga
+	 * @return value of RobaIliUsluga_JedinicaMere
 	 * @throws com.mendix.core.CoreException
 	 */
-	@SuppressWarnings("unchecked")
-	public final java.util.List<myfirstmodule.proxies.PoslovniPartner> getPoslovniPartner_RobaIliUsluga(com.mendix.systemwideinterfaces.core.IContext context) throws com.mendix.core.CoreException
+	public final myfirstmodule.proxies.JedinicaMere getRobaIliUsluga_JedinicaMere(com.mendix.systemwideinterfaces.core.IContext context) throws com.mendix.core.CoreException
 	{
-		java.util.List<myfirstmodule.proxies.PoslovniPartner> result = new java.util.ArrayList<>();
-		Object valueObject = getMendixObject().getValue(context, MemberNames.PoslovniPartner_RobaIliUsluga.toString());
-		if (valueObject == null) {
-			return result;
-		}
-		for (com.mendix.systemwideinterfaces.core.IMendixObject mendixObject : com.mendix.core.Core.retrieveIdList(context, (java.util.List<com.mendix.systemwideinterfaces.core.IMendixIdentifier>) valueObject)) {
-			result.add(myfirstmodule.proxies.PoslovniPartner.initialize(context, mendixObject));
+		myfirstmodule.proxies.JedinicaMere result = null;
+		com.mendix.systemwideinterfaces.core.IMendixIdentifier identifier = getMendixObject().getValue(context, MemberNames.RobaIliUsluga_JedinicaMere.toString());
+		if (identifier != null) {
+			result = myfirstmodule.proxies.JedinicaMere.load(context, identifier);
 		}
 		return result;
 	}
 
 	/**
-	 * Set value of PoslovniPartner_RobaIliUsluga
-	 * @param poslovnipartner_robailiusluga
+	 * Set value of RobaIliUsluga_JedinicaMere
+	 * @param robailiusluga_jedinicamere
 	 */
-	public final void setPoslovniPartner_RobaIliUsluga(java.util.List<myfirstmodule.proxies.PoslovniPartner> poslovnipartner_robailiusluga)
+	public final void setRobaIliUsluga_JedinicaMere(myfirstmodule.proxies.JedinicaMere robailiusluga_jedinicamere)
 	{
-		setPoslovniPartner_RobaIliUsluga(getContext(), poslovnipartner_robailiusluga);
+		setRobaIliUsluga_JedinicaMere(getContext(), robailiusluga_jedinicamere);
 	}
 
 	/**
-	 * Set value of PoslovniPartner_RobaIliUsluga
+	 * Set value of RobaIliUsluga_JedinicaMere
 	 * @param context
-	 * @param poslovnipartner_robailiusluga
+	 * @param robailiusluga_jedinicamere
 	 */
-	public final void setPoslovniPartner_RobaIliUsluga(com.mendix.systemwideinterfaces.core.IContext context, java.util.List<myfirstmodule.proxies.PoslovniPartner> poslovnipartner_robailiusluga)
+	public final void setRobaIliUsluga_JedinicaMere(com.mendix.systemwideinterfaces.core.IContext context, myfirstmodule.proxies.JedinicaMere robailiusluga_jedinicamere)
 	{
-		var identifiers = poslovnipartner_robailiusluga
-			.stream()
-			.map(proxyObject -> proxyObject.getMendixObject().getId())
-			.collect(java.util.stream.Collectors.toList());
-		
-		getMendixObject().setValue(context, MemberNames.PoslovniPartner_RobaIliUsluga.toString(), identifiers);
+		if (robailiusluga_jedinicamere == null) {
+			getMendixObject().setValue(context, MemberNames.RobaIliUsluga_JedinicaMere.toString(), null);
+		} else {
+			getMendixObject().setValue(context, MemberNames.RobaIliUsluga_JedinicaMere.toString(), robailiusluga_jedinicamere.getMendixObject().getId());
+		}
 	}
 
 	@java.lang.Override

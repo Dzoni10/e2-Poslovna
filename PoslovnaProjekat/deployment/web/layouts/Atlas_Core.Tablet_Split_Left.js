@@ -16,8 +16,8 @@ import { addEnumerations, asPluginWidgets, t } from "mendix";
 const { $ScrollContainer, $Header, $Title, $Placeholder, $SimpleMenuBar } = asPluginWidgets({ ScrollContainer, Header, Title, Placeholder, SimpleMenuBar });
 
 const region$Main = [
-    <$ScrollContainer key="l16.Atlas_Core.Tablet_Split_Left.layoutContainer"
-        $widgetId="l16.Atlas_Core.Tablet_Split_Left.layoutContainer"
+    <$ScrollContainer key="l20.Atlas_Core.Tablet_Split_Left.layoutContainer"
+        $widgetId="l20.Atlas_Core.Tablet_Split_Left.layoutContainer"
         class={"mx-name-layoutContainer"}
         style={undefined}
         scrollPerRegion={true}
@@ -25,13 +25,13 @@ const region$Main = [
         top={{
             "enabled": true,
             "content": [
-                <$Header key="l16.Atlas_Core.Tablet_Split_Left.header1"
-                    $widgetId="l16.Atlas_Core.Tablet_Split_Left.header1"
+                <$Header key="l20.Atlas_Core.Tablet_Split_Left.header1"
+                    $widgetId="l20.Atlas_Core.Tablet_Split_Left.header1"
                     class={"mx-name-header1"}
                     style={undefined}
                     content={[
-                        <$Title key="l16.4"
-                            $widgetId="l16.4"
+                        <$Title key="l20.4"
+                            $widgetId="l20.4"
                             class={""}
                             style={undefined}
                             caption={ExpressionProperty({
@@ -39,15 +39,15 @@ const region$Main = [
                             })} />
                     ]}
                     leftWidgets={[
-                        <$Placeholder key="l16.Atlas_Core.Tablet_Split_Left.HeaderLeft"
-                            $widgetId="l16.Atlas_Core.Tablet_Split_Left.HeaderLeft"
+                        <$Placeholder key="l20.Atlas_Core.Tablet_Split_Left.HeaderLeft"
+                            $widgetId="l20.Atlas_Core.Tablet_Split_Left.HeaderLeft"
                             content={PlaceholderProperty({
                                 "id": "Atlas_Core.Tablet_Split_Left.HeaderLeft"
                             })} />
                     ]}
                     rightWidgets={[
-                        <$Placeholder key="l16.Atlas_Core.Tablet_Split_Left.HeaderRight"
-                            $widgetId="l16.Atlas_Core.Tablet_Split_Left.HeaderRight"
+                        <$Placeholder key="l20.Atlas_Core.Tablet_Split_Left.HeaderRight"
+                            $widgetId="l20.Atlas_Core.Tablet_Split_Left.HeaderRight"
                             content={PlaceholderProperty({
                                 "id": "Atlas_Core.Tablet_Split_Left.HeaderRight"
                             })} />
@@ -59,8 +59,8 @@ const region$Main = [
         bottom={{
             "enabled": true,
             "content": [
-                <$SimpleMenuBar key="l16.Atlas_Core.Tablet_Split_Left.simpleMenuBar1"
-                    $widgetId="l16.Atlas_Core.Tablet_Split_Left.simpleMenuBar1"
+                <$SimpleMenuBar key="l20.Atlas_Core.Tablet_Split_Left.simpleMenuBar1"
+                    $widgetId="l20.Atlas_Core.Tablet_Split_Left.simpleMenuBar1"
                     class={"mx-name-simpleMenuBar1 bottom-nav-text-icons"}
                     style={undefined}
                     menu={[
@@ -117,8 +117,8 @@ const region$Main = [
         left={{
             "enabled": true,
             "content": [
-                <$Placeholder key="l16.Atlas_Core.Tablet_Split_Left.Left"
-                    $widgetId="l16.Atlas_Core.Tablet_Split_Left.Left"
+                <$Placeholder key="l20.Atlas_Core.Tablet_Split_Left.Left"
+                    $widgetId="l20.Atlas_Core.Tablet_Split_Left.Left"
                     content={PlaceholderProperty({
                         "id": "Atlas_Core.Tablet_Split_Left.Left"
                     })} />
@@ -134,8 +134,8 @@ const region$Main = [
         }}
         center={{
             "content": [
-                <$Placeholder key="l16.Atlas_Core.Tablet_Split_Left.Main"
-                    $widgetId="l16.Atlas_Core.Tablet_Split_Left.Main"
+                <$Placeholder key="l20.Atlas_Core.Tablet_Split_Left.Main"
+                    $widgetId="l20.Atlas_Core.Tablet_Split_Left.Main"
                     content={PlaceholderProperty({
                         "id": "Atlas_Core.Tablet_Split_Left.Main"
                     })} />

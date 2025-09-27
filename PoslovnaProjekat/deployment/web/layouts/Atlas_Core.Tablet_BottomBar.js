@@ -13,8 +13,8 @@ import { addEnumerations, asPluginWidgets, t } from "mendix";
 const { $ScrollContainer, $SimpleMenuBar, $Placeholder } = asPluginWidgets({ ScrollContainer, SimpleMenuBar, Placeholder });
 
 const region$Main = [
-    <$ScrollContainer key="l14.Atlas_Core.Tablet_BottomBar.layoutContainer"
-        $widgetId="l14.Atlas_Core.Tablet_BottomBar.layoutContainer"
+    <$ScrollContainer key="l18.Atlas_Core.Tablet_BottomBar.layoutContainer"
+        $widgetId="l18.Atlas_Core.Tablet_BottomBar.layoutContainer"
         class={"mx-name-layoutContainer"}
         style={undefined}
         scrollPerRegion={true}
@@ -25,8 +25,8 @@ const region$Main = [
         bottom={{
             "enabled": true,
             "content": [
-                <$SimpleMenuBar key="l14.Atlas_Core.Tablet_BottomBar.simpleMenuBar1"
-                    $widgetId="l14.Atlas_Core.Tablet_BottomBar.simpleMenuBar1"
+                <$SimpleMenuBar key="l18.Atlas_Core.Tablet_BottomBar.simpleMenuBar1"
+                    $widgetId="l18.Atlas_Core.Tablet_BottomBar.simpleMenuBar1"
                     class={"mx-name-simpleMenuBar1 bottom-nav-text-icons"}
                     style={undefined}
                     menu={[
@@ -88,8 +88,8 @@ const region$Main = [
         }}
         center={{
             "content": [
-                <$Placeholder key="l14.Atlas_Core.Tablet_BottomBar.Main"
-                    $widgetId="l14.Atlas_Core.Tablet_BottomBar.Main"
+                <$Placeholder key="l18.Atlas_Core.Tablet_BottomBar.Main"
+                    $widgetId="l18.Atlas_Core.Tablet_BottomBar.Main"
                     content={PlaceholderProperty({
                         "id": "Atlas_Core.Tablet_BottomBar.Main"
                     })} />

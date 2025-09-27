@@ -21,8 +21,7 @@ public class JedinicaMere implements com.mendix.systemwideinterfaces.core.IEntit
 	public enum MemberNames
 	{
 		nazivJedinice("nazivJedinice"),
-		skraceniNaziv("skraceniNaziv"),
-		JedinicaMere_RobaIliUsluga("MyFirstModule.JedinicaMere_RobaIliUsluga");
+		skraceniNaziv("skraceniNaziv");
 
 		private final java.lang.String metaName;
 
@@ -153,53 +152,6 @@ public class JedinicaMere implements com.mendix.systemwideinterfaces.core.IEntit
 	public final void setskraceniNaziv(com.mendix.systemwideinterfaces.core.IContext context, java.lang.String skraceninaziv)
 	{
 		getMendixObject().setValue(context, MemberNames.skraceniNaziv.toString(), skraceninaziv);
-	}
-
-	/**
-	 * @throws com.mendix.core.CoreException
-	 * @return value of JedinicaMere_RobaIliUsluga
-	 */
-	public final myfirstmodule.proxies.RobaIliUsluga getJedinicaMere_RobaIliUsluga() throws com.mendix.core.CoreException
-	{
-		return getJedinicaMere_RobaIliUsluga(getContext());
-	}
-
-	/**
-	 * @param context
-	 * @return value of JedinicaMere_RobaIliUsluga
-	 * @throws com.mendix.core.CoreException
-	 */
-	public final myfirstmodule.proxies.RobaIliUsluga getJedinicaMere_RobaIliUsluga(com.mendix.systemwideinterfaces.core.IContext context) throws com.mendix.core.CoreException
-	{
-		myfirstmodule.proxies.RobaIliUsluga result = null;
-		com.mendix.systemwideinterfaces.core.IMendixIdentifier identifier = getMendixObject().getValue(context, MemberNames.JedinicaMere_RobaIliUsluga.toString());
-		if (identifier != null) {
-			result = myfirstmodule.proxies.RobaIliUsluga.load(context, identifier);
-		}
-		return result;
-	}
-
-	/**
-	 * Set value of JedinicaMere_RobaIliUsluga
-	 * @param jedinicamere_robailiusluga
-	 */
-	public final void setJedinicaMere_RobaIliUsluga(myfirstmodule.proxies.RobaIliUsluga jedinicamere_robailiusluga)
-	{
-		setJedinicaMere_RobaIliUsluga(getContext(), jedinicamere_robailiusluga);
-	}
-
-	/**
-	 * Set value of JedinicaMere_RobaIliUsluga
-	 * @param context
-	 * @param jedinicamere_robailiusluga
-	 */
-	public final void setJedinicaMere_RobaIliUsluga(com.mendix.systemwideinterfaces.core.IContext context, myfirstmodule.proxies.RobaIliUsluga jedinicamere_robailiusluga)
-	{
-		if (jedinicamere_robailiusluga == null) {
-			getMendixObject().setValue(context, MemberNames.JedinicaMere_RobaIliUsluga.toString(), null);
-		} else {
-			getMendixObject().setValue(context, MemberNames.JedinicaMere_RobaIliUsluga.toString(), jedinicamere_robailiusluga.getMendixObject().getId());
-		}
 	}
 
 	@java.lang.Override
