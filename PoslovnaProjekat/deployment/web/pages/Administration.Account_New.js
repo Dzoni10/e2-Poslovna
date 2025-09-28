@@ -31,28 +31,28 @@ import { content as parentContent } from "../layouts/Atlas_Core.PopupLayout.js";
 const { $Div, $DataView, $FormGroup, $TextBox, $Combobox, $CheckBox, $ConditionalVisibilityWrapper, $ActionButton } = asPluginWidgets({ Div, DataView, FormGroup, TextBox, Combobox, CheckBox, ConditionalVisibilityWrapper, ActionButton });
 
 const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
-    <$Div key="p0.Administration.Account_New.layoutGrid1"
-        $widgetId="p0.Administration.Account_New.layoutGrid1"
+    <$Div key="p7.Administration.Account_New.layoutGrid1"
+        $widgetId="p7.Administration.Account_New.layoutGrid1"
         class={"mx-name-layoutGrid1 mx-layoutgrid mx-layoutgrid-fluid container-fluid"}
         style={undefined}
         content={[
-            <$Div key="p0.Administration.Account_New.layoutGrid1$row0"
-                $widgetId="p0.Administration.Account_New.layoutGrid1$row0"
+            <$Div key="p7.Administration.Account_New.layoutGrid1$row0"
+                $widgetId="p7.Administration.Account_New.layoutGrid1$row0"
                 class={"row"}
                 style={undefined}
                 content={[
-                    <$Div key="p0.Administration.Account_New.layoutGrid1$row0$column0"
-                        $widgetId="p0.Administration.Account_New.layoutGrid1$row0$column0"
+                    <$Div key="p7.Administration.Account_New.layoutGrid1$row0$column0"
+                        $widgetId="p7.Administration.Account_New.layoutGrid1$row0$column0"
                         class={"col-lg col-md col"}
                         style={undefined}
                         content={[
-                            <$DataView key="p0.Administration.Account_New.dataView2"
-                                $widgetId="p0.Administration.Account_New.dataView2"
+                            <$DataView key="p7.Administration.Account_New.dataView2"
+                                $widgetId="p7.Administration.Account_New.dataView2"
                                 class={"mx-name-dataView2 form-horizontal"}
                                 style={undefined}
                                 tabIndex={undefined}
                                 object={AssociationObjectProperty({
-                                    "dataSourceId": "p0.15",
+                                    "dataSourceId": "p7.15",
                                     "scope": "$AccountPasswordData",
                                     "editable": true
                                 })}
@@ -62,13 +62,13 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                     ])
                                 })}
                                 body={[
-                                    <$DataView key="p0.Administration.Account_New.dataView1"
-                                        $widgetId="p0.Administration.Account_New.dataView1"
+                                    <$DataView key="p7.Administration.Account_New.dataView1"
+                                        $widgetId="p7.Administration.Account_New.dataView1"
                                         class={"mx-name-dataView1 form-horizontal"}
                                         style={undefined}
                                         tabIndex={undefined}
                                         object={AssociationObjectProperty({
-                                            "dataSourceId": "p0.18",
+                                            "dataSourceId": "p7.18",
                                             "scope": "$AccountPasswordData",
                                             "editable": true,
                                             "path": "Administration.AccountPasswordData_Account/Administration.Account",
@@ -80,15 +80,15 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                             ])
                                         })}
                                         body={[
-                                            <$FormGroup key="p0.Administration.Account_New.textBox6$formGroup"
-                                                $widgetId="p0.Administration.Account_New.textBox6$formGroup"
+                                            <$FormGroup key="p7.Administration.Account_New.textBox6$formGroup"
+                                                $widgetId="p7.Administration.Account_New.textBox6$formGroup"
                                                 class={"mx-name-textBox6 mx-textbox"}
                                                 style={undefined}
                                                 control={[
-                                                    <$TextBox key="p0.Administration.Account_New.textBox6"
-                                                        $widgetId="p0.Administration.Account_New.textBox6"
+                                                    <$TextBox key="p7.Administration.Account_New.textBox6"
+                                                        $widgetId="p7.Administration.Account_New.textBox6"
                                                         inputValue={AttributeProperty({
-                                                            "scope": "p0.Administration.Account_New.dataView1",
+                                                            "scope": "p7.Administration.Account_New.dataView1",
                                                             "path": "",
                                                             "entity": "Administration.Account",
                                                             "attribute": "FullName",
@@ -116,7 +116,7 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                                         ariaRequired={undefined}
                                                         tabIndex={undefined}
                                                         id={DerivedUniqueIdProperty({
-                                                            "widgetId": "p0.Administration.Account_New.textBox6"
+                                                            "widgetId": "p7.Administration.Account_New.textBox6"
                                                         })} />
                                                 ]}
                                                 caption={t([
@@ -125,22 +125,22 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                                     })
                                                 ])}
                                                 labelFor={DerivedUniqueIdProperty({
-                                                    "widgetId": "p0.Administration.Account_New.textBox6"
+                                                    "widgetId": "p7.Administration.Account_New.textBox6"
                                                 })}
                                                 width={3}
                                                 orientation={"horizontal"}
                                                 hasError={ValidationProperty({
-                                                    "inputWidgetId": "p0.Administration.Account_New.textBox6"
+                                                    "inputWidgetId": "p7.Administration.Account_New.textBox6"
                                                 })} />,
-                                            <$FormGroup key="p0.Administration.Account_New.textBox9$formGroup"
-                                                $widgetId="p0.Administration.Account_New.textBox9$formGroup"
+                                            <$FormGroup key="p7.Administration.Account_New.textBox9$formGroup"
+                                                $widgetId="p7.Administration.Account_New.textBox9$formGroup"
                                                 class={"mx-name-textBox9 mx-textbox"}
                                                 style={undefined}
                                                 control={[
-                                                    <$TextBox key="p0.Administration.Account_New.textBox9"
-                                                        $widgetId="p0.Administration.Account_New.textBox9"
+                                                    <$TextBox key="p7.Administration.Account_New.textBox9"
+                                                        $widgetId="p7.Administration.Account_New.textBox9"
                                                         inputValue={AttributeProperty({
-                                                            "scope": "p0.Administration.Account_New.dataView1",
+                                                            "scope": "p7.Administration.Account_New.dataView1",
                                                             "path": "",
                                                             "entity": "Administration.Account",
                                                             "attribute": "Name",
@@ -168,7 +168,7 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                                         ariaRequired={undefined}
                                                         tabIndex={undefined}
                                                         id={DerivedUniqueIdProperty({
-                                                            "widgetId": "p0.Administration.Account_New.textBox9"
+                                                            "widgetId": "p7.Administration.Account_New.textBox9"
                                                         })} />
                                                 ]}
                                                 caption={t([
@@ -177,20 +177,20 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                                     })
                                                 ])}
                                                 labelFor={DerivedUniqueIdProperty({
-                                                    "widgetId": "p0.Administration.Account_New.textBox9"
+                                                    "widgetId": "p7.Administration.Account_New.textBox9"
                                                 })}
                                                 width={3}
                                                 orientation={"horizontal"}
                                                 hasError={ValidationProperty({
-                                                    "inputWidgetId": "p0.Administration.Account_New.textBox9"
+                                                    "inputWidgetId": "p7.Administration.Account_New.textBox9"
                                                 })} />,
-                                            <$FormGroup key="p0.Administration.Account_New.comboBox1$formGroup"
-                                                $widgetId="p0.Administration.Account_New.comboBox1$formGroup"
+                                            <$FormGroup key="p7.Administration.Account_New.comboBox1$formGroup"
+                                                $widgetId="p7.Administration.Account_New.comboBox1$formGroup"
                                                 class={"mx-name-comboBox1"}
                                                 style={undefined}
                                                 control={[
-                                                    <$Combobox key="p0.Administration.Account_New.comboBox1"
-                                                        $widgetId="p0.Administration.Account_New.comboBox1"
+                                                    <$Combobox key="p7.Administration.Account_New.comboBox1"
+                                                        $widgetId="p7.Administration.Account_New.comboBox1"
                                                         optionsSourceType={"association"}
                                                         attributeAssociation={AssociationProperty({
                                                             "type": "ReferenceSet",
@@ -198,14 +198,14 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                                             "path": "",
                                                             "attribute": "System.UserRoles",
                                                             "endpointEntity": "System.UserRole",
-                                                            "selectableObjectsId": "p0.0",
-                                                            "scope": "p0.Administration.Account_New.dataView1",
+                                                            "selectableObjectsId": "p7.0",
+                                                            "scope": "p7.Administration.Account_New.dataView1",
                                                             "onChange": { "type": "doNothing", "argMap": {}, "config": {}, "disabledDuringExecution": false }
                                                         })}
                                                         optionsSourceAssociationDataSource={DatabaseObjectListProperty({
-                                                            "dataSourceId": "p0.0",
+                                                            "dataSourceId": "p7.0",
                                                             "entity": "System.UserRole",
-                                                            "scope": "p0.Administration.Account_New.dataView1",
+                                                            "scope": "p7.Administration.Account_New.dataView1",
                                                             "operationId": "dNluH/YEWVKIls4O1cqTiw",
                                                             "sort": [
                                                                 [
@@ -223,7 +223,7 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                                             "attributeType": "String",
                                                             "sortable": true,
                                                             "filterable": true,
-                                                            "dataSourceId": "p0.0",
+                                                            "dataSourceId": "p7.0",
                                                             "isList": false
                                                         })}
                                                         optionsSourceAssociationCaptionExpression={undefined}
@@ -292,7 +292,7 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                                         optionsSourceDatabaseDefaultValue={undefined}
                                                         tabIndex={undefined}
                                                         id={DerivedUniqueIdProperty({
-                                                            "widgetId": "p0.Administration.Account_New.comboBox1"
+                                                            "widgetId": "p7.Administration.Account_New.comboBox1"
                                                         })} />
                                                 ]}
                                                 caption={t([
@@ -301,22 +301,22 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                                     })
                                                 ])}
                                                 labelFor={DerivedUniqueIdProperty({
-                                                    "widgetId": "p0.Administration.Account_New.comboBox1"
+                                                    "widgetId": "p7.Administration.Account_New.comboBox1"
                                                 })}
                                                 width={3}
                                                 orientation={"horizontal"}
                                                 hasError={ValidationProperty({
-                                                    "inputWidgetId": "p0.Administration.Account_New.comboBox1"
+                                                    "inputWidgetId": "p7.Administration.Account_New.comboBox1"
                                                 })} />,
-                                            <$FormGroup key="p0.Administration.Account_New.checkBox1$formGroup"
-                                                $widgetId="p0.Administration.Account_New.checkBox1$formGroup"
+                                            <$FormGroup key="p7.Administration.Account_New.checkBox1$formGroup"
+                                                $widgetId="p7.Administration.Account_New.checkBox1$formGroup"
                                                 class={"mx-name-checkBox1 mx-checkbox"}
                                                 style={undefined}
                                                 control={[
-                                                    <$CheckBox key="p0.Administration.Account_New.checkBox1"
-                                                        $widgetId="p0.Administration.Account_New.checkBox1"
+                                                    <$CheckBox key="p7.Administration.Account_New.checkBox1"
+                                                        $widgetId="p7.Administration.Account_New.checkBox1"
                                                         value={AttributeProperty({
-                                                            "scope": "p0.Administration.Account_New.dataView1",
+                                                            "scope": "p7.Administration.Account_New.dataView1",
                                                             "path": "",
                                                             "entity": "Administration.Account",
                                                             "attribute": "Blocked",
@@ -331,7 +331,7 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                                         ariaLabel={undefined}
                                                         tabIndex={undefined}
                                                         id={DerivedUniqueIdProperty({
-                                                            "widgetId": "p0.Administration.Account_New.checkBox1"
+                                                            "widgetId": "p7.Administration.Account_New.checkBox1"
                                                         })} />
                                                 ]}
                                                 caption={t([
@@ -340,22 +340,22 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                                     })
                                                 ])}
                                                 labelFor={DerivedUniqueIdProperty({
-                                                    "widgetId": "p0.Administration.Account_New.checkBox1"
+                                                    "widgetId": "p7.Administration.Account_New.checkBox1"
                                                 })}
                                                 width={3}
                                                 orientation={"horizontal"}
                                                 hasError={ValidationProperty({
-                                                    "inputWidgetId": "p0.Administration.Account_New.checkBox1"
+                                                    "inputWidgetId": "p7.Administration.Account_New.checkBox1"
                                                 })} />,
-                                            <$FormGroup key="p0.Administration.Account_New.checkBox2$formGroup"
-                                                $widgetId="p0.Administration.Account_New.checkBox2$formGroup"
+                                            <$FormGroup key="p7.Administration.Account_New.checkBox2$formGroup"
+                                                $widgetId="p7.Administration.Account_New.checkBox2$formGroup"
                                                 class={"mx-name-checkBox2 mx-checkbox"}
                                                 style={undefined}
                                                 control={[
-                                                    <$CheckBox key="p0.Administration.Account_New.checkBox2"
-                                                        $widgetId="p0.Administration.Account_New.checkBox2"
+                                                    <$CheckBox key="p7.Administration.Account_New.checkBox2"
+                                                        $widgetId="p7.Administration.Account_New.checkBox2"
                                                         value={AttributeProperty({
-                                                            "scope": "p0.Administration.Account_New.dataView1",
+                                                            "scope": "p7.Administration.Account_New.dataView1",
                                                             "path": "",
                                                             "entity": "Administration.Account",
                                                             "attribute": "Active",
@@ -370,7 +370,7 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                                         ariaLabel={undefined}
                                                         tabIndex={undefined}
                                                         id={DerivedUniqueIdProperty({
-                                                            "widgetId": "p0.Administration.Account_New.checkBox2"
+                                                            "widgetId": "p7.Administration.Account_New.checkBox2"
                                                         })} />
                                                 ]}
                                                 caption={t([
@@ -379,20 +379,20 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                                     })
                                                 ])}
                                                 labelFor={DerivedUniqueIdProperty({
-                                                    "widgetId": "p0.Administration.Account_New.checkBox2"
+                                                    "widgetId": "p7.Administration.Account_New.checkBox2"
                                                 })}
                                                 width={3}
                                                 orientation={"horizontal"}
                                                 hasError={ValidationProperty({
-                                                    "inputWidgetId": "p0.Administration.Account_New.checkBox2"
+                                                    "inputWidgetId": "p7.Administration.Account_New.checkBox2"
                                                 })} />,
-                                            <$FormGroup key="p0.Administration.Account_New.comboBox3$formGroup"
-                                                $widgetId="p0.Administration.Account_New.comboBox3$formGroup"
+                                            <$FormGroup key="p7.Administration.Account_New.comboBox3$formGroup"
+                                                $widgetId="p7.Administration.Account_New.comboBox3$formGroup"
                                                 class={"mx-name-comboBox3"}
                                                 style={undefined}
                                                 control={[
-                                                    <$Combobox key="p0.Administration.Account_New.comboBox3"
-                                                        $widgetId="p0.Administration.Account_New.comboBox3"
+                                                    <$Combobox key="p7.Administration.Account_New.comboBox3"
+                                                        $widgetId="p7.Administration.Account_New.comboBox3"
                                                         optionsSourceType={"association"}
                                                         attributeAssociation={AssociationProperty({
                                                             "type": "Reference",
@@ -400,14 +400,14 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                                             "path": "",
                                                             "attribute": "System.User_Language",
                                                             "endpointEntity": "System.Language",
-                                                            "selectableObjectsId": "p0.1",
-                                                            "scope": "p0.Administration.Account_New.dataView1",
+                                                            "selectableObjectsId": "p7.1",
+                                                            "scope": "p7.Administration.Account_New.dataView1",
                                                             "onChange": { "type": "doNothing", "argMap": {}, "config": {}, "disabledDuringExecution": false }
                                                         })}
                                                         optionsSourceAssociationDataSource={DatabaseObjectListProperty({
-                                                            "dataSourceId": "p0.1",
+                                                            "dataSourceId": "p7.1",
                                                             "entity": "System.Language",
-                                                            "scope": "p0.Administration.Account_New.dataView1",
+                                                            "scope": "p7.Administration.Account_New.dataView1",
                                                             "operationId": "g4viIQmKwFmY5um7A3rubg",
                                                             "sort": []
                                                         })}
@@ -419,7 +419,7 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                                             "attributeType": "String",
                                                             "sortable": true,
                                                             "filterable": true,
-                                                            "dataSourceId": "p0.1",
+                                                            "dataSourceId": "p7.1",
                                                             "isList": false
                                                         })}
                                                         optionsSourceAssociationCaptionExpression={undefined}
@@ -488,7 +488,7 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                                         optionsSourceDatabaseDefaultValue={undefined}
                                                         tabIndex={undefined}
                                                         id={DerivedUniqueIdProperty({
-                                                            "widgetId": "p0.Administration.Account_New.comboBox3"
+                                                            "widgetId": "p7.Administration.Account_New.comboBox3"
                                                         })} />
                                                 ]}
                                                 caption={t([
@@ -497,20 +497,20 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                                     })
                                                 ])}
                                                 labelFor={DerivedUniqueIdProperty({
-                                                    "widgetId": "p0.Administration.Account_New.comboBox3"
+                                                    "widgetId": "p7.Administration.Account_New.comboBox3"
                                                 })}
                                                 width={3}
                                                 orientation={"horizontal"}
                                                 hasError={ValidationProperty({
-                                                    "inputWidgetId": "p0.Administration.Account_New.comboBox3"
+                                                    "inputWidgetId": "p7.Administration.Account_New.comboBox3"
                                                 })} />,
-                                            <$FormGroup key="p0.Administration.Account_New.comboBox2$formGroup"
-                                                $widgetId="p0.Administration.Account_New.comboBox2$formGroup"
+                                            <$FormGroup key="p7.Administration.Account_New.comboBox2$formGroup"
+                                                $widgetId="p7.Administration.Account_New.comboBox2$formGroup"
                                                 class={"mx-name-comboBox2"}
                                                 style={undefined}
                                                 control={[
-                                                    <$Combobox key="p0.Administration.Account_New.comboBox2"
-                                                        $widgetId="p0.Administration.Account_New.comboBox2"
+                                                    <$Combobox key="p7.Administration.Account_New.comboBox2"
+                                                        $widgetId="p7.Administration.Account_New.comboBox2"
                                                         optionsSourceType={"association"}
                                                         attributeAssociation={AssociationProperty({
                                                             "type": "Reference",
@@ -518,14 +518,14 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                                             "path": "",
                                                             "attribute": "System.User_TimeZone",
                                                             "endpointEntity": "System.TimeZone",
-                                                            "selectableObjectsId": "p0.2",
-                                                            "scope": "p0.Administration.Account_New.dataView1",
+                                                            "selectableObjectsId": "p7.2",
+                                                            "scope": "p7.Administration.Account_New.dataView1",
                                                             "onChange": { "type": "doNothing", "argMap": {}, "config": {}, "disabledDuringExecution": false }
                                                         })}
                                                         optionsSourceAssociationDataSource={DatabaseObjectListProperty({
-                                                            "dataSourceId": "p0.2",
+                                                            "dataSourceId": "p7.2",
                                                             "entity": "System.TimeZone",
-                                                            "scope": "p0.Administration.Account_New.dataView1",
+                                                            "scope": "p7.Administration.Account_New.dataView1",
                                                             "operationId": "hczuSyZaGlSyB2k43u71rg",
                                                             "sort": [
                                                                 [
@@ -540,8 +540,8 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                                         })}
                                                         optionsSourceAssociationCaptionType={"expression"}
                                                         optionsSourceAssociationCaptionExpression={ListExpressionProperty({
-                                                            "expression": { "expr": { "type": "variable", "variable": "currentObject", "path": "Description" }, "args": { "currentObject": { "widget": "p0.Administration.Account_New.comboBox2", "source": "object" } } },
-                                                            "dataSourceId": "p0.2"
+                                                            "expression": { "expr": { "type": "variable", "variable": "currentObject", "path": "Description" }, "args": { "currentObject": { "widget": "p7.Administration.Account_New.comboBox2", "source": "object" } } },
+                                                            "dataSourceId": "p7.2"
                                                         })}
                                                         emptyOptionText={t([
                                                             ExpressionProperty({
@@ -608,7 +608,7 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                                         optionsSourceDatabaseDefaultValue={undefined}
                                                         tabIndex={undefined}
                                                         id={DerivedUniqueIdProperty({
-                                                            "widgetId": "p0.Administration.Account_New.comboBox2"
+                                                            "widgetId": "p7.Administration.Account_New.comboBox2"
                                                         })} />
                                                 ]}
                                                 caption={t([
@@ -617,25 +617,25 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                                     })
                                                 ])}
                                                 labelFor={DerivedUniqueIdProperty({
-                                                    "widgetId": "p0.Administration.Account_New.comboBox2"
+                                                    "widgetId": "p7.Administration.Account_New.comboBox2"
                                                 })}
                                                 width={3}
                                                 orientation={"horizontal"}
                                                 hasError={ValidationProperty({
-                                                    "inputWidgetId": "p0.Administration.Account_New.comboBox2"
+                                                    "inputWidgetId": "p7.Administration.Account_New.comboBox2"
                                                 })} />
                                         ]}
                                         hideFooter={true}
                                         footer={undefined} />,
-                                    <$FormGroup key="p0.Administration.Account_New.textBox5$formGroup"
-                                        $widgetId="p0.Administration.Account_New.textBox5$formGroup"
+                                    <$FormGroup key="p7.Administration.Account_New.textBox5$formGroup"
+                                        $widgetId="p7.Administration.Account_New.textBox5$formGroup"
                                         class={"mx-name-textBox5 mx-textbox"}
                                         style={undefined}
                                         control={[
-                                            <$TextBox key="p0.Administration.Account_New.textBox5"
-                                                $widgetId="p0.Administration.Account_New.textBox5"
+                                            <$TextBox key="p7.Administration.Account_New.textBox5"
+                                                $widgetId="p7.Administration.Account_New.textBox5"
                                                 inputValue={AttributeProperty({
-                                                    "scope": "p0.Administration.Account_New.dataView2",
+                                                    "scope": "p7.Administration.Account_New.dataView2",
                                                     "path": "",
                                                     "entity": "Administration.AccountPasswordData",
                                                     "attribute": "NewPassword",
@@ -663,7 +663,7 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                                 ariaRequired={true}
                                                 tabIndex={undefined}
                                                 id={DerivedUniqueIdProperty({
-                                                    "widgetId": "p0.Administration.Account_New.textBox5"
+                                                    "widgetId": "p7.Administration.Account_New.textBox5"
                                                 })} />
                                         ]}
                                         caption={t([
@@ -672,22 +672,22 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                             })
                                         ])}
                                         labelFor={DerivedUniqueIdProperty({
-                                            "widgetId": "p0.Administration.Account_New.textBox5"
+                                            "widgetId": "p7.Administration.Account_New.textBox5"
                                         })}
                                         width={3}
                                         orientation={"horizontal"}
                                         hasError={ValidationProperty({
-                                            "inputWidgetId": "p0.Administration.Account_New.textBox5"
+                                            "inputWidgetId": "p7.Administration.Account_New.textBox5"
                                         })} />,
-                                    <$FormGroup key="p0.Administration.Account_New.textBox7$formGroup"
-                                        $widgetId="p0.Administration.Account_New.textBox7$formGroup"
+                                    <$FormGroup key="p7.Administration.Account_New.textBox7$formGroup"
+                                        $widgetId="p7.Administration.Account_New.textBox7$formGroup"
                                         class={"mx-name-textBox7 mx-textbox"}
                                         style={undefined}
                                         control={[
-                                            <$TextBox key="p0.Administration.Account_New.textBox7"
-                                                $widgetId="p0.Administration.Account_New.textBox7"
+                                            <$TextBox key="p7.Administration.Account_New.textBox7"
+                                                $widgetId="p7.Administration.Account_New.textBox7"
                                                 inputValue={AttributeProperty({
-                                                    "scope": "p0.Administration.Account_New.dataView2",
+                                                    "scope": "p7.Administration.Account_New.dataView2",
                                                     "path": "",
                                                     "entity": "Administration.AccountPasswordData",
                                                     "attribute": "ConfirmPassword",
@@ -715,7 +715,7 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                                 ariaRequired={true}
                                                 tabIndex={undefined}
                                                 id={DerivedUniqueIdProperty({
-                                                    "widgetId": "p0.Administration.Account_New.textBox7"
+                                                    "widgetId": "p7.Administration.Account_New.textBox7"
                                                 })} />
                                         ]}
                                         caption={t([
@@ -724,25 +724,25 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                             })
                                         ])}
                                         labelFor={DerivedUniqueIdProperty({
-                                            "widgetId": "p0.Administration.Account_New.textBox7"
+                                            "widgetId": "p7.Administration.Account_New.textBox7"
                                         })}
                                         width={3}
                                         orientation={"horizontal"}
                                         hasError={ValidationProperty({
-                                            "inputWidgetId": "p0.Administration.Account_New.textBox7"
+                                            "inputWidgetId": "p7.Administration.Account_New.textBox7"
                                         })} />
                                 ]}
                                 hideFooter={false}
                                 footer={[
-                                    <$ConditionalVisibilityWrapper key="p0.Administration.Account_New.microflowButton1$visibility"
-                                        $widgetId="p0.Administration.Account_New.microflowButton1$visibility"
+                                    <$ConditionalVisibilityWrapper key="p7.Administration.Account_New.microflowButton1$visibility"
+                                        $widgetId="p7.Administration.Account_New.microflowButton1$visibility"
                                         visible={ExpressionProperty({
                                             "expression": { "expr": { "type": "function", "name": "_hasSomeRole", "parameters": [ { "type": "literal", "value": "Administrator" } ] }, "args": {} }
                                         })}
                                         contents={[
-                                            <$ActionButton key="p0.Administration.Account_New.microflowButton1"
-                                                $widgetId="p0.Administration.Account_New.microflowButton1"
-                                                buttonId={"p0.Administration.Account_New.microflowButton1"}
+                                            <$ActionButton key="p7.Administration.Account_New.microflowButton1"
+                                                $widgetId="p7.Administration.Account_New.microflowButton1"
+                                                buttonId={"p7.Administration.Account_New.microflowButton1"}
                                                 class={"mx-name-microflowButton1"}
                                                 style={undefined}
                                                 tabIndex={undefined}
@@ -765,9 +765,9 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                                     "abortOnServerValidation": true
                                                 })} />
                                         ]} />,
-                                    <$ActionButton key="p0.Administration.Account_New.cancelButton1"
-                                        $widgetId="p0.Administration.Account_New.cancelButton1"
-                                        buttonId={"p0.Administration.Account_New.cancelButton1"}
+                                    <$ActionButton key="p7.Administration.Account_New.cancelButton1"
+                                        $widgetId="p7.Administration.Account_New.cancelButton1"
+                                        buttonId={"p7.Administration.Account_New.cancelButton1"}
                                         class={"mx-name-cancelButton1"}
                                         style={undefined}
                                         tabIndex={undefined}
@@ -802,7 +802,7 @@ export const title = t([
 export const classes = "";
 
 export const cancelChangesOperationId = "f6It075pTV2QQRaHHSzXqg";
-export const closeButton = "p0.Administration.Account_New.cancelButton1";
+export const closeButton = "p7.Administration.Account_New.cancelButton1";
 export const style = {};
 export const content = { ...parentContent,
     "Atlas_Core.PopupLayout.Main": region$Main,

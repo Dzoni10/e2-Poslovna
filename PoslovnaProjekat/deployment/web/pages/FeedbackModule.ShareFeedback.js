@@ -31,28 +31,28 @@ import { content as parentContent } from "../layouts/Atlas_Core.PopupLayout.js";
 const { $Div, $DataView, $Container, $Text, $FormGroup, $TextBox, $TextArea, $Label, $ConditionalVisibilityWrapper, $ActionButton, $Image } = asPluginWidgets({ Div, DataView, Container, Text, FormGroup, TextBox, TextArea, Label, ConditionalVisibilityWrapper, ActionButton, Image });
 
 const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
-    <$Div key="p9.FeedbackModule.ShareFeedback.layoutGrid1"
-        $widgetId="p9.FeedbackModule.ShareFeedback.layoutGrid1"
+    <$Div key="p11.FeedbackModule.ShareFeedback.layoutGrid1"
+        $widgetId="p11.FeedbackModule.ShareFeedback.layoutGrid1"
         class={"mx-name-layoutGrid1 mx-layoutgrid mx-layoutgrid-fluid container-fluid"}
         style={undefined}
         content={[
-            <$Div key="p9.FeedbackModule.ShareFeedback.layoutGrid1$row0"
-                $widgetId="p9.FeedbackModule.ShareFeedback.layoutGrid1$row0"
+            <$Div key="p11.FeedbackModule.ShareFeedback.layoutGrid1$row0"
+                $widgetId="p11.FeedbackModule.ShareFeedback.layoutGrid1$row0"
                 class={"row"}
                 style={undefined}
                 content={[
-                    <$Div key="p9.FeedbackModule.ShareFeedback.layoutGrid1$row0$column0"
-                        $widgetId="p9.FeedbackModule.ShareFeedback.layoutGrid1$row0$column0"
+                    <$Div key="p11.FeedbackModule.ShareFeedback.layoutGrid1$row0$column0"
+                        $widgetId="p11.FeedbackModule.ShareFeedback.layoutGrid1$row0$column0"
                         class={"col-lg col-md col"}
                         style={undefined}
                         content={[
-                            <$DataView key="p9.FeedbackModule.ShareFeedback.dataView5"
-                                $widgetId="p9.FeedbackModule.ShareFeedback.dataView5"
+                            <$DataView key="p11.FeedbackModule.ShareFeedback.dataView5"
+                                $widgetId="p11.FeedbackModule.ShareFeedback.dataView5"
                                 class={"mx-name-dataView5 form-vertical"}
                                 style={undefined}
                                 tabIndex={undefined}
                                 object={NanoflowObjectProperty({
-                                    "dataSourceId": "p9.20",
+                                    "dataSourceId": "p11.20",
                                     "editable": true,
                                     "source": { "nanoflow": () => require("C:/Poslovna/e2-Poslovna/PoslovnaProjekat/deployment/web/nanoflows/FeedbackModule.DS_Feedback_Populate").DS_Feedback_Populate, "allowedRoles": [] },
                                     "argMap": {}
@@ -63,15 +63,15 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                     ])
                                 })}
                                 body={[
-                                    <$Container key="p9.FeedbackModule.ShareFeedback.container5"
-                                        $widgetId="p9.FeedbackModule.ShareFeedback.container5"
+                                    <$Container key="p11.FeedbackModule.ShareFeedback.container5"
+                                        $widgetId="p11.FeedbackModule.ShareFeedback.container5"
                                         class={"mx-name-container5 spacing-outer-bottom-medium"}
                                         style={undefined}
                                         renderMode={"div"}
                                         onClick={undefined}
                                         content={[
-                                            <$Text key="p9.FeedbackModule.ShareFeedback.text1"
-                                                $widgetId="p9.FeedbackModule.ShareFeedback.text1"
+                                            <$Text key="p11.FeedbackModule.ShareFeedback.text1"
+                                                $widgetId="p11.FeedbackModule.ShareFeedback.text1"
                                                 class={"mx-name-text1"}
                                                 style={undefined}
                                                 caption={t([
@@ -80,19 +80,19 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                                     })
                                                 ])}
                                                 renderMode={"p"} />,
-                                            <$FormGroup key="p9.FeedbackModule.ShareFeedback.feedback_subject$formGroup"
-                                                $widgetId="p9.FeedbackModule.ShareFeedback.feedback_subject$formGroup"
+                                            <$FormGroup key="p11.FeedbackModule.ShareFeedback.feedback_subject$formGroup"
+                                                $widgetId="p11.FeedbackModule.ShareFeedback.feedback_subject$formGroup"
                                                 class={"mx-name-feedback_subject mx-textbox"}
                                                 style={undefined}
                                                 control={[
-                                                    <$TextBox key="p9.FeedbackModule.ShareFeedback.feedback_subject"
-                                                        $widgetId="p9.FeedbackModule.ShareFeedback.feedback_subject"
+                                                    <$TextBox key="p11.FeedbackModule.ShareFeedback.feedback_subject"
+                                                        $widgetId="p11.FeedbackModule.ShareFeedback.feedback_subject"
                                                         inputValue={AttributeProperty({
-                                                            "scope": "p9.FeedbackModule.ShareFeedback.dataView5",
+                                                            "scope": "p11.FeedbackModule.ShareFeedback.dataView5",
                                                             "path": "",
                                                             "entity": "FeedbackModule.Feedback",
                                                             "attribute": "Subject",
-                                                            "onChange": { "type": "callNanoflow", "argMap": { "Feedback": { "widget": "p9.FeedbackModule.ShareFeedback.dataView5", "source": "object" } }, "config": { "nanoflow": () => require("C:/Poslovna/e2-Poslovna/PoslovnaProjekat/deployment/web/nanoflows/FeedbackModule.OCH_Feedback_SaveToLocalStorage").OCH_Feedback_SaveToLocalStorage, "allowedRoles": [] }, "disabledDuringExecution": false },
+                                                            "onChange": { "type": "callNanoflow", "argMap": { "Feedback": { "widget": "p11.FeedbackModule.ShareFeedback.dataView5", "source": "object" } }, "config": { "nanoflow": () => require("C:/Poslovna/e2-Poslovna/PoslovnaProjekat/deployment/web/nanoflows/FeedbackModule.OCH_Feedback_SaveToLocalStorage").OCH_Feedback_SaveToLocalStorage, "allowedRoles": [] }, "disabledDuringExecution": false },
                                                             "isList": false,
                                                             "validation": null,
                                                             "formatting": { }
@@ -116,7 +116,7 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                                         ariaRequired={undefined}
                                                         tabIndex={undefined}
                                                         id={DerivedUniqueIdProperty({
-                                                            "widgetId": "p9.FeedbackModule.ShareFeedback.feedback_subject"
+                                                            "widgetId": "p11.FeedbackModule.ShareFeedback.feedback_subject"
                                                         })} />
                                                 ]}
                                                 caption={t([
@@ -125,26 +125,26 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                                     })
                                                 ])}
                                                 labelFor={DerivedUniqueIdProperty({
-                                                    "widgetId": "p9.FeedbackModule.ShareFeedback.feedback_subject"
+                                                    "widgetId": "p11.FeedbackModule.ShareFeedback.feedback_subject"
                                                 })}
                                                 width={undefined}
                                                 orientation={"vertical"}
                                                 hasError={ValidationProperty({
-                                                    "inputWidgetId": "p9.FeedbackModule.ShareFeedback.feedback_subject"
+                                                    "inputWidgetId": "p11.FeedbackModule.ShareFeedback.feedback_subject"
                                                 })} />,
-                                            <$FormGroup key="p9.FeedbackModule.ShareFeedback.textArea2$formGroup"
-                                                $widgetId="p9.FeedbackModule.ShareFeedback.textArea2$formGroup"
+                                            <$FormGroup key="p11.FeedbackModule.ShareFeedback.textArea2$formGroup"
+                                                $widgetId="p11.FeedbackModule.ShareFeedback.textArea2$formGroup"
                                                 class={"mx-name-textArea2 mx-textarea"}
                                                 style={undefined}
                                                 control={[
-                                                    <$TextArea key="p9.FeedbackModule.ShareFeedback.textArea2"
-                                                        $widgetId="p9.FeedbackModule.ShareFeedback.textArea2"
+                                                    <$TextArea key="p11.FeedbackModule.ShareFeedback.textArea2"
+                                                        $widgetId="p11.FeedbackModule.ShareFeedback.textArea2"
                                                         inputValue={AttributeProperty({
-                                                            "scope": "p9.FeedbackModule.ShareFeedback.dataView5",
+                                                            "scope": "p11.FeedbackModule.ShareFeedback.dataView5",
                                                             "path": "",
                                                             "entity": "FeedbackModule.Feedback",
                                                             "attribute": "Description",
-                                                            "onChange": { "type": "callNanoflow", "argMap": { "Feedback": { "widget": "p9.FeedbackModule.ShareFeedback.dataView5", "source": "object" } }, "config": { "nanoflow": () => require("C:/Poslovna/e2-Poslovna/PoslovnaProjekat/deployment/web/nanoflows/FeedbackModule.OCH_Feedback_SaveToLocalStorage").OCH_Feedback_SaveToLocalStorage, "allowedRoles": [] }, "disabledDuringExecution": false },
+                                                            "onChange": { "type": "callNanoflow", "argMap": { "Feedback": { "widget": "p11.FeedbackModule.ShareFeedback.dataView5", "source": "object" } }, "config": { "nanoflow": () => require("C:/Poslovna/e2-Poslovna/PoslovnaProjekat/deployment/web/nanoflows/FeedbackModule.OCH_Feedback_SaveToLocalStorage").OCH_Feedback_SaveToLocalStorage, "allowedRoles": [] }, "disabledDuringExecution": false },
                                                             "isList": false,
                                                             "validation": null
                                                         })}
@@ -167,7 +167,7 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                                         submitDelay={300}
                                                         tabIndex={undefined}
                                                         id={DerivedUniqueIdProperty({
-                                                            "widgetId": "p9.FeedbackModule.ShareFeedback.textArea2"
+                                                            "widgetId": "p11.FeedbackModule.ShareFeedback.textArea2"
                                                         })} />
                                                 ]}
                                                 caption={t([
@@ -176,36 +176,36 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                                     })
                                                 ])}
                                                 labelFor={DerivedUniqueIdProperty({
-                                                    "widgetId": "p9.FeedbackModule.ShareFeedback.textArea2"
+                                                    "widgetId": "p11.FeedbackModule.ShareFeedback.textArea2"
                                                 })}
                                                 width={undefined}
                                                 orientation={"vertical"}
                                                 hasError={ValidationProperty({
-                                                    "inputWidgetId": "p9.FeedbackModule.ShareFeedback.textArea2"
+                                                    "inputWidgetId": "p11.FeedbackModule.ShareFeedback.textArea2"
                                                 })} />
                                         ]}
                                         ariaHidden={false} />,
-                                    <$Container key="p9.FeedbackModule.ShareFeedback.container4"
-                                        $widgetId="p9.FeedbackModule.ShareFeedback.container4"
+                                    <$Container key="p11.FeedbackModule.ShareFeedback.container4"
+                                        $widgetId="p11.FeedbackModule.ShareFeedback.container4"
                                         class={"mx-name-container4 col-left spacing-outer-bottom"}
                                         style={undefined}
                                         renderMode={"div"}
                                         onClick={undefined}
                                         content={[
-                                            <$Label key="p9.FeedbackModule.ShareFeedback.label1"
-                                                $widgetId="p9.FeedbackModule.ShareFeedback.label1"
+                                            <$Label key="p11.FeedbackModule.ShareFeedback.label1"
+                                                $widgetId="p11.FeedbackModule.ShareFeedback.label1"
                                                 class={"mx-name-label1 text-semibold spacing-outer-bottom-none"}
                                                 style={undefined}
                                                 id={DerivedUniqueIdProperty({
-                                                    "widgetId": "p9.FeedbackModule.ShareFeedback.label1"
+                                                    "widgetId": "p11.FeedbackModule.ShareFeedback.label1"
                                                 })}
                                                 caption={TextProperty({
                                                     "value": t([
                                                         "Attachment"
                                                     ])
                                                 })} />,
-                                            <$Text key="p9.FeedbackModule.ShareFeedback.text2"
-                                                $widgetId="p9.FeedbackModule.ShareFeedback.text2"
+                                            <$Text key="p11.FeedbackModule.ShareFeedback.text2"
+                                                $widgetId="p11.FeedbackModule.ShareFeedback.text2"
                                                 class={"mx-name-text2 text-light"}
                                                 style={undefined}
                                                 caption={t([
@@ -216,8 +216,8 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                                 renderMode={"span"} />
                                         ]}
                                         ariaHidden={false} />,
-                                    <$Container key="p9.FeedbackModule.ShareFeedback.container2"
-                                        $widgetId="p9.FeedbackModule.ShareFeedback.container2"
+                                    <$Container key="p11.FeedbackModule.ShareFeedback.container2"
+                                        $widgetId="p11.FeedbackModule.ShareFeedback.container2"
                                         class={"mx-name-container2 flexcontainer justify-content-start spacing-outer-bottom-medium"}
                                         style={{
                                             "gap": "8px"
@@ -225,15 +225,15 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                         renderMode={"div"}
                                         onClick={undefined}
                                         content={[
-                                            <$ConditionalVisibilityWrapper key="p9.FeedbackModule.ShareFeedback.actionButton4$visibility"
-                                                $widgetId="p9.FeedbackModule.ShareFeedback.actionButton4$visibility"
+                                            <$ConditionalVisibilityWrapper key="p11.FeedbackModule.ShareFeedback.actionButton4$visibility"
+                                                $widgetId="p11.FeedbackModule.ShareFeedback.actionButton4$visibility"
                                                 visible={ExpressionProperty({
                                                     "expression": { "expr": { "type": "function", "name": "_hasSomeRole", "parameters": [] }, "args": {} }
                                                 })}
                                                 contents={[
-                                                    <$ActionButton key="p9.FeedbackModule.ShareFeedback.actionButton4"
-                                                        $widgetId="p9.FeedbackModule.ShareFeedback.actionButton4"
-                                                        buttonId={"p9.FeedbackModule.ShareFeedback.actionButton4"}
+                                                    <$ActionButton key="p11.FeedbackModule.ShareFeedback.actionButton4"
+                                                        $widgetId="p11.FeedbackModule.ShareFeedback.actionButton4"
+                                                        buttonId={"p11.FeedbackModule.ShareFeedback.actionButton4"}
                                                         class={"mx-name-actionButton4"}
                                                         style={undefined}
                                                         tabIndex={undefined}
@@ -254,19 +254,19 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                                             "icon": { "type": "glyph", "iconClass": "glyphicon-camera" }
                                                         })}
                                                         action={ActionProperty({
-                                                            "action": { "type": "callNanoflow", "argMap": { "Feedback": { "widget": "p9.FeedbackModule.ShareFeedback.dataView5", "source": "object" } }, "config": { "nanoflow": () => require("C:/Poslovna/e2-Poslovna/PoslovnaProjekat/deployment/web/nanoflows/FeedbackModule.ACT_Feedback_TriggerScreenshotMode").ACT_Feedback_TriggerScreenshotMode, "allowedRoles": [] }, "disabledDuringExecution": true },
+                                                            "action": { "type": "callNanoflow", "argMap": { "Feedback": { "widget": "p11.FeedbackModule.ShareFeedback.dataView5", "source": "object" } }, "config": { "nanoflow": () => require("C:/Poslovna/e2-Poslovna/PoslovnaProjekat/deployment/web/nanoflows/FeedbackModule.ACT_Feedback_TriggerScreenshotMode").ACT_Feedback_TriggerScreenshotMode, "allowedRoles": [] }, "disabledDuringExecution": true },
                                                             "abortOnServerValidation": true
                                                         })} />
                                                 ]} />,
-                                            <$ConditionalVisibilityWrapper key="p9.FeedbackModule.ShareFeedback.actionButton5$visibility"
-                                                $widgetId="p9.FeedbackModule.ShareFeedback.actionButton5$visibility"
+                                            <$ConditionalVisibilityWrapper key="p11.FeedbackModule.ShareFeedback.actionButton5$visibility"
+                                                $widgetId="p11.FeedbackModule.ShareFeedback.actionButton5$visibility"
                                                 visible={ExpressionProperty({
                                                     "expression": { "expr": { "type": "function", "name": "_hasSomeRole", "parameters": [] }, "args": {} }
                                                 })}
                                                 contents={[
-                                                    <$ActionButton key="p9.FeedbackModule.ShareFeedback.actionButton5"
-                                                        $widgetId="p9.FeedbackModule.ShareFeedback.actionButton5"
-                                                        buttonId={"p9.FeedbackModule.ShareFeedback.actionButton5"}
+                                                    <$ActionButton key="p11.FeedbackModule.ShareFeedback.actionButton5"
+                                                        $widgetId="p11.FeedbackModule.ShareFeedback.actionButton5"
+                                                        buttonId={"p11.FeedbackModule.ShareFeedback.actionButton5"}
                                                         class={"mx-name-actionButton5"}
                                                         style={undefined}
                                                         tabIndex={undefined}
@@ -287,27 +287,27 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                                             "icon": { "type": "glyph", "iconClass": "glyphicon-open" }
                                                         })}
                                                         action={ActionProperty({
-                                                            "action": { "type": "callNanoflow", "argMap": { "Feedback": { "widget": "p9.FeedbackModule.ShareFeedback.dataView5", "source": "object" } }, "config": { "nanoflow": () => require("C:/Poslovna/e2-Poslovna/PoslovnaProjekat/deployment/web/nanoflows/FeedbackModule.ACT_Feedback_UploadImage").ACT_Feedback_UploadImage, "allowedRoles": [] }, "disabledDuringExecution": true },
+                                                            "action": { "type": "callNanoflow", "argMap": { "Feedback": { "widget": "p11.FeedbackModule.ShareFeedback.dataView5", "source": "object" } }, "config": { "nanoflow": () => require("C:/Poslovna/e2-Poslovna/PoslovnaProjekat/deployment/web/nanoflows/FeedbackModule.ACT_Feedback_UploadImage").ACT_Feedback_UploadImage, "allowedRoles": [] }, "disabledDuringExecution": true },
                                                             "abortOnServerValidation": true
                                                         })} />
                                                 ]} />
                                         ]}
                                         ariaHidden={false} />,
-                                    <$ConditionalVisibilityWrapper key="p9.FeedbackModule.ShareFeedback.container6$visibility"
-                                        $widgetId="p9.FeedbackModule.ShareFeedback.container6$visibility"
+                                    <$ConditionalVisibilityWrapper key="p11.FeedbackModule.ShareFeedback.container6$visibility"
+                                        $widgetId="p11.FeedbackModule.ShareFeedback.container6$visibility"
                                         visible={ExpressionProperty({
-                                            "expression": { "expr": { "type": "function", "name": "!=", "parameters": [ { "type": "variable", "variable": "currentObject", "path": "ImageB64" }, { "type": "literal", "value": null } ] }, "args": { "currentObject": { "widget": "p9.FeedbackModule.ShareFeedback.dataView5", "source": "object" } } }
+                                            "expression": { "expr": { "type": "function", "name": "!=", "parameters": [ { "type": "variable", "variable": "currentObject", "path": "ImageB64" }, { "type": "literal", "value": null } ] }, "args": { "currentObject": { "widget": "p11.FeedbackModule.ShareFeedback.dataView5", "source": "object" } } }
                                         })}
                                         contents={[
-                                            <$Container key="p9.FeedbackModule.ShareFeedback.container6"
-                                                $widgetId="p9.FeedbackModule.ShareFeedback.container6"
+                                            <$Container key="p11.FeedbackModule.ShareFeedback.container6"
+                                                $widgetId="p11.FeedbackModule.ShareFeedback.container6"
                                                 class={"mx-name-container6 mxfeedback-screenshot-preview spacing-outer-bottom-medium"}
                                                 style={undefined}
                                                 renderMode={"div"}
                                                 onClick={undefined}
                                                 content={[
-                                                    <$Container key="p9.FeedbackModule.ShareFeedback.container7"
-                                                        $widgetId="p9.FeedbackModule.ShareFeedback.container7"
+                                                    <$Container key="p11.FeedbackModule.ShareFeedback.container7"
+                                                        $widgetId="p11.FeedbackModule.ShareFeedback.container7"
                                                         class={"mx-name-container7"}
                                                         style={{
                                                             "position": "relative"
@@ -315,15 +315,15 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                                         renderMode={"div"}
                                                         onClick={undefined}
                                                         content={[
-                                                            <$ConditionalVisibilityWrapper key="p9.FeedbackModule.ShareFeedback.actionButton1$visibility"
-                                                                $widgetId="p9.FeedbackModule.ShareFeedback.actionButton1$visibility"
+                                                            <$ConditionalVisibilityWrapper key="p11.FeedbackModule.ShareFeedback.actionButton1$visibility"
+                                                                $widgetId="p11.FeedbackModule.ShareFeedback.actionButton1$visibility"
                                                                 visible={ExpressionProperty({
                                                                     "expression": { "expr": { "type": "function", "name": "_hasSomeRole", "parameters": [] }, "args": {} }
                                                                 })}
                                                                 contents={[
-                                                                    <$ActionButton key="p9.FeedbackModule.ShareFeedback.actionButton1"
-                                                                        $widgetId="p9.FeedbackModule.ShareFeedback.actionButton1"
-                                                                        buttonId={"p9.FeedbackModule.ShareFeedback.actionButton1"}
+                                                                    <$ActionButton key="p11.FeedbackModule.ShareFeedback.actionButton1"
+                                                                        $widgetId="p11.FeedbackModule.ShareFeedback.actionButton1"
+                                                                        buttonId={"p11.FeedbackModule.ShareFeedback.actionButton1"}
                                                                         class={"mx-name-actionButton1 mxfeedback-screenshot-preview__delete-button"}
                                                                         style={undefined}
                                                                         tabIndex={undefined}
@@ -344,18 +344,18 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                                                             "icon": { "type": "glyph", "iconClass": "glyphicon-remove" }
                                                                         })}
                                                                         action={ActionProperty({
-                                                                            "action": { "type": "callNanoflow", "argMap": { "Feedback": { "widget": "p9.FeedbackModule.ShareFeedback.dataView5", "source": "object" } }, "config": { "nanoflow": () => require("C:/Poslovna/e2-Poslovna/PoslovnaProjekat/deployment/web/nanoflows/FeedbackModule.ACT_Feedback_ClearImage").ACT_Feedback_ClearImage, "allowedRoles": [] }, "disabledDuringExecution": true },
+                                                                            "action": { "type": "callNanoflow", "argMap": { "Feedback": { "widget": "p11.FeedbackModule.ShareFeedback.dataView5", "source": "object" } }, "config": { "nanoflow": () => require("C:/Poslovna/e2-Poslovna/PoslovnaProjekat/deployment/web/nanoflows/FeedbackModule.ACT_Feedback_ClearImage").ACT_Feedback_ClearImage, "allowedRoles": [] }, "disabledDuringExecution": true },
                                                                             "abortOnServerValidation": true
                                                                         })} />
                                                                 ]} />,
-                                                            <$Image key="p9.FeedbackModule.ShareFeedback.image1"
-                                                                $widgetId="p9.FeedbackModule.ShareFeedback.image1"
+                                                            <$Image key="p11.FeedbackModule.ShareFeedback.image1"
+                                                                $widgetId="p11.FeedbackModule.ShareFeedback.image1"
                                                                 datasource={"imageUrl"}
                                                                 imageObject={undefined}
                                                                 defaultImageDynamic={undefined}
                                                                 imageUrl={t([
                                                                     ExpressionProperty({
-                                                                        "expression": { "expr": { "type": "variable", "variable": "currentObject", "path": "ImageB64" }, "args": { "currentObject": { "widget": "p9.FeedbackModule.ShareFeedback.dataView5", "source": "object" } } }
+                                                                        "expression": { "expr": { "type": "variable", "variable": "currentObject", "path": "ImageB64" }, "args": { "currentObject": { "widget": "p11.FeedbackModule.ShareFeedback.dataView5", "source": "object" } } }
                                                                     })
                                                                 ])}
                                                                 imageIcon={undefined}
@@ -385,25 +385,25 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                                 ]}
                                                 ariaHidden={false} />
                                         ]} />,
-                                    <$ConditionalVisibilityWrapper key="p9.FeedbackModule.ShareFeedback.textBox1$formGroup$visibility"
-                                        $widgetId="p9.FeedbackModule.ShareFeedback.textBox1$formGroup$visibility"
+                                    <$ConditionalVisibilityWrapper key="p11.FeedbackModule.ShareFeedback.textBox1$formGroup$visibility"
+                                        $widgetId="p11.FeedbackModule.ShareFeedback.textBox1$formGroup$visibility"
                                         visible={ExpressionProperty({
-                                            "expression": { "expr": { "type": "variable", "variable": "currentObject", "path": "_showEmail" }, "args": { "currentObject": { "widget": "p9.FeedbackModule.ShareFeedback.dataView5", "source": "object" } } }
+                                            "expression": { "expr": { "type": "variable", "variable": "currentObject", "path": "_showEmail" }, "args": { "currentObject": { "widget": "p11.FeedbackModule.ShareFeedback.dataView5", "source": "object" } } }
                                         })}
                                         contents={[
-                                            <$FormGroup key="p9.FeedbackModule.ShareFeedback.textBox1$formGroup"
-                                                $widgetId="p9.FeedbackModule.ShareFeedback.textBox1$formGroup"
+                                            <$FormGroup key="p11.FeedbackModule.ShareFeedback.textBox1$formGroup"
+                                                $widgetId="p11.FeedbackModule.ShareFeedback.textBox1$formGroup"
                                                 class={"mx-name-textBox1 mx-textbox"}
                                                 style={undefined}
                                                 control={[
-                                                    <$TextBox key="p9.FeedbackModule.ShareFeedback.textBox1"
-                                                        $widgetId="p9.FeedbackModule.ShareFeedback.textBox1"
+                                                    <$TextBox key="p11.FeedbackModule.ShareFeedback.textBox1"
+                                                        $widgetId="p11.FeedbackModule.ShareFeedback.textBox1"
                                                         inputValue={AttributeProperty({
-                                                            "scope": "p9.FeedbackModule.ShareFeedback.dataView5",
+                                                            "scope": "p11.FeedbackModule.ShareFeedback.dataView5",
                                                             "path": "",
                                                             "entity": "FeedbackModule.Feedback",
                                                             "attribute": "SubmitterEmail",
-                                                            "onChange": { "type": "callNanoflow", "argMap": { "Feedback": { "widget": "p9.FeedbackModule.ShareFeedback.dataView5", "source": "object" } }, "config": { "nanoflow": () => require("C:/Poslovna/e2-Poslovna/PoslovnaProjekat/deployment/web/nanoflows/FeedbackModule.OCH_Feedback_SaveToLocalStorage").OCH_Feedback_SaveToLocalStorage, "allowedRoles": [] }, "disabledDuringExecution": false },
+                                                            "onChange": { "type": "callNanoflow", "argMap": { "Feedback": { "widget": "p11.FeedbackModule.ShareFeedback.dataView5", "source": "object" } }, "config": { "nanoflow": () => require("C:/Poslovna/e2-Poslovna/PoslovnaProjekat/deployment/web/nanoflows/FeedbackModule.OCH_Feedback_SaveToLocalStorage").OCH_Feedback_SaveToLocalStorage, "allowedRoles": [] }, "disabledDuringExecution": false },
                                                             "isList": false,
                                                             "validation": null,
                                                             "formatting": { }
@@ -427,7 +427,7 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                                         ariaRequired={undefined}
                                                         tabIndex={undefined}
                                                         id={DerivedUniqueIdProperty({
-                                                            "widgetId": "p9.FeedbackModule.ShareFeedback.textBox1"
+                                                            "widgetId": "p11.FeedbackModule.ShareFeedback.textBox1"
                                                         })} />
                                                 ]}
                                                 caption={t([
@@ -436,16 +436,16 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                                     })
                                                 ])}
                                                 labelFor={DerivedUniqueIdProperty({
-                                                    "widgetId": "p9.FeedbackModule.ShareFeedback.textBox1"
+                                                    "widgetId": "p11.FeedbackModule.ShareFeedback.textBox1"
                                                 })}
                                                 width={undefined}
                                                 orientation={"vertical"}
                                                 hasError={ValidationProperty({
-                                                    "inputWidgetId": "p9.FeedbackModule.ShareFeedback.textBox1"
+                                                    "inputWidgetId": "p11.FeedbackModule.ShareFeedback.textBox1"
                                                 })} />
                                         ]} />,
-                                    <$Container key="p9.FeedbackModule.ShareFeedback.container3"
-                                        $widgetId="p9.FeedbackModule.ShareFeedback.container3"
+                                    <$Container key="p11.FeedbackModule.ShareFeedback.container3"
+                                        $widgetId="p11.FeedbackModule.ShareFeedback.container3"
                                         class={"mx-name-container3 flex-row flexcontainer justify-content-end"}
                                         style={{
                                             "gap": "8px"
@@ -453,9 +453,9 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                         renderMode={"div"}
                                         onClick={undefined}
                                         content={[
-                                            <$ActionButton key="p9.FeedbackModule.ShareFeedback.feedback_cancel"
-                                                $widgetId="p9.FeedbackModule.ShareFeedback.feedback_cancel"
-                                                buttonId={"p9.FeedbackModule.ShareFeedback.feedback_cancel"}
+                                            <$ActionButton key="p11.FeedbackModule.ShareFeedback.feedback_cancel"
+                                                $widgetId="p11.FeedbackModule.ShareFeedback.feedback_cancel"
+                                                buttonId={"p11.FeedbackModule.ShareFeedback.feedback_cancel"}
                                                 class={"mx-name-feedback_cancel"}
                                                 style={{
                                                     "border": "0"
@@ -479,15 +479,15 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                                     "action": { "type": "closePage", "argMap": {}, "config": {}, "disabledDuringExecution": true },
                                                     "abortOnServerValidation": true
                                                 })} />,
-                                            <$ConditionalVisibilityWrapper key="p9.FeedbackModule.ShareFeedback.feedback_clear$visibility"
-                                                $widgetId="p9.FeedbackModule.ShareFeedback.feedback_clear$visibility"
+                                            <$ConditionalVisibilityWrapper key="p11.FeedbackModule.ShareFeedback.feedback_clear$visibility"
+                                                $widgetId="p11.FeedbackModule.ShareFeedback.feedback_clear$visibility"
                                                 visible={ExpressionProperty({
                                                     "expression": { "expr": { "type": "function", "name": "_hasSomeRole", "parameters": [] }, "args": {} }
                                                 })}
                                                 contents={[
-                                                    <$ActionButton key="p9.FeedbackModule.ShareFeedback.feedback_clear"
-                                                        $widgetId="p9.FeedbackModule.ShareFeedback.feedback_clear"
-                                                        buttonId={"p9.FeedbackModule.ShareFeedback.feedback_clear"}
+                                                    <$ActionButton key="p11.FeedbackModule.ShareFeedback.feedback_clear"
+                                                        $widgetId="p11.FeedbackModule.ShareFeedback.feedback_clear"
+                                                        buttonId={"p11.FeedbackModule.ShareFeedback.feedback_clear"}
                                                         class={"mx-name-feedback_clear btn-bordered"}
                                                         style={undefined}
                                                         tabIndex={undefined}
@@ -506,19 +506,19 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                                         })}
                                                         icon={undefined}
                                                         action={ActionProperty({
-                                                            "action": { "type": "callNanoflow", "argMap": { "Feedback": { "widget": "p9.FeedbackModule.ShareFeedback.dataView5", "source": "object" } }, "config": { "nanoflow": () => require("C:/Poslovna/e2-Poslovna/PoslovnaProjekat/deployment/web/nanoflows/FeedbackModule.ACT_Feedback_ClearForm").ACT_Feedback_ClearForm, "allowedRoles": [] }, "disabledDuringExecution": true },
+                                                            "action": { "type": "callNanoflow", "argMap": { "Feedback": { "widget": "p11.FeedbackModule.ShareFeedback.dataView5", "source": "object" } }, "config": { "nanoflow": () => require("C:/Poslovna/e2-Poslovna/PoslovnaProjekat/deployment/web/nanoflows/FeedbackModule.ACT_Feedback_ClearForm").ACT_Feedback_ClearForm, "allowedRoles": [] }, "disabledDuringExecution": true },
                                                             "abortOnServerValidation": true
                                                         })} />
                                                 ]} />,
-                                            <$ConditionalVisibilityWrapper key="p9.FeedbackModule.ShareFeedback.feedback_submit$visibility"
-                                                $widgetId="p9.FeedbackModule.ShareFeedback.feedback_submit$visibility"
+                                            <$ConditionalVisibilityWrapper key="p11.FeedbackModule.ShareFeedback.feedback_submit$visibility"
+                                                $widgetId="p11.FeedbackModule.ShareFeedback.feedback_submit$visibility"
                                                 visible={ExpressionProperty({
                                                     "expression": { "expr": { "type": "function", "name": "_hasSomeRole", "parameters": [] }, "args": {} }
                                                 })}
                                                 contents={[
-                                                    <$ActionButton key="p9.FeedbackModule.ShareFeedback.feedback_submit"
-                                                        $widgetId="p9.FeedbackModule.ShareFeedback.feedback_submit"
-                                                        buttonId={"p9.FeedbackModule.ShareFeedback.feedback_submit"}
+                                                    <$ActionButton key="p11.FeedbackModule.ShareFeedback.feedback_submit"
+                                                        $widgetId="p11.FeedbackModule.ShareFeedback.feedback_submit"
+                                                        buttonId={"p11.FeedbackModule.ShareFeedback.feedback_submit"}
                                                         class={"mx-name-feedback_submit"}
                                                         style={undefined}
                                                         tabIndex={undefined}
@@ -537,7 +537,7 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                                         })}
                                                         icon={undefined}
                                                         action={ActionProperty({
-                                                            "action": { "type": "callNanoflow", "argMap": { "Feedback": { "widget": "p9.FeedbackModule.ShareFeedback.dataView5", "source": "object" } }, "config": { "nanoflow": () => require("C:/Poslovna/e2-Poslovna/PoslovnaProjekat/deployment/web/nanoflows/FeedbackModule.ACT_SubmitFeedback").ACT_SubmitFeedback, "allowedRoles": [] }, "disabledDuringExecution": true },
+                                                            "action": { "type": "callNanoflow", "argMap": { "Feedback": { "widget": "p11.FeedbackModule.ShareFeedback.dataView5", "source": "object" } }, "config": { "nanoflow": () => require("C:/Poslovna/e2-Poslovna/PoslovnaProjekat/deployment/web/nanoflows/FeedbackModule.ACT_SubmitFeedback").ACT_SubmitFeedback, "allowedRoles": [] }, "disabledDuringExecution": true },
                                                             "abortOnServerValidation": true
                                                         })} />
                                                 ]} />

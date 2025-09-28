@@ -155,6 +155,48 @@ const region$Main = [
                                                                                         "action": { "type": "openPage", "argMap": {}, "config": { "name": "MyFirstModule/Home_Web.page.xml", "location": "content", "allowedRoles": [ "Administrator", "User" ] }, "disabledDuringExecution": false },
                                                                                         "skipClientValidation": true
                                                                                     })
+                                                                                },
+                                                                                {
+                                                                                    "caption": TextProperty({
+                                                                                        "value": t([
+                                                                                            "Preduzece"
+                                                                                        ])
+                                                                                    }),
+                                                                                    "icon": WebIconProperty({
+                                                                                        "icon": { "type": "icon", "iconClass": "mx-icon-filled mx-icon-add" }
+                                                                                    }),
+                                                                                    "action": ActionProperty({
+                                                                                        "action": { "type": "openPage", "argMap": {}, "config": { "name": "MyFirstModule/Preduzece_Overview.page.xml", "location": "content", "allowedRoles": [ "Administrator", "User" ] }, "disabledDuringExecution": false },
+                                                                                        "skipClientValidation": true
+                                                                                    })
+                                                                                },
+                                                                                {
+                                                                                    "caption": TextProperty({
+                                                                                        "value": t([
+                                                                                            "Magacin"
+                                                                                        ])
+                                                                                    }),
+                                                                                    "icon": WebIconProperty({
+                                                                                        "icon": { "type": "icon", "iconClass": "mx-icon-lined mx-icon-add" }
+                                                                                    }),
+                                                                                    "action": ActionProperty({
+                                                                                        "action": { "type": "openPage", "argMap": {}, "config": { "name": "MyFirstModule/Magacin_Overview.page.xml", "location": "content", "allowedRoles": [ "Administrator", "User" ] }, "disabledDuringExecution": false },
+                                                                                        "skipClientValidation": true
+                                                                                    })
+                                                                                },
+                                                                                {
+                                                                                    "caption": TextProperty({
+                                                                                        "value": t([
+                                                                                            "Radnik"
+                                                                                        ])
+                                                                                    }),
+                                                                                    "icon": WebIconProperty({
+                                                                                        "icon": { "type": "icon", "iconClass": "mx-icon-lined mx-icon-user" }
+                                                                                    }),
+                                                                                    "action": ActionProperty({
+                                                                                        "action": { "type": "openPage", "argMap": {}, "config": { "name": "MyFirstModule/Radnik_Overview.page.xml", "location": "content", "allowedRoles": [ "Administrator", "User" ] }, "disabledDuringExecution": false },
+                                                                                        "skipClientValidation": true
+                                                                                    })
                                                                                 }
                                                                             ]} />
                                                                     ]} />,
@@ -229,6 +271,48 @@ const region$Main = [
                             }),
                             "action": ActionProperty({
                                 "action": { "type": "openPage", "argMap": {}, "config": { "name": "MyFirstModule/Home_Web.page.xml", "location": "content", "allowedRoles": [ "Administrator", "User" ] }, "disabledDuringExecution": false },
+                                "skipClientValidation": true
+                            })
+                        },
+                        {
+                            "caption": TextProperty({
+                                "value": t([
+                                    "Preduzece"
+                                ])
+                            }),
+                            "icon": WebIconProperty({
+                                "icon": { "type": "icon", "iconClass": "mx-icon-filled mx-icon-add" }
+                            }),
+                            "action": ActionProperty({
+                                "action": { "type": "openPage", "argMap": {}, "config": { "name": "MyFirstModule/Preduzece_Overview.page.xml", "location": "content", "allowedRoles": [ "Administrator", "User" ] }, "disabledDuringExecution": false },
+                                "skipClientValidation": true
+                            })
+                        },
+                        {
+                            "caption": TextProperty({
+                                "value": t([
+                                    "Magacin"
+                                ])
+                            }),
+                            "icon": WebIconProperty({
+                                "icon": { "type": "icon", "iconClass": "mx-icon-lined mx-icon-add" }
+                            }),
+                            "action": ActionProperty({
+                                "action": { "type": "openPage", "argMap": {}, "config": { "name": "MyFirstModule/Magacin_Overview.page.xml", "location": "content", "allowedRoles": [ "Administrator", "User" ] }, "disabledDuringExecution": false },
+                                "skipClientValidation": true
+                            })
+                        },
+                        {
+                            "caption": TextProperty({
+                                "value": t([
+                                    "Radnik"
+                                ])
+                            }),
+                            "icon": WebIconProperty({
+                                "icon": { "type": "icon", "iconClass": "mx-icon-lined mx-icon-user" }
+                            }),
+                            "action": ActionProperty({
+                                "action": { "type": "openPage", "argMap": {}, "config": { "name": "MyFirstModule/Radnik_Overview.page.xml", "location": "content", "allowedRoles": [ "Administrator", "User" ] }, "disabledDuringExecution": false },
                                 "skipClientValidation": true
                             })
                         }
