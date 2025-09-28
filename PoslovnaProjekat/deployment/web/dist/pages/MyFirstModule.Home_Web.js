@@ -1,15 +1,15 @@
-import { reactExports, asPluginWidgets, selectTranslation } from '../index-DZt3m621.js';
-import { PageFragment, ExpressionProperty } from '../ScrollContainer-7frAKGuI.js';
-import { Container, Text } from '../Image-B1CdR09q.js';
-import { Div } from '../Div-CyIrW3s-.js';
-import { content as content$1 } from '../Atlas_Core.Atlas_Default-vNWlbjh_.js';
-import '../InlineText-Bj8eFZTT.js';
-import '../ActionButton-BQrt5gjh.js';
-import '../CTcC6PjV-aKLD4G0H.js';
-import '../uEIG9e6s-HNK6i9V0.js';
-import '../ListExpressionProperty-BdbODoWZ.js';
-import '../WebIconProperty-BLJMWGGo.js';
-import '../WebStaticImageProperty-D06_LAui.js';
+import { reactExports, asPluginWidgets, selectTranslation } from '../index-JDXCDs53.js';
+import { PageFragment, ExpressionProperty } from '../ScrollContainer-BMEt46hD.js';
+import { Container, Text } from '../Image-D55d_j2j.js';
+import { Div } from '../Div-CbKV9nto.js';
+import { content as content$1 } from '../Atlas_Core.Atlas_Default-BcLwJ3TJ.js';
+import '../InlineText-BhumBKcU.js';
+import '../ActionButton-CnZtpka2.js';
+import '../CTcC6PjV-Zoc9mpUp.js';
+import '../uEIG9e6s-D5bs4rlT.js';
+import '../ListExpressionProperty-BJu92AGp.js';
+import '../WebIconProperty-Bon9K84_.js';
+import '../WebStaticImageProperty-Cl4Gen30.js';
 
 const React = { createElement: reactExports.createElement };
 const { $Container, $Div, $Text } = asPluginWidgets({ Container, Div, Text });
@@ -17,8 +17,8 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
   /* @__PURE__ */ React.createElement(
     $Container,
     {
-      key: "p26.MyFirstModule.Home_Web.container1",
-      $widgetId: "p26.MyFirstModule.Home_Web.container1",
+      key: "p24.MyFirstModule.Home_Web.container1",
+      $widgetId: "p24.MyFirstModule.Home_Web.container1",
       class: "mx-name-container1 pageheader",
       style: void 0,
       renderMode: "div",
@@ -27,32 +27,32 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
         /* @__PURE__ */ React.createElement(
           $Div,
           {
-            key: "p26.MyFirstModule.Home_Web.layoutGrid2",
-            $widgetId: "p26.MyFirstModule.Home_Web.layoutGrid2",
+            key: "p24.MyFirstModule.Home_Web.layoutGrid2",
+            $widgetId: "p24.MyFirstModule.Home_Web.layoutGrid2",
             class: "mx-name-layoutGrid2 mx-layoutgrid mx-layoutgrid-fluid container-fluid",
             style: void 0,
             content: [
               /* @__PURE__ */ React.createElement(
                 $Div,
                 {
-                  key: "p26.MyFirstModule.Home_Web.layoutGrid2$row0",
-                  $widgetId: "p26.MyFirstModule.Home_Web.layoutGrid2$row0",
+                  key: "p24.MyFirstModule.Home_Web.layoutGrid2$row0",
+                  $widgetId: "p24.MyFirstModule.Home_Web.layoutGrid2$row0",
                   class: "row",
                   style: void 0,
                   content: [
                     /* @__PURE__ */ React.createElement(
                       $Div,
                       {
-                        key: "p26.MyFirstModule.Home_Web.layoutGrid2$row0$column0",
-                        $widgetId: "p26.MyFirstModule.Home_Web.layoutGrid2$row0$column0",
+                        key: "p24.MyFirstModule.Home_Web.layoutGrid2$row0$column0",
+                        $widgetId: "p24.MyFirstModule.Home_Web.layoutGrid2$row0$column0",
                         class: "col-lg col-md col",
                         style: void 0,
                         content: [
                           /* @__PURE__ */ React.createElement(
                             $Text,
                             {
-                              key: "p26.MyFirstModule.Home_Web.text1",
-                              $widgetId: "p26.MyFirstModule.Home_Web.text1",
+                              key: "p24.MyFirstModule.Home_Web.text1",
+                              $widgetId: "p24.MyFirstModule.Home_Web.text1",
                               class: "mx-name-text1 pageheader-title spacing-outer-bottom",
                               style: void 0,
                               caption: selectTranslation([
@@ -66,8 +66,8 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                           /* @__PURE__ */ React.createElement(
                             $Text,
                             {
-                              key: "p26.MyFirstModule.Home_Web.text3",
-                              $widgetId: "p26.MyFirstModule.Home_Web.text3",
+                              key: "p24.MyFirstModule.Home_Web.text3",
+                              $widgetId: "p24.MyFirstModule.Home_Web.text3",
                               class: "mx-name-text3 pageheader-subtitle text-detail",
                               style: void 0,
                               caption: selectTranslation([
@@ -94,24 +94,24 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
   /* @__PURE__ */ React.createElement(
     $Div,
     {
-      key: "p26.MyFirstModule.Home_Web.layoutGrid1",
-      $widgetId: "p26.MyFirstModule.Home_Web.layoutGrid1",
+      key: "p24.MyFirstModule.Home_Web.layoutGrid1",
+      $widgetId: "p24.MyFirstModule.Home_Web.layoutGrid1",
       class: "mx-name-layoutGrid1 mx-layoutgrid mx-layoutgrid-fluid container-fluid",
       style: void 0,
       content: [
         /* @__PURE__ */ React.createElement(
           $Div,
           {
-            key: "p26.MyFirstModule.Home_Web.layoutGrid1$row0",
-            $widgetId: "p26.MyFirstModule.Home_Web.layoutGrid1$row0",
+            key: "p24.MyFirstModule.Home_Web.layoutGrid1$row0",
+            $widgetId: "p24.MyFirstModule.Home_Web.layoutGrid1$row0",
             class: "row",
             style: void 0,
             content: [
               /* @__PURE__ */ React.createElement(
                 $Div,
                 {
-                  key: "p26.MyFirstModule.Home_Web.layoutGrid1$row0$column0",
-                  $widgetId: "p26.MyFirstModule.Home_Web.layoutGrid1$row0$column0",
+                  key: "p24.MyFirstModule.Home_Web.layoutGrid1$row0$column0",
+                  $widgetId: "p24.MyFirstModule.Home_Web.layoutGrid1$row0$column0",
                   class: "col-lg col-md col",
                   style: void 0,
                   content: void 0

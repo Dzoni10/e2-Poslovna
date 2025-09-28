@@ -1,10 +1,10 @@
-import { reactExports, asPluginWidgets, selectTranslation } from '../index-DZt3m621.js';
-import { PageFragment, ExpressionProperty } from '../ScrollContainer-7frAKGuI.js';
-import { WebStaticImageProperty } from '../WebStaticImageProperty-D06_LAui.js';
-import { ImageWidgetModule, Container, Text } from '../Image-B1CdR09q.js';
-import { Div } from '../Div-CyIrW3s-.js';
-import { content as content$1 } from '../Atlas_Core.PopupLayout-CjwEn0XB.js';
-import '../InlineText-Bj8eFZTT.js';
+import { reactExports, asPluginWidgets, selectTranslation } from '../index-JDXCDs53.js';
+import { PageFragment, ExpressionProperty } from '../ScrollContainer-BMEt46hD.js';
+import { WebStaticImageProperty } from '../WebStaticImageProperty-Cl4Gen30.js';
+import { ImageWidgetModule, Container, Text } from '../Image-D55d_j2j.js';
+import { Div } from '../Div-CbKV9nto.js';
+import { content as content$1 } from '../Atlas_Core.PopupLayout-DeEIVNnx.js';
+import '../InlineText-BhumBKcU.js';
 
 const React = { createElement: reactExports.createElement };
 const Image = Object.getOwnPropertyDescriptor(ImageWidgetModule, "Image")?.value || Object.getOwnPropertyDescriptor(ImageWidgetModule, "default")?.value;
@@ -13,32 +13,32 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
   /* @__PURE__ */ React.createElement(
     $Div,
     {
-      key: "p10.FeedbackModule.PopupFailure.layoutGrid1",
-      $widgetId: "p10.FeedbackModule.PopupFailure.layoutGrid1",
+      key: "p8.FeedbackModule.PopupFailure.layoutGrid1",
+      $widgetId: "p8.FeedbackModule.PopupFailure.layoutGrid1",
       class: "mx-name-layoutGrid1 mx-layoutgrid mx-layoutgrid-fluid container-fluid",
       style: void 0,
       content: [
         /* @__PURE__ */ React.createElement(
           $Div,
           {
-            key: "p10.FeedbackModule.PopupFailure.layoutGrid1$row0",
-            $widgetId: "p10.FeedbackModule.PopupFailure.layoutGrid1$row0",
+            key: "p8.FeedbackModule.PopupFailure.layoutGrid1$row0",
+            $widgetId: "p8.FeedbackModule.PopupFailure.layoutGrid1$row0",
             class: "row",
             style: void 0,
             content: [
               /* @__PURE__ */ React.createElement(
                 $Div,
                 {
-                  key: "p10.FeedbackModule.PopupFailure.layoutGrid1$row0$column0",
-                  $widgetId: "p10.FeedbackModule.PopupFailure.layoutGrid1$row0$column0",
+                  key: "p8.FeedbackModule.PopupFailure.layoutGrid1$row0$column0",
+                  $widgetId: "p8.FeedbackModule.PopupFailure.layoutGrid1$row0$column0",
                   class: "col-lg col-md col",
                   style: void 0,
                   content: [
                     /* @__PURE__ */ React.createElement(
                       $Container,
                       {
-                        key: "p10.FeedbackModule.PopupFailure.container1",
-                        $widgetId: "p10.FeedbackModule.PopupFailure.container1",
+                        key: "p8.FeedbackModule.PopupFailure.container1",
+                        $widgetId: "p8.FeedbackModule.PopupFailure.container1",
                         class: "mx-name-container1",
                         style: void 0,
                         renderMode: "div",
@@ -47,8 +47,8 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                           /* @__PURE__ */ React.createElement(
                             $Image,
                             {
-                              key: "p10.FeedbackModule.PopupFailure.image1",
-                              $widgetId: "p10.FeedbackModule.PopupFailure.image1",
+                              key: "p8.FeedbackModule.PopupFailure.image1",
+                              $widgetId: "p8.FeedbackModule.PopupFailure.image1",
                               datasource: "image",
                               imageObject: WebStaticImageProperty({
                                 "image": { "uri": "img/FeedbackModule$Images$Failure.png" }
@@ -84,8 +84,8 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                           /* @__PURE__ */ React.createElement(
                             $Text,
                             {
-                              key: "p10.FeedbackModule.PopupFailure.text1",
-                              $widgetId: "p10.FeedbackModule.PopupFailure.text1",
+                              key: "p8.FeedbackModule.PopupFailure.text1",
+                              $widgetId: "p8.FeedbackModule.PopupFailure.text1",
                               class: "mx-name-text1 text-center d-block spacing-outer-top-large spacing-outer-bottom",
                               style: void 0,
                               caption: selectTranslation([
@@ -99,8 +99,8 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                           /* @__PURE__ */ React.createElement(
                             $Text,
                             {
-                              key: "p10.FeedbackModule.PopupFailure.text2",
-                              $widgetId: "p10.FeedbackModule.PopupFailure.text2",
+                              key: "p8.FeedbackModule.PopupFailure.text2",
+                              $widgetId: "p8.FeedbackModule.PopupFailure.text2",
                               class: "mx-name-text2 text-center d-block",
                               style: void 0,
                               caption: selectTranslation([

@@ -15,6 +15,29 @@ public class Preduzece implements com.mendix.systemwideinterfaces.core.IEntityPr
 	 */
 	public static final java.lang.String entityName = "MyFirstModule.Preduzece";
 
+	/**
+	 * Enum describing members of this entity
+	 */
+	public enum MemberNames
+	{
+		nazivPreduzeca("nazivPreduzeca"),
+		PIB("PIB"),
+		adresaPreduzeca("adresaPreduzeca");
+
+		private final java.lang.String metaName;
+
+		MemberNames(java.lang.String s)
+		{
+			metaName = s;
+		}
+
+		@java.lang.Override
+		public java.lang.String toString()
+		{
+			return metaName;
+		}
+	}
+
 	public Preduzece(com.mendix.systemwideinterfaces.core.IContext context)
 	{
 		this(context, com.mendix.core.Core.instantiate(context, entityName));
@@ -58,6 +81,114 @@ public class Preduzece implements com.mendix.systemwideinterfaces.core.IEntityPr
 			.stream()
 			.map(obj -> myfirstmodule.proxies.Preduzece.initialize(context, obj))
 			.collect(java.util.stream.Collectors.toList());
+	}
+
+	/**
+	 * @return value of nazivPreduzeca
+	 */
+	public final java.lang.String getnazivPreduzeca()
+	{
+		return getnazivPreduzeca(getContext());
+	}
+
+	/**
+	 * @param context
+	 * @return value of nazivPreduzeca
+	 */
+	public final java.lang.String getnazivPreduzeca(com.mendix.systemwideinterfaces.core.IContext context)
+	{
+		return (java.lang.String) getMendixObject().getValue(context, MemberNames.nazivPreduzeca.toString());
+	}
+
+	/**
+	 * Set value of nazivPreduzeca
+	 * @param nazivpreduzeca
+	 */
+	public final void setnazivPreduzeca(java.lang.String nazivpreduzeca)
+	{
+		setnazivPreduzeca(getContext(), nazivpreduzeca);
+	}
+
+	/**
+	 * Set value of nazivPreduzeca
+	 * @param context
+	 * @param nazivpreduzeca
+	 */
+	public final void setnazivPreduzeca(com.mendix.systemwideinterfaces.core.IContext context, java.lang.String nazivpreduzeca)
+	{
+		getMendixObject().setValue(context, MemberNames.nazivPreduzeca.toString(), nazivpreduzeca);
+	}
+
+	/**
+	 * @return value of PIB
+	 */
+	public final java.lang.String getPIB()
+	{
+		return getPIB(getContext());
+	}
+
+	/**
+	 * @param context
+	 * @return value of PIB
+	 */
+	public final java.lang.String getPIB(com.mendix.systemwideinterfaces.core.IContext context)
+	{
+		return (java.lang.String) getMendixObject().getValue(context, MemberNames.PIB.toString());
+	}
+
+	/**
+	 * Set value of PIB
+	 * @param pib
+	 */
+	public final void setPIB(java.lang.String pib)
+	{
+		setPIB(getContext(), pib);
+	}
+
+	/**
+	 * Set value of PIB
+	 * @param context
+	 * @param pib
+	 */
+	public final void setPIB(com.mendix.systemwideinterfaces.core.IContext context, java.lang.String pib)
+	{
+		getMendixObject().setValue(context, MemberNames.PIB.toString(), pib);
+	}
+
+	/**
+	 * @return value of adresaPreduzeca
+	 */
+	public final java.lang.String getadresaPreduzeca()
+	{
+		return getadresaPreduzeca(getContext());
+	}
+
+	/**
+	 * @param context
+	 * @return value of adresaPreduzeca
+	 */
+	public final java.lang.String getadresaPreduzeca(com.mendix.systemwideinterfaces.core.IContext context)
+	{
+		return (java.lang.String) getMendixObject().getValue(context, MemberNames.adresaPreduzeca.toString());
+	}
+
+	/**
+	 * Set value of adresaPreduzeca
+	 * @param adresapreduzeca
+	 */
+	public final void setadresaPreduzeca(java.lang.String adresapreduzeca)
+	{
+		setadresaPreduzeca(getContext(), adresapreduzeca);
+	}
+
+	/**
+	 * Set value of adresaPreduzeca
+	 * @param context
+	 * @param adresapreduzeca
+	 */
+	public final void setadresaPreduzeca(com.mendix.systemwideinterfaces.core.IContext context, java.lang.String adresapreduzeca)
+	{
+		getMendixObject().setValue(context, MemberNames.adresaPreduzeca.toString(), adresapreduzeca);
 	}
 
 	@java.lang.Override
