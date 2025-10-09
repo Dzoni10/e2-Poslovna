@@ -13,12 +13,12 @@ import { WebIconProperty } from "mendix/WebIconProperty";
 
 import { ActionButton } from "mendix/widgets/web/ActionButton";
 import { Container } from "mendix/widgets/web/Container";
-import * as DatagridWidgetModule from "C:/Poslovna/e2-Poslovna/PoslovnaProjekat/deployment/web/widgets/com/mendix/widget/web/datagrid/Datagrid.mjs";
+import * as DatagridWidgetModule from "C:/Users/Djordje/Desktop/e2-Poslovna/PoslovnaProjekat/deployment/web/widgets/com/mendix/widget/web/datagrid/Datagrid.mjs";
 const Datagrid = Object.getOwnPropertyDescriptor(DatagridWidgetModule, "Datagrid")?.value || Object.getOwnPropertyDescriptor(DatagridWidgetModule, "default")?.value;   
-import * as DatagridDateFilterWidgetModule from "C:/Poslovna/e2-Poslovna/PoslovnaProjekat/deployment/web/widgets/com/mendix/widget/web/datagriddatefilter/DatagridDateFilter.mjs";
+import * as DatagridDateFilterWidgetModule from "C:/Users/Djordje/Desktop/e2-Poslovna/PoslovnaProjekat/deployment/web/widgets/com/mendix/widget/web/datagriddatefilter/DatagridDateFilter.mjs";
 const DatagridDateFilter = Object.getOwnPropertyDescriptor(DatagridDateFilterWidgetModule, "DatagridDateFilter")?.value || Object.getOwnPropertyDescriptor(DatagridDateFilterWidgetModule, "default")?.value;   
-import "C:/Poslovna/e2-Poslovna/PoslovnaProjekat/deployment/web/widgets/com/mendix/widget/web/datagriddatefilter/DatagridDateFilter.css";
-import * as DatagridTextFilterWidgetModule from "C:/Poslovna/e2-Poslovna/PoslovnaProjekat/deployment/web/widgets/com/mendix/widget/web/datagridtextfilter/DatagridTextFilter.mjs";
+import "C:/Users/Djordje/Desktop/e2-Poslovna/PoslovnaProjekat/deployment/web/widgets/com/mendix/widget/web/datagriddatefilter/DatagridDateFilter.css";
+import * as DatagridTextFilterWidgetModule from "C:/Users/Djordje/Desktop/e2-Poslovna/PoslovnaProjekat/deployment/web/widgets/com/mendix/widget/web/datagridtextfilter/DatagridTextFilter.mjs";
 const DatagridTextFilter = Object.getOwnPropertyDescriptor(DatagridTextFilterWidgetModule, "DatagridTextFilter")?.value || Object.getOwnPropertyDescriptor(DatagridTextFilterWidgetModule, "default")?.value;   
 import { Div } from "mendix/widgets/web/Div";
 import { Text } from "mendix/widgets/web/Text";
@@ -29,30 +29,30 @@ import { content as parentContent } from "../layouts/Atlas_Core.Atlas_Default.js
 const { $Container, $Div, $Text, $Datagrid, $DatagridTextFilter, $DatagridDateFilter, $ActionButton } = asPluginWidgets({ Container, Div, Text, Datagrid, DatagridTextFilter, DatagridDateFilter, ActionButton });
 
 const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
-    <$Container key="p6.Administration.ActiveSessions.container1"
-        $widgetId="p6.Administration.ActiveSessions.container1"
+    <$Container key="p.Administration.ActiveSessions.container1"
+        $widgetId="p.Administration.ActiveSessions.container1"
         class={"mx-name-container1 pageheader pageheader-fullwidth"}
         style={undefined}
         renderMode={"div"}
         onClick={undefined}
         content={[
-            <$Div key="p6.Administration.ActiveSessions.layoutGrid1"
-                $widgetId="p6.Administration.ActiveSessions.layoutGrid1"
+            <$Div key="p.Administration.ActiveSessions.layoutGrid1"
+                $widgetId="p.Administration.ActiveSessions.layoutGrid1"
                 class={"mx-name-layoutGrid1 mx-layoutgrid mx-layoutgrid-fluid container-fluid"}
                 style={undefined}
                 content={[
-                    <$Div key="p6.Administration.ActiveSessions.layoutGrid1$row0"
-                        $widgetId="p6.Administration.ActiveSessions.layoutGrid1$row0"
+                    <$Div key="p.Administration.ActiveSessions.layoutGrid1$row0"
+                        $widgetId="p.Administration.ActiveSessions.layoutGrid1$row0"
                         class={"row"}
                         style={undefined}
                         content={[
-                            <$Div key="p6.Administration.ActiveSessions.layoutGrid1$row0$column0"
-                                $widgetId="p6.Administration.ActiveSessions.layoutGrid1$row0$column0"
+                            <$Div key="p.Administration.ActiveSessions.layoutGrid1$row0$column0"
+                                $widgetId="p.Administration.ActiveSessions.layoutGrid1$row0$column0"
                                 class={"col-lg-12 col-md-12 col-12"}
                                 style={undefined}
                                 content={[
-                                    <$Text key="p6.Administration.ActiveSessions.label1"
-                                        $widgetId="p6.Administration.ActiveSessions.label1"
+                                    <$Text key="p.Administration.ActiveSessions.label1"
+                                        $widgetId="p.Administration.ActiveSessions.label1"
                                         class={"mx-name-label1 pageheader-title"}
                                         style={undefined}
                                         caption={t([
@@ -66,26 +66,26 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                 ]} />
         ]}
         ariaHidden={false} />,
-    <$Div key="p6.Administration.ActiveSessions.layoutGrid2"
-        $widgetId="p6.Administration.ActiveSessions.layoutGrid2"
+    <$Div key="p.Administration.ActiveSessions.layoutGrid2"
+        $widgetId="p.Administration.ActiveSessions.layoutGrid2"
         class={"mx-name-layoutGrid2 mx-layoutgrid mx-layoutgrid-fluid container-fluid"}
         style={undefined}
         content={[
-            <$Div key="p6.Administration.ActiveSessions.layoutGrid2$row0"
-                $widgetId="p6.Administration.ActiveSessions.layoutGrid2$row0"
+            <$Div key="p.Administration.ActiveSessions.layoutGrid2$row0"
+                $widgetId="p.Administration.ActiveSessions.layoutGrid2$row0"
                 class={"row"}
                 style={undefined}
                 content={[
-                    <$Div key="p6.Administration.ActiveSessions.layoutGrid2$row0$column0"
-                        $widgetId="p6.Administration.ActiveSessions.layoutGrid2$row0$column0"
+                    <$Div key="p.Administration.ActiveSessions.layoutGrid2$row0$column0"
+                        $widgetId="p.Administration.ActiveSessions.layoutGrid2$row0$column0"
                         class={"col-lg-12 col-md-12 col-12"}
                         style={undefined}
                         content={[
-                            <$Datagrid key="p6.Administration.ActiveSessions.dataGrid21"
-                                $widgetId="p6.Administration.ActiveSessions.dataGrid21"
+                            <$Datagrid key="p.Administration.ActiveSessions.dataGrid21"
+                                $widgetId="p.Administration.ActiveSessions.dataGrid21"
                                 advanced={false}
                                 datasource={DatabaseObjectListProperty({
-                                    "dataSourceId": "p6.10",
+                                    "dataSourceId": "p.10",
                                     "entity": "System.Session",
                                     "operationId": "uwfb87lxmV2G4VS0CAhgEA",
                                     "sort": [
@@ -108,7 +108,7 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                             "attributeType": "String",
                                             "sortable": true,
                                             "filterable": true,
-                                            "dataSourceId": "p6.10",
+                                            "dataSourceId": "p.10",
                                             "isList": false
                                         }),
                                         "content": undefined,
@@ -124,8 +124,8 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                             undefined
                                         ]),
                                         "filter": [
-                                            <$DatagridTextFilter key="p6.Administration.ActiveSessions.textFilter1"
-                                                $widgetId="p6.Administration.ActiveSessions.textFilter1"
+                                            <$DatagridTextFilter key="p.Administration.ActiveSessions.textFilter1"
+                                                $widgetId="p.Administration.ActiveSessions.textFilter1"
                                                 advanced={false}
                                                 defaultValue={undefined}
                                                 defaultFilter={"contains"}
@@ -180,14 +180,14 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                             "attributeType": "DateTime",
                                             "sortable": true,
                                             "filterable": true,
-                                            "dataSourceId": "p6.10",
+                                            "dataSourceId": "p.10",
                                             "isList": false
                                         }),
                                         "content": undefined,
                                         "dynamicText": t([
                                             ListExpressionProperty({
-                                                "expression": { "expr": { "type": "function", "name": "_format", "parameters": [ { "type": "variable", "variable": "currentObject", "path": "LastActive" }, { "type": "literal", "value": "{\"type\":\"datetime\"}" } ] }, "args": { "currentObject": { "widget": "p6.Administration.ActiveSessions.dataGrid21", "source": "object" } } },
-                                                "dataSourceId": "p6.10"
+                                                "expression": { "expr": { "type": "function", "name": "_format", "parameters": [ { "type": "variable", "variable": "currentObject", "path": "LastActive" }, { "type": "literal", "value": "{\"type\":\"datetime\"}" } ] }, "args": { "currentObject": { "widget": "p.Administration.ActiveSessions.dataGrid21", "source": "object" } } },
+                                                "dataSourceId": "p.10"
                                             })
                                         ]),
                                         "header": t([
@@ -199,8 +199,8 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                             undefined
                                         ]),
                                         "filter": [
-                                            <$DatagridDateFilter key="p6.Administration.ActiveSessions.dateFilter1"
-                                                $widgetId="p6.Administration.ActiveSessions.dateFilter1"
+                                            <$DatagridDateFilter key="p.Administration.ActiveSessions.dateFilter1"
+                                                $widgetId="p.Administration.ActiveSessions.dateFilter1"
                                                 advanced={false}
                                                 defaultValue={undefined}
                                                 defaultStartDate={undefined}
@@ -261,16 +261,16 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                             "attributeType": "DateTime",
                                             "sortable": true,
                                             "filterable": true,
-                                            "dataSourceId": "p6.10",
+                                            "dataSourceId": "p.10",
                                             "isList": false
                                         }),
                                         "content": TemplatedWidgetProperty({
-                                            "dataSourceId": "p6.10",
+                                            "dataSourceId": "p.10",
                                             "editable": false,
                                             "children": () => [
-                                                <$ActionButton key="p6.Administration.ActiveSessions.actionButton1"
-                                                    $widgetId="p6.Administration.ActiveSessions.actionButton1"
-                                                    buttonId={"p6.Administration.ActiveSessions.actionButton1"}
+                                                <$ActionButton key="p.Administration.ActiveSessions.actionButton1"
+                                                    $widgetId="p.Administration.ActiveSessions.actionButton1"
+                                                    buttonId={"p.Administration.ActiveSessions.actionButton1"}
                                                     class={"mx-name-actionButton1 btn-lg"}
                                                     style={undefined}
                                                     tabIndex={undefined}
@@ -291,7 +291,7 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                                         "icon": { "type": "icon", "iconClass": "mx-icon-filled mx-icon-logout" }
                                                     })}
                                                     action={ActionProperty({
-                                                        "action": { "type": "deleteObject", "argMap": { "$object": { "widget": "p6.Administration.ActiveSessions.dataGrid21", "source": "object" } }, "config": { "closePage": false, "operationId": "5NnvSl7UJFy7oY57Ml7JDg" }, "disabledDuringExecution": true },
+                                                        "action": { "type": "deleteObject", "argMap": { "$object": { "widget": "p.Administration.ActiveSessions.dataGrid21", "source": "object" } }, "config": { "closePage": false, "operationId": "5NnvSl7UJFy7oY57Ml7JDg" }, "disabledDuringExecution": true },
                                                         "abortOnServerValidation": true
                                                     })} />
                                             ]
@@ -395,6 +395,7 @@ export const title = t([
 
 export const classes = "layout-atlas layout-atlas-responsive-default";
 
+export const autofocus = "desktopOnly";
 export const style = {};
 export const content = { ...parentContent,
     "Atlas_Core.Atlas_Default.Main": region$Main,

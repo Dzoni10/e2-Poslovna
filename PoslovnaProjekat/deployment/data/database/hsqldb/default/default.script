@@ -30,7 +30,11 @@ SET FILES NIO TRUE
 SET FILES NIO SIZE 256
 SET FILES LOG TRUE
 SET FILES LOG SIZE 50
+<<<<<<< Updated upstream
 SET FILES CHECK 2098166
+=======
+SET FILES CHECK 1979094
+>>>>>>> Stashed changes
 SET DATABASE COLLATION "SQL_TEXT" PAD SPACE
 CREATE USER SA PASSWORD DIGEST 'd41d8cd98f00b204e9800998ecf8427e'
 ALTER USER SA SET LOCAL TRUE
@@ -199,7 +203,11 @@ CREATE INDEX "idx_myfirstmodule$prometnidokument_myfirstmodule$prometnidokument_
 CREATE INDEX "idx_myfirstmodule$prometnidokument_myfirstmodule$prometnidokument_poslovnipartner" ON PUBLIC."myfirstmodule$prometnidokument"("myfirstmodule$prometnidokument_poslovnipartner","id")
 CREATE INDEX "idx_myfirstmodule$prometnidokument_myfirstmodule$prometnidokument_izlaznafaktura" ON PUBLIC."myfirstmodule$prometnidokument"("myfirstmodule$prometnidokument_izlaznafaktura","id")
 CREATE MEMORY TABLE PUBLIC."myfirstmodule$jedinicamere"("id" BIGINT NOT NULL PRIMARY KEY,"nazivjedinice" VARCHAR(200) COLLATE INFORMATION_SCHEMA.SQL_TEXT_UCC,"skraceninaziv" VARCHAR(200) COLLATE INFORMATION_SCHEMA.SQL_TEXT_UCC)
+<<<<<<< Updated upstream
 CREATE MEMORY TABLE PUBLIC."prodaja$izlaznafaktura"("id" BIGINT NOT NULL PRIMARY KEY,"datumfakture" TIMESTAMP,"prodaja$izlaznafaktura_poslovnagodina" BIGINT,"prodaja$izlaznafaktura_poslovnipartner" BIGINT,"prodaja$izlaznafaktura_preduzece" BIGINT,"datumvalute" TIMESTAMP,"ukupanpdv" DECIMAL(28,8),"ukupnaosnovica" DECIMAL(28,8),"vrstadokumenta" VARCHAR(10) COLLATE INFORMATION_SCHEMA.SQL_TEXT_UCC,"ukupnavrednost" DECIMAL(28,8),"mestopreuzimanja" VARCHAR(200) COLLATE INFORMATION_SCHEMA.SQL_TEXT_UCC,"racunzauplatu" VARCHAR(200) COLLATE INFORMATION_SCHEMA.SQL_TEXT_UCC,"statusfakture" VARCHAR(15) COLLATE INFORMATION_SCHEMA.SQL_TEXT_UCC,"brojfakture" INTEGER,CONSTRAINT "frn_prodaja$izlaznafaktura_prodaja$izlaznafaktura_poslovnagodina" FOREIGN KEY("prodaja$izlaznafaktura_poslovnagodina") REFERENCES PUBLIC."myfirstmodule$poslovnagodina"("id") ON DELETE SET NULL,CONSTRAINT "frn_prodaja$izlaznafaktura_prodaja$izlaznafaktura_poslovnipartner" FOREIGN KEY("prodaja$izlaznafaktura_poslovnipartner") REFERENCES PUBLIC."myfirstmodule$poslovnipartner"("id") ON DELETE SET NULL,CONSTRAINT "frn_prodaja$izlaznafaktura_prodaja$izlaznafaktura_preduzece" FOREIGN KEY("prodaja$izlaznafaktura_preduzece") REFERENCES PUBLIC."myfirstmodule$preduzece"("id") ON DELETE SET NULL)
+=======
+CREATE MEMORY TABLE PUBLIC."prodaja$izlaznafaktura"("id" BIGINT NOT NULL PRIMARY KEY,"datumfakture" TIMESTAMP,"prodaja$izlaznafaktura_poslovnagodina" BIGINT,"prodaja$izlaznafaktura_poslovnipartner" BIGINT,"prodaja$izlaznafaktura_preduzece" BIGINT,"datumvalute" TIMESTAMP,"ukupanpdv" DECIMAL(28,8),"ukupnaosnovica" DECIMAL(28,8),"preostaliiznos" DECIMAL(28,8),"vrstadokumenta" VARCHAR(10) COLLATE INFORMATION_SCHEMA.SQL_TEXT_UCC,"ukupnavrednost" DECIMAL(28,8),"mestopreuzimanja" VARCHAR(200) COLLATE INFORMATION_SCHEMA.SQL_TEXT_UCC,"racunzauplatu" VARCHAR(200) COLLATE INFORMATION_SCHEMA.SQL_TEXT_UCC,"statusfakture" VARCHAR(15) COLLATE INFORMATION_SCHEMA.SQL_TEXT_UCC,"brojfakture" INTEGER,CONSTRAINT "frn_prodaja$izlaznafaktura_prodaja$izlaznafaktura_poslovnagodina" FOREIGN KEY("prodaja$izlaznafaktura_poslovnagodina") REFERENCES PUBLIC."myfirstmodule$poslovnagodina"("id") ON DELETE SET NULL,CONSTRAINT "frn_prodaja$izlaznafaktura_prodaja$izlaznafaktura_poslovnipartner" FOREIGN KEY("prodaja$izlaznafaktura_poslovnipartner") REFERENCES PUBLIC."myfirstmodule$poslovnipartner"("id") ON DELETE SET NULL,CONSTRAINT "frn_prodaja$izlaznafaktura_prodaja$izlaznafaktura_preduzece" FOREIGN KEY("prodaja$izlaznafaktura_preduzece") REFERENCES PUBLIC."myfirstmodule$preduzece"("id") ON DELETE SET NULL)
+>>>>>>> Stashed changes
 CREATE INDEX "idx_prodaja$izlaznafaktura_prodaja$izlaznafaktura_poslovnagodina" ON PUBLIC."prodaja$izlaznafaktura"("prodaja$izlaznafaktura_poslovnagodina","id")
 CREATE INDEX "idx_prodaja$izlaznafaktura_prodaja$izlaznafaktura_poslovnipartner" ON PUBLIC."prodaja$izlaznafaktura"("prodaja$izlaznafaktura_poslovnipartner","id")
 CREATE INDEX "idx_prodaja$izlaznafaktura_prodaja$izlaznafaktura_preduzece" ON PUBLIC."prodaja$izlaznafaktura"("prodaja$izlaznafaktura_preduzece","id")
@@ -225,17 +233,33 @@ CREATE MEMORY TABLE PUBLIC."system$workflowusertask_targetgroups"("system$workfl
 CREATE INDEX "idx_system$workflowusertask_targetgroups_system$workflowgroup_system$workflowusertask" ON PUBLIC."system$workflowusertask_targetgroups"("system$workflowgroupid","system$workflowusertaskid")
 CREATE MEMORY TABLE PUBLIC."system$workflowgroup_user"("system$workflowgroupid" BIGINT NOT NULL,"system$userid" BIGINT NOT NULL,PRIMARY KEY("system$workflowgroupid","system$userid"),CONSTRAINT "frn_system$workflowgroup_user_system$workflowgroupid" FOREIGN KEY("system$workflowgroupid") REFERENCES PUBLIC."system$workflowgroup"("id") ON DELETE CASCADE,CONSTRAINT "frn_system$workflowgroup_user_system$userid" FOREIGN KEY("system$userid") REFERENCES PUBLIC."system$user"("id") ON DELETE CASCADE)
 CREATE INDEX "idx_system$workflowgroup_user_system$user_system$workflowgroup" ON PUBLIC."system$workflowgroup_user"("system$userid","system$workflowgroupid")
+<<<<<<< Updated upstream
+=======
+CREATE MEMORY TABLE PUBLIC."prodaja$ugovor"("id" BIGINT NOT NULL PRIMARY KEY,"brojugovora" INTEGER,"datumzakljucenja" TIMESTAMP,"datumzavrsetkavazenja" TIMESTAMP,"statusugovora" VARCHAR(18) COLLATE INFORMATION_SCHEMA.SQL_TEXT_UCC,"prodaja$ugovor_preduzece" BIGINT,"prodaja$ugovor_poslovnipartner" BIGINT,CONSTRAINT "frn_prodaja$ugovor_prodaja$ugovor_preduzece" FOREIGN KEY("prodaja$ugovor_preduzece") REFERENCES PUBLIC."myfirstmodule$preduzece"("id") ON DELETE SET NULL,CONSTRAINT "frn_prodaja$ugovor_prodaja$ugovor_poslovnipartner" FOREIGN KEY("prodaja$ugovor_poslovnipartner") REFERENCES PUBLIC."myfirstmodule$poslovnipartner"("id") ON DELETE SET NULL)
+CREATE INDEX "idx_prodaja$ugovor_prodaja$ugovor_preduzece" ON PUBLIC."prodaja$ugovor"("prodaja$ugovor_preduzece","id")
+CREATE INDEX "idx_prodaja$ugovor_prodaja$ugovor_poslovnipartner" ON PUBLIC."prodaja$ugovor"("prodaja$ugovor_poslovnipartner","id")
+>>>>>>> Stashed changes
 CREATE MEMORY TABLE PUBLIC."prodaja$iznospdv"("id" BIGINT NOT NULL PRIMARY KEY,"iznos" DECIMAL(28,8),"stopapdv" VARCHAR(10) COLLATE INFORMATION_SCHEMA.SQL_TEXT_UCC,"vaziod" TIMESTAMP,"prodaja$iznospdv_preduzece" BIGINT,CONSTRAINT "frn_prodaja$iznospdv_prodaja$iznospdv_preduzece" FOREIGN KEY("prodaja$iznospdv_preduzece") REFERENCES PUBLIC."myfirstmodule$preduzece"("id") ON DELETE SET NULL)
 CREATE INDEX "idx_prodaja$iznospdv_prodaja$iznospdv_preduzece" ON PUBLIC."prodaja$iznospdv"("prodaja$iznospdv_preduzece","id")
 CREATE MEMORY TABLE PUBLIC."prodaja$stavkafakture"("id" BIGINT NOT NULL PRIMARY KEY,"kolicina" DECIMAL(28,8),"rabat" DECIMAL(28,8),"jedinicnacena" DECIMAL(28,8),"osnovica" DECIMAL(28,8),"stopapdv" DECIMAL(28,8),"iznospdv" DECIMAL(28,8),"ukupno" DECIMAL(28,8),"prodaja$stavkafakture_robailiusluga" BIGINT,"prodaja$stavkafakture_izlaznafaktura" BIGINT,CONSTRAINT "frn_prodaja$stavkafakture_prodaja$stavkafakture_robailiusluga" FOREIGN KEY("prodaja$stavkafakture_robailiusluga") REFERENCES PUBLIC."myfirstmodule$robailiusluga"("id") ON DELETE SET NULL,CONSTRAINT "frn_prodaja$stavkafakture_prodaja$stavkafakture_izlaznafaktura" FOREIGN KEY("prodaja$stavkafakture_izlaznafaktura") REFERENCES PUBLIC."prodaja$izlaznafaktura"("id") ON DELETE SET NULL)
 CREATE INDEX "idx_prodaja$stavkafakture_prodaja$stavkafakture_robailiusluga" ON PUBLIC."prodaja$stavkafakture"("prodaja$stavkafakture_robailiusluga","id")
 CREATE INDEX "idx_prodaja$stavkafakture_prodaja$stavkafakture_izlaznafaktura" ON PUBLIC."prodaja$stavkafakture"("prodaja$stavkafakture_izlaznafaktura","id")
+<<<<<<< Updated upstream
 CREATE MEMORY TABLE PUBLIC."prodaja$narudzbenicakupca"("id" BIGINT NOT NULL PRIMARY KEY,"rokisporuke" TIMESTAMP,"nacinpakovanja" VARCHAR(200) COLLATE INFORMATION_SCHEMA.SQL_TEXT_UCC,"nacinplacanja" VARCHAR(200) COLLATE INFORMATION_SCHEMA.SQL_TEXT_UCC,"mestopreuzimanjaisporuke" VARCHAR(200) COLLATE INFORMATION_SCHEMA.SQL_TEXT_UCC,"prodaja$narudzbenicakupca_poslovnipartner" BIGINT,"prodaja$narudzbenicakupca_preduzece" BIGINT,"prodaja$narudzbenicakupca_izlaznafaktura" BIGINT,"prodaja$narudzbenicakupca_poslovnagodina" BIGINT,CONSTRAINT "uniq_prodaja$narudzbenicakupca_prodaja$narudzbenicakupca_izlaznafaktura" UNIQUE("prodaja$narudzbenicakupca_izlaznafaktura"),CONSTRAINT "frn_prodaja$narudzbenicakupca_prodaja$narudzbenicakupca_poslovnipartner" FOREIGN KEY("prodaja$narudzbenicakupca_poslovnipartner") REFERENCES PUBLIC."myfirstmodule$poslovnipartner"("id") ON DELETE SET NULL,CONSTRAINT "frn_prodaja$narudzbenicakupca_prodaja$narudzbenicakupca_izlaznafaktura" FOREIGN KEY("prodaja$narudzbenicakupca_izlaznafaktura") REFERENCES PUBLIC."prodaja$izlaznafaktura"("id") ON DELETE SET NULL,CONSTRAINT "frn_prodaja$narudzbenicakupca_prodaja$narudzbenicakupca_poslovnagodina" FOREIGN KEY("prodaja$narudzbenicakupca_poslovnagodina") REFERENCES PUBLIC."myfirstmodule$poslovnagodina"("id") ON DELETE SET NULL,CONSTRAINT "frn_prodaja$narudzbenicakupca_prodaja$narudzbenicakupca_preduzece" FOREIGN KEY("prodaja$narudzbenicakupca_preduzece") REFERENCES PUBLIC."myfirstmodule$preduzece"("id") ON DELETE SET NULL)
 CREATE INDEX "idx_prodaja$narudzbenicakupca_prodaja$narudzbenicakupca_poslovnipartner" ON PUBLIC."prodaja$narudzbenicakupca"("prodaja$narudzbenicakupca_poslovnipartner","id")
 CREATE INDEX "idx_prodaja$narudzbenicakupca_prodaja$narudzbenicakupca_preduzece" ON PUBLIC."prodaja$narudzbenicakupca"("prodaja$narudzbenicakupca_preduzece","id")
 CREATE INDEX "idx_prodaja$narudzbenicakupca_prodaja$narudzbenicakupca_izlaznafaktura" ON PUBLIC."prodaja$narudzbenicakupca"("prodaja$narudzbenicakupca_izlaznafaktura","id")
 CREATE INDEX "idx_prodaja$narudzbenicakupca_prodaja$narudzbenicakupca_poslovnagodina" ON PUBLIC."prodaja$narudzbenicakupca"("prodaja$narudzbenicakupca_poslovnagodina","id")
 CREATE MEMORY TABLE PUBLIC."prodaja$stavkanarudzbenice"("id" BIGINT NOT NULL PRIMARY KEY,"kolicina" DECIMAL(28,8),"prodaja$stavkanarudzbenice_robailiusluga" BIGINT,"prodaja$stavkanarudzbenice_narudzbenicakupca" BIGINT,CONSTRAINT "frn_prodaja$stavkanarudzbenice_prodaja$stavkanarudzbenice_robailiusluga" FOREIGN KEY("prodaja$stavkanarudzbenice_robailiusluga") REFERENCES PUBLIC."myfirstmodule$robailiusluga"("id") ON DELETE SET NULL,CONSTRAINT "frn_prodaja$stavkanarudzbenice_prodaja$stavkanarudzbenice_narudzbenicakupca" FOREIGN KEY("prodaja$stavkanarudzbenice_narudzbenicakupca") REFERENCES PUBLIC."prodaja$narudzbenicakupca"("id") ON DELETE SET NULL)
+=======
+CREATE MEMORY TABLE PUBLIC."prodaja$narudzbenicakupca"("id" BIGINT NOT NULL PRIMARY KEY,"rokisporuke" TIMESTAMP,"nacinpakovanja" VARCHAR(200) COLLATE INFORMATION_SCHEMA.SQL_TEXT_UCC,"nacinplacanja" VARCHAR(200) COLLATE INFORMATION_SCHEMA.SQL_TEXT_UCC,"usaglasenacena" DECIMAL(28,8),"mestopreuzimanjaisporuke" VARCHAR(200) COLLATE INFORMATION_SCHEMA.SQL_TEXT_UCC,"prodaja$narudzbenicakupca_poslovnipartner" BIGINT,"prodaja$narudzbenicakupca_ugovor" BIGINT,"prodaja$narudzbenicakupca_preduzece" BIGINT,"prodaja$narudzbenicakupca_izlaznafaktura" BIGINT,"prodaja$narudzbenicakupca_poslovnagodina" BIGINT,CONSTRAINT "uniq_prodaja$narudzbenicakupca_prodaja$narudzbenicakupca_izlaznafaktura" UNIQUE("prodaja$narudzbenicakupca_izlaznafaktura"),CONSTRAINT "frn_prodaja$narudzbenicakupca_prodaja$narudzbenicakupca_poslovnipartner" FOREIGN KEY("prodaja$narudzbenicakupca_poslovnipartner") REFERENCES PUBLIC."myfirstmodule$poslovnipartner"("id") ON DELETE SET NULL,CONSTRAINT "frn_prodaja$narudzbenicakupca_prodaja$narudzbenicakupca_ugovor" FOREIGN KEY("prodaja$narudzbenicakupca_ugovor") REFERENCES PUBLIC."prodaja$ugovor"("id") ON DELETE SET NULL,CONSTRAINT "frn_prodaja$narudzbenicakupca_prodaja$narudzbenicakupca_izlaznafaktura" FOREIGN KEY("prodaja$narudzbenicakupca_izlaznafaktura") REFERENCES PUBLIC."prodaja$izlaznafaktura"("id") ON DELETE SET NULL,CONSTRAINT "frn_prodaja$narudzbenicakupca_prodaja$narudzbenicakupca_poslovnagodina" FOREIGN KEY("prodaja$narudzbenicakupca_poslovnagodina") REFERENCES PUBLIC."myfirstmodule$poslovnagodina"("id") ON DELETE SET NULL,CONSTRAINT "frn_prodaja$narudzbenicakupca_prodaja$narudzbenicakupca_preduzece" FOREIGN KEY("prodaja$narudzbenicakupca_preduzece") REFERENCES PUBLIC."myfirstmodule$preduzece"("id") ON DELETE SET NULL)
+CREATE INDEX "idx_prodaja$narudzbenicakupca_prodaja$narudzbenicakupca_poslovnipartner" ON PUBLIC."prodaja$narudzbenicakupca"("prodaja$narudzbenicakupca_poslovnipartner","id")
+CREATE INDEX "idx_prodaja$narudzbenicakupca_prodaja$narudzbenicakupca_ugovor" ON PUBLIC."prodaja$narudzbenicakupca"("prodaja$narudzbenicakupca_ugovor","id")
+CREATE INDEX "idx_prodaja$narudzbenicakupca_prodaja$narudzbenicakupca_preduzece" ON PUBLIC."prodaja$narudzbenicakupca"("prodaja$narudzbenicakupca_preduzece","id")
+CREATE INDEX "idx_prodaja$narudzbenicakupca_prodaja$narudzbenicakupca_izlaznafaktura" ON PUBLIC."prodaja$narudzbenicakupca"("prodaja$narudzbenicakupca_izlaznafaktura","id")
+CREATE INDEX "idx_prodaja$narudzbenicakupca_prodaja$narudzbenicakupca_poslovnagodina" ON PUBLIC."prodaja$narudzbenicakupca"("prodaja$narudzbenicakupca_poslovnagodina","id")
+CREATE MEMORY TABLE PUBLIC."prodaja$stavkanarudzbenice"("id" BIGINT NOT NULL PRIMARY KEY,"kolicina" DECIMAL(28,8),"cena" DECIMAL(28,8),"ukupnostavka" DECIMAL(28,8),"prodaja$stavkanarudzbenice_robailiusluga" BIGINT,"prodaja$stavkanarudzbenice_narudzbenicakupca" BIGINT,CONSTRAINT "frn_prodaja$stavkanarudzbenice_prodaja$stavkanarudzbenice_robailiusluga" FOREIGN KEY("prodaja$stavkanarudzbenice_robailiusluga") REFERENCES PUBLIC."myfirstmodule$robailiusluga"("id") ON DELETE SET NULL,CONSTRAINT "frn_prodaja$stavkanarudzbenice_prodaja$stavkanarudzbenice_narudzbenicakupca" FOREIGN KEY("prodaja$stavkanarudzbenice_narudzbenicakupca") REFERENCES PUBLIC."prodaja$narudzbenicakupca"("id") ON DELETE SET NULL)
+>>>>>>> Stashed changes
 CREATE INDEX "idx_prodaja$stavkanarudzbenice_prodaja$stavkanarudzbenice_robailiusluga" ON PUBLIC."prodaja$stavkanarudzbenice"("prodaja$stavkanarudzbenice_robailiusluga","id")
 CREATE INDEX "idx_prodaja$stavkanarudzbenice_prodaja$stavkanarudzbenice_narudzbenicakupca" ON PUBLIC."prodaja$stavkanarudzbenice"("prodaja$stavkanarudzbenice_narudzbenicakupca","id")
 CREATE MEMORY TABLE PUBLIC."prodaja$kategorijarobe"("id" BIGINT NOT NULL PRIMARY KEY,"nazivkategorije" VARCHAR(200) COLLATE INFORMATION_SCHEMA.SQL_TEXT_UCC,"stopapdv" VARCHAR(10) COLLATE INFORMATION_SCHEMA.SQL_TEXT_UCC,"prodaja$kategorijarobe_preduzece" BIGINT,CONSTRAINT "frn_prodaja$kategorijarobe_prodaja$kategorijarobe_preduzece" FOREIGN KEY("prodaja$kategorijarobe_preduzece") REFERENCES PUBLIC."myfirstmodule$preduzece"("id") ON DELETE SET NULL)
@@ -245,6 +269,10 @@ CREATE INDEX "idx_prodaja$cenovnik_prodaja$cenovnik_preduzece" ON PUBLIC."prodaj
 CREATE MEMORY TABLE PUBLIC."prodaja$cena"("id" BIGINT NOT NULL PRIMARY KEY,"iznos" DECIMAL(28,8),"prodaja$cena_cenovnik" BIGINT,"prodaja$cena_robailiusluga" BIGINT,CONSTRAINT "frn_prodaja$cena_prodaja$cena_cenovnik" FOREIGN KEY("prodaja$cena_cenovnik") REFERENCES PUBLIC."prodaja$cenovnik"("id") ON DELETE SET NULL,CONSTRAINT "frn_prodaja$cena_prodaja$cena_robailiusluga" FOREIGN KEY("prodaja$cena_robailiusluga") REFERENCES PUBLIC."myfirstmodule$robailiusluga"("id") ON DELETE SET NULL)
 CREATE INDEX "idx_prodaja$cena_prodaja$cena_cenovnik" ON PUBLIC."prodaja$cena"("prodaja$cena_cenovnik","id")
 CREATE INDEX "idx_prodaja$cena_prodaja$cena_robailiusluga" ON PUBLIC."prodaja$cena"("prodaja$cena_robailiusluga","id")
+<<<<<<< Updated upstream
+=======
+CREATE MEMORY TABLE PUBLIC."prodaja$otpremnica"("id" BIGINT NOT NULL PRIMARY KEY)
+>>>>>>> Stashed changes
 ALTER TABLE PUBLIC."system$synchronizationerror" ADD CONSTRAINT "frn_system$synchronizationerror_system$owner" FOREIGN KEY("system$owner") REFERENCES PUBLIC."system$user"("id") ON DELETE SET NULL
 ALTER TABLE PUBLIC."system$workflowactivity" ADD CONSTRAINT "frn_system$workflowactivity_system$workflowactivity_subworkflow" FOREIGN KEY("system$workflowactivity_subworkflow") REFERENCES PUBLIC."system$workflow"("id") ON DELETE SET NULL
 ALTER TABLE PUBLIC."system$workflowactivity" ADD CONSTRAINT "frn_system$workflowactivity_system$workflowactivity_workflow" FOREIGN KEY("system$workflowactivity_workflow") REFERENCES PUBLIC."system$workflow"("id") ON DELETE SET NULL
@@ -273,10 +301,16 @@ ALTER TABLE PUBLIC."myfirstmodule$stavkeprometnogdokumenta" ADD CONSTRAINT "frn_
 ALTER TABLE PUBLIC."myfirstmodule$radnik" ADD CONSTRAINT "frn_myfirstmodule$radnik_myfirstmodule$radnik_preduzece" FOREIGN KEY("myfirstmodule$radnik_preduzece") REFERENCES PUBLIC."myfirstmodule$preduzece"("id") ON DELETE SET NULL
 ALTER TABLE PUBLIC."myfirstmodule$robailiusluga" ADD CONSTRAINT "frn_myfirstmodule$robailiusluga_myfirstmodule$robailiusluga_jedinicamere" FOREIGN KEY("myfirstmodule$robailiusluga_jedinicamere") REFERENCES PUBLIC."myfirstmodule$jedinicamere"("id") ON DELETE SET NULL
 ALTER TABLE PUBLIC."myfirstmodule$robailiusluga" ADD CONSTRAINT "frn_myfirstmodule$robailiusluga_myfirstmodule$robailiusluga_kategorijarobe" FOREIGN KEY("myfirstmodule$robailiusluga_kategorijarobe") REFERENCES PUBLIC."prodaja$kategorijarobe"("id") ON DELETE SET NULL
+<<<<<<< Updated upstream
 ALTER TABLE PUBLIC."myfirstmodule$prometnidokument" ADD CONSTRAINT "frn_myfirstmodule$prometnidokument_myfirstmodule$prometnidokument_izlaznafaktura" FOREIGN KEY("myfirstmodule$prometnidokument_izlaznafaktura") REFERENCES PUBLIC."prodaja$izlaznafaktura"("id") ON DELETE SET NULL
 ALTER SEQUENCE SYSTEM_LOBS.LOB_ID RESTART WITH 1
 ALTER SEQUENCE PUBLIC."system$filedocument_fileid_mxseq" RESTART WITH 1
 ALTER SEQUENCE PUBLIC."system$queuedtask_sequence_mxseq" RESTART WITH 172861
+=======
+ALTER SEQUENCE SYSTEM_LOBS.LOB_ID RESTART WITH 1
+ALTER SEQUENCE PUBLIC."system$filedocument_fileid_mxseq" RESTART WITH 1
+ALTER SEQUENCE PUBLIC."system$queuedtask_sequence_mxseq" RESTART WITH 164027
+>>>>>>> Stashed changes
 SET DATABASE DEFAULT INITIAL SCHEMA PUBLIC
 GRANT USAGE ON DOMAIN INFORMATION_SCHEMA.CARDINAL_NUMBER TO PUBLIC
 GRANT USAGE ON DOMAIN INFORMATION_SCHEMA.YES_OR_NO TO PUBLIC
@@ -340,6 +374,8 @@ INSERT INTO "mendixsystem$entity" VALUES('c6c131c8-8779-4213-9b26-a64e141f26a8',
 INSERT INTO "mendixsystem$entity" VALUES('d4154981-8dac-4150-aec5-efa3ef62a7a2','System.XASInstance','system$xasinstance',NULL,FALSE,FALSE)
 INSERT INTO "mendixsystem$entity" VALUES('d71efaf1-c220-4af2-ac4e-8cfef7390862','MyFirstModule.PrometniDokument','myfirstmodule$prometnidokument',NULL,FALSE,FALSE)
 INSERT INTO "mendixsystem$entity" VALUES('d753ad05-63c3-4d18-9424-1dd97c7d1a05','System.WorkflowUserTaskOutcome','system$workflowusertaskoutcome',NULL,FALSE,FALSE)
+INSERT INTO "mendixsystem$entity" VALUES('d8f107db-1493-447f-b710-2cd57ae14cc7','Prodaja.Ugovor','prodaja$ugovor',NULL,FALSE,FALSE)
+INSERT INTO "mendixsystem$entity" VALUES('dc3c77fc-c6bd-43e8-b7ab-abf2ca7003a9','Prodaja.Otpremnica','prodaja$otpremnica',NULL,FALSE,FALSE)
 INSERT INTO "mendixsystem$entity" VALUES('e09e866f-288b-475c-9465-792cde8b878c','System.WorkflowUserTaskDefinition','system$workflowusertaskdefinition',NULL,FALSE,FALSE)
 INSERT INTO "mendixsystem$entity" VALUES('eb5c32a1-85ec-49d1-8bca-ecca779cd539','System.ProcessedQueueTask','system$processedqueuetask',NULL,FALSE,FALSE)
 INSERT INTO "mendixsystem$entity" VALUES('ec0f07a2-68c8-4eed-8c4e-5b2a316152f5','MyFirstModule.RobaIliUsluga','myfirstmodule$robailiusluga',NULL,FALSE,FALSE)
@@ -426,6 +462,8 @@ INSERT INTO "mendixsystem$attribute" VALUES('47b5e625-85c7-431f-8aaa-3d1e532287f
 INSERT INTO "mendixsystem$attribute" VALUES('480d214f-b588-4a45-99e6-7809c2da5762','2e12231f-c3b1-4b7c-bc42-d82c778a62a4','State','state',40,10,'Created',FALSE)
 INSERT INTO "mendixsystem$attribute" VALUES('49503f62-1887-4823-bf94-db88a332f316','3729d27c-735b-457a-b210-9dffb125c3f3','EndTime','endtime',20,0,'',FALSE)
 INSERT INTO "mendixsystem$attribute" VALUES('49d88092-1ce9-46e5-baad-b6c22831824d','2ae37bf5-ecb8-4c55-b967-d7383925b208','CanBeRestarted','canberestarted',10,0,'false',FALSE)
+INSERT INTO "mendixsystem$attribute" VALUES('49eb7eb4-3a7a-42ea-8ba4-6a69e2a7fb2c','f50292ea-5bef-489c-b4cd-db0246eae494','usaglasenaCena','usaglasenacena',5,0,'0',FALSE)
+INSERT INTO "mendixsystem$attribute" VALUES('4bbb99ae-27ce-4119-9d00-6835da729717','9395ca66-84e4-4422-938d-452d7bad8621','ukupnoStavka','ukupnostavka',5,0,'0',FALSE)
 INSERT INTO "mendixsystem$attribute" VALUES('4c70166c-8ebb-4105-a35a-d1e15a82d925','2ae37bf5-ecb8-4c55-b967-d7383925b208','PreviousState','previousstate',40,12,'',FALSE)
 INSERT INTO "mendixsystem$attribute" VALUES('4c9627fb-3b64-4239-95eb-f51fb8d3f2b3','170ce49d-f29c-4fac-99a6-b55e8a3aeb39','HasContents','hascontents',10,0,'false',FALSE)
 INSERT INTO "mendixsystem$attribute" VALUES('50c730d5-6c0c-4500-b087-7405a873e534','7a2371c6-62d4-404f-b08a-4e60cc8df1a8','godina','godina',3,0,'0',FALSE)
@@ -448,6 +486,7 @@ INSERT INTO "mendixsystem$attribute" VALUES('67c28962-7a7a-11e6-bdf4-0800200c9a6
 INSERT INTO "mendixsystem$attribute" VALUES('69acb4a2-be26-4cc5-902a-a8591d357510','282e2e60-88a5-469d-84a5-ba8d9151644f','Name','name',30,100,'',FALSE)
 INSERT INTO "mendixsystem$attribute" VALUES('6a07cb1c-1173-43c0-8020-a4f3cf877be3','a046943f-826d-4ebf-828c-bb1ec60bc7bd','FullName','fullname',30,200,'',FALSE)
 INSERT INTO "mendixsystem$attribute" VALUES('6abafab4-6a96-46c0-9475-b72cc4d3ffd6','7f7c72af-1ab7-4bf9-bed6-16db5c8fcf6f','Code','code',30,50,'',FALSE)
+INSERT INTO "mendixsystem$attribute" VALUES('6b31e4d7-24d4-4925-8803-d4eead2a5d36','9964805e-2a84-4c40-8ed1-34c7cc78539d','preostaliIznos','preostaliiznos',5,0,'0',FALSE)
 INSERT INTO "mendixsystem$attribute" VALUES('6bd4228f-341d-45b4-a411-765b024ccdfa','c6c131c8-8779-4213-9b26-a64e141f26a8','Retried','retried',4,0,'0',FALSE)
 INSERT INTO "mendixsystem$attribute" VALUES('6c24f3a3-6473-4a2b-8a93-fca27764f394','eb5c32a1-85ec-49d1-8bca-ecca779cd539','Created','created',20,0,'',FALSE)
 INSERT INTO "mendixsystem$attribute" VALUES('6c8ea01f-faf8-40dd-8b81-297fbe14cda4','eb5c32a1-85ec-49d1-8bca-ecca779cd539','QueueId','queueid',30,36,'',FALSE)
@@ -475,6 +514,7 @@ INSERT INTO "mendixsystem$attribute" VALUES('80796d39-0dde-4af7-b619-53ec9950014
 INSERT INTO "mendixsystem$attribute" VALUES('84845531-dbd9-4e00-8afb-c2adc08699bb','282e2e60-88a5-469d-84a5-ba8d9151644f','FailedLogins','failedlogins',3,0,'0',FALSE)
 INSERT INTO "mendixsystem$attribute" VALUES('84cfff18-42dc-4442-b783-3ca923fcde81','a5952592-bb2c-4798-9805-f9ff91ad97de','ActivityHash','activityhash',30,200,'',FALSE)
 INSERT INTO "mendixsystem$attribute" VALUES('8554021f-9842-4c51-b124-86a102d33da7','5c570d3b-7b31-44fe-abd6-269a234584c5','IsObsolete','isobsolete',10,0,'false',FALSE)
+INSERT INTO "mendixsystem$attribute" VALUES('85ccb3dd-475e-4f25-a185-d5d2f6babf5e','d8f107db-1493-447f-b710-2cd57ae14cc7','brojUgovora','brojugovora',3,0,'0',FALSE)
 INSERT INTO "mendixsystem$attribute" VALUES('8655b482-0ac3-31db-8289-b05f505b77cb','170ce49d-f29c-4fac-99a6-b55e8a3aeb39','createdDate','createddate',20,0,'',FALSE)
 INSERT INTO "mendixsystem$attribute" VALUES('875dc581-177c-457a-8406-814676ccdb05','37f9fd49-5318-4c63-9a51-f761779b202f','LongLived','longlived',10,0,'false',FALSE)
 INSERT INTO "mendixsystem$attribute" VALUES('88390044-5b74-4e71-8b88-a6e4e91f6f2e','76805df3-dede-435f-92a6-d6525c68a693','Code','code',30,20,'',FALSE)
@@ -487,11 +527,16 @@ INSERT INTO "mendixsystem$attribute" VALUES('8b7184a0-cd05-4c75-89f9-be6e9349783
 INSERT INTO "mendixsystem$attribute" VALUES('8b835017-7d42-401f-8271-02c232066d49','c6c131c8-8779-4213-9b26-a64e141f26a8','MicroflowName','microflowname',30,200,'',FALSE)
 INSERT INTO "mendixsystem$attribute" VALUES('8bb77a0c-0461-43f9-bb27-e91fb9e3623f','09b2f0fe-4a11-4afc-a16e-94992a3ebc3d','ExpiryDate','expirydate',20,0,'',FALSE)
 INSERT INTO "mendixsystem$attribute" VALUES('8c421a84-a3b7-446b-a201-3f68d8007fe7','34cd2fbd-e9d8-4b1c-9235-bc6df34da129','nazivKategorije','nazivkategorije',30,200,'',FALSE)
+INSERT INTO "mendixsystem$attribute" VALUES('8e18b950-d4cd-4cb1-87cc-14e01c5a13ca','d8f107db-1493-447f-b710-2cd57ae14cc7','datumZakljucenja','datumzakljucenja',20,0,'',FALSE)
 INSERT INTO "mendixsystem$attribute" VALUES('8e8e6dfa-87a2-413a-89c1-a2b23037b792','eb5c32a1-85ec-49d1-8bca-ecca779cd539','ContextType','contexttype',40,14,'',FALSE)
 INSERT INTO "mendixsystem$attribute" VALUES('90233d09-6c96-487e-a89e-a31f29b81bd1','3729d27c-735b-457a-b210-9dffb125c3f3','Error','error',30,0,'',FALSE)
 INSERT INTO "mendixsystem$attribute" VALUES('90e6130c-018f-4f21-b749-6b4c3f40e705','2e12231f-c3b1-4b7c-bc42-d82c778a62a4','EndTime','endtime',20,0,'',FALSE)
 INSERT INTO "mendixsystem$attribute" VALUES('91b58eb9-c16c-4e33-b66b-28489e7fb783','d4154981-8dac-4150-aec5-efa3ef62a7a2','XASId','xasid',30,50,'',FALSE)
 INSERT INTO "mendixsystem$attribute" VALUES('92145ade-3f7a-4556-a587-9d2e63467a3d','9964805e-2a84-4c40-8ed1-34c7cc78539d','ukupnaVrednost','ukupnavrednost',5,0,'0',FALSE)
+<<<<<<< Updated upstream
+=======
+INSERT INTO "mendixsystem$attribute" VALUES('93858f73-ec88-4bfa-830d-c0243bcadf4f','d8f107db-1493-447f-b710-2cd57ae14cc7','statusUgovora','statusugovora',40,18,'',FALSE)
+>>>>>>> Stashed changes
 INSERT INTO "mendixsystem$attribute" VALUES('941e921b-8935-402e-9d93-7894c5cc9164','a5952592-bb2c-4798-9805-f9ff91ad97de','ModelGUID','modelguid',30,36,'',FALSE)
 INSERT INTO "mendixsystem$attribute" VALUES('94e618c6-5158-44c1-baf6-ef6af8a76b6d','c6c131c8-8779-4213-9b26-a64e141f26a8','Created','created',20,0,'',FALSE)
 INSERT INTO "mendixsystem$attribute" VALUES('954c43f0-3333-4264-813b-e8f1c8f2f0b6','7f7c72af-1ab7-4bf9-bed6-16db5c8fcf6f','Description','description',30,100,'',FALSE)
@@ -542,6 +587,7 @@ INSERT INTO "mendixsystem$attribute" VALUES('c03caec0-7d61-4719-9691-e1ed6d91640
 INSERT INTO "mendixsystem$attribute" VALUES('c05017ba-1faa-4f63-9d4c-06918a947700','bb60ef05-6d17-48ad-a4ef-559310c30c5b','ValidUntil','validuntil',20,0,'',FALSE)
 INSERT INTO "mendixsystem$attribute" VALUES('c2dd7e10-28b4-304c-9ddf-104be6be9cde','282e2e60-88a5-469d-84a5-ba8d9151644f','submetaobjectname','submetaobjectname',30,255,'System.User',FALSE)
 INSERT INTO "mendixsystem$attribute" VALUES('c33867e7-7263-4ce6-826a-714e7493f07a','660db38b-5ab4-4d15-b649-93a947ecea82','Result','result',30,0,'',FALSE)
+INSERT INTO "mendixsystem$attribute" VALUES('c39d2686-9a95-4655-a3b5-d82c850a26f8','9395ca66-84e4-4422-938d-452d7bad8621','cena','cena',5,0,'0',FALSE)
 INSERT INTO "mendixsystem$attribute" VALUES('c39dca31-4f4a-4e52-a633-aa7840fd0894','a5952592-bb2c-4798-9805-f9ff91ad97de','OutcomeModelGUID','outcomemodelguid',30,36,'',FALSE)
 INSERT INTO "mendixsystem$attribute" VALUES('c56553ba-a3d4-4d9e-bc81-e61ee64da79b','660db38b-5ab4-4d15-b649-93a947ecea82','Successful','successful',10,0,'false',FALSE)
 INSERT INTO "mendixsystem$attribute" VALUES('c6149a02-c9c3-429e-9396-5bf0598d9fb8','7df7c2ec-0e85-4184-904d-e28be20102e5','prometUlazaVrednost','prometulazavrednost',5,0,'0',FALSE)
@@ -564,6 +610,7 @@ INSERT INTO "mendixsystem$attribute" VALUES('d5aa1ceb-6dfe-457b-afb7-e969a814eaf
 INSERT INTO "mendixsystem$attribute" VALUES('d61ef304-2773-4336-a146-8997dfccae8a','5c570d3b-7b31-44fe-abd6-269a234584c5','ModelGUID','modelguid',30,36,'',FALSE)
 INSERT INTO "mendixsystem$attribute" VALUES('d6288735-aea7-416a-91d2-1735aa7c0ea3','c6c131c8-8779-4213-9b26-a64e141f26a8','ContextType','contexttype',40,14,'',FALSE)
 INSERT INTO "mendixsystem$attribute" VALUES('d6f4a7fc-3c2d-4793-bfc0-8dde42937863','1c90a770-98ef-45df-9267-b87973cc6581','UserType','usertype',40,8,'Internal',FALSE)
+INSERT INTO "mendixsystem$attribute" VALUES('d7d05059-fc59-48ec-afba-43af1314cd70','d8f107db-1493-447f-b710-2cd57ae14cc7','datumZavrsetkaVazenja','datumzavrsetkavazenja',20,0,'',FALSE)
 INSERT INTO "mendixsystem$attribute" VALUES('d7d5776b-e8b4-4a08-99f2-25a8fcaa7e22','13569267-75e5-48f9-911f-3850836274bb','vrstaPrometa','vrstaprometa',40,21,'',FALSE)
 INSERT INTO "mendixsystem$attribute" VALUES('d879cb38-5630-4fdf-9e39-f03da0aa8ede','76805df3-dede-435f-92a6-d6525c68a693','Description','description',30,200,'',FALSE)
 INSERT INTO "mendixsystem$attribute" VALUES('d8dd9072-187b-48d4-8752-943917b38c01','d71efaf1-c220-4af2-ac4e-8cfef7390862','datumKnjizenja','datumknjizenja',20,0,'',FALSE)
@@ -628,6 +675,10 @@ INSERT INTO "mendixsystem$index" VALUES('59de2f9e-3e30-4dd7-a5de-58594a63ea2b','
 INSERT INTO "mendixsystem$index" VALUES('5d133b27-f242-34f2-981f-fd979ce37410','ec0f07a2-68c8-4eed-8c4e-5b2a316152f5','idx_myfirstmodule$robailiusluga_myfirstmodule$robailiusluga_jedinicamere')
 INSERT INTO "mendixsystem$index" VALUES('6127a5ae-0a96-4df5-9856-17baf94b2351','37f9fd49-5318-4c63-9a51-f761779b202f','idx_system$session_sessionid_asc')
 INSERT INTO "mendixsystem$index" VALUES('64c7b758-30ed-3ec9-b165-90cf47de83e5','26648b06-f188-406d-ad8d-8d67aaf9a6a9','idx_prodaja$stavkafakture_prodaja$stavkafakture_izlaznafaktura')
+<<<<<<< Updated upstream
+=======
+INSERT INTO "mendixsystem$index" VALUES('653b3c07-d29f-3533-8a88-a8b23bf82dd3','f50292ea-5bef-489c-b4cd-db0246eae494','idx_prodaja$narudzbenicakupca_prodaja$narudzbenicakupca_ugovor')
+>>>>>>> Stashed changes
 INSERT INTO "mendixsystem$index" VALUES('664ee0e2-801b-30a9-add7-4f9557521e55','660db38b-5ab4-4d15-b649-93a947ecea82','idx_system$backgroundjob_system$backgroundjob_xasinstance')
 INSERT INTO "mendixsystem$index" VALUES('67521e8e-195d-31cd-8f52-b8eb385a2f5d','9395ca66-84e4-4422-938d-452d7bad8621','idx_prodaja$stavkanarudzbenice_prodaja$stavkanarudzbenice_narudzbenicakupca')
 INSERT INTO "mendixsystem$index" VALUES('67c28963-7a7a-11e6-bdf4-0800200c9a66','67c28960-7a7a-11e6-bdf4-0800200c9a66','idx_system$autocommitentry_sessionid_asc_objectid_asc')
@@ -642,6 +693,10 @@ INSERT INTO "mendixsystem$index" VALUES('8da8e04d-4f94-30f1-96a7-d89c9aa0d554','
 INSERT INTO "mendixsystem$index" VALUES('8de203bb-c0c1-349b-8aef-037cdb0cd348','c6c131c8-8779-4213-9b26-a64e141f26a8','idx_system$queuedtask_system$owner')
 INSERT INTO "mendixsystem$index" VALUES('90e68d26-ca27-32f4-bfc4-a6002befe1df','688e3395-2151-45c2-bf9a-1bac77757e25','idx_prodaja$kategorijarobe_prodaja$kategorijarobe_preduzece')
 INSERT INTO "mendixsystem$index" VALUES('93423877-0f25-3473-a34a-214ec11635a5','d71efaf1-c220-4af2-ac4e-8cfef7390862','idx_myfirstmodule$prometnidokument_myfirstmodule$prometnidokument_magacin')
+<<<<<<< Updated upstream
+=======
+INSERT INTO "mendixsystem$index" VALUES('9378ef25-1440-396a-93b9-3694d41a0932','d8f107db-1493-447f-b710-2cd57ae14cc7','idx_prodaja$ugovor_prodaja$ugovor_poslovnipartner')
+>>>>>>> Stashed changes
 INSERT INTO "mendixsystem$index" VALUES('93f723a1-7055-3ecd-8895-aebfdcbcb54e','ec0f07a2-68c8-4eed-8c4e-5b2a316152f5','idx_myfirstmodule$robailiusluga_myfirstmodule$robailiusluga_kategorijarobe')
 INSERT INTO "mendixsystem$index" VALUES('969f0b15-26cf-38a7-8e41-ff1eb504616e','7df7c2ec-0e85-4184-904d-e28be20102e5','idx_myfirstmodule$robnakartica_myfirstmodule$robnakartica_robailiusluga')
 INSERT INTO "mendixsystem$index" VALUES('9d3647e9-935b-3158-bd6a-2c80aac31b13','810e9e9b-6158-4c57-9d2a-b26e8a573215','idx_myfirstmodule$poslovnipartner_myfirstmodule$poslovnipartner_preduzece')
@@ -655,8 +710,13 @@ INSERT INTO "mendixsystem$index" VALUES('a5ff48ca-56d6-4f43-8e3a-7743fd025974','
 INSERT INTO "mendixsystem$index" VALUES('abe33237-7fe7-3468-840b-a11841e385c4','a5952592-bb2c-4798-9805-f9ff91ad97de','idx_system$workflowactivity_system$workflowactivity_workflowversion')
 INSERT INTO "mendixsystem$index" VALUES('ac3438d4-432b-3045-bb6e-645b0e02a922','30834a21-e81c-4cbf-a10b-5f60f5fddc82','idx_system$workflowversion_system$workflowversion_workflowdefinition')
 INSERT INTO "mendixsystem$index" VALUES('ac892dd9-fb9e-3590-aaf5-e3e2c7fbc021','2ae37bf5-ecb8-4c55-b967-d7383925b208','idx_system$workflow_system$owner')
+<<<<<<< Updated upstream
 INSERT INTO "mendixsystem$index" VALUES('afc45855-0b9b-33b4-86c7-443e5649d6ad','d71efaf1-c220-4af2-ac4e-8cfef7390862','idx_myfirstmodule$prometnidokument_myfirstmodule$prometnidokument_izlaznafaktura')
 INSERT INTO "mendixsystem$index" VALUES('c7592d31-b25a-3da0-b3d4-e23fdb771819','774949f4-b629-4d3d-ae5c-7fe0968dd9b5','idx_prodaja$cena_prodaja$cena_robailiusluga')
+=======
+INSERT INTO "mendixsystem$index" VALUES('c7592d31-b25a-3da0-b3d4-e23fdb771819','774949f4-b629-4d3d-ae5c-7fe0968dd9b5','idx_prodaja$cena_prodaja$cena_robailiusluga')
+INSERT INTO "mendixsystem$index" VALUES('caf2d7bf-9ab4-3c9d-bfd0-7dce844f9375','d8f107db-1493-447f-b710-2cd57ae14cc7','idx_prodaja$ugovor_prodaja$ugovor_preduzece')
+>>>>>>> Stashed changes
 INSERT INTO "mendixsystem$index" VALUES('cbaf258a-930b-34ca-b11b-b49fb06c58c6','d71efaf1-c220-4af2-ac4e-8cfef7390862','idx_myfirstmodule$prometnidokument_myfirstmodule$prometnidokument_magacin_2')
 INSERT INTO "mendixsystem$index" VALUES('cd69d689-95b5-3a0d-869a-a1761b39adfb','d71efaf1-c220-4af2-ac4e-8cfef7390862','idx_myfirstmodule$prometnidokument_myfirstmodule$prometnidokument_poslovnipartner')
 INSERT INTO "mendixsystem$index" VALUES('ceae231e-7906-3225-a4fb-180e51755312','7df7c2ec-0e85-4184-904d-e28be20102e5','idx_myfirstmodule$robnakartica_myfirstmodule$robnakartica_poslovnagodina')
@@ -699,6 +759,10 @@ INSERT INTO "mendixsystem$index_column" VALUES('59de2f9e-3e30-4dd7-a5de-58594a63
 INSERT INTO "mendixsystem$index_column" VALUES('5d133b27-f242-34f2-981f-fd979ce37410','ff655529-bb2a-4953-875c-4459480f589c',FALSE,0)
 INSERT INTO "mendixsystem$index_column" VALUES('6127a5ae-0a96-4df5-9856-17baf94b2351','d50c78a5-d740-4a76-a356-47659cfd515e',FALSE,0)
 INSERT INTO "mendixsystem$index_column" VALUES('64c7b758-30ed-3ec9-b165-90cf47de83e5','954d9182-9c45-45a0-b2d5-f6ce401a9b02',FALSE,0)
+<<<<<<< Updated upstream
+=======
+INSERT INTO "mendixsystem$index_column" VALUES('653b3c07-d29f-3533-8a88-a8b23bf82dd3','7073391e-7f0c-4ddf-a40d-ef25af61dafc',FALSE,0)
+>>>>>>> Stashed changes
 INSERT INTO "mendixsystem$index_column" VALUES('664ee0e2-801b-30a9-add7-4f9557521e55','fc3944c4-7a19-4a4d-9b0d-4a0c9d7aeb23',FALSE,0)
 INSERT INTO "mendixsystem$index_column" VALUES('67521e8e-195d-31cd-8f52-b8eb385a2f5d','c1915f1f-81a8-4f97-8888-440b094fa4fc',FALSE,0)
 INSERT INTO "mendixsystem$index_column" VALUES('67c28963-7a7a-11e6-bdf4-0800200c9a66','67c28961-7a7a-11e6-bdf4-0800200c9a66',FALSE,0)
@@ -714,6 +778,10 @@ INSERT INTO "mendixsystem$index_column" VALUES('8da8e04d-4f94-30f1-96a7-d89c9aa0
 INSERT INTO "mendixsystem$index_column" VALUES('8de203bb-c0c1-349b-8aef-037cdb0cd348','f6de554a-f765-3d80-aa59-2b3da4167137',FALSE,0)
 INSERT INTO "mendixsystem$index_column" VALUES('90e68d26-ca27-32f4-bfc4-a6002befe1df','128ec785-167a-4c88-bdda-dd5f99342a71',FALSE,0)
 INSERT INTO "mendixsystem$index_column" VALUES('93423877-0f25-3473-a34a-214ec11635a5','e626cba7-1915-4ebf-8fb9-40e8e0a02bd8',FALSE,0)
+<<<<<<< Updated upstream
+=======
+INSERT INTO "mendixsystem$index_column" VALUES('9378ef25-1440-396a-93b9-3694d41a0932','f006e043-97fe-4cbf-9f8e-36655402aa82',FALSE,0)
+>>>>>>> Stashed changes
 INSERT INTO "mendixsystem$index_column" VALUES('93f723a1-7055-3ecd-8895-aebfdcbcb54e','045e49da-2d63-4790-80dc-f3080326b926',FALSE,0)
 INSERT INTO "mendixsystem$index_column" VALUES('969f0b15-26cf-38a7-8e41-ff1eb504616e','fc2e8d2d-0b0b-460a-aa2c-873117e93fb5',FALSE,0)
 INSERT INTO "mendixsystem$index_column" VALUES('9d3647e9-935b-3158-bd6a-2c80aac31b13','c7669aee-f584-4fc2-940f-93fd3efa4f59',FALSE,0)
@@ -727,8 +795,13 @@ INSERT INTO "mendixsystem$index_column" VALUES('a5ff48ca-56d6-4f43-8e3a-7743fd02
 INSERT INTO "mendixsystem$index_column" VALUES('abe33237-7fe7-3468-840b-a11841e385c4','2e5166f9-7430-4265-8465-f7405d6fe1e9',FALSE,0)
 INSERT INTO "mendixsystem$index_column" VALUES('ac3438d4-432b-3045-bb6e-645b0e02a922','c063e3e7-a440-47f0-8065-6fac7c723690',FALSE,0)
 INSERT INTO "mendixsystem$index_column" VALUES('ac892dd9-fb9e-3590-aaf5-e3e2c7fbc021','2cf6fdd7-e448-3a4d-b70e-6d875c2136d7',FALSE,0)
+<<<<<<< Updated upstream
 INSERT INTO "mendixsystem$index_column" VALUES('afc45855-0b9b-33b4-86c7-443e5649d6ad','0136d007-afa7-4c6f-aabe-2d87cf32757a',FALSE,0)
 INSERT INTO "mendixsystem$index_column" VALUES('c7592d31-b25a-3da0-b3d4-e23fdb771819','be1d51ad-e72e-42f8-9b1f-4ecdfa88b050',FALSE,0)
+=======
+INSERT INTO "mendixsystem$index_column" VALUES('c7592d31-b25a-3da0-b3d4-e23fdb771819','be1d51ad-e72e-42f8-9b1f-4ecdfa88b050',FALSE,0)
+INSERT INTO "mendixsystem$index_column" VALUES('caf2d7bf-9ab4-3c9d-bfd0-7dce844f9375','a5bc619e-530a-45f0-85cb-c3695203c8c0',FALSE,0)
+>>>>>>> Stashed changes
 INSERT INTO "mendixsystem$index_column" VALUES('cbaf258a-930b-34ca-b11b-b49fb06c58c6','e86a7e4b-0f1b-4818-977d-4bce0f6d4bbe',FALSE,0)
 INSERT INTO "mendixsystem$index_column" VALUES('cd69d689-95b5-3a0d-869a-a1761b39adfb','4dec30bf-ca5b-419a-b2a7-8cd076c3b0f2',FALSE,0)
 INSERT INTO "mendixsystem$index_column" VALUES('ceae231e-7906-3225-a4fb-180e51755312','c89b0cde-99e9-408a-b570-5be6ffc5f22f',FALSE,0)
@@ -788,6 +861,7 @@ INSERT INTO "mendixsystem$association" VALUES('6552d693-26c2-4cd2-931e-07c8e366a
 INSERT INTO "mendixsystem$association" VALUES('685c576c-19af-4ea7-983d-ece147c1cebc','System.WorkflowUserTaskDefinition_WorkflowDefinition','system$workflowusertaskdefinition_workflowdefinition','e09e866f-288b-475c-9465-792cde8b878c','5c570d3b-7b31-44fe-abd6-269a234584c5','system$workflowusertaskdefinitionid','system$workflowdefinitionid',NULL,'idx_system$workflowusertaskdefinition_workflowdefinition_system$workflowdefinition_system$workflowusertaskdefinition','frn_system$workflowusertaskdefinition_workflowdefinition_system$workflowusertaskdefinitionid','frn_system$workflowusertaskdefinition_workflowdefinition_system$workflowdefinitionid',0,0,2)
 INSERT INTO "mendixsystem$association" VALUES('69f85619-f30b-427c-adb1-7be7ce8cc3dd','System.WorkflowActivityUserTaskOutcome_User','system$workflowactivityusertaskoutcome','1ebda4ad-6e00-4b19-8b95-6b6261beb937','282e2e60-88a5-469d-84a5-ba8d9151644f','id','system$workflowactivityusertaskoutcome_user',NULL,NULL,NULL,'frn_system$workflowactivityusertaskoutcome_system$workflowactivityusertaskoutcome_user',NULL,2,1)
 INSERT INTO "mendixsystem$association" VALUES('6adaf137-4299-435e-9475-a871a4f21471','System.UserRoles','system$userroles','282e2e60-88a5-469d-84a5-ba8d9151644f','92ef30a6-de04-423c-84fd-a21e9b9eeae2','system$userid','system$userroleid',NULL,'idx_system$userroles_system$userrole_system$user','frn_system$userroles_system$userid','frn_system$userroles_system$userroleid',0,0,2)
+INSERT INTO "mendixsystem$association" VALUES('7073391e-7f0c-4ddf-a40d-ef25af61dafc','Prodaja.NarudzbenicaKupca_Ugovor','prodaja$narudzbenicakupca','f50292ea-5bef-489c-b4cd-db0246eae494','d8f107db-1493-447f-b710-2cd57ae14cc7','id','prodaja$narudzbenicakupca_ugovor',NULL,NULL,NULL,'frn_prodaja$narudzbenicakupca_prodaja$narudzbenicakupca_ugovor',NULL,2,1)
 INSERT INTO "mendixsystem$association" VALUES('77c87c19-f28d-4ca3-870c-351722cf5e9e','System.Workflow_WorkflowDefinition','system$workflow_workflowdefinition','2ae37bf5-ecb8-4c55-b967-d7383925b208','5c570d3b-7b31-44fe-abd6-269a234584c5','system$workflowid','system$workflowdefinitionid',NULL,'idx_system$workflow_workflowdefinition_system$workflowdefinition_system$workflow','frn_system$workflow_workflowdefinition_system$workflowid','frn_system$workflow_workflowdefinition_system$workflowdefinitionid',0,0,2)
 INSERT INTO "mendixsystem$association" VALUES('79314052-9dcc-47e5-954b-80ec631ddd41','System.Workflow_ParentWorkflow','system$workflow_parentworkflow','2ae37bf5-ecb8-4c55-b967-d7383925b208','2ae37bf5-ecb8-4c55-b967-d7383925b208','system$workflowid1','system$workflowid2',NULL,'idx_system$workflow_parentworkflow_system$workflow_system$workflow','frn_system$workflow_parentworkflow_system$workflowid1','frn_system$workflow_parentworkflow_system$workflowid2',0,0,2)
 INSERT INTO "mendixsystem$association" VALUES('7b8a18de-fe6d-4735-9841-0d9d4760697e','System.ScheduledEventInformation_XASInstance','system$scheduledeventinformation_xasinstance','685df5a6-1e02-49bb-a0b5-5a55c5e8313d','d4154981-8dac-4150-aec5-efa3ef62a7a2','system$scheduledeventinformationid','system$xasinstanceid',NULL,'idx_system$scheduledeventinformation_xasinstance_system$xasinstance_system$scheduledeventinformation','frn_system$scheduledeventinformation_xasinstance_system$scheduledeventinformationid','frn_system$scheduledeventinformation_xasinstance_system$xasinstanceid',0,0,2)
@@ -801,6 +875,10 @@ INSERT INTO "mendixsystem$association" VALUES('9428773c-cfc5-41b8-bd39-5f16c2cd2
 INSERT INTO "mendixsystem$association" VALUES('954d9182-9c45-45a0-b2d5-f6ce401a9b02','Prodaja.StavkaFakture_IzlaznaFaktura','prodaja$stavkafakture','26648b06-f188-406d-ad8d-8d67aaf9a6a9','9964805e-2a84-4c40-8ed1-34c7cc78539d','id','prodaja$stavkafakture_izlaznafaktura',NULL,NULL,NULL,'frn_prodaja$stavkafakture_prodaja$stavkafakture_izlaznafaktura',NULL,2,1)
 INSERT INTO "mendixsystem$association" VALUES('956c1382-b9fc-3367-b0b2-cb67ee9ef13f','System.changedBy','system$filedocument','170ce49d-f29c-4fac-99a6-b55e8a3aeb39','282e2e60-88a5-469d-84a5-ba8d9151644f','id','system$changedby',NULL,NULL,NULL,'frn_system$filedocument_system$changedby',NULL,2,1)
 INSERT INTO "mendixsystem$association" VALUES('9ce50251-ec5a-46d0-ba7e-cb91876078f0','System.WorkflowActivityUserTaskOutcome_WorkflowActivity','system$workflowactivityusertaskoutcome','1ebda4ad-6e00-4b19-8b95-6b6261beb937','a5952592-bb2c-4798-9805-f9ff91ad97de','id','system$workflowactivityusertaskoutcome_workflowactivity',NULL,NULL,NULL,'frn_system$workflowactivityusertaskoutcome_system$workflowactivityusertaskoutcome_workflowactivity',NULL,2,1)
+<<<<<<< Updated upstream
+=======
+INSERT INTO "mendixsystem$association" VALUES('a5bc619e-530a-45f0-85cb-c3695203c8c0','Prodaja.Ugovor_Preduzece','prodaja$ugovor','d8f107db-1493-447f-b710-2cd57ae14cc7','5a08e249-ed51-4aaf-a3ea-9ea055ce8837','id','prodaja$ugovor_preduzece',NULL,NULL,NULL,'frn_prodaja$ugovor_prodaja$ugovor_preduzece',NULL,2,1)
+>>>>>>> Stashed changes
 INSERT INTO "mendixsystem$association" VALUES('a7f1e558-d129-4adb-b5b4-dbb4853056f2','System.WorkflowEndedUserTask_Assignees','system$workflowendedusertask_assignees','2e12231f-c3b1-4b7c-bc42-d82c778a62a4','282e2e60-88a5-469d-84a5-ba8d9151644f','system$workflowendedusertaskid','system$userid',NULL,'idx_system$workflowendedusertask_assignees_system$user_system$workflowendedusertask','frn_system$workflowendedusertask_assignees_system$workflowendedusertaskid','frn_system$workflowendedusertask_assignees_system$userid',0,0,2)
 INSERT INTO "mendixsystem$association" VALUES('aaebf783-447c-4386-ba25-969132aa6f7c','System.WorkflowActivity_WorkflowUserTask','system$workflowactivity','a5952592-bb2c-4798-9805-f9ff91ad97de','3729d27c-735b-457a-b210-9dffb125c3f3','id','system$workflowactivity_workflowusertask',NULL,NULL,NULL,'frn_system$workflowactivity_system$workflowactivity_workflowusertask',NULL,2,1)
 INSERT INTO "mendixsystem$association" VALUES('ac39a795-30a4-4660-a0ea-0ef9bdf5bf2e','MyFirstModule.PrometRobneKartice_RobnaKartica','myfirstmodule$prometrobnekartice','13569267-75e5-48f9-911f-3850836274bb','7df7c2ec-0e85-4184-904d-e28be20102e5','id','myfirstmodule$prometrobnekartice_robnakartica',NULL,NULL,NULL,'frn_myfirstmodule$prometrobnekartice_myfirstmodule$prometrobnekartice_robnakartica',NULL,2,1)
@@ -825,6 +903,10 @@ INSERT INTO "mendixsystem$association" VALUES('ea83a1f9-f686-4c16-8146-ff386d4f6
 INSERT INTO "mendixsystem$association" VALUES('ed75c0fa-6383-4e94-bebb-8d28fd13a4da','Prodaja.IzlaznaFaktura_PoslovnaGodina','prodaja$izlaznafaktura','9964805e-2a84-4c40-8ed1-34c7cc78539d','7a2371c6-62d4-404f-b08a-4e60cc8df1a8','id','prodaja$izlaznafaktura_poslovnagodina',NULL,NULL,NULL,'frn_prodaja$izlaznafaktura_prodaja$izlaznafaktura_poslovnagodina',NULL,2,1)
 INSERT INTO "mendixsystem$association" VALUES('ef863cc9-2d20-4a74-af65-0320a76b6a10','System.WorkflowActivity_Workflow','system$workflowactivity','a5952592-bb2c-4798-9805-f9ff91ad97de','2ae37bf5-ecb8-4c55-b967-d7383925b208','id','system$workflowactivity_workflow',NULL,NULL,NULL,'frn_system$workflowactivity_system$workflowactivity_workflow',NULL,2,1)
 INSERT INTO "mendixsystem$association" VALUES('efd36fca-b357-40af-8173-6e46fb4ef69d','FileUploader.UploadedFile_FileUploadContext','fileuploader$uploadedfile_fileuploadcontext','0ac27547-1473-4ad5-87e6-c68af64e934a','7b249c28-d52a-430e-9dc6-9c1c021883b4','fileuploader$uploadedfileid','fileuploader$fileuploadcontextid',NULL,'idx_fileuploader$uploadedfile_fileuploadcontext_fileuploader$fileuploadcontext_fileuploader$uploadedfile','frn_fileuploader$uploadedfile_fileuploadcontext_fileuploader$uploadedfileid','frn_fileuploader$uploadedfile_fileuploadcontext_fileuploader$fileuploadcontextid',0,0,2)
+<<<<<<< Updated upstream
+=======
+INSERT INTO "mendixsystem$association" VALUES('f006e043-97fe-4cbf-9f8e-36655402aa82','Prodaja.Ugovor_PoslovniPartner','prodaja$ugovor','d8f107db-1493-447f-b710-2cd57ae14cc7','810e9e9b-6158-4c57-9d2a-b26e8a573215','id','prodaja$ugovor_poslovnipartner',NULL,NULL,NULL,'frn_prodaja$ugovor_prodaja$ugovor_poslovnipartner',NULL,2,1)
+>>>>>>> Stashed changes
 INSERT INTO "mendixsystem$association" VALUES('f5d991d5-c363-4990-b179-2b385ae1f33f','Prodaja.NarudzbenicaKupca_IzlaznaFaktura','prodaja$narudzbenicakupca','f50292ea-5bef-489c-b4cd-db0246eae494','9964805e-2a84-4c40-8ed1-34c7cc78539d','id','prodaja$narudzbenicakupca_izlaznafaktura',NULL,NULL,NULL,'frn_prodaja$narudzbenicakupca_prodaja$narudzbenicakupca_izlaznafaktura',NULL,2,1)
 INSERT INTO "mendixsystem$association" VALUES('f6de554a-f765-3d80-aa59-2b3da4167137','System.owner','system$queuedtask','c6c131c8-8779-4213-9b26-a64e141f26a8','282e2e60-88a5-469d-84a5-ba8d9151644f','id','system$owner',NULL,NULL,NULL,'frn_system$queuedtask_system$owner',NULL,2,1)
 INSERT INTO "mendixsystem$association" VALUES('fc2e8d2d-0b0b-460a-aa2c-873117e93fb5','MyFirstModule.RobnaKartica_RobaIliUsluga','myfirstmodule$robnakartica','7df7c2ec-0e85-4184-904d-e28be20102e5','ec0f07a2-68c8-4eed-8c4e-5b2a316152f5','id','myfirstmodule$robnakartica_robailiusluga',NULL,NULL,NULL,'frn_myfirstmodule$robnakartica_myfirstmodule$robnakartica_robailiusluga',NULL,2,1)
@@ -832,7 +914,11 @@ INSERT INTO "mendixsystem$association" VALUES('fc3944c4-7a19-4a4d-9b0d-4a0c9d7ae
 INSERT INTO "mendixsystem$association" VALUES('fd1bff11-277d-4dfc-a85a-12f435630ca5','Prodaja.StavkaFakture_RobaIliUsluga','prodaja$stavkafakture','26648b06-f188-406d-ad8d-8d67aaf9a6a9','ec0f07a2-68c8-4eed-8c4e-5b2a316152f5','id','prodaja$stavkafakture_robailiusluga',NULL,NULL,NULL,'frn_prodaja$stavkafakture_prodaja$stavkafakture_robailiusluga',NULL,2,1)
 INSERT INTO "mendixsystem$association" VALUES('fe27da6b-3620-4e8e-b274-109ea0fd2f98','Prodaja.NarudzbenicaKupca_PoslovniPartner','prodaja$narudzbenicakupca','f50292ea-5bef-489c-b4cd-db0246eae494','810e9e9b-6158-4c57-9d2a-b26e8a573215','id','prodaja$narudzbenicakupca_poslovnipartner',NULL,NULL,NULL,'frn_prodaja$narudzbenicakupca_prodaja$narudzbenicakupca_poslovnipartner',NULL,2,1)
 INSERT INTO "mendixsystem$association" VALUES('ff655529-bb2a-4953-875c-4459480f589c','MyFirstModule.RobaIliUsluga_JedinicaMere','myfirstmodule$robailiusluga','ec0f07a2-68c8-4eed-8c4e-5b2a316152f5','422d59d2-0cb4-42e2-ac52-f463c15b4cad','id','myfirstmodule$robailiusluga_jedinicamere',NULL,NULL,NULL,'frn_myfirstmodule$robailiusluga_myfirstmodule$robailiusluga_jedinicamere',NULL,2,1)
+<<<<<<< Updated upstream
 INSERT INTO "mendixsystem$version" VALUES('4.2','2025-10-09 17:50:51.176000','4.4.0','unversioned','MagacineSale','11.2.0.77998')
+=======
+INSERT INTO "mendixsystem$version" VALUES('4.2','2025-10-06 13:16:24.119000','4.4.0','unversioned','MagacineSale','11.2.0.77998')
+>>>>>>> Stashed changes
 INSERT INTO "mendixsystem$sequence" VALUES('system$filedocument_fileid_mxseq','0f81688b-e719-4204-8f86-8fcd664a0992',1,0)
 INSERT INTO "mendixsystem$sequence" VALUES('system$queuedtask_sequence_mxseq','d26c3f20-7dc5-4a65-bbf6-c84ec5b5fe9f',1,0)
 INSERT INTO "mendixsystem$entityidentifier" VALUES('00e40311-6322-40dc-9e2e-522f2043314f',25,1)
@@ -900,16 +986,30 @@ INSERT INTO "mendixsystem$entityidentifier" VALUES('a5952592-bb2c-4798-9805-f9ff
 INSERT INTO "mendixsystem$entityidentifier" VALUES('ae6fd1ff-eb91-44fd-ab0e-be367fceb92a',62,1)
 INSERT INTO "mendixsystem$entityidentifier" VALUES('afa08dbb-7919-4152-b2ce-bce9d5045f15',78,1)
 INSERT INTO "mendixsystem$entityidentifier" VALUES('bb60ef05-6d17-48ad-a4ef-559310c30c5b',56,1)
+<<<<<<< Updated upstream
 INSERT INTO "mendixsystem$entityidentifier" VALUES('c6c131c8-8779-4213-9b26-a64e141f26a8',51,173343)
 INSERT INTO "mendixsystem$entityidentifier" VALUES('c7d0900a-b084-492f-ba85-ab576ae5b7bc',38,1)
 INSERT INTO "mendixsystem$entityidentifier" VALUES('ce3860ff-2093-42cd-b462-8da7485fc01e',11,1)
 INSERT INTO "mendixsystem$entityidentifier" VALUES('d0bdd881-0557-4b85-9771-bcda46b90c77',27,1)
 INSERT INTO "mendixsystem$entityidentifier" VALUES('d4154981-8dac-4150-aec5-efa3ef62a7a2',49,901)
+=======
+INSERT INTO "mendixsystem$entityidentifier" VALUES('c6c131c8-8779-4213-9b26-a64e141f26a8',51,164345)
+INSERT INTO "mendixsystem$entityidentifier" VALUES('c7d0900a-b084-492f-ba85-ab576ae5b7bc',38,1)
+INSERT INTO "mendixsystem$entityidentifier" VALUES('ce3860ff-2093-42cd-b462-8da7485fc01e',11,1)
+INSERT INTO "mendixsystem$entityidentifier" VALUES('d0bdd881-0557-4b85-9771-bcda46b90c77',27,1)
+INSERT INTO "mendixsystem$entityidentifier" VALUES('d4154981-8dac-4150-aec5-efa3ef62a7a2',49,701)
+>>>>>>> Stashed changes
 INSERT INTO "mendixsystem$entityidentifier" VALUES('d71efaf1-c220-4af2-ac4e-8cfef7390862',71,1)
 INSERT INTO "mendixsystem$entityidentifier" VALUES('d753ad05-63c3-4d18-9424-1dd97c7d1a05',21,1)
+INSERT INTO "mendixsystem$entityidentifier" VALUES('d8f107db-1493-447f-b710-2cd57ae14cc7',77,1)
+INSERT INTO "mendixsystem$entityidentifier" VALUES('dc3c77fc-c6bd-43e8-b7ab-abf2ca7003a9',85,1)
 INSERT INTO "mendixsystem$entityidentifier" VALUES('e09e866f-288b-475c-9465-792cde8b878c',33,1)
 INSERT INTO "mendixsystem$entityidentifier" VALUES('e0f5acaa-ffb8-4b30-a4c0-09d1a2047a16',22,1)
+<<<<<<< Updated upstream
 INSERT INTO "mendixsystem$entityidentifier" VALUES('eb5c32a1-85ec-49d1-8bca-ecca779cd539',47,174180)
+=======
+INSERT INTO "mendixsystem$entityidentifier" VALUES('eb5c32a1-85ec-49d1-8bca-ecca779cd539',47,165219)
+>>>>>>> Stashed changes
 INSERT INTO "mendixsystem$entityidentifier" VALUES('ec0f07a2-68c8-4eed-8c4e-5b2a316152f5',64,1)
 INSERT INTO "mendixsystem$entityidentifier" VALUES('f307db58-2afe-4f31-ae97-5812c3caac19',35,1)
 INSERT INTO "mendixsystem$entityidentifier" VALUES('f50292ea-5bef-489c-b4cd-db0246eae494',80,1)
@@ -917,7 +1017,10 @@ INSERT INTO "mendixsystem$entityidentifier" VALUES('f8bdacae-115a-482d-8d08-4757
 INSERT INTO "mendixsystem$entityidentifier" VALUES('f9818ad8-3214-4b1d-b837-3181863f5ed5',4,1)
 INSERT INTO "mendixsystem$unique_constraint" VALUES('uniq_fileuploader$uploadedfile_fileuploadcontext_fileuploader$uploadedfileid','efd36fca-b357-40af-8173-6e46fb4ef69d','c45914df-5af5-397b-a4f4-957564f625a0')
 INSERT INTO "mendixsystem$unique_constraint" VALUES('uniq_fileuploader$uploadedimage_fileuploadcontext_fileuploader$uploadedimageid','be8f198f-daf9-4512-b4fb-097f88494146','6202fd9b-66af-33e0-8a42-39efabb0efda')
+<<<<<<< Updated upstream
 INSERT INTO "mendixsystem$unique_constraint" VALUES('uniq_myfirstmodule$prometnidokument_myfirstmodule$prometnidokument_izlaznafaktura','d71efaf1-c220-4af2-ac4e-8cfef7390862','0136d007-afa7-4c6f-aabe-2d87cf32757a')
+=======
+>>>>>>> Stashed changes
 INSERT INTO "mendixsystem$unique_constraint" VALUES('uniq_prodaja$narudzbenicakupca_prodaja$narudzbenicakupca_izlaznafaktura','f50292ea-5bef-489c-b4cd-db0246eae494','f5d991d5-c363-4990-b179-2b385ae1f33f')
 INSERT INTO "mendixsystem$unique_constraint" VALUES('uniq_system$offlinecreatedguids_guid','89cea6a8-a2df-4925-85e4-2b0c447e98c3','7919a281-0b72-4dc4-87e1-fffaced4c8d1')
 INSERT INTO "mendixsystem$unique_constraint" VALUES('uniq_system$offlinesynchronizationhistory_syncid','137064d4-4cf1-4a0b-92a5-a11b66360ff9','a91934fd-65f2-404e-bff8-7b370c20d687')
@@ -26284,6 +26387,7 @@ INSERT INTO "system$processedqueuetask" VALUES(13229323926420695,164012,'Complet
 INSERT INTO "system$processedqueuetask" VALUES(13229323926420813,164011,'Completed','59651013-f9bc-4fc1-b435-276439b07899','System.ScheduledEventsQueue','ScheduledEvent',NULL,NULL,'ClusterManagement-CleanupBackgroundJobs','[]','5927683e-f999-4b73-bfdc-1f272c99d71f',90,'2025-10-06 14:41:12.196000','2025-10-06 14:46:11.440000','2025-10-06 14:46:12.349000','2025-10-06 14:46:12.350000',1,0,NULL,'ClusterManagement-CleanupBackgroundJobs',NULL)
 INSERT INTO "system$processedqueuetask" VALUES(13229323926420972,164015,'Completed','59651013-f9bc-4fc1-b435-276439b07899','System.ScheduledEventsQueue','ScheduledEvent',NULL,NULL,'ClusterManagement-CleanupSessions','[]','5927683e-f999-4b73-bfdc-1f272c99d71f',90,'2025-10-06 14:41:12.198000','2025-10-06 14:46:11.440000','2025-10-06 14:46:12.349000','2025-10-06 14:46:12.350000',1,0,NULL,'ClusterManagement-CleanupSessions',NULL)
 INSERT INTO "system$processedqueuetask" VALUES(13229323926421100,164016,'Completed','59651013-f9bc-4fc1-b435-276439b07899','System.ScheduledEventsQueue','ScheduledEvent',NULL,NULL,'ClusterManagement-UnblockUsers','[]','5927683e-f999-4b73-bfdc-1f272c99d71f',90,'2025-10-06 14:41:16.237000','2025-10-06 14:46:15.440000','2025-10-06 14:46:16.386000','2025-10-06 14:46:16.388000',2,0,NULL,'ClusterManagement-UnblockUsers',NULL)
+<<<<<<< Updated upstream
 INSERT INTO "system$processedqueuetask" VALUES(13229323926548922,164024,'Completed','59651013-f9bc-4fc1-b435-276439b07899','System.ScheduledEventsQueue','ScheduledEvent',NULL,NULL,'ClusterManagement-CleanupOfflineGUIDs','[]','6963370e-ed7d-403d-a744-abaf528f57ae',87,'2025-10-06 14:46:12.350000','2025-10-06 14:51:11.440000','2025-10-09 15:50:56.744000','2025-10-09 15:50:57.129000',385,0,NULL,'ClusterManagement-CleanupOfflineGUIDs',NULL)
 INSERT INTO "system$processedqueuetask" VALUES(13229323926549090,164019,'Completed','59651013-f9bc-4fc1-b435-276439b07899','System.ScheduledEventsQueue','ScheduledEvent',NULL,NULL,'ClusterManagement-CleanupScheduledEvents','[]','6963370e-ed7d-403d-a744-abaf528f57ae',87,'2025-10-06 14:44:46.468000','2025-10-06 14:49:45.725000','2025-10-09 15:50:56.730000','2025-10-09 15:50:57.129000',399,0,NULL,'ClusterManagement-CleanupScheduledEvents',NULL)
 INSERT INTO "system$processedqueuetask" VALUES(13229323926549158,164023,'Completed','59651013-f9bc-4fc1-b435-276439b07899','System.ScheduledEventsQueue','ScheduledEvent',NULL,NULL,'ClusterManagement-CleanupBackgroundJobs','[]','6963370e-ed7d-403d-a744-abaf528f57ae',87,'2025-10-06 14:46:12.350000','2025-10-06 14:51:11.440000','2025-10-09 15:50:56.741000','2025-10-09 15:50:57.129000',388,0,NULL,'ClusterManagement-CleanupBackgroundJobs',NULL)
@@ -35131,6 +35235,22 @@ INSERT INTO "system$queuedtask" VALUES(14355223834409953,172857,'Idle','59651013
 INSERT INTO "system$queuedtask" VALUES(14355223834409985,172858,'Idle','59651013-f9bc-4fc1-b435-276439b07899','System.ScheduledEventsQueue','ScheduledEvent',NULL,NULL,'ClusterManagement-CleanupOrphanedFiles','[]',NULL,NULL,'2025-10-09 16:23:20.707000','2025-10-09 16:28:20.011000',NULL,0,NULL,'ClusterManagement-CleanupOrphanedFiles',NULL)
 INSERT INTO "system$queuedtask" VALUES(14355223834410142,172859,'Idle','59651013-f9bc-4fc1-b435-276439b07899','System.ScheduledEventsQueue','ScheduledEvent',NULL,NULL,'ClusterManagement-CleanupScheduledEvents','[]',NULL,NULL,'2025-10-09 16:24:46.722000','2025-10-09 16:29:45.725000',NULL,0,NULL,'ClusterManagement-CleanupScheduledEvents',NULL)
 INSERT INTO "system$queuedtask" VALUES(14355223834418573,172860,'Idle','59651013-f9bc-4fc1-b435-276439b07899','System.ScheduledEventsQueue','ScheduledEvent',NULL,NULL,'ClusterManagement-CleanupProcessedTasks','[]',NULL,NULL,'2025-10-09 16:25:42.289000','2025-10-09 16:30:28.582000',NULL,0,NULL,'ClusterManagement-CleanupProcessedTasks',NULL)
+=======
+INSERT INTO "system$user" VALUES(7318349394477208,'demo_administrator','{BCrypt}$2a$12$tsGSIVqwtUF/8tt4SLOI1.oQVFezEABKLgNgtbX/q.xsm1ybM0HnS','2025-09-27 19:09:02.617000',FALSE,NULL,TRUE,0,FALSE,FALSE,'2025-08-29 08:22:52.982000','2025-10-06 11:16:26.603000','Administration.Account',NULL,7318349394477208)
+INSERT INTO "system$user" VALUES(7318349394477412,'demo_user','{BCrypt}$2a$12$u1OlSqI4w3ZEDSrfWZ7kR.VpTreBKT51D5h0X8HnjhTecaEr9/fUa','2025-09-27 19:08:58.345000',FALSE,NULL,TRUE,0,FALSE,FALSE,'2025-08-29 08:22:54.504000','2025-10-06 11:16:26.897000','Administration.Account',NULL,7318349394477412)
+INSERT INTO "system$user" VALUES(13510798882137299,'admin','{BCrypt}$2a$12$oG346F9l.auE5iTrAljWieWCnJOqy53bu0sMArLR7.CViZgEwVxma','2025-09-27 19:08:30.558000',FALSE,NULL,TRUE,0,FALSE,FALSE,'2025-08-29 08:22:59.457000','2025-10-06 11:16:28.764000','System.User',NULL,13510798882137299)
+INSERT INTO "system$xasinstance" VALUES(13792273858899155,'5927683e-f999-4b73-bfdc-1f272c99d71f','2025-10-06 14:41:29.253000',NULL,NULL,NULL,'2025-10-06 11:16:27.138000')
+INSERT INTO "system$queuedtask" VALUES(14355223833276118,164017,'Idle','59651013-f9bc-4fc1-b435-276439b07899','System.ScheduledEventsQueue','ScheduledEvent',NULL,NULL,'ClusterManagement-PopulateFileDocumentSizes','[]',NULL,NULL,'2025-10-06 14:42:38.125000','2025-10-06 14:47:37.154000',NULL,0,NULL,'ClusterManagement-PopulateFileDocumentSizes',NULL)
+INSERT INTO "system$queuedtask" VALUES(14355223833276282,164018,'Idle','59651013-f9bc-4fc1-b435-276439b07899','System.ScheduledEventsQueue','ScheduledEvent',NULL,NULL,'ClusterManagement-CleanupOrphanedFiles','[]',NULL,NULL,'2025-10-06 14:43:20.564000','2025-10-06 14:48:20.011000',NULL,0,NULL,'ClusterManagement-CleanupOrphanedFiles',NULL)
+INSERT INTO "system$queuedtask" VALUES(14355223833276315,164019,'Idle','59651013-f9bc-4fc1-b435-276439b07899','System.ScheduledEventsQueue','ScheduledEvent',NULL,NULL,'ClusterManagement-CleanupScheduledEvents','[]',NULL,NULL,'2025-10-06 14:44:46.468000','2025-10-06 14:49:45.725000',NULL,0,NULL,'ClusterManagement-CleanupScheduledEvents',NULL)
+INSERT INTO "system$queuedtask" VALUES(14355223833276466,164020,'Idle','59651013-f9bc-4fc1-b435-276439b07899','System.ScheduledEventsQueue','ScheduledEvent',NULL,NULL,'ClusterManagement-CleanupProcessedTasks','[]',NULL,NULL,'2025-10-06 14:45:28.940000','2025-10-06 14:50:28.582000',NULL,0,NULL,'ClusterManagement-CleanupProcessedTasks',NULL)
+INSERT INTO "system$queuedtask" VALUES(14355223833276575,164023,'Idle','59651013-f9bc-4fc1-b435-276439b07899','System.ScheduledEventsQueue','ScheduledEvent',NULL,NULL,'ClusterManagement-CleanupBackgroundJobs','[]',NULL,NULL,'2025-10-06 14:46:12.350000','2025-10-06 14:51:11.440000',NULL,0,NULL,'ClusterManagement-CleanupBackgroundJobs',NULL)
+INSERT INTO "system$queuedtask" VALUES(14355223833276723,164024,'Idle','59651013-f9bc-4fc1-b435-276439b07899','System.ScheduledEventsQueue','ScheduledEvent',NULL,NULL,'ClusterManagement-CleanupOfflineGUIDs','[]',NULL,NULL,'2025-10-06 14:46:12.350000','2025-10-06 14:51:11.440000',NULL,0,NULL,'ClusterManagement-CleanupOfflineGUIDs',NULL)
+INSERT INTO "system$queuedtask" VALUES(14355223833276803,164021,'Idle','59651013-f9bc-4fc1-b435-276439b07899','System.ScheduledEventsQueue','ScheduledEvent',NULL,NULL,'ClusterManagement-CleanupTmpDocuments','[]',NULL,NULL,'2025-10-06 14:46:12.350000','2025-10-06 14:51:11.440000',NULL,0,NULL,'ClusterManagement-CleanupTmpDocuments',NULL)
+INSERT INTO "system$queuedtask" VALUES(14355223833277051,164022,'Idle','59651013-f9bc-4fc1-b435-276439b07899','System.ScheduledEventsQueue','ScheduledEvent',NULL,NULL,'ClusterManagement-CleanupOfflineSyncHistory','[]',NULL,NULL,'2025-10-06 14:46:12.350000','2025-10-06 14:51:11.440000',NULL,0,NULL,'ClusterManagement-CleanupOfflineSyncHistory',NULL)
+INSERT INTO "system$queuedtask" VALUES(14355223833277163,164025,'Idle','59651013-f9bc-4fc1-b435-276439b07899','System.ScheduledEventsQueue','ScheduledEvent',NULL,NULL,'ClusterManagement-CleanupSessions','[]',NULL,NULL,'2025-10-06 14:46:12.350000','2025-10-06 14:51:11.440000',NULL,0,NULL,'ClusterManagement-CleanupSessions',NULL)
+INSERT INTO "system$queuedtask" VALUES(14355223833277187,164026,'Idle','59651013-f9bc-4fc1-b435-276439b07899','System.ScheduledEventsQueue','ScheduledEvent',NULL,NULL,'ClusterManagement-UnblockUsers','[]',NULL,NULL,'2025-10-06 14:46:16.388000','2025-10-06 14:51:15.440000',NULL,0,NULL,'ClusterManagement-UnblockUsers',NULL)
+>>>>>>> Stashed changes
 INSERT INTO "system$userrole" VALUES(15199648742375562,'8dd52bfa-6d7e-453b-b506-303c0a3d9567','Administrator','')
 INSERT INTO "system$userrole" VALUES(15199648742375743,'53f5d6fa-6da9-4a71-b011-454ec052cce8','User','')
 INSERT INTO "system$timezone" VALUES(15481123719086310,'Africa/Abidjan','(GMT+00:00) Abidjan/Africa',0)
@@ -35662,7 +35782,14 @@ INSERT INTO "system$grantableroles" VALUES(15199648742375562,15199648742375743)
 INSERT INTO "mendixsystem$properties" VALUES('DefaultProcessedTaskCleanupAge','604800000')
 INSERT INTO "mendixsystem$properties" VALUES('DefaultScheduledEventsCleanupAge','604800000')
 INSERT INTO "mendixsystem$properties" VALUES('leftoverUnreferencedFileCleanupComplete','true')
+<<<<<<< Updated upstream
 INSERT INTO "mendixsystem$properties" VALUES('Mendix.Runtime.DeploymentID','638956311016856202')
 INSERT INTO "mendixsystem$properties" VALUES('MxAdminUserName','admin')
 INSERT INTO "mendixsystem$properties" VALUES('oldFileMigrationCompleted','true')
 INSERT INTO "mendixsystem$properties" VALUES('ScheduledEventsExecution','NONE:638956311016856202')
+=======
+INSERT INTO "mendixsystem$properties" VALUES('Mendix.Runtime.DeploymentID','638953533516318757')
+INSERT INTO "mendixsystem$properties" VALUES('MxAdminUserName','admin')
+INSERT INTO "mendixsystem$properties" VALUES('oldFileMigrationCompleted','true')
+INSERT INTO "mendixsystem$properties" VALUES('ScheduledEventsExecution','NONE:638953533516318757')
+>>>>>>> Stashed changes

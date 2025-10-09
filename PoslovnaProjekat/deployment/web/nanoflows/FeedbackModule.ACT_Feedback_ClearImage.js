@@ -16,7 +16,7 @@ export const ACT_Feedback_ClearImage = {
     {
       "type": "javaScriptActionCall",
       "label": "557f3b75-83da-434e-962f-04382ed06571",
-      "action": () => require("C:/Poslovna/e2-Poslovna/PoslovnaProjekat/javascriptsource/feedbackmodule/actions/SetStorageItemObject").SetStorageItemObject,
+      "action": () => require("C:/Users/Djordje/Desktop/e2-Poslovna/PoslovnaProjekat/javascriptsource/feedbackmodule/actions/SetStorageItemObject").SetStorageItemObject,
       "parameters": [
         {
           "kind": "primitive",

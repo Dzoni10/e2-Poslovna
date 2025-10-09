@@ -15,14 +15,14 @@ import { WebIconProperty } from "mendix/WebIconProperty";
 import { ActionButton } from "mendix/widgets/web/ActionButton";
 import { ConditionalVisibilityWrapper } from "mendix/widgets/web/ConditionalVisibilityWrapper";
 import { Container } from "mendix/widgets/web/Container";
-import * as DatagridWidgetModule from "C:/Poslovna/e2-Poslovna/PoslovnaProjekat/deployment/web/widgets/com/mendix/widget/web/datagrid/Datagrid.mjs";
+import * as DatagridWidgetModule from "C:/Users/Djordje/Desktop/e2-Poslovna/PoslovnaProjekat/deployment/web/widgets/com/mendix/widget/web/datagrid/Datagrid.mjs";
 const Datagrid = Object.getOwnPropertyDescriptor(DatagridWidgetModule, "Datagrid")?.value || Object.getOwnPropertyDescriptor(DatagridWidgetModule, "default")?.value;   
-import * as DatagridDateFilterWidgetModule from "C:/Poslovna/e2-Poslovna/PoslovnaProjekat/deployment/web/widgets/com/mendix/widget/web/datagriddatefilter/DatagridDateFilter.mjs";
+import * as DatagridDateFilterWidgetModule from "C:/Users/Djordje/Desktop/e2-Poslovna/PoslovnaProjekat/deployment/web/widgets/com/mendix/widget/web/datagriddatefilter/DatagridDateFilter.mjs";
 const DatagridDateFilter = Object.getOwnPropertyDescriptor(DatagridDateFilterWidgetModule, "DatagridDateFilter")?.value || Object.getOwnPropertyDescriptor(DatagridDateFilterWidgetModule, "default")?.value;   
-import "C:/Poslovna/e2-Poslovna/PoslovnaProjekat/deployment/web/widgets/com/mendix/widget/web/datagriddatefilter/DatagridDateFilter.css";
-import * as DatagridDropdownFilterWidgetModule from "C:/Poslovna/e2-Poslovna/PoslovnaProjekat/deployment/web/widgets/com/mendix/widget/web/datagriddropdownfilter/DatagridDropdownFilter.mjs";
+import "C:/Users/Djordje/Desktop/e2-Poslovna/PoslovnaProjekat/deployment/web/widgets/com/mendix/widget/web/datagriddatefilter/DatagridDateFilter.css";
+import * as DatagridDropdownFilterWidgetModule from "C:/Users/Djordje/Desktop/e2-Poslovna/PoslovnaProjekat/deployment/web/widgets/com/mendix/widget/web/datagriddropdownfilter/DatagridDropdownFilter.mjs";
 const DatagridDropdownFilter = Object.getOwnPropertyDescriptor(DatagridDropdownFilterWidgetModule, "DatagridDropdownFilter")?.value || Object.getOwnPropertyDescriptor(DatagridDropdownFilterWidgetModule, "default")?.value;   
-import * as DatagridTextFilterWidgetModule from "C:/Poslovna/e2-Poslovna/PoslovnaProjekat/deployment/web/widgets/com/mendix/widget/web/datagridtextfilter/DatagridTextFilter.mjs";
+import * as DatagridTextFilterWidgetModule from "C:/Users/Djordje/Desktop/e2-Poslovna/PoslovnaProjekat/deployment/web/widgets/com/mendix/widget/web/datagridtextfilter/DatagridTextFilter.mjs";
 const DatagridTextFilter = Object.getOwnPropertyDescriptor(DatagridTextFilterWidgetModule, "DatagridTextFilter")?.value || Object.getOwnPropertyDescriptor(DatagridTextFilterWidgetModule, "default")?.value;   
 import { Div } from "mendix/widgets/web/Div";
 import { TabContainer } from "mendix/widgets/web/TabContainer";
@@ -34,30 +34,30 @@ import { content as parentContent } from "../layouts/Atlas_Core.Atlas_Default.js
 const { $Container, $Div, $Text, $TabContainer, $Datagrid, $DatagridTextFilter, $DatagridDropdownFilter, $DatagridDateFilter, $ConditionalVisibilityWrapper, $ActionButton } = asPluginWidgets({ Container, Div, Text, TabContainer, Datagrid, DatagridTextFilter, DatagridDropdownFilter, DatagridDateFilter, ConditionalVisibilityWrapper, ActionButton });
 
 const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
-    <$Container key="p5.Administration.Account_Overview.container1"
-        $widgetId="p5.Administration.Account_Overview.container1"
+    <$Container key="p.Administration.Account_Overview.container1"
+        $widgetId="p.Administration.Account_Overview.container1"
         class={"mx-name-container1 pageheader pageheader-fullwidth"}
         style={undefined}
         renderMode={"div"}
         onClick={undefined}
         content={[
-            <$Div key="p5.Administration.Account_Overview.layoutGrid1"
-                $widgetId="p5.Administration.Account_Overview.layoutGrid1"
+            <$Div key="p.Administration.Account_Overview.layoutGrid1"
+                $widgetId="p.Administration.Account_Overview.layoutGrid1"
                 class={"mx-name-layoutGrid1 mx-layoutgrid mx-layoutgrid-fluid container-fluid"}
                 style={undefined}
                 content={[
-                    <$Div key="p5.Administration.Account_Overview.layoutGrid1$row0"
-                        $widgetId="p5.Administration.Account_Overview.layoutGrid1$row0"
+                    <$Div key="p.Administration.Account_Overview.layoutGrid1$row0"
+                        $widgetId="p.Administration.Account_Overview.layoutGrid1$row0"
                         class={"row"}
                         style={undefined}
                         content={[
-                            <$Div key="p5.Administration.Account_Overview.layoutGrid1$row0$column0"
-                                $widgetId="p5.Administration.Account_Overview.layoutGrid1$row0$column0"
+                            <$Div key="p.Administration.Account_Overview.layoutGrid1$row0$column0"
+                                $widgetId="p.Administration.Account_Overview.layoutGrid1$row0$column0"
                                 class={"col-lg-12 col-md-12 col-12"}
                                 style={undefined}
                                 content={[
-                                    <$Text key="p5.Administration.Account_Overview.label1"
-                                        $widgetId="p5.Administration.Account_Overview.label1"
+                                    <$Text key="p.Administration.Account_Overview.label1"
+                                        $widgetId="p.Administration.Account_Overview.label1"
                                         class={"mx-name-label1 pageheader-title"}
                                         style={undefined}
                                         caption={t([
@@ -66,8 +66,8 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                             })
                                         ])}
                                         renderMode={"h2"} />,
-                                    <$Text key="p5.Administration.Account_Overview.label2"
-                                        $widgetId="p5.Administration.Account_Overview.label2"
+                                    <$Text key="p.Administration.Account_Overview.label2"
+                                        $widgetId="p.Administration.Account_Overview.label2"
                                         class={"mx-name-label2 pageheader-subtitle"}
                                         style={undefined}
                                         caption={t([
@@ -81,28 +81,29 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                 ]} />
         ]}
         ariaHidden={false} />,
-    <$Div key="p5.Administration.Account_Overview.layoutGrid4"
-        $widgetId="p5.Administration.Account_Overview.layoutGrid4"
+    <$Div key="p.Administration.Account_Overview.layoutGrid4"
+        $widgetId="p.Administration.Account_Overview.layoutGrid4"
         class={"mx-name-layoutGrid4 mx-layoutgrid mx-layoutgrid-fluid container-fluid"}
         style={undefined}
         content={[
-            <$Div key="p5.Administration.Account_Overview.layoutGrid4$row0"
-                $widgetId="p5.Administration.Account_Overview.layoutGrid4$row0"
+            <$Div key="p.Administration.Account_Overview.layoutGrid4$row0"
+                $widgetId="p.Administration.Account_Overview.layoutGrid4$row0"
                 class={"row"}
                 style={undefined}
                 content={[
-                    <$Div key="p5.Administration.Account_Overview.layoutGrid4$row0$column0"
-                        $widgetId="p5.Administration.Account_Overview.layoutGrid4$row0$column0"
+                    <$Div key="p.Administration.Account_Overview.layoutGrid4$row0$column0"
+                        $widgetId="p.Administration.Account_Overview.layoutGrid4$row0$column0"
                         class={"col-lg-12 col-md-12 col-12"}
                         style={undefined}
                         content={[
-                            <$TabContainer key="p5.Administration.Account_Overview.tabControl"
-                                $widgetId="p5.Administration.Account_Overview.tabControl"
+                            <$TabContainer key="p.Administration.Account_Overview.tabControl"
+                                $widgetId="p.Administration.Account_Overview.tabControl"
                                 class={"mx-name-tabControl tabsfullwidth"}
                                 style={undefined}
                                 tabIndex={undefined}
-                                widgetId={"p5.Administration.Account_Overview.tabControl"}
+                                widgetId={"p.Administration.Account_Overview.tabControl"}
                                 defaultTab={0}
+                                onTabChange={undefined}
                                 tabs={[
                                     {
                                         "name": "tabPage2",
@@ -114,11 +115,11 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                         "isDelayed": false,
                                         "refreshOnShow": false,
                                         "content": [
-                                            <$Datagrid key="p5.Administration.Account_Overview.dataGrid21"
-                                                $widgetId="p5.Administration.Account_Overview.dataGrid21"
+                                            <$Datagrid key="p.Administration.Account_Overview.dataGrid21"
+                                                $widgetId="p.Administration.Account_Overview.dataGrid21"
                                                 advanced={false}
                                                 datasource={DatabaseObjectListProperty({
-                                                    "dataSourceId": "p5.14",
+                                                    "dataSourceId": "p.14",
                                                     "entity": "Administration.Account",
                                                     "operationId": "8z1qdSUNAl+HD4FIOPvSFQ",
                                                     "sort": [
@@ -142,7 +143,7 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                                             "attributeType": "String",
                                                             "sortable": true,
                                                             "filterable": true,
-                                                            "dataSourceId": "p5.14",
+                                                            "dataSourceId": "p.14",
                                                             "isList": false
                                                         }),
                                                         "content": undefined,
@@ -158,8 +159,8 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                                             undefined
                                                         ]),
                                                         "filter": [
-                                                            <$DatagridTextFilter key="p5.Administration.Account_Overview.textFilter1"
-                                                                $widgetId="p5.Administration.Account_Overview.textFilter1"
+                                                            <$DatagridTextFilter key="p.Administration.Account_Overview.textFilter1"
+                                                                $widgetId="p.Administration.Account_Overview.textFilter1"
                                                                 advanced={false}
                                                                 defaultValue={undefined}
                                                                 defaultFilter={"contains"}
@@ -214,7 +215,7 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                                             "attributeType": "String",
                                                             "sortable": true,
                                                             "filterable": true,
-                                                            "dataSourceId": "p5.14",
+                                                            "dataSourceId": "p.14",
                                                             "isList": false
                                                         }),
                                                         "content": undefined,
@@ -230,8 +231,8 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                                             undefined
                                                         ]),
                                                         "filter": [
-                                                            <$DatagridTextFilter key="p5.Administration.Account_Overview.textFilter2"
-                                                                $widgetId="p5.Administration.Account_Overview.textFilter2"
+                                                            <$DatagridTextFilter key="p.Administration.Account_Overview.textFilter2"
+                                                                $widgetId="p.Administration.Account_Overview.textFilter2"
                                                                 advanced={false}
                                                                 defaultValue={undefined}
                                                                 defaultFilter={"contains"}
@@ -286,7 +287,7 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                                             "attributeType": "String",
                                                             "sortable": false,
                                                             "filterable": false,
-                                                            "dataSourceId": "p5.14",
+                                                            "dataSourceId": "p.14",
                                                             "isList": true
                                                         }),
                                                         "content": undefined,
@@ -302,8 +303,8 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                                             undefined
                                                         ]),
                                                         "filter": [
-                                                            <$DatagridDropdownFilter key="p5.Administration.Account_Overview.drop_downFilter1"
-                                                                $widgetId="p5.Administration.Account_Overview.drop_downFilter1"
+                                                            <$DatagridDropdownFilter key="p.Administration.Account_Overview.drop_downFilter1"
+                                                                $widgetId="p.Administration.Account_Overview.drop_downFilter1"
                                                                 auto={true}
                                                                 defaultValue={undefined}
                                                                 filterOptions={[]}
@@ -333,12 +334,12 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                                             "path": "",
                                                             "attribute": "System.UserRoles",
                                                             "endpointEntity": "System.UserRole",
-                                                            "selectableObjectsId": "p5.15",
+                                                            "selectableObjectsId": "p.15",
                                                             "filterable": true,
-                                                            "dataSourceId": "p5.14"
+                                                            "dataSourceId": "p.14"
                                                         }),
                                                         "filterAssociationOptions": DatabaseObjectListProperty({
-                                                            "dataSourceId": "p5.15",
+                                                            "dataSourceId": "p.15",
                                                             "entity": "System.UserRole",
                                                             "operationId": "kFKwe8NWy1a5u/M7ZgeK3w",
                                                             "sort": [
@@ -349,8 +350,8 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                                             ]
                                                         }),
                                                         "filterAssociationOptionLabel": ListExpressionProperty({
-                                                            "expression": { "expr": { "type": "variable", "variable": "currentObject", "path": "Name" }, "args": { "currentObject": { "widget": "p5.Administration.Account_Overview.dataGrid21", "source": "object" } } },
-                                                            "dataSourceId": "p5.15"
+                                                            "expression": { "expr": { "type": "variable", "variable": "currentObject", "path": "Name" }, "args": { "currentObject": { "widget": "p.Administration.Account_Overview.dataGrid21", "source": "object" } } },
+                                                            "dataSourceId": "p.15"
                                                         }),
                                                         "visible": ExpressionProperty({
                                                             "expression": { "expr": { "type": "literal", "value": true }, "args": {} }
@@ -381,14 +382,14 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                                             "attributeType": "DateTime",
                                                             "sortable": true,
                                                             "filterable": true,
-                                                            "dataSourceId": "p5.14",
+                                                            "dataSourceId": "p.14",
                                                             "isList": false
                                                         }),
                                                         "content": undefined,
                                                         "dynamicText": t([
                                                             ListExpressionProperty({
-                                                                "expression": { "expr": { "type": "function", "name": "_format", "parameters": [ { "type": "variable", "variable": "currentObject", "path": "LastLogin" }, { "type": "literal", "value": "{\"type\":\"datetime\"}" } ] }, "args": { "currentObject": { "widget": "p5.Administration.Account_Overview.dataGrid21", "source": "object" } } },
-                                                                "dataSourceId": "p5.14"
+                                                                "expression": { "expr": { "type": "function", "name": "_format", "parameters": [ { "type": "variable", "variable": "currentObject", "path": "LastLogin" }, { "type": "literal", "value": "{\"type\":\"datetime\"}" } ] }, "args": { "currentObject": { "widget": "p.Administration.Account_Overview.dataGrid21", "source": "object" } } },
+                                                                "dataSourceId": "p.14"
                                                             })
                                                         ]),
                                                         "header": t([
@@ -400,8 +401,8 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                                             undefined
                                                         ]),
                                                         "filter": [
-                                                            <$DatagridDateFilter key="p5.Administration.Account_Overview.dateFilter1"
-                                                                $widgetId="p5.Administration.Account_Overview.dateFilter1"
+                                                            <$DatagridDateFilter key="p.Administration.Account_Overview.dateFilter1"
+                                                                $widgetId="p.Administration.Account_Overview.dateFilter1"
                                                                 advanced={false}
                                                                 defaultValue={undefined}
                                                                 defaultStartDate={undefined}
@@ -462,21 +463,21 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                                             "attributeType": "Boolean",
                                                             "sortable": true,
                                                             "filterable": true,
-                                                            "dataSourceId": "p5.14",
+                                                            "dataSourceId": "p.14",
                                                             "isList": false
                                                         }),
                                                         "content": TemplatedWidgetProperty({
-                                                            "dataSourceId": "p5.14",
+                                                            "dataSourceId": "p.14",
                                                             "editable": false,
                                                             "children": () => [
-                                                                <$ConditionalVisibilityWrapper key="p5.Administration.Account_Overview.text2$visibility"
-                                                                    $widgetId="p5.Administration.Account_Overview.text2$visibility"
+                                                                <$ConditionalVisibilityWrapper key="p.Administration.Account_Overview.text2$visibility"
+                                                                    $widgetId="p.Administration.Account_Overview.text2$visibility"
                                                                     visible={ExpressionProperty({
-                                                                        "expression": { "expr": { "type": "variable", "variable": "currentObject", "path": "Active" }, "args": { "currentObject": { "widget": "p5.Administration.Account_Overview.dataGrid21", "source": "object" } } }
+                                                                        "expression": { "expr": { "type": "variable", "variable": "currentObject", "path": "Active" }, "args": { "currentObject": { "widget": "p.Administration.Account_Overview.dataGrid21", "source": "object" } } }
                                                                     })}
                                                                     contents={[
-                                                                        <$Text key="p5.Administration.Account_Overview.text2"
-                                                                            $widgetId="p5.Administration.Account_Overview.text2"
+                                                                        <$Text key="p.Administration.Account_Overview.text2"
+                                                                            $widgetId="p.Administration.Account_Overview.text2"
                                                                             class={"mx-name-text2 badge label-success"}
                                                                             style={undefined}
                                                                             caption={t([
@@ -486,14 +487,14 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                                                             ])}
                                                                             renderMode={"span"} />
                                                                     ]} />,
-                                                                <$ConditionalVisibilityWrapper key="p5.Administration.Account_Overview.text3$visibility"
-                                                                    $widgetId="p5.Administration.Account_Overview.text3$visibility"
+                                                                <$ConditionalVisibilityWrapper key="p.Administration.Account_Overview.text3$visibility"
+                                                                    $widgetId="p.Administration.Account_Overview.text3$visibility"
                                                                     visible={ExpressionProperty({
-                                                                        "expression": { "expr": { "type": "function", "name": "not", "parameters": [ { "type": "variable", "variable": "currentObject", "path": "Active" } ] }, "args": { "currentObject": { "widget": "p5.Administration.Account_Overview.dataGrid21", "source": "object" } } }
+                                                                        "expression": { "expr": { "type": "function", "name": "not", "parameters": [ { "type": "variable", "variable": "currentObject", "path": "Active" } ] }, "args": { "currentObject": { "widget": "p.Administration.Account_Overview.dataGrid21", "source": "object" } } }
                                                                     })}
                                                                     contents={[
-                                                                        <$Text key="p5.Administration.Account_Overview.text3"
-                                                                            $widgetId="p5.Administration.Account_Overview.text3"
+                                                                        <$Text key="p.Administration.Account_Overview.text3"
+                                                                            $widgetId="p.Administration.Account_Overview.text3"
                                                                             class={"mx-name-text3 badge label-secondary"}
                                                                             style={undefined}
                                                                             caption={t([
@@ -517,8 +518,8 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                                             undefined
                                                         ]),
                                                         "filter": [
-                                                            <$DatagridDropdownFilter key="p5.Administration.Account_Overview.drop_downFilter2"
-                                                                $widgetId="p5.Administration.Account_Overview.drop_downFilter2"
+                                                            <$DatagridDropdownFilter key="p.Administration.Account_Overview.drop_downFilter2"
+                                                                $widgetId="p.Administration.Account_Overview.drop_downFilter2"
                                                                 auto={true}
                                                                 defaultValue={undefined}
                                                                 filterOptions={[]}
@@ -571,7 +572,7 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                                             "attributeType": "Boolean",
                                                             "sortable": true,
                                                             "filterable": true,
-                                                            "dataSourceId": "p5.14",
+                                                            "dataSourceId": "p.14",
                                                             "isList": false
                                                         }),
                                                         "content": undefined,
@@ -587,8 +588,8 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                                             undefined
                                                         ]),
                                                         "filter": [
-                                                            <$DatagridDropdownFilter key="p5.Administration.Account_Overview.drop_downFilter3"
-                                                                $widgetId="p5.Administration.Account_Overview.drop_downFilter3"
+                                                            <$DatagridDropdownFilter key="p.Administration.Account_Overview.drop_downFilter3"
+                                                                $widgetId="p.Administration.Account_Overview.drop_downFilter3"
                                                                 auto={true}
                                                                 defaultValue={undefined}
                                                                 filterOptions={[]}
@@ -641,7 +642,7 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                                             "attributeType": "Boolean",
                                                             "sortable": true,
                                                             "filterable": true,
-                                                            "dataSourceId": "p5.14",
+                                                            "dataSourceId": "p.14",
                                                             "isList": false
                                                         }),
                                                         "content": undefined,
@@ -657,8 +658,8 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                                             undefined
                                                         ]),
                                                         "filter": [
-                                                            <$DatagridDropdownFilter key="p5.Administration.Account_Overview.drop_downFilter4"
-                                                                $widgetId="p5.Administration.Account_Overview.drop_downFilter4"
+                                                            <$DatagridDropdownFilter key="p.Administration.Account_Overview.drop_downFilter4"
+                                                                $widgetId="p.Administration.Account_Overview.drop_downFilter4"
                                                                 auto={true}
                                                                 defaultValue={undefined}
                                                                 filterOptions={[]}
@@ -711,22 +712,22 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                                             "attributeType": "String",
                                                             "sortable": true,
                                                             "filterable": true,
-                                                            "dataSourceId": "p5.14",
+                                                            "dataSourceId": "p.14",
                                                             "isList": false
                                                         }),
                                                         "content": TemplatedWidgetProperty({
-                                                            "dataSourceId": "p5.14",
+                                                            "dataSourceId": "p.14",
                                                             "editable": false,
                                                             "children": () => [
-                                                                <$ConditionalVisibilityWrapper key="p5.Administration.Account_Overview.actionButton3$visibility"
-                                                                    $widgetId="p5.Administration.Account_Overview.actionButton3$visibility"
+                                                                <$ConditionalVisibilityWrapper key="p.Administration.Account_Overview.actionButton3$visibility"
+                                                                    $widgetId="p.Administration.Account_Overview.actionButton3$visibility"
                                                                     visible={ExpressionProperty({
                                                                         "expression": { "expr": { "type": "function", "name": "_hasSomeRole", "parameters": [ { "type": "literal", "value": "Administrator" } ] }, "args": {} }
                                                                     })}
                                                                     contents={[
-                                                                        <$ActionButton key="p5.Administration.Account_Overview.actionButton3"
-                                                                            $widgetId="p5.Administration.Account_Overview.actionButton3"
-                                                                            buttonId={"p5.Administration.Account_Overview.actionButton3"}
+                                                                        <$ActionButton key="p.Administration.Account_Overview.actionButton3"
+                                                                            $widgetId="p.Administration.Account_Overview.actionButton3"
+                                                                            buttonId={"p.Administration.Account_Overview.actionButton3"}
                                                                             class={"mx-name-actionButton3 btn-lg"}
                                                                             style={undefined}
                                                                             tabIndex={undefined}
@@ -747,13 +748,13 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                                                                 "icon": { "type": "icon", "iconClass": "mx-icon-filled mx-icon-pencil" }
                                                                             })}
                                                                             action={ActionProperty({
-                                                                                "action": { "type": "openPage", "argMap": { "param$Account": { "widget": "p5.Administration.Account_Overview.dataGrid21", "source": "object" } }, "config": { "name": "Administration/Account_Edit.page.xml", "location": "modal", "resizable": true, "allowedRoles": [ "Administrator" ] }, "disabledDuringExecution": true },
+                                                                                "action": { "type": "openPage", "argMap": { "param$Account": { "widget": "p.Administration.Account_Overview.dataGrid21", "source": "object" } }, "config": { "name": "Administration/Account_Edit.page.xml", "location": "modal", "resizable": true, "allowedRoles": [ "Administrator" ] }, "disabledDuringExecution": true },
                                                                                 "abortOnServerValidation": true
                                                                             })} />
                                                                     ]} />,
-                                                                <$ActionButton key="p5.Administration.Account_Overview.actionButton4"
-                                                                    $widgetId="p5.Administration.Account_Overview.actionButton4"
-                                                                    buttonId={"p5.Administration.Account_Overview.actionButton4"}
+                                                                <$ActionButton key="p.Administration.Account_Overview.actionButton4"
+                                                                    $widgetId="p.Administration.Account_Overview.actionButton4"
+                                                                    buttonId={"p.Administration.Account_Overview.actionButton4"}
                                                                     class={"mx-name-actionButton4 btn-lg spacing-outer-left-medium"}
                                                                     style={undefined}
                                                                     tabIndex={undefined}
@@ -774,7 +775,7 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                                                         "icon": { "type": "icon", "iconClass": "mx-icon-filled mx-icon-trash-can" }
                                                                     })}
                                                                     action={ActionProperty({
-                                                                        "action": { "type": "deleteObject", "argMap": { "$object": { "widget": "p5.Administration.Account_Overview.dataGrid21", "source": "object" } }, "config": { "closePage": false, "operationId": "SPfp4EsyJFC/G161OYF1Cw" }, "disabledDuringExecution": true },
+                                                                        "action": { "type": "deleteObject", "argMap": { "$object": { "widget": "p.Administration.Account_Overview.dataGrid21", "source": "object" } }, "config": { "closePage": false, "operationId": "SPfp4EsyJFC/G161OYF1Cw" }, "disabledDuringExecution": true },
                                                                         "abortOnServerValidation": true
                                                                     })} />
                                                             ]
@@ -828,15 +829,15 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                                 columnsHidable={true}
                                                 filterList={[]}
                                                 filtersPlaceholder={[
-                                                    <$ConditionalVisibilityWrapper key="p5.Administration.Account_Overview.actionButton1$visibility"
-                                                        $widgetId="p5.Administration.Account_Overview.actionButton1$visibility"
+                                                    <$ConditionalVisibilityWrapper key="p.Administration.Account_Overview.actionButton1$visibility"
+                                                        $widgetId="p.Administration.Account_Overview.actionButton1$visibility"
                                                         visible={ExpressionProperty({
                                                             "expression": { "expr": { "type": "function", "name": "_hasSomeRole", "parameters": [ { "type": "literal", "value": "Administrator" } ] }, "args": {} }
                                                         })}
                                                         contents={[
-                                                            <$ActionButton key="p5.Administration.Account_Overview.actionButton1"
-                                                                $widgetId="p5.Administration.Account_Overview.actionButton1"
-                                                                buttonId={"p5.Administration.Account_Overview.actionButton1"}
+                                                            <$ActionButton key="p.Administration.Account_Overview.actionButton1"
+                                                                $widgetId="p.Administration.Account_Overview.actionButton1"
+                                                                buttonId={"p.Administration.Account_Overview.actionButton1"}
                                                                 class={"mx-name-actionButton1 spacing-outer-bottom"}
                                                                 style={undefined}
                                                                 tabIndex={undefined}
@@ -859,15 +860,15 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                                                     "abortOnServerValidation": true
                                                                 })} />
                                                         ]} />,
-                                                    <$ConditionalVisibilityWrapper key="p5.Administration.Account_Overview.actionButton2$visibility"
-                                                        $widgetId="p5.Administration.Account_Overview.actionButton2$visibility"
+                                                    <$ConditionalVisibilityWrapper key="p.Administration.Account_Overview.actionButton2$visibility"
+                                                        $widgetId="p.Administration.Account_Overview.actionButton2$visibility"
                                                         visible={ExpressionProperty({
                                                             "expression": { "expr": { "type": "function", "name": "_hasSomeRole", "parameters": [ { "type": "literal", "value": "Administrator" } ] }, "args": {} }
                                                         })}
                                                         contents={[
-                                                            <$ActionButton key="p5.Administration.Account_Overview.actionButton2"
-                                                                $widgetId="p5.Administration.Account_Overview.actionButton2"
-                                                                buttonId={"p5.Administration.Account_Overview.actionButton2"}
+                                                            <$ActionButton key="p.Administration.Account_Overview.actionButton2"
+                                                                $widgetId="p.Administration.Account_Overview.actionButton2"
+                                                                buttonId={"p.Administration.Account_Overview.actionButton2"}
                                                                 class={"mx-name-actionButton2 spacing-outer-left spacing-outer-bottom"}
                                                                 style={undefined}
                                                                 tabIndex={undefined}
@@ -944,6 +945,7 @@ export const title = t([
 
 export const classes = "layout-atlas layout-atlas-responsive-default page-tabs page-tabs-fullwidth";
 
+export const autofocus = "desktopOnly";
 export const style = {};
 export const content = { ...parentContent,
     "Atlas_Core.Atlas_Default.Main": region$Main,

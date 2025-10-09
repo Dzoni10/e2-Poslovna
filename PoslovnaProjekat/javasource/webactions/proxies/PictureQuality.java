@@ -4,8 +4,6 @@
 
 package webactions.proxies;
 
-import com.mendix.core.Core;
-
 public enum PictureQuality
 {
 	original("cd1c91a9-96b2-4da0-b4c3-7911daffe14c"),
@@ -23,12 +21,12 @@ public enum PictureQuality
 
 	public java.lang.String getCaption(java.lang.String languageCode)
 	{
-		String caption = Core.getInternationalizedString(languageCode, i18nCaptionKey);
+		String caption = com.mendix.core.Core.getInternationalizedString(languageCode, i18nCaptionKey);
 		return caption.isEmpty() ? getCaption() : caption;
 	}
 
 	public java.lang.String getCaption()
 	{
-		return Core.getInternationalizedString("en_US", i18nCaptionKey);
+		return com.mendix.core.Core.getInternationalizedString("en_US", i18nCaptionKey);
 	}
 }

@@ -13,23 +13,24 @@ import { WebStaticImageProperty } from "mendix/WebStaticImageProperty";
 import { Container } from "mendix/widgets/web/Container";
 import { Div } from "mendix/widgets/web/Div";
 import { Fragment } from "mendix/widgets/web/Fragment";
-import * as ImageWidgetModule from "C:/Poslovna/e2-Poslovna/PoslovnaProjekat/deployment/web/widgets/com/mendix/widget/web/image/Image.mjs";
+import * as ImageWidgetModule from "C:/Users/Djordje/Desktop/e2-Poslovna/PoslovnaProjekat/deployment/web/widgets/com/mendix/widget/web/image/Image.mjs";
 const Image = Object.getOwnPropertyDescriptor(ImageWidgetModule, "Image")?.value || Object.getOwnPropertyDescriptor(ImageWidgetModule, "default")?.value;   
-import "C:/Poslovna/e2-Poslovna/PoslovnaProjekat/deployment/web/widgets/com/mendix/widget/web/image/Image.css";
-import * as LanguageSelectorWidgetModule from "C:/Poslovna/e2-Poslovna/PoslovnaProjekat/deployment/web/widgets/com/mendix/widget/web/languageselector/LanguageSelector.mjs";
+import "C:/Users/Djordje/Desktop/e2-Poslovna/PoslovnaProjekat/deployment/web/widgets/com/mendix/widget/web/image/Image.css";
+import * as LanguageSelectorWidgetModule from "C:/Users/Djordje/Desktop/e2-Poslovna/PoslovnaProjekat/deployment/web/widgets/com/mendix/widget/web/languageselector/LanguageSelector.mjs";
 const LanguageSelector = Object.getOwnPropertyDescriptor(LanguageSelectorWidgetModule, "LanguageSelector")?.value || Object.getOwnPropertyDescriptor(LanguageSelectorWidgetModule, "default")?.value;   
-import "C:/Poslovna/e2-Poslovna/PoslovnaProjekat/deployment/web/widgets/com/mendix/widget/web/languageselector/LanguageSelector.css";
+import "C:/Users/Djordje/Desktop/e2-Poslovna/PoslovnaProjekat/deployment/web/widgets/com/mendix/widget/web/languageselector/LanguageSelector.css";
 import { NavigationTree } from "mendix/widgets/web/NavigationTree";
 import { Placeholder } from "mendix/widgets/web/Placeholder";
 import { ScrollContainer } from "mendix/widgets/web/ScrollContainer";
 import { SidebarToggle } from "mendix/widgets/web/SidebarToggle";
 import { addEnumerations, asPluginWidgets, t } from "mendix";
 
+
 const { $ScrollContainer, $Fragment, $Div, $Container, $SidebarToggle, $Image, $LanguageSelector, $NavigationTree, $Placeholder } = asPluginWidgets({ ScrollContainer, Fragment, Div, Container, SidebarToggle, Image, LanguageSelector, NavigationTree, Placeholder });
 
 const region$Main = [
-    <$ScrollContainer key="l27.Atlas_Core.Atlas_Default.layoutContainer"
-        $widgetId="l27.Atlas_Core.Atlas_Default.layoutContainer"
+    <$ScrollContainer key="l.Atlas_Core.Atlas_Default.layoutContainer"
+        $widgetId="l.Atlas_Core.Atlas_Default.layoutContainer"
         class={"mx-name-layoutContainer"}
         style={undefined}
         scrollPerRegion={true}
@@ -37,34 +38,34 @@ const region$Main = [
         top={{
             "enabled": true,
             "content": [
-                <$Fragment key="l27.Atlas_Core.Atlas_Default.snippetCall1"
-                    $widgetId="l27.Atlas_Core.Atlas_Default.snippetCall1"
+                <$Fragment key="l.Atlas_Core.Atlas_Default.snippetCall1"
+                    $widgetId="l.Atlas_Core.Atlas_Default.snippetCall1"
                     content={undefined} />,
-                <$Div key="l27.Atlas_Core.Atlas_Default.layoutGrid1"
-                    $widgetId="l27.Atlas_Core.Atlas_Default.layoutGrid1"
+                <$Div key="l.Atlas_Core.Atlas_Default.layoutGrid1"
+                    $widgetId="l.Atlas_Core.Atlas_Default.layoutGrid1"
                     class={"mx-name-layoutGrid1 mx-layoutgrid mx-layoutgrid-fluid container-fluid"}
                     style={undefined}
                     content={[
-                        <$Div key="l27.Atlas_Core.Atlas_Default.layoutGrid1$row0"
-                            $widgetId="l27.Atlas_Core.Atlas_Default.layoutGrid1$row0"
+                        <$Div key="l.Atlas_Core.Atlas_Default.layoutGrid1$row0"
+                            $widgetId="l.Atlas_Core.Atlas_Default.layoutGrid1$row0"
                             class={"row"}
                             style={undefined}
                             content={[
-                                <$Div key="l27.Atlas_Core.Atlas_Default.layoutGrid1$row0$column0"
-                                    $widgetId="l27.Atlas_Core.Atlas_Default.layoutGrid1$row0$column0"
+                                <$Div key="l.Atlas_Core.Atlas_Default.layoutGrid1$row0$column0"
+                                    $widgetId="l.Atlas_Core.Atlas_Default.layoutGrid1$row0$column0"
                                     class={"col-lg-12 col-md-12 col-12"}
                                     style={undefined}
                                     content={[
-                                        <$Container key="l27.Atlas_Core.Atlas_Default.container1"
-                                            $widgetId="l27.Atlas_Core.Atlas_Default.container1"
+                                        <$Container key="l.Atlas_Core.Atlas_Default.container1"
+                                            $widgetId="l.Atlas_Core.Atlas_Default.container1"
                                             class={"mx-name-container1 topbar-content"}
                                             style={undefined}
                                             renderMode={"div"}
                                             onClick={undefined}
                                             content={[
-                                                <$SidebarToggle key="l27.Atlas_Core.Atlas_Default.sidebarToggle3"
-                                                    $widgetId="l27.Atlas_Core.Atlas_Default.sidebarToggle3"
-                                                    buttonId={"l27.Atlas_Core.Atlas_Default.sidebarToggle3"}
+                                                <$SidebarToggle key="l.Atlas_Core.Atlas_Default.sidebarToggle3"
+                                                    $widgetId="l.Atlas_Core.Atlas_Default.sidebarToggle3"
+                                                    buttonId={"l.Atlas_Core.Atlas_Default.sidebarToggle3"}
                                                     renderType={"button"}
                                                     buttonClass={"btn-primary"}
                                                     caption={t([
@@ -83,23 +84,23 @@ const region$Main = [
                                                     class={"mx-name-sidebarToggle3 toggle-btn"}
                                                     style={undefined}
                                                     tabIndex={undefined} />,
-                                                <$Div key="l27.Atlas_Core.Atlas_Default.layoutGrid2"
-                                                    $widgetId="l27.Atlas_Core.Atlas_Default.layoutGrid2"
+                                                <$Div key="l.Atlas_Core.Atlas_Default.layoutGrid2"
+                                                    $widgetId="l.Atlas_Core.Atlas_Default.layoutGrid2"
                                                     class={"mx-name-layoutGrid2 mx-layoutgrid mx-layoutgrid-fluid navbar-brand"}
                                                     style={undefined}
                                                     content={[
-                                                        <$Div key="l27.Atlas_Core.Atlas_Default.layoutGrid2$row0"
-                                                            $widgetId="l27.Atlas_Core.Atlas_Default.layoutGrid2$row0"
+                                                        <$Div key="l.Atlas_Core.Atlas_Default.layoutGrid2$row0"
+                                                            $widgetId="l.Atlas_Core.Atlas_Default.layoutGrid2$row0"
                                                             class={"row align-children-center"}
                                                             style={undefined}
                                                             content={[
-                                                                <$Div key="l27.Atlas_Core.Atlas_Default.layoutGrid2$row0$column0"
-                                                                    $widgetId="l27.Atlas_Core.Atlas_Default.layoutGrid2$row0$column0"
+                                                                <$Div key="l.Atlas_Core.Atlas_Default.layoutGrid2$row0$column0"
+                                                                    $widgetId="l.Atlas_Core.Atlas_Default.layoutGrid2$row0$column0"
                                                                     class={"col-lg col-md col"}
                                                                     style={undefined}
                                                                     content={[
-                                                                        <$Image key="l27.Atlas_Core.Atlas_Default.staticImage1"
-                                                                            $widgetId="l27.Atlas_Core.Atlas_Default.staticImage1"
+                                                                        <$Image key="l.Atlas_Core.Atlas_Default.staticImage1"
+                                                                            $widgetId="l.Atlas_Core.Atlas_Default.staticImage1"
                                                                             datasource={"image"}
                                                                             imageObject={WebStaticImageProperty({
                                                                                 "image": { "uri": "img/Atlas_Core$Layout$logo.svg" }
@@ -131,18 +132,18 @@ const region$Main = [
                                                                             style={undefined}
                                                                             tabIndex={undefined} />
                                                                     ]} />,
-                                                                <$Div key="l27.Atlas_Core.Atlas_Default.layoutGrid2$row0$column1"
-                                                                    $widgetId="l27.Atlas_Core.Atlas_Default.layoutGrid2$row0$column1"
+                                                                <$Div key="l.Atlas_Core.Atlas_Default.layoutGrid2$row0$column1"
+                                                                    $widgetId="l.Atlas_Core.Atlas_Default.layoutGrid2$row0$column1"
                                                                     class={"col-lg-auto col-md-auto col-auto align-self-center"}
                                                                     style={undefined}
                                                                     content={[
-                                                                        <$Fragment key="l27.Atlas_Core.Atlas_Default.snippetCall2"
-                                                                            $widgetId="l27.Atlas_Core.Atlas_Default.snippetCall2"
+                                                                        <$Fragment key="l.Atlas_Core.Atlas_Default.snippetCall2"
+                                                                            $widgetId="l.Atlas_Core.Atlas_Default.snippetCall2"
                                                                             content={[
-                                                                                <$LanguageSelector key="l27.Atlas_Core.LanguageSelectorWidget.languageSelector1"
-                                                                                    $widgetId="l27.Atlas_Core.LanguageSelectorWidget.languageSelector1"
+                                                                                <$LanguageSelector key="l.Atlas_Core.LanguageSelectorWidget.languageSelector1"
+                                                                                    $widgetId="l.Atlas_Core.LanguageSelectorWidget.languageSelector1"
                                                                                     languageOptions={DatabaseObjectListProperty({
-                                                                                        "dataSourceId": "l27.2",
+                                                                                        "dataSourceId": "l.2",
                                                                                         "entity": "System.Language",
                                                                                         "operationId": "mh/nn8DG3FSOycNp0koR/g",
                                                                                         "sort": [
@@ -153,8 +154,8 @@ const region$Main = [
                                                                                         ]
                                                                                     })}
                                                                                     languageCaption={ListExpressionProperty({
-                                                                                        "expression": { "expr": { "type": "variable", "variable": "currentObject", "path": "Description" }, "args": { "currentObject": { "widget": "l27.Atlas_Core.LanguageSelectorWidget.languageSelector1", "source": "object" } } },
-                                                                                        "dataSourceId": "l27.2"
+                                                                                        "expression": { "expr": { "type": "variable", "variable": "currentObject", "path": "Description" }, "args": { "currentObject": { "widget": "l.Atlas_Core.LanguageSelectorWidget.languageSelector1", "source": "object" } } },
+                                                                                        "dataSourceId": "l.2"
                                                                                     })}
                                                                                     position={"bottom"}
                                                                                     trigger={"click"}
@@ -186,8 +187,8 @@ const region$Main = [
         left={{
             "enabled": true,
             "content": [
-                <$NavigationTree key="l27.Atlas_Core.Atlas_Default.navigationTree3"
-                    $widgetId="l27.Atlas_Core.Atlas_Default.navigationTree3"
+                <$NavigationTree key="l.Atlas_Core.Atlas_Default.navigationTree3"
+                    $widgetId="l.Atlas_Core.Atlas_Default.navigationTree3"
                     class={"mx-name-navigationTree3"}
                     style={undefined}
                     menu={[
@@ -218,8 +219,8 @@ const region$Main = [
         }}
         center={{
             "content": [
-                <$Placeholder key="l27.Atlas_Core.Atlas_Default.Main"
-                    $widgetId="l27.Atlas_Core.Atlas_Default.Main"
+                <$Placeholder key="l.Atlas_Core.Atlas_Default.Main"
+                    $widgetId="l.Atlas_Core.Atlas_Default.Main"
                     content={PlaceholderProperty({
                         "id": "Atlas_Core.Atlas_Default.Main"
                     })} />

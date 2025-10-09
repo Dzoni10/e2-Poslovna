@@ -8,7 +8,7 @@ import { ListAttributeProperty } from "mendix/ListAttributeProperty";
 import { ListExpressionProperty } from "mendix/ListExpressionProperty";
 
 import { Container } from "mendix/widgets/web/Container";
-import * as DatagridWidgetModule from "C:/Poslovna/e2-Poslovna/PoslovnaProjekat/deployment/web/widgets/com/mendix/widget/web/datagrid/Datagrid.mjs";
+import * as DatagridWidgetModule from "C:/Users/Djordje/Desktop/e2-Poslovna/PoslovnaProjekat/deployment/web/widgets/com/mendix/widget/web/datagrid/Datagrid.mjs";
 const Datagrid = Object.getOwnPropertyDescriptor(DatagridWidgetModule, "Datagrid")?.value || Object.getOwnPropertyDescriptor(DatagridWidgetModule, "default")?.value;   
 import { Div } from "mendix/widgets/web/Div";
 import { Text } from "mendix/widgets/web/Text";
@@ -19,30 +19,30 @@ import { content as parentContent } from "../layouts/Atlas_Core.Atlas_Default.js
 const { $Container, $Div, $Text, $Datagrid } = asPluginWidgets({ Container, Div, Text, Datagrid });
 
 const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
-    <$Container key="p2.Administration.RuntimeInstances.container1"
-        $widgetId="p2.Administration.RuntimeInstances.container1"
+    <$Container key="p.Administration.RuntimeInstances.container1"
+        $widgetId="p.Administration.RuntimeInstances.container1"
         class={"mx-name-container1 pageheader pageheader-fullwidth"}
         style={undefined}
         renderMode={"div"}
         onClick={undefined}
         content={[
-            <$Div key="p2.Administration.RuntimeInstances.layoutGrid1"
-                $widgetId="p2.Administration.RuntimeInstances.layoutGrid1"
+            <$Div key="p.Administration.RuntimeInstances.layoutGrid1"
+                $widgetId="p.Administration.RuntimeInstances.layoutGrid1"
                 class={"mx-name-layoutGrid1 mx-layoutgrid mx-layoutgrid-fluid container-fluid"}
                 style={undefined}
                 content={[
-                    <$Div key="p2.Administration.RuntimeInstances.layoutGrid1$row0"
-                        $widgetId="p2.Administration.RuntimeInstances.layoutGrid1$row0"
+                    <$Div key="p.Administration.RuntimeInstances.layoutGrid1$row0"
+                        $widgetId="p.Administration.RuntimeInstances.layoutGrid1$row0"
                         class={"row"}
                         style={undefined}
                         content={[
-                            <$Div key="p2.Administration.RuntimeInstances.layoutGrid1$row0$column0"
-                                $widgetId="p2.Administration.RuntimeInstances.layoutGrid1$row0$column0"
+                            <$Div key="p.Administration.RuntimeInstances.layoutGrid1$row0$column0"
+                                $widgetId="p.Administration.RuntimeInstances.layoutGrid1$row0$column0"
                                 class={"col-lg-12 col-md-12 col-12"}
                                 style={undefined}
                                 content={[
-                                    <$Text key="p2.Administration.RuntimeInstances.label1"
-                                        $widgetId="p2.Administration.RuntimeInstances.label1"
+                                    <$Text key="p.Administration.RuntimeInstances.label1"
+                                        $widgetId="p.Administration.RuntimeInstances.label1"
                                         class={"mx-name-label1 pageheader-title"}
                                         style={undefined}
                                         caption={t([
@@ -56,26 +56,26 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                 ]} />
         ]}
         ariaHidden={false} />,
-    <$Div key="p2.Administration.RuntimeInstances.layoutGrid2"
-        $widgetId="p2.Administration.RuntimeInstances.layoutGrid2"
+    <$Div key="p.Administration.RuntimeInstances.layoutGrid2"
+        $widgetId="p.Administration.RuntimeInstances.layoutGrid2"
         class={"mx-name-layoutGrid2 mx-layoutgrid mx-layoutgrid-fluid container-fluid"}
         style={undefined}
         content={[
-            <$Div key="p2.Administration.RuntimeInstances.layoutGrid2$row0"
-                $widgetId="p2.Administration.RuntimeInstances.layoutGrid2$row0"
+            <$Div key="p.Administration.RuntimeInstances.layoutGrid2$row0"
+                $widgetId="p.Administration.RuntimeInstances.layoutGrid2$row0"
                 class={"row"}
                 style={undefined}
                 content={[
-                    <$Div key="p2.Administration.RuntimeInstances.layoutGrid2$row0$column0"
-                        $widgetId="p2.Administration.RuntimeInstances.layoutGrid2$row0$column0"
+                    <$Div key="p.Administration.RuntimeInstances.layoutGrid2$row0$column0"
+                        $widgetId="p.Administration.RuntimeInstances.layoutGrid2$row0$column0"
                         class={"col-lg-12 col-md-12 col-12"}
                         style={undefined}
                         content={[
-                            <$Datagrid key="p2.Administration.RuntimeInstances.dataGrid21"
-                                $widgetId="p2.Administration.RuntimeInstances.dataGrid21"
+                            <$Datagrid key="p.Administration.RuntimeInstances.dataGrid21"
+                                $widgetId="p.Administration.RuntimeInstances.dataGrid21"
                                 advanced={false}
                                 datasource={DatabaseObjectListProperty({
-                                    "dataSourceId": "p2.10",
+                                    "dataSourceId": "p.10",
                                     "entity": "System.XASInstance",
                                     "operationId": "FAgktdFFvlav4M4leWptwg",
                                     "sort": [
@@ -98,7 +98,7 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                             "attributeType": "String",
                                             "sortable": true,
                                             "filterable": true,
-                                            "dataSourceId": "p2.10",
+                                            "dataSourceId": "p.10",
                                             "isList": false
                                         }),
                                         "content": undefined,
@@ -143,14 +143,14 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                             "attributeType": "DateTime",
                                             "sortable": true,
                                             "filterable": true,
-                                            "dataSourceId": "p2.10",
+                                            "dataSourceId": "p.10",
                                             "isList": false
                                         }),
                                         "content": undefined,
                                         "dynamicText": t([
                                             ListExpressionProperty({
-                                                "expression": { "expr": { "type": "function", "name": "_format", "parameters": [ { "type": "variable", "variable": "currentObject", "path": "createdDate" }, { "type": "literal", "value": "{\"type\":\"datetime\"}" } ] }, "args": { "currentObject": { "widget": "p2.Administration.RuntimeInstances.dataGrid21", "source": "object" } } },
-                                                "dataSourceId": "p2.10"
+                                                "expression": { "expr": { "type": "function", "name": "_format", "parameters": [ { "type": "variable", "variable": "currentObject", "path": "createdDate" }, { "type": "literal", "value": "{\"type\":\"datetime\"}" } ] }, "args": { "currentObject": { "widget": "p.Administration.RuntimeInstances.dataGrid21", "source": "object" } } },
+                                                "dataSourceId": "p.10"
                                             })
                                         ]),
                                         "header": t([
@@ -191,7 +191,7 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                             "attributeType": "Integer",
                                             "sortable": true,
                                             "filterable": true,
-                                            "dataSourceId": "p2.10",
+                                            "dataSourceId": "p.10",
                                             "isList": false
                                         }),
                                         "content": undefined,
@@ -236,7 +236,7 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                             "attributeType": "String",
                                             "sortable": true,
                                             "filterable": true,
-                                            "dataSourceId": "p2.10",
+                                            "dataSourceId": "p.10",
                                             "isList": false
                                         }),
                                         "content": undefined,
@@ -281,7 +281,7 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                             "attributeType": "String",
                                             "sortable": true,
                                             "filterable": true,
-                                            "dataSourceId": "p2.10",
+                                            "dataSourceId": "p.10",
                                             "isList": false
                                         }),
                                         "content": undefined,
@@ -384,6 +384,7 @@ export const title = t([
 
 export const classes = "layout-atlas layout-atlas-responsive-default";
 
+export const autofocus = "desktopOnly";
 export const style = {};
 export const content = { ...parentContent,
     "Atlas_Core.Atlas_Default.Main": region$Main,

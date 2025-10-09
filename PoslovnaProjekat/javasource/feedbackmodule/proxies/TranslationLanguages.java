@@ -4,8 +4,6 @@
 
 package feedbackmodule.proxies;
 
-import com.mendix.core.Core;
-
 public enum TranslationLanguages
 {
 	Dutch("64e9056e-f6e5-454e-8d60-c166ba0467be"),
@@ -26,12 +24,12 @@ public enum TranslationLanguages
 
 	public java.lang.String getCaption(java.lang.String languageCode)
 	{
-		String caption = Core.getInternationalizedString(languageCode, i18nCaptionKey);
+		String caption = com.mendix.core.Core.getInternationalizedString(languageCode, i18nCaptionKey);
 		return caption.isEmpty() ? getCaption() : caption;
 	}
 
 	public java.lang.String getCaption()
 	{
-		return Core.getInternationalizedString("en_US", i18nCaptionKey);
+		return com.mendix.core.Core.getInternationalizedString("en_US", i18nCaptionKey);
 	}
 }

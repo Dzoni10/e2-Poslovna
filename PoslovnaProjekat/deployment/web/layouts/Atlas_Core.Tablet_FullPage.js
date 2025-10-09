@@ -7,11 +7,12 @@ import { Placeholder } from "mendix/widgets/web/Placeholder";
 import { ScrollContainer } from "mendix/widgets/web/ScrollContainer";
 import { addEnumerations, asPluginWidgets, t } from "mendix";
 
+
 const { $ScrollContainer, $Placeholder } = asPluginWidgets({ ScrollContainer, Placeholder });
 
 const region$Main = [
-    <$ScrollContainer key="l22.Atlas_Core.Tablet_FullPage.layoutContainer"
-        $widgetId="l22.Atlas_Core.Tablet_FullPage.layoutContainer"
+    <$ScrollContainer key="l.Atlas_Core.Tablet_FullPage.layoutContainer"
+        $widgetId="l.Atlas_Core.Tablet_FullPage.layoutContainer"
         class={"mx-name-layoutContainer"}
         style={undefined}
         scrollPerRegion={true}
@@ -30,8 +31,8 @@ const region$Main = [
         }}
         center={{
             "content": [
-                <$Placeholder key="l22.Atlas_Core.Tablet_FullPage.Main"
-                    $widgetId="l22.Atlas_Core.Tablet_FullPage.Main"
+                <$Placeholder key="l.Atlas_Core.Tablet_FullPage.Main"
+                    $widgetId="l.Atlas_Core.Tablet_FullPage.Main"
                     content={PlaceholderProperty({
                         "id": "Atlas_Core.Tablet_FullPage.Main"
                     })} />

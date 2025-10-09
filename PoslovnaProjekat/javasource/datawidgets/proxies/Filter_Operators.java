@@ -4,8 +4,6 @@
 
 package datawidgets.proxies;
 
-import com.mendix.core.Core;
-
 public enum Filter_Operators
 {
 	contains("d6a956e7-4cf2-4c13-af65-970e113a5f6e"),
@@ -30,12 +28,12 @@ public enum Filter_Operators
 
 	public java.lang.String getCaption(java.lang.String languageCode)
 	{
-		String caption = Core.getInternationalizedString(languageCode, i18nCaptionKey);
+		String caption = com.mendix.core.Core.getInternationalizedString(languageCode, i18nCaptionKey);
 		return caption.isEmpty() ? getCaption() : caption;
 	}
 
 	public java.lang.String getCaption()
 	{
-		return Core.getInternationalizedString("en_US", i18nCaptionKey);
+		return com.mendix.core.Core.getInternationalizedString("en_US", i18nCaptionKey);
 	}
 }

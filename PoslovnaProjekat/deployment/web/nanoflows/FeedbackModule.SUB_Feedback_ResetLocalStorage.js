@@ -133,7 +133,7 @@ export const SUB_Feedback_ResetLocalStorage = {
     {
       "type": "javaScriptActionCall",
       "label": "6d96b462-911e-4b4f-a081-8eab75fced2d",
-      "action": () => require("C:/Poslovna/e2-Poslovna/PoslovnaProjekat/javascriptsource/feedbackmodule/actions/SetStorageItemObject").SetStorageItemObject,
+      "action": () => require("C:/Users/Djordje/Desktop/e2-Poslovna/PoslovnaProjekat/javascriptsource/feedbackmodule/actions/SetStorageItemObject").SetStorageItemObject,
       "parameters": [
         {
           "kind": "primitive",

@@ -26,7 +26,7 @@ export const ACT_Feedback_UploadImage = {
     {
       "type": "javaScriptActionCall",
       "label": "83bef3c3-3e65-4d12-89d3-172d61d1bb4d",
-      "action": () => require("C:/Poslovna/e2-Poslovna/PoslovnaProjekat/javascriptsource/feedbackmodule/actions/JS_UploadAndConvertToFileBlobURL").JS_UploadAndConvertToFileBlobURL,
+      "action": () => require("C:/Users/Djordje/Desktop/e2-Poslovna/PoslovnaProjekat/javascriptsource/feedbackmodule/actions/JS_UploadAndConvertToFileBlobURL").JS_UploadAndConvertToFileBlobURL,
       "outputVar": "fileBlobURL",
       "parameters": [
         {
@@ -170,7 +170,7 @@ export const ACT_Feedback_UploadImage = {
     {
       "type": "javaScriptActionCall",
       "label": "691a0af6-85f9-491d-b874-912b36a6b616",
-      "action": () => require("C:/Poslovna/e2-Poslovna/PoslovnaProjekat/javascriptsource/feedbackmodule/actions/JS_ToggleFeedbackAnnotateWidget").JS_ToggleFeedbackAnnotateWidget,
+      "action": () => require("C:/Users/Djordje/Desktop/e2-Poslovna/PoslovnaProjekat/javascriptsource/feedbackmodule/actions/JS_ToggleFeedbackAnnotateWidget").JS_ToggleFeedbackAnnotateWidget,
       "outputVar": "base64ImageFromWidget",
       "parameters": [
         {
@@ -210,7 +210,7 @@ export const ACT_Feedback_UploadImage = {
     {
       "type": "javaScriptActionCall",
       "label": "d1b0caf0-1a12-40eb-9b4f-c57c30c7ee18",
-      "action": () => require("C:/Poslovna/e2-Poslovna/PoslovnaProjekat/javascriptsource/feedbackmodule/actions/SetStorageItemObject").SetStorageItemObject,
+      "action": () => require("C:/Users/Djordje/Desktop/e2-Poslovna/PoslovnaProjekat/javascriptsource/feedbackmodule/actions/SetStorageItemObject").SetStorageItemObject,
       "parameters": [
         {
           "kind": "primitive",
@@ -231,7 +231,7 @@ export const ACT_Feedback_UploadImage = {
     {
       "type": "javaScriptActionCall",
       "label": "6855b76a-56fa-49d7-94c9-599813be478f",
-      "action": () => require("C:/Poslovna/e2-Poslovna/PoslovnaProjekat/javascriptsource/feedbackmodule/actions/JS_RevokeUploadedFileFromMemory").JS_RevokeUploadedFileFromMemory,
+      "action": () => require("C:/Users/Djordje/Desktop/e2-Poslovna/PoslovnaProjekat/javascriptsource/feedbackmodule/actions/JS_RevokeUploadedFileFromMemory").JS_RevokeUploadedFileFromMemory,
       "parameters": [
         {
           "kind": "primitive",

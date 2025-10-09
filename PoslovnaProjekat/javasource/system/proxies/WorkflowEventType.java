@@ -4,8 +4,6 @@
 
 package system.proxies;
 
-import com.mendix.core.Core;
-
 /**
  * The type of the event that occurred on the workflow. The event can relate to just the workflow or to a workflow activity.
  */
@@ -53,12 +51,12 @@ public enum WorkflowEventType
 
 	public java.lang.String getCaption(java.lang.String languageCode)
 	{
-		String caption = Core.getInternationalizedString(languageCode, i18nCaptionKey);
+		String caption = com.mendix.core.Core.getInternationalizedString(languageCode, i18nCaptionKey);
 		return caption.isEmpty() ? getCaption() : caption;
 	}
 
 	public java.lang.String getCaption()
 	{
-		return Core.getInternationalizedString("en_US", i18nCaptionKey);
+		return com.mendix.core.Core.getInternationalizedString("en_US", i18nCaptionKey);
 	}
 }

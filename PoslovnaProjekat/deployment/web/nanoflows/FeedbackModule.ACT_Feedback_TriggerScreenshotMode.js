@@ -10,7 +10,7 @@ export const ACT_Feedback_TriggerScreenshotMode = {
     {
       "type": "javaScriptActionCall",
       "label": "ea30e08c-71c6-43c0-b933-6f70095c04c1",
-      "action": () => require("C:/Poslovna/e2-Poslovna/PoslovnaProjekat/javascriptsource/feedbackmodule/actions/JS_ToggleFeedbackScreenshotWidget").JS_ToggleFeedbackScreenshotWidget,
+      "action": () => require("C:/Users/Djordje/Desktop/e2-Poslovna/PoslovnaProjekat/javascriptsource/feedbackmodule/actions/JS_ToggleFeedbackScreenshotWidget").JS_ToggleFeedbackScreenshotWidget,
       "outputVar": "base64FromWidget",
       "parameters": []
     },
@@ -104,7 +104,7 @@ export const ACT_Feedback_TriggerScreenshotMode = {
     {
       "type": "javaScriptActionCall",
       "label": "a72351b7-bc9c-4a4c-ac19-cd92b2cd9f90",
-      "action": () => require("C:/Poslovna/e2-Poslovna/PoslovnaProjekat/javascriptsource/feedbackmodule/actions/JS_isStrictMode").JS_isStrictMode,
+      "action": () => require("C:/Users/Djordje/Desktop/e2-Poslovna/PoslovnaProjekat/javascriptsource/feedbackmodule/actions/JS_isStrictMode").JS_isStrictMode,
       "outputVar": "isStrictMode",
       "parameters": []
     },
@@ -138,7 +138,7 @@ export const ACT_Feedback_TriggerScreenshotMode = {
     {
       "type": "javaScriptActionCall",
       "label": "2805686b-6ef7-4e16-a40b-c0213de176a2",
-      "action": () => require("C:/Poslovna/e2-Poslovna/PoslovnaProjekat/javascriptsource/feedbackmodule/actions/JS_SetSingleLocalStorageObjectItem").JS_SetSingleLocalStorageObjectItem,
+      "action": () => require("C:/Users/Djordje/Desktop/e2-Poslovna/PoslovnaProjekat/javascriptsource/feedbackmodule/actions/JS_SetSingleLocalStorageObjectItem").JS_SetSingleLocalStorageObjectItem,
       "parameters": [
         {
           "kind": "primitive",

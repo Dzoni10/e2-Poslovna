@@ -10,11 +10,12 @@ import { ScrollContainer } from "mendix/widgets/web/ScrollContainer";
 import { SimpleMenuBar } from "mendix/widgets/web/SimpleMenuBar";
 import { addEnumerations, asPluginWidgets, t } from "mendix";
 
+
 const { $ScrollContainer, $SimpleMenuBar, $Placeholder } = asPluginWidgets({ ScrollContainer, SimpleMenuBar, Placeholder });
 
 const region$Main = [
-    <$ScrollContainer key="l14.Atlas_Core.Phone_BottomBar.scrollContainer1"
-        $widgetId="l14.Atlas_Core.Phone_BottomBar.scrollContainer1"
+    <$ScrollContainer key="l.Atlas_Core.Phone_BottomBar.scrollContainer1"
+        $widgetId="l.Atlas_Core.Phone_BottomBar.scrollContainer1"
         class={"mx-name-scrollContainer1"}
         style={undefined}
         scrollPerRegion={true}
@@ -25,8 +26,8 @@ const region$Main = [
         bottom={{
             "enabled": true,
             "content": [
-                <$SimpleMenuBar key="l14.Atlas_Core.Phone_BottomBar.simpleMenuBar1"
-                    $widgetId="l14.Atlas_Core.Phone_BottomBar.simpleMenuBar1"
+                <$SimpleMenuBar key="l.Atlas_Core.Phone_BottomBar.simpleMenuBar1"
+                    $widgetId="l.Atlas_Core.Phone_BottomBar.simpleMenuBar1"
                     class={"mx-name-simpleMenuBar1 bottom-nav-text-icons"}
                     style={undefined}
                     menu={[
@@ -88,8 +89,8 @@ const region$Main = [
         }}
         center={{
             "content": [
-                <$Placeholder key="l14.Atlas_Core.Phone_BottomBar.Main"
-                    $widgetId="l14.Atlas_Core.Phone_BottomBar.Main"
+                <$Placeholder key="l.Atlas_Core.Phone_BottomBar.Main"
+                    $widgetId="l.Atlas_Core.Phone_BottomBar.Main"
                     content={PlaceholderProperty({
                         "id": "Atlas_Core.Phone_BottomBar.Main"
                     })} />

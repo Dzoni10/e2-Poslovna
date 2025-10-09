@@ -1,14 +1,14 @@
 ext {
 	mendixJavaVersion = 21
-	mendixInstallDir = "C:/Program Files/Mendix/10.23.0.70273"
+	mendixInstallDir = "C:/Program Files/Mendix/11.2.0.77998"
 	projectName = "MagacineSale"
 	projectSafeName = "PoslovnaProjekat"
-	mendixProjectDir = "C:/Poslovna/e2-Poslovna/PoslovnaProjekat"
-	deploymentDir = "C:/Poslovna/e2-Poslovna/PoslovnaProjekat/deployment"
-	dataSnapshotFile = "C:/Poslovna/e2-Poslovna/PoslovnaProjekat/data-snapshot.zip"
-	dataDir = "C:/Poslovna/e2-Poslovna/PoslovnaProjekat/deployment/data"
+	mendixProjectDir = "C:/Users/Djordje/Desktop/e2-Poslovna/PoslovnaProjekat"
+	deploymentDir = "C:/Users/Djordje/Desktop/e2-Poslovna/PoslovnaProjekat/deployment"
+	dataSnapshotFile = "C:/Users/Djordje/Desktop/e2-Poslovna/PoslovnaProjekat/data-snapshot.zip"
+	dataDir = "C:/Users/Djordje/Desktop/e2-Poslovna/PoslovnaProjekat/deployment/data"
 	extractDataSnapshot = false
-	templatesDir = "C:/Program Files/Mendix/10.23.0.70273/modeler/runtemplates"
+	templatesDir = "C:/Program Files/Mendix/11.2.0.77998/modeler/runtemplates"
 	runDir = "run"
 	compileTargetDir = "run/bin"
 	deploymentDirName = "deployment"
@@ -25,7 +25,6 @@ ext {
 	publicApiJars = [
 		"runtime/bundles/com.mendix.json.jar",
 		"runtime/bundles/com.mendix.logging-api.jar",
-		"runtime/bundles/com.mendix.m2ee-api.jar",
 		"runtime/bundles/com.mendix.public-api.jar",
 		"runtime/bundles/org.eclipse.jetty.toolchain.jetty-servlet-api.jar",
 		"runtime/bundles/org.eclipse.jetty.toolchain.jetty-javax-websocket-api.jar"

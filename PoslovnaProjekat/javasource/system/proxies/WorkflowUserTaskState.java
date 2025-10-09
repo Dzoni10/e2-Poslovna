@@ -4,8 +4,6 @@
 
 package system.proxies;
 
-import com.mendix.core.Core;
-
 public enum WorkflowUserTaskState
 {
 	Created("a33b2b0c-8a36-40b2-a3e0-565eea20b4ca"),
@@ -24,12 +22,12 @@ public enum WorkflowUserTaskState
 
 	public java.lang.String getCaption(java.lang.String languageCode)
 	{
-		String caption = Core.getInternationalizedString(languageCode, i18nCaptionKey);
+		String caption = com.mendix.core.Core.getInternationalizedString(languageCode, i18nCaptionKey);
 		return caption.isEmpty() ? getCaption() : caption;
 	}
 
 	public java.lang.String getCaption()
 	{
-		return Core.getInternationalizedString("en_US", i18nCaptionKey);
+		return com.mendix.core.Core.getInternationalizedString("en_US", i18nCaptionKey);
 	}
 }

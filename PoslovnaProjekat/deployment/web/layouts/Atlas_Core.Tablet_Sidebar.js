@@ -9,9 +9,9 @@ import { WebStaticImageProperty } from "mendix/WebStaticImageProperty";
 
 import { Container } from "mendix/widgets/web/Container";
 import { Header } from "mendix/widgets/web/Header";
-import * as ImageWidgetModule from "C:/Poslovna/e2-Poslovna/PoslovnaProjekat/deployment/web/widgets/com/mendix/widget/web/image/Image.mjs";
+import * as ImageWidgetModule from "C:/Users/Djordje/Desktop/e2-Poslovna/PoslovnaProjekat/deployment/web/widgets/com/mendix/widget/web/image/Image.mjs";
 const Image = Object.getOwnPropertyDescriptor(ImageWidgetModule, "Image")?.value || Object.getOwnPropertyDescriptor(ImageWidgetModule, "default")?.value;   
-import "C:/Poslovna/e2-Poslovna/PoslovnaProjekat/deployment/web/widgets/com/mendix/widget/web/image/Image.css";
+import "C:/Users/Djordje/Desktop/e2-Poslovna/PoslovnaProjekat/deployment/web/widgets/com/mendix/widget/web/image/Image.css";
 import { NavigationTree } from "mendix/widgets/web/NavigationTree";
 import { Placeholder } from "mendix/widgets/web/Placeholder";
 import { ScrollContainer } from "mendix/widgets/web/ScrollContainer";
@@ -20,11 +20,12 @@ import { Text } from "mendix/widgets/web/Text";
 import { Title } from "mendix/widgets/web/Title";
 import { addEnumerations, asPluginWidgets, t } from "mendix";
 
+
 const { $ScrollContainer, $Header, $Title, $SidebarToggle, $Placeholder, $Container, $Image, $Text, $NavigationTree } = asPluginWidgets({ ScrollContainer, Header, Title, SidebarToggle, Placeholder, Container, Image, Text, NavigationTree });
 
 const region$Main = [
-    <$ScrollContainer key="l19.Atlas_Core.Tablet_Sidebar.layoutContainer"
-        $widgetId="l19.Atlas_Core.Tablet_Sidebar.layoutContainer"
+    <$ScrollContainer key="l.Atlas_Core.Tablet_Sidebar.layoutContainer"
+        $widgetId="l.Atlas_Core.Tablet_Sidebar.layoutContainer"
         class={"mx-name-layoutContainer"}
         style={undefined}
         scrollPerRegion={true}
@@ -32,13 +33,13 @@ const region$Main = [
         top={{
             "enabled": true,
             "content": [
-                <$Header key="l19.Atlas_Core.Tablet_Sidebar.header1"
-                    $widgetId="l19.Atlas_Core.Tablet_Sidebar.header1"
+                <$Header key="l.Atlas_Core.Tablet_Sidebar.header1"
+                    $widgetId="l.Atlas_Core.Tablet_Sidebar.header1"
                     class={"mx-name-header1"}
                     style={undefined}
                     content={[
-                        <$Title key="l19.6"
-                            $widgetId="l19.6"
+                        <$Title key="l.6"
+                            $widgetId="l.6"
                             class={""}
                             style={undefined}
                             caption={ExpressionProperty({
@@ -46,9 +47,9 @@ const region$Main = [
                             })} />
                     ]}
                     leftWidgets={[
-                        <$SidebarToggle key="l19.Atlas_Core.Tablet_Sidebar.sidebarToggle3"
-                            $widgetId="l19.Atlas_Core.Tablet_Sidebar.sidebarToggle3"
-                            buttonId={"l19.Atlas_Core.Tablet_Sidebar.sidebarToggle3"}
+                        <$SidebarToggle key="l.Atlas_Core.Tablet_Sidebar.sidebarToggle3"
+                            $widgetId="l.Atlas_Core.Tablet_Sidebar.sidebarToggle3"
+                            buttonId={"l.Atlas_Core.Tablet_Sidebar.sidebarToggle3"}
                             renderType={"link"}
                             buttonClass={"btn-default"}
                             caption={t([
@@ -69,8 +70,8 @@ const region$Main = [
                             tabIndex={-1} />
                     ]}
                     rightWidgets={[
-                        <$Placeholder key="l19.Atlas_Core.Tablet_Sidebar.HeaderRight"
-                            $widgetId="l19.Atlas_Core.Tablet_Sidebar.HeaderRight"
+                        <$Placeholder key="l.Atlas_Core.Tablet_Sidebar.HeaderRight"
+                            $widgetId="l.Atlas_Core.Tablet_Sidebar.HeaderRight"
                             content={PlaceholderProperty({
                                 "id": "Atlas_Core.Tablet_Sidebar.HeaderRight"
                             })} />
@@ -85,15 +86,15 @@ const region$Main = [
         left={{
             "enabled": true,
             "content": [
-                <$Container key="l19.Atlas_Core.Tablet_Sidebar.container1"
-                    $widgetId="l19.Atlas_Core.Tablet_Sidebar.container1"
+                <$Container key="l.Atlas_Core.Tablet_Sidebar.container1"
+                    $widgetId="l.Atlas_Core.Tablet_Sidebar.container1"
                     class={"mx-name-container1 sidebar-heading row-left spacing-inner-top-medium spacing-inner-bottom-medium spacing-inner-left-medium spacing-inner-right-medium"}
                     style={undefined}
                     renderMode={"div"}
                     onClick={undefined}
                     content={[
-                        <$Image key="l19.Atlas_Core.Tablet_Sidebar.image1"
-                            $widgetId="l19.Atlas_Core.Tablet_Sidebar.image1"
+                        <$Image key="l.Atlas_Core.Tablet_Sidebar.image1"
+                            $widgetId="l.Atlas_Core.Tablet_Sidebar.image1"
                             datasource={"image"}
                             imageObject={WebStaticImageProperty({
                                 "image": { "uri": "img/Atlas_Core$Layout$logo.svg" }
@@ -124,8 +125,8 @@ const region$Main = [
                             class={"mx-name-image1 spacing-outer-right"}
                             style={undefined}
                             tabIndex={undefined} />,
-                        <$Text key="l19.Atlas_Core.Tablet_Sidebar.text1"
-                            $widgetId="l19.Atlas_Core.Tablet_Sidebar.text1"
+                        <$Text key="l.Atlas_Core.Tablet_Sidebar.text1"
+                            $widgetId="l.Atlas_Core.Tablet_Sidebar.text1"
                             class={"mx-name-text1 text-white text-bold"}
                             style={undefined}
                             caption={t([
@@ -136,8 +137,8 @@ const region$Main = [
                             renderMode={"span"} />
                     ]}
                     ariaHidden={false} />,
-                <$NavigationTree key="l19.Atlas_Core.Tablet_Sidebar.navigationTree3"
-                    $widgetId="l19.Atlas_Core.Tablet_Sidebar.navigationTree3"
+                <$NavigationTree key="l.Atlas_Core.Tablet_Sidebar.navigationTree3"
+                    $widgetId="l.Atlas_Core.Tablet_Sidebar.navigationTree3"
                     class={"mx-name-navigationTree3"}
                     style={undefined}
                     menu={[
@@ -198,8 +199,8 @@ const region$Main = [
         }}
         center={{
             "content": [
-                <$Placeholder key="l19.Atlas_Core.Tablet_Sidebar.Main"
-                    $widgetId="l19.Atlas_Core.Tablet_Sidebar.Main"
+                <$Placeholder key="l.Atlas_Core.Tablet_Sidebar.Main"
+                    $widgetId="l.Atlas_Core.Tablet_Sidebar.Main"
                     content={PlaceholderProperty({
                         "id": "Atlas_Core.Tablet_Sidebar.Main"
                     })} />

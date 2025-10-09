@@ -1,4 +1,5 @@
 import { addEnumerations, t } from "mendix";
+import { SUB_Feedback_ResetLocalStorage } from "./FeedbackModule.SUB_Feedback_ResetLocalStorage.js";
 
 export const ACT_SubmitFeedback = {
   "name": "FeedbackModule.ACT_SubmitFeedback",
@@ -129,7 +130,7 @@ export const ACT_SubmitFeedback = {
     {
       "type": "nanoflowCall",
       "label": "16e46266-05b1-4055-8d79-7f124f82774c",
-      "flow": () => require("C:/Poslovna/e2-Poslovna/PoslovnaProjekat/deployment/web/nanoflows/FeedbackModule.SUB_Feedback_ResetLocalStorage").SUB_Feedback_ResetLocalStorage,
+      "flow": () => SUB_Feedback_ResetLocalStorage,
       "parameters": [
         {
           "name": "Feedback",

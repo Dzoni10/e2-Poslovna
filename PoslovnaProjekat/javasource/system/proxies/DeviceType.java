@@ -4,8 +4,6 @@
 
 package system.proxies;
 
-import com.mendix.core.Core;
-
 public enum DeviceType
 {
 	Phone("14995df6-c780-4977-aee9-1bf31a9f3089"),
@@ -21,12 +19,12 @@ public enum DeviceType
 
 	public java.lang.String getCaption(java.lang.String languageCode)
 	{
-		String caption = Core.getInternationalizedString(languageCode, i18nCaptionKey);
+		String caption = com.mendix.core.Core.getInternationalizedString(languageCode, i18nCaptionKey);
 		return caption.isEmpty() ? getCaption() : caption;
 	}
 
 	public java.lang.String getCaption()
 	{
-		return Core.getInternationalizedString("en_US", i18nCaptionKey);
+		return com.mendix.core.Core.getInternationalizedString("en_US", i18nCaptionKey);
 	}
 }

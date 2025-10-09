@@ -6,7 +6,7 @@ export const OCH_Feedback_SaveToLocalStorage = {
     {
       "type": "javaScriptActionCall",
       "label": "7986c1fb-d131-44c8-b9f9-d959cc526c22",
-      "action": () => require("C:/Poslovna/e2-Poslovna/PoslovnaProjekat/javascriptsource/feedbackmodule/actions/SetStorageItemObject").SetStorageItemObject,
+      "action": () => require("C:/Users/Djordje/Desktop/e2-Poslovna/PoslovnaProjekat/javascriptsource/feedbackmodule/actions/SetStorageItemObject").SetStorageItemObject,
       "parameters": [
         {
           "kind": "primitive",

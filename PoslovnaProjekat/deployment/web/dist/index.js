@@ -1,4 +1,8 @@
+<<<<<<< Updated upstream
 import { startApp } from './index-BjSpTlX0.js';
+=======
+import { startApp } from './index-DRM94Sf-.js';
+>>>>>>> Stashed changes
 
 startApp({
   "languages": [

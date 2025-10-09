@@ -1,3 +1,7 @@
+<<<<<<< Updated upstream
 [rtlauncher:container$] INFO Container start took 6854. Ready to accept admin requests.
 
 
+=======
+[rtlauncher:container$] INFO Container start took 7260. Ready to accept admin requests.
+>>>>>>> Stashed changes

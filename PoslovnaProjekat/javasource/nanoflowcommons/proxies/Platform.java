@@ -4,8 +4,6 @@
 
 package nanoflowcommons.proxies;
 
-import com.mendix.core.Core;
-
 public enum Platform
 {
 	Web("d0869110-b03d-4f60-b5ab-0ca949798310"),
@@ -21,12 +19,12 @@ public enum Platform
 
 	public java.lang.String getCaption(java.lang.String languageCode)
 	{
-		String caption = Core.getInternationalizedString(languageCode, i18nCaptionKey);
+		String caption = com.mendix.core.Core.getInternationalizedString(languageCode, i18nCaptionKey);
 		return caption.isEmpty() ? getCaption() : caption;
 	}
 
 	public java.lang.String getCaption()
 	{
-		return Core.getInternationalizedString("en_US", i18nCaptionKey);
+		return com.mendix.core.Core.getInternationalizedString("en_US", i18nCaptionKey);
 	}
 }

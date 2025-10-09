@@ -1,1 +1,1 @@
-"C:/Program Files/Mendix/10.23.0.70273\modeler\tools\node\win-x64\node.exe" "C:/Program Files/Mendix/10.23.0.70273\modeler\tools\node\node_modules\rollup\dist\bin\rollup" -c -w
+"C:/Program Files/Mendix/11.2.0.77998\modeler\tools\node\win-x64\node.exe" "C:/Program Files/Mendix/11.2.0.77998\modeler\tools\node\node_modules\rollup\dist\bin\rollup" -c -w
