@@ -13,9 +13,9 @@ import { WebIconProperty } from "mendix/WebIconProperty";
 
 import { ActionButton } from "mendix/widgets/web/ActionButton";
 import { ConditionalVisibilityWrapper } from "mendix/widgets/web/ConditionalVisibilityWrapper";
-import * as DatagridWidgetModule from "C:/Poslovna/e2-Poslovna/PoslovnaProjekat/deployment/web/widgets/com/mendix/widget/web/datagrid/Datagrid.mjs";
+import * as DatagridWidgetModule from "C:/Users/Djordje/Desktop/e2-Poslovna/PoslovnaProjekat/deployment/web/widgets/com/mendix/widget/web/datagrid/Datagrid.mjs";
 const Datagrid = Object.getOwnPropertyDescriptor(DatagridWidgetModule, "Datagrid")?.value || Object.getOwnPropertyDescriptor(DatagridWidgetModule, "default")?.value;   
-import * as DatagridTextFilterWidgetModule from "C:/Poslovna/e2-Poslovna/PoslovnaProjekat/deployment/web/widgets/com/mendix/widget/web/datagridtextfilter/DatagridTextFilter.mjs";
+import * as DatagridTextFilterWidgetModule from "C:/Users/Djordje/Desktop/e2-Poslovna/PoslovnaProjekat/deployment/web/widgets/com/mendix/widget/web/datagridtextfilter/DatagridTextFilter.mjs";
 const DatagridTextFilter = Object.getOwnPropertyDescriptor(DatagridTextFilterWidgetModule, "DatagridTextFilter")?.value || Object.getOwnPropertyDescriptor(DatagridTextFilterWidgetModule, "default")?.value;   
 import { Div } from "mendix/widgets/web/Div";
 import { Text } from "mendix/widgets/web/Text";
@@ -26,23 +26,23 @@ import { content as parentContent } from "../layouts/Atlas_Core.Atlas_Default.js
 const { $Div, $Text, $Datagrid, $DatagridTextFilter, $ConditionalVisibilityWrapper, $ActionButton } = asPluginWidgets({ Div, Text, Datagrid, DatagridTextFilter, ConditionalVisibilityWrapper, ActionButton });
 
 const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
-    <$Div key="p1.MyFirstModule.Radnik_Overview.layoutGrid1"
-        $widgetId="p1.MyFirstModule.Radnik_Overview.layoutGrid1"
+    <$Div key="p.MyFirstModule.Radnik_Overview.layoutGrid1"
+        $widgetId="p.MyFirstModule.Radnik_Overview.layoutGrid1"
         class={"mx-name-layoutGrid1 mx-layoutgrid mx-layoutgrid-fluid container-fluid"}
         style={undefined}
         content={[
-            <$Div key="p1.MyFirstModule.Radnik_Overview.layoutGrid1$row0"
-                $widgetId="p1.MyFirstModule.Radnik_Overview.layoutGrid1$row0"
+            <$Div key="p.MyFirstModule.Radnik_Overview.layoutGrid1$row0"
+                $widgetId="p.MyFirstModule.Radnik_Overview.layoutGrid1$row0"
                 class={"row"}
                 style={undefined}
                 content={[
-                    <$Div key="p1.MyFirstModule.Radnik_Overview.layoutGrid1$row0$column0"
-                        $widgetId="p1.MyFirstModule.Radnik_Overview.layoutGrid1$row0$column0"
+                    <$Div key="p.MyFirstModule.Radnik_Overview.layoutGrid1$row0$column0"
+                        $widgetId="p.MyFirstModule.Radnik_Overview.layoutGrid1$row0$column0"
                         class={"col-lg col-md col"}
                         style={undefined}
                         content={[
-                            <$Text key="p1.MyFirstModule.Radnik_Overview.text1"
-                                $widgetId="p1.MyFirstModule.Radnik_Overview.text1"
+                            <$Text key="p.MyFirstModule.Radnik_Overview.text1"
+                                $widgetId="p.MyFirstModule.Radnik_Overview.text1"
                                 class={"mx-name-text1"}
                                 style={undefined}
                                 caption={t([
@@ -51,11 +51,11 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                     })
                                 ])}
                                 renderMode={"h2"} />,
-                            <$Datagrid key="p1.MyFirstModule.Radnik_Overview.dataGrid2_1"
-                                $widgetId="p1.MyFirstModule.Radnik_Overview.dataGrid2_1"
+                            <$Datagrid key="p.MyFirstModule.Radnik_Overview.dataGrid2_1"
+                                $widgetId="p.MyFirstModule.Radnik_Overview.dataGrid2_1"
                                 advanced={false}
                                 datasource={DatabaseObjectListProperty({
-                                    "dataSourceId": "p1.0",
+                                    "dataSourceId": "p.0",
                                     "entity": "MyFirstModule.Radnik",
                                     "operationId": "kuo0GCvMjlmXA52By4aTmw",
                                     "sort": []
@@ -63,7 +63,7 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                 refreshInterval={0}
                                 itemSelection={SelectionProperty({
                                     "selectionType": "Single",
-                                    "dataSourceId": "p1.0"
+                                    "dataSourceId": "p.0"
                                 })}
                                 itemSelectionMethod={"rowClick"}
                                 itemSelectionMode={"clear"}
@@ -79,7 +79,7 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                             "attributeType": "String",
                                             "sortable": true,
                                             "filterable": true,
-                                            "dataSourceId": "p1.0",
+                                            "dataSourceId": "p.0",
                                             "isList": false
                                         }),
                                         "content": undefined,
@@ -98,8 +98,8 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                             undefined
                                         ]),
                                         "filter": [
-                                            <$DatagridTextFilter key="p1.MyFirstModule.Radnik_Overview.textFilter2"
-                                                $widgetId="p1.MyFirstModule.Radnik_Overview.textFilter2"
+                                            <$DatagridTextFilter key="p.MyFirstModule.Radnik_Overview.textFilter2"
+                                                $widgetId="p.MyFirstModule.Radnik_Overview.textFilter2"
                                                 advanced={false}
                                                 defaultValue={undefined}
                                                 defaultFilter={"contains"}
@@ -151,7 +151,7 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                             "attributeType": "String",
                                             "sortable": true,
                                             "filterable": true,
-                                            "dataSourceId": "p1.0",
+                                            "dataSourceId": "p.0",
                                             "isList": false
                                         }),
                                         "content": undefined,
@@ -170,8 +170,8 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                             undefined
                                         ]),
                                         "filter": [
-                                            <$DatagridTextFilter key="p1.MyFirstModule.Radnik_Overview.textFilter1"
-                                                $widgetId="p1.MyFirstModule.Radnik_Overview.textFilter1"
+                                            <$DatagridTextFilter key="p.MyFirstModule.Radnik_Overview.textFilter1"
+                                                $widgetId="p.MyFirstModule.Radnik_Overview.textFilter1"
                                                 advanced={false}
                                                 defaultValue={undefined}
                                                 defaultFilter={"contains"}
@@ -223,22 +223,22 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                             "attributeType": "String",
                                             "sortable": true,
                                             "filterable": true,
-                                            "dataSourceId": "p1.0",
+                                            "dataSourceId": "p.0",
                                             "isList": false
                                         }),
                                         "content": TemplatedWidgetProperty({
-                                            "dataSourceId": "p1.0",
+                                            "dataSourceId": "p.0",
                                             "editable": false,
                                             "children": () => [
-                                                <$ConditionalVisibilityWrapper key="p1.MyFirstModule.Radnik_Overview.actionButton2$visibility"
-                                                    $widgetId="p1.MyFirstModule.Radnik_Overview.actionButton2$visibility"
+                                                <$ConditionalVisibilityWrapper key="p.MyFirstModule.Radnik_Overview.actionButton2$visibility"
+                                                    $widgetId="p.MyFirstModule.Radnik_Overview.actionButton2$visibility"
                                                     visible={ExpressionProperty({
                                                         "expression": { "expr": { "type": "function", "name": "_hasSomeRole", "parameters": [ { "type": "literal", "value": "Administrator" }, { "type": "literal", "value": "User" } ] }, "args": {} }
                                                     })}
                                                     contents={[
-                                                        <$ActionButton key="p1.MyFirstModule.Radnik_Overview.actionButton2"
-                                                            $widgetId="p1.MyFirstModule.Radnik_Overview.actionButton2"
-                                                            buttonId={"p1.MyFirstModule.Radnik_Overview.actionButton2"}
+                                                        <$ActionButton key="p.MyFirstModule.Radnik_Overview.actionButton2"
+                                                            $widgetId="p.MyFirstModule.Radnik_Overview.actionButton2"
+                                                            buttonId={"p.MyFirstModule.Radnik_Overview.actionButton2"}
                                                             class={"mx-name-actionButton2 btn-lg"}
                                                             style={undefined}
                                                             tabIndex={undefined}
@@ -259,13 +259,13 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                                                 "icon": { "type": "icon", "iconClass": "mx-icon-lined mx-icon-pencil" }
                                                             })}
                                                             action={ActionProperty({
-                                                                "action": { "type": "openPage", "argMap": { "param$Radnik": { "widget": "p1.MyFirstModule.Radnik_Overview.dataGrid2_1", "source": "object" } }, "config": { "name": "MyFirstModule/Radnik_NewEdit.page.xml", "location": "modal", "resizable": true, "allowedRoles": [ "Administrator", "User" ] }, "disabledDuringExecution": true },
+                                                                "action": { "type": "openPage", "argMap": { "param$Radnik": { "widget": "p.MyFirstModule.Radnik_Overview.dataGrid2_1", "source": "object" } }, "config": { "name": "MyFirstModule/Radnik_NewEdit.page.xml", "location": "modal", "resizable": true, "allowedRoles": [ "Administrator", "User" ] }, "disabledDuringExecution": true },
                                                                 "abortOnServerValidation": true
                                                             })} />
                                                     ]} />,
-                                                <$ActionButton key="p1.MyFirstModule.Radnik_Overview.actionButton3"
-                                                    $widgetId="p1.MyFirstModule.Radnik_Overview.actionButton3"
-                                                    buttonId={"p1.MyFirstModule.Radnik_Overview.actionButton3"}
+                                                <$ActionButton key="p.MyFirstModule.Radnik_Overview.actionButton3"
+                                                    $widgetId="p.MyFirstModule.Radnik_Overview.actionButton3"
+                                                    buttonId={"p.MyFirstModule.Radnik_Overview.actionButton3"}
                                                     class={"mx-name-actionButton3 btn-lg"}
                                                     style={undefined}
                                                     tabIndex={undefined}
@@ -286,7 +286,7 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                                         "icon": { "type": "icon", "iconClass": "mx-icon-lined mx-icon-trash-can" }
                                                     })}
                                                     action={ActionProperty({
-                                                        "action": { "type": "deleteObject", "argMap": { "$object": { "widget": "p1.MyFirstModule.Radnik_Overview.dataGrid2_1", "source": "object" } }, "config": { "closePage": false, "operationId": "pr1KZrbFRFqhWK9WXkIoWg" }, "disabledDuringExecution": true },
+                                                        "action": { "type": "deleteObject", "argMap": { "$object": { "widget": "p.MyFirstModule.Radnik_Overview.dataGrid2_1", "source": "object" } }, "config": { "closePage": false, "operationId": "pr1KZrbFRFqhWK9WXkIoWg" }, "disabledDuringExecution": true },
                                                         "abortOnServerValidation": true
                                                     })} />
                                             ]
@@ -349,15 +349,15 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                 storeFiltersInPersonalization={true}
                                 filterList={[]}
                                 filtersPlaceholder={[
-                                    <$ConditionalVisibilityWrapper key="p1.MyFirstModule.Radnik_Overview.actionButton1$visibility"
-                                        $widgetId="p1.MyFirstModule.Radnik_Overview.actionButton1$visibility"
+                                    <$ConditionalVisibilityWrapper key="p.MyFirstModule.Radnik_Overview.actionButton1$visibility"
+                                        $widgetId="p.MyFirstModule.Radnik_Overview.actionButton1$visibility"
                                         visible={ExpressionProperty({
                                             "expression": { "expr": { "type": "function", "name": "_hasSomeRole", "parameters": [ { "type": "literal", "value": "Administrator" }, { "type": "literal", "value": "User" } ] }, "args": {} }
                                         })}
                                         contents={[
-                                            <$ActionButton key="p1.MyFirstModule.Radnik_Overview.actionButton1"
-                                                $widgetId="p1.MyFirstModule.Radnik_Overview.actionButton1"
-                                                buttonId={"p1.MyFirstModule.Radnik_Overview.actionButton1"}
+                                            <$ActionButton key="p.MyFirstModule.Radnik_Overview.actionButton1"
+                                                $widgetId="p.MyFirstModule.Radnik_Overview.actionButton1"
+                                                buttonId={"p.MyFirstModule.Radnik_Overview.actionButton1"}
                                                 class={"mx-name-actionButton1"}
                                                 style={undefined}
                                                 tabIndex={undefined}
@@ -422,6 +422,7 @@ export const title = t([
 
 export const classes = "layout-atlas layout-atlas-responsive-default";
 
+export const autofocus = "off";
 export const style = {};
 export const content = { ...parentContent,
     "Atlas_Core.Atlas_Default.Main": region$Main,

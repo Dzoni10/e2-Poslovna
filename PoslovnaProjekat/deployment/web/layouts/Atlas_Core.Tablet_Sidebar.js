@@ -24,13 +24,8 @@ import { addEnumerations, asPluginWidgets, t } from "mendix";
 const { $ScrollContainer, $Header, $Title, $SidebarToggle, $Placeholder, $Container, $Image, $Text, $NavigationTree } = asPluginWidgets({ ScrollContainer, Header, Title, SidebarToggle, Placeholder, Container, Image, Text, NavigationTree });
 
 const region$Main = [
-<<<<<<< HEAD
-    <$ScrollContainer key="l21.Atlas_Core.Tablet_Sidebar.layoutContainer"
-        $widgetId="l21.Atlas_Core.Tablet_Sidebar.layoutContainer"
-=======
     <$ScrollContainer key="l.Atlas_Core.Tablet_Sidebar.layoutContainer"
         $widgetId="l.Atlas_Core.Tablet_Sidebar.layoutContainer"
->>>>>>> feat/sales-domain
         class={"mx-name-layoutContainer"}
         style={undefined}
         scrollPerRegion={true}
@@ -38,15 +33,6 @@ const region$Main = [
         top={{
             "enabled": true,
             "content": [
-<<<<<<< HEAD
-                <$Header key="l21.Atlas_Core.Tablet_Sidebar.header1"
-                    $widgetId="l21.Atlas_Core.Tablet_Sidebar.header1"
-                    class={"mx-name-header1"}
-                    style={undefined}
-                    content={[
-                        <$Title key="l21.6"
-                            $widgetId="l21.6"
-=======
                 <$Header key="l.Atlas_Core.Tablet_Sidebar.header1"
                     $widgetId="l.Atlas_Core.Tablet_Sidebar.header1"
                     class={"mx-name-header1"}
@@ -54,7 +40,6 @@ const region$Main = [
                     content={[
                         <$Title key="l.6"
                             $widgetId="l.6"
->>>>>>> feat/sales-domain
                             class={""}
                             style={undefined}
                             caption={ExpressionProperty({
@@ -62,15 +47,9 @@ const region$Main = [
                             })} />
                     ]}
                     leftWidgets={[
-<<<<<<< HEAD
-                        <$SidebarToggle key="l21.Atlas_Core.Tablet_Sidebar.sidebarToggle3"
-                            $widgetId="l21.Atlas_Core.Tablet_Sidebar.sidebarToggle3"
-                            buttonId={"l21.Atlas_Core.Tablet_Sidebar.sidebarToggle3"}
-=======
                         <$SidebarToggle key="l.Atlas_Core.Tablet_Sidebar.sidebarToggle3"
                             $widgetId="l.Atlas_Core.Tablet_Sidebar.sidebarToggle3"
                             buttonId={"l.Atlas_Core.Tablet_Sidebar.sidebarToggle3"}
->>>>>>> feat/sales-domain
                             renderType={"link"}
                             buttonClass={"btn-default"}
                             caption={t([
@@ -91,13 +70,8 @@ const region$Main = [
                             tabIndex={-1} />
                     ]}
                     rightWidgets={[
-<<<<<<< HEAD
-                        <$Placeholder key="l21.Atlas_Core.Tablet_Sidebar.HeaderRight"
-                            $widgetId="l21.Atlas_Core.Tablet_Sidebar.HeaderRight"
-=======
                         <$Placeholder key="l.Atlas_Core.Tablet_Sidebar.HeaderRight"
                             $widgetId="l.Atlas_Core.Tablet_Sidebar.HeaderRight"
->>>>>>> feat/sales-domain
                             content={PlaceholderProperty({
                                 "id": "Atlas_Core.Tablet_Sidebar.HeaderRight"
                             })} />
@@ -112,25 +86,15 @@ const region$Main = [
         left={{
             "enabled": true,
             "content": [
-<<<<<<< HEAD
-                <$Container key="l21.Atlas_Core.Tablet_Sidebar.container1"
-                    $widgetId="l21.Atlas_Core.Tablet_Sidebar.container1"
-=======
                 <$Container key="l.Atlas_Core.Tablet_Sidebar.container1"
                     $widgetId="l.Atlas_Core.Tablet_Sidebar.container1"
->>>>>>> feat/sales-domain
                     class={"mx-name-container1 sidebar-heading row-left spacing-inner-top-medium spacing-inner-bottom-medium spacing-inner-left-medium spacing-inner-right-medium"}
                     style={undefined}
                     renderMode={"div"}
                     onClick={undefined}
                     content={[
-<<<<<<< HEAD
-                        <$Image key="l21.Atlas_Core.Tablet_Sidebar.image1"
-                            $widgetId="l21.Atlas_Core.Tablet_Sidebar.image1"
-=======
                         <$Image key="l.Atlas_Core.Tablet_Sidebar.image1"
                             $widgetId="l.Atlas_Core.Tablet_Sidebar.image1"
->>>>>>> feat/sales-domain
                             datasource={"image"}
                             imageObject={WebStaticImageProperty({
                                 "image": { "uri": "img/Atlas_Core$Layout$logo.svg" }
@@ -161,13 +125,8 @@ const region$Main = [
                             class={"mx-name-image1 spacing-outer-right"}
                             style={undefined}
                             tabIndex={undefined} />,
-<<<<<<< HEAD
-                        <$Text key="l21.Atlas_Core.Tablet_Sidebar.text1"
-                            $widgetId="l21.Atlas_Core.Tablet_Sidebar.text1"
-=======
                         <$Text key="l.Atlas_Core.Tablet_Sidebar.text1"
                             $widgetId="l.Atlas_Core.Tablet_Sidebar.text1"
->>>>>>> feat/sales-domain
                             class={"mx-name-text1 text-white text-bold"}
                             style={undefined}
                             caption={t([
@@ -178,13 +137,8 @@ const region$Main = [
                             renderMode={"span"} />
                     ]}
                     ariaHidden={false} />,
-<<<<<<< HEAD
-                <$NavigationTree key="l21.Atlas_Core.Tablet_Sidebar.navigationTree3"
-                    $widgetId="l21.Atlas_Core.Tablet_Sidebar.navigationTree3"
-=======
                 <$NavigationTree key="l.Atlas_Core.Tablet_Sidebar.navigationTree3"
                     $widgetId="l.Atlas_Core.Tablet_Sidebar.navigationTree3"
->>>>>>> feat/sales-domain
                     class={"mx-name-navigationTree3"}
                     style={undefined}
                     menu={[
@@ -245,13 +199,8 @@ const region$Main = [
         }}
         center={{
             "content": [
-<<<<<<< HEAD
-                <$Placeholder key="l21.Atlas_Core.Tablet_Sidebar.Main"
-                    $widgetId="l21.Atlas_Core.Tablet_Sidebar.Main"
-=======
                 <$Placeholder key="l.Atlas_Core.Tablet_Sidebar.Main"
                     $widgetId="l.Atlas_Core.Tablet_Sidebar.Main"
->>>>>>> feat/sales-domain
                     content={PlaceholderProperty({
                         "id": "Atlas_Core.Tablet_Sidebar.Main"
                     })} />

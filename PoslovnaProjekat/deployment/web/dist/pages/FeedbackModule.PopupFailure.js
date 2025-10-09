@@ -1,32 +1,10 @@
-<<<<<<< HEAD
-import { reactExports, asPluginWidgets, selectTranslation } from '../index-JDXCDs53.js';
-import { PageFragment, ExpressionProperty } from '../ScrollContainer-BMEt46hD.js';
-import { WebStaticImageProperty } from '../WebStaticImageProperty-Cl4Gen30.js';
-import { ImageWidgetModule, Container, Text } from '../Image-D55d_j2j.js';
-import { Div } from '../Div-CbKV9nto.js';
-import { content as content$1 } from '../Atlas_Core.PopupLayout-DeEIVNnx.js';
-import '../InlineText-BhumBKcU.js';
-=======
-<<<<<<< Updated upstream
-import { reactExports, asPluginWidgets, selectTranslation } from '../index-BjSpTlX0.js';
-import { PageFragment, ExpressionProperty } from '../ScrollContainer-DYUj9_Ay.js';
-import { WebStaticImageProperty } from '../WebStaticImageProperty-CFK2IFXG.js';
-import { Container, Text } from '../Text-CHYWFktZ.js';
-import { Div } from '../Div-Dyf4zdHI.js';
-import * as ImageWidgetModule from '../../../../../../../../Poslovna/e2-Poslovna/PoslovnaProjekat/deployment/web/widgets/com/mendix/widget/web/image/Image.mjs';
-import '../../../../../../../../Poslovna/e2-Poslovna/PoslovnaProjekat/deployment/web/widgets/com/mendix/widget/web/image/Image.css';
-import { content as content$1 } from '../Atlas_Core.PopupLayout-D-AdFqBx.js';
-import '../InlineText-BMWFPLMA.js';
-=======
-import { reactExports, asPluginWidgets, selectTranslation } from '../index-DRM94Sf-.js';
-import { PageFragment, ExpressionProperty } from '../ScrollContainer-LSQoMZk3.js';
-import { WebStaticImageProperty } from '../WebStaticImageProperty-Dq4ynMoj.js';
-import { ImageWidgetModule, Container, Text } from '../Image-DMmMe595.js';
-import { Div } from '../Div-DOhBQ24X.js';
-import { content as content$1 } from '../Atlas_Core.PopupLayout-C12ql83v.js';
-import '../InlineText-Jv0dr_pn.js';
->>>>>>> Stashed changes
->>>>>>> feat/sales-domain
+import { reactExports, asPluginWidgets, selectTranslation } from '../index-9YRUqoZR.js';
+import { PageFragment, ExpressionProperty } from '../ScrollContainer-BSTS-pb7.js';
+import { WebStaticImageProperty } from '../WebStaticImageProperty-l2spNxXU.js';
+import { ImageWidgetModule, Container, Text } from '../Image-DP5udpmp.js';
+import { Div } from '../Div-BEtJmTkn.js';
+import { content as content$1 } from '../Atlas_Core.PopupLayout-CclhRPde.js';
+import '../InlineText-CCt9-DhP.js';
 
 const React = { createElement: reactExports.createElement };
 const Image = Object.getOwnPropertyDescriptor(ImageWidgetModule, "Image")?.value || Object.getOwnPropertyDescriptor(ImageWidgetModule, "default")?.value;
@@ -35,52 +13,32 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
   /* @__PURE__ */ React.createElement(
     $Div,
     {
-<<<<<<< HEAD
-      key: "p8.FeedbackModule.PopupFailure.layoutGrid1",
-      $widgetId: "p8.FeedbackModule.PopupFailure.layoutGrid1",
-=======
       key: "p.FeedbackModule.PopupFailure.layoutGrid1",
       $widgetId: "p.FeedbackModule.PopupFailure.layoutGrid1",
->>>>>>> feat/sales-domain
       class: "mx-name-layoutGrid1 mx-layoutgrid mx-layoutgrid-fluid container-fluid",
       style: void 0,
       content: [
         /* @__PURE__ */ React.createElement(
           $Div,
           {
-<<<<<<< HEAD
-            key: "p8.FeedbackModule.PopupFailure.layoutGrid1$row0",
-            $widgetId: "p8.FeedbackModule.PopupFailure.layoutGrid1$row0",
-=======
             key: "p.FeedbackModule.PopupFailure.layoutGrid1$row0",
             $widgetId: "p.FeedbackModule.PopupFailure.layoutGrid1$row0",
->>>>>>> feat/sales-domain
             class: "row",
             style: void 0,
             content: [
               /* @__PURE__ */ React.createElement(
                 $Div,
                 {
-<<<<<<< HEAD
-                  key: "p8.FeedbackModule.PopupFailure.layoutGrid1$row0$column0",
-                  $widgetId: "p8.FeedbackModule.PopupFailure.layoutGrid1$row0$column0",
-=======
                   key: "p.FeedbackModule.PopupFailure.layoutGrid1$row0$column0",
                   $widgetId: "p.FeedbackModule.PopupFailure.layoutGrid1$row0$column0",
->>>>>>> feat/sales-domain
                   class: "col-lg col-md col",
                   style: void 0,
                   content: [
                     /* @__PURE__ */ React.createElement(
                       $Container,
                       {
-<<<<<<< HEAD
-                        key: "p8.FeedbackModule.PopupFailure.container1",
-                        $widgetId: "p8.FeedbackModule.PopupFailure.container1",
-=======
                         key: "p.FeedbackModule.PopupFailure.container1",
                         $widgetId: "p.FeedbackModule.PopupFailure.container1",
->>>>>>> feat/sales-domain
                         class: "mx-name-container1",
                         style: void 0,
                         renderMode: "div",
@@ -89,13 +47,8 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                           /* @__PURE__ */ React.createElement(
                             $Image,
                             {
-<<<<<<< HEAD
-                              key: "p8.FeedbackModule.PopupFailure.image1",
-                              $widgetId: "p8.FeedbackModule.PopupFailure.image1",
-=======
                               key: "p.FeedbackModule.PopupFailure.image1",
                               $widgetId: "p.FeedbackModule.PopupFailure.image1",
->>>>>>> feat/sales-domain
                               datasource: "image",
                               imageObject: WebStaticImageProperty({
                                 "image": { "uri": "img/FeedbackModule$Images$Failure.png" }
@@ -131,13 +84,8 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                           /* @__PURE__ */ React.createElement(
                             $Text,
                             {
-<<<<<<< HEAD
-                              key: "p8.FeedbackModule.PopupFailure.text1",
-                              $widgetId: "p8.FeedbackModule.PopupFailure.text1",
-=======
                               key: "p.FeedbackModule.PopupFailure.text1",
                               $widgetId: "p.FeedbackModule.PopupFailure.text1",
->>>>>>> feat/sales-domain
                               class: "mx-name-text1 text-center d-block spacing-outer-top-large spacing-outer-bottom",
                               style: void 0,
                               caption: selectTranslation([
@@ -151,13 +99,8 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                           /* @__PURE__ */ React.createElement(
                             $Text,
                             {
-<<<<<<< HEAD
-                              key: "p8.FeedbackModule.PopupFailure.text2",
-                              $widgetId: "p8.FeedbackModule.PopupFailure.text2",
-=======
                               key: "p.FeedbackModule.PopupFailure.text2",
                               $widgetId: "p.FeedbackModule.PopupFailure.text2",
->>>>>>> feat/sales-domain
                               class: "mx-name-text2 text-center d-block",
                               style: void 0,
                               caption: selectTranslation([

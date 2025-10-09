@@ -1,77 +1,24 @@
-<<<<<<< HEAD
-import { asProperty, fromConstant$, ensureAssociationId, registerAssociationType, registerFilterAttribute, fromComputation$, asReloadable$, available, getObjectsByPath$, getObjectByPath$, getSession, getFocus, getHTMLElement, ensure, isNavigableElement, isHTMLElement, reactExports, newId, Big, useForceUpdate, tuple, repeat, reaction, useStoreBackendValue, readUntracked, jsxRuntimeExports, classNames, NestedStoreProvider, asPluginWidgets, selectTranslation } from '../index-JDXCDs53.js';
-import { PageFragment, ExpressionProperty } from '../ScrollContainer-BMEt46hD.js';
-import { ActionButton, TextProperty, ActionProperty } from '../ActionButton-CnZtpka2.js';
-import { listItemProperty, DatabaseObjectListProperty } from '../CTcC6PjV-Zoc9mpUp.js';
-import { getCurrentRefObjectItem$ } from '../AssociationProperty-DKzgjRwQ.js';
-import '../uEIG9e6s-D5bs4rlT.js';
-import '../D5tDSKpV-NCto3GtK.js';
-import { ListAttributeProperty } from '../ListAttributeProperty-BGCislj4.js';
-import { ListExpressionProperty } from '../ListExpressionProperty-BJu92AGp.js';
-import { DatagridTextFilterWidgetModule, TemplatedWidgetProperty } from '../DatagridTextFilter-DWTJzH1_.js';
-import { WebIconProperty } from '../WebIconProperty-Bon9K84_.js';
-import { ConditionalVisibilityWrapper } from '../ConditionalVisibilityWrapper-BVC6V75r.js';
-import { Container, Text } from '../Image-D55d_j2j.js';
-import { DatagridWidgetModule } from '../Datagrid-1ozoQRRx.js';
-import { DatagridDateFilterWidgetModule } from '../DatagridDateFilter-D1N034c2.js';
-import { DatagridDropdownFilterWidgetModule } from '../DatagridDropdownFilter-rIIAFb8p.js';
-import { Div } from '../Div-CbKV9nto.js';
-import { useLegacyResize, getBox } from '../bdxqAC6d-Crq0yb3P.js';
-import { usePersistentState, content as content$1 } from '../Atlas_Core.Atlas_Default-BcLwJ3TJ.js';
-import '../InlineText-BhumBKcU.js';
-import '../WebStaticImageProperty-Cl4Gen30.js';
-=======
-<<<<<<< Updated upstream
-import { asProperty, fromConstant$, ensureAssociationId, isOffline, registerAssociationType, registerFilterAttribute, fromComputation$, asReloadable$, available, getObjectsByPath$, getObjectByPath$, getSession, getFocus, getHTMLElement, ensure, isNavigableElement, isHTMLElement, reactExports, newId, reaction, useForceUpdate, tuple, Big, repeat, useStoreBackendValue, readUntracked, jsxRuntimeExports, classNames, NestedStoreProvider, when, observable, runInAction, asPluginWidgets, selectTranslation } from '../index-BjSpTlX0.js';
-import { PageFragment, ExpressionProperty } from '../ScrollContainer-DYUj9_Ay.js';
-import { ActionButton, TextProperty, ActionProperty } from '../ActionButton-dNbAsczi.js';
-import { listItemProperty, DatabaseObjectListProperty } from '../XQdQuDNG-DT5jvNDi.js';
-import { getCurrentRefObjectItem$ } from '../AssociationProperty-ofkzE30k.js';
-import '../BkqAssms-D3I0Q7ya.js';
-import '../77kgvjgm-4HZvSliz.js';
-import { ListAttributeProperty } from '../ListAttributeProperty-BqFtOePf.js';
-import { ListExpressionProperty } from '../ListExpressionProperty-8MjkvJ9b.js';
-import { TemplatedWidgetProperty } from '../TemplatedWidgetProperty-eR6-5GQS.js';
-import { WebIconProperty } from '../WebIconProperty-B82XOhEa.js';
-import { ConditionalVisibilityWrapper } from '../ConditionalVisibilityWrapper-C8wONAJZ.js';
-import { Container, Text } from '../Text-CHYWFktZ.js';
-import * as DatagridWidgetModule from '../../../../../../../../Poslovna/e2-Poslovna/PoslovnaProjekat/deployment/web/widgets/com/mendix/widget/web/datagrid/Datagrid.mjs';
-import * as DatagridDateFilterWidgetModule from '../../../../../../../../Poslovna/e2-Poslovna/PoslovnaProjekat/deployment/web/widgets/com/mendix/widget/web/datagriddatefilter/DatagridDateFilter.mjs';
-import '../../../../../../../../Poslovna/e2-Poslovna/PoslovnaProjekat/deployment/web/widgets/com/mendix/widget/web/datagriddatefilter/DatagridDateFilter.css';
-import * as DatagridDropdownFilterWidgetModule from '../../../../../../../../Poslovna/e2-Poslovna/PoslovnaProjekat/deployment/web/widgets/com/mendix/widget/web/datagriddropdownfilter/DatagridDropdownFilter.mjs';
-import * as DatagridTextFilterWidgetModule from '../../../../../../../../Poslovna/e2-Poslovna/PoslovnaProjekat/deployment/web/widgets/com/mendix/widget/web/datagridtextfilter/DatagridTextFilter.mjs';
-import { Div } from '../Div-Dyf4zdHI.js';
-import { useLegacyResize, getBox } from '../DmsI6saM-Dj1PYIQI.js';
-import { usePersistentState, content as content$1 } from '../Atlas_Core.Atlas_Default-C-ZwRMe1.js';
-import '../InlineText-BMWFPLMA.js';
-import '../WebStaticImageProperty-CFK2IFXG.js';
-import '../../../../../../../../Poslovna/e2-Poslovna/PoslovnaProjekat/deployment/web/widgets/com/mendix/widget/web/image/Image.mjs';
-import '../../../../../../../../Poslovna/e2-Poslovna/PoslovnaProjekat/deployment/web/widgets/com/mendix/widget/web/image/Image.css';
-import '../../../../../../../../Poslovna/e2-Poslovna/PoslovnaProjekat/deployment/web/widgets/com/mendix/widget/web/languageselector/LanguageSelector.mjs';
-import '../../../../../../../../Poslovna/e2-Poslovna/PoslovnaProjekat/deployment/web/widgets/com/mendix/widget/web/languageselector/LanguageSelector.css';
-=======
-import { asProperty, fromConstant$, ensureAssociationId, isOffline, registerAssociationType, registerFilterAttribute, fromComputation$, asReloadable$, available, getObjectsByPath$, getObjectByPath$, getSession, getFocus, getHTMLElement, ensure, isNavigableElement, isHTMLElement, reactExports, newId, reaction, useForceUpdate, tuple, Big, repeat, useStoreBackendValue, readUntracked, jsxRuntimeExports, classNames, NestedStoreProvider, when, observable, runInAction, asPluginWidgets, selectTranslation } from '../index-DRM94Sf-.js';
-import { PageFragment, ExpressionProperty } from '../ScrollContainer-LSQoMZk3.js';
-import { ActionButton, TextProperty, ActionProperty } from '../ActionButton-Vn_V_FOy.js';
-import { listItemProperty, DatabaseObjectListProperty } from '../XQdQuDNG-BIL054Xu.js';
-import { getCurrentRefObjectItem$ } from '../AssociationProperty-B8-mdEat.js';
-import '../BkqAssms-a3v8x28y.js';
-import '../77kgvjgm-Ckrt0mx6.js';
-import { ListAttributeProperty } from '../ListAttributeProperty-BRLhJBGz.js';
-import { ListExpressionProperty } from '../ListExpressionProperty-Oai9lB4H.js';
-import { DatagridDateFilterWidgetModule, DatagridTextFilterWidgetModule, TemplatedWidgetProperty } from '../DatagridTextFilter-DFjS4xAv.js';
-import { WebIconProperty } from '../WebIconProperty-CkJqYHVz.js';
-import { ConditionalVisibilityWrapper } from '../ConditionalVisibilityWrapper-C8wONAJZ.js';
-import { Container, Text } from '../Image-DMmMe595.js';
-import { DatagridWidgetModule } from '../Datagrid-Ct9FWUdb.js';
-import { DatagridDropdownFilterWidgetModule } from '../DatagridDropdownFilter-BLMPBrvX.js';
-import { Div } from '../Div-DOhBQ24X.js';
-import { useLegacyResize, getBox } from '../DmsI6saM-AyKzfY6T.js';
-import { usePersistentState, content as content$1 } from '../Atlas_Core.Atlas_Default-CIKgqGL7.js';
-import '../InlineText-Jv0dr_pn.js';
-import '../WebStaticImageProperty-Dq4ynMoj.js';
->>>>>>> Stashed changes
->>>>>>> feat/sales-domain
+import { asProperty, fromConstant$, ensureAssociationId, isOffline, registerAssociationType, registerFilterAttribute, fromComputation$, asReloadable$, available, getObjectsByPath$, getObjectByPath$, getSession, getFocus, getHTMLElement, ensure, isNavigableElement, isHTMLElement, reactExports, newId, reaction, useForceUpdate, tuple, Big, repeat, useStoreBackendValue, readUntracked, jsxRuntimeExports, classNames, NestedStoreProvider, when, observable, runInAction, asPluginWidgets, selectTranslation } from '../index-9YRUqoZR.js';
+import { PageFragment, ExpressionProperty } from '../ScrollContainer-BSTS-pb7.js';
+import { ActionButton, TextProperty, ActionProperty } from '../ActionButton-dhEFVOBy.js';
+import { listItemProperty, DatabaseObjectListProperty } from '../XQdQuDNG-DOzAOCvU.js';
+import { getCurrentRefObjectItem$ } from '../AssociationProperty-DghUHmnw.js';
+import '../BkqAssms-CUfoyzkd.js';
+import '../77kgvjgm-_yhfSwqC.js';
+import { ListAttributeProperty } from '../ListAttributeProperty-daqfkgGj.js';
+import { ListExpressionProperty } from '../ListExpressionProperty-woJl_eg3.js';
+import { DatagridTextFilterWidgetModule, TemplatedWidgetProperty } from '../DatagridTextFilter-BgBjCLui.js';
+import { WebIconProperty } from '../WebIconProperty-DZSUe3JO.js';
+import { ConditionalVisibilityWrapper } from '../ConditionalVisibilityWrapper-D1kXRtZG.js';
+import { Container, Text } from '../Image-DP5udpmp.js';
+import { DatagridWidgetModule } from '../Datagrid-CoF3q784.js';
+import { DatagridDateFilterWidgetModule } from '../DatagridDateFilter-BdjtWXTI.js';
+import { DatagridDropdownFilterWidgetModule } from '../DatagridDropdownFilter-DD4NvflZ.js';
+import { Div } from '../Div-BEtJmTkn.js';
+import { useLegacyResize, getBox } from '../DmsI6saM-DBCEfM02.js';
+import { usePersistentState, content as content$1 } from '../Atlas_Core.Atlas_Default-DWMpWEK3.js';
+import '../InlineText-CCt9-DhP.js';
+import '../WebStaticImageProperty-l2spNxXU.js';
 
 const AssociationMetaDataProperty = asProperty((config) => {
   const { id, filterable } = listAssociationMetaData(config);
@@ -417,13 +364,8 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
   /* @__PURE__ */ React.createElement(
     $Container,
     {
-<<<<<<< HEAD
-      key: "p0.Administration.Account_Overview.container1",
-      $widgetId: "p0.Administration.Account_Overview.container1",
-=======
       key: "p.Administration.Account_Overview.container1",
       $widgetId: "p.Administration.Account_Overview.container1",
->>>>>>> feat/sales-domain
       class: "mx-name-container1 pageheader pageheader-fullwidth",
       style: void 0,
       renderMode: "div",
@@ -432,52 +374,32 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
         /* @__PURE__ */ React.createElement(
           $Div,
           {
-<<<<<<< HEAD
-            key: "p0.Administration.Account_Overview.layoutGrid1",
-            $widgetId: "p0.Administration.Account_Overview.layoutGrid1",
-=======
             key: "p.Administration.Account_Overview.layoutGrid1",
             $widgetId: "p.Administration.Account_Overview.layoutGrid1",
->>>>>>> feat/sales-domain
             class: "mx-name-layoutGrid1 mx-layoutgrid mx-layoutgrid-fluid container-fluid",
             style: void 0,
             content: [
               /* @__PURE__ */ React.createElement(
                 $Div,
                 {
-<<<<<<< HEAD
-                  key: "p0.Administration.Account_Overview.layoutGrid1$row0",
-                  $widgetId: "p0.Administration.Account_Overview.layoutGrid1$row0",
-=======
                   key: "p.Administration.Account_Overview.layoutGrid1$row0",
                   $widgetId: "p.Administration.Account_Overview.layoutGrid1$row0",
->>>>>>> feat/sales-domain
                   class: "row",
                   style: void 0,
                   content: [
                     /* @__PURE__ */ React.createElement(
                       $Div,
                       {
-<<<<<<< HEAD
-                        key: "p0.Administration.Account_Overview.layoutGrid1$row0$column0",
-                        $widgetId: "p0.Administration.Account_Overview.layoutGrid1$row0$column0",
-=======
                         key: "p.Administration.Account_Overview.layoutGrid1$row0$column0",
                         $widgetId: "p.Administration.Account_Overview.layoutGrid1$row0$column0",
->>>>>>> feat/sales-domain
                         class: "col-lg-12 col-md-12 col-12",
                         style: void 0,
                         content: [
                           /* @__PURE__ */ React.createElement(
                             $Text,
                             {
-<<<<<<< HEAD
-                              key: "p0.Administration.Account_Overview.label1",
-                              $widgetId: "p0.Administration.Account_Overview.label1",
-=======
                               key: "p.Administration.Account_Overview.label1",
                               $widgetId: "p.Administration.Account_Overview.label1",
->>>>>>> feat/sales-domain
                               class: "mx-name-label1 pageheader-title",
                               style: void 0,
                               caption: selectTranslation([
@@ -491,13 +413,8 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                           /* @__PURE__ */ React.createElement(
                             $Text,
                             {
-<<<<<<< HEAD
-                              key: "p0.Administration.Account_Overview.label2",
-                              $widgetId: "p0.Administration.Account_Overview.label2",
-=======
                               key: "p.Administration.Account_Overview.label2",
                               $widgetId: "p.Administration.Account_Overview.label2",
->>>>>>> feat/sales-domain
                               class: "mx-name-label2 pageheader-subtitle",
                               style: void 0,
                               caption: selectTranslation([
@@ -524,60 +441,36 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
   /* @__PURE__ */ React.createElement(
     $Div,
     {
-<<<<<<< HEAD
-      key: "p0.Administration.Account_Overview.layoutGrid4",
-      $widgetId: "p0.Administration.Account_Overview.layoutGrid4",
-=======
       key: "p.Administration.Account_Overview.layoutGrid4",
       $widgetId: "p.Administration.Account_Overview.layoutGrid4",
->>>>>>> feat/sales-domain
       class: "mx-name-layoutGrid4 mx-layoutgrid mx-layoutgrid-fluid container-fluid",
       style: void 0,
       content: [
         /* @__PURE__ */ React.createElement(
           $Div,
           {
-<<<<<<< HEAD
-            key: "p0.Administration.Account_Overview.layoutGrid4$row0",
-            $widgetId: "p0.Administration.Account_Overview.layoutGrid4$row0",
-=======
             key: "p.Administration.Account_Overview.layoutGrid4$row0",
             $widgetId: "p.Administration.Account_Overview.layoutGrid4$row0",
->>>>>>> feat/sales-domain
             class: "row",
             style: void 0,
             content: [
               /* @__PURE__ */ React.createElement(
                 $Div,
                 {
-<<<<<<< HEAD
-                  key: "p0.Administration.Account_Overview.layoutGrid4$row0$column0",
-                  $widgetId: "p0.Administration.Account_Overview.layoutGrid4$row0$column0",
-=======
                   key: "p.Administration.Account_Overview.layoutGrid4$row0$column0",
                   $widgetId: "p.Administration.Account_Overview.layoutGrid4$row0$column0",
->>>>>>> feat/sales-domain
                   class: "col-lg-12 col-md-12 col-12",
                   style: void 0,
                   content: [
                     /* @__PURE__ */ React.createElement(
                       $TabContainer,
                       {
-<<<<<<< HEAD
-                        key: "p0.Administration.Account_Overview.tabControl",
-                        $widgetId: "p0.Administration.Account_Overview.tabControl",
-                        class: "mx-name-tabControl tabsfullwidth",
-                        style: void 0,
-                        tabIndex: void 0,
-                        widgetId: "p0.Administration.Account_Overview.tabControl",
-=======
                         key: "p.Administration.Account_Overview.tabControl",
                         $widgetId: "p.Administration.Account_Overview.tabControl",
                         class: "mx-name-tabControl tabsfullwidth",
                         style: void 0,
                         tabIndex: void 0,
                         widgetId: "p.Administration.Account_Overview.tabControl",
->>>>>>> feat/sales-domain
                         defaultTab: 0,
                         onTabChange: void 0,
                         tabs: [
@@ -594,19 +487,11 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                               /* @__PURE__ */ React.createElement(
                                 $Datagrid,
                                 {
-<<<<<<< HEAD
-                                  key: "p0.Administration.Account_Overview.dataGrid21",
-                                  $widgetId: "p0.Administration.Account_Overview.dataGrid21",
-                                  advanced: false,
-                                  datasource: DatabaseObjectListProperty({
-                                    "dataSourceId": "p0.14",
-=======
                                   key: "p.Administration.Account_Overview.dataGrid21",
                                   $widgetId: "p.Administration.Account_Overview.dataGrid21",
                                   advanced: false,
                                   datasource: DatabaseObjectListProperty({
                                     "dataSourceId": "p.14",
->>>>>>> feat/sales-domain
                                     "entity": "Administration.Account",
                                     "operationId": "8z1qdSUNAl+HD4FIOPvSFQ",
                                     "sort": [
@@ -630,11 +515,7 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                         "attributeType": "String",
                                         "sortable": true,
                                         "filterable": true,
-<<<<<<< HEAD
-                                        "dataSourceId": "p0.14",
-=======
                                         "dataSourceId": "p.14",
->>>>>>> feat/sales-domain
                                         "isList": false
                                       }),
                                       "content": void 0,
@@ -653,13 +534,8 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                         /* @__PURE__ */ React.createElement(
                                           $DatagridTextFilter,
                                           {
-<<<<<<< HEAD
-                                            key: "p0.Administration.Account_Overview.textFilter1",
-                                            $widgetId: "p0.Administration.Account_Overview.textFilter1",
-=======
                                             key: "p.Administration.Account_Overview.textFilter1",
                                             $widgetId: "p.Administration.Account_Overview.textFilter1",
->>>>>>> feat/sales-domain
                                             advanced: false,
                                             defaultValue: void 0,
                                             defaultFilter: "contains",
@@ -716,11 +592,7 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                         "attributeType": "String",
                                         "sortable": true,
                                         "filterable": true,
-<<<<<<< HEAD
-                                        "dataSourceId": "p0.14",
-=======
                                         "dataSourceId": "p.14",
->>>>>>> feat/sales-domain
                                         "isList": false
                                       }),
                                       "content": void 0,
@@ -739,13 +611,8 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                         /* @__PURE__ */ React.createElement(
                                           $DatagridTextFilter,
                                           {
-<<<<<<< HEAD
-                                            key: "p0.Administration.Account_Overview.textFilter2",
-                                            $widgetId: "p0.Administration.Account_Overview.textFilter2",
-=======
                                             key: "p.Administration.Account_Overview.textFilter2",
                                             $widgetId: "p.Administration.Account_Overview.textFilter2",
->>>>>>> feat/sales-domain
                                             advanced: false,
                                             defaultValue: void 0,
                                             defaultFilter: "contains",
@@ -802,11 +669,7 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                         "attributeType": "String",
                                         "sortable": false,
                                         "filterable": false,
-<<<<<<< HEAD
-                                        "dataSourceId": "p0.14",
-=======
                                         "dataSourceId": "p.14",
->>>>>>> feat/sales-domain
                                         "isList": true
                                       }),
                                       "content": void 0,
@@ -825,13 +688,8 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                         /* @__PURE__ */ React.createElement(
                                           $DatagridDropdownFilter,
                                           {
-<<<<<<< HEAD
-                                            key: "p0.Administration.Account_Overview.drop_downFilter1",
-                                            $widgetId: "p0.Administration.Account_Overview.drop_downFilter1",
-=======
                                             key: "p.Administration.Account_Overview.drop_downFilter1",
                                             $widgetId: "p.Administration.Account_Overview.drop_downFilter1",
->>>>>>> feat/sales-domain
                                             auto: true,
                                             defaultValue: void 0,
                                             filterOptions: [],
@@ -863,21 +721,12 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                         "path": "",
                                         "attribute": "System.UserRoles",
                                         "endpointEntity": "System.UserRole",
-<<<<<<< HEAD
-                                        "selectableObjectsId": "p0.15",
-                                        "filterable": true,
-                                        "dataSourceId": "p0.14"
-                                      }),
-                                      "filterAssociationOptions": DatabaseObjectListProperty({
-                                        "dataSourceId": "p0.15",
-=======
                                         "selectableObjectsId": "p.15",
                                         "filterable": true,
                                         "dataSourceId": "p.14"
                                       }),
                                       "filterAssociationOptions": DatabaseObjectListProperty({
                                         "dataSourceId": "p.15",
->>>>>>> feat/sales-domain
                                         "entity": "System.UserRole",
                                         "operationId": "kFKwe8NWy1a5u/M7ZgeK3w",
                                         "sort": [
@@ -888,13 +737,8 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                         ]
                                       }),
                                       "filterAssociationOptionLabel": ListExpressionProperty({
-<<<<<<< HEAD
-                                        "expression": { "expr": { "type": "variable", "variable": "currentObject", "path": "Name" }, "args": { "currentObject": { "widget": "p0.Administration.Account_Overview.dataGrid21", "source": "object" } } },
-                                        "dataSourceId": "p0.15"
-=======
                                         "expression": { "expr": { "type": "variable", "variable": "currentObject", "path": "Name" }, "args": { "currentObject": { "widget": "p.Administration.Account_Overview.dataGrid21", "source": "object" } } },
                                         "dataSourceId": "p.15"
->>>>>>> feat/sales-domain
                                       }),
                                       "visible": ExpressionProperty({
                                         "expression": { "expr": { "type": "literal", "value": true }, "args": {} }
@@ -925,23 +769,14 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                         "attributeType": "DateTime",
                                         "sortable": true,
                                         "filterable": true,
-<<<<<<< HEAD
-                                        "dataSourceId": "p0.14",
-=======
                                         "dataSourceId": "p.14",
->>>>>>> feat/sales-domain
                                         "isList": false
                                       }),
                                       "content": void 0,
                                       "dynamicText": selectTranslation([
                                         ListExpressionProperty({
-<<<<<<< HEAD
-                                          "expression": { "expr": { "type": "function", "name": "_format", "parameters": [{ "type": "variable", "variable": "currentObject", "path": "LastLogin" }, { "type": "literal", "value": '{"type":"datetime"}' }] }, "args": { "currentObject": { "widget": "p0.Administration.Account_Overview.dataGrid21", "source": "object" } } },
-                                          "dataSourceId": "p0.14"
-=======
                                           "expression": { "expr": { "type": "function", "name": "_format", "parameters": [{ "type": "variable", "variable": "currentObject", "path": "LastLogin" }, { "type": "literal", "value": '{"type":"datetime"}' }] }, "args": { "currentObject": { "widget": "p.Administration.Account_Overview.dataGrid21", "source": "object" } } },
                                           "dataSourceId": "p.14"
->>>>>>> feat/sales-domain
                                         })
                                       ]),
                                       "header": selectTranslation([
@@ -956,13 +791,8 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                         /* @__PURE__ */ React.createElement(
                                           $DatagridDateFilter,
                                           {
-<<<<<<< HEAD
-                                            key: "p0.Administration.Account_Overview.dateFilter1",
-                                            $widgetId: "p0.Administration.Account_Overview.dateFilter1",
-=======
                                             key: "p.Administration.Account_Overview.dateFilter1",
                                             $widgetId: "p.Administration.Account_Overview.dateFilter1",
->>>>>>> feat/sales-domain
                                             advanced: false,
                                             defaultValue: void 0,
                                             defaultStartDate: void 0,
@@ -1025,47 +855,27 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                         "attributeType": "Boolean",
                                         "sortable": true,
                                         "filterable": true,
-<<<<<<< HEAD
-                                        "dataSourceId": "p0.14",
-                                        "isList": false
-                                      }),
-                                      "content": TemplatedWidgetProperty({
-                                        "dataSourceId": "p0.14",
-=======
                                         "dataSourceId": "p.14",
                                         "isList": false
                                       }),
                                       "content": TemplatedWidgetProperty({
                                         "dataSourceId": "p.14",
->>>>>>> feat/sales-domain
                                         "editable": false,
                                         "children": () => [
                                           /* @__PURE__ */ React.createElement(
                                             $ConditionalVisibilityWrapper,
                                             {
-<<<<<<< HEAD
-                                              key: "p0.Administration.Account_Overview.text2$visibility",
-                                              $widgetId: "p0.Administration.Account_Overview.text2$visibility",
-                                              visible: ExpressionProperty({
-                                                "expression": { "expr": { "type": "variable", "variable": "currentObject", "path": "Active" }, "args": { "currentObject": { "widget": "p0.Administration.Account_Overview.dataGrid21", "source": "object" } } }
-=======
                                               key: "p.Administration.Account_Overview.text2$visibility",
                                               $widgetId: "p.Administration.Account_Overview.text2$visibility",
                                               visible: ExpressionProperty({
                                                 "expression": { "expr": { "type": "variable", "variable": "currentObject", "path": "Active" }, "args": { "currentObject": { "widget": "p.Administration.Account_Overview.dataGrid21", "source": "object" } } }
->>>>>>> feat/sales-domain
                                               }),
                                               contents: [
                                                 /* @__PURE__ */ React.createElement(
                                                   $Text,
                                                   {
-<<<<<<< HEAD
-                                                    key: "p0.Administration.Account_Overview.text2",
-                                                    $widgetId: "p0.Administration.Account_Overview.text2",
-=======
                                                     key: "p.Administration.Account_Overview.text2",
                                                     $widgetId: "p.Administration.Account_Overview.text2",
->>>>>>> feat/sales-domain
                                                     class: "mx-name-text2 badge label-success",
                                                     style: void 0,
                                                     caption: selectTranslation([
@@ -1082,29 +892,17 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                           /* @__PURE__ */ React.createElement(
                                             $ConditionalVisibilityWrapper,
                                             {
-<<<<<<< HEAD
-                                              key: "p0.Administration.Account_Overview.text3$visibility",
-                                              $widgetId: "p0.Administration.Account_Overview.text3$visibility",
-                                              visible: ExpressionProperty({
-                                                "expression": { "expr": { "type": "function", "name": "not", "parameters": [{ "type": "variable", "variable": "currentObject", "path": "Active" }] }, "args": { "currentObject": { "widget": "p0.Administration.Account_Overview.dataGrid21", "source": "object" } } }
-=======
                                               key: "p.Administration.Account_Overview.text3$visibility",
                                               $widgetId: "p.Administration.Account_Overview.text3$visibility",
                                               visible: ExpressionProperty({
                                                 "expression": { "expr": { "type": "function", "name": "not", "parameters": [{ "type": "variable", "variable": "currentObject", "path": "Active" }] }, "args": { "currentObject": { "widget": "p.Administration.Account_Overview.dataGrid21", "source": "object" } } }
->>>>>>> feat/sales-domain
                                               }),
                                               contents: [
                                                 /* @__PURE__ */ React.createElement(
                                                   $Text,
                                                   {
-<<<<<<< HEAD
-                                                    key: "p0.Administration.Account_Overview.text3",
-                                                    $widgetId: "p0.Administration.Account_Overview.text3",
-=======
                                                     key: "p.Administration.Account_Overview.text3",
                                                     $widgetId: "p.Administration.Account_Overview.text3",
->>>>>>> feat/sales-domain
                                                     class: "mx-name-text3 badge label-secondary",
                                                     style: void 0,
                                                     caption: selectTranslation([
@@ -1135,13 +933,8 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                         /* @__PURE__ */ React.createElement(
                                           $DatagridDropdownFilter,
                                           {
-<<<<<<< HEAD
-                                            key: "p0.Administration.Account_Overview.drop_downFilter2",
-                                            $widgetId: "p0.Administration.Account_Overview.drop_downFilter2",
-=======
                                             key: "p.Administration.Account_Overview.drop_downFilter2",
                                             $widgetId: "p.Administration.Account_Overview.drop_downFilter2",
->>>>>>> feat/sales-domain
                                             auto: true,
                                             defaultValue: void 0,
                                             filterOptions: [],
@@ -1196,11 +989,7 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                         "attributeType": "Boolean",
                                         "sortable": true,
                                         "filterable": true,
-<<<<<<< HEAD
-                                        "dataSourceId": "p0.14",
-=======
                                         "dataSourceId": "p.14",
->>>>>>> feat/sales-domain
                                         "isList": false
                                       }),
                                       "content": void 0,
@@ -1219,13 +1008,8 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                         /* @__PURE__ */ React.createElement(
                                           $DatagridDropdownFilter,
                                           {
-<<<<<<< HEAD
-                                            key: "p0.Administration.Account_Overview.drop_downFilter3",
-                                            $widgetId: "p0.Administration.Account_Overview.drop_downFilter3",
-=======
                                             key: "p.Administration.Account_Overview.drop_downFilter3",
                                             $widgetId: "p.Administration.Account_Overview.drop_downFilter3",
->>>>>>> feat/sales-domain
                                             auto: true,
                                             defaultValue: void 0,
                                             filterOptions: [],
@@ -1280,11 +1064,7 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                         "attributeType": "Boolean",
                                         "sortable": true,
                                         "filterable": true,
-<<<<<<< HEAD
-                                        "dataSourceId": "p0.14",
-=======
                                         "dataSourceId": "p.14",
->>>>>>> feat/sales-domain
                                         "isList": false
                                       }),
                                       "content": void 0,
@@ -1303,13 +1083,8 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                         /* @__PURE__ */ React.createElement(
                                           $DatagridDropdownFilter,
                                           {
-<<<<<<< HEAD
-                                            key: "p0.Administration.Account_Overview.drop_downFilter4",
-                                            $widgetId: "p0.Administration.Account_Overview.drop_downFilter4",
-=======
                                             key: "p.Administration.Account_Overview.drop_downFilter4",
                                             $widgetId: "p.Administration.Account_Overview.drop_downFilter4",
->>>>>>> feat/sales-domain
                                             auto: true,
                                             defaultValue: void 0,
                                             filterOptions: [],
@@ -1364,31 +1139,18 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                         "attributeType": "String",
                                         "sortable": true,
                                         "filterable": true,
-<<<<<<< HEAD
-                                        "dataSourceId": "p0.14",
-                                        "isList": false
-                                      }),
-                                      "content": TemplatedWidgetProperty({
-                                        "dataSourceId": "p0.14",
-=======
                                         "dataSourceId": "p.14",
                                         "isList": false
                                       }),
                                       "content": TemplatedWidgetProperty({
                                         "dataSourceId": "p.14",
->>>>>>> feat/sales-domain
                                         "editable": false,
                                         "children": () => [
                                           /* @__PURE__ */ React.createElement(
                                             $ConditionalVisibilityWrapper,
                                             {
-<<<<<<< HEAD
-                                              key: "p0.Administration.Account_Overview.actionButton3$visibility",
-                                              $widgetId: "p0.Administration.Account_Overview.actionButton3$visibility",
-=======
                                               key: "p.Administration.Account_Overview.actionButton3$visibility",
                                               $widgetId: "p.Administration.Account_Overview.actionButton3$visibility",
->>>>>>> feat/sales-domain
                                               visible: ExpressionProperty({
                                                 "expression": { "expr": { "type": "function", "name": "_hasSomeRole", "parameters": [{ "type": "literal", "value": "Administrator" }] }, "args": {} }
                                               }),
@@ -1396,15 +1158,9 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                                 /* @__PURE__ */ React.createElement(
                                                   $ActionButton,
                                                   {
-<<<<<<< HEAD
-                                                    key: "p0.Administration.Account_Overview.actionButton3",
-                                                    $widgetId: "p0.Administration.Account_Overview.actionButton3",
-                                                    buttonId: "p0.Administration.Account_Overview.actionButton3",
-=======
                                                     key: "p.Administration.Account_Overview.actionButton3",
                                                     $widgetId: "p.Administration.Account_Overview.actionButton3",
                                                     buttonId: "p.Administration.Account_Overview.actionButton3",
->>>>>>> feat/sales-domain
                                                     class: "mx-name-actionButton3 btn-lg",
                                                     style: void 0,
                                                     tabIndex: void 0,
@@ -1425,11 +1181,7 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                                       "icon": { "type": "icon", "iconClass": "mx-icon-filled mx-icon-pencil" }
                                                     }),
                                                     action: ActionProperty({
-<<<<<<< HEAD
-                                                      "action": { "type": "openPage", "argMap": { "param$Account": { "widget": "p0.Administration.Account_Overview.dataGrid21", "source": "object" } }, "config": { "name": "Administration/Account_Edit.page.xml", "location": "modal", "resizable": true, "allowedRoles": ["Administrator"] }, "disabledDuringExecution": true },
-=======
                                                       "action": { "type": "openPage", "argMap": { "param$Account": { "widget": "p.Administration.Account_Overview.dataGrid21", "source": "object" } }, "config": { "name": "Administration/Account_Edit.page.xml", "location": "modal", "resizable": true, "allowedRoles": ["Administrator"] }, "disabledDuringExecution": true },
->>>>>>> feat/sales-domain
                                                       "abortOnServerValidation": true
                                                     })
                                                   }
@@ -1440,15 +1192,9 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                           /* @__PURE__ */ React.createElement(
                                             $ActionButton,
                                             {
-<<<<<<< HEAD
-                                              key: "p0.Administration.Account_Overview.actionButton4",
-                                              $widgetId: "p0.Administration.Account_Overview.actionButton4",
-                                              buttonId: "p0.Administration.Account_Overview.actionButton4",
-=======
                                               key: "p.Administration.Account_Overview.actionButton4",
                                               $widgetId: "p.Administration.Account_Overview.actionButton4",
                                               buttonId: "p.Administration.Account_Overview.actionButton4",
->>>>>>> feat/sales-domain
                                               class: "mx-name-actionButton4 btn-lg spacing-outer-left-medium",
                                               style: void 0,
                                               tabIndex: void 0,
@@ -1469,11 +1215,7 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                                 "icon": { "type": "icon", "iconClass": "mx-icon-filled mx-icon-trash-can" }
                                               }),
                                               action: ActionProperty({
-<<<<<<< HEAD
-                                                "action": { "type": "deleteObject", "argMap": { "$object": { "widget": "p0.Administration.Account_Overview.dataGrid21", "source": "object" } }, "config": { "closePage": false, "operationId": "SPfp4EsyJFC/G161OYF1Cw" }, "disabledDuringExecution": true },
-=======
                                                 "action": { "type": "deleteObject", "argMap": { "$object": { "widget": "p.Administration.Account_Overview.dataGrid21", "source": "object" } }, "config": { "closePage": false, "operationId": "SPfp4EsyJFC/G161OYF1Cw" }, "disabledDuringExecution": true },
->>>>>>> feat/sales-domain
                                                 "abortOnServerValidation": true
                                               })
                                             }
@@ -1532,13 +1274,8 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                     /* @__PURE__ */ React.createElement(
                                       $ConditionalVisibilityWrapper,
                                       {
-<<<<<<< HEAD
-                                        key: "p0.Administration.Account_Overview.actionButton1$visibility",
-                                        $widgetId: "p0.Administration.Account_Overview.actionButton1$visibility",
-=======
                                         key: "p.Administration.Account_Overview.actionButton1$visibility",
                                         $widgetId: "p.Administration.Account_Overview.actionButton1$visibility",
->>>>>>> feat/sales-domain
                                         visible: ExpressionProperty({
                                           "expression": { "expr": { "type": "function", "name": "_hasSomeRole", "parameters": [{ "type": "literal", "value": "Administrator" }] }, "args": {} }
                                         }),
@@ -1546,15 +1283,9 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                           /* @__PURE__ */ React.createElement(
                                             $ActionButton,
                                             {
-<<<<<<< HEAD
-                                              key: "p0.Administration.Account_Overview.actionButton1",
-                                              $widgetId: "p0.Administration.Account_Overview.actionButton1",
-                                              buttonId: "p0.Administration.Account_Overview.actionButton1",
-=======
                                               key: "p.Administration.Account_Overview.actionButton1",
                                               $widgetId: "p.Administration.Account_Overview.actionButton1",
                                               buttonId: "p.Administration.Account_Overview.actionButton1",
->>>>>>> feat/sales-domain
                                               class: "mx-name-actionButton1 spacing-outer-bottom",
                                               style: void 0,
                                               tabIndex: void 0,
@@ -1584,13 +1315,8 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                     /* @__PURE__ */ React.createElement(
                                       $ConditionalVisibilityWrapper,
                                       {
-<<<<<<< HEAD
-                                        key: "p0.Administration.Account_Overview.actionButton2$visibility",
-                                        $widgetId: "p0.Administration.Account_Overview.actionButton2$visibility",
-=======
                                         key: "p.Administration.Account_Overview.actionButton2$visibility",
                                         $widgetId: "p.Administration.Account_Overview.actionButton2$visibility",
->>>>>>> feat/sales-domain
                                         visible: ExpressionProperty({
                                           "expression": { "expr": { "type": "function", "name": "_hasSomeRole", "parameters": [{ "type": "literal", "value": "Administrator" }] }, "args": {} }
                                         }),
@@ -1598,15 +1324,9 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                           /* @__PURE__ */ React.createElement(
                                             $ActionButton,
                                             {
-<<<<<<< HEAD
-                                              key: "p0.Administration.Account_Overview.actionButton2",
-                                              $widgetId: "p0.Administration.Account_Overview.actionButton2",
-                                              buttonId: "p0.Administration.Account_Overview.actionButton2",
-=======
                                               key: "p.Administration.Account_Overview.actionButton2",
                                               $widgetId: "p.Administration.Account_Overview.actionButton2",
                                               buttonId: "p.Administration.Account_Overview.actionButton2",
->>>>>>> feat/sales-domain
                                               class: "mx-name-actionButton2 spacing-outer-left spacing-outer-bottom",
                                               style: void 0,
                                               tabIndex: void 0,

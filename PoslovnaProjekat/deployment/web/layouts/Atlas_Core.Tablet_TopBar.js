@@ -14,13 +14,8 @@ import { addEnumerations, asPluginWidgets, t } from "mendix";
 const { $ScrollContainer, $Header, $Title, $Placeholder } = asPluginWidgets({ ScrollContainer, Header, Title, Placeholder });
 
 const region$Main = [
-<<<<<<< HEAD
-    <$ScrollContainer key="l17.Atlas_Core.Tablet_TopBar.layoutContainer"
-        $widgetId="l17.Atlas_Core.Tablet_TopBar.layoutContainer"
-=======
     <$ScrollContainer key="l.Atlas_Core.Tablet_TopBar.layoutContainer"
         $widgetId="l.Atlas_Core.Tablet_TopBar.layoutContainer"
->>>>>>> feat/sales-domain
         class={"mx-name-layoutContainer"}
         style={undefined}
         scrollPerRegion={true}
@@ -28,15 +23,6 @@ const region$Main = [
         top={{
             "enabled": true,
             "content": [
-<<<<<<< HEAD
-                <$Header key="l17.Atlas_Core.Tablet_TopBar.header1"
-                    $widgetId="l17.Atlas_Core.Tablet_TopBar.header1"
-                    class={"mx-name-header1"}
-                    style={undefined}
-                    content={[
-                        <$Title key="l17.4"
-                            $widgetId="l17.4"
-=======
                 <$Header key="l.Atlas_Core.Tablet_TopBar.header1"
                     $widgetId="l.Atlas_Core.Tablet_TopBar.header1"
                     class={"mx-name-header1"}
@@ -44,7 +30,6 @@ const region$Main = [
                     content={[
                         <$Title key="l.4"
                             $widgetId="l.4"
->>>>>>> feat/sales-domain
                             class={""}
                             style={undefined}
                             caption={ExpressionProperty({
@@ -52,25 +37,15 @@ const region$Main = [
                             })} />
                     ]}
                     leftWidgets={[
-<<<<<<< HEAD
-                        <$Placeholder key="l17.Atlas_Core.Tablet_TopBar.HeaderLeft"
-                            $widgetId="l17.Atlas_Core.Tablet_TopBar.HeaderLeft"
-=======
                         <$Placeholder key="l.Atlas_Core.Tablet_TopBar.HeaderLeft"
                             $widgetId="l.Atlas_Core.Tablet_TopBar.HeaderLeft"
->>>>>>> feat/sales-domain
                             content={PlaceholderProperty({
                                 "id": "Atlas_Core.Tablet_TopBar.HeaderLeft"
                             })} />
                     ]}
                     rightWidgets={[
-<<<<<<< HEAD
-                        <$Placeholder key="l17.Atlas_Core.Tablet_TopBar.HeaderRight"
-                            $widgetId="l17.Atlas_Core.Tablet_TopBar.HeaderRight"
-=======
                         <$Placeholder key="l.Atlas_Core.Tablet_TopBar.HeaderRight"
                             $widgetId="l.Atlas_Core.Tablet_TopBar.HeaderRight"
->>>>>>> feat/sales-domain
                             content={PlaceholderProperty({
                                 "id": "Atlas_Core.Tablet_TopBar.HeaderRight"
                             })} />
@@ -90,13 +65,8 @@ const region$Main = [
         }}
         center={{
             "content": [
-<<<<<<< HEAD
-                <$Placeholder key="l17.Atlas_Core.Tablet_TopBar.Main"
-                    $widgetId="l17.Atlas_Core.Tablet_TopBar.Main"
-=======
                 <$Placeholder key="l.Atlas_Core.Tablet_TopBar.Main"
                     $widgetId="l.Atlas_Core.Tablet_TopBar.Main"
->>>>>>> feat/sales-domain
                     content={PlaceholderProperty({
                         "id": "Atlas_Core.Tablet_TopBar.Main"
                     })} />

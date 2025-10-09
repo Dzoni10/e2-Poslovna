@@ -33,8 +33,7 @@ public class IzlaznaFaktura implements com.mendix.systemwideinterfaces.core.IEnt
 		NarudzbenicaKupca_IzlaznaFaktura("Prodaja.NarudzbenicaKupca_IzlaznaFaktura"),
 		IzlaznaFaktura_PoslovniPartner("Prodaja.IzlaznaFaktura_PoslovniPartner"),
 		IzlaznaFaktura_PoslovnaGodina("Prodaja.IzlaznaFaktura_PoslovnaGodina"),
-		IzlaznaFaktura_Preduzece("Prodaja.IzlaznaFaktura_Preduzece"),
-		PrometniDokument_IzlaznaFaktura("MyFirstModule.PrometniDokument_IzlaznaFaktura");
+		IzlaznaFaktura_Preduzece("Prodaja.IzlaznaFaktura_Preduzece");
 
 		private final java.lang.String metaName;
 
@@ -658,53 +657,6 @@ public class IzlaznaFaktura implements com.mendix.systemwideinterfaces.core.IEnt
 			getMendixObject().setValue(context, MemberNames.IzlaznaFaktura_Preduzece.toString(), null);
 		} else {
 			getMendixObject().setValue(context, MemberNames.IzlaznaFaktura_Preduzece.toString(), izlaznafaktura_preduzece.getMendixObject().getId());
-		}
-	}
-
-	/**
-	 * @throws com.mendix.core.CoreException
-	 * @return value of PrometniDokument_IzlaznaFaktura
-	 */
-	public final myfirstmodule.proxies.PrometniDokument getPrometniDokument_IzlaznaFaktura() throws com.mendix.core.CoreException
-	{
-		return getPrometniDokument_IzlaznaFaktura(getContext());
-	}
-
-	/**
-	 * @param context
-	 * @return value of PrometniDokument_IzlaznaFaktura
-	 * @throws com.mendix.core.CoreException
-	 */
-	public final myfirstmodule.proxies.PrometniDokument getPrometniDokument_IzlaznaFaktura(com.mendix.systemwideinterfaces.core.IContext context) throws com.mendix.core.CoreException
-	{
-		myfirstmodule.proxies.PrometniDokument result = null;
-		com.mendix.systemwideinterfaces.core.IMendixIdentifier identifier = getMendixObject().getValue(context, MemberNames.PrometniDokument_IzlaznaFaktura.toString());
-		if (identifier != null) {
-			result = myfirstmodule.proxies.PrometniDokument.load(context, identifier);
-		}
-		return result;
-	}
-
-	/**
-	 * Set value of PrometniDokument_IzlaznaFaktura
-	 * @param prometnidokument_izlaznafaktura
-	 */
-	public final void setPrometniDokument_IzlaznaFaktura(myfirstmodule.proxies.PrometniDokument prometnidokument_izlaznafaktura)
-	{
-		setPrometniDokument_IzlaznaFaktura(getContext(), prometnidokument_izlaznafaktura);
-	}
-
-	/**
-	 * Set value of PrometniDokument_IzlaznaFaktura
-	 * @param context
-	 * @param prometnidokument_izlaznafaktura
-	 */
-	public final void setPrometniDokument_IzlaznaFaktura(com.mendix.systemwideinterfaces.core.IContext context, myfirstmodule.proxies.PrometniDokument prometnidokument_izlaznafaktura)
-	{
-		if (prometnidokument_izlaznafaktura == null) {
-			getMendixObject().setValue(context, MemberNames.PrometniDokument_IzlaznaFaktura.toString(), null);
-		} else {
-			getMendixObject().setValue(context, MemberNames.PrometniDokument_IzlaznaFaktura.toString(), prometnidokument_izlaznafaktura.getMendixObject().getId());
 		}
 	}
 

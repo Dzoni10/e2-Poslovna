@@ -28,22 +28,13 @@ import { content as parentContent } from "../layouts/Atlas_Core.PopupLayout.js";
 const { $DataView, $FormGroup, $TextBox, $Combobox, $ConditionalVisibilityWrapper, $ActionButton } = asPluginWidgets({ DataView, FormGroup, TextBox, Combobox, ConditionalVisibilityWrapper, ActionButton });
 
 const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
-<<<<<<< HEAD
-    <$DataView key="p4.Administration.MyAccount.dataView1"
-        $widgetId="p4.Administration.MyAccount.dataView1"
-=======
     <$DataView key="p.Administration.MyAccount.dataView1"
         $widgetId="p.Administration.MyAccount.dataView1"
->>>>>>> feat/sales-domain
         class={"mx-name-dataView1 form-horizontal"}
         style={undefined}
         tabIndex={undefined}
         object={AssociationObjectProperty({
-<<<<<<< HEAD
-            "dataSourceId": "p4.9",
-=======
             "dataSourceId": "p.9",
->>>>>>> feat/sales-domain
             "scope": "$Account",
             "editable": true
         })}
@@ -53,17 +44,6 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
             ])
         })}
         body={[
-<<<<<<< HEAD
-            <$FormGroup key="p4.Administration.MyAccount.textBox2$formGroup"
-                $widgetId="p4.Administration.MyAccount.textBox2$formGroup"
-                class={"mx-name-textBox2 mx-textbox"}
-                style={undefined}
-                control={[
-                    <$TextBox key="p4.Administration.MyAccount.textBox2"
-                        $widgetId="p4.Administration.MyAccount.textBox2"
-                        inputValue={AttributeProperty({
-                            "scope": "p4.Administration.MyAccount.dataView1",
-=======
             <$FormGroup key="p.Administration.MyAccount.textBox2$formGroup"
                 $widgetId="p.Administration.MyAccount.textBox2$formGroup"
                 class={"mx-name-textBox2 mx-textbox"}
@@ -73,7 +53,6 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                         $widgetId="p.Administration.MyAccount.textBox2"
                         inputValue={AttributeProperty({
                             "scope": "p.Administration.MyAccount.dataView1",
->>>>>>> feat/sales-domain
                             "path": "",
                             "entity": "Administration.Account",
                             "attribute": "FullName",
@@ -101,11 +80,7 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                         ariaRequired={undefined}
                         tabIndex={undefined}
                         id={DerivedUniqueIdProperty({
-<<<<<<< HEAD
-                            "widgetId": "p4.Administration.MyAccount.textBox2"
-=======
                             "widgetId": "p.Administration.MyAccount.textBox2"
->>>>>>> feat/sales-domain
                         })} />
                 ]}
                 caption={t([
@@ -114,28 +89,11 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                     })
                 ])}
                 labelFor={DerivedUniqueIdProperty({
-<<<<<<< HEAD
-                    "widgetId": "p4.Administration.MyAccount.textBox2"
-=======
                     "widgetId": "p.Administration.MyAccount.textBox2"
->>>>>>> feat/sales-domain
                 })}
                 width={3}
                 orientation={"horizontal"}
                 hasError={ValidationProperty({
-<<<<<<< HEAD
-                    "inputWidgetId": "p4.Administration.MyAccount.textBox2"
-                })} />,
-            <$FormGroup key="p4.Administration.MyAccount.textBox5$formGroup"
-                $widgetId="p4.Administration.MyAccount.textBox5$formGroup"
-                class={"mx-name-textBox5 mx-textbox"}
-                style={undefined}
-                control={[
-                    <$TextBox key="p4.Administration.MyAccount.textBox5"
-                        $widgetId="p4.Administration.MyAccount.textBox5"
-                        inputValue={AttributeProperty({
-                            "scope": "p4.Administration.MyAccount.dataView1",
-=======
                     "inputWidgetId": "p.Administration.MyAccount.textBox2"
                 })} />,
             <$FormGroup key="p.Administration.MyAccount.textBox5$formGroup"
@@ -147,7 +105,6 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                         $widgetId="p.Administration.MyAccount.textBox5"
                         inputValue={AttributeProperty({
                             "scope": "p.Administration.MyAccount.dataView1",
->>>>>>> feat/sales-domain
                             "path": "",
                             "entity": "Administration.Account",
                             "attribute": "Name",
@@ -175,11 +132,7 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                         ariaRequired={undefined}
                         tabIndex={undefined}
                         id={DerivedUniqueIdProperty({
-<<<<<<< HEAD
-                            "widgetId": "p4.Administration.MyAccount.textBox5"
-=======
                             "widgetId": "p.Administration.MyAccount.textBox5"
->>>>>>> feat/sales-domain
                         })} />
                 ]}
                 caption={t([
@@ -188,26 +141,11 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                     })
                 ])}
                 labelFor={DerivedUniqueIdProperty({
-<<<<<<< HEAD
-                    "widgetId": "p4.Administration.MyAccount.textBox5"
-=======
                     "widgetId": "p.Administration.MyAccount.textBox5"
->>>>>>> feat/sales-domain
                 })}
                 width={3}
                 orientation={"horizontal"}
                 hasError={ValidationProperty({
-<<<<<<< HEAD
-                    "inputWidgetId": "p4.Administration.MyAccount.textBox5"
-                })} />,
-            <$FormGroup key="p4.Administration.MyAccount.comboBox3$formGroup"
-                $widgetId="p4.Administration.MyAccount.comboBox3$formGroup"
-                class={"mx-name-comboBox3"}
-                style={undefined}
-                control={[
-                    <$Combobox key="p4.Administration.MyAccount.comboBox3"
-                        $widgetId="p4.Administration.MyAccount.comboBox3"
-=======
                     "inputWidgetId": "p.Administration.MyAccount.textBox5"
                 })} />,
             <$FormGroup key="p.Administration.MyAccount.comboBox3$formGroup"
@@ -217,7 +155,6 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                 control={[
                     <$Combobox key="p.Administration.MyAccount.comboBox3"
                         $widgetId="p.Administration.MyAccount.comboBox3"
->>>>>>> feat/sales-domain
                         optionsSourceType={"association"}
                         attributeAssociation={AssociationProperty({
                             "type": "Reference",
@@ -225,16 +162,6 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                             "path": "",
                             "attribute": "System.User_Language",
                             "endpointEntity": "System.Language",
-<<<<<<< HEAD
-                            "selectableObjectsId": "p4.0",
-                            "scope": "p4.Administration.MyAccount.dataView1",
-                            "onChange": { "type": "doNothing", "argMap": {}, "config": {}, "disabledDuringExecution": false }
-                        })}
-                        optionsSourceAssociationDataSource={DatabaseObjectListProperty({
-                            "dataSourceId": "p4.0",
-                            "entity": "System.Language",
-                            "scope": "p4.Administration.MyAccount.dataView1",
-=======
                             "selectableObjectsId": "p.0",
                             "scope": "p.Administration.MyAccount.dataView1",
                             "onChange": { "type": "doNothing", "argMap": {}, "config": {}, "disabledDuringExecution": false }
@@ -243,7 +170,6 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                             "dataSourceId": "p.0",
                             "entity": "System.Language",
                             "scope": "p.Administration.MyAccount.dataView1",
->>>>>>> feat/sales-domain
                             "operationId": "weCRgkkOnFqaYAPvVcN5Qw",
                             "sort": []
                         })}
@@ -255,11 +181,7 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                             "attributeType": "String",
                             "sortable": true,
                             "filterable": true,
-<<<<<<< HEAD
-                            "dataSourceId": "p4.0",
-=======
                             "dataSourceId": "p.0",
->>>>>>> feat/sales-domain
                             "isList": false
                         })}
                         optionsSourceAssociationCaptionExpression={undefined}
@@ -328,11 +250,7 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                         optionsSourceDatabaseDefaultValue={undefined}
                         tabIndex={undefined}
                         id={DerivedUniqueIdProperty({
-<<<<<<< HEAD
-                            "widgetId": "p4.Administration.MyAccount.comboBox3"
-=======
                             "widgetId": "p.Administration.MyAccount.comboBox3"
->>>>>>> feat/sales-domain
                         })} />
                 ]}
                 caption={t([
@@ -341,39 +259,22 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                     })
                 ])}
                 labelFor={DerivedUniqueIdProperty({
-<<<<<<< HEAD
-                    "widgetId": "p4.Administration.MyAccount.comboBox3"
-=======
                     "widgetId": "p.Administration.MyAccount.comboBox3"
->>>>>>> feat/sales-domain
                 })}
                 width={3}
                 orientation={"horizontal"}
                 hasError={ValidationProperty({
-<<<<<<< HEAD
-                    "inputWidgetId": "p4.Administration.MyAccount.comboBox3"
-                })} />,
-            <$ConditionalVisibilityWrapper key="p4.Administration.MyAccount.microflowTrigger1$visibility"
-                $widgetId="p4.Administration.MyAccount.microflowTrigger1$visibility"
-=======
                     "inputWidgetId": "p.Administration.MyAccount.comboBox3"
                 })} />,
             <$ConditionalVisibilityWrapper key="p.Administration.MyAccount.microflowTrigger1$visibility"
                 $widgetId="p.Administration.MyAccount.microflowTrigger1$visibility"
->>>>>>> feat/sales-domain
                 visible={ExpressionProperty({
                     "expression": { "expr": { "type": "function", "name": "_hasSomeRole", "parameters": [ { "type": "literal", "value": "Administrator" }, { "type": "literal", "value": "User" } ] }, "args": {} }
                 })}
                 contents={[
-<<<<<<< HEAD
-                    <$ActionButton key="p4.Administration.MyAccount.microflowTrigger1"
-                        $widgetId="p4.Administration.MyAccount.microflowTrigger1"
-                        buttonId={"p4.Administration.MyAccount.microflowTrigger1"}
-=======
                     <$ActionButton key="p.Administration.MyAccount.microflowTrigger1"
                         $widgetId="p.Administration.MyAccount.microflowTrigger1"
                         buttonId={"p.Administration.MyAccount.microflowTrigger1"}
->>>>>>> feat/sales-domain
                         class={"mx-name-microflowTrigger1"}
                         style={undefined}
                         tabIndex={undefined}
@@ -399,15 +300,9 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
         ]}
         hideFooter={false}
         footer={[
-<<<<<<< HEAD
-            <$ActionButton key="p4.Administration.MyAccount.saveButton1"
-                $widgetId="p4.Administration.MyAccount.saveButton1"
-                buttonId={"p4.Administration.MyAccount.saveButton1"}
-=======
             <$ActionButton key="p.Administration.MyAccount.saveButton1"
                 $widgetId="p.Administration.MyAccount.saveButton1"
                 buttonId={"p.Administration.MyAccount.saveButton1"}
->>>>>>> feat/sales-domain
                 class={"mx-name-saveButton1"}
                 style={undefined}
                 tabIndex={undefined}
@@ -426,21 +321,12 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                 })}
                 icon={undefined}
                 action={ActionProperty({
-<<<<<<< HEAD
-                    "action": { "type": "saveChanges", "argMap": { "$object": { "widget": "p4.Administration.MyAccount.dataView1", "source": "object" } }, "config": { "operationId": "RmFg7NefCVqzVaskAwZ0ow", "closePage": true }, "disabledDuringExecution": true },
-                    "abortOnServerValidation": true
-                })} />,
-            <$ActionButton key="p4.Administration.MyAccount.cancelButton1"
-                $widgetId="p4.Administration.MyAccount.cancelButton1"
-                buttonId={"p4.Administration.MyAccount.cancelButton1"}
-=======
                     "action": { "type": "saveChanges", "argMap": { "$object": { "widget": "p.Administration.MyAccount.dataView1", "source": "object" } }, "config": { "operationId": "RmFg7NefCVqzVaskAwZ0ow", "closePage": true }, "disabledDuringExecution": true },
                     "abortOnServerValidation": true
                 })} />,
             <$ActionButton key="p.Administration.MyAccount.cancelButton1"
                 $widgetId="p.Administration.MyAccount.cancelButton1"
                 buttonId={"p.Administration.MyAccount.cancelButton1"}
->>>>>>> feat/sales-domain
                 class={"mx-name-cancelButton1"}
                 style={undefined}
                 tabIndex={undefined}
@@ -473,11 +359,7 @@ export const classes = "";
 
 export const autofocus = "desktopOnly";
 export const cancelChangesOperationId = "YzmbacoJglCrifiHI/gm0w";
-<<<<<<< HEAD
-export const closeButton = "p4.Administration.MyAccount.cancelButton1";
-=======
 export const closeButton = "p.Administration.MyAccount.cancelButton1";
->>>>>>> feat/sales-domain
 export const style = {};
 export const content = { ...parentContent,
     "Atlas_Core.PopupLayout.Main": region$Main,

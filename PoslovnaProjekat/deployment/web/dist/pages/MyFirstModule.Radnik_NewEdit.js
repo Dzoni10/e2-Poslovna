@@ -1,18 +1,18 @@
-import { reactExports, asPluginWidgets, selectTranslation } from '../index-JDXCDs53.js';
-import { PageFragment, ExpressionProperty } from '../ScrollContainer-BMEt46hD.js';
-import { ActionButton, TextProperty, ActionProperty } from '../ActionButton-CnZtpka2.js';
-import { AssociationObjectProperty } from '../AssociationObjectProperty-BJyyxZlP.js';
-import { AssociationProperty } from '../AssociationProperty-DKzgjRwQ.js';
-import { FormGroup, TextBox, DerivedUniqueIdProperty, ValidationProperty } from '../TextBox-RBW52cK-.js';
-import { DatabaseObjectListProperty } from '../CTcC6PjV-Zoc9mpUp.js';
-import { ListAttributeProperty } from '../ListAttributeProperty-BGCislj4.js';
-import { ComboboxWidgetModule } from '../Combobox-DHAsiyOP.js';
-import { DataView } from '../DataView-BstQTMJi.js';
-import { Div } from '../Div-CbKV9nto.js';
-import { content as content$1 } from '../Atlas_Core.PopupLayout-DeEIVNnx.js';
-import { AttributeProperty } from '../D5tDSKpV-NCto3GtK.js';
-import '../uEIG9e6s-D5bs4rlT.js';
-import '../bdxqAC6d-Crq0yb3P.js';
+import { reactExports, asPluginWidgets, selectTranslation } from '../index-9YRUqoZR.js';
+import { PageFragment, ExpressionProperty } from '../ScrollContainer-BSTS-pb7.js';
+import { ActionButton, TextProperty, ActionProperty } from '../ActionButton-dhEFVOBy.js';
+import { AssociationObjectProperty } from '../AssociationObjectProperty-COk-zUaC.js';
+import { AssociationProperty } from '../AssociationProperty-DghUHmnw.js';
+import { FormGroup, TextBox, DerivedUniqueIdProperty, ValidationProperty } from '../TextBox-D-NxWFxw.js';
+import { DatabaseObjectListProperty } from '../XQdQuDNG-DOzAOCvU.js';
+import { ListAttributeProperty } from '../ListAttributeProperty-daqfkgGj.js';
+import { ComboboxWidgetModule } from '../Combobox-CLsaSOo1.js';
+import { DataView } from '../DataView-Dk9SFgmO.js';
+import { Div } from '../Div-BEtJmTkn.js';
+import { content as content$1 } from '../Atlas_Core.PopupLayout-CclhRPde.js';
+import { AttributeProperty } from '../77kgvjgm-_yhfSwqC.js';
+import '../BkqAssms-CUfoyzkd.js';
+import '../DmsI6saM-DBCEfM02.js';
 
 const React = { createElement: reactExports.createElement };
 const Combobox = Object.getOwnPropertyDescriptor(ComboboxWidgetModule, "Combobox")?.value || Object.getOwnPropertyDescriptor(ComboboxWidgetModule, "default")?.value;
@@ -21,37 +21,37 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
   /* @__PURE__ */ React.createElement(
     $Div,
     {
-      key: "p0.MyFirstModule.Radnik_NewEdit.layoutGrid1",
-      $widgetId: "p0.MyFirstModule.Radnik_NewEdit.layoutGrid1",
+      key: "p.MyFirstModule.Radnik_NewEdit.layoutGrid1",
+      $widgetId: "p.MyFirstModule.Radnik_NewEdit.layoutGrid1",
       class: "mx-name-layoutGrid1 mx-layoutgrid mx-layoutgrid-fluid container-fluid",
       style: void 0,
       content: [
         /* @__PURE__ */ React.createElement(
           $Div,
           {
-            key: "p0.MyFirstModule.Radnik_NewEdit.layoutGrid1$row0",
-            $widgetId: "p0.MyFirstModule.Radnik_NewEdit.layoutGrid1$row0",
+            key: "p.MyFirstModule.Radnik_NewEdit.layoutGrid1$row0",
+            $widgetId: "p.MyFirstModule.Radnik_NewEdit.layoutGrid1$row0",
             class: "row",
             style: void 0,
             content: [
               /* @__PURE__ */ React.createElement(
                 $Div,
                 {
-                  key: "p0.MyFirstModule.Radnik_NewEdit.layoutGrid1$row0$column0",
-                  $widgetId: "p0.MyFirstModule.Radnik_NewEdit.layoutGrid1$row0$column0",
+                  key: "p.MyFirstModule.Radnik_NewEdit.layoutGrid1$row0$column0",
+                  $widgetId: "p.MyFirstModule.Radnik_NewEdit.layoutGrid1$row0$column0",
                   class: "col-lg col-md col",
                   style: void 0,
                   content: [
                     /* @__PURE__ */ React.createElement(
                       $DataView,
                       {
-                        key: "p0.MyFirstModule.Radnik_NewEdit.dataView1",
-                        $widgetId: "p0.MyFirstModule.Radnik_NewEdit.dataView1",
+                        key: "p.MyFirstModule.Radnik_NewEdit.dataView1",
+                        $widgetId: "p.MyFirstModule.Radnik_NewEdit.dataView1",
                         class: "mx-name-dataView1 form-horizontal",
                         style: void 0,
                         tabIndex: void 0,
                         object: AssociationObjectProperty({
-                          "dataSourceId": "p0.13",
+                          "dataSourceId": "p.13",
                           "scope": "$Radnik",
                           "editable": true
                         }),
@@ -64,18 +64,18 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                           /* @__PURE__ */ React.createElement(
                             $FormGroup,
                             {
-                              key: "p0.MyFirstModule.Radnik_NewEdit.textBox1$formGroup",
-                              $widgetId: "p0.MyFirstModule.Radnik_NewEdit.textBox1$formGroup",
+                              key: "p.MyFirstModule.Radnik_NewEdit.textBox1$formGroup",
+                              $widgetId: "p.MyFirstModule.Radnik_NewEdit.textBox1$formGroup",
                               class: "mx-name-textBox1 mx-textbox",
                               style: void 0,
                               control: [
                                 /* @__PURE__ */ React.createElement(
                                   $TextBox,
                                   {
-                                    key: "p0.MyFirstModule.Radnik_NewEdit.textBox1",
-                                    $widgetId: "p0.MyFirstModule.Radnik_NewEdit.textBox1",
+                                    key: "p.MyFirstModule.Radnik_NewEdit.textBox1",
+                                    $widgetId: "p.MyFirstModule.Radnik_NewEdit.textBox1",
                                     inputValue: AttributeProperty({
-                                      "scope": "p0.MyFirstModule.Radnik_NewEdit.dataView1",
+                                      "scope": "p.MyFirstModule.Radnik_NewEdit.dataView1",
                                       "path": "",
                                       "entity": "MyFirstModule.Radnik",
                                       "attribute": "Ime",
@@ -103,7 +103,7 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                     ariaRequired: true,
                                     tabIndex: void 0,
                                     id: DerivedUniqueIdProperty({
-                                      "widgetId": "p0.MyFirstModule.Radnik_NewEdit.textBox1"
+                                      "widgetId": "p.MyFirstModule.Radnik_NewEdit.textBox1"
                                     })
                                   }
                                 )
@@ -114,30 +114,30 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                 })
                               ]),
                               labelFor: DerivedUniqueIdProperty({
-                                "widgetId": "p0.MyFirstModule.Radnik_NewEdit.textBox1"
+                                "widgetId": "p.MyFirstModule.Radnik_NewEdit.textBox1"
                               }),
                               width: 3,
                               orientation: "horizontal",
                               hasError: ValidationProperty({
-                                "inputWidgetId": "p0.MyFirstModule.Radnik_NewEdit.textBox1"
+                                "inputWidgetId": "p.MyFirstModule.Radnik_NewEdit.textBox1"
                               })
                             }
                           ),
                           /* @__PURE__ */ React.createElement(
                             $FormGroup,
                             {
-                              key: "p0.MyFirstModule.Radnik_NewEdit.textBox2$formGroup",
-                              $widgetId: "p0.MyFirstModule.Radnik_NewEdit.textBox2$formGroup",
+                              key: "p.MyFirstModule.Radnik_NewEdit.textBox2$formGroup",
+                              $widgetId: "p.MyFirstModule.Radnik_NewEdit.textBox2$formGroup",
                               class: "mx-name-textBox2 mx-textbox",
                               style: void 0,
                               control: [
                                 /* @__PURE__ */ React.createElement(
                                   $TextBox,
                                   {
-                                    key: "p0.MyFirstModule.Radnik_NewEdit.textBox2",
-                                    $widgetId: "p0.MyFirstModule.Radnik_NewEdit.textBox2",
+                                    key: "p.MyFirstModule.Radnik_NewEdit.textBox2",
+                                    $widgetId: "p.MyFirstModule.Radnik_NewEdit.textBox2",
                                     inputValue: AttributeProperty({
-                                      "scope": "p0.MyFirstModule.Radnik_NewEdit.dataView1",
+                                      "scope": "p.MyFirstModule.Radnik_NewEdit.dataView1",
                                       "path": "",
                                       "entity": "MyFirstModule.Radnik",
                                       "attribute": "Prezime",
@@ -165,7 +165,7 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                     ariaRequired: true,
                                     tabIndex: void 0,
                                     id: DerivedUniqueIdProperty({
-                                      "widgetId": "p0.MyFirstModule.Radnik_NewEdit.textBox2"
+                                      "widgetId": "p.MyFirstModule.Radnik_NewEdit.textBox2"
                                     })
                                   }
                                 )
@@ -176,28 +176,28 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                 })
                               ]),
                               labelFor: DerivedUniqueIdProperty({
-                                "widgetId": "p0.MyFirstModule.Radnik_NewEdit.textBox2"
+                                "widgetId": "p.MyFirstModule.Radnik_NewEdit.textBox2"
                               }),
                               width: 3,
                               orientation: "horizontal",
                               hasError: ValidationProperty({
-                                "inputWidgetId": "p0.MyFirstModule.Radnik_NewEdit.textBox2"
+                                "inputWidgetId": "p.MyFirstModule.Radnik_NewEdit.textBox2"
                               })
                             }
                           ),
                           /* @__PURE__ */ React.createElement(
                             $FormGroup,
                             {
-                              key: "p0.MyFirstModule.Radnik_NewEdit.comboBox1$formGroup",
-                              $widgetId: "p0.MyFirstModule.Radnik_NewEdit.comboBox1$formGroup",
+                              key: "p.MyFirstModule.Radnik_NewEdit.comboBox1$formGroup",
+                              $widgetId: "p.MyFirstModule.Radnik_NewEdit.comboBox1$formGroup",
                               class: "mx-name-comboBox1",
                               style: void 0,
                               control: [
                                 /* @__PURE__ */ React.createElement(
                                   $Combobox,
                                   {
-                                    key: "p0.MyFirstModule.Radnik_NewEdit.comboBox1",
-                                    $widgetId: "p0.MyFirstModule.Radnik_NewEdit.comboBox1",
+                                    key: "p.MyFirstModule.Radnik_NewEdit.comboBox1",
+                                    $widgetId: "p.MyFirstModule.Radnik_NewEdit.comboBox1",
                                     source: "context",
                                     optionsSourceType: "association",
                                     optionsSourceDatabaseDataSource: void 0,
@@ -209,14 +209,14 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                       "path": "",
                                       "attribute": "MyFirstModule.Radnik_Preduzece",
                                       "endpointEntity": "MyFirstModule.Preduzece",
-                                      "selectableObjectsId": "p0.0",
-                                      "scope": "p0.MyFirstModule.Radnik_NewEdit.dataView1",
+                                      "selectableObjectsId": "p.0",
+                                      "scope": "p.MyFirstModule.Radnik_NewEdit.dataView1",
                                       "onChange": { "type": "doNothing", "argMap": {}, "config": {}, "disabledDuringExecution": false }
                                     }),
                                     optionsSourceAssociationDataSource: DatabaseObjectListProperty({
-                                      "dataSourceId": "p0.0",
+                                      "dataSourceId": "p.0",
                                       "entity": "MyFirstModule.Preduzece",
-                                      "scope": "p0.MyFirstModule.Radnik_NewEdit.dataView1",
+                                      "scope": "p.MyFirstModule.Radnik_NewEdit.dataView1",
                                       "operationId": "FhnRjzyWzF+cx4eluBjEpQ",
                                       "sort": []
                                     }),
@@ -228,7 +228,7 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                       "attributeType": "String",
                                       "sortable": true,
                                       "filterable": true,
-                                      "dataSourceId": "p0.0",
+                                      "dataSourceId": "p.0",
                                       "isList": false
                                     }),
                                     optionsSourceAssociationCaptionExpression: void 0,
@@ -293,7 +293,7 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                     loadingType: "spinner",
                                     tabIndex: void 0,
                                     id: DerivedUniqueIdProperty({
-                                      "widgetId": "p0.MyFirstModule.Radnik_NewEdit.comboBox1"
+                                      "widgetId": "p.MyFirstModule.Radnik_NewEdit.comboBox1"
                                     })
                                   }
                                 )
@@ -304,12 +304,12 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                 })
                               ]),
                               labelFor: DerivedUniqueIdProperty({
-                                "widgetId": "p0.MyFirstModule.Radnik_NewEdit.comboBox1"
+                                "widgetId": "p.MyFirstModule.Radnik_NewEdit.comboBox1"
                               }),
                               width: 3,
                               orientation: "horizontal",
                               hasError: ValidationProperty({
-                                "inputWidgetId": "p0.MyFirstModule.Radnik_NewEdit.comboBox1"
+                                "inputWidgetId": "p.MyFirstModule.Radnik_NewEdit.comboBox1"
                               })
                             }
                           )
@@ -319,9 +319,9 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                           /* @__PURE__ */ React.createElement(
                             $ActionButton,
                             {
-                              key: "p0.MyFirstModule.Radnik_NewEdit.actionButton1",
-                              $widgetId: "p0.MyFirstModule.Radnik_NewEdit.actionButton1",
-                              buttonId: "p0.MyFirstModule.Radnik_NewEdit.actionButton1",
+                              key: "p.MyFirstModule.Radnik_NewEdit.actionButton1",
+                              $widgetId: "p.MyFirstModule.Radnik_NewEdit.actionButton1",
+                              buttonId: "p.MyFirstModule.Radnik_NewEdit.actionButton1",
                               class: "mx-name-actionButton1",
                               style: void 0,
                               tabIndex: void 0,
@@ -340,7 +340,7 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                               }),
                               icon: void 0,
                               action: ActionProperty({
-                                "action": { "type": "saveChanges", "argMap": { "$object": { "widget": "p0.MyFirstModule.Radnik_NewEdit.dataView1", "source": "object" } }, "config": { "operationId": "C9dREC+C2lKMXSVoSAC5FA", "closePage": true }, "disabledDuringExecution": true },
+                                "action": { "type": "saveChanges", "argMap": { "$object": { "widget": "p.MyFirstModule.Radnik_NewEdit.dataView1", "source": "object" } }, "config": { "operationId": "C9dREC+C2lKMXSVoSAC5FA", "closePage": true }, "disabledDuringExecution": true },
                                 "abortOnServerValidation": true
                               })
                             }
@@ -348,9 +348,9 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                           /* @__PURE__ */ React.createElement(
                             $ActionButton,
                             {
-                              key: "p0.MyFirstModule.Radnik_NewEdit.actionButton2",
-                              $widgetId: "p0.MyFirstModule.Radnik_NewEdit.actionButton2",
-                              buttonId: "p0.MyFirstModule.Radnik_NewEdit.actionButton2",
+                              key: "p.MyFirstModule.Radnik_NewEdit.actionButton2",
+                              $widgetId: "p.MyFirstModule.Radnik_NewEdit.actionButton2",
+                              buttonId: "p.MyFirstModule.Radnik_NewEdit.actionButton2",
                               class: "mx-name-actionButton2",
                               style: void 0,
                               tabIndex: void 0,
@@ -391,6 +391,7 @@ const title = selectTranslation([
   "Novi Radnik"
 ]);
 const classes = "";
+const autofocus = "off";
 const cancelChangesOperationId = "cFby9phGmleTrMJeL3J3Rw";
 const style = {};
 const content = {
@@ -398,4 +399,4 @@ const content = {
   "Atlas_Core.PopupLayout.Main": region$Main
 };
 
-export { cancelChangesOperationId, classes, content, style, title };
+export { autofocus, cancelChangesOperationId, classes, content, style, title };

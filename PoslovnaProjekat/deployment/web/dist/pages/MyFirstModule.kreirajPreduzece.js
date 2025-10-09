@@ -1,20 +1,20 @@
-import { reactExports, asPluginWidgets, selectTranslation } from '../index-JDXCDs53.js';
-import { PageFragment, ExpressionProperty } from '../ScrollContainer-BMEt46hD.js';
-import { ActionButton, TextProperty, ActionProperty } from '../ActionButton-CnZtpka2.js';
-import { AssociationObjectProperty } from '../AssociationObjectProperty-BJyyxZlP.js';
-import { FormGroup, TextBox, DerivedUniqueIdProperty, ValidationProperty } from '../TextBox-RBW52cK-.js';
-import { Container, Text } from '../Image-D55d_j2j.js';
-import { DataView } from '../DataView-BstQTMJi.js';
-import { Div } from '../Div-CbKV9nto.js';
-import { content as content$1 } from '../Atlas_Core.Atlas_Default-BcLwJ3TJ.js';
-import { AttributeProperty } from '../D5tDSKpV-NCto3GtK.js';
-import '../uEIG9e6s-D5bs4rlT.js';
-import '../InlineText-BhumBKcU.js';
-import '../bdxqAC6d-Crq0yb3P.js';
-import '../CTcC6PjV-Zoc9mpUp.js';
-import '../ListExpressionProperty-BJu92AGp.js';
-import '../WebIconProperty-Bon9K84_.js';
-import '../WebStaticImageProperty-Cl4Gen30.js';
+import { reactExports, asPluginWidgets, selectTranslation } from '../index-9YRUqoZR.js';
+import { PageFragment, ExpressionProperty } from '../ScrollContainer-BSTS-pb7.js';
+import { ActionButton, TextProperty, ActionProperty } from '../ActionButton-dhEFVOBy.js';
+import { AssociationObjectProperty } from '../AssociationObjectProperty-COk-zUaC.js';
+import { FormGroup, TextBox, DerivedUniqueIdProperty, ValidationProperty } from '../TextBox-D-NxWFxw.js';
+import { Container, Text } from '../Image-DP5udpmp.js';
+import { DataView } from '../DataView-Dk9SFgmO.js';
+import { Div } from '../Div-BEtJmTkn.js';
+import { content as content$1 } from '../Atlas_Core.Atlas_Default-DWMpWEK3.js';
+import { AttributeProperty } from '../77kgvjgm-_yhfSwqC.js';
+import '../BkqAssms-CUfoyzkd.js';
+import '../InlineText-CCt9-DhP.js';
+import '../DmsI6saM-DBCEfM02.js';
+import '../XQdQuDNG-DOzAOCvU.js';
+import '../ListExpressionProperty-woJl_eg3.js';
+import '../WebIconProperty-DZSUe3JO.js';
+import '../WebStaticImageProperty-l2spNxXU.js';
 
 const React = { createElement: reactExports.createElement };
 const { $Div, $Container, $Text, $DataView, $FormGroup, $TextBox, $ActionButton } = asPluginWidgets({ Div, Container, Text, DataView, FormGroup, TextBox, ActionButton });
@@ -22,32 +22,32 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
   /* @__PURE__ */ React.createElement(
     $Div,
     {
-      key: "p19.MyFirstModule.kreirajPreduzece.layoutGrid1",
-      $widgetId: "p19.MyFirstModule.kreirajPreduzece.layoutGrid1",
+      key: "p.MyFirstModule.kreirajPreduzece.layoutGrid1",
+      $widgetId: "p.MyFirstModule.kreirajPreduzece.layoutGrid1",
       class: "mx-name-layoutGrid1 mx-layoutgrid mx-layoutgrid-fluid container-fluid",
       style: void 0,
       content: [
         /* @__PURE__ */ React.createElement(
           $Div,
           {
-            key: "p19.MyFirstModule.kreirajPreduzece.layoutGrid1$row0",
-            $widgetId: "p19.MyFirstModule.kreirajPreduzece.layoutGrid1$row0",
+            key: "p.MyFirstModule.kreirajPreduzece.layoutGrid1$row0",
+            $widgetId: "p.MyFirstModule.kreirajPreduzece.layoutGrid1$row0",
             class: "row",
             style: void 0,
             content: [
               /* @__PURE__ */ React.createElement(
                 $Div,
                 {
-                  key: "p19.MyFirstModule.kreirajPreduzece.layoutGrid1$row0$column0",
-                  $widgetId: "p19.MyFirstModule.kreirajPreduzece.layoutGrid1$row0$column0",
+                  key: "p.MyFirstModule.kreirajPreduzece.layoutGrid1$row0$column0",
+                  $widgetId: "p.MyFirstModule.kreirajPreduzece.layoutGrid1$row0$column0",
                   class: "col-lg col-md col align-self-center",
                   style: void 0,
                   content: [
                     /* @__PURE__ */ React.createElement(
                       $Container,
                       {
-                        key: "p19.MyFirstModule.kreirajPreduzece.container1",
-                        $widgetId: "p19.MyFirstModule.kreirajPreduzece.container1",
+                        key: "p.MyFirstModule.kreirajPreduzece.container1",
+                        $widgetId: "p.MyFirstModule.kreirajPreduzece.container1",
                         class: "mx-name-container1 pageheader col-center spacing-outer-bottom-large",
                         style: void 0,
                         renderMode: "div",
@@ -56,8 +56,8 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                           /* @__PURE__ */ React.createElement(
                             $Text,
                             {
-                              key: "p19.MyFirstModule.kreirajPreduzece.text40",
-                              $widgetId: "p19.MyFirstModule.kreirajPreduzece.text40",
+                              key: "p.MyFirstModule.kreirajPreduzece.text40",
+                              $widgetId: "p.MyFirstModule.kreirajPreduzece.text40",
                               class: "mx-name-text40 pageheader-title spacing-outer-bottom",
                               style: void 0,
                               caption: selectTranslation([
@@ -71,8 +71,8 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                           /* @__PURE__ */ React.createElement(
                             $Text,
                             {
-                              key: "p19.MyFirstModule.kreirajPreduzece.text39",
-                              $widgetId: "p19.MyFirstModule.kreirajPreduzece.text39",
+                              key: "p.MyFirstModule.kreirajPreduzece.text39",
+                              $widgetId: "p.MyFirstModule.kreirajPreduzece.text39",
                               class: "mx-name-text39 pageheader-subtitle text-detail spacing-outer-bottom-none",
                               style: void 0,
                               caption: selectTranslation([
@@ -96,16 +96,16 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
         /* @__PURE__ */ React.createElement(
           $Div,
           {
-            key: "p19.MyFirstModule.kreirajPreduzece.layoutGrid1$row1",
-            $widgetId: "p19.MyFirstModule.kreirajPreduzece.layoutGrid1$row1",
+            key: "p.MyFirstModule.kreirajPreduzece.layoutGrid1$row1",
+            $widgetId: "p.MyFirstModule.kreirajPreduzece.layoutGrid1$row1",
             class: "row",
             style: void 0,
             content: [
               /* @__PURE__ */ React.createElement(
                 $Div,
                 {
-                  key: "p19.MyFirstModule.kreirajPreduzece.layoutGrid1$row1$column0",
-                  $widgetId: "p19.MyFirstModule.kreirajPreduzece.layoutGrid1$row1$column0",
+                  key: "p.MyFirstModule.kreirajPreduzece.layoutGrid1$row1$column0",
+                  $widgetId: "p.MyFirstModule.kreirajPreduzece.layoutGrid1$row1$column0",
                   class: "col-lg col-md col",
                   style: void 0,
                   content: void 0
@@ -114,16 +114,16 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
               /* @__PURE__ */ React.createElement(
                 $Div,
                 {
-                  key: "p19.MyFirstModule.kreirajPreduzece.layoutGrid1$row1$column1",
-                  $widgetId: "p19.MyFirstModule.kreirajPreduzece.layoutGrid1$row1$column1",
+                  key: "p.MyFirstModule.kreirajPreduzece.layoutGrid1$row1$column1",
+                  $widgetId: "p.MyFirstModule.kreirajPreduzece.layoutGrid1$row1$column1",
                   class: "col-lg-8 col-md-auto col-auto align-self-center",
                   style: void 0,
                   content: [
                     /* @__PURE__ */ React.createElement(
                       $Container,
                       {
-                        key: "p19.MyFirstModule.kreirajPreduzece.container2",
-                        $widgetId: "p19.MyFirstModule.kreirajPreduzece.container2",
+                        key: "p.MyFirstModule.kreirajPreduzece.container2",
+                        $widgetId: "p.MyFirstModule.kreirajPreduzece.container2",
                         class: "mx-name-container2 card spacing-outer-bottom-large",
                         style: void 0,
                         renderMode: "div",
@@ -132,8 +132,8 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                           /* @__PURE__ */ React.createElement(
                             $Container,
                             {
-                              key: "p19.MyFirstModule.kreirajPreduzece.container5",
-                              $widgetId: "p19.MyFirstModule.kreirajPreduzece.container5",
+                              key: "p.MyFirstModule.kreirajPreduzece.container5",
+                              $widgetId: "p.MyFirstModule.kreirajPreduzece.container5",
                               class: "mx-name-container5 formblock spacing-outer-bottom-large",
                               style: void 0,
                               renderMode: "div",
@@ -142,13 +142,13 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                 /* @__PURE__ */ React.createElement(
                                   $DataView,
                                   {
-                                    key: "p19.MyFirstModule.kreirajPreduzece.dataView7",
-                                    $widgetId: "p19.MyFirstModule.kreirajPreduzece.dataView7",
+                                    key: "p.MyFirstModule.kreirajPreduzece.dataView7",
+                                    $widgetId: "p.MyFirstModule.kreirajPreduzece.dataView7",
                                     class: "mx-name-dataView7 form-vertical",
                                     style: void 0,
                                     tabIndex: void 0,
                                     object: AssociationObjectProperty({
-                                      "dataSourceId": "p19.28",
+                                      "dataSourceId": "p.28",
                                       "scope": "$Preduzece",
                                       "editable": true
                                     }),
@@ -161,18 +161,18 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                       /* @__PURE__ */ React.createElement(
                                         $FormGroup,
                                         {
-                                          key: "p19.MyFirstModule.kreirajPreduzece.textBox1$formGroup",
-                                          $widgetId: "p19.MyFirstModule.kreirajPreduzece.textBox1$formGroup",
+                                          key: "p.MyFirstModule.kreirajPreduzece.textBox1$formGroup",
+                                          $widgetId: "p.MyFirstModule.kreirajPreduzece.textBox1$formGroup",
                                           class: "mx-name-textBox1 mx-textbox",
                                           style: void 0,
                                           control: [
                                             /* @__PURE__ */ React.createElement(
                                               $TextBox,
                                               {
-                                                key: "p19.MyFirstModule.kreirajPreduzece.textBox1",
-                                                $widgetId: "p19.MyFirstModule.kreirajPreduzece.textBox1",
+                                                key: "p.MyFirstModule.kreirajPreduzece.textBox1",
+                                                $widgetId: "p.MyFirstModule.kreirajPreduzece.textBox1",
                                                 inputValue: AttributeProperty({
-                                                  "scope": "p19.MyFirstModule.kreirajPreduzece.dataView7",
+                                                  "scope": "p.MyFirstModule.kreirajPreduzece.dataView7",
                                                   "path": "",
                                                   "entity": "MyFirstModule.Preduzece",
                                                   "attribute": "nazivPreduzeca",
@@ -200,7 +200,7 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                                 ariaRequired: true,
                                                 tabIndex: void 0,
                                                 id: DerivedUniqueIdProperty({
-                                                  "widgetId": "p19.MyFirstModule.kreirajPreduzece.textBox1"
+                                                  "widgetId": "p.MyFirstModule.kreirajPreduzece.textBox1"
                                                 })
                                               }
                                             )
@@ -211,30 +211,30 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                             })
                                           ]),
                                           labelFor: DerivedUniqueIdProperty({
-                                            "widgetId": "p19.MyFirstModule.kreirajPreduzece.textBox1"
+                                            "widgetId": "p.MyFirstModule.kreirajPreduzece.textBox1"
                                           }),
                                           width: void 0,
                                           orientation: "vertical",
                                           hasError: ValidationProperty({
-                                            "inputWidgetId": "p19.MyFirstModule.kreirajPreduzece.textBox1"
+                                            "inputWidgetId": "p.MyFirstModule.kreirajPreduzece.textBox1"
                                           })
                                         }
                                       ),
                                       /* @__PURE__ */ React.createElement(
                                         $FormGroup,
                                         {
-                                          key: "p19.MyFirstModule.kreirajPreduzece.textBox2$formGroup",
-                                          $widgetId: "p19.MyFirstModule.kreirajPreduzece.textBox2$formGroup",
+                                          key: "p.MyFirstModule.kreirajPreduzece.textBox2$formGroup",
+                                          $widgetId: "p.MyFirstModule.kreirajPreduzece.textBox2$formGroup",
                                           class: "mx-name-textBox2 mx-textbox",
                                           style: void 0,
                                           control: [
                                             /* @__PURE__ */ React.createElement(
                                               $TextBox,
                                               {
-                                                key: "p19.MyFirstModule.kreirajPreduzece.textBox2",
-                                                $widgetId: "p19.MyFirstModule.kreirajPreduzece.textBox2",
+                                                key: "p.MyFirstModule.kreirajPreduzece.textBox2",
+                                                $widgetId: "p.MyFirstModule.kreirajPreduzece.textBox2",
                                                 inputValue: AttributeProperty({
-                                                  "scope": "p19.MyFirstModule.kreirajPreduzece.dataView7",
+                                                  "scope": "p.MyFirstModule.kreirajPreduzece.dataView7",
                                                   "path": "",
                                                   "entity": "MyFirstModule.Preduzece",
                                                   "attribute": "PIB",
@@ -262,7 +262,7 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                                 ariaRequired: true,
                                                 tabIndex: void 0,
                                                 id: DerivedUniqueIdProperty({
-                                                  "widgetId": "p19.MyFirstModule.kreirajPreduzece.textBox2"
+                                                  "widgetId": "p.MyFirstModule.kreirajPreduzece.textBox2"
                                                 })
                                               }
                                             )
@@ -273,30 +273,30 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                             })
                                           ]),
                                           labelFor: DerivedUniqueIdProperty({
-                                            "widgetId": "p19.MyFirstModule.kreirajPreduzece.textBox2"
+                                            "widgetId": "p.MyFirstModule.kreirajPreduzece.textBox2"
                                           }),
                                           width: void 0,
                                           orientation: "vertical",
                                           hasError: ValidationProperty({
-                                            "inputWidgetId": "p19.MyFirstModule.kreirajPreduzece.textBox2"
+                                            "inputWidgetId": "p.MyFirstModule.kreirajPreduzece.textBox2"
                                           })
                                         }
                                       ),
                                       /* @__PURE__ */ React.createElement(
                                         $FormGroup,
                                         {
-                                          key: "p19.MyFirstModule.kreirajPreduzece.textBox3$formGroup",
-                                          $widgetId: "p19.MyFirstModule.kreirajPreduzece.textBox3$formGroup",
+                                          key: "p.MyFirstModule.kreirajPreduzece.textBox3$formGroup",
+                                          $widgetId: "p.MyFirstModule.kreirajPreduzece.textBox3$formGroup",
                                           class: "mx-name-textBox3 mx-textbox",
                                           style: void 0,
                                           control: [
                                             /* @__PURE__ */ React.createElement(
                                               $TextBox,
                                               {
-                                                key: "p19.MyFirstModule.kreirajPreduzece.textBox3",
-                                                $widgetId: "p19.MyFirstModule.kreirajPreduzece.textBox3",
+                                                key: "p.MyFirstModule.kreirajPreduzece.textBox3",
+                                                $widgetId: "p.MyFirstModule.kreirajPreduzece.textBox3",
                                                 inputValue: AttributeProperty({
-                                                  "scope": "p19.MyFirstModule.kreirajPreduzece.dataView7",
+                                                  "scope": "p.MyFirstModule.kreirajPreduzece.dataView7",
                                                   "path": "",
                                                   "entity": "MyFirstModule.Preduzece",
                                                   "attribute": "adresaPreduzeca",
@@ -324,7 +324,7 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                                 ariaRequired: true,
                                                 tabIndex: void 0,
                                                 id: DerivedUniqueIdProperty({
-                                                  "widgetId": "p19.MyFirstModule.kreirajPreduzece.textBox3"
+                                                  "widgetId": "p.MyFirstModule.kreirajPreduzece.textBox3"
                                                 })
                                               }
                                             )
@@ -335,12 +335,12 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                             })
                                           ]),
                                           labelFor: DerivedUniqueIdProperty({
-                                            "widgetId": "p19.MyFirstModule.kreirajPreduzece.textBox3"
+                                            "widgetId": "p.MyFirstModule.kreirajPreduzece.textBox3"
                                           }),
                                           width: void 0,
                                           orientation: "vertical",
                                           hasError: ValidationProperty({
-                                            "inputWidgetId": "p19.MyFirstModule.kreirajPreduzece.textBox3"
+                                            "inputWidgetId": "p.MyFirstModule.kreirajPreduzece.textBox3"
                                           })
                                         }
                                       )
@@ -350,9 +350,9 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                       /* @__PURE__ */ React.createElement(
                                         $ActionButton,
                                         {
-                                          key: "p19.MyFirstModule.kreirajPreduzece.actionButton1",
-                                          $widgetId: "p19.MyFirstModule.kreirajPreduzece.actionButton1",
-                                          buttonId: "p19.MyFirstModule.kreirajPreduzece.actionButton1",
+                                          key: "p.MyFirstModule.kreirajPreduzece.actionButton1",
+                                          $widgetId: "p.MyFirstModule.kreirajPreduzece.actionButton1",
+                                          buttonId: "p.MyFirstModule.kreirajPreduzece.actionButton1",
                                           class: "mx-name-actionButton1",
                                           style: void 0,
                                           tabIndex: void 0,
@@ -371,7 +371,7 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                           }),
                                           icon: void 0,
                                           action: ActionProperty({
-                                            "action": { "type": "saveChanges", "argMap": { "$object": { "widget": "p19.MyFirstModule.kreirajPreduzece.dataView7", "source": "object" } }, "config": { "operationId": "L37YYypRmV+fvJDO5D4qSg", "closePage": true }, "disabledDuringExecution": true },
+                                            "action": { "type": "saveChanges", "argMap": { "$object": { "widget": "p.MyFirstModule.kreirajPreduzece.dataView7", "source": "object" } }, "config": { "operationId": "L37YYypRmV+fvJDO5D4qSg", "closePage": true }, "disabledDuringExecution": true },
                                             "abortOnServerValidation": true
                                           })
                                         }
@@ -379,9 +379,9 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                       /* @__PURE__ */ React.createElement(
                                         $ActionButton,
                                         {
-                                          key: "p19.MyFirstModule.kreirajPreduzece.actionButton2",
-                                          $widgetId: "p19.MyFirstModule.kreirajPreduzece.actionButton2",
-                                          buttonId: "p19.MyFirstModule.kreirajPreduzece.actionButton2",
+                                          key: "p.MyFirstModule.kreirajPreduzece.actionButton2",
+                                          $widgetId: "p.MyFirstModule.kreirajPreduzece.actionButton2",
+                                          buttonId: "p.MyFirstModule.kreirajPreduzece.actionButton2",
                                           class: "mx-name-actionButton2",
                                           style: void 0,
                                           tabIndex: void 0,
@@ -422,8 +422,8 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
               /* @__PURE__ */ React.createElement(
                 $Div,
                 {
-                  key: "p19.MyFirstModule.kreirajPreduzece.layoutGrid1$row1$column2",
-                  $widgetId: "p19.MyFirstModule.kreirajPreduzece.layoutGrid1$row1$column2",
+                  key: "p.MyFirstModule.kreirajPreduzece.layoutGrid1$row1$column2",
+                  $widgetId: "p.MyFirstModule.kreirajPreduzece.layoutGrid1$row1$column2",
                   class: "col-lg col-md col",
                   style: void 0,
                   content: void 0
@@ -440,10 +440,11 @@ const title = selectTranslation([
   "kreiraj preduzece"
 ]);
 const classes = "layout-atlas layout-atlas-responsive-default";
+const autofocus = "off";
 const style = {};
 const content = {
   ...content$1,
   "Atlas_Core.Atlas_Default.Main": region$Main
 };
 
-export { classes, content, style, title };
+export { autofocus, classes, content, style, title };

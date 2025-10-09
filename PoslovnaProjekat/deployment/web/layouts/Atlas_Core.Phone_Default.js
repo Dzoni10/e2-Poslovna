@@ -17,13 +17,8 @@ import { addEnumerations, asPluginWidgets, t } from "mendix";
 const { $ScrollContainer, $Header, $Title, $Placeholder, $SimpleMenuBar } = asPluginWidgets({ ScrollContainer, Header, Title, Placeholder, SimpleMenuBar });
 
 const region$Main = [
-<<<<<<< HEAD
-    <$ScrollContainer key="l25.Atlas_Core.Phone_Default.scrollContainer1"
-        $widgetId="l25.Atlas_Core.Phone_Default.scrollContainer1"
-=======
     <$ScrollContainer key="l.Atlas_Core.Phone_Default.scrollContainer1"
         $widgetId="l.Atlas_Core.Phone_Default.scrollContainer1"
->>>>>>> feat/sales-domain
         class={"mx-name-scrollContainer1"}
         style={undefined}
         scrollPerRegion={true}
@@ -31,15 +26,6 @@ const region$Main = [
         top={{
             "enabled": true,
             "content": [
-<<<<<<< HEAD
-                <$Header key="l25.Atlas_Core.Phone_Default.header1"
-                    $widgetId="l25.Atlas_Core.Phone_Default.header1"
-                    class={"mx-name-header1"}
-                    style={undefined}
-                    content={[
-                        <$Title key="l25.4"
-                            $widgetId="l25.4"
-=======
                 <$Header key="l.Atlas_Core.Phone_Default.header1"
                     $widgetId="l.Atlas_Core.Phone_Default.header1"
                     class={"mx-name-header1"}
@@ -47,7 +33,6 @@ const region$Main = [
                     content={[
                         <$Title key="l.4"
                             $widgetId="l.4"
->>>>>>> feat/sales-domain
                             class={""}
                             style={undefined}
                             caption={ExpressionProperty({
@@ -55,25 +40,15 @@ const region$Main = [
                             })} />
                     ]}
                     leftWidgets={[
-<<<<<<< HEAD
-                        <$Placeholder key="l25.Atlas_Core.Phone_Default.HeaderLeft"
-                            $widgetId="l25.Atlas_Core.Phone_Default.HeaderLeft"
-=======
                         <$Placeholder key="l.Atlas_Core.Phone_Default.HeaderLeft"
                             $widgetId="l.Atlas_Core.Phone_Default.HeaderLeft"
->>>>>>> feat/sales-domain
                             content={PlaceholderProperty({
                                 "id": "Atlas_Core.Phone_Default.HeaderLeft"
                             })} />
                     ]}
                     rightWidgets={[
-<<<<<<< HEAD
-                        <$Placeholder key="l25.Atlas_Core.Phone_Default.HeaderRight"
-                            $widgetId="l25.Atlas_Core.Phone_Default.HeaderRight"
-=======
                         <$Placeholder key="l.Atlas_Core.Phone_Default.HeaderRight"
                             $widgetId="l.Atlas_Core.Phone_Default.HeaderRight"
->>>>>>> feat/sales-domain
                             content={PlaceholderProperty({
                                 "id": "Atlas_Core.Phone_Default.HeaderRight"
                             })} />
@@ -85,13 +60,8 @@ const region$Main = [
         bottom={{
             "enabled": true,
             "content": [
-<<<<<<< HEAD
-                <$SimpleMenuBar key="l25.Atlas_Core.Phone_Default.simpleMenuBar1"
-                    $widgetId="l25.Atlas_Core.Phone_Default.simpleMenuBar1"
-=======
                 <$SimpleMenuBar key="l.Atlas_Core.Phone_Default.simpleMenuBar1"
                     $widgetId="l.Atlas_Core.Phone_Default.simpleMenuBar1"
->>>>>>> feat/sales-domain
                     class={"mx-name-simpleMenuBar1 bottom-nav-text-icons"}
                     style={undefined}
                     menu={[
@@ -153,13 +123,8 @@ const region$Main = [
         }}
         center={{
             "content": [
-<<<<<<< HEAD
-                <$Placeholder key="l25.Atlas_Core.Phone_Default.Main"
-                    $widgetId="l25.Atlas_Core.Phone_Default.Main"
-=======
                 <$Placeholder key="l.Atlas_Core.Phone_Default.Main"
                     $widgetId="l.Atlas_Core.Phone_Default.Main"
->>>>>>> feat/sales-domain
                     content={PlaceholderProperty({
                         "id": "Atlas_Core.Phone_Default.Main"
                     })} />

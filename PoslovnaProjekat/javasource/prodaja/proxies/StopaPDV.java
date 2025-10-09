@@ -6,9 +6,9 @@ package prodaja.proxies;
 
 public enum StopaPDV
 {
-	Oslobodjen("0fad759f-254b-4b4a-a8e7-ae32d88008bc"),
-	Srednja("22fbece2-f793-4627-895c-0c5141f2a48c"),
-	Visa("04a9f346-a33b-415c-8b35-0dd732ce319c");
+	Oslobodjen("77f927da-8865-419a-84d8-eabc0e4677ff"),
+	Srednji("12cc9d11-1ff8-44c5-a28b-dcead8143bed"),
+	Visoki("1b3c63e3-a65d-44f9-bf30-1335efd0c0dd");
 
 	private final java.lang.String i18nCaptionKey;
 	

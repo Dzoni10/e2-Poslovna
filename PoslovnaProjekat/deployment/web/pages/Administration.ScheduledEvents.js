@@ -57,37 +57,13 @@ addEnumerations({
 });
 
 const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
-<<<<<<< HEAD
-    <$Container key="p1.Administration.ScheduledEvents.container1"
-        $widgetId="p1.Administration.ScheduledEvents.container1"
-=======
     <$Container key="p.Administration.ScheduledEvents.container1"
         $widgetId="p.Administration.ScheduledEvents.container1"
->>>>>>> feat/sales-domain
         class={"mx-name-container1 pageheader pageheader-fullwidth"}
         style={undefined}
         renderMode={"div"}
         onClick={undefined}
         content={[
-<<<<<<< HEAD
-            <$Div key="p1.Administration.ScheduledEvents.layoutGrid1"
-                $widgetId="p1.Administration.ScheduledEvents.layoutGrid1"
-                class={"mx-name-layoutGrid1 mx-layoutgrid mx-layoutgrid-fluid container-fluid"}
-                style={undefined}
-                content={[
-                    <$Div key="p1.Administration.ScheduledEvents.layoutGrid1$row0"
-                        $widgetId="p1.Administration.ScheduledEvents.layoutGrid1$row0"
-                        class={"row"}
-                        style={undefined}
-                        content={[
-                            <$Div key="p1.Administration.ScheduledEvents.layoutGrid1$row0$column0"
-                                $widgetId="p1.Administration.ScheduledEvents.layoutGrid1$row0$column0"
-                                class={"col-lg-12 col-md-12 col-12"}
-                                style={undefined}
-                                content={[
-                                    <$Text key="p1.Administration.ScheduledEvents.label1"
-                                        $widgetId="p1.Administration.ScheduledEvents.label1"
-=======
             <$Div key="p.Administration.ScheduledEvents.layoutGrid1"
                 $widgetId="p.Administration.ScheduledEvents.layoutGrid1"
                 class={"mx-name-layoutGrid1 mx-layoutgrid mx-layoutgrid-fluid container-fluid"}
@@ -105,7 +81,6 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                 content={[
                                     <$Text key="p.Administration.ScheduledEvents.label1"
                                         $widgetId="p.Administration.ScheduledEvents.label1"
->>>>>>> feat/sales-domain
                                         class={"mx-name-label1 pageheader-title"}
                                         style={undefined}
                                         caption={t([
@@ -119,28 +94,6 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                 ]} />
         ]}
         ariaHidden={false} />,
-<<<<<<< HEAD
-    <$Div key="p1.Administration.ScheduledEvents.layoutGrid2"
-        $widgetId="p1.Administration.ScheduledEvents.layoutGrid2"
-        class={"mx-name-layoutGrid2 mx-layoutgrid mx-layoutgrid-fluid container-fluid"}
-        style={undefined}
-        content={[
-            <$Div key="p1.Administration.ScheduledEvents.layoutGrid2$row0"
-                $widgetId="p1.Administration.ScheduledEvents.layoutGrid2$row0"
-                class={"row"}
-                style={undefined}
-                content={[
-                    <$Div key="p1.Administration.ScheduledEvents.layoutGrid2$row0$column0"
-                        $widgetId="p1.Administration.ScheduledEvents.layoutGrid2$row0$column0"
-                        class={"col-lg-12 col-md-12 col-12"}
-                        style={undefined}
-                        content={[
-                            <$Datagrid key="p1.Administration.ScheduledEvents.dataGrid21"
-                                $widgetId="p1.Administration.ScheduledEvents.dataGrid21"
-                                advanced={false}
-                                datasource={DatabaseObjectListProperty({
-                                    "dataSourceId": "p1.10",
-=======
     <$Div key="p.Administration.ScheduledEvents.layoutGrid2"
         $widgetId="p.Administration.ScheduledEvents.layoutGrid2"
         class={"mx-name-layoutGrid2 mx-layoutgrid mx-layoutgrid-fluid container-fluid"}
@@ -161,7 +114,6 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                 advanced={false}
                                 datasource={DatabaseObjectListProperty({
                                     "dataSourceId": "p.10",
->>>>>>> feat/sales-domain
                                     "entity": "System.ScheduledEventInformation",
                                     "operationId": "netzuZoXw1SuH0qR25RGbQ",
                                     "sort": [
@@ -184,11 +136,7 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                             "attributeType": "String",
                                             "sortable": true,
                                             "filterable": true,
-<<<<<<< HEAD
-                                            "dataSourceId": "p1.10",
-=======
                                             "dataSourceId": "p.10",
->>>>>>> feat/sales-domain
                                             "isList": false
                                         }),
                                         "content": undefined,
@@ -204,13 +152,8 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                             undefined
                                         ]),
                                         "filter": [
-<<<<<<< HEAD
-                                            <$DatagridTextFilter key="p1.Administration.ScheduledEvents.textFilter1"
-                                                $widgetId="p1.Administration.ScheduledEvents.textFilter1"
-=======
                                             <$DatagridTextFilter key="p.Administration.ScheduledEvents.textFilter1"
                                                 $widgetId="p.Administration.ScheduledEvents.textFilter1"
->>>>>>> feat/sales-domain
                                                 advanced={false}
                                                 defaultValue={undefined}
                                                 defaultFilter={"contains"}
@@ -265,11 +208,7 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                             "attributeType": "String",
                                             "sortable": true,
                                             "filterable": true,
-<<<<<<< HEAD
-                                            "dataSourceId": "p1.10",
-=======
                                             "dataSourceId": "p.10",
->>>>>>> feat/sales-domain
                                             "isList": false
                                         }),
                                         "content": undefined,
@@ -285,13 +224,8 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                             undefined
                                         ]),
                                         "filter": [
-<<<<<<< HEAD
-                                            <$DatagridTextFilter key="p1.Administration.ScheduledEvents.textFilter2"
-                                                $widgetId="p1.Administration.ScheduledEvents.textFilter2"
-=======
                                             <$DatagridTextFilter key="p.Administration.ScheduledEvents.textFilter2"
                                                 $widgetId="p.Administration.ScheduledEvents.textFilter2"
->>>>>>> feat/sales-domain
                                                 advanced={false}
                                                 defaultValue={undefined}
                                                 defaultFilter={"contains"}
@@ -346,23 +280,14 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                             "attributeType": "DateTime",
                                             "sortable": true,
                                             "filterable": true,
-<<<<<<< HEAD
-                                            "dataSourceId": "p1.10",
-=======
                                             "dataSourceId": "p.10",
->>>>>>> feat/sales-domain
                                             "isList": false
                                         }),
                                         "content": undefined,
                                         "dynamicText": t([
                                             ListExpressionProperty({
-<<<<<<< HEAD
-                                                "expression": { "expr": { "type": "function", "name": "_format", "parameters": [ { "type": "variable", "variable": "currentObject", "path": "StartTime" }, { "type": "literal", "value": "{\"type\":\"datetime\"}" } ] }, "args": { "currentObject": { "widget": "p1.Administration.ScheduledEvents.dataGrid21", "source": "object" } } },
-                                                "dataSourceId": "p1.10"
-=======
                                                 "expression": { "expr": { "type": "function", "name": "_format", "parameters": [ { "type": "variable", "variable": "currentObject", "path": "StartTime" }, { "type": "literal", "value": "{\"type\":\"datetime\"}" } ] }, "args": { "currentObject": { "widget": "p.Administration.ScheduledEvents.dataGrid21", "source": "object" } } },
                                                 "dataSourceId": "p.10"
->>>>>>> feat/sales-domain
                                             })
                                         ]),
                                         "header": t([
@@ -374,13 +299,8 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                             undefined
                                         ]),
                                         "filter": [
-<<<<<<< HEAD
-                                            <$DatagridDateFilter key="p1.Administration.ScheduledEvents.dateFilter1"
-                                                $widgetId="p1.Administration.ScheduledEvents.dateFilter1"
-=======
                                             <$DatagridDateFilter key="p.Administration.ScheduledEvents.dateFilter1"
                                                 $widgetId="p.Administration.ScheduledEvents.dateFilter1"
->>>>>>> feat/sales-domain
                                                 advanced={false}
                                                 defaultValue={undefined}
                                                 defaultStartDate={undefined}
@@ -441,23 +361,6 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                             "attributeType": "Enum",
                                             "sortable": true,
                                             "filterable": true,
-<<<<<<< HEAD
-                                            "dataSourceId": "p1.10",
-                                            "isList": false
-                                        }),
-                                        "content": TemplatedWidgetProperty({
-                                            "dataSourceId": "p1.10",
-                                            "editable": false,
-                                            "children": () => [
-                                                <$ConditionalVisibilityWrapper key="p1.Administration.ScheduledEvents.text2$visibility"
-                                                    $widgetId="p1.Administration.ScheduledEvents.text2$visibility"
-                                                    visible={ExpressionProperty({
-                                                        "expression": { "expr": { "type": "function", "name": "=", "parameters": [ { "type": "variable", "variable": "currentObject", "path": "Status" }, { "type": "literal", "value": "Running" } ] }, "args": { "currentObject": { "widget": "p1.Administration.ScheduledEvents.dataGrid21", "source": "object" } } }
-                                                    })}
-                                                    contents={[
-                                                        <$Text key="p1.Administration.ScheduledEvents.text2"
-                                                            $widgetId="p1.Administration.ScheduledEvents.text2"
-=======
                                             "dataSourceId": "p.10",
                                             "isList": false
                                         }),
@@ -473,7 +376,6 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                                     contents={[
                                                         <$Text key="p.Administration.ScheduledEvents.text2"
                                                             $widgetId="p.Administration.ScheduledEvents.text2"
->>>>>>> feat/sales-domain
                                                             class={"mx-name-text2 badge label-primary"}
                                                             style={undefined}
                                                             caption={t([
@@ -483,16 +385,6 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                                             ])}
                                                             renderMode={"span"} />
                                                     ]} />,
-<<<<<<< HEAD
-                                                <$ConditionalVisibilityWrapper key="p1.Administration.ScheduledEvents.text1$visibility"
-                                                    $widgetId="p1.Administration.ScheduledEvents.text1$visibility"
-                                                    visible={ExpressionProperty({
-                                                        "expression": { "expr": { "type": "function", "name": "=", "parameters": [ { "type": "variable", "variable": "currentObject", "path": "Status" }, { "type": "literal", "value": "Completed" } ] }, "args": { "currentObject": { "widget": "p1.Administration.ScheduledEvents.dataGrid21", "source": "object" } } }
-                                                    })}
-                                                    contents={[
-                                                        <$Text key="p1.Administration.ScheduledEvents.text1"
-                                                            $widgetId="p1.Administration.ScheduledEvents.text1"
-=======
                                                 <$ConditionalVisibilityWrapper key="p.Administration.ScheduledEvents.text1$visibility"
                                                     $widgetId="p.Administration.ScheduledEvents.text1$visibility"
                                                     visible={ExpressionProperty({
@@ -501,7 +393,6 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                                     contents={[
                                                         <$Text key="p.Administration.ScheduledEvents.text1"
                                                             $widgetId="p.Administration.ScheduledEvents.text1"
->>>>>>> feat/sales-domain
                                                             class={"mx-name-text1 badge label-success"}
                                                             style={undefined}
                                                             caption={t([
@@ -511,16 +402,6 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                                             ])}
                                                             renderMode={"span"} />
                                                     ]} />,
-<<<<<<< HEAD
-                                                <$ConditionalVisibilityWrapper key="p1.Administration.ScheduledEvents.text3$visibility"
-                                                    $widgetId="p1.Administration.ScheduledEvents.text3$visibility"
-                                                    visible={ExpressionProperty({
-                                                        "expression": { "expr": { "type": "function", "name": "=", "parameters": [ { "type": "variable", "variable": "currentObject", "path": "Status" }, { "type": "literal", "value": "Error" } ] }, "args": { "currentObject": { "widget": "p1.Administration.ScheduledEvents.dataGrid21", "source": "object" } } }
-                                                    })}
-                                                    contents={[
-                                                        <$Text key="p1.Administration.ScheduledEvents.text3"
-                                                            $widgetId="p1.Administration.ScheduledEvents.text3"
-=======
                                                 <$ConditionalVisibilityWrapper key="p.Administration.ScheduledEvents.text3$visibility"
                                                     $widgetId="p.Administration.ScheduledEvents.text3$visibility"
                                                     visible={ExpressionProperty({
@@ -529,7 +410,6 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                                     contents={[
                                                         <$Text key="p.Administration.ScheduledEvents.text3"
                                                             $widgetId="p.Administration.ScheduledEvents.text3"
->>>>>>> feat/sales-domain
                                                             class={"mx-name-text3 badge label-danger"}
                                                             style={undefined}
                                                             caption={t([
@@ -539,16 +419,6 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                                             ])}
                                                             renderMode={"span"} />
                                                     ]} />,
-<<<<<<< HEAD
-                                                <$ConditionalVisibilityWrapper key="p1.Administration.ScheduledEvents.text4$visibility"
-                                                    $widgetId="p1.Administration.ScheduledEvents.text4$visibility"
-                                                    visible={ExpressionProperty({
-                                                        "expression": { "expr": { "type": "function", "name": "=", "parameters": [ { "type": "variable", "variable": "currentObject", "path": "Status" }, { "type": "literal", "value": "Stopped" } ] }, "args": { "currentObject": { "widget": "p1.Administration.ScheduledEvents.dataGrid21", "source": "object" } } }
-                                                    })}
-                                                    contents={[
-                                                        <$Text key="p1.Administration.ScheduledEvents.text4"
-                                                            $widgetId="p1.Administration.ScheduledEvents.text4"
-=======
                                                 <$ConditionalVisibilityWrapper key="p.Administration.ScheduledEvents.text4$visibility"
                                                     $widgetId="p.Administration.ScheduledEvents.text4$visibility"
                                                     visible={ExpressionProperty({
@@ -557,7 +427,6 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                                     contents={[
                                                         <$Text key="p.Administration.ScheduledEvents.text4"
                                                             $widgetId="p.Administration.ScheduledEvents.text4"
->>>>>>> feat/sales-domain
                                                             class={"mx-name-text4 badge label-secondary"}
                                                             style={undefined}
                                                             caption={t([
@@ -581,13 +450,8 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                             undefined
                                         ]),
                                         "filter": [
-<<<<<<< HEAD
-                                            <$DatagridDropdownFilter key="p1.Administration.ScheduledEvents.drop_downFilter1"
-                                                $widgetId="p1.Administration.ScheduledEvents.drop_downFilter1"
-=======
                                             <$DatagridDropdownFilter key="p.Administration.ScheduledEvents.drop_downFilter1"
                                                 $widgetId="p.Administration.ScheduledEvents.drop_downFilter1"
->>>>>>> feat/sales-domain
                                                 auto={true}
                                                 defaultValue={undefined}
                                                 filterOptions={[]}
@@ -640,23 +504,14 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                             "attributeType": "DateTime",
                                             "sortable": true,
                                             "filterable": true,
-<<<<<<< HEAD
-                                            "dataSourceId": "p1.10",
-=======
                                             "dataSourceId": "p.10",
->>>>>>> feat/sales-domain
                                             "isList": false
                                         }),
                                         "content": undefined,
                                         "dynamicText": t([
                                             ListExpressionProperty({
-<<<<<<< HEAD
-                                                "expression": { "expr": { "type": "function", "name": "_format", "parameters": [ { "type": "variable", "variable": "currentObject", "path": "EndTime" }, { "type": "literal", "value": "{\"type\":\"datetime\"}" } ] }, "args": { "currentObject": { "widget": "p1.Administration.ScheduledEvents.dataGrid21", "source": "object" } } },
-                                                "dataSourceId": "p1.10"
-=======
                                                 "expression": { "expr": { "type": "function", "name": "_format", "parameters": [ { "type": "variable", "variable": "currentObject", "path": "EndTime" }, { "type": "literal", "value": "{\"type\":\"datetime\"}" } ] }, "args": { "currentObject": { "widget": "p.Administration.ScheduledEvents.dataGrid21", "source": "object" } } },
                                                 "dataSourceId": "p.10"
->>>>>>> feat/sales-domain
                                             })
                                         ]),
                                         "header": t([
@@ -668,13 +523,8 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                             undefined
                                         ]),
                                         "filter": [
-<<<<<<< HEAD
-                                            <$DatagridDateFilter key="p1.Administration.ScheduledEvents.dateFilter2"
-                                                $widgetId="p1.Administration.ScheduledEvents.dateFilter2"
-=======
                                             <$DatagridDateFilter key="p.Administration.ScheduledEvents.dateFilter2"
                                                 $widgetId="p.Administration.ScheduledEvents.dateFilter2"
->>>>>>> feat/sales-domain
                                                 advanced={false}
                                                 defaultValue={undefined}
                                                 defaultStartDate={undefined}

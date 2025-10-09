@@ -6,9 +6,9 @@ package prodaja.proxies;
 
 public enum StatusFakture
 {
-	UFaziFormiranja("c9d404d2-2e2f-43f3-ba35-bd9e2192d302"),
-	Poslata("685829f9-d04d-413c-b224-e487563bb708"),
-	Stornirana("1b7a0d35-f9b1-44a6-99b0-a427a05240c1");
+	U_Obradi("940906dd-0774-48ef-9b99-5e2fc531b890"),
+	Stornirana("99af596a-8cbb-44b9-8f68-5f0746c5d7c8"),
+	Obradjena("40be0057-c5b7-48f5-886b-be83af89fc31");
 
 	private final java.lang.String i18nCaptionKey;
 	

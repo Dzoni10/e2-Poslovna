@@ -1,21 +1,21 @@
-import { reactExports, asPluginWidgets, selectTranslation } from '../index-JDXCDs53.js';
-import { PageFragment, ExpressionProperty } from '../ScrollContainer-BMEt46hD.js';
-import { ActionButton, TextProperty, ActionProperty } from '../ActionButton-CnZtpka2.js';
-import { DatabaseObjectListProperty } from '../CTcC6PjV-Zoc9mpUp.js';
-import { ListAttributeProperty } from '../ListAttributeProperty-BGCislj4.js';
-import { SelectionProperty } from '../SelectionProperty-f_wSDnIg.js';
-import { DatagridTextFilterWidgetModule, TemplatedWidgetProperty } from '../DatagridTextFilter-DWTJzH1_.js';
-import { WebIconProperty } from '../WebIconProperty-Bon9K84_.js';
-import { ConditionalVisibilityWrapper } from '../ConditionalVisibilityWrapper-BVC6V75r.js';
-import { DatagridWidgetModule } from '../Datagrid-1ozoQRRx.js';
-import { Div } from '../Div-CbKV9nto.js';
-import { Text } from '../Image-D55d_j2j.js';
-import { content as content$1 } from '../Atlas_Core.Atlas_Default-BcLwJ3TJ.js';
-import '../uEIG9e6s-D5bs4rlT.js';
-import '../D5tDSKpV-NCto3GtK.js';
-import '../InlineText-BhumBKcU.js';
-import '../ListExpressionProperty-BJu92AGp.js';
-import '../WebStaticImageProperty-Cl4Gen30.js';
+import { reactExports, asPluginWidgets, selectTranslation } from '../index-9YRUqoZR.js';
+import { PageFragment, ExpressionProperty } from '../ScrollContainer-BSTS-pb7.js';
+import { ActionButton, TextProperty, ActionProperty } from '../ActionButton-dhEFVOBy.js';
+import { DatabaseObjectListProperty } from '../XQdQuDNG-DOzAOCvU.js';
+import { ListAttributeProperty } from '../ListAttributeProperty-daqfkgGj.js';
+import { SelectionProperty } from '../SelectionProperty-DPvgtBfJ.js';
+import { DatagridTextFilterWidgetModule, TemplatedWidgetProperty } from '../DatagridTextFilter-BgBjCLui.js';
+import { WebIconProperty } from '../WebIconProperty-DZSUe3JO.js';
+import { ConditionalVisibilityWrapper } from '../ConditionalVisibilityWrapper-D1kXRtZG.js';
+import { DatagridWidgetModule } from '../Datagrid-CoF3q784.js';
+import { Div } from '../Div-BEtJmTkn.js';
+import { Text } from '../Image-DP5udpmp.js';
+import { content as content$1 } from '../Atlas_Core.Atlas_Default-DWMpWEK3.js';
+import '../BkqAssms-CUfoyzkd.js';
+import '../77kgvjgm-_yhfSwqC.js';
+import '../InlineText-CCt9-DhP.js';
+import '../ListExpressionProperty-woJl_eg3.js';
+import '../WebStaticImageProperty-l2spNxXU.js';
 
 const React = { createElement: reactExports.createElement };
 const Datagrid = Object.getOwnPropertyDescriptor(DatagridWidgetModule, "Datagrid")?.value || Object.getOwnPropertyDescriptor(DatagridWidgetModule, "default")?.value;
@@ -25,32 +25,32 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
   /* @__PURE__ */ React.createElement(
     $Div,
     {
-      key: "p1.MyFirstModule.Radnik_Overview.layoutGrid1",
-      $widgetId: "p1.MyFirstModule.Radnik_Overview.layoutGrid1",
+      key: "p.MyFirstModule.Radnik_Overview.layoutGrid1",
+      $widgetId: "p.MyFirstModule.Radnik_Overview.layoutGrid1",
       class: "mx-name-layoutGrid1 mx-layoutgrid mx-layoutgrid-fluid container-fluid",
       style: void 0,
       content: [
         /* @__PURE__ */ React.createElement(
           $Div,
           {
-            key: "p1.MyFirstModule.Radnik_Overview.layoutGrid1$row0",
-            $widgetId: "p1.MyFirstModule.Radnik_Overview.layoutGrid1$row0",
+            key: "p.MyFirstModule.Radnik_Overview.layoutGrid1$row0",
+            $widgetId: "p.MyFirstModule.Radnik_Overview.layoutGrid1$row0",
             class: "row",
             style: void 0,
             content: [
               /* @__PURE__ */ React.createElement(
                 $Div,
                 {
-                  key: "p1.MyFirstModule.Radnik_Overview.layoutGrid1$row0$column0",
-                  $widgetId: "p1.MyFirstModule.Radnik_Overview.layoutGrid1$row0$column0",
+                  key: "p.MyFirstModule.Radnik_Overview.layoutGrid1$row0$column0",
+                  $widgetId: "p.MyFirstModule.Radnik_Overview.layoutGrid1$row0$column0",
                   class: "col-lg col-md col",
                   style: void 0,
                   content: [
                     /* @__PURE__ */ React.createElement(
                       $Text,
                       {
-                        key: "p1.MyFirstModule.Radnik_Overview.text1",
-                        $widgetId: "p1.MyFirstModule.Radnik_Overview.text1",
+                        key: "p.MyFirstModule.Radnik_Overview.text1",
+                        $widgetId: "p.MyFirstModule.Radnik_Overview.text1",
                         class: "mx-name-text1",
                         style: void 0,
                         caption: selectTranslation([
@@ -64,11 +64,11 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                     /* @__PURE__ */ React.createElement(
                       $Datagrid,
                       {
-                        key: "p1.MyFirstModule.Radnik_Overview.dataGrid2_1",
-                        $widgetId: "p1.MyFirstModule.Radnik_Overview.dataGrid2_1",
+                        key: "p.MyFirstModule.Radnik_Overview.dataGrid2_1",
+                        $widgetId: "p.MyFirstModule.Radnik_Overview.dataGrid2_1",
                         advanced: false,
                         datasource: DatabaseObjectListProperty({
-                          "dataSourceId": "p1.0",
+                          "dataSourceId": "p.0",
                           "entity": "MyFirstModule.Radnik",
                           "operationId": "kuo0GCvMjlmXA52By4aTmw",
                           "sort": []
@@ -76,7 +76,7 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                         refreshInterval: 0,
                         itemSelection: SelectionProperty({
                           "selectionType": "Single",
-                          "dataSourceId": "p1.0"
+                          "dataSourceId": "p.0"
                         }),
                         itemSelectionMethod: "rowClick",
                         itemSelectionMode: "clear",
@@ -92,7 +92,7 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                               "attributeType": "String",
                               "sortable": true,
                               "filterable": true,
-                              "dataSourceId": "p1.0",
+                              "dataSourceId": "p.0",
                               "isList": false
                             }),
                             "content": void 0,
@@ -114,8 +114,8 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                               /* @__PURE__ */ React.createElement(
                                 $DatagridTextFilter,
                                 {
-                                  key: "p1.MyFirstModule.Radnik_Overview.textFilter2",
-                                  $widgetId: "p1.MyFirstModule.Radnik_Overview.textFilter2",
+                                  key: "p.MyFirstModule.Radnik_Overview.textFilter2",
+                                  $widgetId: "p.MyFirstModule.Radnik_Overview.textFilter2",
                                   advanced: false,
                                   defaultValue: void 0,
                                   defaultFilter: "contains",
@@ -169,7 +169,7 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                               "attributeType": "String",
                               "sortable": true,
                               "filterable": true,
-                              "dataSourceId": "p1.0",
+                              "dataSourceId": "p.0",
                               "isList": false
                             }),
                             "content": void 0,
@@ -191,8 +191,8 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                               /* @__PURE__ */ React.createElement(
                                 $DatagridTextFilter,
                                 {
-                                  key: "p1.MyFirstModule.Radnik_Overview.textFilter1",
-                                  $widgetId: "p1.MyFirstModule.Radnik_Overview.textFilter1",
+                                  key: "p.MyFirstModule.Radnik_Overview.textFilter1",
+                                  $widgetId: "p.MyFirstModule.Radnik_Overview.textFilter1",
                                   advanced: false,
                                   defaultValue: void 0,
                                   defaultFilter: "contains",
@@ -246,18 +246,18 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                               "attributeType": "String",
                               "sortable": true,
                               "filterable": true,
-                              "dataSourceId": "p1.0",
+                              "dataSourceId": "p.0",
                               "isList": false
                             }),
                             "content": TemplatedWidgetProperty({
-                              "dataSourceId": "p1.0",
+                              "dataSourceId": "p.0",
                               "editable": false,
                               "children": () => [
                                 /* @__PURE__ */ React.createElement(
                                   $ConditionalVisibilityWrapper,
                                   {
-                                    key: "p1.MyFirstModule.Radnik_Overview.actionButton2$visibility",
-                                    $widgetId: "p1.MyFirstModule.Radnik_Overview.actionButton2$visibility",
+                                    key: "p.MyFirstModule.Radnik_Overview.actionButton2$visibility",
+                                    $widgetId: "p.MyFirstModule.Radnik_Overview.actionButton2$visibility",
                                     visible: ExpressionProperty({
                                       "expression": { "expr": { "type": "function", "name": "_hasSomeRole", "parameters": [{ "type": "literal", "value": "Administrator" }, { "type": "literal", "value": "User" }] }, "args": {} }
                                     }),
@@ -265,9 +265,9 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                       /* @__PURE__ */ React.createElement(
                                         $ActionButton,
                                         {
-                                          key: "p1.MyFirstModule.Radnik_Overview.actionButton2",
-                                          $widgetId: "p1.MyFirstModule.Radnik_Overview.actionButton2",
-                                          buttonId: "p1.MyFirstModule.Radnik_Overview.actionButton2",
+                                          key: "p.MyFirstModule.Radnik_Overview.actionButton2",
+                                          $widgetId: "p.MyFirstModule.Radnik_Overview.actionButton2",
+                                          buttonId: "p.MyFirstModule.Radnik_Overview.actionButton2",
                                           class: "mx-name-actionButton2 btn-lg",
                                           style: void 0,
                                           tabIndex: void 0,
@@ -288,7 +288,7 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                             "icon": { "type": "icon", "iconClass": "mx-icon-lined mx-icon-pencil" }
                                           }),
                                           action: ActionProperty({
-                                            "action": { "type": "openPage", "argMap": { "param$Radnik": { "widget": "p1.MyFirstModule.Radnik_Overview.dataGrid2_1", "source": "object" } }, "config": { "name": "MyFirstModule/Radnik_NewEdit.page.xml", "location": "modal", "resizable": true, "allowedRoles": ["Administrator", "User"] }, "disabledDuringExecution": true },
+                                            "action": { "type": "openPage", "argMap": { "param$Radnik": { "widget": "p.MyFirstModule.Radnik_Overview.dataGrid2_1", "source": "object" } }, "config": { "name": "MyFirstModule/Radnik_NewEdit.page.xml", "location": "modal", "resizable": true, "allowedRoles": ["Administrator", "User"] }, "disabledDuringExecution": true },
                                             "abortOnServerValidation": true
                                           })
                                         }
@@ -299,9 +299,9 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                 /* @__PURE__ */ React.createElement(
                                   $ActionButton,
                                   {
-                                    key: "p1.MyFirstModule.Radnik_Overview.actionButton3",
-                                    $widgetId: "p1.MyFirstModule.Radnik_Overview.actionButton3",
-                                    buttonId: "p1.MyFirstModule.Radnik_Overview.actionButton3",
+                                    key: "p.MyFirstModule.Radnik_Overview.actionButton3",
+                                    $widgetId: "p.MyFirstModule.Radnik_Overview.actionButton3",
+                                    buttonId: "p.MyFirstModule.Radnik_Overview.actionButton3",
                                     class: "mx-name-actionButton3 btn-lg",
                                     style: void 0,
                                     tabIndex: void 0,
@@ -322,7 +322,7 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                       "icon": { "type": "icon", "iconClass": "mx-icon-lined mx-icon-trash-can" }
                                     }),
                                     action: ActionProperty({
-                                      "action": { "type": "deleteObject", "argMap": { "$object": { "widget": "p1.MyFirstModule.Radnik_Overview.dataGrid2_1", "source": "object" } }, "config": { "closePage": false, "operationId": "pr1KZrbFRFqhWK9WXkIoWg" }, "disabledDuringExecution": true },
+                                      "action": { "type": "deleteObject", "argMap": { "$object": { "widget": "p.MyFirstModule.Radnik_Overview.dataGrid2_1", "source": "object" } }, "config": { "closePage": false, "operationId": "pr1KZrbFRFqhWK9WXkIoWg" }, "disabledDuringExecution": true },
                                       "abortOnServerValidation": true
                                     })
                                   }
@@ -390,8 +390,8 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                           /* @__PURE__ */ React.createElement(
                             $ConditionalVisibilityWrapper,
                             {
-                              key: "p1.MyFirstModule.Radnik_Overview.actionButton1$visibility",
-                              $widgetId: "p1.MyFirstModule.Radnik_Overview.actionButton1$visibility",
+                              key: "p.MyFirstModule.Radnik_Overview.actionButton1$visibility",
+                              $widgetId: "p.MyFirstModule.Radnik_Overview.actionButton1$visibility",
                               visible: ExpressionProperty({
                                 "expression": { "expr": { "type": "function", "name": "_hasSomeRole", "parameters": [{ "type": "literal", "value": "Administrator" }, { "type": "literal", "value": "User" }] }, "args": {} }
                               }),
@@ -399,9 +399,9 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                 /* @__PURE__ */ React.createElement(
                                   $ActionButton,
                                   {
-                                    key: "p1.MyFirstModule.Radnik_Overview.actionButton1",
-                                    $widgetId: "p1.MyFirstModule.Radnik_Overview.actionButton1",
-                                    buttonId: "p1.MyFirstModule.Radnik_Overview.actionButton1",
+                                    key: "p.MyFirstModule.Radnik_Overview.actionButton1",
+                                    $widgetId: "p.MyFirstModule.Radnik_Overview.actionButton1",
+                                    buttonId: "p.MyFirstModule.Radnik_Overview.actionButton1",
                                     class: "mx-name-actionButton1",
                                     style: void 0,
                                     tabIndex: void 0,
@@ -475,10 +475,11 @@ const title = selectTranslation([
   "Radnik Overview"
 ]);
 const classes = "layout-atlas layout-atlas-responsive-default";
+const autofocus = "off";
 const style = {};
 const content = {
   ...content$1,
   "Atlas_Core.Atlas_Default.Main": region$Main
 };
 
-export { classes, content, style, title };
+export { autofocus, classes, content, style, title };

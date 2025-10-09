@@ -14,9 +14,9 @@ import { TextProperty } from "mendix/TextProperty";
 import { ValidationProperty } from "mendix/ValidationProperty";
 
 import { ActionButton } from "mendix/widgets/web/ActionButton";
-import * as ComboboxWidgetModule from "C:/Poslovna/e2-Poslovna/PoslovnaProjekat/deployment/web/widgets/com/mendix/widget/web/combobox/Combobox.mjs";
+import * as ComboboxWidgetModule from "C:/Users/Djordje/Desktop/e2-Poslovna/PoslovnaProjekat/deployment/web/widgets/com/mendix/widget/web/combobox/Combobox.mjs";
 const Combobox = Object.getOwnPropertyDescriptor(ComboboxWidgetModule, "Combobox")?.value || Object.getOwnPropertyDescriptor(ComboboxWidgetModule, "default")?.value;   
-import "C:/Poslovna/e2-Poslovna/PoslovnaProjekat/deployment/web/widgets/com/mendix/widget/web/combobox/Combobox.css";
+import "C:/Users/Djordje/Desktop/e2-Poslovna/PoslovnaProjekat/deployment/web/widgets/com/mendix/widget/web/combobox/Combobox.css";
 import { DataView } from "mendix/widgets/web/DataView";
 import { Div } from "mendix/widgets/web/Div";
 import { FormGroup } from "mendix/widgets/web/FormGroup";
@@ -28,28 +28,28 @@ import { content as parentContent } from "../layouts/Atlas_Core.PopupLayout.js";
 const { $Div, $DataView, $FormGroup, $TextBox, $Combobox, $ActionButton } = asPluginWidgets({ Div, DataView, FormGroup, TextBox, Combobox, ActionButton });
 
 const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
-    <$Div key="p0.MyFirstModule.Radnik_NewEdit.layoutGrid1"
-        $widgetId="p0.MyFirstModule.Radnik_NewEdit.layoutGrid1"
+    <$Div key="p.MyFirstModule.Radnik_NewEdit.layoutGrid1"
+        $widgetId="p.MyFirstModule.Radnik_NewEdit.layoutGrid1"
         class={"mx-name-layoutGrid1 mx-layoutgrid mx-layoutgrid-fluid container-fluid"}
         style={undefined}
         content={[
-            <$Div key="p0.MyFirstModule.Radnik_NewEdit.layoutGrid1$row0"
-                $widgetId="p0.MyFirstModule.Radnik_NewEdit.layoutGrid1$row0"
+            <$Div key="p.MyFirstModule.Radnik_NewEdit.layoutGrid1$row0"
+                $widgetId="p.MyFirstModule.Radnik_NewEdit.layoutGrid1$row0"
                 class={"row"}
                 style={undefined}
                 content={[
-                    <$Div key="p0.MyFirstModule.Radnik_NewEdit.layoutGrid1$row0$column0"
-                        $widgetId="p0.MyFirstModule.Radnik_NewEdit.layoutGrid1$row0$column0"
+                    <$Div key="p.MyFirstModule.Radnik_NewEdit.layoutGrid1$row0$column0"
+                        $widgetId="p.MyFirstModule.Radnik_NewEdit.layoutGrid1$row0$column0"
                         class={"col-lg col-md col"}
                         style={undefined}
                         content={[
-                            <$DataView key="p0.MyFirstModule.Radnik_NewEdit.dataView1"
-                                $widgetId="p0.MyFirstModule.Radnik_NewEdit.dataView1"
+                            <$DataView key="p.MyFirstModule.Radnik_NewEdit.dataView1"
+                                $widgetId="p.MyFirstModule.Radnik_NewEdit.dataView1"
                                 class={"mx-name-dataView1 form-horizontal"}
                                 style={undefined}
                                 tabIndex={undefined}
                                 object={AssociationObjectProperty({
-                                    "dataSourceId": "p0.13",
+                                    "dataSourceId": "p.13",
                                     "scope": "$Radnik",
                                     "editable": true
                                 })}
@@ -59,15 +59,15 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                     ])
                                 })}
                                 body={[
-                                    <$FormGroup key="p0.MyFirstModule.Radnik_NewEdit.textBox1$formGroup"
-                                        $widgetId="p0.MyFirstModule.Radnik_NewEdit.textBox1$formGroup"
+                                    <$FormGroup key="p.MyFirstModule.Radnik_NewEdit.textBox1$formGroup"
+                                        $widgetId="p.MyFirstModule.Radnik_NewEdit.textBox1$formGroup"
                                         class={"mx-name-textBox1 mx-textbox"}
                                         style={undefined}
                                         control={[
-                                            <$TextBox key="p0.MyFirstModule.Radnik_NewEdit.textBox1"
-                                                $widgetId="p0.MyFirstModule.Radnik_NewEdit.textBox1"
+                                            <$TextBox key="p.MyFirstModule.Radnik_NewEdit.textBox1"
+                                                $widgetId="p.MyFirstModule.Radnik_NewEdit.textBox1"
                                                 inputValue={AttributeProperty({
-                                                    "scope": "p0.MyFirstModule.Radnik_NewEdit.dataView1",
+                                                    "scope": "p.MyFirstModule.Radnik_NewEdit.dataView1",
                                                     "path": "",
                                                     "entity": "MyFirstModule.Radnik",
                                                     "attribute": "Ime",
@@ -95,7 +95,7 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                                 ariaRequired={true}
                                                 tabIndex={undefined}
                                                 id={DerivedUniqueIdProperty({
-                                                    "widgetId": "p0.MyFirstModule.Radnik_NewEdit.textBox1"
+                                                    "widgetId": "p.MyFirstModule.Radnik_NewEdit.textBox1"
                                                 })} />
                                         ]}
                                         caption={t([
@@ -104,22 +104,22 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                             })
                                         ])}
                                         labelFor={DerivedUniqueIdProperty({
-                                            "widgetId": "p0.MyFirstModule.Radnik_NewEdit.textBox1"
+                                            "widgetId": "p.MyFirstModule.Radnik_NewEdit.textBox1"
                                         })}
                                         width={3}
                                         orientation={"horizontal"}
                                         hasError={ValidationProperty({
-                                            "inputWidgetId": "p0.MyFirstModule.Radnik_NewEdit.textBox1"
+                                            "inputWidgetId": "p.MyFirstModule.Radnik_NewEdit.textBox1"
                                         })} />,
-                                    <$FormGroup key="p0.MyFirstModule.Radnik_NewEdit.textBox2$formGroup"
-                                        $widgetId="p0.MyFirstModule.Radnik_NewEdit.textBox2$formGroup"
+                                    <$FormGroup key="p.MyFirstModule.Radnik_NewEdit.textBox2$formGroup"
+                                        $widgetId="p.MyFirstModule.Radnik_NewEdit.textBox2$formGroup"
                                         class={"mx-name-textBox2 mx-textbox"}
                                         style={undefined}
                                         control={[
-                                            <$TextBox key="p0.MyFirstModule.Radnik_NewEdit.textBox2"
-                                                $widgetId="p0.MyFirstModule.Radnik_NewEdit.textBox2"
+                                            <$TextBox key="p.MyFirstModule.Radnik_NewEdit.textBox2"
+                                                $widgetId="p.MyFirstModule.Radnik_NewEdit.textBox2"
                                                 inputValue={AttributeProperty({
-                                                    "scope": "p0.MyFirstModule.Radnik_NewEdit.dataView1",
+                                                    "scope": "p.MyFirstModule.Radnik_NewEdit.dataView1",
                                                     "path": "",
                                                     "entity": "MyFirstModule.Radnik",
                                                     "attribute": "Prezime",
@@ -147,7 +147,7 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                                 ariaRequired={true}
                                                 tabIndex={undefined}
                                                 id={DerivedUniqueIdProperty({
-                                                    "widgetId": "p0.MyFirstModule.Radnik_NewEdit.textBox2"
+                                                    "widgetId": "p.MyFirstModule.Radnik_NewEdit.textBox2"
                                                 })} />
                                         ]}
                                         caption={t([
@@ -156,20 +156,20 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                             })
                                         ])}
                                         labelFor={DerivedUniqueIdProperty({
-                                            "widgetId": "p0.MyFirstModule.Radnik_NewEdit.textBox2"
+                                            "widgetId": "p.MyFirstModule.Radnik_NewEdit.textBox2"
                                         })}
                                         width={3}
                                         orientation={"horizontal"}
                                         hasError={ValidationProperty({
-                                            "inputWidgetId": "p0.MyFirstModule.Radnik_NewEdit.textBox2"
+                                            "inputWidgetId": "p.MyFirstModule.Radnik_NewEdit.textBox2"
                                         })} />,
-                                    <$FormGroup key="p0.MyFirstModule.Radnik_NewEdit.comboBox1$formGroup"
-                                        $widgetId="p0.MyFirstModule.Radnik_NewEdit.comboBox1$formGroup"
+                                    <$FormGroup key="p.MyFirstModule.Radnik_NewEdit.comboBox1$formGroup"
+                                        $widgetId="p.MyFirstModule.Radnik_NewEdit.comboBox1$formGroup"
                                         class={"mx-name-comboBox1"}
                                         style={undefined}
                                         control={[
-                                            <$Combobox key="p0.MyFirstModule.Radnik_NewEdit.comboBox1"
-                                                $widgetId="p0.MyFirstModule.Radnik_NewEdit.comboBox1"
+                                            <$Combobox key="p.MyFirstModule.Radnik_NewEdit.comboBox1"
+                                                $widgetId="p.MyFirstModule.Radnik_NewEdit.comboBox1"
                                                 source={"context"}
                                                 optionsSourceType={"association"}
                                                 optionsSourceDatabaseDataSource={undefined}
@@ -181,14 +181,14 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                                     "path": "",
                                                     "attribute": "MyFirstModule.Radnik_Preduzece",
                                                     "endpointEntity": "MyFirstModule.Preduzece",
-                                                    "selectableObjectsId": "p0.0",
-                                                    "scope": "p0.MyFirstModule.Radnik_NewEdit.dataView1",
+                                                    "selectableObjectsId": "p.0",
+                                                    "scope": "p.MyFirstModule.Radnik_NewEdit.dataView1",
                                                     "onChange": { "type": "doNothing", "argMap": {}, "config": {}, "disabledDuringExecution": false }
                                                 })}
                                                 optionsSourceAssociationDataSource={DatabaseObjectListProperty({
-                                                    "dataSourceId": "p0.0",
+                                                    "dataSourceId": "p.0",
                                                     "entity": "MyFirstModule.Preduzece",
-                                                    "scope": "p0.MyFirstModule.Radnik_NewEdit.dataView1",
+                                                    "scope": "p.MyFirstModule.Radnik_NewEdit.dataView1",
                                                     "operationId": "FhnRjzyWzF+cx4eluBjEpQ",
                                                     "sort": []
                                                 })}
@@ -200,7 +200,7 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                                     "attributeType": "String",
                                                     "sortable": true,
                                                     "filterable": true,
-                                                    "dataSourceId": "p0.0",
+                                                    "dataSourceId": "p.0",
                                                     "isList": false
                                                 })}
                                                 optionsSourceAssociationCaptionExpression={undefined}
@@ -265,7 +265,7 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                                 loadingType={"spinner"}
                                                 tabIndex={undefined}
                                                 id={DerivedUniqueIdProperty({
-                                                    "widgetId": "p0.MyFirstModule.Radnik_NewEdit.comboBox1"
+                                                    "widgetId": "p.MyFirstModule.Radnik_NewEdit.comboBox1"
                                                 })} />
                                         ]}
                                         caption={t([
@@ -274,19 +274,19 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                             })
                                         ])}
                                         labelFor={DerivedUniqueIdProperty({
-                                            "widgetId": "p0.MyFirstModule.Radnik_NewEdit.comboBox1"
+                                            "widgetId": "p.MyFirstModule.Radnik_NewEdit.comboBox1"
                                         })}
                                         width={3}
                                         orientation={"horizontal"}
                                         hasError={ValidationProperty({
-                                            "inputWidgetId": "p0.MyFirstModule.Radnik_NewEdit.comboBox1"
+                                            "inputWidgetId": "p.MyFirstModule.Radnik_NewEdit.comboBox1"
                                         })} />
                                 ]}
                                 hideFooter={false}
                                 footer={[
-                                    <$ActionButton key="p0.MyFirstModule.Radnik_NewEdit.actionButton1"
-                                        $widgetId="p0.MyFirstModule.Radnik_NewEdit.actionButton1"
-                                        buttonId={"p0.MyFirstModule.Radnik_NewEdit.actionButton1"}
+                                    <$ActionButton key="p.MyFirstModule.Radnik_NewEdit.actionButton1"
+                                        $widgetId="p.MyFirstModule.Radnik_NewEdit.actionButton1"
+                                        buttonId={"p.MyFirstModule.Radnik_NewEdit.actionButton1"}
                                         class={"mx-name-actionButton1"}
                                         style={undefined}
                                         tabIndex={undefined}
@@ -305,12 +305,12 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                         })}
                                         icon={undefined}
                                         action={ActionProperty({
-                                            "action": { "type": "saveChanges", "argMap": { "$object": { "widget": "p0.MyFirstModule.Radnik_NewEdit.dataView1", "source": "object" } }, "config": { "operationId": "C9dREC+C2lKMXSVoSAC5FA", "closePage": true }, "disabledDuringExecution": true },
+                                            "action": { "type": "saveChanges", "argMap": { "$object": { "widget": "p.MyFirstModule.Radnik_NewEdit.dataView1", "source": "object" } }, "config": { "operationId": "C9dREC+C2lKMXSVoSAC5FA", "closePage": true }, "disabledDuringExecution": true },
                                             "abortOnServerValidation": true
                                         })} />,
-                                    <$ActionButton key="p0.MyFirstModule.Radnik_NewEdit.actionButton2"
-                                        $widgetId="p0.MyFirstModule.Radnik_NewEdit.actionButton2"
-                                        buttonId={"p0.MyFirstModule.Radnik_NewEdit.actionButton2"}
+                                    <$ActionButton key="p.MyFirstModule.Radnik_NewEdit.actionButton2"
+                                        $widgetId="p.MyFirstModule.Radnik_NewEdit.actionButton2"
+                                        buttonId={"p.MyFirstModule.Radnik_NewEdit.actionButton2"}
                                         class={"mx-name-actionButton2"}
                                         style={undefined}
                                         tabIndex={undefined}
@@ -344,6 +344,7 @@ export const title = t([
 
 export const classes = "";
 
+export const autofocus = "off";
 export const cancelChangesOperationId = "cFby9phGmleTrMJeL3J3Rw";
 export const style = {};
 export const content = { ...parentContent,

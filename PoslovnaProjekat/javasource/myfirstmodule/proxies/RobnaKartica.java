@@ -29,7 +29,6 @@ public class RobnaKartica implements com.mendix.systemwideinterfaces.core.IEntit
 		prometIzlazaVrednost("prometIzlazaVrednost"),
 		ukupnaVrednost("ukupnaVrednost"),
 		cena("cena"),
-		rezervisanaKolicina("rezervisanaKolicina"),
 		RobnaKartica_Magacin("MyFirstModule.RobnaKartica_Magacin"),
 		RobnaKartica_RobaIliUsluga("MyFirstModule.RobnaKartica_RobaIliUsluga"),
 		RobnaKartica_PoslovnaGodina("MyFirstModule.RobnaKartica_PoslovnaGodina");
@@ -415,42 +414,6 @@ public class RobnaKartica implements com.mendix.systemwideinterfaces.core.IEntit
 	public final void setcena(com.mendix.systemwideinterfaces.core.IContext context, java.math.BigDecimal cena)
 	{
 		getMendixObject().setValue(context, MemberNames.cena.toString(), cena);
-	}
-
-	/**
-	 * @return value of rezervisanaKolicina
-	 */
-	public final java.math.BigDecimal getrezervisanaKolicina()
-	{
-		return getrezervisanaKolicina(getContext());
-	}
-
-	/**
-	 * @param context
-	 * @return value of rezervisanaKolicina
-	 */
-	public final java.math.BigDecimal getrezervisanaKolicina(com.mendix.systemwideinterfaces.core.IContext context)
-	{
-		return (java.math.BigDecimal) getMendixObject().getValue(context, MemberNames.rezervisanaKolicina.toString());
-	}
-
-	/**
-	 * Set value of rezervisanaKolicina
-	 * @param rezervisanakolicina
-	 */
-	public final void setrezervisanaKolicina(java.math.BigDecimal rezervisanakolicina)
-	{
-		setrezervisanaKolicina(getContext(), rezervisanakolicina);
-	}
-
-	/**
-	 * Set value of rezervisanaKolicina
-	 * @param context
-	 * @param rezervisanakolicina
-	 */
-	public final void setrezervisanaKolicina(com.mendix.systemwideinterfaces.core.IContext context, java.math.BigDecimal rezervisanakolicina)
-	{
-		getMendixObject().setValue(context, MemberNames.rezervisanaKolicina.toString(), rezervisanakolicina);
 	}
 
 	/**

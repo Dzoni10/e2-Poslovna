@@ -22,28 +22,28 @@ import { content as parentContent } from "../layouts/Atlas_Core.PopupLayout.js";
 const { $Div, $DataView, $FormGroup, $TextBox, $ActionButton } = asPluginWidgets({ Div, DataView, FormGroup, TextBox, ActionButton });
 
 const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
-    <$Div key="p1.MyFirstModule.Preduzece_NewEdit.layoutGrid1"
-        $widgetId="p1.MyFirstModule.Preduzece_NewEdit.layoutGrid1"
+    <$Div key="p.MyFirstModule.Preduzece_NewEdit.layoutGrid1"
+        $widgetId="p.MyFirstModule.Preduzece_NewEdit.layoutGrid1"
         class={"mx-name-layoutGrid1 mx-layoutgrid mx-layoutgrid-fluid container-fluid"}
         style={undefined}
         content={[
-            <$Div key="p1.MyFirstModule.Preduzece_NewEdit.layoutGrid1$row0"
-                $widgetId="p1.MyFirstModule.Preduzece_NewEdit.layoutGrid1$row0"
+            <$Div key="p.MyFirstModule.Preduzece_NewEdit.layoutGrid1$row0"
+                $widgetId="p.MyFirstModule.Preduzece_NewEdit.layoutGrid1$row0"
                 class={"row"}
                 style={undefined}
                 content={[
-                    <$Div key="p1.MyFirstModule.Preduzece_NewEdit.layoutGrid1$row0$column0"
-                        $widgetId="p1.MyFirstModule.Preduzece_NewEdit.layoutGrid1$row0$column0"
+                    <$Div key="p.MyFirstModule.Preduzece_NewEdit.layoutGrid1$row0$column0"
+                        $widgetId="p.MyFirstModule.Preduzece_NewEdit.layoutGrid1$row0$column0"
                         class={"col-lg col-md col"}
                         style={undefined}
                         content={[
-                            <$DataView key="p1.MyFirstModule.Preduzece_NewEdit.dataView1"
-                                $widgetId="p1.MyFirstModule.Preduzece_NewEdit.dataView1"
+                            <$DataView key="p.MyFirstModule.Preduzece_NewEdit.dataView1"
+                                $widgetId="p.MyFirstModule.Preduzece_NewEdit.dataView1"
                                 class={"mx-name-dataView1 form-horizontal"}
                                 style={undefined}
                                 tabIndex={undefined}
                                 object={AssociationObjectProperty({
-                                    "dataSourceId": "p1.12",
+                                    "dataSourceId": "p.12",
                                     "scope": "$Preduzece",
                                     "editable": true
                                 })}
@@ -53,15 +53,15 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                     ])
                                 })}
                                 body={[
-                                    <$FormGroup key="p1.MyFirstModule.Preduzece_NewEdit.textBox1$formGroup"
-                                        $widgetId="p1.MyFirstModule.Preduzece_NewEdit.textBox1$formGroup"
+                                    <$FormGroup key="p.MyFirstModule.Preduzece_NewEdit.textBox1$formGroup"
+                                        $widgetId="p.MyFirstModule.Preduzece_NewEdit.textBox1$formGroup"
                                         class={"mx-name-textBox1 mx-textbox"}
                                         style={undefined}
                                         control={[
-                                            <$TextBox key="p1.MyFirstModule.Preduzece_NewEdit.textBox1"
-                                                $widgetId="p1.MyFirstModule.Preduzece_NewEdit.textBox1"
+                                            <$TextBox key="p.MyFirstModule.Preduzece_NewEdit.textBox1"
+                                                $widgetId="p.MyFirstModule.Preduzece_NewEdit.textBox1"
                                                 inputValue={AttributeProperty({
-                                                    "scope": "p1.MyFirstModule.Preduzece_NewEdit.dataView1",
+                                                    "scope": "p.MyFirstModule.Preduzece_NewEdit.dataView1",
                                                     "path": "",
                                                     "entity": "MyFirstModule.Preduzece",
                                                     "attribute": "nazivPreduzeca",
@@ -89,7 +89,7 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                                 ariaRequired={true}
                                                 tabIndex={undefined}
                                                 id={DerivedUniqueIdProperty({
-                                                    "widgetId": "p1.MyFirstModule.Preduzece_NewEdit.textBox1"
+                                                    "widgetId": "p.MyFirstModule.Preduzece_NewEdit.textBox1"
                                                 })} />
                                         ]}
                                         caption={t([
@@ -98,22 +98,22 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                             })
                                         ])}
                                         labelFor={DerivedUniqueIdProperty({
-                                            "widgetId": "p1.MyFirstModule.Preduzece_NewEdit.textBox1"
+                                            "widgetId": "p.MyFirstModule.Preduzece_NewEdit.textBox1"
                                         })}
                                         width={3}
                                         orientation={"horizontal"}
                                         hasError={ValidationProperty({
-                                            "inputWidgetId": "p1.MyFirstModule.Preduzece_NewEdit.textBox1"
+                                            "inputWidgetId": "p.MyFirstModule.Preduzece_NewEdit.textBox1"
                                         })} />,
-                                    <$FormGroup key="p1.MyFirstModule.Preduzece_NewEdit.textBox2$formGroup"
-                                        $widgetId="p1.MyFirstModule.Preduzece_NewEdit.textBox2$formGroup"
+                                    <$FormGroup key="p.MyFirstModule.Preduzece_NewEdit.textBox2$formGroup"
+                                        $widgetId="p.MyFirstModule.Preduzece_NewEdit.textBox2$formGroup"
                                         class={"mx-name-textBox2 mx-textbox"}
                                         style={undefined}
                                         control={[
-                                            <$TextBox key="p1.MyFirstModule.Preduzece_NewEdit.textBox2"
-                                                $widgetId="p1.MyFirstModule.Preduzece_NewEdit.textBox2"
+                                            <$TextBox key="p.MyFirstModule.Preduzece_NewEdit.textBox2"
+                                                $widgetId="p.MyFirstModule.Preduzece_NewEdit.textBox2"
                                                 inputValue={AttributeProperty({
-                                                    "scope": "p1.MyFirstModule.Preduzece_NewEdit.dataView1",
+                                                    "scope": "p.MyFirstModule.Preduzece_NewEdit.dataView1",
                                                     "path": "",
                                                     "entity": "MyFirstModule.Preduzece",
                                                     "attribute": "PIB",
@@ -141,7 +141,7 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                                 ariaRequired={undefined}
                                                 tabIndex={undefined}
                                                 id={DerivedUniqueIdProperty({
-                                                    "widgetId": "p1.MyFirstModule.Preduzece_NewEdit.textBox2"
+                                                    "widgetId": "p.MyFirstModule.Preduzece_NewEdit.textBox2"
                                                 })} />
                                         ]}
                                         caption={t([
@@ -150,22 +150,22 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                             })
                                         ])}
                                         labelFor={DerivedUniqueIdProperty({
-                                            "widgetId": "p1.MyFirstModule.Preduzece_NewEdit.textBox2"
+                                            "widgetId": "p.MyFirstModule.Preduzece_NewEdit.textBox2"
                                         })}
                                         width={3}
                                         orientation={"horizontal"}
                                         hasError={ValidationProperty({
-                                            "inputWidgetId": "p1.MyFirstModule.Preduzece_NewEdit.textBox2"
+                                            "inputWidgetId": "p.MyFirstModule.Preduzece_NewEdit.textBox2"
                                         })} />,
-                                    <$FormGroup key="p1.MyFirstModule.Preduzece_NewEdit.textBox3$formGroup"
-                                        $widgetId="p1.MyFirstModule.Preduzece_NewEdit.textBox3$formGroup"
+                                    <$FormGroup key="p.MyFirstModule.Preduzece_NewEdit.textBox3$formGroup"
+                                        $widgetId="p.MyFirstModule.Preduzece_NewEdit.textBox3$formGroup"
                                         class={"mx-name-textBox3 mx-textbox"}
                                         style={undefined}
                                         control={[
-                                            <$TextBox key="p1.MyFirstModule.Preduzece_NewEdit.textBox3"
-                                                $widgetId="p1.MyFirstModule.Preduzece_NewEdit.textBox3"
+                                            <$TextBox key="p.MyFirstModule.Preduzece_NewEdit.textBox3"
+                                                $widgetId="p.MyFirstModule.Preduzece_NewEdit.textBox3"
                                                 inputValue={AttributeProperty({
-                                                    "scope": "p1.MyFirstModule.Preduzece_NewEdit.dataView1",
+                                                    "scope": "p.MyFirstModule.Preduzece_NewEdit.dataView1",
                                                     "path": "",
                                                     "entity": "MyFirstModule.Preduzece",
                                                     "attribute": "adresaPreduzeca",
@@ -193,7 +193,7 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                                 ariaRequired={true}
                                                 tabIndex={undefined}
                                                 id={DerivedUniqueIdProperty({
-                                                    "widgetId": "p1.MyFirstModule.Preduzece_NewEdit.textBox3"
+                                                    "widgetId": "p.MyFirstModule.Preduzece_NewEdit.textBox3"
                                                 })} />
                                         ]}
                                         caption={t([
@@ -202,19 +202,19 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                             })
                                         ])}
                                         labelFor={DerivedUniqueIdProperty({
-                                            "widgetId": "p1.MyFirstModule.Preduzece_NewEdit.textBox3"
+                                            "widgetId": "p.MyFirstModule.Preduzece_NewEdit.textBox3"
                                         })}
                                         width={3}
                                         orientation={"horizontal"}
                                         hasError={ValidationProperty({
-                                            "inputWidgetId": "p1.MyFirstModule.Preduzece_NewEdit.textBox3"
+                                            "inputWidgetId": "p.MyFirstModule.Preduzece_NewEdit.textBox3"
                                         })} />
                                 ]}
                                 hideFooter={false}
                                 footer={[
-                                    <$ActionButton key="p1.MyFirstModule.Preduzece_NewEdit.actionButton1"
-                                        $widgetId="p1.MyFirstModule.Preduzece_NewEdit.actionButton1"
-                                        buttonId={"p1.MyFirstModule.Preduzece_NewEdit.actionButton1"}
+                                    <$ActionButton key="p.MyFirstModule.Preduzece_NewEdit.actionButton1"
+                                        $widgetId="p.MyFirstModule.Preduzece_NewEdit.actionButton1"
+                                        buttonId={"p.MyFirstModule.Preduzece_NewEdit.actionButton1"}
                                         class={"mx-name-actionButton1"}
                                         style={undefined}
                                         tabIndex={undefined}
@@ -233,12 +233,12 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                         })}
                                         icon={undefined}
                                         action={ActionProperty({
-                                            "action": { "type": "saveChanges", "argMap": { "$object": { "widget": "p1.MyFirstModule.Preduzece_NewEdit.dataView1", "source": "object" } }, "config": { "operationId": "4txvCf1Ue1G5Ca4YrBNqCA", "closePage": true }, "disabledDuringExecution": true },
+                                            "action": { "type": "saveChanges", "argMap": { "$object": { "widget": "p.MyFirstModule.Preduzece_NewEdit.dataView1", "source": "object" } }, "config": { "operationId": "4txvCf1Ue1G5Ca4YrBNqCA", "closePage": true }, "disabledDuringExecution": true },
                                             "abortOnServerValidation": true
                                         })} />,
-                                    <$ActionButton key="p1.MyFirstModule.Preduzece_NewEdit.actionButton2"
-                                        $widgetId="p1.MyFirstModule.Preduzece_NewEdit.actionButton2"
-                                        buttonId={"p1.MyFirstModule.Preduzece_NewEdit.actionButton2"}
+                                    <$ActionButton key="p.MyFirstModule.Preduzece_NewEdit.actionButton2"
+                                        $widgetId="p.MyFirstModule.Preduzece_NewEdit.actionButton2"
+                                        buttonId={"p.MyFirstModule.Preduzece_NewEdit.actionButton2"}
                                         class={"mx-name-actionButton2"}
                                         style={undefined}
                                         tabIndex={undefined}
@@ -272,6 +272,7 @@ export const title = t([
 
 export const classes = "";
 
+export const autofocus = "off";
 export const cancelChangesOperationId = "a6rVzx68H1mnMnyxu8WkKg";
 export const style = {};
 export const content = { ...parentContent,

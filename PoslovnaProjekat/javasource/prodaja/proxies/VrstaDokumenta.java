@@ -6,8 +6,8 @@ package prodaja.proxies;
 
 public enum VrstaDokumenta
 {
-	Profaktura("11a83311-e438-4025-bc91-2630643f4c91"),
-	Faktura("044ed386-3f14-4755-ab88-5668ccd8ab0c");
+	Faktura("f3c0600c-357d-4fb7-b7e6-b05cb591873b"),
+	Profaktura("e88ab307-c39b-4b91-8390-85039c101688");
 
 	private final java.lang.String i18nCaptionKey;
 	

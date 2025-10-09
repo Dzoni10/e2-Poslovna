@@ -1,58 +1,18 @@
-<<<<<<< HEAD
-import { reactExports, asPluginWidgets, selectTranslation } from '../index-JDXCDs53.js';
-import { PageFragment, ExpressionProperty } from '../ScrollContainer-BMEt46hD.js';
-import { DatabaseObjectListProperty } from '../CTcC6PjV-Zoc9mpUp.js';
-import { ListAttributeProperty } from '../ListAttributeProperty-BGCislj4.js';
-import { ListExpressionProperty } from '../ListExpressionProperty-BJu92AGp.js';
-import { Container, Text } from '../Image-D55d_j2j.js';
-import { DatagridWidgetModule } from '../Datagrid-1ozoQRRx.js';
-import { Div } from '../Div-CbKV9nto.js';
-import { content as content$1 } from '../Atlas_Core.Atlas_Default-BcLwJ3TJ.js';
-import '../uEIG9e6s-D5bs4rlT.js';
-import '../ActionButton-CnZtpka2.js';
-import '../D5tDSKpV-NCto3GtK.js';
-import '../InlineText-BhumBKcU.js';
-import '../WebIconProperty-Bon9K84_.js';
-import '../WebStaticImageProperty-Cl4Gen30.js';
-=======
-<<<<<<< Updated upstream
-import { reactExports, asPluginWidgets, selectTranslation } from '../index-BjSpTlX0.js';
-import { PageFragment, ExpressionProperty } from '../ScrollContainer-DYUj9_Ay.js';
-import { DatabaseObjectListProperty } from '../XQdQuDNG-DT5jvNDi.js';
-import { ListAttributeProperty } from '../ListAttributeProperty-BqFtOePf.js';
-import { ListExpressionProperty } from '../ListExpressionProperty-8MjkvJ9b.js';
-import { Container, Text } from '../Text-CHYWFktZ.js';
-import * as DatagridWidgetModule from '../../../../../../../../Poslovna/e2-Poslovna/PoslovnaProjekat/deployment/web/widgets/com/mendix/widget/web/datagrid/Datagrid.mjs';
-import { Div } from '../Div-Dyf4zdHI.js';
-import { content as content$1 } from '../Atlas_Core.Atlas_Default-C-ZwRMe1.js';
-import '../BkqAssms-D3I0Q7ya.js';
-import '../ActionButton-dNbAsczi.js';
-import '../77kgvjgm-4HZvSliz.js';
-import '../InlineText-BMWFPLMA.js';
-import '../WebIconProperty-B82XOhEa.js';
-import '../WebStaticImageProperty-CFK2IFXG.js';
-import '../../../../../../../../Poslovna/e2-Poslovna/PoslovnaProjekat/deployment/web/widgets/com/mendix/widget/web/image/Image.mjs';
-import '../../../../../../../../Poslovna/e2-Poslovna/PoslovnaProjekat/deployment/web/widgets/com/mendix/widget/web/image/Image.css';
-import '../../../../../../../../Poslovna/e2-Poslovna/PoslovnaProjekat/deployment/web/widgets/com/mendix/widget/web/languageselector/LanguageSelector.mjs';
-import '../../../../../../../../Poslovna/e2-Poslovna/PoslovnaProjekat/deployment/web/widgets/com/mendix/widget/web/languageselector/LanguageSelector.css';
-=======
-import { reactExports, asPluginWidgets, selectTranslation } from '../index-DRM94Sf-.js';
-import { PageFragment, ExpressionProperty } from '../ScrollContainer-LSQoMZk3.js';
-import { DatabaseObjectListProperty } from '../XQdQuDNG-BIL054Xu.js';
-import { ListAttributeProperty } from '../ListAttributeProperty-BRLhJBGz.js';
-import { ListExpressionProperty } from '../ListExpressionProperty-Oai9lB4H.js';
-import { Container, Text } from '../Image-DMmMe595.js';
-import { DatagridWidgetModule } from '../Datagrid-Ct9FWUdb.js';
-import { Div } from '../Div-DOhBQ24X.js';
-import { content as content$1 } from '../Atlas_Core.Atlas_Default-CIKgqGL7.js';
-import '../BkqAssms-a3v8x28y.js';
-import '../ActionButton-Vn_V_FOy.js';
-import '../77kgvjgm-Ckrt0mx6.js';
-import '../InlineText-Jv0dr_pn.js';
-import '../WebIconProperty-CkJqYHVz.js';
-import '../WebStaticImageProperty-Dq4ynMoj.js';
->>>>>>> Stashed changes
->>>>>>> feat/sales-domain
+import { reactExports, asPluginWidgets, selectTranslation } from '../index-9YRUqoZR.js';
+import { PageFragment, ExpressionProperty } from '../ScrollContainer-BSTS-pb7.js';
+import { DatabaseObjectListProperty } from '../XQdQuDNG-DOzAOCvU.js';
+import { ListAttributeProperty } from '../ListAttributeProperty-daqfkgGj.js';
+import { ListExpressionProperty } from '../ListExpressionProperty-woJl_eg3.js';
+import { Container, Text } from '../Image-DP5udpmp.js';
+import { DatagridWidgetModule } from '../Datagrid-CoF3q784.js';
+import { Div } from '../Div-BEtJmTkn.js';
+import { content as content$1 } from '../Atlas_Core.Atlas_Default-DWMpWEK3.js';
+import '../BkqAssms-CUfoyzkd.js';
+import '../ActionButton-dhEFVOBy.js';
+import '../77kgvjgm-_yhfSwqC.js';
+import '../InlineText-CCt9-DhP.js';
+import '../WebIconProperty-DZSUe3JO.js';
+import '../WebStaticImageProperty-l2spNxXU.js';
 
 const React = { createElement: reactExports.createElement };
 const Datagrid = Object.getOwnPropertyDescriptor(DatagridWidgetModule, "Datagrid")?.value || Object.getOwnPropertyDescriptor(DatagridWidgetModule, "default")?.value;

@@ -29,37 +29,13 @@ import { content as parentContent } from "../layouts/Atlas_Core.Atlas_Default.js
 const { $Container, $Div, $Text, $Datagrid, $DatagridTextFilter, $DatagridDateFilter, $ActionButton } = asPluginWidgets({ Container, Div, Text, Datagrid, DatagridTextFilter, DatagridDateFilter, ActionButton });
 
 const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
-<<<<<<< HEAD
-    <$Container key="p3.Administration.ActiveSessions.container1"
-        $widgetId="p3.Administration.ActiveSessions.container1"
-=======
     <$Container key="p.Administration.ActiveSessions.container1"
         $widgetId="p.Administration.ActiveSessions.container1"
->>>>>>> feat/sales-domain
         class={"mx-name-container1 pageheader pageheader-fullwidth"}
         style={undefined}
         renderMode={"div"}
         onClick={undefined}
         content={[
-<<<<<<< HEAD
-            <$Div key="p3.Administration.ActiveSessions.layoutGrid1"
-                $widgetId="p3.Administration.ActiveSessions.layoutGrid1"
-                class={"mx-name-layoutGrid1 mx-layoutgrid mx-layoutgrid-fluid container-fluid"}
-                style={undefined}
-                content={[
-                    <$Div key="p3.Administration.ActiveSessions.layoutGrid1$row0"
-                        $widgetId="p3.Administration.ActiveSessions.layoutGrid1$row0"
-                        class={"row"}
-                        style={undefined}
-                        content={[
-                            <$Div key="p3.Administration.ActiveSessions.layoutGrid1$row0$column0"
-                                $widgetId="p3.Administration.ActiveSessions.layoutGrid1$row0$column0"
-                                class={"col-lg-12 col-md-12 col-12"}
-                                style={undefined}
-                                content={[
-                                    <$Text key="p3.Administration.ActiveSessions.label1"
-                                        $widgetId="p3.Administration.ActiveSessions.label1"
-=======
             <$Div key="p.Administration.ActiveSessions.layoutGrid1"
                 $widgetId="p.Administration.ActiveSessions.layoutGrid1"
                 class={"mx-name-layoutGrid1 mx-layoutgrid mx-layoutgrid-fluid container-fluid"}
@@ -77,7 +53,6 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                 content={[
                                     <$Text key="p.Administration.ActiveSessions.label1"
                                         $widgetId="p.Administration.ActiveSessions.label1"
->>>>>>> feat/sales-domain
                                         class={"mx-name-label1 pageheader-title"}
                                         style={undefined}
                                         caption={t([
@@ -91,28 +66,6 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                 ]} />
         ]}
         ariaHidden={false} />,
-<<<<<<< HEAD
-    <$Div key="p3.Administration.ActiveSessions.layoutGrid2"
-        $widgetId="p3.Administration.ActiveSessions.layoutGrid2"
-        class={"mx-name-layoutGrid2 mx-layoutgrid mx-layoutgrid-fluid container-fluid"}
-        style={undefined}
-        content={[
-            <$Div key="p3.Administration.ActiveSessions.layoutGrid2$row0"
-                $widgetId="p3.Administration.ActiveSessions.layoutGrid2$row0"
-                class={"row"}
-                style={undefined}
-                content={[
-                    <$Div key="p3.Administration.ActiveSessions.layoutGrid2$row0$column0"
-                        $widgetId="p3.Administration.ActiveSessions.layoutGrid2$row0$column0"
-                        class={"col-lg-12 col-md-12 col-12"}
-                        style={undefined}
-                        content={[
-                            <$Datagrid key="p3.Administration.ActiveSessions.dataGrid21"
-                                $widgetId="p3.Administration.ActiveSessions.dataGrid21"
-                                advanced={false}
-                                datasource={DatabaseObjectListProperty({
-                                    "dataSourceId": "p3.10",
-=======
     <$Div key="p.Administration.ActiveSessions.layoutGrid2"
         $widgetId="p.Administration.ActiveSessions.layoutGrid2"
         class={"mx-name-layoutGrid2 mx-layoutgrid mx-layoutgrid-fluid container-fluid"}
@@ -133,7 +86,6 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                 advanced={false}
                                 datasource={DatabaseObjectListProperty({
                                     "dataSourceId": "p.10",
->>>>>>> feat/sales-domain
                                     "entity": "System.Session",
                                     "operationId": "uwfb87lxmV2G4VS0CAhgEA",
                                     "sort": [
@@ -156,11 +108,7 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                             "attributeType": "String",
                                             "sortable": true,
                                             "filterable": true,
-<<<<<<< HEAD
-                                            "dataSourceId": "p3.10",
-=======
                                             "dataSourceId": "p.10",
->>>>>>> feat/sales-domain
                                             "isList": false
                                         }),
                                         "content": undefined,
@@ -176,13 +124,8 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                             undefined
                                         ]),
                                         "filter": [
-<<<<<<< HEAD
-                                            <$DatagridTextFilter key="p3.Administration.ActiveSessions.textFilter1"
-                                                $widgetId="p3.Administration.ActiveSessions.textFilter1"
-=======
                                             <$DatagridTextFilter key="p.Administration.ActiveSessions.textFilter1"
                                                 $widgetId="p.Administration.ActiveSessions.textFilter1"
->>>>>>> feat/sales-domain
                                                 advanced={false}
                                                 defaultValue={undefined}
                                                 defaultFilter={"contains"}
@@ -237,23 +180,14 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                             "attributeType": "DateTime",
                                             "sortable": true,
                                             "filterable": true,
-<<<<<<< HEAD
-                                            "dataSourceId": "p3.10",
-=======
                                             "dataSourceId": "p.10",
->>>>>>> feat/sales-domain
                                             "isList": false
                                         }),
                                         "content": undefined,
                                         "dynamicText": t([
                                             ListExpressionProperty({
-<<<<<<< HEAD
-                                                "expression": { "expr": { "type": "function", "name": "_format", "parameters": [ { "type": "variable", "variable": "currentObject", "path": "LastActive" }, { "type": "literal", "value": "{\"type\":\"datetime\"}" } ] }, "args": { "currentObject": { "widget": "p3.Administration.ActiveSessions.dataGrid21", "source": "object" } } },
-                                                "dataSourceId": "p3.10"
-=======
                                                 "expression": { "expr": { "type": "function", "name": "_format", "parameters": [ { "type": "variable", "variable": "currentObject", "path": "LastActive" }, { "type": "literal", "value": "{\"type\":\"datetime\"}" } ] }, "args": { "currentObject": { "widget": "p.Administration.ActiveSessions.dataGrid21", "source": "object" } } },
                                                 "dataSourceId": "p.10"
->>>>>>> feat/sales-domain
                                             })
                                         ]),
                                         "header": t([
@@ -265,13 +199,8 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                             undefined
                                         ]),
                                         "filter": [
-<<<<<<< HEAD
-                                            <$DatagridDateFilter key="p3.Administration.ActiveSessions.dateFilter1"
-                                                $widgetId="p3.Administration.ActiveSessions.dateFilter1"
-=======
                                             <$DatagridDateFilter key="p.Administration.ActiveSessions.dateFilter1"
                                                 $widgetId="p.Administration.ActiveSessions.dateFilter1"
->>>>>>> feat/sales-domain
                                                 advanced={false}
                                                 defaultValue={undefined}
                                                 defaultStartDate={undefined}
@@ -332,18 +261,6 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                             "attributeType": "DateTime",
                                             "sortable": true,
                                             "filterable": true,
-<<<<<<< HEAD
-                                            "dataSourceId": "p3.10",
-                                            "isList": false
-                                        }),
-                                        "content": TemplatedWidgetProperty({
-                                            "dataSourceId": "p3.10",
-                                            "editable": false,
-                                            "children": () => [
-                                                <$ActionButton key="p3.Administration.ActiveSessions.actionButton1"
-                                                    $widgetId="p3.Administration.ActiveSessions.actionButton1"
-                                                    buttonId={"p3.Administration.ActiveSessions.actionButton1"}
-=======
                                             "dataSourceId": "p.10",
                                             "isList": false
                                         }),
@@ -354,7 +271,6 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                                 <$ActionButton key="p.Administration.ActiveSessions.actionButton1"
                                                     $widgetId="p.Administration.ActiveSessions.actionButton1"
                                                     buttonId={"p.Administration.ActiveSessions.actionButton1"}
->>>>>>> feat/sales-domain
                                                     class={"mx-name-actionButton1 btn-lg"}
                                                     style={undefined}
                                                     tabIndex={undefined}
@@ -375,11 +291,7 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                                         "icon": { "type": "icon", "iconClass": "mx-icon-filled mx-icon-logout" }
                                                     })}
                                                     action={ActionProperty({
-<<<<<<< HEAD
-                                                        "action": { "type": "deleteObject", "argMap": { "$object": { "widget": "p3.Administration.ActiveSessions.dataGrid21", "source": "object" } }, "config": { "closePage": false, "operationId": "5NnvSl7UJFy7oY57Ml7JDg" }, "disabledDuringExecution": true },
-=======
                                                         "action": { "type": "deleteObject", "argMap": { "$object": { "widget": "p.Administration.ActiveSessions.dataGrid21", "source": "object" } }, "config": { "closePage": false, "operationId": "5NnvSl7UJFy7oY57Ml7JDg" }, "disabledDuringExecution": true },
->>>>>>> feat/sales-domain
                                                         "abortOnServerValidation": true
                                                     })} />
                                             ]

@@ -23,8 +23,7 @@ public class RobaIliUsluga implements com.mendix.systemwideinterfaces.core.IEnti
 		naziv("naziv"),
 		opis("opis"),
 		roba("roba"),
-		RobaIliUsluga_JedinicaMere("MyFirstModule.RobaIliUsluga_JedinicaMere"),
-		RobaIliUsluga_KategorijaRobe("MyFirstModule.RobaIliUsluga_KategorijaRobe");
+		RobaIliUsluga_JedinicaMere("MyFirstModule.RobaIliUsluga_JedinicaMere");
 
 		private final java.lang.String metaName;
 
@@ -237,53 +236,6 @@ public class RobaIliUsluga implements com.mendix.systemwideinterfaces.core.IEnti
 			getMendixObject().setValue(context, MemberNames.RobaIliUsluga_JedinicaMere.toString(), null);
 		} else {
 			getMendixObject().setValue(context, MemberNames.RobaIliUsluga_JedinicaMere.toString(), robailiusluga_jedinicamere.getMendixObject().getId());
-		}
-	}
-
-	/**
-	 * @throws com.mendix.core.CoreException
-	 * @return value of RobaIliUsluga_KategorijaRobe
-	 */
-	public final prodaja.proxies.KategorijaRobe getRobaIliUsluga_KategorijaRobe() throws com.mendix.core.CoreException
-	{
-		return getRobaIliUsluga_KategorijaRobe(getContext());
-	}
-
-	/**
-	 * @param context
-	 * @return value of RobaIliUsluga_KategorijaRobe
-	 * @throws com.mendix.core.CoreException
-	 */
-	public final prodaja.proxies.KategorijaRobe getRobaIliUsluga_KategorijaRobe(com.mendix.systemwideinterfaces.core.IContext context) throws com.mendix.core.CoreException
-	{
-		prodaja.proxies.KategorijaRobe result = null;
-		com.mendix.systemwideinterfaces.core.IMendixIdentifier identifier = getMendixObject().getValue(context, MemberNames.RobaIliUsluga_KategorijaRobe.toString());
-		if (identifier != null) {
-			result = prodaja.proxies.KategorijaRobe.load(context, identifier);
-		}
-		return result;
-	}
-
-	/**
-	 * Set value of RobaIliUsluga_KategorijaRobe
-	 * @param robailiusluga_kategorijarobe
-	 */
-	public final void setRobaIliUsluga_KategorijaRobe(prodaja.proxies.KategorijaRobe robailiusluga_kategorijarobe)
-	{
-		setRobaIliUsluga_KategorijaRobe(getContext(), robailiusluga_kategorijarobe);
-	}
-
-	/**
-	 * Set value of RobaIliUsluga_KategorijaRobe
-	 * @param context
-	 * @param robailiusluga_kategorijarobe
-	 */
-	public final void setRobaIliUsluga_KategorijaRobe(com.mendix.systemwideinterfaces.core.IContext context, prodaja.proxies.KategorijaRobe robailiusluga_kategorijarobe)
-	{
-		if (robailiusluga_kategorijarobe == null) {
-			getMendixObject().setValue(context, MemberNames.RobaIliUsluga_KategorijaRobe.toString(), null);
-		} else {
-			getMendixObject().setValue(context, MemberNames.RobaIliUsluga_KategorijaRobe.toString(), robailiusluga_kategorijarobe.getMendixObject().getId());
 		}
 	}
 
