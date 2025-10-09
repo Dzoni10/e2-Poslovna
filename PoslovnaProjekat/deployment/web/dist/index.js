@@ -1,4 +1,4 @@
-import { startApp } from './index-JDXCDs53.js';
+import { startApp } from './index-DdpIsMV0.js';
 
 startApp({
   "languages": [

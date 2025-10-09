@@ -1,14 +1,14 @@
-import { reactExports, asPluginWidgets, selectTranslation } from '../index-JDXCDs53.js';
-import { PageFragment, ExpressionProperty } from '../ScrollContainer-BMEt46hD.js';
-import { ActionButton, TextProperty, ActionProperty } from '../ActionButton-CnZtpka2.js';
-import { AssociationObjectProperty } from '../AssociationObjectProperty-BJyyxZlP.js';
-import { WebStaticImageProperty } from '../WebStaticImageProperty-Cl4Gen30.js';
-import { ImageWidgetModule, Container, Text } from '../Image-D55d_j2j.js';
-import { DataView } from '../DataView-BstQTMJi.js';
-import { Div } from '../Div-CbKV9nto.js';
-import { content as content$1 } from '../Atlas_Core.PopupLayout-DeEIVNnx.js';
-import '../InlineText-BhumBKcU.js';
-import '../bdxqAC6d-Crq0yb3P.js';
+import { reactExports, asPluginWidgets, selectTranslation } from '../index-DdpIsMV0.js';
+import { PageFragment, ExpressionProperty } from '../ScrollContainer-BLNSIRG_.js';
+import { ActionButton, TextProperty, ActionProperty } from '../ActionButton-DRrsDoPl.js';
+import { AssociationObjectProperty } from '../AssociationObjectProperty-BblpP4vJ.js';
+import { WebStaticImageProperty } from '../WebStaticImageProperty-BDDiqa-f.js';
+import { ImageWidgetModule, Container, Text } from '../Image-MIt_rgoK.js';
+import { DataView } from '../DataView-C589ntOr.js';
+import { Div } from '../Div-BTfQALgZ.js';
+import { content as content$1 } from '../Atlas_Core.PopupLayout-bCLQ3iXv.js';
+import '../InlineText-BnzXUz2s.js';
+import '../bdxqAC6d-1B6oqOD4.js';
 
 const React = { createElement: reactExports.createElement };
 const Image = Object.getOwnPropertyDescriptor(ImageWidgetModule, "Image")?.value || Object.getOwnPropertyDescriptor(ImageWidgetModule, "default")?.value;

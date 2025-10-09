@@ -1,18 +1,18 @@
-import { getAugmentedNamespace, getUserRoleNames, hideProgress, showProgress, selectTranslation, handleError, HandledError, toFriendlyId, LogManager, asProperty, getSession, DescribedError, fromConstant$, dynUnavailable, pageScope, getNanoflowArguments$, nanoflowEngine, ensure, readUntracked, MxObject, available, unavailable, reactExports, jsxRuntimeExports, classNames, asPluginWidgets } from '../index-JDXCDs53.js';
-import { PageFragment, ExpressionProperty } from '../ScrollContainer-BMEt46hD.js';
-import { fromObjectProperty$, ActionButton, TextProperty, ActionProperty } from '../ActionButton-CnZtpka2.js';
-import { debounce, Alert, getAriaLabelProps, getValidationAriaProps, FormGroup, TextBox, DerivedUniqueIdProperty, ValidationProperty } from '../TextBox-RBW52cK-.js';
-import { WebIconProperty } from '../WebIconProperty-Bon9K84_.js';
-import { ConditionalVisibilityWrapper } from '../ConditionalVisibilityWrapper-BVC6V75r.js';
-import { ImageWidgetModule, Container, Text } from '../Image-D55d_j2j.js';
-import { DataView } from '../DataView-BstQTMJi.js';
-import { Div } from '../Div-CbKV9nto.js';
-import { Label } from '../Label-CGlK2TV3.js';
-import { content as content$1 } from '../Atlas_Core.PopupLayout-DeEIVNnx.js';
-import { AttributeProperty } from '../D5tDSKpV-NCto3GtK.js';
-import '../uEIG9e6s-D5bs4rlT.js';
-import '../InlineText-BhumBKcU.js';
-import '../bdxqAC6d-Crq0yb3P.js';
+import { getAugmentedNamespace, getUserRoleNames, hideProgress, showProgress, selectTranslation, handleError, HandledError, toFriendlyId, LogManager, asProperty, getSession, DescribedError, fromConstant$, dynUnavailable, pageScope, getNanoflowArguments$, nanoflowEngine, ensure, readUntracked, MxObject, available, unavailable, reactExports, jsxRuntimeExports, classNames, asPluginWidgets } from '../index-DdpIsMV0.js';
+import { PageFragment, ExpressionProperty } from '../ScrollContainer-BLNSIRG_.js';
+import { fromObjectProperty$, ActionButton, TextProperty, ActionProperty } from '../ActionButton-DRrsDoPl.js';
+import { debounce, Alert, getAriaLabelProps, getValidationAriaProps, FormGroup, TextBox, DerivedUniqueIdProperty, ValidationProperty } from '../TextBox-U34DIuXw.js';
+import { WebIconProperty } from '../WebIconProperty-hiLudo7i.js';
+import { ConditionalVisibilityWrapper } from '../ConditionalVisibilityWrapper-B7dKHkv6.js';
+import { ImageWidgetModule, Container, Text } from '../Image-MIt_rgoK.js';
+import { DataView } from '../DataView-C589ntOr.js';
+import { Div } from '../Div-BTfQALgZ.js';
+import { Label } from '../Label-vKhejhET.js';
+import { content as content$1 } from '../Atlas_Core.PopupLayout-bCLQ3iXv.js';
+import { AttributeProperty } from '../D5tDSKpV-BMTQuWeb.js';
+import '../uEIG9e6s-DXd_R0dy.js';
+import '../InlineText-BnzXUz2s.js';
+import '../bdxqAC6d-1B6oqOD4.js';
 
 // BEGIN EXTRA CODE
 // END EXTRA CODE

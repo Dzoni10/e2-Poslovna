@@ -1,15 +1,15 @@
-import { reactExports, asPluginWidgets, selectTranslation } from '../index-JDXCDs53.js';
-import { PageFragment, ExpressionProperty } from '../ScrollContainer-BMEt46hD.js';
-import { Container, Text } from '../Image-D55d_j2j.js';
-import { Div } from '../Div-CbKV9nto.js';
-import { content as content$1 } from '../Atlas_Core.Atlas_Default-BcLwJ3TJ.js';
-import '../InlineText-BhumBKcU.js';
-import '../ActionButton-CnZtpka2.js';
-import '../CTcC6PjV-Zoc9mpUp.js';
-import '../uEIG9e6s-D5bs4rlT.js';
-import '../ListExpressionProperty-BJu92AGp.js';
-import '../WebIconProperty-Bon9K84_.js';
-import '../WebStaticImageProperty-Cl4Gen30.js';
+import { reactExports, asPluginWidgets, selectTranslation } from '../index-DdpIsMV0.js';
+import { PageFragment, ExpressionProperty } from '../ScrollContainer-BLNSIRG_.js';
+import { Container, Text } from '../Image-MIt_rgoK.js';
+import { Div } from '../Div-BTfQALgZ.js';
+import { content as content$1 } from '../Atlas_Core.Atlas_Default-4U1Ryrs7.js';
+import '../InlineText-BnzXUz2s.js';
+import '../ActionButton-DRrsDoPl.js';
+import '../CTcC6PjV-RXA6LhlX.js';
+import '../uEIG9e6s-DXd_R0dy.js';
+import '../ListExpressionProperty-CX4jSg_Q.js';
+import '../WebIconProperty-hiLudo7i.js';
+import '../WebStaticImageProperty-BDDiqa-f.js';
 
 const React = { createElement: reactExports.createElement };
 const { $Container, $Div, $Text } = asPluginWidgets({ Container, Div, Text });

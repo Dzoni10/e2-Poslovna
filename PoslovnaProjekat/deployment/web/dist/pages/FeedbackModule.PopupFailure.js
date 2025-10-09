@@ -1,10 +1,10 @@
-import { reactExports, asPluginWidgets, selectTranslation } from '../index-JDXCDs53.js';
-import { PageFragment, ExpressionProperty } from '../ScrollContainer-BMEt46hD.js';
-import { WebStaticImageProperty } from '../WebStaticImageProperty-Cl4Gen30.js';
-import { ImageWidgetModule, Container, Text } from '../Image-D55d_j2j.js';
-import { Div } from '../Div-CbKV9nto.js';
-import { content as content$1 } from '../Atlas_Core.PopupLayout-DeEIVNnx.js';
-import '../InlineText-BhumBKcU.js';
+import { reactExports, asPluginWidgets, selectTranslation } from '../index-DdpIsMV0.js';
+import { PageFragment, ExpressionProperty } from '../ScrollContainer-BLNSIRG_.js';
+import { WebStaticImageProperty } from '../WebStaticImageProperty-BDDiqa-f.js';
+import { ImageWidgetModule, Container, Text } from '../Image-MIt_rgoK.js';
+import { Div } from '../Div-BTfQALgZ.js';
+import { content as content$1 } from '../Atlas_Core.PopupLayout-bCLQ3iXv.js';
+import '../InlineText-BnzXUz2s.js';
 
 const React = { createElement: reactExports.createElement };
 const Image = Object.getOwnPropertyDescriptor(ImageWidgetModule, "Image")?.value || Object.getOwnPropertyDescriptor(ImageWidgetModule, "default")?.value;
