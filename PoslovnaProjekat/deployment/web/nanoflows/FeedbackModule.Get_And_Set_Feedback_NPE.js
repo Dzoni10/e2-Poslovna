@@ -6,7 +6,7 @@ export const Get_And_Set_Feedback_NPE = {
     {
       "type": "javaScriptActionCall",
       "label": "fc75dfbe-58c7-4d4f-bc07-5ce4fccc70cc",
-      "action": () => require("C:/Poslovna/e2-Poslovna/PoslovnaProjekat/javascriptsource/feedbackmodule/actions/JS_GetSingleLocalStorageObjectItem").JS_GetSingleLocalStorageObjectItem,
+      "action": () => require("C:/Users/Djordje/Desktop/e2-Poslovna/PoslovnaProjekat/javascriptsource/feedbackmodule/actions/JS_GetSingleLocalStorageObjectItem").JS_GetSingleLocalStorageObjectItem,
       "outputVar": "AppID",
       "parameters": [
         {
@@ -28,7 +28,7 @@ export const Get_And_Set_Feedback_NPE = {
     {
       "type": "javaScriptActionCall",
       "label": "6a2b23ad-c00f-4bd6-b074-d0d460d3c7a3",
-      "action": () => require("C:/Poslovna/e2-Poslovna/PoslovnaProjekat/javascriptsource/feedbackmodule/actions/JS_GetSingleLocalStorageObjectItem").JS_GetSingleLocalStorageObjectItem,
+      "action": () => require("C:/Users/Djordje/Desktop/e2-Poslovna/PoslovnaProjekat/javascriptsource/feedbackmodule/actions/JS_GetSingleLocalStorageObjectItem").JS_GetSingleLocalStorageObjectItem,
       "outputVar": "Subject",
       "parameters": [
         {
@@ -50,7 +50,7 @@ export const Get_And_Set_Feedback_NPE = {
     {
       "type": "javaScriptActionCall",
       "label": "288d074f-4d8a-4609-8285-1e33ab3e9c77",
-      "action": () => require("C:/Poslovna/e2-Poslovna/PoslovnaProjekat/javascriptsource/feedbackmodule/actions/JS_GetSingleLocalStorageObjectItem").JS_GetSingleLocalStorageObjectItem,
+      "action": () => require("C:/Users/Djordje/Desktop/e2-Poslovna/PoslovnaProjekat/javascriptsource/feedbackmodule/actions/JS_GetSingleLocalStorageObjectItem").JS_GetSingleLocalStorageObjectItem,
       "outputVar": "Description",
       "parameters": [
         {
@@ -72,7 +72,7 @@ export const Get_And_Set_Feedback_NPE = {
     {
       "type": "javaScriptActionCall",
       "label": "d40863a3-8f3f-41ee-920d-57c8010047cf",
-      "action": () => require("C:/Poslovna/e2-Poslovna/PoslovnaProjekat/javascriptsource/feedbackmodule/actions/JS_GetSingleLocalStorageObjectItem").JS_GetSingleLocalStorageObjectItem,
+      "action": () => require("C:/Users/Djordje/Desktop/e2-Poslovna/PoslovnaProjekat/javascriptsource/feedbackmodule/actions/JS_GetSingleLocalStorageObjectItem").JS_GetSingleLocalStorageObjectItem,
       "outputVar": "SubmitterUUID",
       "parameters": [
         {
@@ -94,7 +94,7 @@ export const Get_And_Set_Feedback_NPE = {
     {
       "type": "javaScriptActionCall",
       "label": "b68870a5-91f9-4cde-ba5c-ad572744eca0",
-      "action": () => require("C:/Poslovna/e2-Poslovna/PoslovnaProjekat/javascriptsource/feedbackmodule/actions/JS_GetSingleLocalStorageObjectItem").JS_GetSingleLocalStorageObjectItem,
+      "action": () => require("C:/Users/Djordje/Desktop/e2-Poslovna/PoslovnaProjekat/javascriptsource/feedbackmodule/actions/JS_GetSingleLocalStorageObjectItem").JS_GetSingleLocalStorageObjectItem,
       "outputVar": "SubmitterEmail",
       "parameters": [
         {
@@ -116,7 +116,7 @@ export const Get_And_Set_Feedback_NPE = {
     {
       "type": "javaScriptActionCall",
       "label": "1a8a628e-f2b5-4a6b-b7c4-33b7b6101f39",
-      "action": () => require("C:/Poslovna/e2-Poslovna/PoslovnaProjekat/javascriptsource/feedbackmodule/actions/JS_GetSingleLocalStorageObjectItem").JS_GetSingleLocalStorageObjectItem,
+      "action": () => require("C:/Users/Djordje/Desktop/e2-Poslovna/PoslovnaProjekat/javascriptsource/feedbackmodule/actions/JS_GetSingleLocalStorageObjectItem").JS_GetSingleLocalStorageObjectItem,
       "outputVar": "SubmitterDisplayName",
       "parameters": [
         {
@@ -138,7 +138,7 @@ export const Get_And_Set_Feedback_NPE = {
     {
       "type": "javaScriptActionCall",
       "label": "81672744-355a-4439-8db5-8b16a910b370",
-      "action": () => require("C:/Poslovna/e2-Poslovna/PoslovnaProjekat/javascriptsource/feedbackmodule/actions/JS_GetSingleLocalStorageObjectItem").JS_GetSingleLocalStorageObjectItem,
+      "action": () => require("C:/Users/Djordje/Desktop/e2-Poslovna/PoslovnaProjekat/javascriptsource/feedbackmodule/actions/JS_GetSingleLocalStorageObjectItem").JS_GetSingleLocalStorageObjectItem,
       "outputVar": "ImageB64",
       "parameters": [
         {
@@ -160,7 +160,7 @@ export const Get_And_Set_Feedback_NPE = {
     {
       "type": "javaScriptActionCall",
       "label": "56b8baee-3660-4cc5-a331-416bdb3b4303",
-      "action": () => require("C:/Poslovna/e2-Poslovna/PoslovnaProjekat/javascriptsource/feedbackmodule/actions/JS_GetSingleLocalStorageObjectItem").JS_GetSingleLocalStorageObjectItem,
+      "action": () => require("C:/Users/Djordje/Desktop/e2-Poslovna/PoslovnaProjekat/javascriptsource/feedbackmodule/actions/JS_GetSingleLocalStorageObjectItem").JS_GetSingleLocalStorageObjectItem,
       "outputVar": "_showEmail",
       "parameters": [
         {

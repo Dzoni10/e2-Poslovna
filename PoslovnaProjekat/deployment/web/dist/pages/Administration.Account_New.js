@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { reactExports, asPluginWidgets, selectTranslation } from '../index-JDXCDs53.js';
 import { PageFragment, ExpressionProperty } from '../ScrollContainer-BMEt46hD.js';
 import { ActionButton, TextProperty, ActionProperty } from '../ActionButton-CnZtpka2.js';
@@ -16,6 +17,48 @@ import { content as content$1 } from '../Atlas_Core.PopupLayout-DeEIVNnx.js';
 import { AttributeProperty } from '../D5tDSKpV-NCto3GtK.js';
 import '../uEIG9e6s-D5bs4rlT.js';
 import '../bdxqAC6d-Crq0yb3P.js';
+=======
+<<<<<<< Updated upstream
+import { reactExports, asPluginWidgets, selectTranslation } from '../index-BjSpTlX0.js';
+import { PageFragment, ExpressionProperty } from '../ScrollContainer-DYUj9_Ay.js';
+import { ActionButton, TextProperty, ActionProperty } from '../ActionButton-dNbAsczi.js';
+import { AssociationObjectProperty } from '../AssociationObjectProperty-qKRNUhwW.js';
+import { AssociationProperty } from '../AssociationProperty-ofkzE30k.js';
+import { FormGroup, TextBox, DerivedUniqueIdProperty, ValidationProperty } from '../TextBox-EdR2-wgr.js';
+import { DatabaseObjectListProperty } from '../XQdQuDNG-DT5jvNDi.js';
+import { ListAttributeProperty } from '../ListAttributeProperty-BqFtOePf.js';
+import { ListExpressionProperty } from '../ListExpressionProperty-8MjkvJ9b.js';
+import { CheckBox } from '../CheckBox-BLOtHIVo.js';
+import * as ComboboxWidgetModule from '../../../../../../../../Poslovna/e2-Poslovna/PoslovnaProjekat/deployment/web/widgets/com/mendix/widget/web/combobox/Combobox.mjs';
+import '../../../../../../../../Poslovna/e2-Poslovna/PoslovnaProjekat/deployment/web/widgets/com/mendix/widget/web/combobox/Combobox.css';
+import { ConditionalVisibilityWrapper } from '../ConditionalVisibilityWrapper-C8wONAJZ.js';
+import { DataView } from '../DataView-PQPsNCJf.js';
+import { Div } from '../Div-Dyf4zdHI.js';
+import { content as content$1 } from '../Atlas_Core.PopupLayout-D-AdFqBx.js';
+import { AttributeProperty } from '../77kgvjgm-4HZvSliz.js';
+import '../BkqAssms-D3I0Q7ya.js';
+import '../DmsI6saM-Dj1PYIQI.js';
+=======
+import { reactExports, asPluginWidgets, selectTranslation } from '../index-DRM94Sf-.js';
+import { PageFragment, ExpressionProperty } from '../ScrollContainer-LSQoMZk3.js';
+import { ActionButton, TextProperty, ActionProperty } from '../ActionButton-Vn_V_FOy.js';
+import { AssociationObjectProperty } from '../AssociationObjectProperty-CJXqeTvW.js';
+import { AssociationProperty } from '../AssociationProperty-B8-mdEat.js';
+import { FormGroup, TextBox, DerivedUniqueIdProperty, ValidationProperty } from '../TextBox-CQj9lYLp.js';
+import { DatabaseObjectListProperty } from '../XQdQuDNG-BIL054Xu.js';
+import { ListAttributeProperty } from '../ListAttributeProperty-BRLhJBGz.js';
+import { ListExpressionProperty } from '../ListExpressionProperty-Oai9lB4H.js';
+import { CheckBox } from '../CheckBox-cLbk70Lb.js';
+import { ComboboxWidgetModule } from '../Combobox-DlwWXVlg.js';
+import { ConditionalVisibilityWrapper } from '../ConditionalVisibilityWrapper-C8wONAJZ.js';
+import { DataView } from '../DataView-Di9rOy1O.js';
+import { Div } from '../Div-DOhBQ24X.js';
+import { content as content$1 } from '../Atlas_Core.PopupLayout-C12ql83v.js';
+import { AttributeProperty } from '../77kgvjgm-Ckrt0mx6.js';
+import '../BkqAssms-a3v8x28y.js';
+import '../DmsI6saM-AyKzfY6T.js';
+>>>>>>> Stashed changes
+>>>>>>> feat/sales-domain
 
 const React = { createElement: reactExports.createElement };
 const Combobox = Object.getOwnPropertyDescriptor(ComboboxWidgetModule, "Combobox")?.value || Object.getOwnPropertyDescriptor(ComboboxWidgetModule, "default")?.value;
@@ -24,37 +67,61 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
   /* @__PURE__ */ React.createElement(
     $Div,
     {
+<<<<<<< HEAD
       key: "p7.Administration.Account_New.layoutGrid1",
       $widgetId: "p7.Administration.Account_New.layoutGrid1",
+=======
+      key: "p.Administration.Account_New.layoutGrid1",
+      $widgetId: "p.Administration.Account_New.layoutGrid1",
+>>>>>>> feat/sales-domain
       class: "mx-name-layoutGrid1 mx-layoutgrid mx-layoutgrid-fluid container-fluid",
       style: void 0,
       content: [
         /* @__PURE__ */ React.createElement(
           $Div,
           {
+<<<<<<< HEAD
             key: "p7.Administration.Account_New.layoutGrid1$row0",
             $widgetId: "p7.Administration.Account_New.layoutGrid1$row0",
+=======
+            key: "p.Administration.Account_New.layoutGrid1$row0",
+            $widgetId: "p.Administration.Account_New.layoutGrid1$row0",
+>>>>>>> feat/sales-domain
             class: "row",
             style: void 0,
             content: [
               /* @__PURE__ */ React.createElement(
                 $Div,
                 {
+<<<<<<< HEAD
                   key: "p7.Administration.Account_New.layoutGrid1$row0$column0",
                   $widgetId: "p7.Administration.Account_New.layoutGrid1$row0$column0",
+=======
+                  key: "p.Administration.Account_New.layoutGrid1$row0$column0",
+                  $widgetId: "p.Administration.Account_New.layoutGrid1$row0$column0",
+>>>>>>> feat/sales-domain
                   class: "col-lg col-md col",
                   style: void 0,
                   content: [
                     /* @__PURE__ */ React.createElement(
                       $DataView,
                       {
+<<<<<<< HEAD
                         key: "p7.Administration.Account_New.dataView2",
                         $widgetId: "p7.Administration.Account_New.dataView2",
+=======
+                        key: "p.Administration.Account_New.dataView2",
+                        $widgetId: "p.Administration.Account_New.dataView2",
+>>>>>>> feat/sales-domain
                         class: "mx-name-dataView2 form-horizontal",
                         style: void 0,
                         tabIndex: void 0,
                         object: AssociationObjectProperty({
+<<<<<<< HEAD
                           "dataSourceId": "p7.15",
+=======
+                          "dataSourceId": "p.15",
+>>>>>>> feat/sales-domain
                           "scope": "$AccountPasswordData",
                           "editable": true
                         }),
@@ -67,13 +134,22 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                           /* @__PURE__ */ React.createElement(
                             $DataView,
                             {
+<<<<<<< HEAD
                               key: "p7.Administration.Account_New.dataView1",
                               $widgetId: "p7.Administration.Account_New.dataView1",
+=======
+                              key: "p.Administration.Account_New.dataView1",
+                              $widgetId: "p.Administration.Account_New.dataView1",
+>>>>>>> feat/sales-domain
                               class: "mx-name-dataView1 form-horizontal",
                               style: void 0,
                               tabIndex: void 0,
                               object: AssociationObjectProperty({
+<<<<<<< HEAD
                                 "dataSourceId": "p7.18",
+=======
+                                "dataSourceId": "p.18",
+>>>>>>> feat/sales-domain
                                 "scope": "$AccountPasswordData",
                                 "editable": true,
                                 "path": "Administration.AccountPasswordData_Account/Administration.Account",
@@ -88,18 +164,30 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                 /* @__PURE__ */ React.createElement(
                                   $FormGroup,
                                   {
+<<<<<<< HEAD
                                     key: "p7.Administration.Account_New.textBox6$formGroup",
                                     $widgetId: "p7.Administration.Account_New.textBox6$formGroup",
+=======
+                                    key: "p.Administration.Account_New.textBox6$formGroup",
+                                    $widgetId: "p.Administration.Account_New.textBox6$formGroup",
+>>>>>>> feat/sales-domain
                                     class: "mx-name-textBox6 mx-textbox",
                                     style: void 0,
                                     control: [
                                       /* @__PURE__ */ React.createElement(
                                         $TextBox,
                                         {
+<<<<<<< HEAD
                                           key: "p7.Administration.Account_New.textBox6",
                                           $widgetId: "p7.Administration.Account_New.textBox6",
                                           inputValue: AttributeProperty({
                                             "scope": "p7.Administration.Account_New.dataView1",
+=======
+                                          key: "p.Administration.Account_New.textBox6",
+                                          $widgetId: "p.Administration.Account_New.textBox6",
+                                          inputValue: AttributeProperty({
+                                            "scope": "p.Administration.Account_New.dataView1",
+>>>>>>> feat/sales-domain
                                             "path": "",
                                             "entity": "Administration.Account",
                                             "attribute": "FullName",
@@ -127,7 +215,11 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                           ariaRequired: void 0,
                                           tabIndex: void 0,
                                           id: DerivedUniqueIdProperty({
+<<<<<<< HEAD
                                             "widgetId": "p7.Administration.Account_New.textBox6"
+=======
+                                            "widgetId": "p.Administration.Account_New.textBox6"
+>>>>>>> feat/sales-domain
                                           })
                                         }
                                       )
@@ -138,30 +230,50 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                       })
                                     ]),
                                     labelFor: DerivedUniqueIdProperty({
+<<<<<<< HEAD
                                       "widgetId": "p7.Administration.Account_New.textBox6"
+=======
+                                      "widgetId": "p.Administration.Account_New.textBox6"
+>>>>>>> feat/sales-domain
                                     }),
                                     width: 3,
                                     orientation: "horizontal",
                                     hasError: ValidationProperty({
+<<<<<<< HEAD
                                       "inputWidgetId": "p7.Administration.Account_New.textBox6"
+=======
+                                      "inputWidgetId": "p.Administration.Account_New.textBox6"
+>>>>>>> feat/sales-domain
                                     })
                                   }
                                 ),
                                 /* @__PURE__ */ React.createElement(
                                   $FormGroup,
                                   {
+<<<<<<< HEAD
                                     key: "p7.Administration.Account_New.textBox9$formGroup",
                                     $widgetId: "p7.Administration.Account_New.textBox9$formGroup",
+=======
+                                    key: "p.Administration.Account_New.textBox9$formGroup",
+                                    $widgetId: "p.Administration.Account_New.textBox9$formGroup",
+>>>>>>> feat/sales-domain
                                     class: "mx-name-textBox9 mx-textbox",
                                     style: void 0,
                                     control: [
                                       /* @__PURE__ */ React.createElement(
                                         $TextBox,
                                         {
+<<<<<<< HEAD
                                           key: "p7.Administration.Account_New.textBox9",
                                           $widgetId: "p7.Administration.Account_New.textBox9",
                                           inputValue: AttributeProperty({
                                             "scope": "p7.Administration.Account_New.dataView1",
+=======
+                                          key: "p.Administration.Account_New.textBox9",
+                                          $widgetId: "p.Administration.Account_New.textBox9",
+                                          inputValue: AttributeProperty({
+                                            "scope": "p.Administration.Account_New.dataView1",
+>>>>>>> feat/sales-domain
                                             "path": "",
                                             "entity": "Administration.Account",
                                             "attribute": "Name",
@@ -189,7 +301,11 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                           ariaRequired: void 0,
                                           tabIndex: void 0,
                                           id: DerivedUniqueIdProperty({
+<<<<<<< HEAD
                                             "widgetId": "p7.Administration.Account_New.textBox9"
+=======
+                                            "widgetId": "p.Administration.Account_New.textBox9"
+>>>>>>> feat/sales-domain
                                           })
                                         }
                                       )
@@ -200,28 +316,46 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                       })
                                     ]),
                                     labelFor: DerivedUniqueIdProperty({
+<<<<<<< HEAD
                                       "widgetId": "p7.Administration.Account_New.textBox9"
+=======
+                                      "widgetId": "p.Administration.Account_New.textBox9"
+>>>>>>> feat/sales-domain
                                     }),
                                     width: 3,
                                     orientation: "horizontal",
                                     hasError: ValidationProperty({
+<<<<<<< HEAD
                                       "inputWidgetId": "p7.Administration.Account_New.textBox9"
+=======
+                                      "inputWidgetId": "p.Administration.Account_New.textBox9"
+>>>>>>> feat/sales-domain
                                     })
                                   }
                                 ),
                                 /* @__PURE__ */ React.createElement(
                                   $FormGroup,
                                   {
+<<<<<<< HEAD
                                     key: "p7.Administration.Account_New.comboBox1$formGroup",
                                     $widgetId: "p7.Administration.Account_New.comboBox1$formGroup",
+=======
+                                    key: "p.Administration.Account_New.comboBox1$formGroup",
+                                    $widgetId: "p.Administration.Account_New.comboBox1$formGroup",
+>>>>>>> feat/sales-domain
                                     class: "mx-name-comboBox1",
                                     style: void 0,
                                     control: [
                                       /* @__PURE__ */ React.createElement(
                                         $Combobox,
                                         {
+<<<<<<< HEAD
                                           key: "p7.Administration.Account_New.comboBox1",
                                           $widgetId: "p7.Administration.Account_New.comboBox1",
+=======
+                                          key: "p.Administration.Account_New.comboBox1",
+                                          $widgetId: "p.Administration.Account_New.comboBox1",
+>>>>>>> feat/sales-domain
                                           optionsSourceType: "association",
                                           attributeAssociation: AssociationProperty({
                                             "type": "ReferenceSet",
@@ -229,6 +363,7 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                             "path": "",
                                             "attribute": "System.UserRoles",
                                             "endpointEntity": "System.UserRole",
+<<<<<<< HEAD
                                             "selectableObjectsId": "p7.0",
                                             "scope": "p7.Administration.Account_New.dataView1",
                                             "onChange": { "type": "doNothing", "argMap": {}, "config": {}, "disabledDuringExecution": false }
@@ -237,6 +372,16 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                             "dataSourceId": "p7.0",
                                             "entity": "System.UserRole",
                                             "scope": "p7.Administration.Account_New.dataView1",
+=======
+                                            "selectableObjectsId": "p.0",
+                                            "scope": "p.Administration.Account_New.dataView1",
+                                            "onChange": { "type": "doNothing", "argMap": {}, "config": {}, "disabledDuringExecution": false }
+                                          }),
+                                          optionsSourceAssociationDataSource: DatabaseObjectListProperty({
+                                            "dataSourceId": "p.0",
+                                            "entity": "System.UserRole",
+                                            "scope": "p.Administration.Account_New.dataView1",
+>>>>>>> feat/sales-domain
                                             "operationId": "dNluH/YEWVKIls4O1cqTiw",
                                             "sort": [
                                               [
@@ -254,7 +399,11 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                             "attributeType": "String",
                                             "sortable": true,
                                             "filterable": true,
+<<<<<<< HEAD
                                             "dataSourceId": "p7.0",
+=======
+                                            "dataSourceId": "p.0",
+>>>>>>> feat/sales-domain
                                             "isList": false
                                           }),
                                           optionsSourceAssociationCaptionExpression: void 0,
@@ -323,7 +472,11 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                           optionsSourceDatabaseDefaultValue: void 0,
                                           tabIndex: void 0,
                                           id: DerivedUniqueIdProperty({
+<<<<<<< HEAD
                                             "widgetId": "p7.Administration.Account_New.comboBox1"
+=======
+                                            "widgetId": "p.Administration.Account_New.comboBox1"
+>>>>>>> feat/sales-domain
                                           })
                                         }
                                       )
@@ -334,30 +487,50 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                       })
                                     ]),
                                     labelFor: DerivedUniqueIdProperty({
+<<<<<<< HEAD
                                       "widgetId": "p7.Administration.Account_New.comboBox1"
+=======
+                                      "widgetId": "p.Administration.Account_New.comboBox1"
+>>>>>>> feat/sales-domain
                                     }),
                                     width: 3,
                                     orientation: "horizontal",
                                     hasError: ValidationProperty({
+<<<<<<< HEAD
                                       "inputWidgetId": "p7.Administration.Account_New.comboBox1"
+=======
+                                      "inputWidgetId": "p.Administration.Account_New.comboBox1"
+>>>>>>> feat/sales-domain
                                     })
                                   }
                                 ),
                                 /* @__PURE__ */ React.createElement(
                                   $FormGroup,
                                   {
+<<<<<<< HEAD
                                     key: "p7.Administration.Account_New.checkBox1$formGroup",
                                     $widgetId: "p7.Administration.Account_New.checkBox1$formGroup",
+=======
+                                    key: "p.Administration.Account_New.checkBox1$formGroup",
+                                    $widgetId: "p.Administration.Account_New.checkBox1$formGroup",
+>>>>>>> feat/sales-domain
                                     class: "mx-name-checkBox1 mx-checkbox",
                                     style: void 0,
                                     control: [
                                       /* @__PURE__ */ React.createElement(
                                         $CheckBox,
                                         {
+<<<<<<< HEAD
                                           key: "p7.Administration.Account_New.checkBox1",
                                           $widgetId: "p7.Administration.Account_New.checkBox1",
                                           value: AttributeProperty({
                                             "scope": "p7.Administration.Account_New.dataView1",
+=======
+                                          key: "p.Administration.Account_New.checkBox1",
+                                          $widgetId: "p.Administration.Account_New.checkBox1",
+                                          value: AttributeProperty({
+                                            "scope": "p.Administration.Account_New.dataView1",
+>>>>>>> feat/sales-domain
                                             "path": "",
                                             "entity": "Administration.Account",
                                             "attribute": "Blocked",
@@ -372,7 +545,11 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                           ariaLabel: void 0,
                                           tabIndex: void 0,
                                           id: DerivedUniqueIdProperty({
+<<<<<<< HEAD
                                             "widgetId": "p7.Administration.Account_New.checkBox1"
+=======
+                                            "widgetId": "p.Administration.Account_New.checkBox1"
+>>>>>>> feat/sales-domain
                                           })
                                         }
                                       )
@@ -383,30 +560,50 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                       })
                                     ]),
                                     labelFor: DerivedUniqueIdProperty({
+<<<<<<< HEAD
                                       "widgetId": "p7.Administration.Account_New.checkBox1"
+=======
+                                      "widgetId": "p.Administration.Account_New.checkBox1"
+>>>>>>> feat/sales-domain
                                     }),
                                     width: 3,
                                     orientation: "horizontal",
                                     hasError: ValidationProperty({
+<<<<<<< HEAD
                                       "inputWidgetId": "p7.Administration.Account_New.checkBox1"
+=======
+                                      "inputWidgetId": "p.Administration.Account_New.checkBox1"
+>>>>>>> feat/sales-domain
                                     })
                                   }
                                 ),
                                 /* @__PURE__ */ React.createElement(
                                   $FormGroup,
                                   {
+<<<<<<< HEAD
                                     key: "p7.Administration.Account_New.checkBox2$formGroup",
                                     $widgetId: "p7.Administration.Account_New.checkBox2$formGroup",
+=======
+                                    key: "p.Administration.Account_New.checkBox2$formGroup",
+                                    $widgetId: "p.Administration.Account_New.checkBox2$formGroup",
+>>>>>>> feat/sales-domain
                                     class: "mx-name-checkBox2 mx-checkbox",
                                     style: void 0,
                                     control: [
                                       /* @__PURE__ */ React.createElement(
                                         $CheckBox,
                                         {
+<<<<<<< HEAD
                                           key: "p7.Administration.Account_New.checkBox2",
                                           $widgetId: "p7.Administration.Account_New.checkBox2",
                                           value: AttributeProperty({
                                             "scope": "p7.Administration.Account_New.dataView1",
+=======
+                                          key: "p.Administration.Account_New.checkBox2",
+                                          $widgetId: "p.Administration.Account_New.checkBox2",
+                                          value: AttributeProperty({
+                                            "scope": "p.Administration.Account_New.dataView1",
+>>>>>>> feat/sales-domain
                                             "path": "",
                                             "entity": "Administration.Account",
                                             "attribute": "Active",
@@ -421,7 +618,11 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                           ariaLabel: void 0,
                                           tabIndex: void 0,
                                           id: DerivedUniqueIdProperty({
+<<<<<<< HEAD
                                             "widgetId": "p7.Administration.Account_New.checkBox2"
+=======
+                                            "widgetId": "p.Administration.Account_New.checkBox2"
+>>>>>>> feat/sales-domain
                                           })
                                         }
                                       )
@@ -432,28 +633,46 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                       })
                                     ]),
                                     labelFor: DerivedUniqueIdProperty({
+<<<<<<< HEAD
                                       "widgetId": "p7.Administration.Account_New.checkBox2"
+=======
+                                      "widgetId": "p.Administration.Account_New.checkBox2"
+>>>>>>> feat/sales-domain
                                     }),
                                     width: 3,
                                     orientation: "horizontal",
                                     hasError: ValidationProperty({
+<<<<<<< HEAD
                                       "inputWidgetId": "p7.Administration.Account_New.checkBox2"
+=======
+                                      "inputWidgetId": "p.Administration.Account_New.checkBox2"
+>>>>>>> feat/sales-domain
                                     })
                                   }
                                 ),
                                 /* @__PURE__ */ React.createElement(
                                   $FormGroup,
                                   {
+<<<<<<< HEAD
                                     key: "p7.Administration.Account_New.comboBox3$formGroup",
                                     $widgetId: "p7.Administration.Account_New.comboBox3$formGroup",
+=======
+                                    key: "p.Administration.Account_New.comboBox3$formGroup",
+                                    $widgetId: "p.Administration.Account_New.comboBox3$formGroup",
+>>>>>>> feat/sales-domain
                                     class: "mx-name-comboBox3",
                                     style: void 0,
                                     control: [
                                       /* @__PURE__ */ React.createElement(
                                         $Combobox,
                                         {
+<<<<<<< HEAD
                                           key: "p7.Administration.Account_New.comboBox3",
                                           $widgetId: "p7.Administration.Account_New.comboBox3",
+=======
+                                          key: "p.Administration.Account_New.comboBox3",
+                                          $widgetId: "p.Administration.Account_New.comboBox3",
+>>>>>>> feat/sales-domain
                                           optionsSourceType: "association",
                                           attributeAssociation: AssociationProperty({
                                             "type": "Reference",
@@ -461,6 +680,7 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                             "path": "",
                                             "attribute": "System.User_Language",
                                             "endpointEntity": "System.Language",
+<<<<<<< HEAD
                                             "selectableObjectsId": "p7.1",
                                             "scope": "p7.Administration.Account_New.dataView1",
                                             "onChange": { "type": "doNothing", "argMap": {}, "config": {}, "disabledDuringExecution": false }
@@ -469,6 +689,16 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                             "dataSourceId": "p7.1",
                                             "entity": "System.Language",
                                             "scope": "p7.Administration.Account_New.dataView1",
+=======
+                                            "selectableObjectsId": "p.1",
+                                            "scope": "p.Administration.Account_New.dataView1",
+                                            "onChange": { "type": "doNothing", "argMap": {}, "config": {}, "disabledDuringExecution": false }
+                                          }),
+                                          optionsSourceAssociationDataSource: DatabaseObjectListProperty({
+                                            "dataSourceId": "p.1",
+                                            "entity": "System.Language",
+                                            "scope": "p.Administration.Account_New.dataView1",
+>>>>>>> feat/sales-domain
                                             "operationId": "g4viIQmKwFmY5um7A3rubg",
                                             "sort": []
                                           }),
@@ -480,7 +710,11 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                             "attributeType": "String",
                                             "sortable": true,
                                             "filterable": true,
+<<<<<<< HEAD
                                             "dataSourceId": "p7.1",
+=======
+                                            "dataSourceId": "p.1",
+>>>>>>> feat/sales-domain
                                             "isList": false
                                           }),
                                           optionsSourceAssociationCaptionExpression: void 0,
@@ -549,7 +783,11 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                           optionsSourceDatabaseDefaultValue: void 0,
                                           tabIndex: void 0,
                                           id: DerivedUniqueIdProperty({
+<<<<<<< HEAD
                                             "widgetId": "p7.Administration.Account_New.comboBox3"
+=======
+                                            "widgetId": "p.Administration.Account_New.comboBox3"
+>>>>>>> feat/sales-domain
                                           })
                                         }
                                       )
@@ -560,28 +798,46 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                       })
                                     ]),
                                     labelFor: DerivedUniqueIdProperty({
+<<<<<<< HEAD
                                       "widgetId": "p7.Administration.Account_New.comboBox3"
+=======
+                                      "widgetId": "p.Administration.Account_New.comboBox3"
+>>>>>>> feat/sales-domain
                                     }),
                                     width: 3,
                                     orientation: "horizontal",
                                     hasError: ValidationProperty({
+<<<<<<< HEAD
                                       "inputWidgetId": "p7.Administration.Account_New.comboBox3"
+=======
+                                      "inputWidgetId": "p.Administration.Account_New.comboBox3"
+>>>>>>> feat/sales-domain
                                     })
                                   }
                                 ),
                                 /* @__PURE__ */ React.createElement(
                                   $FormGroup,
                                   {
+<<<<<<< HEAD
                                     key: "p7.Administration.Account_New.comboBox2$formGroup",
                                     $widgetId: "p7.Administration.Account_New.comboBox2$formGroup",
+=======
+                                    key: "p.Administration.Account_New.comboBox2$formGroup",
+                                    $widgetId: "p.Administration.Account_New.comboBox2$formGroup",
+>>>>>>> feat/sales-domain
                                     class: "mx-name-comboBox2",
                                     style: void 0,
                                     control: [
                                       /* @__PURE__ */ React.createElement(
                                         $Combobox,
                                         {
+<<<<<<< HEAD
                                           key: "p7.Administration.Account_New.comboBox2",
                                           $widgetId: "p7.Administration.Account_New.comboBox2",
+=======
+                                          key: "p.Administration.Account_New.comboBox2",
+                                          $widgetId: "p.Administration.Account_New.comboBox2",
+>>>>>>> feat/sales-domain
                                           optionsSourceType: "association",
                                           attributeAssociation: AssociationProperty({
                                             "type": "Reference",
@@ -589,6 +845,7 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                             "path": "",
                                             "attribute": "System.User_TimeZone",
                                             "endpointEntity": "System.TimeZone",
+<<<<<<< HEAD
                                             "selectableObjectsId": "p7.2",
                                             "scope": "p7.Administration.Account_New.dataView1",
                                             "onChange": { "type": "doNothing", "argMap": {}, "config": {}, "disabledDuringExecution": false }
@@ -597,6 +854,16 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                             "dataSourceId": "p7.2",
                                             "entity": "System.TimeZone",
                                             "scope": "p7.Administration.Account_New.dataView1",
+=======
+                                            "selectableObjectsId": "p.2",
+                                            "scope": "p.Administration.Account_New.dataView1",
+                                            "onChange": { "type": "doNothing", "argMap": {}, "config": {}, "disabledDuringExecution": false }
+                                          }),
+                                          optionsSourceAssociationDataSource: DatabaseObjectListProperty({
+                                            "dataSourceId": "p.2",
+                                            "entity": "System.TimeZone",
+                                            "scope": "p.Administration.Account_New.dataView1",
+>>>>>>> feat/sales-domain
                                             "operationId": "hczuSyZaGlSyB2k43u71rg",
                                             "sort": [
                                               [
@@ -611,8 +878,13 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                           }),
                                           optionsSourceAssociationCaptionType: "expression",
                                           optionsSourceAssociationCaptionExpression: ListExpressionProperty({
+<<<<<<< HEAD
                                             "expression": { "expr": { "type": "variable", "variable": "currentObject", "path": "Description" }, "args": { "currentObject": { "widget": "p7.Administration.Account_New.comboBox2", "source": "object" } } },
                                             "dataSourceId": "p7.2"
+=======
+                                            "expression": { "expr": { "type": "variable", "variable": "currentObject", "path": "Description" }, "args": { "currentObject": { "widget": "p.Administration.Account_New.comboBox2", "source": "object" } } },
+                                            "dataSourceId": "p.2"
+>>>>>>> feat/sales-domain
                                           }),
                                           emptyOptionText: selectTranslation([
                                             ExpressionProperty({
@@ -679,7 +951,11 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                           optionsSourceDatabaseDefaultValue: void 0,
                                           tabIndex: void 0,
                                           id: DerivedUniqueIdProperty({
+<<<<<<< HEAD
                                             "widgetId": "p7.Administration.Account_New.comboBox2"
+=======
+                                            "widgetId": "p.Administration.Account_New.comboBox2"
+>>>>>>> feat/sales-domain
                                           })
                                         }
                                       )
@@ -690,12 +966,20 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                       })
                                     ]),
                                     labelFor: DerivedUniqueIdProperty({
+<<<<<<< HEAD
                                       "widgetId": "p7.Administration.Account_New.comboBox2"
+=======
+                                      "widgetId": "p.Administration.Account_New.comboBox2"
+>>>>>>> feat/sales-domain
                                     }),
                                     width: 3,
                                     orientation: "horizontal",
                                     hasError: ValidationProperty({
+<<<<<<< HEAD
                                       "inputWidgetId": "p7.Administration.Account_New.comboBox2"
+=======
+                                      "inputWidgetId": "p.Administration.Account_New.comboBox2"
+>>>>>>> feat/sales-domain
                                     })
                                   }
                                 )
@@ -707,24 +991,36 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                           /* @__PURE__ */ React.createElement(
                             $FormGroup,
                             {
+<<<<<<< HEAD
                               key: "p7.Administration.Account_New.textBox5$formGroup",
                               $widgetId: "p7.Administration.Account_New.textBox5$formGroup",
+=======
+                              key: "p.Administration.Account_New.textBox5$formGroup",
+                              $widgetId: "p.Administration.Account_New.textBox5$formGroup",
+>>>>>>> feat/sales-domain
                               class: "mx-name-textBox5 mx-textbox",
                               style: void 0,
                               control: [
                                 /* @__PURE__ */ React.createElement(
                                   $TextBox,
                                   {
+<<<<<<< HEAD
                                     key: "p7.Administration.Account_New.textBox5",
                                     $widgetId: "p7.Administration.Account_New.textBox5",
                                     inputValue: AttributeProperty({
                                       "scope": "p7.Administration.Account_New.dataView2",
+=======
+                                    key: "p.Administration.Account_New.textBox5",
+                                    $widgetId: "p.Administration.Account_New.textBox5",
+                                    inputValue: AttributeProperty({
+                                      "scope": "p.Administration.Account_New.dataView2",
+>>>>>>> feat/sales-domain
                                       "path": "",
                                       "entity": "Administration.AccountPasswordData",
                                       "attribute": "NewPassword",
                                       "onChange": { "type": "doNothing", "argMap": {}, "config": {}, "disabledDuringExecution": false },
                                       "isList": false,
-                                      "validation": { "message": selectTranslation(["The password cannot be empty."]), "expression": { "expr": { "type": "function", "name": "!=", "parameters": [{ "type": "variable", "variable": "value" }, { "type": "literal", "value": null }] }, "args": {} } },
+                                      "validation": { "message": selectTranslation(["The password cannot be empty."]), "expression": { "expr": { "type": "function", "name": ">", "parameters": [{ "type": "function", "name": "length", "parameters": [{ "type": "function", "name": "toString", "parameters": [{ "type": "variable", "variable": "value" }] }] }, { "type": "literalNumeric", "value": "0" }] }, "args": {} } },
                                       "formatting": {}
                                     }),
                                     isPassword: true,
@@ -746,7 +1042,11 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                     ariaRequired: true,
                                     tabIndex: void 0,
                                     id: DerivedUniqueIdProperty({
+<<<<<<< HEAD
                                       "widgetId": "p7.Administration.Account_New.textBox5"
+=======
+                                      "widgetId": "p.Administration.Account_New.textBox5"
+>>>>>>> feat/sales-domain
                                     })
                                   }
                                 )
@@ -757,36 +1057,56 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                 })
                               ]),
                               labelFor: DerivedUniqueIdProperty({
+<<<<<<< HEAD
                                 "widgetId": "p7.Administration.Account_New.textBox5"
+=======
+                                "widgetId": "p.Administration.Account_New.textBox5"
+>>>>>>> feat/sales-domain
                               }),
                               width: 3,
                               orientation: "horizontal",
                               hasError: ValidationProperty({
+<<<<<<< HEAD
                                 "inputWidgetId": "p7.Administration.Account_New.textBox5"
+=======
+                                "inputWidgetId": "p.Administration.Account_New.textBox5"
+>>>>>>> feat/sales-domain
                               })
                             }
                           ),
                           /* @__PURE__ */ React.createElement(
                             $FormGroup,
                             {
+<<<<<<< HEAD
                               key: "p7.Administration.Account_New.textBox7$formGroup",
                               $widgetId: "p7.Administration.Account_New.textBox7$formGroup",
+=======
+                              key: "p.Administration.Account_New.textBox7$formGroup",
+                              $widgetId: "p.Administration.Account_New.textBox7$formGroup",
+>>>>>>> feat/sales-domain
                               class: "mx-name-textBox7 mx-textbox",
                               style: void 0,
                               control: [
                                 /* @__PURE__ */ React.createElement(
                                   $TextBox,
                                   {
+<<<<<<< HEAD
                                     key: "p7.Administration.Account_New.textBox7",
                                     $widgetId: "p7.Administration.Account_New.textBox7",
                                     inputValue: AttributeProperty({
                                       "scope": "p7.Administration.Account_New.dataView2",
+=======
+                                    key: "p.Administration.Account_New.textBox7",
+                                    $widgetId: "p.Administration.Account_New.textBox7",
+                                    inputValue: AttributeProperty({
+                                      "scope": "p.Administration.Account_New.dataView2",
+>>>>>>> feat/sales-domain
                                       "path": "",
                                       "entity": "Administration.AccountPasswordData",
                                       "attribute": "ConfirmPassword",
                                       "onChange": { "type": "doNothing", "argMap": {}, "config": {}, "disabledDuringExecution": false },
                                       "isList": false,
-                                      "validation": { "message": selectTranslation(["The password cannot be empty."]), "expression": { "expr": { "type": "function", "name": "!=", "parameters": [{ "type": "variable", "variable": "value" }, { "type": "literal", "value": null }] }, "args": {} } },
+                                      "validation": { "message": selectTranslation(["The password cannot be empty."]), "expression": { "expr": { "type": "function", "name": ">", "parameters": [{ "type": "function", "name": "length", "parameters": [{ "type": "function", "name": "toString", "parameters": [{ "type": "variable", "variable": "value" }] }] }, { "type": "literalNumeric", "value": "0" }] }, "args": {} } },
                                       "formatting": {}
                                     }),
                                     isPassword: true,
@@ -808,7 +1128,11 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                     ariaRequired: true,
                                     tabIndex: void 0,
                                     id: DerivedUniqueIdProperty({
+<<<<<<< HEAD
                                       "widgetId": "p7.Administration.Account_New.textBox7"
+=======
+                                      "widgetId": "p.Administration.Account_New.textBox7"
+>>>>>>> feat/sales-domain
                                     })
                                   }
                                 )
@@ -819,12 +1143,20 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                 })
                               ]),
                               labelFor: DerivedUniqueIdProperty({
+<<<<<<< HEAD
                                 "widgetId": "p7.Administration.Account_New.textBox7"
+=======
+                                "widgetId": "p.Administration.Account_New.textBox7"
+>>>>>>> feat/sales-domain
                               }),
                               width: 3,
                               orientation: "horizontal",
                               hasError: ValidationProperty({
+<<<<<<< HEAD
                                 "inputWidgetId": "p7.Administration.Account_New.textBox7"
+=======
+                                "inputWidgetId": "p.Administration.Account_New.textBox7"
+>>>>>>> feat/sales-domain
                               })
                             }
                           )
@@ -834,8 +1166,13 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                           /* @__PURE__ */ React.createElement(
                             $ConditionalVisibilityWrapper,
                             {
+<<<<<<< HEAD
                               key: "p7.Administration.Account_New.microflowButton1$visibility",
                               $widgetId: "p7.Administration.Account_New.microflowButton1$visibility",
+=======
+                              key: "p.Administration.Account_New.microflowButton1$visibility",
+                              $widgetId: "p.Administration.Account_New.microflowButton1$visibility",
+>>>>>>> feat/sales-domain
                               visible: ExpressionProperty({
                                 "expression": { "expr": { "type": "function", "name": "_hasSomeRole", "parameters": [{ "type": "literal", "value": "Administrator" }] }, "args": {} }
                               }),
@@ -843,9 +1180,15 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                 /* @__PURE__ */ React.createElement(
                                   $ActionButton,
                                   {
+<<<<<<< HEAD
                                     key: "p7.Administration.Account_New.microflowButton1",
                                     $widgetId: "p7.Administration.Account_New.microflowButton1",
                                     buttonId: "p7.Administration.Account_New.microflowButton1",
+=======
+                                    key: "p.Administration.Account_New.microflowButton1",
+                                    $widgetId: "p.Administration.Account_New.microflowButton1",
+                                    buttonId: "p.Administration.Account_New.microflowButton1",
+>>>>>>> feat/sales-domain
                                     class: "mx-name-microflowButton1",
                                     style: void 0,
                                     tabIndex: void 0,
@@ -875,9 +1218,15 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                           /* @__PURE__ */ React.createElement(
                             $ActionButton,
                             {
+<<<<<<< HEAD
                               key: "p7.Administration.Account_New.cancelButton1",
                               $widgetId: "p7.Administration.Account_New.cancelButton1",
                               buttonId: "p7.Administration.Account_New.cancelButton1",
+=======
+                              key: "p.Administration.Account_New.cancelButton1",
+                              $widgetId: "p.Administration.Account_New.cancelButton1",
+                              buttonId: "p.Administration.Account_New.cancelButton1",
+>>>>>>> feat/sales-domain
                               class: "mx-name-cancelButton1",
                               style: void 0,
                               tabIndex: void 0,
@@ -918,12 +1267,17 @@ const title = selectTranslation([
   "New Account"
 ]);
 const classes = "";
+const autofocus = "desktopOnly";
 const cancelChangesOperationId = "f6It075pTV2QQRaHHSzXqg";
+<<<<<<< HEAD
 const closeButton = "p7.Administration.Account_New.cancelButton1";
+=======
+const closeButton = "p.Administration.Account_New.cancelButton1";
+>>>>>>> feat/sales-domain
 const style = {};
 const content = {
   ...content$1,
   "Atlas_Core.PopupLayout.Main": region$Main
 };
 
-export { cancelChangesOperationId, classes, closeButton, content, style, title };
+export { autofocus, cancelChangesOperationId, classes, closeButton, content, style, title };

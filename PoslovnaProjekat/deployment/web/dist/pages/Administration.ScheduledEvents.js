@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { reactExports, asPluginWidgets, addEnumerations, selectTranslation } from '../index-JDXCDs53.js';
 import { PageFragment, ExpressionProperty } from '../ScrollContainer-BMEt46hD.js';
 import { DatabaseObjectListProperty } from '../CTcC6PjV-Zoc9mpUp.js';
@@ -17,6 +18,54 @@ import '../D5tDSKpV-NCto3GtK.js';
 import '../InlineText-BhumBKcU.js';
 import '../WebIconProperty-Bon9K84_.js';
 import '../WebStaticImageProperty-Cl4Gen30.js';
+=======
+<<<<<<< Updated upstream
+import { reactExports, asPluginWidgets, addEnumerations, selectTranslation } from '../index-BjSpTlX0.js';
+import { PageFragment, ExpressionProperty } from '../ScrollContainer-DYUj9_Ay.js';
+import { DatabaseObjectListProperty } from '../XQdQuDNG-DT5jvNDi.js';
+import { ListAttributeProperty } from '../ListAttributeProperty-BqFtOePf.js';
+import { ListExpressionProperty } from '../ListExpressionProperty-8MjkvJ9b.js';
+import { TemplatedWidgetProperty } from '../TemplatedWidgetProperty-eR6-5GQS.js';
+import { ConditionalVisibilityWrapper } from '../ConditionalVisibilityWrapper-C8wONAJZ.js';
+import { Container, Text } from '../Text-CHYWFktZ.js';
+import * as DatagridWidgetModule from '../../../../../../../../Poslovna/e2-Poslovna/PoslovnaProjekat/deployment/web/widgets/com/mendix/widget/web/datagrid/Datagrid.mjs';
+import * as DatagridDateFilterWidgetModule from '../../../../../../../../Poslovna/e2-Poslovna/PoslovnaProjekat/deployment/web/widgets/com/mendix/widget/web/datagriddatefilter/DatagridDateFilter.mjs';
+import '../../../../../../../../Poslovna/e2-Poslovna/PoslovnaProjekat/deployment/web/widgets/com/mendix/widget/web/datagriddatefilter/DatagridDateFilter.css';
+import * as DatagridDropdownFilterWidgetModule from '../../../../../../../../Poslovna/e2-Poslovna/PoslovnaProjekat/deployment/web/widgets/com/mendix/widget/web/datagriddropdownfilter/DatagridDropdownFilter.mjs';
+import * as DatagridTextFilterWidgetModule from '../../../../../../../../Poslovna/e2-Poslovna/PoslovnaProjekat/deployment/web/widgets/com/mendix/widget/web/datagridtextfilter/DatagridTextFilter.mjs';
+import { Div } from '../Div-Dyf4zdHI.js';
+import { content as content$1 } from '../Atlas_Core.Atlas_Default-C-ZwRMe1.js';
+import '../BkqAssms-D3I0Q7ya.js';
+import '../ActionButton-dNbAsczi.js';
+import '../77kgvjgm-4HZvSliz.js';
+import '../InlineText-BMWFPLMA.js';
+import '../WebIconProperty-B82XOhEa.js';
+import '../WebStaticImageProperty-CFK2IFXG.js';
+import '../../../../../../../../Poslovna/e2-Poslovna/PoslovnaProjekat/deployment/web/widgets/com/mendix/widget/web/image/Image.mjs';
+import '../../../../../../../../Poslovna/e2-Poslovna/PoslovnaProjekat/deployment/web/widgets/com/mendix/widget/web/image/Image.css';
+import '../../../../../../../../Poslovna/e2-Poslovna/PoslovnaProjekat/deployment/web/widgets/com/mendix/widget/web/languageselector/LanguageSelector.mjs';
+import '../../../../../../../../Poslovna/e2-Poslovna/PoslovnaProjekat/deployment/web/widgets/com/mendix/widget/web/languageselector/LanguageSelector.css';
+=======
+import { reactExports, asPluginWidgets, addEnumerations, selectTranslation } from '../index-DRM94Sf-.js';
+import { PageFragment, ExpressionProperty } from '../ScrollContainer-LSQoMZk3.js';
+import { DatabaseObjectListProperty } from '../XQdQuDNG-BIL054Xu.js';
+import { ListAttributeProperty } from '../ListAttributeProperty-BRLhJBGz.js';
+import { ListExpressionProperty } from '../ListExpressionProperty-Oai9lB4H.js';
+import { DatagridDateFilterWidgetModule, DatagridTextFilterWidgetModule, TemplatedWidgetProperty } from '../DatagridTextFilter-DFjS4xAv.js';
+import { ConditionalVisibilityWrapper } from '../ConditionalVisibilityWrapper-C8wONAJZ.js';
+import { Container, Text } from '../Image-DMmMe595.js';
+import { DatagridWidgetModule } from '../Datagrid-Ct9FWUdb.js';
+import { DatagridDropdownFilterWidgetModule } from '../DatagridDropdownFilter-BLMPBrvX.js';
+import { Div } from '../Div-DOhBQ24X.js';
+import { content as content$1 } from '../Atlas_Core.Atlas_Default-CIKgqGL7.js';
+import '../BkqAssms-a3v8x28y.js';
+import '../ActionButton-Vn_V_FOy.js';
+import '../77kgvjgm-Ckrt0mx6.js';
+import '../InlineText-Jv0dr_pn.js';
+import '../WebIconProperty-CkJqYHVz.js';
+import '../WebStaticImageProperty-Dq4ynMoj.js';
+>>>>>>> Stashed changes
+>>>>>>> feat/sales-domain
 
 const React = { createElement: reactExports.createElement };
 const Datagrid = Object.getOwnPropertyDescriptor(DatagridWidgetModule, "Datagrid")?.value || Object.getOwnPropertyDescriptor(DatagridWidgetModule, "default")?.value;
@@ -56,8 +105,13 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
   /* @__PURE__ */ React.createElement(
     $Container,
     {
+<<<<<<< HEAD
       key: "p1.Administration.ScheduledEvents.container1",
       $widgetId: "p1.Administration.ScheduledEvents.container1",
+=======
+      key: "p.Administration.ScheduledEvents.container1",
+      $widgetId: "p.Administration.ScheduledEvents.container1",
+>>>>>>> feat/sales-domain
       class: "mx-name-container1 pageheader pageheader-fullwidth",
       style: void 0,
       renderMode: "div",
@@ -66,32 +120,52 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
         /* @__PURE__ */ React.createElement(
           $Div,
           {
+<<<<<<< HEAD
             key: "p1.Administration.ScheduledEvents.layoutGrid1",
             $widgetId: "p1.Administration.ScheduledEvents.layoutGrid1",
+=======
+            key: "p.Administration.ScheduledEvents.layoutGrid1",
+            $widgetId: "p.Administration.ScheduledEvents.layoutGrid1",
+>>>>>>> feat/sales-domain
             class: "mx-name-layoutGrid1 mx-layoutgrid mx-layoutgrid-fluid container-fluid",
             style: void 0,
             content: [
               /* @__PURE__ */ React.createElement(
                 $Div,
                 {
+<<<<<<< HEAD
                   key: "p1.Administration.ScheduledEvents.layoutGrid1$row0",
                   $widgetId: "p1.Administration.ScheduledEvents.layoutGrid1$row0",
+=======
+                  key: "p.Administration.ScheduledEvents.layoutGrid1$row0",
+                  $widgetId: "p.Administration.ScheduledEvents.layoutGrid1$row0",
+>>>>>>> feat/sales-domain
                   class: "row",
                   style: void 0,
                   content: [
                     /* @__PURE__ */ React.createElement(
                       $Div,
                       {
+<<<<<<< HEAD
                         key: "p1.Administration.ScheduledEvents.layoutGrid1$row0$column0",
                         $widgetId: "p1.Administration.ScheduledEvents.layoutGrid1$row0$column0",
+=======
+                        key: "p.Administration.ScheduledEvents.layoutGrid1$row0$column0",
+                        $widgetId: "p.Administration.ScheduledEvents.layoutGrid1$row0$column0",
+>>>>>>> feat/sales-domain
                         class: "col-lg-12 col-md-12 col-12",
                         style: void 0,
                         content: [
                           /* @__PURE__ */ React.createElement(
                             $Text,
                             {
+<<<<<<< HEAD
                               key: "p1.Administration.ScheduledEvents.label1",
                               $widgetId: "p1.Administration.ScheduledEvents.label1",
+=======
+                              key: "p.Administration.ScheduledEvents.label1",
+                              $widgetId: "p.Administration.ScheduledEvents.label1",
+>>>>>>> feat/sales-domain
                               class: "mx-name-label1 pageheader-title",
                               style: void 0,
                               caption: selectTranslation([
@@ -118,35 +192,58 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
   /* @__PURE__ */ React.createElement(
     $Div,
     {
+<<<<<<< HEAD
       key: "p1.Administration.ScheduledEvents.layoutGrid2",
       $widgetId: "p1.Administration.ScheduledEvents.layoutGrid2",
+=======
+      key: "p.Administration.ScheduledEvents.layoutGrid2",
+      $widgetId: "p.Administration.ScheduledEvents.layoutGrid2",
+>>>>>>> feat/sales-domain
       class: "mx-name-layoutGrid2 mx-layoutgrid mx-layoutgrid-fluid container-fluid",
       style: void 0,
       content: [
         /* @__PURE__ */ React.createElement(
           $Div,
           {
+<<<<<<< HEAD
             key: "p1.Administration.ScheduledEvents.layoutGrid2$row0",
             $widgetId: "p1.Administration.ScheduledEvents.layoutGrid2$row0",
+=======
+            key: "p.Administration.ScheduledEvents.layoutGrid2$row0",
+            $widgetId: "p.Administration.ScheduledEvents.layoutGrid2$row0",
+>>>>>>> feat/sales-domain
             class: "row",
             style: void 0,
             content: [
               /* @__PURE__ */ React.createElement(
                 $Div,
                 {
+<<<<<<< HEAD
                   key: "p1.Administration.ScheduledEvents.layoutGrid2$row0$column0",
                   $widgetId: "p1.Administration.ScheduledEvents.layoutGrid2$row0$column0",
+=======
+                  key: "p.Administration.ScheduledEvents.layoutGrid2$row0$column0",
+                  $widgetId: "p.Administration.ScheduledEvents.layoutGrid2$row0$column0",
+>>>>>>> feat/sales-domain
                   class: "col-lg-12 col-md-12 col-12",
                   style: void 0,
                   content: [
                     /* @__PURE__ */ React.createElement(
                       $Datagrid,
                       {
+<<<<<<< HEAD
                         key: "p1.Administration.ScheduledEvents.dataGrid21",
                         $widgetId: "p1.Administration.ScheduledEvents.dataGrid21",
                         advanced: false,
                         datasource: DatabaseObjectListProperty({
                           "dataSourceId": "p1.10",
+=======
+                        key: "p.Administration.ScheduledEvents.dataGrid21",
+                        $widgetId: "p.Administration.ScheduledEvents.dataGrid21",
+                        advanced: false,
+                        datasource: DatabaseObjectListProperty({
+                          "dataSourceId": "p.10",
+>>>>>>> feat/sales-domain
                           "entity": "System.ScheduledEventInformation",
                           "operationId": "netzuZoXw1SuH0qR25RGbQ",
                           "sort": [
@@ -169,7 +266,11 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                               "attributeType": "String",
                               "sortable": true,
                               "filterable": true,
+<<<<<<< HEAD
                               "dataSourceId": "p1.10",
+=======
+                              "dataSourceId": "p.10",
+>>>>>>> feat/sales-domain
                               "isList": false
                             }),
                             "content": void 0,
@@ -188,8 +289,13 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                               /* @__PURE__ */ React.createElement(
                                 $DatagridTextFilter,
                                 {
+<<<<<<< HEAD
                                   key: "p1.Administration.ScheduledEvents.textFilter1",
                                   $widgetId: "p1.Administration.ScheduledEvents.textFilter1",
+=======
+                                  key: "p.Administration.ScheduledEvents.textFilter1",
+                                  $widgetId: "p.Administration.ScheduledEvents.textFilter1",
+>>>>>>> feat/sales-domain
                                   advanced: false,
                                   defaultValue: void 0,
                                   defaultFilter: "contains",
@@ -246,7 +352,11 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                               "attributeType": "String",
                               "sortable": true,
                               "filterable": true,
+<<<<<<< HEAD
                               "dataSourceId": "p1.10",
+=======
+                              "dataSourceId": "p.10",
+>>>>>>> feat/sales-domain
                               "isList": false
                             }),
                             "content": void 0,
@@ -265,8 +375,13 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                               /* @__PURE__ */ React.createElement(
                                 $DatagridTextFilter,
                                 {
+<<<<<<< HEAD
                                   key: "p1.Administration.ScheduledEvents.textFilter2",
                                   $widgetId: "p1.Administration.ScheduledEvents.textFilter2",
+=======
+                                  key: "p.Administration.ScheduledEvents.textFilter2",
+                                  $widgetId: "p.Administration.ScheduledEvents.textFilter2",
+>>>>>>> feat/sales-domain
                                   advanced: false,
                                   defaultValue: void 0,
                                   defaultFilter: "contains",
@@ -323,14 +438,23 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                               "attributeType": "DateTime",
                               "sortable": true,
                               "filterable": true,
+<<<<<<< HEAD
                               "dataSourceId": "p1.10",
+=======
+                              "dataSourceId": "p.10",
+>>>>>>> feat/sales-domain
                               "isList": false
                             }),
                             "content": void 0,
                             "dynamicText": selectTranslation([
                               ListExpressionProperty({
+<<<<<<< HEAD
                                 "expression": { "expr": { "type": "function", "name": "_format", "parameters": [{ "type": "variable", "variable": "currentObject", "path": "StartTime" }, { "type": "literal", "value": '{"type":"datetime"}' }] }, "args": { "currentObject": { "widget": "p1.Administration.ScheduledEvents.dataGrid21", "source": "object" } } },
                                 "dataSourceId": "p1.10"
+=======
+                                "expression": { "expr": { "type": "function", "name": "_format", "parameters": [{ "type": "variable", "variable": "currentObject", "path": "StartTime" }, { "type": "literal", "value": '{"type":"datetime"}' }] }, "args": { "currentObject": { "widget": "p.Administration.ScheduledEvents.dataGrid21", "source": "object" } } },
+                                "dataSourceId": "p.10"
+>>>>>>> feat/sales-domain
                               })
                             ]),
                             "header": selectTranslation([
@@ -345,8 +469,13 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                               /* @__PURE__ */ React.createElement(
                                 $DatagridDateFilter,
                                 {
+<<<<<<< HEAD
                                   key: "p1.Administration.ScheduledEvents.dateFilter1",
                                   $widgetId: "p1.Administration.ScheduledEvents.dateFilter1",
+=======
+                                  key: "p.Administration.ScheduledEvents.dateFilter1",
+                                  $widgetId: "p.Administration.ScheduledEvents.dateFilter1",
+>>>>>>> feat/sales-domain
                                   advanced: false,
                                   defaultValue: void 0,
                                   defaultStartDate: void 0,
@@ -409,27 +538,47 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                               "attributeType": "Enum",
                               "sortable": true,
                               "filterable": true,
+<<<<<<< HEAD
                               "dataSourceId": "p1.10",
                               "isList": false
                             }),
                             "content": TemplatedWidgetProperty({
                               "dataSourceId": "p1.10",
+=======
+                              "dataSourceId": "p.10",
+                              "isList": false
+                            }),
+                            "content": TemplatedWidgetProperty({
+                              "dataSourceId": "p.10",
+>>>>>>> feat/sales-domain
                               "editable": false,
                               "children": () => [
                                 /* @__PURE__ */ React.createElement(
                                   $ConditionalVisibilityWrapper,
                                   {
+<<<<<<< HEAD
                                     key: "p1.Administration.ScheduledEvents.text2$visibility",
                                     $widgetId: "p1.Administration.ScheduledEvents.text2$visibility",
                                     visible: ExpressionProperty({
                                       "expression": { "expr": { "type": "function", "name": "=", "parameters": [{ "type": "variable", "variable": "currentObject", "path": "Status" }, { "type": "literal", "value": "Running" }] }, "args": { "currentObject": { "widget": "p1.Administration.ScheduledEvents.dataGrid21", "source": "object" } } }
+=======
+                                    key: "p.Administration.ScheduledEvents.text2$visibility",
+                                    $widgetId: "p.Administration.ScheduledEvents.text2$visibility",
+                                    visible: ExpressionProperty({
+                                      "expression": { "expr": { "type": "function", "name": "=", "parameters": [{ "type": "variable", "variable": "currentObject", "path": "Status" }, { "type": "literal", "value": "Running" }] }, "args": { "currentObject": { "widget": "p.Administration.ScheduledEvents.dataGrid21", "source": "object" } } }
+>>>>>>> feat/sales-domain
                                     }),
                                     contents: [
                                       /* @__PURE__ */ React.createElement(
                                         $Text,
                                         {
+<<<<<<< HEAD
                                           key: "p1.Administration.ScheduledEvents.text2",
                                           $widgetId: "p1.Administration.ScheduledEvents.text2",
+=======
+                                          key: "p.Administration.ScheduledEvents.text2",
+                                          $widgetId: "p.Administration.ScheduledEvents.text2",
+>>>>>>> feat/sales-domain
                                           class: "mx-name-text2 badge label-primary",
                                           style: void 0,
                                           caption: selectTranslation([
@@ -446,17 +595,29 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                 /* @__PURE__ */ React.createElement(
                                   $ConditionalVisibilityWrapper,
                                   {
+<<<<<<< HEAD
                                     key: "p1.Administration.ScheduledEvents.text1$visibility",
                                     $widgetId: "p1.Administration.ScheduledEvents.text1$visibility",
                                     visible: ExpressionProperty({
                                       "expression": { "expr": { "type": "function", "name": "=", "parameters": [{ "type": "variable", "variable": "currentObject", "path": "Status" }, { "type": "literal", "value": "Completed" }] }, "args": { "currentObject": { "widget": "p1.Administration.ScheduledEvents.dataGrid21", "source": "object" } } }
+=======
+                                    key: "p.Administration.ScheduledEvents.text1$visibility",
+                                    $widgetId: "p.Administration.ScheduledEvents.text1$visibility",
+                                    visible: ExpressionProperty({
+                                      "expression": { "expr": { "type": "function", "name": "=", "parameters": [{ "type": "variable", "variable": "currentObject", "path": "Status" }, { "type": "literal", "value": "Completed" }] }, "args": { "currentObject": { "widget": "p.Administration.ScheduledEvents.dataGrid21", "source": "object" } } }
+>>>>>>> feat/sales-domain
                                     }),
                                     contents: [
                                       /* @__PURE__ */ React.createElement(
                                         $Text,
                                         {
+<<<<<<< HEAD
                                           key: "p1.Administration.ScheduledEvents.text1",
                                           $widgetId: "p1.Administration.ScheduledEvents.text1",
+=======
+                                          key: "p.Administration.ScheduledEvents.text1",
+                                          $widgetId: "p.Administration.ScheduledEvents.text1",
+>>>>>>> feat/sales-domain
                                           class: "mx-name-text1 badge label-success",
                                           style: void 0,
                                           caption: selectTranslation([
@@ -473,17 +634,29 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                 /* @__PURE__ */ React.createElement(
                                   $ConditionalVisibilityWrapper,
                                   {
+<<<<<<< HEAD
                                     key: "p1.Administration.ScheduledEvents.text3$visibility",
                                     $widgetId: "p1.Administration.ScheduledEvents.text3$visibility",
                                     visible: ExpressionProperty({
                                       "expression": { "expr": { "type": "function", "name": "=", "parameters": [{ "type": "variable", "variable": "currentObject", "path": "Status" }, { "type": "literal", "value": "Error" }] }, "args": { "currentObject": { "widget": "p1.Administration.ScheduledEvents.dataGrid21", "source": "object" } } }
+=======
+                                    key: "p.Administration.ScheduledEvents.text3$visibility",
+                                    $widgetId: "p.Administration.ScheduledEvents.text3$visibility",
+                                    visible: ExpressionProperty({
+                                      "expression": { "expr": { "type": "function", "name": "=", "parameters": [{ "type": "variable", "variable": "currentObject", "path": "Status" }, { "type": "literal", "value": "Error" }] }, "args": { "currentObject": { "widget": "p.Administration.ScheduledEvents.dataGrid21", "source": "object" } } }
+>>>>>>> feat/sales-domain
                                     }),
                                     contents: [
                                       /* @__PURE__ */ React.createElement(
                                         $Text,
                                         {
+<<<<<<< HEAD
                                           key: "p1.Administration.ScheduledEvents.text3",
                                           $widgetId: "p1.Administration.ScheduledEvents.text3",
+=======
+                                          key: "p.Administration.ScheduledEvents.text3",
+                                          $widgetId: "p.Administration.ScheduledEvents.text3",
+>>>>>>> feat/sales-domain
                                           class: "mx-name-text3 badge label-danger",
                                           style: void 0,
                                           caption: selectTranslation([
@@ -500,17 +673,29 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                 /* @__PURE__ */ React.createElement(
                                   $ConditionalVisibilityWrapper,
                                   {
+<<<<<<< HEAD
                                     key: "p1.Administration.ScheduledEvents.text4$visibility",
                                     $widgetId: "p1.Administration.ScheduledEvents.text4$visibility",
                                     visible: ExpressionProperty({
                                       "expression": { "expr": { "type": "function", "name": "=", "parameters": [{ "type": "variable", "variable": "currentObject", "path": "Status" }, { "type": "literal", "value": "Stopped" }] }, "args": { "currentObject": { "widget": "p1.Administration.ScheduledEvents.dataGrid21", "source": "object" } } }
+=======
+                                    key: "p.Administration.ScheduledEvents.text4$visibility",
+                                    $widgetId: "p.Administration.ScheduledEvents.text4$visibility",
+                                    visible: ExpressionProperty({
+                                      "expression": { "expr": { "type": "function", "name": "=", "parameters": [{ "type": "variable", "variable": "currentObject", "path": "Status" }, { "type": "literal", "value": "Stopped" }] }, "args": { "currentObject": { "widget": "p.Administration.ScheduledEvents.dataGrid21", "source": "object" } } }
+>>>>>>> feat/sales-domain
                                     }),
                                     contents: [
                                       /* @__PURE__ */ React.createElement(
                                         $Text,
                                         {
+<<<<<<< HEAD
                                           key: "p1.Administration.ScheduledEvents.text4",
                                           $widgetId: "p1.Administration.ScheduledEvents.text4",
+=======
+                                          key: "p.Administration.ScheduledEvents.text4",
+                                          $widgetId: "p.Administration.ScheduledEvents.text4",
+>>>>>>> feat/sales-domain
                                           class: "mx-name-text4 badge label-secondary",
                                           style: void 0,
                                           caption: selectTranslation([
@@ -541,8 +726,13 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                               /* @__PURE__ */ React.createElement(
                                 $DatagridDropdownFilter,
                                 {
+<<<<<<< HEAD
                                   key: "p1.Administration.ScheduledEvents.drop_downFilter1",
                                   $widgetId: "p1.Administration.ScheduledEvents.drop_downFilter1",
+=======
+                                  key: "p.Administration.ScheduledEvents.drop_downFilter1",
+                                  $widgetId: "p.Administration.ScheduledEvents.drop_downFilter1",
+>>>>>>> feat/sales-domain
                                   auto: true,
                                   defaultValue: void 0,
                                   filterOptions: [],
@@ -597,14 +787,23 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                               "attributeType": "DateTime",
                               "sortable": true,
                               "filterable": true,
+<<<<<<< HEAD
                               "dataSourceId": "p1.10",
+=======
+                              "dataSourceId": "p.10",
+>>>>>>> feat/sales-domain
                               "isList": false
                             }),
                             "content": void 0,
                             "dynamicText": selectTranslation([
                               ListExpressionProperty({
+<<<<<<< HEAD
                                 "expression": { "expr": { "type": "function", "name": "_format", "parameters": [{ "type": "variable", "variable": "currentObject", "path": "EndTime" }, { "type": "literal", "value": '{"type":"datetime"}' }] }, "args": { "currentObject": { "widget": "p1.Administration.ScheduledEvents.dataGrid21", "source": "object" } } },
                                 "dataSourceId": "p1.10"
+=======
+                                "expression": { "expr": { "type": "function", "name": "_format", "parameters": [{ "type": "variable", "variable": "currentObject", "path": "EndTime" }, { "type": "literal", "value": '{"type":"datetime"}' }] }, "args": { "currentObject": { "widget": "p.Administration.ScheduledEvents.dataGrid21", "source": "object" } } },
+                                "dataSourceId": "p.10"
+>>>>>>> feat/sales-domain
                               })
                             ]),
                             "header": selectTranslation([
@@ -619,8 +818,13 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                               /* @__PURE__ */ React.createElement(
                                 $DatagridDateFilter,
                                 {
+<<<<<<< HEAD
                                   key: "p1.Administration.ScheduledEvents.dateFilter2",
                                   $widgetId: "p1.Administration.ScheduledEvents.dateFilter2",
+=======
+                                  key: "p.Administration.ScheduledEvents.dateFilter2",
+                                  $widgetId: "p.Administration.ScheduledEvents.dateFilter2",
+>>>>>>> feat/sales-domain
                                   advanced: false,
                                   defaultValue: void 0,
                                   defaultStartDate: void 0,
@@ -746,10 +950,11 @@ const title = selectTranslation([
   "Scheduled Events"
 ]);
 const classes = "layout-atlas layout-atlas-responsive-default";
+const autofocus = "desktopOnly";
 const style = {};
 const content = {
   ...content$1,
   "Atlas_Core.Atlas_Default.Main": region$Main
 };
 
-export { classes, content, style, title };
+export { autofocus, classes, content, style, title };

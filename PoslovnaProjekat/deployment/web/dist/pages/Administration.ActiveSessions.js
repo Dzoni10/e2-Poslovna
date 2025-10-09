@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { reactExports, asPluginWidgets, selectTranslation } from '../index-JDXCDs53.js';
 import { PageFragment, ExpressionProperty } from '../ScrollContainer-BMEt46hD.js';
 import { ActionButton, TextProperty, ActionProperty } from '../ActionButton-CnZtpka2.js';
@@ -15,6 +16,50 @@ import '../uEIG9e6s-D5bs4rlT.js';
 import '../D5tDSKpV-NCto3GtK.js';
 import '../InlineText-BhumBKcU.js';
 import '../WebStaticImageProperty-Cl4Gen30.js';
+=======
+<<<<<<< Updated upstream
+import { reactExports, asPluginWidgets, selectTranslation } from '../index-BjSpTlX0.js';
+import { PageFragment, ExpressionProperty } from '../ScrollContainer-DYUj9_Ay.js';
+import { ActionButton, TextProperty, ActionProperty } from '../ActionButton-dNbAsczi.js';
+import { DatabaseObjectListProperty } from '../XQdQuDNG-DT5jvNDi.js';
+import { ListAttributeProperty } from '../ListAttributeProperty-BqFtOePf.js';
+import { ListExpressionProperty } from '../ListExpressionProperty-8MjkvJ9b.js';
+import { TemplatedWidgetProperty } from '../TemplatedWidgetProperty-eR6-5GQS.js';
+import { WebIconProperty } from '../WebIconProperty-B82XOhEa.js';
+import { Container, Text } from '../Text-CHYWFktZ.js';
+import * as DatagridWidgetModule from '../../../../../../../../Poslovna/e2-Poslovna/PoslovnaProjekat/deployment/web/widgets/com/mendix/widget/web/datagrid/Datagrid.mjs';
+import * as DatagridDateFilterWidgetModule from '../../../../../../../../Poslovna/e2-Poslovna/PoslovnaProjekat/deployment/web/widgets/com/mendix/widget/web/datagriddatefilter/DatagridDateFilter.mjs';
+import '../../../../../../../../Poslovna/e2-Poslovna/PoslovnaProjekat/deployment/web/widgets/com/mendix/widget/web/datagriddatefilter/DatagridDateFilter.css';
+import * as DatagridTextFilterWidgetModule from '../../../../../../../../Poslovna/e2-Poslovna/PoslovnaProjekat/deployment/web/widgets/com/mendix/widget/web/datagridtextfilter/DatagridTextFilter.mjs';
+import { Div } from '../Div-Dyf4zdHI.js';
+import { content as content$1 } from '../Atlas_Core.Atlas_Default-C-ZwRMe1.js';
+import '../BkqAssms-D3I0Q7ya.js';
+import '../77kgvjgm-4HZvSliz.js';
+import '../InlineText-BMWFPLMA.js';
+import '../WebStaticImageProperty-CFK2IFXG.js';
+import '../../../../../../../../Poslovna/e2-Poslovna/PoslovnaProjekat/deployment/web/widgets/com/mendix/widget/web/image/Image.mjs';
+import '../../../../../../../../Poslovna/e2-Poslovna/PoslovnaProjekat/deployment/web/widgets/com/mendix/widget/web/image/Image.css';
+import '../../../../../../../../Poslovna/e2-Poslovna/PoslovnaProjekat/deployment/web/widgets/com/mendix/widget/web/languageselector/LanguageSelector.mjs';
+import '../../../../../../../../Poslovna/e2-Poslovna/PoslovnaProjekat/deployment/web/widgets/com/mendix/widget/web/languageselector/LanguageSelector.css';
+=======
+import { reactExports, asPluginWidgets, selectTranslation } from '../index-DRM94Sf-.js';
+import { PageFragment, ExpressionProperty } from '../ScrollContainer-LSQoMZk3.js';
+import { ActionButton, TextProperty, ActionProperty } from '../ActionButton-Vn_V_FOy.js';
+import { DatabaseObjectListProperty } from '../XQdQuDNG-BIL054Xu.js';
+import { ListAttributeProperty } from '../ListAttributeProperty-BRLhJBGz.js';
+import { ListExpressionProperty } from '../ListExpressionProperty-Oai9lB4H.js';
+import { DatagridDateFilterWidgetModule, DatagridTextFilterWidgetModule, TemplatedWidgetProperty } from '../DatagridTextFilter-DFjS4xAv.js';
+import { WebIconProperty } from '../WebIconProperty-CkJqYHVz.js';
+import { Container, Text } from '../Image-DMmMe595.js';
+import { DatagridWidgetModule } from '../Datagrid-Ct9FWUdb.js';
+import { Div } from '../Div-DOhBQ24X.js';
+import { content as content$1 } from '../Atlas_Core.Atlas_Default-CIKgqGL7.js';
+import '../BkqAssms-a3v8x28y.js';
+import '../77kgvjgm-Ckrt0mx6.js';
+import '../InlineText-Jv0dr_pn.js';
+import '../WebStaticImageProperty-Dq4ynMoj.js';
+>>>>>>> Stashed changes
+>>>>>>> feat/sales-domain
 
 const React = { createElement: reactExports.createElement };
 const Datagrid = Object.getOwnPropertyDescriptor(DatagridWidgetModule, "Datagrid")?.value || Object.getOwnPropertyDescriptor(DatagridWidgetModule, "default")?.value;
@@ -25,8 +70,13 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
   /* @__PURE__ */ React.createElement(
     $Container,
     {
+<<<<<<< HEAD
       key: "p3.Administration.ActiveSessions.container1",
       $widgetId: "p3.Administration.ActiveSessions.container1",
+=======
+      key: "p.Administration.ActiveSessions.container1",
+      $widgetId: "p.Administration.ActiveSessions.container1",
+>>>>>>> feat/sales-domain
       class: "mx-name-container1 pageheader pageheader-fullwidth",
       style: void 0,
       renderMode: "div",
@@ -35,32 +85,52 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
         /* @__PURE__ */ React.createElement(
           $Div,
           {
+<<<<<<< HEAD
             key: "p3.Administration.ActiveSessions.layoutGrid1",
             $widgetId: "p3.Administration.ActiveSessions.layoutGrid1",
+=======
+            key: "p.Administration.ActiveSessions.layoutGrid1",
+            $widgetId: "p.Administration.ActiveSessions.layoutGrid1",
+>>>>>>> feat/sales-domain
             class: "mx-name-layoutGrid1 mx-layoutgrid mx-layoutgrid-fluid container-fluid",
             style: void 0,
             content: [
               /* @__PURE__ */ React.createElement(
                 $Div,
                 {
+<<<<<<< HEAD
                   key: "p3.Administration.ActiveSessions.layoutGrid1$row0",
                   $widgetId: "p3.Administration.ActiveSessions.layoutGrid1$row0",
+=======
+                  key: "p.Administration.ActiveSessions.layoutGrid1$row0",
+                  $widgetId: "p.Administration.ActiveSessions.layoutGrid1$row0",
+>>>>>>> feat/sales-domain
                   class: "row",
                   style: void 0,
                   content: [
                     /* @__PURE__ */ React.createElement(
                       $Div,
                       {
+<<<<<<< HEAD
                         key: "p3.Administration.ActiveSessions.layoutGrid1$row0$column0",
                         $widgetId: "p3.Administration.ActiveSessions.layoutGrid1$row0$column0",
+=======
+                        key: "p.Administration.ActiveSessions.layoutGrid1$row0$column0",
+                        $widgetId: "p.Administration.ActiveSessions.layoutGrid1$row0$column0",
+>>>>>>> feat/sales-domain
                         class: "col-lg-12 col-md-12 col-12",
                         style: void 0,
                         content: [
                           /* @__PURE__ */ React.createElement(
                             $Text,
                             {
+<<<<<<< HEAD
                               key: "p3.Administration.ActiveSessions.label1",
                               $widgetId: "p3.Administration.ActiveSessions.label1",
+=======
+                              key: "p.Administration.ActiveSessions.label1",
+                              $widgetId: "p.Administration.ActiveSessions.label1",
+>>>>>>> feat/sales-domain
                               class: "mx-name-label1 pageheader-title",
                               style: void 0,
                               caption: selectTranslation([
@@ -87,35 +157,58 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
   /* @__PURE__ */ React.createElement(
     $Div,
     {
+<<<<<<< HEAD
       key: "p3.Administration.ActiveSessions.layoutGrid2",
       $widgetId: "p3.Administration.ActiveSessions.layoutGrid2",
+=======
+      key: "p.Administration.ActiveSessions.layoutGrid2",
+      $widgetId: "p.Administration.ActiveSessions.layoutGrid2",
+>>>>>>> feat/sales-domain
       class: "mx-name-layoutGrid2 mx-layoutgrid mx-layoutgrid-fluid container-fluid",
       style: void 0,
       content: [
         /* @__PURE__ */ React.createElement(
           $Div,
           {
+<<<<<<< HEAD
             key: "p3.Administration.ActiveSessions.layoutGrid2$row0",
             $widgetId: "p3.Administration.ActiveSessions.layoutGrid2$row0",
+=======
+            key: "p.Administration.ActiveSessions.layoutGrid2$row0",
+            $widgetId: "p.Administration.ActiveSessions.layoutGrid2$row0",
+>>>>>>> feat/sales-domain
             class: "row",
             style: void 0,
             content: [
               /* @__PURE__ */ React.createElement(
                 $Div,
                 {
+<<<<<<< HEAD
                   key: "p3.Administration.ActiveSessions.layoutGrid2$row0$column0",
                   $widgetId: "p3.Administration.ActiveSessions.layoutGrid2$row0$column0",
+=======
+                  key: "p.Administration.ActiveSessions.layoutGrid2$row0$column0",
+                  $widgetId: "p.Administration.ActiveSessions.layoutGrid2$row0$column0",
+>>>>>>> feat/sales-domain
                   class: "col-lg-12 col-md-12 col-12",
                   style: void 0,
                   content: [
                     /* @__PURE__ */ React.createElement(
                       $Datagrid,
                       {
+<<<<<<< HEAD
                         key: "p3.Administration.ActiveSessions.dataGrid21",
                         $widgetId: "p3.Administration.ActiveSessions.dataGrid21",
                         advanced: false,
                         datasource: DatabaseObjectListProperty({
                           "dataSourceId": "p3.10",
+=======
+                        key: "p.Administration.ActiveSessions.dataGrid21",
+                        $widgetId: "p.Administration.ActiveSessions.dataGrid21",
+                        advanced: false,
+                        datasource: DatabaseObjectListProperty({
+                          "dataSourceId": "p.10",
+>>>>>>> feat/sales-domain
                           "entity": "System.Session",
                           "operationId": "uwfb87lxmV2G4VS0CAhgEA",
                           "sort": [
@@ -138,7 +231,11 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                               "attributeType": "String",
                               "sortable": true,
                               "filterable": true,
+<<<<<<< HEAD
                               "dataSourceId": "p3.10",
+=======
+                              "dataSourceId": "p.10",
+>>>>>>> feat/sales-domain
                               "isList": false
                             }),
                             "content": void 0,
@@ -157,8 +254,13 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                               /* @__PURE__ */ React.createElement(
                                 $DatagridTextFilter,
                                 {
+<<<<<<< HEAD
                                   key: "p3.Administration.ActiveSessions.textFilter1",
                                   $widgetId: "p3.Administration.ActiveSessions.textFilter1",
+=======
+                                  key: "p.Administration.ActiveSessions.textFilter1",
+                                  $widgetId: "p.Administration.ActiveSessions.textFilter1",
+>>>>>>> feat/sales-domain
                                   advanced: false,
                                   defaultValue: void 0,
                                   defaultFilter: "contains",
@@ -215,14 +317,23 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                               "attributeType": "DateTime",
                               "sortable": true,
                               "filterable": true,
+<<<<<<< HEAD
                               "dataSourceId": "p3.10",
+=======
+                              "dataSourceId": "p.10",
+>>>>>>> feat/sales-domain
                               "isList": false
                             }),
                             "content": void 0,
                             "dynamicText": selectTranslation([
                               ListExpressionProperty({
+<<<<<<< HEAD
                                 "expression": { "expr": { "type": "function", "name": "_format", "parameters": [{ "type": "variable", "variable": "currentObject", "path": "LastActive" }, { "type": "literal", "value": '{"type":"datetime"}' }] }, "args": { "currentObject": { "widget": "p3.Administration.ActiveSessions.dataGrid21", "source": "object" } } },
                                 "dataSourceId": "p3.10"
+=======
+                                "expression": { "expr": { "type": "function", "name": "_format", "parameters": [{ "type": "variable", "variable": "currentObject", "path": "LastActive" }, { "type": "literal", "value": '{"type":"datetime"}' }] }, "args": { "currentObject": { "widget": "p.Administration.ActiveSessions.dataGrid21", "source": "object" } } },
+                                "dataSourceId": "p.10"
+>>>>>>> feat/sales-domain
                               })
                             ]),
                             "header": selectTranslation([
@@ -237,8 +348,13 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                               /* @__PURE__ */ React.createElement(
                                 $DatagridDateFilter,
                                 {
+<<<<<<< HEAD
                                   key: "p3.Administration.ActiveSessions.dateFilter1",
                                   $widgetId: "p3.Administration.ActiveSessions.dateFilter1",
+=======
+                                  key: "p.Administration.ActiveSessions.dateFilter1",
+                                  $widgetId: "p.Administration.ActiveSessions.dateFilter1",
+>>>>>>> feat/sales-domain
                                   advanced: false,
                                   defaultValue: void 0,
                                   defaultStartDate: void 0,
@@ -301,19 +417,33 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                               "attributeType": "DateTime",
                               "sortable": true,
                               "filterable": true,
+<<<<<<< HEAD
                               "dataSourceId": "p3.10",
                               "isList": false
                             }),
                             "content": TemplatedWidgetProperty({
                               "dataSourceId": "p3.10",
+=======
+                              "dataSourceId": "p.10",
+                              "isList": false
+                            }),
+                            "content": TemplatedWidgetProperty({
+                              "dataSourceId": "p.10",
+>>>>>>> feat/sales-domain
                               "editable": false,
                               "children": () => [
                                 /* @__PURE__ */ React.createElement(
                                   $ActionButton,
                                   {
+<<<<<<< HEAD
                                     key: "p3.Administration.ActiveSessions.actionButton1",
                                     $widgetId: "p3.Administration.ActiveSessions.actionButton1",
                                     buttonId: "p3.Administration.ActiveSessions.actionButton1",
+=======
+                                    key: "p.Administration.ActiveSessions.actionButton1",
+                                    $widgetId: "p.Administration.ActiveSessions.actionButton1",
+                                    buttonId: "p.Administration.ActiveSessions.actionButton1",
+>>>>>>> feat/sales-domain
                                     class: "mx-name-actionButton1 btn-lg",
                                     style: void 0,
                                     tabIndex: void 0,
@@ -334,7 +464,11 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                       "icon": { "type": "icon", "iconClass": "mx-icon-filled mx-icon-logout" }
                                     }),
                                     action: ActionProperty({
+<<<<<<< HEAD
                                       "action": { "type": "deleteObject", "argMap": { "$object": { "widget": "p3.Administration.ActiveSessions.dataGrid21", "source": "object" } }, "config": { "closePage": false, "operationId": "5NnvSl7UJFy7oY57Ml7JDg" }, "disabledDuringExecution": true },
+=======
+                                      "action": { "type": "deleteObject", "argMap": { "$object": { "widget": "p.Administration.ActiveSessions.dataGrid21", "source": "object" } }, "config": { "closePage": false, "operationId": "5NnvSl7UJFy7oY57Ml7JDg" }, "disabledDuringExecution": true },
+>>>>>>> feat/sales-domain
                                       "abortOnServerValidation": true
                                     })
                                   }
@@ -445,10 +579,11 @@ const title = selectTranslation([
   "Active Sessions"
 ]);
 const classes = "layout-atlas layout-atlas-responsive-default";
+const autofocus = "desktopOnly";
 const style = {};
 const content = {
   ...content$1,
   "Atlas_Core.Atlas_Default.Main": region$Main
 };
 
-export { classes, content, style, title };
+export { autofocus, classes, content, style, title };

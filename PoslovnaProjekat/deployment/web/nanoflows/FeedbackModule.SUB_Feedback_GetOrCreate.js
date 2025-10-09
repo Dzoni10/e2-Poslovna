@@ -1,4 +1,5 @@
 import { addEnumerations, t } from "mendix";
+import { Get_And_Set_Feedback_NPE } from "./FeedbackModule.Get_And_Set_Feedback_NPE.js";
 
 export const SUB_Feedback_GetOrCreate = {
   "name": "FeedbackModule.SUB_Feedback_GetOrCreate",
@@ -6,7 +7,7 @@ export const SUB_Feedback_GetOrCreate = {
     {
       "type": "javaScriptActionCall",
       "label": "a59c0303-3ef4-46ca-bbcd-7d77a687bb20",
-      "action": () => require("C:/Poslovna/e2-Poslovna/PoslovnaProjekat/javascriptsource/feedbackmodule/actions/JS_isStrictMode").JS_isStrictMode,
+      "action": () => require("C:/Users/Djordje/Desktop/e2-Poslovna/PoslovnaProjekat/javascriptsource/feedbackmodule/actions/JS_isStrictMode").JS_isStrictMode,
       "outputVar": "isStrictMode",
       "parameters": []
     },
@@ -40,7 +41,7 @@ export const SUB_Feedback_GetOrCreate = {
     {
       "type": "nanoflowCall",
       "label": "30d05191-213e-40ab-8a15-7ca6ecd3ef69",
-      "flow": () => require("C:/Poslovna/e2-Poslovna/PoslovnaProjekat/deployment/web/nanoflows/FeedbackModule.Get_And_Set_Feedback_NPE").Get_And_Set_Feedback_NPE,
+      "flow": () => Get_And_Set_Feedback_NPE,
       "parameters": [],
       "outputVar": "StrictModeFeedback"
     },
@@ -60,7 +61,7 @@ export const SUB_Feedback_GetOrCreate = {
       "body": [
         {
           "type": "javaScriptActionCall",
-          "action": () => require("C:/Poslovna/e2-Poslovna/PoslovnaProjekat/javascriptsource/feedbackmodule/actions/GetStorageItemObject").GetStorageItemObject,
+          "action": () => require("C:/Users/Djordje/Desktop/e2-Poslovna/PoslovnaProjekat/javascriptsource/feedbackmodule/actions/GetStorageItemObject").GetStorageItemObject,
           "outputVar": "LocalFeedback",
           "parameters": [
             {

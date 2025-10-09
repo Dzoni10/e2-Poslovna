@@ -4,8 +4,6 @@
 
 package myfirstmodule.proxies;
 
-import com.mendix.core.Core;
-
 public enum VrstaPartnera
 {
 	prodavac("596ff220-c02b-49fb-9303-e40d25e1f8dd"),
@@ -20,12 +18,12 @@ public enum VrstaPartnera
 
 	public java.lang.String getCaption(java.lang.String languageCode)
 	{
-		String caption = Core.getInternationalizedString(languageCode, i18nCaptionKey);
+		String caption = com.mendix.core.Core.getInternationalizedString(languageCode, i18nCaptionKey);
 		return caption.isEmpty() ? getCaption() : caption;
 	}
 
 	public java.lang.String getCaption()
 	{
-		return Core.getInternationalizedString("en_US", i18nCaptionKey);
+		return com.mendix.core.Core.getInternationalizedString("en_US", i18nCaptionKey);
 	}
 }

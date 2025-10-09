@@ -14,13 +14,19 @@ import { content as parentContent } from "../layouts/Atlas_Core.Atlas_Default.js
 const { $Container, $Div, $Text } = asPluginWidgets({ Container, Div, Text });
 
 const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
+<<<<<<< HEAD
     <$Container key="p24.MyFirstModule.Home_Web.container1"
         $widgetId="p24.MyFirstModule.Home_Web.container1"
+=======
+    <$Container key="p.MyFirstModule.Home_Web.container1"
+        $widgetId="p.MyFirstModule.Home_Web.container1"
+>>>>>>> feat/sales-domain
         class={"mx-name-container1 pageheader"}
         style={undefined}
         renderMode={"div"}
         onClick={undefined}
         content={[
+<<<<<<< HEAD
             <$Div key="p24.MyFirstModule.Home_Web.layoutGrid2"
                 $widgetId="p24.MyFirstModule.Home_Web.layoutGrid2"
                 class={"mx-name-layoutGrid2 mx-layoutgrid mx-layoutgrid-fluid container-fluid"}
@@ -38,6 +44,25 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                 content={[
                                     <$Text key="p24.MyFirstModule.Home_Web.text1"
                                         $widgetId="p24.MyFirstModule.Home_Web.text1"
+=======
+            <$Div key="p.MyFirstModule.Home_Web.layoutGrid2"
+                $widgetId="p.MyFirstModule.Home_Web.layoutGrid2"
+                class={"mx-name-layoutGrid2 mx-layoutgrid mx-layoutgrid-fluid container-fluid"}
+                style={undefined}
+                content={[
+                    <$Div key="p.MyFirstModule.Home_Web.layoutGrid2$row0"
+                        $widgetId="p.MyFirstModule.Home_Web.layoutGrid2$row0"
+                        class={"row"}
+                        style={undefined}
+                        content={[
+                            <$Div key="p.MyFirstModule.Home_Web.layoutGrid2$row0$column0"
+                                $widgetId="p.MyFirstModule.Home_Web.layoutGrid2$row0$column0"
+                                class={"col-lg col-md col"}
+                                style={undefined}
+                                content={[
+                                    <$Text key="p.MyFirstModule.Home_Web.text1"
+                                        $widgetId="p.MyFirstModule.Home_Web.text1"
+>>>>>>> feat/sales-domain
                                         class={"mx-name-text1 pageheader-title spacing-outer-bottom"}
                                         style={undefined}
                                         caption={t([
@@ -46,8 +71,13 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                                             })
                                         ])}
                                         renderMode={"h3"} />,
+<<<<<<< HEAD
                                     <$Text key="p24.MyFirstModule.Home_Web.text3"
                                         $widgetId="p24.MyFirstModule.Home_Web.text3"
+=======
+                                    <$Text key="p.MyFirstModule.Home_Web.text3"
+                                        $widgetId="p.MyFirstModule.Home_Web.text3"
+>>>>>>> feat/sales-domain
                                         class={"mx-name-text3 pageheader-subtitle text-detail"}
                                         style={undefined}
                                         caption={t([
@@ -61,6 +91,7 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                 ]} />
         ]}
         ariaHidden={false} />,
+<<<<<<< HEAD
     <$Div key="p24.MyFirstModule.Home_Web.layoutGrid1"
         $widgetId="p24.MyFirstModule.Home_Web.layoutGrid1"
         class={"mx-name-layoutGrid1 mx-layoutgrid mx-layoutgrid-fluid container-fluid"}
@@ -73,6 +104,20 @@ const region$Main = (historyId) => (<PageFragment renderKey={historyId}>{[
                 content={[
                     <$Div key="p24.MyFirstModule.Home_Web.layoutGrid1$row0$column0"
                         $widgetId="p24.MyFirstModule.Home_Web.layoutGrid1$row0$column0"
+=======
+    <$Div key="p.MyFirstModule.Home_Web.layoutGrid1"
+        $widgetId="p.MyFirstModule.Home_Web.layoutGrid1"
+        class={"mx-name-layoutGrid1 mx-layoutgrid mx-layoutgrid-fluid container-fluid"}
+        style={undefined}
+        content={[
+            <$Div key="p.MyFirstModule.Home_Web.layoutGrid1$row0"
+                $widgetId="p.MyFirstModule.Home_Web.layoutGrid1$row0"
+                class={"row"}
+                style={undefined}
+                content={[
+                    <$Div key="p.MyFirstModule.Home_Web.layoutGrid1$row0$column0"
+                        $widgetId="p.MyFirstModule.Home_Web.layoutGrid1$row0$column0"
+>>>>>>> feat/sales-domain
                         class={"col-lg col-md col"}
                         style={undefined}
                         content={undefined} />
@@ -86,6 +131,7 @@ export const title = t([
 
 export const classes = "layout-atlas layout-atlas-responsive-default";
 
+export const autofocus = "desktopOnly";
 export const style = {};
 export const content = { ...parentContent,
     "Atlas_Core.Atlas_Default.Main": region$Main,

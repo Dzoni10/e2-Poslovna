@@ -66,7 +66,7 @@ export const ACT_Feedback_ClearForm = {
     {
       "type": "javaScriptActionCall",
       "label": "f21b5580-e35c-45ea-8ca0-66fff30b807b",
-      "action": () => require("C:/Poslovna/e2-Poslovna/PoslovnaProjekat/javascriptsource/feedbackmodule/actions/SetStorageItemObject").SetStorageItemObject,
+      "action": () => require("C:/Users/Djordje/Desktop/e2-Poslovna/PoslovnaProjekat/javascriptsource/feedbackmodule/actions/SetStorageItemObject").SetStorageItemObject,
       "parameters": [
         {
           "kind": "primitive",

@@ -1,4 +1,12 @@
+<<<<<<< HEAD
 import { startApp } from './index-JDXCDs53.js';
+=======
+<<<<<<< Updated upstream
+import { startApp } from './index-BjSpTlX0.js';
+=======
+import { startApp } from './index-DRM94Sf-.js';
+>>>>>>> Stashed changes
+>>>>>>> feat/sales-domain
 
 startApp({
   "languages": [

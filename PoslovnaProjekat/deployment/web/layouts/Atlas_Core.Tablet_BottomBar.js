@@ -10,11 +10,17 @@ import { ScrollContainer } from "mendix/widgets/web/ScrollContainer";
 import { SimpleMenuBar } from "mendix/widgets/web/SimpleMenuBar";
 import { addEnumerations, asPluginWidgets, t } from "mendix";
 
+
 const { $ScrollContainer, $SimpleMenuBar, $Placeholder } = asPluginWidgets({ ScrollContainer, SimpleMenuBar, Placeholder });
 
 const region$Main = [
+<<<<<<< HEAD
     <$ScrollContainer key="l20.Atlas_Core.Tablet_BottomBar.layoutContainer"
         $widgetId="l20.Atlas_Core.Tablet_BottomBar.layoutContainer"
+=======
+    <$ScrollContainer key="l.Atlas_Core.Tablet_BottomBar.layoutContainer"
+        $widgetId="l.Atlas_Core.Tablet_BottomBar.layoutContainer"
+>>>>>>> feat/sales-domain
         class={"mx-name-layoutContainer"}
         style={undefined}
         scrollPerRegion={true}
@@ -25,8 +31,13 @@ const region$Main = [
         bottom={{
             "enabled": true,
             "content": [
+<<<<<<< HEAD
                 <$SimpleMenuBar key="l20.Atlas_Core.Tablet_BottomBar.simpleMenuBar1"
                     $widgetId="l20.Atlas_Core.Tablet_BottomBar.simpleMenuBar1"
+=======
+                <$SimpleMenuBar key="l.Atlas_Core.Tablet_BottomBar.simpleMenuBar1"
+                    $widgetId="l.Atlas_Core.Tablet_BottomBar.simpleMenuBar1"
+>>>>>>> feat/sales-domain
                     class={"mx-name-simpleMenuBar1 bottom-nav-text-icons"}
                     style={undefined}
                     menu={[
@@ -88,8 +99,13 @@ const region$Main = [
         }}
         center={{
             "content": [
+<<<<<<< HEAD
                 <$Placeholder key="l20.Atlas_Core.Tablet_BottomBar.Main"
                     $widgetId="l20.Atlas_Core.Tablet_BottomBar.Main"
+=======
+                <$Placeholder key="l.Atlas_Core.Tablet_BottomBar.Main"
+                    $widgetId="l.Atlas_Core.Tablet_BottomBar.Main"
+>>>>>>> feat/sales-domain
                     content={PlaceholderProperty({
                         "id": "Atlas_Core.Tablet_BottomBar.Main"
                     })} />

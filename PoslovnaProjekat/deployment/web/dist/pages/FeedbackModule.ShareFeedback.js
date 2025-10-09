@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { getAugmentedNamespace, getUserRoleNames, hideProgress, showProgress, selectTranslation, handleError, HandledError, toFriendlyId, LogManager, asProperty, getSession, DescribedError, fromConstant$, dynUnavailable, pageScope, getNanoflowArguments$, nanoflowEngine, ensure, readUntracked, MxObject, available, unavailable, reactExports, jsxRuntimeExports, classNames, asPluginWidgets } from '../index-JDXCDs53.js';
 import { PageFragment, ExpressionProperty } from '../ScrollContainer-BMEt46hD.js';
 import { fromObjectProperty$, ActionButton, TextProperty, ActionProperty } from '../ActionButton-CnZtpka2.js';
@@ -13,6 +14,389 @@ import { AttributeProperty } from '../D5tDSKpV-NCto3GtK.js';
 import '../uEIG9e6s-D5bs4rlT.js';
 import '../InlineText-BhumBKcU.js';
 import '../bdxqAC6d-Crq0yb3P.js';
+=======
+<<<<<<< Updated upstream
+import { handleError, HandledError, toFriendlyId, LogManager, asProperty, getSession, DescribedError, fromConstant$, dynUnavailable, pageScope, getNanoflowArguments$, nanoflowEngine, ensure, readUntracked, MxObject, available, unavailable, reactExports, jsxRuntimeExports, classNames, asPluginWidgets, selectTranslation } from '../index-BjSpTlX0.js';
+import require$$0 from '../../../../../../../../Poslovna/e2-Poslovna/PoslovnaProjekat/deployment/web/nanoflows/FeedbackModule.DS_Feedback_Populate';
+import require$$1 from '../../../../../../../../Poslovna/e2-Poslovna/PoslovnaProjekat/deployment/web/nanoflows/FeedbackModule.OCH_Feedback_SaveToLocalStorage';
+import require$$2 from '../../../../../../../../Poslovna/e2-Poslovna/PoslovnaProjekat/deployment/web/nanoflows/FeedbackModule.ACT_Feedback_TriggerScreenshotMode';
+import require$$3 from '../../../../../../../../Poslovna/e2-Poslovna/PoslovnaProjekat/deployment/web/nanoflows/FeedbackModule.ACT_Feedback_UploadImage';
+import require$$4 from '../../../../../../../../Poslovna/e2-Poslovna/PoslovnaProjekat/deployment/web/nanoflows/FeedbackModule.ACT_Feedback_ClearImage';
+import require$$5 from '../../../../../../../../Poslovna/e2-Poslovna/PoslovnaProjekat/deployment/web/nanoflows/FeedbackModule.ACT_Feedback_ClearForm';
+import require$$6 from '../../../../../../../../Poslovna/e2-Poslovna/PoslovnaProjekat/deployment/web/nanoflows/FeedbackModule.ACT_SubmitFeedback';
+import { PageFragment, ExpressionProperty } from '../ScrollContainer-DYUj9_Ay.js';
+import { fromObjectProperty$, ActionButton, TextProperty, ActionProperty } from '../ActionButton-dNbAsczi.js';
+import { debounce, Alert, getAriaLabelProps, getValidationAriaProps, FormGroup, TextBox, DerivedUniqueIdProperty, ValidationProperty } from '../TextBox-EdR2-wgr.js';
+import { WebIconProperty } from '../WebIconProperty-B82XOhEa.js';
+import { ConditionalVisibilityWrapper } from '../ConditionalVisibilityWrapper-C8wONAJZ.js';
+import { Container, Text } from '../Text-CHYWFktZ.js';
+import { DataView } from '../DataView-PQPsNCJf.js';
+import { Div } from '../Div-Dyf4zdHI.js';
+import * as ImageWidgetModule from '../../../../../../../../Poslovna/e2-Poslovna/PoslovnaProjekat/deployment/web/widgets/com/mendix/widget/web/image/Image.mjs';
+import '../../../../../../../../Poslovna/e2-Poslovna/PoslovnaProjekat/deployment/web/widgets/com/mendix/widget/web/image/Image.css';
+import { Label } from '../Label-CmauxnWL.js';
+import { content as content$1 } from '../Atlas_Core.PopupLayout-D-AdFqBx.js';
+import { AttributeProperty } from '../77kgvjgm-4HZvSliz.js';
+import '../BkqAssms-D3I0Q7ya.js';
+import '../InlineText-BMWFPLMA.js';
+import '../DmsI6saM-Dj1PYIQI.js';
+=======
+import { handleError, HandledError, toFriendlyId, LogManager, asProperty, getSession, DescribedError, fromConstant$, dynUnavailable, pageScope, getNanoflowArguments$, nanoflowEngine, ensure, readUntracked, MxObject, available, unavailable, reactExports, jsxRuntimeExports, classNames, getUserRoleNames, getAugmentedNamespace, hideProgress, showProgress, selectTranslation, asPluginWidgets } from '../index-DRM94Sf-.js';
+import { PageFragment, ExpressionProperty } from '../ScrollContainer-LSQoMZk3.js';
+import { fromObjectProperty$, ActionButton, TextProperty, ActionProperty } from '../ActionButton-Vn_V_FOy.js';
+import { debounce, Alert, getAriaLabelProps, getValidationAriaProps, FormGroup, TextBox, DerivedUniqueIdProperty, ValidationProperty } from '../TextBox-CQj9lYLp.js';
+import { WebIconProperty } from '../WebIconProperty-CkJqYHVz.js';
+import { ConditionalVisibilityWrapper } from '../ConditionalVisibilityWrapper-C8wONAJZ.js';
+import { ImageWidgetModule, Container, Text } from '../Image-DMmMe595.js';
+import { DataView } from '../DataView-Di9rOy1O.js';
+import { Div } from '../Div-DOhBQ24X.js';
+import { Label } from '../Label-DhEzky-E.js';
+import { content as content$1 } from '../Atlas_Core.PopupLayout-C12ql83v.js';
+import { AttributeProperty } from '../77kgvjgm-Ckrt0mx6.js';
+import '../BkqAssms-a3v8x28y.js';
+import '../InlineText-Jv0dr_pn.js';
+import '../DmsI6saM-AyKzfY6T.js';
+>>>>>>> Stashed changes
+
+function handleDataSourceExecutionError(widgetId, e, dataSourceType) {
+  handleError(e instanceof HandledError ? e : new Error(`An error occurred while executing ${dataSourceType} data source for widget ${toFriendlyId(widgetId)}: ${e instanceof Error ? e.message : e}`));
+}
+
+const logger = LogManager.get().getLogger(), NanoflowObjectProperty = asProperty((config, store, widgetId) => {
+  const allowedRoles = config.source.allowedRoles, session = getSession();
+  if (void 0 !== allowedRoles && !session.hasSomeRole(allowedRoles))
+    return handleError(new DescribedError("Unable to execute action because you do not have sufficient permissions.")), fromConstant$(dynUnavailable());
+  const [currentForm$] = store.useSlot(pageScope, "form");
+  return fromObjectProperty$(config, store, widgetId, getNanoflowArguments$(config.argMap, store, widgetId, `data source of ${widgetId}`), async (args) => {
+    !function(args2) {
+      logger.debug(`Fetching object using nanoflow '${config.source.nanoflow}' for widget ${toFriendlyId(widgetId)}`, "parameter mapping:", args2);
+    }(args);
+    try {
+      const result = await nanoflowEngine.execute(config.source.nanoflow, args, ensure(readUntracked(currentForm$))[0]), mxObject = result instanceof MxObject ? result : void 0;
+      return function(mxObject2) {
+        logger.debug(mxObject2 ? `Received object '${mxObject2.getGuid()}' for widget ${toFriendlyId(widgetId)}` : `Received no object for widget ${toFriendlyId(widgetId)}`);
+      }(mxObject), mxObject ? available(mxObject) : unavailable();
+    } catch (e) {
+      return handleDataSourceExecutionError(widgetId, e, "nanoflow"), unavailable();
+<<<<<<< Updated upstream
+=======
+    }
+  });
+});
+
+function _extends() {
+  return _extends = Object.assign ? Object.assign.bind() : function(n) {
+    for (var e = 1; e < arguments.length; e++) {
+      var t = arguments[e];
+      for (var r in t)
+        ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]);
+    }
+    return n;
+  }, _extends.apply(null, arguments);
+}
+var index$1 = reactExports.useLayoutEffect, updateRef = function(ref, value) {
+  "function" != typeof ref ? ref.current = value : ref(value);
+}, HIDDEN_TEXTAREA_STYLE = { "min-height": "0", "max-height": "none", height: "0", visibility: "hidden", overflow: "hidden", position: "absolute", "z-index": "-1000", top: "0", right: "0", display: "block" }, forceHiddenStyles$1 = function(node) {
+  Object.keys(HIDDEN_TEXTAREA_STYLE).forEach(function(key) {
+    node.style.setProperty(key, HIDDEN_TEXTAREA_STYLE[key], "important");
+  });
+}, hiddenTextarea = null, getHeight = function(node, sizingData) {
+  var height = node.scrollHeight;
+  return "border-box" === sizingData.sizingStyle.boxSizing ? height + sizingData.borderSize : height - sizingData.paddingSize;
+};
+var noop = function() {
+}, SIZING_STYLE = ["borderBottomWidth", "borderLeftWidth", "borderRightWidth", "borderTopWidth", "boxSizing", "fontFamily", "fontSize", "fontStyle", "fontWeight", "letterSpacing", "lineHeight", "paddingBottom", "paddingLeft", "paddingRight", "paddingTop", "tabSize", "textIndent", "textRendering", "textTransform", "width", "wordBreak", "wordSpacing", "scrollbarGutter"], isIE = !!document.documentElement.currentStyle, getSizingData$1 = function(node) {
+  var style = window.getComputedStyle(node);
+  if (null === style)
+    return null;
+  var obj, sizingStyle = (obj = style, SIZING_STYLE.reduce(function(acc, prop) {
+    return acc[prop] = obj[prop], acc;
+  }, {})), boxSizing = sizingStyle.boxSizing;
+  return "" === boxSizing ? null : (isIE && "border-box" === boxSizing && (sizingStyle.width = parseFloat(sizingStyle.width) + parseFloat(sizingStyle.borderRightWidth) + parseFloat(sizingStyle.borderLeftWidth) + parseFloat(sizingStyle.paddingRight) + parseFloat(sizingStyle.paddingLeft) + "px"), { sizingStyle, paddingSize: parseFloat(sizingStyle.paddingBottom) + parseFloat(sizingStyle.paddingTop), borderSize: parseFloat(sizingStyle.borderBottomWidth) + parseFloat(sizingStyle.borderTopWidth) });
+};
+function useListener(target, type, listener) {
+  var value, ref, latestListener = (value = listener, ref = reactExports.useRef(value), index$1(function() {
+    ref.current = value;
+  }), ref);
+  reactExports.useLayoutEffect(function() {
+    var handler = function(ev) {
+      return latestListener.current(ev);
+    };
+    if (target)
+      return target.addEventListener(type, handler), function() {
+        return target.removeEventListener(type, handler);
+      };
+  }, []);
+}
+var _excluded = ["cacheMeasurements", "maxRows", "minRows", "onChange", "onHeightChange"], TextareaAutosize = function(_ref, userRef) {
+  var cacheMeasurements = _ref.cacheMeasurements, maxRows = _ref.maxRows, minRows = _ref.minRows, _ref$onChange = _ref.onChange, onChange = void 0 === _ref$onChange ? noop : _ref$onChange, _ref$onHeightChange = _ref.onHeightChange, onHeightChange = void 0 === _ref$onHeightChange ? noop : _ref$onHeightChange, props = function(r, e) {
+    if (null == r)
+      return {};
+    var t = {};
+    for (var n in r)
+      if ({}.hasOwnProperty.call(r, n)) {
+        if (-1 !== e.indexOf(n))
+          continue;
+        t[n] = r[n];
+      }
+    return t;
+  }(_ref, _excluded), isControlled = void 0 !== props.value, libRef = reactExports.useRef(null), ref = function(libRef2, userRef2) {
+    var prevUserRef = reactExports.useRef();
+    return reactExports.useCallback(function(instance) {
+      libRef2.current = instance, prevUserRef.current && updateRef(prevUserRef.current, null), prevUserRef.current = userRef2, userRef2 && updateRef(userRef2, instance);
+    }, [userRef2]);
+  }(libRef, userRef), heightRef = reactExports.useRef(0), measurementsCacheRef = reactExports.useRef(), resizeTextarea = function() {
+    var node = libRef.current, nodeSizingData = cacheMeasurements && measurementsCacheRef.current ? measurementsCacheRef.current : getSizingData$1(node);
+    if (nodeSizingData) {
+      measurementsCacheRef.current = nodeSizingData;
+      var _calculateNodeHeight = function(sizingData, value, minRows2, maxRows2) {
+        void 0 === minRows2 && (minRows2 = 1), void 0 === maxRows2 && (maxRows2 = 1 / 0), hiddenTextarea || ((hiddenTextarea = document.createElement("textarea")).setAttribute("tabindex", "-1"), hiddenTextarea.setAttribute("aria-hidden", "true"), forceHiddenStyles$1(hiddenTextarea)), null === hiddenTextarea.parentNode && document.body.appendChild(hiddenTextarea);
+        var paddingSize = sizingData.paddingSize, borderSize = sizingData.borderSize, sizingStyle = sizingData.sizingStyle, boxSizing = sizingStyle.boxSizing;
+        Object.keys(sizingStyle).forEach(function(_key) {
+          var key = _key;
+          hiddenTextarea.style[key] = sizingStyle[key];
+        }), forceHiddenStyles$1(hiddenTextarea), hiddenTextarea.value = value;
+        var height2 = getHeight(hiddenTextarea, sizingData);
+        hiddenTextarea.value = value, height2 = getHeight(hiddenTextarea, sizingData), hiddenTextarea.value = "x";
+        var rowHeight2 = hiddenTextarea.scrollHeight - paddingSize, minHeight = rowHeight2 * minRows2;
+        "border-box" === boxSizing && (minHeight = minHeight + paddingSize + borderSize), height2 = Math.max(minHeight, height2);
+        var maxHeight = rowHeight2 * maxRows2;
+        return "border-box" === boxSizing && (maxHeight = maxHeight + paddingSize + borderSize), [height2 = Math.min(maxHeight, height2), rowHeight2];
+      }(nodeSizingData, node.value || node.placeholder || "x", minRows, maxRows), height = _calculateNodeHeight[0], rowHeight = _calculateNodeHeight[1];
+      heightRef.current !== height && (heightRef.current = height, node.style.setProperty("height", height + "px", "important"), onHeightChange(height, { rowHeight }));
+    }
+  };
+  return reactExports.useLayoutEffect(resizeTextarea), function(libRef2, listener) {
+    useListener(document.body, "reset", function(ev) {
+      libRef2.current.form === ev.target && listener(ev);
+    });
+  }(libRef, function() {
+    if (!isControlled) {
+      var currentValue = libRef.current.value;
+      requestAnimationFrame(function() {
+        var node = libRef.current;
+        node && currentValue !== node.value && resizeTextarea();
+      });
+    }
+  }), useListener(window, "resize", resizeTextarea), function(listener) {
+    useListener(document.fonts, "loadingdone", listener);
+  }(resizeTextarea), reactExports.createElement("textarea", _extends({}, props, { onChange: function(event) {
+    isControlled || resizeTextarea(), onChange(event);
+  }, ref }));
+}, index = reactExports.forwardRef(TextareaAutosize);
+class TextArea extends reactExports.Component {
+  constructor() {
+    super(...arguments), this.state = {}, this.onChangeHandler = this.onChange.bind(this), this.onFocusHandler = this.onFocus.bind(this), this.onBlurHandler = this.onBlur.bind(this), this.onChangeBehaviourHandler = this.createOnChangeBehaviour();
+  }
+  componentDidMount() {
+    const maxLength = this.props.maxLength;
+    void 0 !== maxLength && this.props.inputValue.setValidator((val) => void 0 !== val && val.length > maxLength ? this.props.textTooLongMessage.value : void 0);
+  }
+  componentDidUpdate(prevProps) {
+    this.props.inputValue.displayValue !== prevProps.inputValue.displayValue && this.setState({ editedValue: void 0 }), "available" !== prevProps.inputValue.status && "available" === this.props.inputValue.status && this.props.autoGrow && setTimeout(() => window.dispatchEvent(new Event("resize")), 0);
+  }
+  createOnChangeBehaviour() {
+    return this.props.submitWhileEditing ? debounce(this.submitValue.bind(this), ensure(this.props.submitDelay)) : () => {
+    };
+  }
+  getCurrentValue() {
+    return this.state.editedValue ?? this.props.inputValue.displayValue;
+  }
+  submitValue() {
+    const inputValue = this.props.inputValue, currentValue = this.getCurrentValue();
+    currentValue !== inputValue.displayValue ? inputValue.setValue(currentValue) : this.setState({ editedValue: void 0 });
+  }
+  onChange(e) {
+    this.setState({ editedValue: e.target.value }, () => {
+      !this.props.inputValue.readOnly && e.target instanceof HTMLTextAreaElement && document.activeElement !== e.target && this.submitValue();
+    }), this.onChangeBehaviourHandler();
+  }
+  onFocus() {
+    this.dispatchAction("onEnter");
+  }
+  onBlur() {
+    this.submitValue(), this.dispatchAction("onLeave");
+  }
+  render() {
+    return jsxRuntimeExports.jsxs(reactExports.Fragment, { children: [this.props.inputValue.readOnly && "control" !== this.props.readOnlyStyle ? this.renderAsText() : this.renderAsInput(), this.renderCounterMessage(), jsxRuntimeExports.jsx(Alert, { id: `${this.props.id}-error`, validation: this.props.inputValue.validation })] });
+  }
+  renderCounterMessage() {
+    return !this.props.inputValue.readOnly && this.props.maxLength && this.props.counterMessage?.value ? jsxRuntimeExports.jsx("label", { className: "mx-textarea-counter", children: this.props.counterMessage.value.replace("{1}", this.getCurrentValue().length.toString()).replace("{2}", this.props.maxLength.toString()) }) : null;
+  }
+  renderAsInput() {
+    return jsxRuntimeExports.jsx(index, { id: this.props.id, className: classNames("form-control", "mx-textarea-input", { "mx-textarea-noresize": !this.props.autoGrow }), value: this.getCurrentValue(), tabIndex: this.props.tabIndex, maxLength: this.props.maxLength, minRows: this.props.autoGrow ? 2 : this.props.numberOfLines, maxRows: this.props.autoGrow ? void 0 : this.props.numberOfLines, placeholder: this.props.placeholder.value && this.props.placeholder.value.length > 0 ? this.props.placeholder.value : void 0, onChange: this.onChangeHandler, onFocus: this.onFocusHandler, onBlur: this.onBlurHandler, disabled: this.props.inputValue.readOnly, ...getAriaLabelProps(this.props.ariaLabel?.value), ...getValidationAriaProps(this.props.inputValue.validation, this.props.id), "aria-required": this.props.ariaRequired });
+  }
+  renderAsText() {
+    return jsxRuntimeExports.jsx("div", { className: "form-control-static", children: this.getCurrentValue() || "\xA0" });
+  }
+  dispatchAction(property) {
+    const prop = this.props[property];
+    "available" === this.props.inputValue.status && prop && prop.execute();
+  }
+}
+
+// BEGIN EXTRA CODE
+const handleUserRoles = async () => {
+  try {
+    let userRoles;
+    if (typeof mx !== "undefined" && typeof mx.session === "object" && typeof mx.session.getUserRoleNames === "function") {
+      userRoles = mx.session.getUserRoleNames();
+    } else if (typeof getUserRoleNames !== "function" || getUserRoleNames === undefined) {
+      userRoles = getUserRoleNames();
+    } else {
+      console.error("Feedback module cannot access a valid user role retrieval function.");
+      return undefined;
+    }
+    if (!Array.isArray(userRoles) || userRoles.length === 0) {
+      console.error("User roles not available or empty.");
+      return undefined;
+    }
+    return userRoles[0];
+  } catch (error) {
+    console.error("Feedback module failed to get the user role name.", error);
+    return undefined;
+  }
+};
+const handlePagePath = async () => {
+  try {
+    if (typeof mx !== "undefined" && typeof mx.ui.getContentForm === "function" && typeof mx.ui.getContentForm().path !== "undefined") {
+      return mx.ui.getContentForm().path;
+    } else {
+      return window.history.state.pageName;
+    }
+  } catch (error) {
+    console.error("Feedback module cannot get the Mendix App page name", error);
+    return undefined;
+  }
+};
+// END EXTRA CODE
+
+/**
+ * What does this JavaScript action do?
+ * 
+ * Returns meta data from the clients internet browser. 
+ * 
+ * This includes; 
+ * 
+ * ActiveUserRoles
+ * PageName
+ * EnvironmentURL
+ * Browser
+ * ScreenWidth
+ * ScreenHeight
+ * @param {MxObject} feedback
+ * @returns {Promise.<MxObject>}
+ */
+async function JS_PopulateFeedbackMetadata(feedback) {
+  // BEGIN USER CODE
+  try {
+    const userRoles = await handleUserRoles();
+    const pagePath = await handlePagePath();
+    feedback.set("ActiveUserRoles", userRoles || "");
+    feedback.set("PageName", pagePath || "");
+    feedback.set("EnvironmentURL", window.location.href || "");
+    feedback.set("Browser", navigator.userAgent || "");
+    feedback.set("ScreenWidth", window.screen.width || "");
+    feedback.set("ScreenHeight", window.screen.height || "");
+    return feedback;
+  } catch (error) {
+    console.error("Feedback Module cannot correctly set meta data.", error);
+  }
+  ;
+  // END USER CODE
+}
+
+var JS_PopulateFeedbackMetadata$1 = /*#__PURE__*/Object.freeze({
+    __proto__: null,
+    JS_PopulateFeedbackMetadata: JS_PopulateFeedbackMetadata
+});
+
+var require$$0$4 = /*@__PURE__*/getAugmentedNamespace(JS_PopulateFeedbackMetadata$1);
+
+var AsyncStorage = {};
+
+// BEGIN EXTRA CODE
+// END EXTRA CODE
+
+/**
+ * Store a Mendix object in device storage, identified by a unique key. Can be accesed by the GetStargeItemObject action. Please note that users can clear the device storage.
+ * @param {string} key - This field is required.
+ * @param {MxObject} value - This field is required.
+ * @returns {Promise.<void>}
+ */
+async function SetStorageItemObject(key, value) {
+  // BEGIN USER CODE
+  if (!key) {
+    return Promise.reject(new Error("Input parameter 'Key' is required"));
+  }
+  if (!value) {
+    return Promise.reject(new Error("Input parameter 'Value' is required"));
+  }
+  const serializedObject = serializeMxObject(value);
+  return setItem(key, JSON.stringify(serializedObject));
+  function setItem(key, value) {
+    if (navigator && navigator.product === "ReactNative") {
+      return AsyncStorage.setItem(key, value);
+    }
+    if (window) {
+      window.localStorage.setItem(key, value);
+      return Promise.resolve();
+    }
+    return Promise.reject(new Error("No storage API available"));
+  }
+  function serializeMxObject(object) {
+    return object.getAttributes().reduce((accumulator, attributeName) => {
+      accumulator[attributeName] = object.get(attributeName);
+      return accumulator;
+    }, {
+      guid: object.getGuid()
+    });
+  }
+  // END USER CODE
+}
+
+var SetStorageItemObject$1 = /*#__PURE__*/Object.freeze({
+    __proto__: null,
+    SetStorageItemObject: SetStorageItemObject
+});
+
+var require$$0$3 = /*@__PURE__*/getAugmentedNamespace(SetStorageItemObject$1);
+
+// BEGIN EXTRA CODE
+// END EXTRA CODE
+
+/**
+ * @returns {Promise.<void>}
+ */
+async function JS_Recalculate_MendixModal_Error_PopUp_Zindex() {
+  // BEGIN USER CODE
+
+  function setModalZindex(cssSelector, zIndexValue) {
+    try {
+      const htmlElement = document.querySelectorAll(cssSelector);
+      if (!htmlElement.length) {
+        return;
+      }
+      htmlElement.forEach(item => item.style.zIndex = zIndexValue);
+    } catch (error) {
+      console.warn("Feedback Module JS Action JS_Recalculate_Modal_Zindex could not execute correctly.", error);
+    }
+  }
+  ;
+  setTimeout(() => {
+    setModalZindex(".mx-dialog-info, mx-dialog-warning, .mx-dialog-error", "90");
+    setModalZindex(".mx-underlay", "80");
+  }, 500);
+  // END USER CODE
+}
+
+var JS_Recalculate_MendixModal_Error_PopUp_Zindex$1 = /*#__PURE__*/Object.freeze({
+    __proto__: null,
+    JS_Recalculate_MendixModal_Error_PopUp_Zindex: JS_Recalculate_MendixModal_Error_PopUp_Zindex
+});
+
+var require$$2$1 = /*@__PURE__*/getAugmentedNamespace(JS_Recalculate_MendixModal_Error_PopUp_Zindex$1);
+>>>>>>> feat/sales-domain
 
 // BEGIN EXTRA CODE
 // END EXTRA CODE
@@ -51,7 +435,107 @@ var JS_isStrictMode$1 = /*#__PURE__*/Object.freeze({
     JS_isStrictMode: JS_isStrictMode
 });
 
-var require$$1$4 = /*@__PURE__*/getAugmentedNamespace(JS_isStrictMode$1);
+var require$$1$2 = /*@__PURE__*/getAugmentedNamespace(JS_isStrictMode$1);
+
+// BEGIN EXTRA CODE
+// END EXTRA CODE
+
+/**
+ * What does this JavaScript action do?
+ * 
+ * Get locally stored JSON object stored in clients internet browser. Identified by a unique key. Can be accessed by the GetStorageItemObject action. Please note that users can clear the device storage.
+ * @param {string} key - This field is required.
+ * @param {string} entity - This field is required.
+ * @returns {Promise.<MxObject>}
+ */
+async function GetStorageItemObject(key, entity) {
+  // BEGIN USER CODE
+  if (!key) {
+    return Promise.reject(new Error("Input parameter 'Key' is required"));
+  }
+  if (!entity) {
+    return Promise.reject(new Error("Input parameter 'Entity' is required"));
+  }
+  return getItem(key).then(result => {
+    if (result === null) {
+      return Promise.reject(new Error(`Storage item '${key}' does not exist`));
+    }
+    const value = JSON.parse(result);
+    return getOrCreateMxObject(entity, value).then(newObject => {
+      const newValue = serializeMxObject(newObject);
+      return setItem(key, JSON.stringify(newValue)).then(() => newObject);
+    });
+  });
+  function getItem(key) {
+    if (navigator && navigator.product === "ReactNative") {
+      return AsyncStorage.getItem(key);
+    }
+    if (window) {
+      const value = window.localStorage.getItem(key);
+      return Promise.resolve(value);
+    }
+    return Promise.reject(new Error("No storage API available"));
+  }
+  function setItem(key, value) {
+    if (navigator && navigator.product === "ReactNative") {
+      return AsyncStorage.setItem(key, value);
+    }
+    if (window) {
+      window.localStorage.setItem(key, value);
+      return Promise.resolve();
+    }
+    return Promise.reject(new Error("No storage API available"));
+  }
+  function getOrCreateMxObject(entity, value) {
+    return getMxObject(value.guid).then(existingObject => {
+      if (existingObject) {
+        return existingObject;
+      } else {
+        return createMxObject(entity, value);
+      }
+    });
+  }
+  function getMxObject(guid) {
+    return new Promise((resolve, reject) => {
+      mx.data.get({
+        guid,
+        callback: mxObject => resolve(mxObject),
+        error: error => reject(error)
+      });
+    });
+  }
+  function createMxObject(entity, value) {
+    return new Promise((resolve, reject) => {
+      mx.data.create({
+        entity,
+        callback: mxObject => {
+          Object.keys(value).filter(attribute => attribute !== "guid").forEach(attributeName => {
+            const attributeValue = value[attributeName];
+            mxObject.set(attributeName, attributeValue);
+          });
+          resolve(mxObject);
+        },
+        error: () => reject(new Error(`Could not create '${entity}' object`))
+      });
+    });
+  }
+  function serializeMxObject(object) {
+    return object.getAttributes().reduce((accumulator, attributeName) => {
+      accumulator[attributeName] = object.get(attributeName);
+      return accumulator;
+    }, {
+      guid: object.getGuid()
+    });
+  }
+  // END USER CODE
+}
+
+var GetStorageItemObject$1 = /*#__PURE__*/Object.freeze({
+    __proto__: null,
+    GetStorageItemObject: GetStorageItemObject
+});
+
+var require$$1$1 = /*@__PURE__*/getAugmentedNamespace(GetStorageItemObject$1);
 
 // BEGIN EXTRA CODE
 // END EXTRA CODE
@@ -82,7 +566,7 @@ var JS_GetSingleLocalStorageObjectItem$1 = /*#__PURE__*/Object.freeze({
     JS_GetSingleLocalStorageObjectItem: JS_GetSingleLocalStorageObjectItem
 });
 
-var require$$0$6 = /*@__PURE__*/getAugmentedNamespace(JS_GetSingleLocalStorageObjectItem$1);
+var require$$0$2 = /*@__PURE__*/getAugmentedNamespace(JS_GetSingleLocalStorageObjectItem$1);
 
 const Get_And_Set_Feedback_NPE = {
   "name": "FeedbackModule.Get_And_Set_Feedback_NPE",
@@ -90,7 +574,7 @@ const Get_And_Set_Feedback_NPE = {
     {
       "type": "javaScriptActionCall",
       "label": "fc75dfbe-58c7-4d4f-bc07-5ce4fccc70cc",
-      "action": () => require$$0$6.JS_GetSingleLocalStorageObjectItem,
+      "action": () => require$$0$2.JS_GetSingleLocalStorageObjectItem,
       "outputVar": "AppID",
       "parameters": [
         {
@@ -112,7 +596,7 @@ const Get_And_Set_Feedback_NPE = {
     {
       "type": "javaScriptActionCall",
       "label": "6a2b23ad-c00f-4bd6-b074-d0d460d3c7a3",
-      "action": () => require$$0$6.JS_GetSingleLocalStorageObjectItem,
+      "action": () => require$$0$2.JS_GetSingleLocalStorageObjectItem,
       "outputVar": "Subject",
       "parameters": [
         {
@@ -134,7 +618,7 @@ const Get_And_Set_Feedback_NPE = {
     {
       "type": "javaScriptActionCall",
       "label": "288d074f-4d8a-4609-8285-1e33ab3e9c77",
-      "action": () => require$$0$6.JS_GetSingleLocalStorageObjectItem,
+      "action": () => require$$0$2.JS_GetSingleLocalStorageObjectItem,
       "outputVar": "Description",
       "parameters": [
         {
@@ -156,7 +640,7 @@ const Get_And_Set_Feedback_NPE = {
     {
       "type": "javaScriptActionCall",
       "label": "d40863a3-8f3f-41ee-920d-57c8010047cf",
-      "action": () => require$$0$6.JS_GetSingleLocalStorageObjectItem,
+      "action": () => require$$0$2.JS_GetSingleLocalStorageObjectItem,
       "outputVar": "SubmitterUUID",
       "parameters": [
         {
@@ -178,7 +662,7 @@ const Get_And_Set_Feedback_NPE = {
     {
       "type": "javaScriptActionCall",
       "label": "b68870a5-91f9-4cde-ba5c-ad572744eca0",
-      "action": () => require$$0$6.JS_GetSingleLocalStorageObjectItem,
+      "action": () => require$$0$2.JS_GetSingleLocalStorageObjectItem,
       "outputVar": "SubmitterEmail",
       "parameters": [
         {
@@ -200,7 +684,7 @@ const Get_And_Set_Feedback_NPE = {
     {
       "type": "javaScriptActionCall",
       "label": "1a8a628e-f2b5-4a6b-b7c4-33b7b6101f39",
-      "action": () => require$$0$6.JS_GetSingleLocalStorageObjectItem,
+      "action": () => require$$0$2.JS_GetSingleLocalStorageObjectItem,
       "outputVar": "SubmitterDisplayName",
       "parameters": [
         {
@@ -222,7 +706,7 @@ const Get_And_Set_Feedback_NPE = {
     {
       "type": "javaScriptActionCall",
       "label": "81672744-355a-4439-8db5-8b16a910b370",
-      "action": () => require$$0$6.JS_GetSingleLocalStorageObjectItem,
+      "action": () => require$$0$2.JS_GetSingleLocalStorageObjectItem,
       "outputVar": "ImageB64",
       "parameters": [
         {
@@ -244,7 +728,7 @@ const Get_And_Set_Feedback_NPE = {
     {
       "type": "javaScriptActionCall",
       "label": "56b8baee-3660-4cc5-a331-416bdb3b4303",
-      "action": () => require$$0$6.JS_GetSingleLocalStorageObjectItem,
+      "action": () => require$$0$2.JS_GetSingleLocalStorageObjectItem,
       "outputVar": "_showEmail",
       "parameters": [
         {
@@ -374,122 +858,13 @@ const Get_And_Set_Feedback_NPE = {
   ]
 };
 
-var FeedbackModule_Get_And_Set_Feedback_NPE = /*#__PURE__*/Object.freeze({
-    __proto__: null,
-    Get_And_Set_Feedback_NPE: Get_And_Set_Feedback_NPE
-});
-
-var require$$1$3 = /*@__PURE__*/getAugmentedNamespace(FeedbackModule_Get_And_Set_Feedback_NPE);
-
-var AsyncStorage = {};
-
-// BEGIN EXTRA CODE
-// END EXTRA CODE
-
-/**
- * What does this JavaScript action do?
- * 
- * Get locally stored JSON object stored in clients internet browser. Identified by a unique key. Can be accessed by the GetStorageItemObject action. Please note that users can clear the device storage.
- * @param {string} key - This field is required.
- * @param {string} entity - This field is required.
- * @returns {Promise.<MxObject>}
- */
-async function GetStorageItemObject(key, entity) {
-  // BEGIN USER CODE
-  if (!key) {
-    return Promise.reject(new Error("Input parameter 'Key' is required"));
-  }
-  if (!entity) {
-    return Promise.reject(new Error("Input parameter 'Entity' is required"));
-  }
-  return getItem(key).then(result => {
-    if (result === null) {
-      return Promise.reject(new Error(`Storage item '${key}' does not exist`));
-    }
-    const value = JSON.parse(result);
-    return getOrCreateMxObject(entity, value).then(newObject => {
-      const newValue = serializeMxObject(newObject);
-      return setItem(key, JSON.stringify(newValue)).then(() => newObject);
-    });
-  });
-  function getItem(key) {
-    if (navigator && navigator.product === "ReactNative") {
-      return AsyncStorage.getItem(key);
-    }
-    if (window) {
-      const value = window.localStorage.getItem(key);
-      return Promise.resolve(value);
-    }
-    return Promise.reject(new Error("No storage API available"));
-  }
-  function setItem(key, value) {
-    if (navigator && navigator.product === "ReactNative") {
-      return AsyncStorage.setItem(key, value);
-    }
-    if (window) {
-      window.localStorage.setItem(key, value);
-      return Promise.resolve();
-    }
-    return Promise.reject(new Error("No storage API available"));
-  }
-  function getOrCreateMxObject(entity, value) {
-    return getMxObject(value.guid).then(existingObject => {
-      if (existingObject) {
-        return existingObject;
-      } else {
-        return createMxObject(entity, value);
-      }
-    });
-  }
-  function getMxObject(guid) {
-    return new Promise((resolve, reject) => {
-      mx.data.get({
-        guid,
-        callback: mxObject => resolve(mxObject),
-        error: error => reject(error)
-      });
-    });
-  }
-  function createMxObject(entity, value) {
-    return new Promise((resolve, reject) => {
-      mx.data.create({
-        entity,
-        callback: mxObject => {
-          Object.keys(value).filter(attribute => attribute !== "guid").forEach(attributeName => {
-            const attributeValue = value[attributeName];
-            mxObject.set(attributeName, attributeValue);
-          });
-          resolve(mxObject);
-        },
-        error: () => reject(new Error(`Could not create '${entity}' object`))
-      });
-    });
-  }
-  function serializeMxObject(object) {
-    return object.getAttributes().reduce((accumulator, attributeName) => {
-      accumulator[attributeName] = object.get(attributeName);
-      return accumulator;
-    }, {
-      guid: object.getGuid()
-    });
-  }
-  // END USER CODE
-}
-
-var GetStorageItemObject$1 = /*#__PURE__*/Object.freeze({
-    __proto__: null,
-    GetStorageItemObject: GetStorageItemObject
-});
-
-var require$$2$2 = /*@__PURE__*/getAugmentedNamespace(GetStorageItemObject$1);
-
 const SUB_Feedback_GetOrCreate = {
   "name": "FeedbackModule.SUB_Feedback_GetOrCreate",
   "instructions": [
     {
       "type": "javaScriptActionCall",
       "label": "a59c0303-3ef4-46ca-bbcd-7d77a687bb20",
-      "action": () => require$$1$4.JS_isStrictMode,
+      "action": () => require$$1$2.JS_isStrictMode,
       "outputVar": "isStrictMode",
       "parameters": []
     },
@@ -523,7 +898,7 @@ const SUB_Feedback_GetOrCreate = {
     {
       "type": "nanoflowCall",
       "label": "30d05191-213e-40ab-8a15-7ca6ecd3ef69",
-      "flow": () => require$$1$3.Get_And_Set_Feedback_NPE,
+      "flow": () => Get_And_Set_Feedback_NPE,
       "parameters": [],
       "outputVar": "StrictModeFeedback"
     },
@@ -543,7 +918,7 @@ const SUB_Feedback_GetOrCreate = {
       "body": [
         {
           "type": "javaScriptActionCall",
-          "action": () => require$$2$2.GetStorageItemObject,
+          "action": () => require$$1$1.GetStorageItemObject,
           "outputVar": "LocalFeedback",
           "parameters": [
             {
@@ -636,180 +1011,13 @@ const SUB_Feedback_GetOrCreate = {
   ]
 };
 
-var FeedbackModule_SUB_Feedback_GetOrCreate = /*#__PURE__*/Object.freeze({
-    __proto__: null,
-    SUB_Feedback_GetOrCreate: SUB_Feedback_GetOrCreate
-});
-
-var require$$0$5 = /*@__PURE__*/getAugmentedNamespace(FeedbackModule_SUB_Feedback_GetOrCreate);
-
-// BEGIN EXTRA CODE
-const handleUserRoles = async () => {
-  try {
-    let userRoles;
-    if (typeof mx !== "undefined" && typeof mx.session === "object" && typeof mx.session.getUserRoleNames === "function") {
-      userRoles = mx.session.getUserRoleNames();
-    } else if (typeof getUserRoleNames !== "function" || getUserRoleNames === undefined) {
-      userRoles = getUserRoleNames();
-    } else {
-      console.error("Feedback module cannot access a valid user role retrieval function.");
-      return undefined;
-    }
-    if (!Array.isArray(userRoles) || userRoles.length === 0) {
-      console.error("User roles not available or empty.");
-      return undefined;
-    }
-    return userRoles[0];
-  } catch (error) {
-    console.error("Feedback module failed to get the user role name.", error);
-    return undefined;
-  }
-};
-const handlePagePath = async () => {
-  try {
-    if (typeof mx !== "undefined" && typeof mx.ui.getContentForm === "function" && typeof mx.ui.getContentForm().path !== "undefined") {
-      return mx.ui.getContentForm().path;
-    } else {
-      return window.history.state.pageName;
-    }
-  } catch (error) {
-    console.error("Feedback module cannot get the Mendix App page name", error);
-    return undefined;
-  }
-};
-// END EXTRA CODE
-
-/**
- * What does this JavaScript action do?
- * 
- * Returns meta data from the clients internet browser. 
- * 
- * This includes; 
- * 
- * ActiveUserRoles
- * PageName
- * EnvironmentURL
- * Browser
- * ScreenWidth
- * ScreenHeight
- * @param {MxObject} feedback
- * @returns {Promise.<MxObject>}
- */
-async function JS_PopulateFeedbackMetadata(feedback) {
-  // BEGIN USER CODE
-  try {
-    const userRoles = await handleUserRoles();
-    const pagePath = await handlePagePath();
-    feedback.set("ActiveUserRoles", userRoles || "");
-    feedback.set("PageName", pagePath || "");
-    feedback.set("EnvironmentURL", window.location.href || "");
-    feedback.set("Browser", navigator.userAgent || "");
-    feedback.set("ScreenWidth", window.screen.width || "");
-    feedback.set("ScreenHeight", window.screen.height || "");
-    return feedback;
-  } catch (error) {
-    console.error("Feedback Module cannot correctly set meta data.", error);
-  }
-  ;
-  // END USER CODE
-}
-
-var JS_PopulateFeedbackMetadata$1 = /*#__PURE__*/Object.freeze({
-    __proto__: null,
-    JS_PopulateFeedbackMetadata: JS_PopulateFeedbackMetadata
-});
-
-var require$$1$2 = /*@__PURE__*/getAugmentedNamespace(JS_PopulateFeedbackMetadata$1);
-
-// BEGIN EXTRA CODE
-// END EXTRA CODE
-
-/**
- * Store a Mendix object in device storage, identified by a unique key. Can be accesed by the GetStargeItemObject action. Please note that users can clear the device storage.
- * @param {string} key - This field is required.
- * @param {MxObject} value - This field is required.
- * @returns {Promise.<void>}
- */
-async function SetStorageItemObject(key, value) {
-  // BEGIN USER CODE
-  if (!key) {
-    return Promise.reject(new Error("Input parameter 'Key' is required"));
-  }
-  if (!value) {
-    return Promise.reject(new Error("Input parameter 'Value' is required"));
-  }
-  const serializedObject = serializeMxObject(value);
-  return setItem(key, JSON.stringify(serializedObject));
-  function setItem(key, value) {
-    if (navigator && navigator.product === "ReactNative") {
-      return AsyncStorage.setItem(key, value);
-    }
-    if (window) {
-      window.localStorage.setItem(key, value);
-      return Promise.resolve();
-    }
-    return Promise.reject(new Error("No storage API available"));
-  }
-  function serializeMxObject(object) {
-    return object.getAttributes().reduce((accumulator, attributeName) => {
-      accumulator[attributeName] = object.get(attributeName);
-      return accumulator;
-    }, {
-      guid: object.getGuid()
-    });
-  }
-  // END USER CODE
-}
-
-var SetStorageItemObject$1 = /*#__PURE__*/Object.freeze({
-    __proto__: null,
-    SetStorageItemObject: SetStorageItemObject
-});
-
-var require$$0$4 = /*@__PURE__*/getAugmentedNamespace(SetStorageItemObject$1);
-
-// BEGIN EXTRA CODE
-// END EXTRA CODE
-
-/**
- * @returns {Promise.<void>}
- */
-async function JS_Recalculate_MendixModal_Error_PopUp_Zindex() {
-  // BEGIN USER CODE
-
-  function setModalZindex(cssSelector, zIndexValue) {
-    try {
-      const htmlElement = document.querySelectorAll(cssSelector);
-      if (!htmlElement.length) {
-        return;
-      }
-      htmlElement.forEach(item => item.style.zIndex = zIndexValue);
-    } catch (error) {
-      console.warn("Feedback Module JS Action JS_Recalculate_Modal_Zindex could not execute correctly.", error);
-    }
-  }
-  ;
-  setTimeout(() => {
-    setModalZindex(".mx-dialog-info, mx-dialog-warning, .mx-dialog-error", "90");
-    setModalZindex(".mx-underlay", "80");
-  }, 500);
-  // END USER CODE
-}
-
-var JS_Recalculate_MendixModal_Error_PopUp_Zindex$1 = /*#__PURE__*/Object.freeze({
-    __proto__: null,
-    JS_Recalculate_MendixModal_Error_PopUp_Zindex: JS_Recalculate_MendixModal_Error_PopUp_Zindex
-});
-
-var require$$3$2 = /*@__PURE__*/getAugmentedNamespace(JS_Recalculate_MendixModal_Error_PopUp_Zindex$1);
-
 const DS_Feedback_Populate = {
   "name": "FeedbackModule.DS_Feedback_Populate",
   "instructions": [
     {
       "type": "nanoflowCall",
       "label": "cd568966-f70f-457e-9e16-bccc0c080bef",
-      "flow": () => require$$0$5.SUB_Feedback_GetOrCreate,
+      "flow": () => SUB_Feedback_GetOrCreate,
       "parameters": [],
       "outputVar": "Feedback"
     },
@@ -897,7 +1105,7 @@ const DS_Feedback_Populate = {
     {
       "type": "javaScriptActionCall",
       "label": "d114431a-11b9-4a04-9e16-85b6192a47f5",
-      "action": () => require$$1$2.JS_PopulateFeedbackMetadata,
+      "action": () => require$$0$4.JS_PopulateFeedbackMetadata,
       "parameters": [
         {
           "kind": "object",
@@ -911,7 +1119,7 @@ const DS_Feedback_Populate = {
     {
       "type": "javaScriptActionCall",
       "label": "dd69660f-0e69-4bad-b7fd-ba6b82b5dc9e",
-      "action": () => require$$0$4.SetStorageItemObject,
+      "action": () => require$$0$3.SetStorageItemObject,
       "parameters": [
         {
           "kind": "primitive",
@@ -932,7 +1140,7 @@ const DS_Feedback_Populate = {
     {
       "type": "javaScriptActionCall",
       "label": "90b1dfa1-2178-4f09-8909-2353327df6f9",
-      "action": () => require$$3$2.JS_Recalculate_MendixModal_Error_PopUp_Zindex,
+      "action": () => require$$2$1.JS_Recalculate_MendixModal_Error_PopUp_Zindex,
       "parameters": []
     },
     {
@@ -946,56 +1154,6 @@ const DS_Feedback_Populate = {
     }
   ]
 };
-
-var FeedbackModule_DS_Feedback_Populate = /*#__PURE__*/Object.freeze({
-    __proto__: null,
-    DS_Feedback_Populate: DS_Feedback_Populate
-});
-
-var require$$0$3 = /*@__PURE__*/getAugmentedNamespace(FeedbackModule_DS_Feedback_Populate);
-
-const OCH_Feedback_SaveToLocalStorage = {
-  "name": "FeedbackModule.OCH_Feedback_SaveToLocalStorage",
-  "instructions": [
-    {
-      "type": "javaScriptActionCall",
-      "label": "7986c1fb-d131-44c8-b9f9-d959cc526c22",
-      "action": () => require$$0$4.SetStorageItemObject,
-      "parameters": [
-        {
-          "kind": "primitive",
-          "value": {
-            "type": "constant",
-            "name": "FeedbackModule.LocalStorageKey"
-          }
-        },
-        {
-          "kind": "object",
-          "value": {
-            "type": "variable",
-            "variable": "Feedback"
-          }
-        }
-      ]
-    },
-    {
-      "type": "return",
-      "label": "24112eba-f17a-4c1c-9d63-c50b7781915c",
-      "result": {
-        "type": "literal",
-        "value": null
-      },
-      "resultKind": "primitive"
-    }
-  ]
-};
-
-var FeedbackModule_OCH_Feedback_SaveToLocalStorage = /*#__PURE__*/Object.freeze({
-    __proto__: null,
-    OCH_Feedback_SaveToLocalStorage: OCH_Feedback_SaveToLocalStorage
-});
-
-var require$$1$1 = /*@__PURE__*/getAugmentedNamespace(FeedbackModule_OCH_Feedback_SaveToLocalStorage);
 
 // BEGIN EXTRA CODE
 // messageActionTypes are to identify the postMessage types between the JS Action & Feedback Widget.
@@ -1064,7 +1222,7 @@ var JS_ToggleFeedbackScreenshotWidget$1 = /*#__PURE__*/Object.freeze({
     JS_ToggleFeedbackScreenshotWidget: JS_ToggleFeedbackScreenshotWidget
 });
 
-var require$$0$2 = /*@__PURE__*/getAugmentedNamespace(JS_ToggleFeedbackScreenshotWidget$1);
+var require$$0$1 = /*@__PURE__*/getAugmentedNamespace(JS_ToggleFeedbackScreenshotWidget$1);
 
 // BEGIN EXTRA CODE
 // END EXTRA CODE
@@ -1099,7 +1257,7 @@ var JS_SetSingleLocalStorageObjectItem$1 = /*#__PURE__*/Object.freeze({
     JS_SetSingleLocalStorageObjectItem: JS_SetSingleLocalStorageObjectItem
 });
 
-var require$$2$1 = /*@__PURE__*/getAugmentedNamespace(JS_SetSingleLocalStorageObjectItem$1);
+var require$$2 = /*@__PURE__*/getAugmentedNamespace(JS_SetSingleLocalStorageObjectItem$1);
 
 const ACT_Feedback_TriggerScreenshotMode = {
   "name": "FeedbackModule.ACT_Feedback_TriggerScreenshotMode",
@@ -1111,7 +1269,7 @@ const ACT_Feedback_TriggerScreenshotMode = {
     {
       "type": "javaScriptActionCall",
       "label": "ea30e08c-71c6-43c0-b933-6f70095c04c1",
-      "action": () => require$$0$2.JS_ToggleFeedbackScreenshotWidget,
+      "action": () => require$$0$1.JS_ToggleFeedbackScreenshotWidget,
       "outputVar": "base64FromWidget",
       "parameters": []
     },
@@ -1205,7 +1363,7 @@ const ACT_Feedback_TriggerScreenshotMode = {
     {
       "type": "javaScriptActionCall",
       "label": "a72351b7-bc9c-4a4c-ac19-cd92b2cd9f90",
-      "action": () => require$$1$4.JS_isStrictMode,
+      "action": () => require$$1$2.JS_isStrictMode,
       "outputVar": "isStrictMode",
       "parameters": []
     },
@@ -1239,7 +1397,7 @@ const ACT_Feedback_TriggerScreenshotMode = {
     {
       "type": "javaScriptActionCall",
       "label": "2805686b-6ef7-4e16-a40b-c0213de176a2",
-      "action": () => require$$2$1.JS_SetSingleLocalStorageObjectItem,
+      "action": () => require$$2.JS_SetSingleLocalStorageObjectItem,
       "parameters": [
         {
           "kind": "primitive",
@@ -1289,13 +1447,6 @@ const ACT_Feedback_TriggerScreenshotMode = {
     }
   ]
 };
-
-var FeedbackModule_ACT_Feedback_TriggerScreenshotMode = /*#__PURE__*/Object.freeze({
-    __proto__: null,
-    ACT_Feedback_TriggerScreenshotMode: ACT_Feedback_TriggerScreenshotMode
-});
-
-var require$$2 = /*@__PURE__*/getAugmentedNamespace(FeedbackModule_ACT_Feedback_TriggerScreenshotMode);
 
 // BEGIN EXTRA CODE
 var isUploading = false;
@@ -1437,7 +1588,7 @@ var JS_UploadAndConvertToFileBlobURL$1 = /*#__PURE__*/Object.freeze({
     JS_UploadAndConvertToFileBlobURL: JS_UploadAndConvertToFileBlobURL
 });
 
-var require$$0$1 = /*@__PURE__*/getAugmentedNamespace(JS_UploadAndConvertToFileBlobURL$1);
+var require$$0 = /*@__PURE__*/getAugmentedNamespace(JS_UploadAndConvertToFileBlobURL$1);
 
 // BEGIN EXTRA CODE
 // messageActionTypes are to identify the postMessage types between the JS Action & Feedback Widget.
@@ -1556,7 +1707,7 @@ var JS_RevokeUploadedFileFromMemory$1 = /*#__PURE__*/Object.freeze({
     JS_RevokeUploadedFileFromMemory: JS_RevokeUploadedFileFromMemory
 });
 
-var require$$3$1 = /*@__PURE__*/getAugmentedNamespace(JS_RevokeUploadedFileFromMemory$1);
+var require$$3 = /*@__PURE__*/getAugmentedNamespace(JS_RevokeUploadedFileFromMemory$1);
 
 const ACT_Feedback_UploadImage = {
   "name": "FeedbackModule.ACT_Feedback_UploadImage",
@@ -1584,7 +1735,7 @@ const ACT_Feedback_UploadImage = {
     {
       "type": "javaScriptActionCall",
       "label": "83bef3c3-3e65-4d12-89d3-172d61d1bb4d",
-      "action": () => require$$0$1.JS_UploadAndConvertToFileBlobURL,
+      "action": () => require$$0.JS_UploadAndConvertToFileBlobURL,
       "outputVar": "fileBlobURL",
       "parameters": [
         {
@@ -1768,7 +1919,7 @@ const ACT_Feedback_UploadImage = {
     {
       "type": "javaScriptActionCall",
       "label": "d1b0caf0-1a12-40eb-9b4f-c57c30c7ee18",
-      "action": () => require$$0$4.SetStorageItemObject,
+      "action": () => require$$0$3.SetStorageItemObject,
       "parameters": [
         {
           "kind": "primitive",
@@ -1789,7 +1940,7 @@ const ACT_Feedback_UploadImage = {
     {
       "type": "javaScriptActionCall",
       "label": "6855b76a-56fa-49d7-94c9-599813be478f",
-      "action": () => require$$3$1.JS_RevokeUploadedFileFromMemory,
+      "action": () => require$$3.JS_RevokeUploadedFileFromMemory,
       "parameters": [
         {
           "kind": "primitive",
@@ -1854,13 +2005,6 @@ const ACT_Feedback_UploadImage = {
   ]
 };
 
-var FeedbackModule_ACT_Feedback_UploadImage = /*#__PURE__*/Object.freeze({
-    __proto__: null,
-    ACT_Feedback_UploadImage: ACT_Feedback_UploadImage
-});
-
-var require$$3 = /*@__PURE__*/getAugmentedNamespace(FeedbackModule_ACT_Feedback_UploadImage);
-
 const ACT_Feedback_ClearImage = {
   "name": "FeedbackModule.ACT_Feedback_ClearImage",
   "instructions": [
@@ -1877,7 +2021,7 @@ const ACT_Feedback_ClearImage = {
     {
       "type": "javaScriptActionCall",
       "label": "557f3b75-83da-434e-962f-04382ed06571",
-      "action": () => require$$0$4.SetStorageItemObject,
+      "action": () => require$$0$3.SetStorageItemObject,
       "parameters": [
         {
           "kind": "primitive",
@@ -1906,13 +2050,6 @@ const ACT_Feedback_ClearImage = {
     }
   ]
 };
-
-var FeedbackModule_ACT_Feedback_ClearImage = /*#__PURE__*/Object.freeze({
-    __proto__: null,
-    ACT_Feedback_ClearImage: ACT_Feedback_ClearImage
-});
-
-var require$$4 = /*@__PURE__*/getAugmentedNamespace(FeedbackModule_ACT_Feedback_ClearImage);
 
 const ACT_Feedback_ClearForm = {
   "name": "FeedbackModule.ACT_Feedback_ClearForm",
@@ -1980,7 +2117,7 @@ const ACT_Feedback_ClearForm = {
     {
       "type": "javaScriptActionCall",
       "label": "f21b5580-e35c-45ea-8ca0-66fff30b807b",
-      "action": () => require$$0$4.SetStorageItemObject,
+      "action": () => require$$0$3.SetStorageItemObject,
       "parameters": [
         {
           "kind": "primitive",
@@ -2009,13 +2146,6 @@ const ACT_Feedback_ClearForm = {
     }
   ]
 };
-
-var FeedbackModule_ACT_Feedback_ClearForm = /*#__PURE__*/Object.freeze({
-    __proto__: null,
-    ACT_Feedback_ClearForm: ACT_Feedback_ClearForm
-});
-
-var require$$5 = /*@__PURE__*/getAugmentedNamespace(FeedbackModule_ACT_Feedback_ClearForm);
 
 const SUB_Feedback_ResetLocalStorage = {
   "name": "FeedbackModule.SUB_Feedback_ResetLocalStorage",
@@ -2150,7 +2280,7 @@ const SUB_Feedback_ResetLocalStorage = {
     {
       "type": "javaScriptActionCall",
       "label": "6d96b462-911e-4b4f-a081-8eab75fced2d",
-      "action": () => require$$0$4.SetStorageItemObject,
+      "action": () => require$$0$3.SetStorageItemObject,
       "parameters": [
         {
           "kind": "primitive",
@@ -2179,13 +2309,6 @@ const SUB_Feedback_ResetLocalStorage = {
     }
   ]
 };
-
-var FeedbackModule_SUB_Feedback_ResetLocalStorage = /*#__PURE__*/Object.freeze({
-    __proto__: null,
-    SUB_Feedback_ResetLocalStorage: SUB_Feedback_ResetLocalStorage
-});
-
-var require$$0 = /*@__PURE__*/getAugmentedNamespace(FeedbackModule_SUB_Feedback_ResetLocalStorage);
 
 const ACT_SubmitFeedback = {
   "name": "FeedbackModule.ACT_SubmitFeedback",
@@ -2316,7 +2439,7 @@ const ACT_SubmitFeedback = {
     {
       "type": "nanoflowCall",
       "label": "16e46266-05b1-4055-8d79-7f124f82774c",
-      "flow": () => require$$0.SUB_Feedback_ResetLocalStorage,
+      "flow": () => SUB_Feedback_ResetLocalStorage,
       "parameters": [
         {
           "name": "Feedback",
@@ -2340,187 +2463,42 @@ const ACT_SubmitFeedback = {
   ]
 };
 
-var FeedbackModule_ACT_SubmitFeedback = /*#__PURE__*/Object.freeze({
-    __proto__: null,
-    ACT_SubmitFeedback: ACT_SubmitFeedback
-});
-
-var require$$6 = /*@__PURE__*/getAugmentedNamespace(FeedbackModule_ACT_SubmitFeedback);
-
-function handleDataSourceExecutionError(widgetId, e, dataSourceType) {
-  handleError(e instanceof HandledError ? e : new Error(`An error occurred while executing ${dataSourceType} data source for widget ${toFriendlyId(widgetId)}: ${e instanceof Error ? e.message : e}`));
-}
-
-const logger = LogManager.get().getLogger(), NanoflowObjectProperty = asProperty((config, store, widgetId) => {
-  const allowedRoles = config.source.allowedRoles, session = getSession();
-  if (void 0 !== allowedRoles && !session.hasSomeRole(allowedRoles))
-    return handleError(new DescribedError("Unable to execute action because you do not have sufficient permissions.")), fromConstant$(dynUnavailable());
-  const [currentForm$] = store.useSlot(pageScope, "form");
-  return fromObjectProperty$(config, store, widgetId, getNanoflowArguments$(config.argMap, store, widgetId, `data source of ${widgetId}`), async (args) => {
-    !function(args2) {
-      logger.debug(`Fetching object using nanoflow '${config.source.nanoflow}' for widget ${toFriendlyId(widgetId)}`, "parameter mapping:", args2);
-    }(args);
-    try {
-      const result = await nanoflowEngine.execute(config.source.nanoflow, args, ensure(readUntracked(currentForm$))[0]), mxObject = result instanceof MxObject ? result : void 0;
-      return function(mxObject2) {
-        logger.debug(mxObject2 ? `Received object '${mxObject2.getGuid()}' for widget ${toFriendlyId(widgetId)}` : `Received no object for widget ${toFriendlyId(widgetId)}`);
-      }(mxObject), mxObject ? available(mxObject) : unavailable();
-    } catch (e) {
-      return handleDataSourceExecutionError(widgetId, e, "nanoflow"), unavailable();
+const OCH_Feedback_SaveToLocalStorage = {
+  "name": "FeedbackModule.OCH_Feedback_SaveToLocalStorage",
+  "instructions": [
+    {
+      "type": "javaScriptActionCall",
+      "label": "7986c1fb-d131-44c8-b9f9-d959cc526c22",
+      "action": () => require$$0$3.SetStorageItemObject,
+      "parameters": [
+        {
+          "kind": "primitive",
+          "value": {
+            "type": "constant",
+            "name": "FeedbackModule.LocalStorageKey"
+          }
+        },
+        {
+          "kind": "object",
+          "value": {
+            "type": "variable",
+            "variable": "Feedback"
+          }
+        }
+      ]
+    },
+    {
+      "type": "return",
+      "label": "24112eba-f17a-4c1c-9d63-c50b7781915c",
+      "result": {
+        "type": "literal",
+        "value": null
+      },
+      "resultKind": "primitive"
+>>>>>>> Stashed changes
     }
-  });
-});
-
-function _extends() {
-  return _extends = Object.assign ? Object.assign.bind() : function(n) {
-    for (var e = 1; e < arguments.length; e++) {
-      var t = arguments[e];
-      for (var r in t)
-        ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]);
-    }
-    return n;
-  }, _extends.apply(null, arguments);
-}
-var index$1 = reactExports.useLayoutEffect, updateRef = function(ref, value) {
-  "function" != typeof ref ? ref.current = value : ref(value);
-}, HIDDEN_TEXTAREA_STYLE = { "min-height": "0", "max-height": "none", height: "0", visibility: "hidden", overflow: "hidden", position: "absolute", "z-index": "-1000", top: "0", right: "0", display: "block" }, forceHiddenStyles$1 = function(node) {
-  Object.keys(HIDDEN_TEXTAREA_STYLE).forEach(function(key) {
-    node.style.setProperty(key, HIDDEN_TEXTAREA_STYLE[key], "important");
-  });
-}, hiddenTextarea = null, getHeight = function(node, sizingData) {
-  var height = node.scrollHeight;
-  return "border-box" === sizingData.sizingStyle.boxSizing ? height + sizingData.borderSize : height - sizingData.paddingSize;
+  ]
 };
-var noop = function() {
-}, SIZING_STYLE = ["borderBottomWidth", "borderLeftWidth", "borderRightWidth", "borderTopWidth", "boxSizing", "fontFamily", "fontSize", "fontStyle", "fontWeight", "letterSpacing", "lineHeight", "paddingBottom", "paddingLeft", "paddingRight", "paddingTop", "tabSize", "textIndent", "textRendering", "textTransform", "width", "wordBreak", "wordSpacing", "scrollbarGutter"], isIE = !!document.documentElement.currentStyle, getSizingData$1 = function(node) {
-  var style = window.getComputedStyle(node);
-  if (null === style)
-    return null;
-  var obj, sizingStyle = (obj = style, SIZING_STYLE.reduce(function(acc, prop) {
-    return acc[prop] = obj[prop], acc;
-  }, {})), boxSizing = sizingStyle.boxSizing;
-  return "" === boxSizing ? null : (isIE && "border-box" === boxSizing && (sizingStyle.width = parseFloat(sizingStyle.width) + parseFloat(sizingStyle.borderRightWidth) + parseFloat(sizingStyle.borderLeftWidth) + parseFloat(sizingStyle.paddingRight) + parseFloat(sizingStyle.paddingLeft) + "px"), { sizingStyle, paddingSize: parseFloat(sizingStyle.paddingBottom) + parseFloat(sizingStyle.paddingTop), borderSize: parseFloat(sizingStyle.borderBottomWidth) + parseFloat(sizingStyle.borderTopWidth) });
-};
-function useListener(target, type, listener) {
-  var value, ref, latestListener = (value = listener, ref = reactExports.useRef(value), index$1(function() {
-    ref.current = value;
-  }), ref);
-  reactExports.useLayoutEffect(function() {
-    var handler = function(ev) {
-      return latestListener.current(ev);
-    };
-    if (target)
-      return target.addEventListener(type, handler), function() {
-        return target.removeEventListener(type, handler);
-      };
-  }, []);
-}
-var _excluded = ["cacheMeasurements", "maxRows", "minRows", "onChange", "onHeightChange"], TextareaAutosize = function(_ref, userRef) {
-  var cacheMeasurements = _ref.cacheMeasurements, maxRows = _ref.maxRows, minRows = _ref.minRows, _ref$onChange = _ref.onChange, onChange = void 0 === _ref$onChange ? noop : _ref$onChange, _ref$onHeightChange = _ref.onHeightChange, onHeightChange = void 0 === _ref$onHeightChange ? noop : _ref$onHeightChange, props = function(r, e) {
-    if (null == r)
-      return {};
-    var t = {};
-    for (var n in r)
-      if ({}.hasOwnProperty.call(r, n)) {
-        if (-1 !== e.indexOf(n))
-          continue;
-        t[n] = r[n];
-      }
-    return t;
-  }(_ref, _excluded), isControlled = void 0 !== props.value, libRef = reactExports.useRef(null), ref = function(libRef2, userRef2) {
-    var prevUserRef = reactExports.useRef();
-    return reactExports.useCallback(function(instance) {
-      libRef2.current = instance, prevUserRef.current && updateRef(prevUserRef.current, null), prevUserRef.current = userRef2, userRef2 && updateRef(userRef2, instance);
-    }, [userRef2]);
-  }(libRef, userRef), heightRef = reactExports.useRef(0), measurementsCacheRef = reactExports.useRef(), resizeTextarea = function() {
-    var node = libRef.current, nodeSizingData = cacheMeasurements && measurementsCacheRef.current ? measurementsCacheRef.current : getSizingData$1(node);
-    if (nodeSizingData) {
-      measurementsCacheRef.current = nodeSizingData;
-      var _calculateNodeHeight = function(sizingData, value, minRows2, maxRows2) {
-        void 0 === minRows2 && (minRows2 = 1), void 0 === maxRows2 && (maxRows2 = 1 / 0), hiddenTextarea || ((hiddenTextarea = document.createElement("textarea")).setAttribute("tabindex", "-1"), hiddenTextarea.setAttribute("aria-hidden", "true"), forceHiddenStyles$1(hiddenTextarea)), null === hiddenTextarea.parentNode && document.body.appendChild(hiddenTextarea);
-        var paddingSize = sizingData.paddingSize, borderSize = sizingData.borderSize, sizingStyle = sizingData.sizingStyle, boxSizing = sizingStyle.boxSizing;
-        Object.keys(sizingStyle).forEach(function(_key) {
-          var key = _key;
-          hiddenTextarea.style[key] = sizingStyle[key];
-        }), forceHiddenStyles$1(hiddenTextarea), hiddenTextarea.value = value;
-        var height2 = getHeight(hiddenTextarea, sizingData);
-        hiddenTextarea.value = value, height2 = getHeight(hiddenTextarea, sizingData), hiddenTextarea.value = "x";
-        var rowHeight2 = hiddenTextarea.scrollHeight - paddingSize, minHeight = rowHeight2 * minRows2;
-        "border-box" === boxSizing && (minHeight = minHeight + paddingSize + borderSize), height2 = Math.max(minHeight, height2);
-        var maxHeight = rowHeight2 * maxRows2;
-        return "border-box" === boxSizing && (maxHeight = maxHeight + paddingSize + borderSize), [height2 = Math.min(maxHeight, height2), rowHeight2];
-      }(nodeSizingData, node.value || node.placeholder || "x", minRows, maxRows), height = _calculateNodeHeight[0], rowHeight = _calculateNodeHeight[1];
-      heightRef.current !== height && (heightRef.current = height, node.style.setProperty("height", height + "px", "important"), onHeightChange(height, { rowHeight }));
-    }
-  };
-  return reactExports.useLayoutEffect(resizeTextarea), function(libRef2, listener) {
-    useListener(document.body, "reset", function(ev) {
-      libRef2.current.form === ev.target && listener(ev);
-    });
-  }(libRef, function() {
-    if (!isControlled) {
-      var currentValue = libRef.current.value;
-      requestAnimationFrame(function() {
-        var node = libRef.current;
-        node && currentValue !== node.value && resizeTextarea();
-      });
-    }
-  }), useListener(window, "resize", resizeTextarea), function(listener) {
-    useListener(document.fonts, "loadingdone", listener);
-  }(resizeTextarea), reactExports.createElement("textarea", _extends({}, props, { onChange: function(event) {
-    isControlled || resizeTextarea(), onChange(event);
-  }, ref }));
-}, index = reactExports.forwardRef(TextareaAutosize);
-class TextArea extends reactExports.Component {
-  constructor() {
-    super(...arguments), this.state = {}, this.onChangeHandler = this.onChange.bind(this), this.onFocusHandler = this.onFocus.bind(this), this.onBlurHandler = this.onBlur.bind(this), this.onChangeBehaviourHandler = this.createOnChangeBehaviour();
-  }
-  componentDidMount() {
-    const maxLength = this.props.maxLength;
-    void 0 !== maxLength && this.props.inputValue.setValidator((val) => void 0 !== val && val.length > maxLength ? this.props.textTooLongMessage.value : void 0);
-  }
-  componentDidUpdate(prevProps) {
-    this.props.inputValue.displayValue !== prevProps.inputValue.displayValue && this.setState({ editedValue: void 0 }), "available" !== prevProps.inputValue.status && "available" === this.props.inputValue.status && this.props.autoGrow && setTimeout(() => window.dispatchEvent(new Event("resize")), 0);
-  }
-  createOnChangeBehaviour() {
-    return this.props.submitWhileEditing ? debounce(this.submitValue.bind(this), ensure(this.props.submitDelay)) : () => {
-    };
-  }
-  getCurrentValue() {
-    return this.state.editedValue ?? this.props.inputValue.displayValue;
-  }
-  submitValue() {
-    const inputValue = this.props.inputValue, currentValue = this.getCurrentValue();
-    currentValue !== inputValue.displayValue ? inputValue.setValue(currentValue) : this.setState({ editedValue: void 0 });
-  }
-  onChange(e) {
-    this.setState({ editedValue: e.target.value }, () => {
-      !this.props.inputValue.readOnly && e.target instanceof HTMLTextAreaElement && document.activeElement !== e.target && this.submitValue();
-    }), this.onChangeBehaviourHandler();
-  }
-  onFocus() {
-    this.dispatchAction("onEnter");
-  }
-  onBlur() {
-    this.submitValue(), this.dispatchAction("onLeave");
-  }
-  render() {
-    return jsxRuntimeExports.jsxs(reactExports.Fragment, { children: [this.props.inputValue.readOnly && "control" !== this.props.readOnlyStyle ? this.renderAsText() : this.renderAsInput(), this.renderCounterMessage(), jsxRuntimeExports.jsx(Alert, { id: `${this.props.id}-error`, validation: this.props.inputValue.validation })] });
-  }
-  renderCounterMessage() {
-    return !this.props.inputValue.readOnly && this.props.maxLength && this.props.counterMessage?.value ? jsxRuntimeExports.jsx("label", { className: "mx-textarea-counter", children: this.props.counterMessage.value.replace("{1}", this.getCurrentValue().length.toString()).replace("{2}", this.props.maxLength.toString()) }) : null;
-  }
-  renderAsInput() {
-    return jsxRuntimeExports.jsx(index, { id: this.props.id, className: classNames("form-control", "mx-textarea-input", { "mx-textarea-noresize": !this.props.autoGrow }), value: this.getCurrentValue(), tabIndex: this.props.tabIndex, maxLength: this.props.maxLength, minRows: this.props.autoGrow ? 2 : this.props.numberOfLines, maxRows: this.props.autoGrow ? void 0 : this.props.numberOfLines, placeholder: this.props.placeholder.value && this.props.placeholder.value.length > 0 ? this.props.placeholder.value : void 0, onChange: this.onChangeHandler, onFocus: this.onFocusHandler, onBlur: this.onBlurHandler, disabled: this.props.inputValue.readOnly, ...getAriaLabelProps(this.props.ariaLabel?.value), ...getValidationAriaProps(this.props.inputValue.validation, this.props.id), "aria-required": this.props.ariaRequired });
-  }
-  renderAsText() {
-    return jsxRuntimeExports.jsx("div", { className: "form-control-static", children: this.getCurrentValue() || "\xA0" });
-  }
-  dispatchAction(property) {
-    const prop = this.props[property];
-    "available" === this.props.inputValue.status && prop && prop.execute();
-  }
-}
 
 const React = { createElement: reactExports.createElement };
 const Image = Object.getOwnPropertyDescriptor(ImageWidgetModule, "Image")?.value || Object.getOwnPropertyDescriptor(ImageWidgetModule, "default")?.value;
@@ -2529,39 +2507,67 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
   /* @__PURE__ */ React.createElement(
     $Div,
     {
+<<<<<<< HEAD
       key: "p11.FeedbackModule.ShareFeedback.layoutGrid1",
       $widgetId: "p11.FeedbackModule.ShareFeedback.layoutGrid1",
+=======
+      key: "p.FeedbackModule.ShareFeedback.layoutGrid1",
+      $widgetId: "p.FeedbackModule.ShareFeedback.layoutGrid1",
+>>>>>>> feat/sales-domain
       class: "mx-name-layoutGrid1 mx-layoutgrid mx-layoutgrid-fluid container-fluid",
       style: void 0,
       content: [
         /* @__PURE__ */ React.createElement(
           $Div,
           {
+<<<<<<< HEAD
             key: "p11.FeedbackModule.ShareFeedback.layoutGrid1$row0",
             $widgetId: "p11.FeedbackModule.ShareFeedback.layoutGrid1$row0",
+=======
+            key: "p.FeedbackModule.ShareFeedback.layoutGrid1$row0",
+            $widgetId: "p.FeedbackModule.ShareFeedback.layoutGrid1$row0",
+>>>>>>> feat/sales-domain
             class: "row",
             style: void 0,
             content: [
               /* @__PURE__ */ React.createElement(
                 $Div,
                 {
+<<<<<<< HEAD
                   key: "p11.FeedbackModule.ShareFeedback.layoutGrid1$row0$column0",
                   $widgetId: "p11.FeedbackModule.ShareFeedback.layoutGrid1$row0$column0",
+=======
+                  key: "p.FeedbackModule.ShareFeedback.layoutGrid1$row0$column0",
+                  $widgetId: "p.FeedbackModule.ShareFeedback.layoutGrid1$row0$column0",
+>>>>>>> feat/sales-domain
                   class: "col-lg col-md col",
                   style: void 0,
                   content: [
                     /* @__PURE__ */ React.createElement(
                       $DataView,
                       {
+<<<<<<< HEAD
                         key: "p11.FeedbackModule.ShareFeedback.dataView5",
                         $widgetId: "p11.FeedbackModule.ShareFeedback.dataView5",
+=======
+                        key: "p.FeedbackModule.ShareFeedback.dataView5",
+                        $widgetId: "p.FeedbackModule.ShareFeedback.dataView5",
+>>>>>>> feat/sales-domain
                         class: "mx-name-dataView5 form-vertical",
                         style: void 0,
                         tabIndex: void 0,
                         object: NanoflowObjectProperty({
+<<<<<<< HEAD
                           "dataSourceId": "p11.20",
+=======
+                          "dataSourceId": "p.20",
+>>>>>>> feat/sales-domain
                           "editable": true,
-                          "source": { "nanoflow": () => require$$0$3.DS_Feedback_Populate, "allowedRoles": [] },
+<<<<<<< Updated upstream
+                          "source": { "nanoflow": () => require$$0.DS_Feedback_Populate, "allowedRoles": [] },
+=======
+                          "source": { "nanoflow": () => DS_Feedback_Populate, "allowedRoles": [] },
+>>>>>>> Stashed changes
                           "argMap": {}
                         }),
                         emptyMessage: TextProperty({
@@ -2573,8 +2579,13 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                           /* @__PURE__ */ React.createElement(
                             $Container,
                             {
+<<<<<<< HEAD
                               key: "p11.FeedbackModule.ShareFeedback.container5",
                               $widgetId: "p11.FeedbackModule.ShareFeedback.container5",
+=======
+                              key: "p.FeedbackModule.ShareFeedback.container5",
+                              $widgetId: "p.FeedbackModule.ShareFeedback.container5",
+>>>>>>> feat/sales-domain
                               class: "mx-name-container5 spacing-outer-bottom-medium",
                               style: void 0,
                               renderMode: "div",
@@ -2583,8 +2594,13 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                 /* @__PURE__ */ React.createElement(
                                   $Text,
                                   {
+<<<<<<< HEAD
                                     key: "p11.FeedbackModule.ShareFeedback.text1",
                                     $widgetId: "p11.FeedbackModule.ShareFeedback.text1",
+=======
+                                    key: "p.FeedbackModule.ShareFeedback.text1",
+                                    $widgetId: "p.FeedbackModule.ShareFeedback.text1",
+>>>>>>> feat/sales-domain
                                     class: "mx-name-text1",
                                     style: void 0,
                                     caption: selectTranslation([
@@ -2598,14 +2614,20 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                 /* @__PURE__ */ React.createElement(
                                   $FormGroup,
                                   {
+<<<<<<< HEAD
                                     key: "p11.FeedbackModule.ShareFeedback.feedback_subject$formGroup",
                                     $widgetId: "p11.FeedbackModule.ShareFeedback.feedback_subject$formGroup",
+=======
+                                    key: "p.FeedbackModule.ShareFeedback.feedback_subject$formGroup",
+                                    $widgetId: "p.FeedbackModule.ShareFeedback.feedback_subject$formGroup",
+>>>>>>> feat/sales-domain
                                     class: "mx-name-feedback_subject mx-textbox",
                                     style: void 0,
                                     control: [
                                       /* @__PURE__ */ React.createElement(
                                         $TextBox,
                                         {
+<<<<<<< HEAD
                                           key: "p11.FeedbackModule.ShareFeedback.feedback_subject",
                                           $widgetId: "p11.FeedbackModule.ShareFeedback.feedback_subject",
                                           inputValue: AttributeProperty({
@@ -2614,6 +2636,20 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                             "entity": "FeedbackModule.Feedback",
                                             "attribute": "Subject",
                                             "onChange": { "type": "callNanoflow", "argMap": { "Feedback": { "widget": "p11.FeedbackModule.ShareFeedback.dataView5", "source": "object" } }, "config": { "nanoflow": () => require$$1$1.OCH_Feedback_SaveToLocalStorage, "allowedRoles": [] }, "disabledDuringExecution": false },
+=======
+                                          key: "p.FeedbackModule.ShareFeedback.feedback_subject",
+                                          $widgetId: "p.FeedbackModule.ShareFeedback.feedback_subject",
+                                          inputValue: AttributeProperty({
+                                            "scope": "p.FeedbackModule.ShareFeedback.dataView5",
+                                            "path": "",
+                                            "entity": "FeedbackModule.Feedback",
+                                            "attribute": "Subject",
+<<<<<<< Updated upstream
+                                            "onChange": { "type": "callNanoflow", "argMap": { "Feedback": { "widget": "p9.FeedbackModule.ShareFeedback.dataView5", "source": "object" } }, "config": { "nanoflow": () => require$$1.OCH_Feedback_SaveToLocalStorage, "allowedRoles": [] }, "disabledDuringExecution": false },
+=======
+                                            "onChange": { "type": "callNanoflow", "argMap": { "Feedback": { "widget": "p.FeedbackModule.ShareFeedback.dataView5", "source": "object" } }, "config": { "nanoflow": () => OCH_Feedback_SaveToLocalStorage, "allowedRoles": [] }, "disabledDuringExecution": false },
+>>>>>>> Stashed changes
+>>>>>>> feat/sales-domain
                                             "isList": false,
                                             "validation": null,
                                             "formatting": {}
@@ -2637,7 +2673,11 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                           ariaRequired: void 0,
                                           tabIndex: void 0,
                                           id: DerivedUniqueIdProperty({
+<<<<<<< HEAD
                                             "widgetId": "p11.FeedbackModule.ShareFeedback.feedback_subject"
+=======
+                                            "widgetId": "p.FeedbackModule.ShareFeedback.feedback_subject"
+>>>>>>> feat/sales-domain
                                           })
                                         }
                                       )
@@ -2648,26 +2688,40 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                       })
                                     ]),
                                     labelFor: DerivedUniqueIdProperty({
+<<<<<<< HEAD
                                       "widgetId": "p11.FeedbackModule.ShareFeedback.feedback_subject"
+=======
+                                      "widgetId": "p.FeedbackModule.ShareFeedback.feedback_subject"
+>>>>>>> feat/sales-domain
                                     }),
                                     width: void 0,
                                     orientation: "vertical",
                                     hasError: ValidationProperty({
+<<<<<<< HEAD
                                       "inputWidgetId": "p11.FeedbackModule.ShareFeedback.feedback_subject"
+=======
+                                      "inputWidgetId": "p.FeedbackModule.ShareFeedback.feedback_subject"
+>>>>>>> feat/sales-domain
                                     })
                                   }
                                 ),
                                 /* @__PURE__ */ React.createElement(
                                   $FormGroup,
                                   {
+<<<<<<< HEAD
                                     key: "p11.FeedbackModule.ShareFeedback.textArea2$formGroup",
                                     $widgetId: "p11.FeedbackModule.ShareFeedback.textArea2$formGroup",
+=======
+                                    key: "p.FeedbackModule.ShareFeedback.textArea2$formGroup",
+                                    $widgetId: "p.FeedbackModule.ShareFeedback.textArea2$formGroup",
+>>>>>>> feat/sales-domain
                                     class: "mx-name-textArea2 mx-textarea",
                                     style: void 0,
                                     control: [
                                       /* @__PURE__ */ React.createElement(
                                         $TextArea,
                                         {
+<<<<<<< HEAD
                                           key: "p11.FeedbackModule.ShareFeedback.textArea2",
                                           $widgetId: "p11.FeedbackModule.ShareFeedback.textArea2",
                                           inputValue: AttributeProperty({
@@ -2676,6 +2730,20 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                             "entity": "FeedbackModule.Feedback",
                                             "attribute": "Description",
                                             "onChange": { "type": "callNanoflow", "argMap": { "Feedback": { "widget": "p11.FeedbackModule.ShareFeedback.dataView5", "source": "object" } }, "config": { "nanoflow": () => require$$1$1.OCH_Feedback_SaveToLocalStorage, "allowedRoles": [] }, "disabledDuringExecution": false },
+=======
+                                          key: "p.FeedbackModule.ShareFeedback.textArea2",
+                                          $widgetId: "p.FeedbackModule.ShareFeedback.textArea2",
+                                          inputValue: AttributeProperty({
+                                            "scope": "p.FeedbackModule.ShareFeedback.dataView5",
+                                            "path": "",
+                                            "entity": "FeedbackModule.Feedback",
+                                            "attribute": "Description",
+<<<<<<< Updated upstream
+                                            "onChange": { "type": "callNanoflow", "argMap": { "Feedback": { "widget": "p9.FeedbackModule.ShareFeedback.dataView5", "source": "object" } }, "config": { "nanoflow": () => require$$1.OCH_Feedback_SaveToLocalStorage, "allowedRoles": [] }, "disabledDuringExecution": false },
+=======
+                                            "onChange": { "type": "callNanoflow", "argMap": { "Feedback": { "widget": "p.FeedbackModule.ShareFeedback.dataView5", "source": "object" } }, "config": { "nanoflow": () => OCH_Feedback_SaveToLocalStorage, "allowedRoles": [] }, "disabledDuringExecution": false },
+>>>>>>> Stashed changes
+>>>>>>> feat/sales-domain
                                             "isList": false,
                                             "validation": null
                                           }),
@@ -2698,7 +2766,11 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                           submitDelay: 300,
                                           tabIndex: void 0,
                                           id: DerivedUniqueIdProperty({
+<<<<<<< HEAD
                                             "widgetId": "p11.FeedbackModule.ShareFeedback.textArea2"
+=======
+                                            "widgetId": "p.FeedbackModule.ShareFeedback.textArea2"
+>>>>>>> feat/sales-domain
                                           })
                                         }
                                       )
@@ -2709,12 +2781,20 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                       })
                                     ]),
                                     labelFor: DerivedUniqueIdProperty({
+<<<<<<< HEAD
                                       "widgetId": "p11.FeedbackModule.ShareFeedback.textArea2"
+=======
+                                      "widgetId": "p.FeedbackModule.ShareFeedback.textArea2"
+>>>>>>> feat/sales-domain
                                     }),
                                     width: void 0,
                                     orientation: "vertical",
                                     hasError: ValidationProperty({
+<<<<<<< HEAD
                                       "inputWidgetId": "p11.FeedbackModule.ShareFeedback.textArea2"
+=======
+                                      "inputWidgetId": "p.FeedbackModule.ShareFeedback.textArea2"
+>>>>>>> feat/sales-domain
                                     })
                                   }
                                 )
@@ -2725,8 +2805,13 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                           /* @__PURE__ */ React.createElement(
                             $Container,
                             {
+<<<<<<< HEAD
                               key: "p11.FeedbackModule.ShareFeedback.container4",
                               $widgetId: "p11.FeedbackModule.ShareFeedback.container4",
+=======
+                              key: "p.FeedbackModule.ShareFeedback.container4",
+                              $widgetId: "p.FeedbackModule.ShareFeedback.container4",
+>>>>>>> feat/sales-domain
                               class: "mx-name-container4 col-left spacing-outer-bottom",
                               style: void 0,
                               renderMode: "div",
@@ -2735,12 +2820,21 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                 /* @__PURE__ */ React.createElement(
                                   $Label,
                                   {
+<<<<<<< HEAD
                                     key: "p11.FeedbackModule.ShareFeedback.label1",
                                     $widgetId: "p11.FeedbackModule.ShareFeedback.label1",
                                     class: "mx-name-label1 text-semibold spacing-outer-bottom-none",
                                     style: void 0,
                                     id: DerivedUniqueIdProperty({
                                       "widgetId": "p11.FeedbackModule.ShareFeedback.label1"
+=======
+                                    key: "p.FeedbackModule.ShareFeedback.label1",
+                                    $widgetId: "p.FeedbackModule.ShareFeedback.label1",
+                                    class: "mx-name-label1 text-semibold spacing-outer-bottom-none",
+                                    style: void 0,
+                                    id: DerivedUniqueIdProperty({
+                                      "widgetId": "p.FeedbackModule.ShareFeedback.label1"
+>>>>>>> feat/sales-domain
                                     }),
                                     caption: TextProperty({
                                       "value": selectTranslation([
@@ -2752,8 +2846,13 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                 /* @__PURE__ */ React.createElement(
                                   $Text,
                                   {
+<<<<<<< HEAD
                                     key: "p11.FeedbackModule.ShareFeedback.text2",
                                     $widgetId: "p11.FeedbackModule.ShareFeedback.text2",
+=======
+                                    key: "p.FeedbackModule.ShareFeedback.text2",
+                                    $widgetId: "p.FeedbackModule.ShareFeedback.text2",
+>>>>>>> feat/sales-domain
                                     class: "mx-name-text2 text-light",
                                     style: void 0,
                                     caption: selectTranslation([
@@ -2771,8 +2870,13 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                           /* @__PURE__ */ React.createElement(
                             $Container,
                             {
+<<<<<<< HEAD
                               key: "p11.FeedbackModule.ShareFeedback.container2",
                               $widgetId: "p11.FeedbackModule.ShareFeedback.container2",
+=======
+                              key: "p.FeedbackModule.ShareFeedback.container2",
+                              $widgetId: "p.FeedbackModule.ShareFeedback.container2",
+>>>>>>> feat/sales-domain
                               class: "mx-name-container2 flexcontainer justify-content-start spacing-outer-bottom-medium",
                               style: {
                                 "gap": "8px"
@@ -2783,8 +2887,13 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                 /* @__PURE__ */ React.createElement(
                                   $ConditionalVisibilityWrapper,
                                   {
+<<<<<<< HEAD
                                     key: "p11.FeedbackModule.ShareFeedback.actionButton4$visibility",
                                     $widgetId: "p11.FeedbackModule.ShareFeedback.actionButton4$visibility",
+=======
+                                    key: "p.FeedbackModule.ShareFeedback.actionButton4$visibility",
+                                    $widgetId: "p.FeedbackModule.ShareFeedback.actionButton4$visibility",
+>>>>>>> feat/sales-domain
                                     visible: ExpressionProperty({
                                       "expression": { "expr": { "type": "function", "name": "_hasSomeRole", "parameters": [] }, "args": {} }
                                     }),
@@ -2792,9 +2901,15 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                       /* @__PURE__ */ React.createElement(
                                         $ActionButton,
                                         {
+<<<<<<< HEAD
                                           key: "p11.FeedbackModule.ShareFeedback.actionButton4",
                                           $widgetId: "p11.FeedbackModule.ShareFeedback.actionButton4",
                                           buttonId: "p11.FeedbackModule.ShareFeedback.actionButton4",
+=======
+                                          key: "p.FeedbackModule.ShareFeedback.actionButton4",
+                                          $widgetId: "p.FeedbackModule.ShareFeedback.actionButton4",
+                                          buttonId: "p.FeedbackModule.ShareFeedback.actionButton4",
+>>>>>>> feat/sales-domain
                                           class: "mx-name-actionButton4",
                                           style: void 0,
                                           tabIndex: void 0,
@@ -2815,7 +2930,11 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                             "icon": { "type": "glyph", "iconClass": "glyphicon-camera" }
                                           }),
                                           action: ActionProperty({
+<<<<<<< HEAD
                                             "action": { "type": "callNanoflow", "argMap": { "Feedback": { "widget": "p11.FeedbackModule.ShareFeedback.dataView5", "source": "object" } }, "config": { "nanoflow": () => require$$2.ACT_Feedback_TriggerScreenshotMode, "allowedRoles": [] }, "disabledDuringExecution": true },
+=======
+                                            "action": { "type": "callNanoflow", "argMap": { "Feedback": { "widget": "p.FeedbackModule.ShareFeedback.dataView5", "source": "object" } }, "config": { "nanoflow": () => ACT_Feedback_TriggerScreenshotMode, "allowedRoles": [] }, "disabledDuringExecution": true },
+>>>>>>> feat/sales-domain
                                             "abortOnServerValidation": true
                                           })
                                         }
@@ -2826,8 +2945,13 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                 /* @__PURE__ */ React.createElement(
                                   $ConditionalVisibilityWrapper,
                                   {
+<<<<<<< HEAD
                                     key: "p11.FeedbackModule.ShareFeedback.actionButton5$visibility",
                                     $widgetId: "p11.FeedbackModule.ShareFeedback.actionButton5$visibility",
+=======
+                                    key: "p.FeedbackModule.ShareFeedback.actionButton5$visibility",
+                                    $widgetId: "p.FeedbackModule.ShareFeedback.actionButton5$visibility",
+>>>>>>> feat/sales-domain
                                     visible: ExpressionProperty({
                                       "expression": { "expr": { "type": "function", "name": "_hasSomeRole", "parameters": [] }, "args": {} }
                                     }),
@@ -2835,9 +2959,15 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                       /* @__PURE__ */ React.createElement(
                                         $ActionButton,
                                         {
+<<<<<<< HEAD
                                           key: "p11.FeedbackModule.ShareFeedback.actionButton5",
                                           $widgetId: "p11.FeedbackModule.ShareFeedback.actionButton5",
                                           buttonId: "p11.FeedbackModule.ShareFeedback.actionButton5",
+=======
+                                          key: "p.FeedbackModule.ShareFeedback.actionButton5",
+                                          $widgetId: "p.FeedbackModule.ShareFeedback.actionButton5",
+                                          buttonId: "p.FeedbackModule.ShareFeedback.actionButton5",
+>>>>>>> feat/sales-domain
                                           class: "mx-name-actionButton5",
                                           style: void 0,
                                           tabIndex: void 0,
@@ -2858,7 +2988,11 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                             "icon": { "type": "glyph", "iconClass": "glyphicon-open" }
                                           }),
                                           action: ActionProperty({
+<<<<<<< HEAD
                                             "action": { "type": "callNanoflow", "argMap": { "Feedback": { "widget": "p11.FeedbackModule.ShareFeedback.dataView5", "source": "object" } }, "config": { "nanoflow": () => require$$3.ACT_Feedback_UploadImage, "allowedRoles": [] }, "disabledDuringExecution": true },
+=======
+                                            "action": { "type": "callNanoflow", "argMap": { "Feedback": { "widget": "p.FeedbackModule.ShareFeedback.dataView5", "source": "object" } }, "config": { "nanoflow": () => ACT_Feedback_UploadImage, "allowedRoles": [] }, "disabledDuringExecution": true },
+>>>>>>> feat/sales-domain
                                             "abortOnServerValidation": true
                                           })
                                         }
@@ -2873,17 +3007,29 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                           /* @__PURE__ */ React.createElement(
                             $ConditionalVisibilityWrapper,
                             {
+<<<<<<< HEAD
                               key: "p11.FeedbackModule.ShareFeedback.container6$visibility",
                               $widgetId: "p11.FeedbackModule.ShareFeedback.container6$visibility",
                               visible: ExpressionProperty({
                                 "expression": { "expr": { "type": "function", "name": "!=", "parameters": [{ "type": "variable", "variable": "currentObject", "path": "ImageB64" }, { "type": "literal", "value": null }] }, "args": { "currentObject": { "widget": "p11.FeedbackModule.ShareFeedback.dataView5", "source": "object" } } }
+=======
+                              key: "p.FeedbackModule.ShareFeedback.container6$visibility",
+                              $widgetId: "p.FeedbackModule.ShareFeedback.container6$visibility",
+                              visible: ExpressionProperty({
+                                "expression": { "expr": { "type": "function", "name": "!=", "parameters": [{ "type": "variable", "variable": "currentObject", "path": "ImageB64" }, { "type": "literal", "value": null }] }, "args": { "currentObject": { "widget": "p.FeedbackModule.ShareFeedback.dataView5", "source": "object" } } }
+>>>>>>> feat/sales-domain
                               }),
                               contents: [
                                 /* @__PURE__ */ React.createElement(
                                   $Container,
                                   {
+<<<<<<< HEAD
                                     key: "p11.FeedbackModule.ShareFeedback.container6",
                                     $widgetId: "p11.FeedbackModule.ShareFeedback.container6",
+=======
+                                    key: "p.FeedbackModule.ShareFeedback.container6",
+                                    $widgetId: "p.FeedbackModule.ShareFeedback.container6",
+>>>>>>> feat/sales-domain
                                     class: "mx-name-container6 mxfeedback-screenshot-preview spacing-outer-bottom-medium",
                                     style: void 0,
                                     renderMode: "div",
@@ -2892,8 +3038,13 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                       /* @__PURE__ */ React.createElement(
                                         $Container,
                                         {
+<<<<<<< HEAD
                                           key: "p11.FeedbackModule.ShareFeedback.container7",
                                           $widgetId: "p11.FeedbackModule.ShareFeedback.container7",
+=======
+                                          key: "p.FeedbackModule.ShareFeedback.container7",
+                                          $widgetId: "p.FeedbackModule.ShareFeedback.container7",
+>>>>>>> feat/sales-domain
                                           class: "mx-name-container7",
                                           style: {
                                             "position": "relative"
@@ -2904,8 +3055,13 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                             /* @__PURE__ */ React.createElement(
                                               $ConditionalVisibilityWrapper,
                                               {
+<<<<<<< HEAD
                                                 key: "p11.FeedbackModule.ShareFeedback.actionButton1$visibility",
                                                 $widgetId: "p11.FeedbackModule.ShareFeedback.actionButton1$visibility",
+=======
+                                                key: "p.FeedbackModule.ShareFeedback.actionButton1$visibility",
+                                                $widgetId: "p.FeedbackModule.ShareFeedback.actionButton1$visibility",
+>>>>>>> feat/sales-domain
                                                 visible: ExpressionProperty({
                                                   "expression": { "expr": { "type": "function", "name": "_hasSomeRole", "parameters": [] }, "args": {} }
                                                 }),
@@ -2913,9 +3069,15 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                                   /* @__PURE__ */ React.createElement(
                                                     $ActionButton,
                                                     {
+<<<<<<< HEAD
                                                       key: "p11.FeedbackModule.ShareFeedback.actionButton1",
                                                       $widgetId: "p11.FeedbackModule.ShareFeedback.actionButton1",
                                                       buttonId: "p11.FeedbackModule.ShareFeedback.actionButton1",
+=======
+                                                      key: "p.FeedbackModule.ShareFeedback.actionButton1",
+                                                      $widgetId: "p.FeedbackModule.ShareFeedback.actionButton1",
+                                                      buttonId: "p.FeedbackModule.ShareFeedback.actionButton1",
+>>>>>>> feat/sales-domain
                                                       class: "mx-name-actionButton1 mxfeedback-screenshot-preview__delete-button",
                                                       style: void 0,
                                                       tabIndex: void 0,
@@ -2936,7 +3098,11 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                                         "icon": { "type": "glyph", "iconClass": "glyphicon-remove" }
                                                       }),
                                                       action: ActionProperty({
+<<<<<<< HEAD
                                                         "action": { "type": "callNanoflow", "argMap": { "Feedback": { "widget": "p11.FeedbackModule.ShareFeedback.dataView5", "source": "object" } }, "config": { "nanoflow": () => require$$4.ACT_Feedback_ClearImage, "allowedRoles": [] }, "disabledDuringExecution": true },
+=======
+                                                        "action": { "type": "callNanoflow", "argMap": { "Feedback": { "widget": "p.FeedbackModule.ShareFeedback.dataView5", "source": "object" } }, "config": { "nanoflow": () => ACT_Feedback_ClearImage, "allowedRoles": [] }, "disabledDuringExecution": true },
+>>>>>>> feat/sales-domain
                                                         "abortOnServerValidation": true
                                                       })
                                                     }
@@ -2947,14 +3113,23 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                             /* @__PURE__ */ React.createElement(
                                               $Image,
                                               {
+<<<<<<< HEAD
                                                 key: "p11.FeedbackModule.ShareFeedback.image1",
                                                 $widgetId: "p11.FeedbackModule.ShareFeedback.image1",
+=======
+                                                key: "p.FeedbackModule.ShareFeedback.image1",
+                                                $widgetId: "p.FeedbackModule.ShareFeedback.image1",
+>>>>>>> feat/sales-domain
                                                 datasource: "imageUrl",
                                                 imageObject: void 0,
                                                 defaultImageDynamic: void 0,
                                                 imageUrl: selectTranslation([
                                                   ExpressionProperty({
+<<<<<<< HEAD
                                                     "expression": { "expr": { "type": "variable", "variable": "currentObject", "path": "ImageB64" }, "args": { "currentObject": { "widget": "p11.FeedbackModule.ShareFeedback.dataView5", "source": "object" } } }
+=======
+                                                    "expression": { "expr": { "type": "variable", "variable": "currentObject", "path": "ImageB64" }, "args": { "currentObject": { "widget": "p.FeedbackModule.ShareFeedback.dataView5", "source": "object" } } }
+>>>>>>> feat/sales-domain
                                                   })
                                                 ]),
                                                 imageIcon: void 0,
@@ -2995,23 +3170,36 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                           /* @__PURE__ */ React.createElement(
                             $ConditionalVisibilityWrapper,
                             {
+<<<<<<< HEAD
                               key: "p11.FeedbackModule.ShareFeedback.textBox1$formGroup$visibility",
                               $widgetId: "p11.FeedbackModule.ShareFeedback.textBox1$formGroup$visibility",
                               visible: ExpressionProperty({
                                 "expression": { "expr": { "type": "variable", "variable": "currentObject", "path": "_showEmail" }, "args": { "currentObject": { "widget": "p11.FeedbackModule.ShareFeedback.dataView5", "source": "object" } } }
+=======
+                              key: "p.FeedbackModule.ShareFeedback.textBox1$formGroup$visibility",
+                              $widgetId: "p.FeedbackModule.ShareFeedback.textBox1$formGroup$visibility",
+                              visible: ExpressionProperty({
+                                "expression": { "expr": { "type": "variable", "variable": "currentObject", "path": "_showEmail" }, "args": { "currentObject": { "widget": "p.FeedbackModule.ShareFeedback.dataView5", "source": "object" } } }
+>>>>>>> feat/sales-domain
                               }),
                               contents: [
                                 /* @__PURE__ */ React.createElement(
                                   $FormGroup,
                                   {
+<<<<<<< HEAD
                                     key: "p11.FeedbackModule.ShareFeedback.textBox1$formGroup",
                                     $widgetId: "p11.FeedbackModule.ShareFeedback.textBox1$formGroup",
+=======
+                                    key: "p.FeedbackModule.ShareFeedback.textBox1$formGroup",
+                                    $widgetId: "p.FeedbackModule.ShareFeedback.textBox1$formGroup",
+>>>>>>> feat/sales-domain
                                     class: "mx-name-textBox1 mx-textbox",
                                     style: void 0,
                                     control: [
                                       /* @__PURE__ */ React.createElement(
                                         $TextBox,
                                         {
+<<<<<<< HEAD
                                           key: "p11.FeedbackModule.ShareFeedback.textBox1",
                                           $widgetId: "p11.FeedbackModule.ShareFeedback.textBox1",
                                           inputValue: AttributeProperty({
@@ -3020,6 +3208,20 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                             "entity": "FeedbackModule.Feedback",
                                             "attribute": "SubmitterEmail",
                                             "onChange": { "type": "callNanoflow", "argMap": { "Feedback": { "widget": "p11.FeedbackModule.ShareFeedback.dataView5", "source": "object" } }, "config": { "nanoflow": () => require$$1$1.OCH_Feedback_SaveToLocalStorage, "allowedRoles": [] }, "disabledDuringExecution": false },
+=======
+                                          key: "p.FeedbackModule.ShareFeedback.textBox1",
+                                          $widgetId: "p.FeedbackModule.ShareFeedback.textBox1",
+                                          inputValue: AttributeProperty({
+                                            "scope": "p.FeedbackModule.ShareFeedback.dataView5",
+                                            "path": "",
+                                            "entity": "FeedbackModule.Feedback",
+                                            "attribute": "SubmitterEmail",
+<<<<<<< Updated upstream
+                                            "onChange": { "type": "callNanoflow", "argMap": { "Feedback": { "widget": "p9.FeedbackModule.ShareFeedback.dataView5", "source": "object" } }, "config": { "nanoflow": () => require$$1.OCH_Feedback_SaveToLocalStorage, "allowedRoles": [] }, "disabledDuringExecution": false },
+=======
+                                            "onChange": { "type": "callNanoflow", "argMap": { "Feedback": { "widget": "p.FeedbackModule.ShareFeedback.dataView5", "source": "object" } }, "config": { "nanoflow": () => OCH_Feedback_SaveToLocalStorage, "allowedRoles": [] }, "disabledDuringExecution": false },
+>>>>>>> Stashed changes
+>>>>>>> feat/sales-domain
                                             "isList": false,
                                             "validation": null,
                                             "formatting": {}
@@ -3043,7 +3245,11 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                           ariaRequired: void 0,
                                           tabIndex: void 0,
                                           id: DerivedUniqueIdProperty({
+<<<<<<< HEAD
                                             "widgetId": "p11.FeedbackModule.ShareFeedback.textBox1"
+=======
+                                            "widgetId": "p.FeedbackModule.ShareFeedback.textBox1"
+>>>>>>> feat/sales-domain
                                           })
                                         }
                                       )
@@ -3054,12 +3260,20 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                       })
                                     ]),
                                     labelFor: DerivedUniqueIdProperty({
+<<<<<<< HEAD
                                       "widgetId": "p11.FeedbackModule.ShareFeedback.textBox1"
+=======
+                                      "widgetId": "p.FeedbackModule.ShareFeedback.textBox1"
+>>>>>>> feat/sales-domain
                                     }),
                                     width: void 0,
                                     orientation: "vertical",
                                     hasError: ValidationProperty({
+<<<<<<< HEAD
                                       "inputWidgetId": "p11.FeedbackModule.ShareFeedback.textBox1"
+=======
+                                      "inputWidgetId": "p.FeedbackModule.ShareFeedback.textBox1"
+>>>>>>> feat/sales-domain
                                     })
                                   }
                                 )
@@ -3069,8 +3283,13 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                           /* @__PURE__ */ React.createElement(
                             $Container,
                             {
+<<<<<<< HEAD
                               key: "p11.FeedbackModule.ShareFeedback.container3",
                               $widgetId: "p11.FeedbackModule.ShareFeedback.container3",
+=======
+                              key: "p.FeedbackModule.ShareFeedback.container3",
+                              $widgetId: "p.FeedbackModule.ShareFeedback.container3",
+>>>>>>> feat/sales-domain
                               class: "mx-name-container3 flex-row flexcontainer justify-content-end",
                               style: {
                                 "gap": "8px"
@@ -3081,9 +3300,15 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                 /* @__PURE__ */ React.createElement(
                                   $ActionButton,
                                   {
+<<<<<<< HEAD
                                     key: "p11.FeedbackModule.ShareFeedback.feedback_cancel",
                                     $widgetId: "p11.FeedbackModule.ShareFeedback.feedback_cancel",
                                     buttonId: "p11.FeedbackModule.ShareFeedback.feedback_cancel",
+=======
+                                    key: "p.FeedbackModule.ShareFeedback.feedback_cancel",
+                                    $widgetId: "p.FeedbackModule.ShareFeedback.feedback_cancel",
+                                    buttonId: "p.FeedbackModule.ShareFeedback.feedback_cancel",
+>>>>>>> feat/sales-domain
                                     class: "mx-name-feedback_cancel",
                                     style: {
                                       "border": "0"
@@ -3112,8 +3337,13 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                 /* @__PURE__ */ React.createElement(
                                   $ConditionalVisibilityWrapper,
                                   {
+<<<<<<< HEAD
                                     key: "p11.FeedbackModule.ShareFeedback.feedback_clear$visibility",
                                     $widgetId: "p11.FeedbackModule.ShareFeedback.feedback_clear$visibility",
+=======
+                                    key: "p.FeedbackModule.ShareFeedback.feedback_clear$visibility",
+                                    $widgetId: "p.FeedbackModule.ShareFeedback.feedback_clear$visibility",
+>>>>>>> feat/sales-domain
                                     visible: ExpressionProperty({
                                       "expression": { "expr": { "type": "function", "name": "_hasSomeRole", "parameters": [] }, "args": {} }
                                     }),
@@ -3121,9 +3351,15 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                       /* @__PURE__ */ React.createElement(
                                         $ActionButton,
                                         {
+<<<<<<< HEAD
                                           key: "p11.FeedbackModule.ShareFeedback.feedback_clear",
                                           $widgetId: "p11.FeedbackModule.ShareFeedback.feedback_clear",
                                           buttonId: "p11.FeedbackModule.ShareFeedback.feedback_clear",
+=======
+                                          key: "p.FeedbackModule.ShareFeedback.feedback_clear",
+                                          $widgetId: "p.FeedbackModule.ShareFeedback.feedback_clear",
+                                          buttonId: "p.FeedbackModule.ShareFeedback.feedback_clear",
+>>>>>>> feat/sales-domain
                                           class: "mx-name-feedback_clear btn-bordered",
                                           style: void 0,
                                           tabIndex: void 0,
@@ -3142,7 +3378,11 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                           }),
                                           icon: void 0,
                                           action: ActionProperty({
+<<<<<<< HEAD
                                             "action": { "type": "callNanoflow", "argMap": { "Feedback": { "widget": "p11.FeedbackModule.ShareFeedback.dataView5", "source": "object" } }, "config": { "nanoflow": () => require$$5.ACT_Feedback_ClearForm, "allowedRoles": [] }, "disabledDuringExecution": true },
+=======
+                                            "action": { "type": "callNanoflow", "argMap": { "Feedback": { "widget": "p.FeedbackModule.ShareFeedback.dataView5", "source": "object" } }, "config": { "nanoflow": () => ACT_Feedback_ClearForm, "allowedRoles": [] }, "disabledDuringExecution": true },
+>>>>>>> feat/sales-domain
                                             "abortOnServerValidation": true
                                           })
                                         }
@@ -3153,8 +3393,13 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                 /* @__PURE__ */ React.createElement(
                                   $ConditionalVisibilityWrapper,
                                   {
+<<<<<<< HEAD
                                     key: "p11.FeedbackModule.ShareFeedback.feedback_submit$visibility",
                                     $widgetId: "p11.FeedbackModule.ShareFeedback.feedback_submit$visibility",
+=======
+                                    key: "p.FeedbackModule.ShareFeedback.feedback_submit$visibility",
+                                    $widgetId: "p.FeedbackModule.ShareFeedback.feedback_submit$visibility",
+>>>>>>> feat/sales-domain
                                     visible: ExpressionProperty({
                                       "expression": { "expr": { "type": "function", "name": "_hasSomeRole", "parameters": [] }, "args": {} }
                                     }),
@@ -3162,9 +3407,15 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                       /* @__PURE__ */ React.createElement(
                                         $ActionButton,
                                         {
+<<<<<<< HEAD
                                           key: "p11.FeedbackModule.ShareFeedback.feedback_submit",
                                           $widgetId: "p11.FeedbackModule.ShareFeedback.feedback_submit",
                                           buttonId: "p11.FeedbackModule.ShareFeedback.feedback_submit",
+=======
+                                          key: "p.FeedbackModule.ShareFeedback.feedback_submit",
+                                          $widgetId: "p.FeedbackModule.ShareFeedback.feedback_submit",
+                                          buttonId: "p.FeedbackModule.ShareFeedback.feedback_submit",
+>>>>>>> feat/sales-domain
                                           class: "mx-name-feedback_submit",
                                           style: void 0,
                                           tabIndex: void 0,
@@ -3183,7 +3434,11 @@ const region$Main = (historyId) => /* @__PURE__ */ React.createElement(PageFragm
                                           }),
                                           icon: void 0,
                                           action: ActionProperty({
+<<<<<<< HEAD
                                             "action": { "type": "callNanoflow", "argMap": { "Feedback": { "widget": "p11.FeedbackModule.ShareFeedback.dataView5", "source": "object" } }, "config": { "nanoflow": () => require$$6.ACT_SubmitFeedback, "allowedRoles": [] }, "disabledDuringExecution": true },
+=======
+                                            "action": { "type": "callNanoflow", "argMap": { "Feedback": { "widget": "p.FeedbackModule.ShareFeedback.dataView5", "source": "object" } }, "config": { "nanoflow": () => ACT_SubmitFeedback, "allowedRoles": [] }, "disabledDuringExecution": true },
+>>>>>>> feat/sales-domain
                                             "abortOnServerValidation": true
                                           })
                                         }
@@ -3214,6 +3469,7 @@ const title = selectTranslation([
   "Share your feedback"
 ]);
 const classes = "";
+const autofocus = "desktopOnly";
 const cancelChangesOperationId = "BfY+4JHNAl6t5444TUmhIw";
 const style = {};
 const content = {
@@ -3221,4 +3477,4 @@ const content = {
   "Atlas_Core.PopupLayout.Main": region$Main
 };
 
-export { cancelChangesOperationId, classes, content, style, title };
+export { autofocus, cancelChangesOperationId, classes, content, style, title };

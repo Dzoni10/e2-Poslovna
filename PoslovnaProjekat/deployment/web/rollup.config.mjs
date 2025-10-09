@@ -1,16 +1,16 @@
-import { nodeResolve } from "file://C:/Program Files/Mendix/10.23.0.70273/modeler/tools/node/node_modules/@rollup/plugin-node-resolve/dist/cjs/index.js";
-import commonjs from "file://C:/Program Files/Mendix/10.23.0.70273/modeler/tools/node/node_modules/@rollup/plugin-commonjs/dist/cjs/index.js";
-import { babel } from "file://C:/Program Files/Mendix/10.23.0.70273/modeler/tools/node/node_modules/@rollup/plugin-babel/dist/cjs/index.js";
-import clear from "file://C:/Program Files/Mendix/10.23.0.70273/modeler/tools/node/node_modules/rollup-plugin-clear/dist/index.js";
-import esbuild from "file://C:/Program Files/Mendix/10.23.0.70273/modeler/tools/node/node_modules/rollup-plugin-esbuild/dist/index.mjs";
-import postcss from "file://C:/Program Files/Mendix/10.23.0.70273/modeler/tools/node/node_modules/rollup-plugin-postcss/dist/index.js";
-import nodePolyfills from "file://C:/Program Files/Mendix/10.23.0.70273/modeler/tools/node/node_modules/rollup-plugin-polyfill-node/dist/index.js";
+import { nodeResolve } from "file://C:/Program Files/Mendix/11.2.0.77998/modeler/tools/node/node_modules/@rollup/plugin-node-resolve/dist/cjs/index.js";
+import commonjs from "file://C:/Program Files/Mendix/11.2.0.77998/modeler/tools/node/node_modules/@rollup/plugin-commonjs/dist/cjs/index.js";
+import { babel } from "file://C:/Program Files/Mendix/11.2.0.77998/modeler/tools/node/node_modules/@rollup/plugin-babel/dist/cjs/index.js";
+import del from "file://C:/Program Files/Mendix/11.2.0.77998/modeler/tools/node/node_modules/rollup-plugin-delete/dist/index.js";
+import esbuild from "file://C:/Program Files/Mendix/11.2.0.77998/modeler/tools/node/node_modules/rollup-plugin-esbuild/dist/index.mjs";
+import postcss from "file://C:/Program Files/Mendix/11.2.0.77998/modeler/tools/node/node_modules/rollup-plugin-postcss/dist/index.js";
+import nodePolyfills from "file://C:/Program Files/Mendix/11.2.0.77998/modeler/tools/node/node_modules/rollup-plugin-polyfill-node/dist/index.js";
 
-import mendixCopy from "file://C:/Program Files/Mendix/10.23.0.70273/modeler/tools/node/rollup-plugin-mendix-copy.mjs";
-import mendixResolve from "file://C:/Program Files/Mendix/10.23.0.70273/modeler/tools/node/rollup-plugin-mendix-resolve.mjs";
-import mendixOnlyWriteChanged from "file://C:/Program Files/Mendix/10.23.0.70273/modeler/tools/node/rollup-plugin-mendix-only-write-changed.mjs";
-import mendixServiceWorker from "file://C:/Program Files/Mendix/10.23.0.70273/modeler/tools/node/rollup-plugin-mendix-serviceworker.mjs";
-import alias from "file://C:/Program Files/Mendix/10.23.0.70273/modeler/tools/node/node_modules/@rollup/plugin-alias/dist/es/index.js";
+import mendixCopy from "file://C:/Program Files/Mendix/11.2.0.77998/modeler/tools/node/rollup-plugin-mendix-copy.mjs";
+import mendixResolve from "file://C:/Program Files/Mendix/11.2.0.77998/modeler/tools/node/rollup-plugin-mendix-resolve.mjs";
+import mendixOnlyWriteChanged from "file://C:/Program Files/Mendix/11.2.0.77998/modeler/tools/node/rollup-plugin-mendix-only-write-changed.mjs";
+import mendixServiceWorker from "file://C:/Program Files/Mendix/11.2.0.77998/modeler/tools/node/rollup-plugin-mendix-serviceworker.mjs";
+import alias from "file://C:/Program Files/Mendix/11.2.0.77998/modeler/tools/node/node_modules/@rollup/plugin-alias/dist/es/index.js";
 
 const JAVASCRIPT_SOURCE_PATH_REGEX = /javascriptsource/;
 const PLUGGABLE_WIDGETS_PATH_FILTER = "./widgets/**";
@@ -36,8 +36,8 @@ export default {
     plugins: [
         ignore(/react-native/),
         mendixResolve(
-            "C:/Program Files/Mendix/10.23.0.70273/modeler/tools/node/web-resolutions.json",
-            "C:/Program Files/Mendix/10.23.0.70273/modeler/tools/node/node_modules",
+            "C:/Program Files/Mendix/11.2.0.77998/modeler/tools/node/web-resolutions.json",
+            "C:/Program Files/Mendix/11.2.0.77998/modeler/tools/node/node_modules",
         ),
         nodePolyfills(),
         esbuild({
@@ -54,12 +54,12 @@ export default {
             },
         }),
         nodeResolve({
-            modulePaths: ["C:/Program Files/Mendix/10.23.0.70273/modeler/tools/node/node_modules"],
+            modulePaths: ["C:/Program Files/Mendix/11.2.0.77998/modeler/tools/node/node_modules"],
         }),
         commonjs({
             transformMixedEsModules: true,
             exclude: [
-                "C:/Program Files/Mendix/10.23.0.70273/modeler/tools/node/node_modules/mendix/**",
+                "C:/Program Files/Mendix/11.2.0.77998/modeler/tools/node/node_modules/mendix/**",
                 PLUGGABLE_WIDGETS_PATH_FILTER,
             ],
         }),
@@ -68,16 +68,17 @@ export default {
             include: JAVASCRIPT_SOURCE_PATH_REGEX,
             presets: [
                 [
-                    "C:/Program Files/Mendix/10.23.0.70273/modeler/tools/node/node_modules/@babel/preset-env",
+                    "C:/Program Files/Mendix/11.2.0.77998/modeler/tools/node/node_modules/@babel/preset-env",
                     { targets: { safari: "13" } },
                 ],
             ],
             plugins: [
-                "C:/Program Files/Mendix/10.23.0.70273/modeler/tools/node/node_modules/@babel/plugin-syntax-dynamic-import",
+                "C:/Program Files/Mendix/11.2.0.77998/modeler/tools/node/node_modules/@babel/plugin-syntax-dynamic-import",
             ],
         }),
-        clear({
-            targets: ["dist"],
+        del({
+            targets: "dist",
+            runOnce: true,
         }),
         postcss({
             extract: "widgets.css",
@@ -87,23 +88,24 @@ export default {
         mendixCopy({
             sources: [
                 {
-                    folder: "C:/Poslovna/e2-Poslovna/PoslovnaProjekat/deployment/web/widgets",
+                    folder: "C:/Users/Djordje/Desktop/e2-Poslovna/PoslovnaProjekat/deployment/web/widgets",
                     exclude: [".js", ".mjs", ".css"],
                     include: "**",
                 },
             ],
         }),
         mendixServiceWorker({
-            deploymentDir: "C:/Poslovna/e2-Poslovna/PoslovnaProjekat/deployment",
+            deploymentDir: "C:/Users/Djordje/Desktop/e2-Poslovna/PoslovnaProjekat/deployment",
         }),
         mendixOnlyWriteChanged(),
         alias({
             entries: {
-                "mx-api": "C:/Program Files/Mendix/10.23.0.70273/modeler/tools/node/node_modules/mendix/mx-api",
-                "mx-api/data": "C:/Program Files/Mendix/10.23.0.70273/modeler/tools/node/node_modules/mendix/mx-api/data",
+                "mx-api": "C:/Program Files/Mendix/11.2.0.77998/modeler/tools/node/node_modules/mendix/mx-api",
+                "mx-api/data": "C:/Program Files/Mendix/11.2.0.77998/modeler/tools/node/node_modules/mendix/mx-api/data",
+                "mx-api/parser": "C:/Program Files/Mendix/11.2.0.77998/modeler/tools/node/node_modules/mendix/mx-api/parser",
                 "mx-api/session":
-                    "C:/Program Files/Mendix/10.23.0.70273/modeler/tools/node/node_modules/mendix/mx-api/session",
-                "mx-api/ui": "C:/Program Files/Mendix/10.23.0.70273/modeler/tools/node/node_modules/mendix/mx-api/ui",
+                    "C:/Program Files/Mendix/11.2.0.77998/modeler/tools/node/node_modules/mendix/mx-api/session",
+                "mx-api/ui": "C:/Program Files/Mendix/11.2.0.77998/modeler/tools/node/node_modules/mendix/mx-api/ui",
             },
         }),
     ],
@@ -119,7 +121,7 @@ function ignore(regex) {
             return importee === emptyFileName || regex.test(importee) ? emptyFileName : null;
         },
         resolveDynamicImport(specifier) {
-            if (typeof specifier === "string" && specifier === emptyFileName || regex.test(specifier)) {
+            if ((typeof specifier === "string" && specifier === emptyFileName) || regex.test(specifier)) {
                 return emptyFileName;
             }
         },

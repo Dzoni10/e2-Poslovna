@@ -4,8 +4,6 @@
 
 package myfirstmodule.proxies;
 
-import com.mendix.core.Core;
-
 public enum StatusPopisa
 {
 	uFaziFormiranja("8f83024f-ad4a-46ff-9620-d916f52f4ca9"),
@@ -22,12 +20,12 @@ public enum StatusPopisa
 
 	public java.lang.String getCaption(java.lang.String languageCode)
 	{
-		String caption = Core.getInternationalizedString(languageCode, i18nCaptionKey);
+		String caption = com.mendix.core.Core.getInternationalizedString(languageCode, i18nCaptionKey);
 		return caption.isEmpty() ? getCaption() : caption;
 	}
 
 	public java.lang.String getCaption()
 	{
-		return Core.getInternationalizedString("en_US", i18nCaptionKey);
+		return com.mendix.core.Core.getInternationalizedString("en_US", i18nCaptionKey);
 	}
 }

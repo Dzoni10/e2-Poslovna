@@ -4,8 +4,6 @@
 
 package feedbackmodule.proxies;
 
-import com.mendix.core.Core;
-
 public enum LogNodes
 {
 	FeedbackModule("eda75b80-b7bb-4c62-85d8-565c13dbb089");
@@ -19,12 +17,12 @@ public enum LogNodes
 
 	public java.lang.String getCaption(java.lang.String languageCode)
 	{
-		String caption = Core.getInternationalizedString(languageCode, i18nCaptionKey);
+		String caption = com.mendix.core.Core.getInternationalizedString(languageCode, i18nCaptionKey);
 		return caption.isEmpty() ? getCaption() : caption;
 	}
 
 	public java.lang.String getCaption()
 	{
-		return Core.getInternationalizedString("en_US", i18nCaptionKey);
+		return com.mendix.core.Core.getInternationalizedString("en_US", i18nCaptionKey);
 	}
 }

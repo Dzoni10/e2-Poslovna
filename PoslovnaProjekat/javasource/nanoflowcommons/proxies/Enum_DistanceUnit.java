@@ -4,8 +4,6 @@
 
 package nanoflowcommons.proxies;
 
-import com.mendix.core.Core;
-
 public enum Enum_DistanceUnit
 {
 	KILOMETER("ca681115-1569-4bc3-8355-28b5cb25972c"),
@@ -21,12 +19,12 @@ public enum Enum_DistanceUnit
 
 	public java.lang.String getCaption(java.lang.String languageCode)
 	{
-		String caption = Core.getInternationalizedString(languageCode, i18nCaptionKey);
+		String caption = com.mendix.core.Core.getInternationalizedString(languageCode, i18nCaptionKey);
 		return caption.isEmpty() ? getCaption() : caption;
 	}
 
 	public java.lang.String getCaption()
 	{
-		return Core.getInternationalizedString("en_US", i18nCaptionKey);
+		return com.mendix.core.Core.getInternationalizedString("en_US", i18nCaptionKey);
 	}
 }

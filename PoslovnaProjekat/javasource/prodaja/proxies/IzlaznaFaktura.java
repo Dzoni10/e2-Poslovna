@@ -21,8 +21,20 @@ public class IzlaznaFaktura implements com.mendix.systemwideinterfaces.core.IEnt
 	public enum MemberNames
 	{
 		datumFakture("datumFakture"),
+		brojFakture("brojFakture"),
+		datumValute("datumValute"),
+		ukupnaOsnovica("ukupnaOsnovica"),
+		ukupanPDV("ukupanPDV"),
+		ukupnaVrednost("ukupnaVrednost"),
+		racunZaUplatu("racunZaUplatu"),
+		vrstaDokumenta("vrstaDokumenta"),
+		statusFakture("statusFakture"),
+		mestoPreuzimanja("mestoPreuzimanja"),
+		NarudzbenicaKupca_IzlaznaFaktura("Prodaja.NarudzbenicaKupca_IzlaznaFaktura"),
 		IzlaznaFaktura_PoslovniPartner("Prodaja.IzlaznaFaktura_PoslovniPartner"),
-		IzlaznaFaktura_PoslovnaGodina("Prodaja.IzlaznaFaktura_PoslovnaGodina");
+		IzlaznaFaktura_PoslovnaGodina("Prodaja.IzlaznaFaktura_PoslovnaGodina"),
+		IzlaznaFaktura_Preduzece("Prodaja.IzlaznaFaktura_Preduzece"),
+		PrometniDokument_IzlaznaFaktura("MyFirstModule.PrometniDokument_IzlaznaFaktura");
 
 		private final java.lang.String metaName;
 
@@ -120,6 +132,395 @@ public class IzlaznaFaktura implements com.mendix.systemwideinterfaces.core.IEnt
 	}
 
 	/**
+	 * @return value of brojFakture
+	 */
+	public final java.lang.Integer getbrojFakture()
+	{
+		return getbrojFakture(getContext());
+	}
+
+	/**
+	 * @param context
+	 * @return value of brojFakture
+	 */
+	public final java.lang.Integer getbrojFakture(com.mendix.systemwideinterfaces.core.IContext context)
+	{
+		return (java.lang.Integer) getMendixObject().getValue(context, MemberNames.brojFakture.toString());
+	}
+
+	/**
+	 * Set value of brojFakture
+	 * @param brojfakture
+	 */
+	public final void setbrojFakture(java.lang.Integer brojfakture)
+	{
+		setbrojFakture(getContext(), brojfakture);
+	}
+
+	/**
+	 * Set value of brojFakture
+	 * @param context
+	 * @param brojfakture
+	 */
+	public final void setbrojFakture(com.mendix.systemwideinterfaces.core.IContext context, java.lang.Integer brojfakture)
+	{
+		getMendixObject().setValue(context, MemberNames.brojFakture.toString(), brojfakture);
+	}
+
+	/**
+	 * @return value of datumValute
+	 */
+	public final java.util.Date getdatumValute()
+	{
+		return getdatumValute(getContext());
+	}
+
+	/**
+	 * @param context
+	 * @return value of datumValute
+	 */
+	public final java.util.Date getdatumValute(com.mendix.systemwideinterfaces.core.IContext context)
+	{
+		return (java.util.Date) getMendixObject().getValue(context, MemberNames.datumValute.toString());
+	}
+
+	/**
+	 * Set value of datumValute
+	 * @param datumvalute
+	 */
+	public final void setdatumValute(java.util.Date datumvalute)
+	{
+		setdatumValute(getContext(), datumvalute);
+	}
+
+	/**
+	 * Set value of datumValute
+	 * @param context
+	 * @param datumvalute
+	 */
+	public final void setdatumValute(com.mendix.systemwideinterfaces.core.IContext context, java.util.Date datumvalute)
+	{
+		getMendixObject().setValue(context, MemberNames.datumValute.toString(), datumvalute);
+	}
+
+	/**
+	 * @return value of ukupnaOsnovica
+	 */
+	public final java.math.BigDecimal getukupnaOsnovica()
+	{
+		return getukupnaOsnovica(getContext());
+	}
+
+	/**
+	 * @param context
+	 * @return value of ukupnaOsnovica
+	 */
+	public final java.math.BigDecimal getukupnaOsnovica(com.mendix.systemwideinterfaces.core.IContext context)
+	{
+		return (java.math.BigDecimal) getMendixObject().getValue(context, MemberNames.ukupnaOsnovica.toString());
+	}
+
+	/**
+	 * Set value of ukupnaOsnovica
+	 * @param ukupnaosnovica
+	 */
+	public final void setukupnaOsnovica(java.math.BigDecimal ukupnaosnovica)
+	{
+		setukupnaOsnovica(getContext(), ukupnaosnovica);
+	}
+
+	/**
+	 * Set value of ukupnaOsnovica
+	 * @param context
+	 * @param ukupnaosnovica
+	 */
+	public final void setukupnaOsnovica(com.mendix.systemwideinterfaces.core.IContext context, java.math.BigDecimal ukupnaosnovica)
+	{
+		getMendixObject().setValue(context, MemberNames.ukupnaOsnovica.toString(), ukupnaosnovica);
+	}
+
+	/**
+	 * @return value of ukupanPDV
+	 */
+	public final java.math.BigDecimal getukupanPDV()
+	{
+		return getukupanPDV(getContext());
+	}
+
+	/**
+	 * @param context
+	 * @return value of ukupanPDV
+	 */
+	public final java.math.BigDecimal getukupanPDV(com.mendix.systemwideinterfaces.core.IContext context)
+	{
+		return (java.math.BigDecimal) getMendixObject().getValue(context, MemberNames.ukupanPDV.toString());
+	}
+
+	/**
+	 * Set value of ukupanPDV
+	 * @param ukupanpdv
+	 */
+	public final void setukupanPDV(java.math.BigDecimal ukupanpdv)
+	{
+		setukupanPDV(getContext(), ukupanpdv);
+	}
+
+	/**
+	 * Set value of ukupanPDV
+	 * @param context
+	 * @param ukupanpdv
+	 */
+	public final void setukupanPDV(com.mendix.systemwideinterfaces.core.IContext context, java.math.BigDecimal ukupanpdv)
+	{
+		getMendixObject().setValue(context, MemberNames.ukupanPDV.toString(), ukupanpdv);
+	}
+
+	/**
+	 * @return value of ukupnaVrednost
+	 */
+	public final java.math.BigDecimal getukupnaVrednost()
+	{
+		return getukupnaVrednost(getContext());
+	}
+
+	/**
+	 * @param context
+	 * @return value of ukupnaVrednost
+	 */
+	public final java.math.BigDecimal getukupnaVrednost(com.mendix.systemwideinterfaces.core.IContext context)
+	{
+		return (java.math.BigDecimal) getMendixObject().getValue(context, MemberNames.ukupnaVrednost.toString());
+	}
+
+	/**
+	 * Set value of ukupnaVrednost
+	 * @param ukupnavrednost
+	 */
+	public final void setukupnaVrednost(java.math.BigDecimal ukupnavrednost)
+	{
+		setukupnaVrednost(getContext(), ukupnavrednost);
+	}
+
+	/**
+	 * Set value of ukupnaVrednost
+	 * @param context
+	 * @param ukupnavrednost
+	 */
+	public final void setukupnaVrednost(com.mendix.systemwideinterfaces.core.IContext context, java.math.BigDecimal ukupnavrednost)
+	{
+		getMendixObject().setValue(context, MemberNames.ukupnaVrednost.toString(), ukupnavrednost);
+	}
+
+	/**
+	 * @return value of racunZaUplatu
+	 */
+	public final java.lang.String getracunZaUplatu()
+	{
+		return getracunZaUplatu(getContext());
+	}
+
+	/**
+	 * @param context
+	 * @return value of racunZaUplatu
+	 */
+	public final java.lang.String getracunZaUplatu(com.mendix.systemwideinterfaces.core.IContext context)
+	{
+		return (java.lang.String) getMendixObject().getValue(context, MemberNames.racunZaUplatu.toString());
+	}
+
+	/**
+	 * Set value of racunZaUplatu
+	 * @param racunzauplatu
+	 */
+	public final void setracunZaUplatu(java.lang.String racunzauplatu)
+	{
+		setracunZaUplatu(getContext(), racunzauplatu);
+	}
+
+	/**
+	 * Set value of racunZaUplatu
+	 * @param context
+	 * @param racunzauplatu
+	 */
+	public final void setracunZaUplatu(com.mendix.systemwideinterfaces.core.IContext context, java.lang.String racunzauplatu)
+	{
+		getMendixObject().setValue(context, MemberNames.racunZaUplatu.toString(), racunzauplatu);
+	}
+
+	/**
+	 * Get value of vrstaDokumenta
+	 * @param vrstadokumenta
+	 */
+	public final prodaja.proxies.VrstaDokumenta getvrstaDokumenta()
+	{
+		return getvrstaDokumenta(getContext());
+	}
+
+	/**
+	 * @param context
+	 * @return value of vrstaDokumenta
+	 */
+	public final prodaja.proxies.VrstaDokumenta getvrstaDokumenta(com.mendix.systemwideinterfaces.core.IContext context)
+	{
+		Object obj = getMendixObject().getValue(context, MemberNames.vrstaDokumenta.toString());
+		if (obj == null) {
+			return null;
+		}
+		return prodaja.proxies.VrstaDokumenta.valueOf((java.lang.String) obj);
+	}
+
+	/**
+	 * Set value of vrstaDokumenta
+	 * @param vrstadokumenta
+	 */
+	public final void setvrstaDokumenta(prodaja.proxies.VrstaDokumenta vrstadokumenta)
+	{
+		setvrstaDokumenta(getContext(), vrstadokumenta);
+	}
+
+	/**
+	 * Set value of vrstaDokumenta
+	 * @param context
+	 * @param vrstadokumenta
+	 */
+	public final void setvrstaDokumenta(com.mendix.systemwideinterfaces.core.IContext context, prodaja.proxies.VrstaDokumenta vrstadokumenta)
+	{
+		if (vrstadokumenta != null) {
+			getMendixObject().setValue(context, MemberNames.vrstaDokumenta.toString(), vrstadokumenta.toString());
+		} else {
+			getMendixObject().setValue(context, MemberNames.vrstaDokumenta.toString(), null);
+		}
+	}
+
+	/**
+	 * Get value of statusFakture
+	 * @param statusfakture
+	 */
+	public final prodaja.proxies.StatusFakture getstatusFakture()
+	{
+		return getstatusFakture(getContext());
+	}
+
+	/**
+	 * @param context
+	 * @return value of statusFakture
+	 */
+	public final prodaja.proxies.StatusFakture getstatusFakture(com.mendix.systemwideinterfaces.core.IContext context)
+	{
+		Object obj = getMendixObject().getValue(context, MemberNames.statusFakture.toString());
+		if (obj == null) {
+			return null;
+		}
+		return prodaja.proxies.StatusFakture.valueOf((java.lang.String) obj);
+	}
+
+	/**
+	 * Set value of statusFakture
+	 * @param statusfakture
+	 */
+	public final void setstatusFakture(prodaja.proxies.StatusFakture statusfakture)
+	{
+		setstatusFakture(getContext(), statusfakture);
+	}
+
+	/**
+	 * Set value of statusFakture
+	 * @param context
+	 * @param statusfakture
+	 */
+	public final void setstatusFakture(com.mendix.systemwideinterfaces.core.IContext context, prodaja.proxies.StatusFakture statusfakture)
+	{
+		if (statusfakture != null) {
+			getMendixObject().setValue(context, MemberNames.statusFakture.toString(), statusfakture.toString());
+		} else {
+			getMendixObject().setValue(context, MemberNames.statusFakture.toString(), null);
+		}
+	}
+
+	/**
+	 * @return value of mestoPreuzimanja
+	 */
+	public final java.lang.String getmestoPreuzimanja()
+	{
+		return getmestoPreuzimanja(getContext());
+	}
+
+	/**
+	 * @param context
+	 * @return value of mestoPreuzimanja
+	 */
+	public final java.lang.String getmestoPreuzimanja(com.mendix.systemwideinterfaces.core.IContext context)
+	{
+		return (java.lang.String) getMendixObject().getValue(context, MemberNames.mestoPreuzimanja.toString());
+	}
+
+	/**
+	 * Set value of mestoPreuzimanja
+	 * @param mestopreuzimanja
+	 */
+	public final void setmestoPreuzimanja(java.lang.String mestopreuzimanja)
+	{
+		setmestoPreuzimanja(getContext(), mestopreuzimanja);
+	}
+
+	/**
+	 * Set value of mestoPreuzimanja
+	 * @param context
+	 * @param mestopreuzimanja
+	 */
+	public final void setmestoPreuzimanja(com.mendix.systemwideinterfaces.core.IContext context, java.lang.String mestopreuzimanja)
+	{
+		getMendixObject().setValue(context, MemberNames.mestoPreuzimanja.toString(), mestopreuzimanja);
+	}
+
+	/**
+	 * @throws com.mendix.core.CoreException
+	 * @return value of NarudzbenicaKupca_IzlaznaFaktura
+	 */
+	public final prodaja.proxies.NarudzbenicaKupca getNarudzbenicaKupca_IzlaznaFaktura() throws com.mendix.core.CoreException
+	{
+		return getNarudzbenicaKupca_IzlaznaFaktura(getContext());
+	}
+
+	/**
+	 * @param context
+	 * @return value of NarudzbenicaKupca_IzlaznaFaktura
+	 * @throws com.mendix.core.CoreException
+	 */
+	public final prodaja.proxies.NarudzbenicaKupca getNarudzbenicaKupca_IzlaznaFaktura(com.mendix.systemwideinterfaces.core.IContext context) throws com.mendix.core.CoreException
+	{
+		prodaja.proxies.NarudzbenicaKupca result = null;
+		com.mendix.systemwideinterfaces.core.IMendixIdentifier identifier = getMendixObject().getValue(context, MemberNames.NarudzbenicaKupca_IzlaznaFaktura.toString());
+		if (identifier != null) {
+			result = prodaja.proxies.NarudzbenicaKupca.load(context, identifier);
+		}
+		return result;
+	}
+
+	/**
+	 * Set value of NarudzbenicaKupca_IzlaznaFaktura
+	 * @param narudzbenicakupca_izlaznafaktura
+	 */
+	public final void setNarudzbenicaKupca_IzlaznaFaktura(prodaja.proxies.NarudzbenicaKupca narudzbenicakupca_izlaznafaktura)
+	{
+		setNarudzbenicaKupca_IzlaznaFaktura(getContext(), narudzbenicakupca_izlaznafaktura);
+	}
+
+	/**
+	 * Set value of NarudzbenicaKupca_IzlaznaFaktura
+	 * @param context
+	 * @param narudzbenicakupca_izlaznafaktura
+	 */
+	public final void setNarudzbenicaKupca_IzlaznaFaktura(com.mendix.systemwideinterfaces.core.IContext context, prodaja.proxies.NarudzbenicaKupca narudzbenicakupca_izlaznafaktura)
+	{
+		if (narudzbenicakupca_izlaznafaktura == null) {
+			getMendixObject().setValue(context, MemberNames.NarudzbenicaKupca_IzlaznaFaktura.toString(), null);
+		} else {
+			getMendixObject().setValue(context, MemberNames.NarudzbenicaKupca_IzlaznaFaktura.toString(), narudzbenicakupca_izlaznafaktura.getMendixObject().getId());
+		}
+	}
+
+	/**
 	 * @throws com.mendix.core.CoreException
 	 * @return value of IzlaznaFaktura_PoslovniPartner
 	 */
@@ -210,6 +611,100 @@ public class IzlaznaFaktura implements com.mendix.systemwideinterfaces.core.IEnt
 			getMendixObject().setValue(context, MemberNames.IzlaznaFaktura_PoslovnaGodina.toString(), null);
 		} else {
 			getMendixObject().setValue(context, MemberNames.IzlaznaFaktura_PoslovnaGodina.toString(), izlaznafaktura_poslovnagodina.getMendixObject().getId());
+		}
+	}
+
+	/**
+	 * @throws com.mendix.core.CoreException
+	 * @return value of IzlaznaFaktura_Preduzece
+	 */
+	public final myfirstmodule.proxies.Preduzece getIzlaznaFaktura_Preduzece() throws com.mendix.core.CoreException
+	{
+		return getIzlaznaFaktura_Preduzece(getContext());
+	}
+
+	/**
+	 * @param context
+	 * @return value of IzlaznaFaktura_Preduzece
+	 * @throws com.mendix.core.CoreException
+	 */
+	public final myfirstmodule.proxies.Preduzece getIzlaznaFaktura_Preduzece(com.mendix.systemwideinterfaces.core.IContext context) throws com.mendix.core.CoreException
+	{
+		myfirstmodule.proxies.Preduzece result = null;
+		com.mendix.systemwideinterfaces.core.IMendixIdentifier identifier = getMendixObject().getValue(context, MemberNames.IzlaznaFaktura_Preduzece.toString());
+		if (identifier != null) {
+			result = myfirstmodule.proxies.Preduzece.load(context, identifier);
+		}
+		return result;
+	}
+
+	/**
+	 * Set value of IzlaznaFaktura_Preduzece
+	 * @param izlaznafaktura_preduzece
+	 */
+	public final void setIzlaznaFaktura_Preduzece(myfirstmodule.proxies.Preduzece izlaznafaktura_preduzece)
+	{
+		setIzlaznaFaktura_Preduzece(getContext(), izlaznafaktura_preduzece);
+	}
+
+	/**
+	 * Set value of IzlaznaFaktura_Preduzece
+	 * @param context
+	 * @param izlaznafaktura_preduzece
+	 */
+	public final void setIzlaznaFaktura_Preduzece(com.mendix.systemwideinterfaces.core.IContext context, myfirstmodule.proxies.Preduzece izlaznafaktura_preduzece)
+	{
+		if (izlaznafaktura_preduzece == null) {
+			getMendixObject().setValue(context, MemberNames.IzlaznaFaktura_Preduzece.toString(), null);
+		} else {
+			getMendixObject().setValue(context, MemberNames.IzlaznaFaktura_Preduzece.toString(), izlaznafaktura_preduzece.getMendixObject().getId());
+		}
+	}
+
+	/**
+	 * @throws com.mendix.core.CoreException
+	 * @return value of PrometniDokument_IzlaznaFaktura
+	 */
+	public final myfirstmodule.proxies.PrometniDokument getPrometniDokument_IzlaznaFaktura() throws com.mendix.core.CoreException
+	{
+		return getPrometniDokument_IzlaznaFaktura(getContext());
+	}
+
+	/**
+	 * @param context
+	 * @return value of PrometniDokument_IzlaznaFaktura
+	 * @throws com.mendix.core.CoreException
+	 */
+	public final myfirstmodule.proxies.PrometniDokument getPrometniDokument_IzlaznaFaktura(com.mendix.systemwideinterfaces.core.IContext context) throws com.mendix.core.CoreException
+	{
+		myfirstmodule.proxies.PrometniDokument result = null;
+		com.mendix.systemwideinterfaces.core.IMendixIdentifier identifier = getMendixObject().getValue(context, MemberNames.PrometniDokument_IzlaznaFaktura.toString());
+		if (identifier != null) {
+			result = myfirstmodule.proxies.PrometniDokument.load(context, identifier);
+		}
+		return result;
+	}
+
+	/**
+	 * Set value of PrometniDokument_IzlaznaFaktura
+	 * @param prometnidokument_izlaznafaktura
+	 */
+	public final void setPrometniDokument_IzlaznaFaktura(myfirstmodule.proxies.PrometniDokument prometnidokument_izlaznafaktura)
+	{
+		setPrometniDokument_IzlaznaFaktura(getContext(), prometnidokument_izlaznafaktura);
+	}
+
+	/**
+	 * Set value of PrometniDokument_IzlaznaFaktura
+	 * @param context
+	 * @param prometnidokument_izlaznafaktura
+	 */
+	public final void setPrometniDokument_IzlaznaFaktura(com.mendix.systemwideinterfaces.core.IContext context, myfirstmodule.proxies.PrometniDokument prometnidokument_izlaznafaktura)
+	{
+		if (prometnidokument_izlaznafaktura == null) {
+			getMendixObject().setValue(context, MemberNames.PrometniDokument_IzlaznaFaktura.toString(), null);
+		} else {
+			getMendixObject().setValue(context, MemberNames.PrometniDokument_IzlaznaFaktura.toString(), prometnidokument_izlaznafaktura.getMendixObject().getId());
 		}
 	}
 
