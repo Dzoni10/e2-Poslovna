@@ -1,30 +1,37 @@
-import { asProperty, fromConstant$, ensureAssociationId, registerAssociationType, registerFilterAttribute, fromComputation$, asReloadable$, available, getObjectsByPath$, getObjectByPath$, getSession, getFocus, getHTMLElement, ensure, isNavigableElement, isHTMLElement, reactExports, newId, Big, useForceUpdate, tuple, repeat, reaction, useStoreBackendValue, readUntracked, jsxRuntimeExports, classNames, NestedStoreProvider, asPluginWidgets, selectTranslation } from '../index-DZt3m621.js';
-import { PageFragment, ExpressionProperty } from '../ScrollContainer-7frAKGuI.js';
-import { ActionButton, TextProperty, ActionProperty } from '../ActionButton-BQrt5gjh.js';
-import { listItemProperty, DatabaseObjectListProperty } from '../CTcC6PjV-aKLD4G0H.js';
-import { getCurrentRefObjectItem$ } from '../AssociationProperty-CD47jUIa.js';
-import '../uEIG9e6s-HNK6i9V0.js';
-import '../D5tDSKpV-ByBhIBck.js';
-import { ListAttributeProperty } from '../ListAttributeProperty-BJlpEI-M.js';
-import { ListExpressionProperty } from '../ListExpressionProperty-BdbODoWZ.js';
-import { DatagridDateFilterWidgetModule, DatagridTextFilterWidgetModule, TemplatedWidgetProperty } from '../DatagridTextFilter-CQ8hbV0U.js';
-import { WebIconProperty } from '../WebIconProperty-BLJMWGGo.js';
-import { ConditionalVisibilityWrapper } from '../ConditionalVisibilityWrapper-B5muaSIa.js';
-import { Container, Text } from '../Image-B1CdR09q.js';
-import { DatagridWidgetModule } from '../Datagrid-ziyi-7CM.js';
-import { DatagridDropdownFilterWidgetModule } from '../DatagridDropdownFilter-SLigYH0A.js';
-import { Div } from '../Div-CyIrW3s-.js';
-import { useLegacyResize, getBox } from '../bdxqAC6d-CZjPKQHD.js';
-import { usePersistentState, content as content$1 } from '../Atlas_Core.Atlas_Default-vNWlbjh_.js';
-import '../InlineText-Bj8eFZTT.js';
-import '../WebStaticImageProperty-D06_LAui.js';
+import { asProperty, fromConstant$, ensureAssociationId, isOffline, registerAssociationType, registerFilterAttribute, fromComputation$, asReloadable$, available, getObjectsByPath$, getObjectByPath$, getSession, getFocus, getHTMLElement, ensure, isNavigableElement, isHTMLElement, reactExports, newId, reaction, useForceUpdate, tuple, Big, repeat, useStoreBackendValue, readUntracked, jsxRuntimeExports, classNames, NestedStoreProvider, when, observable, runInAction, asPluginWidgets, selectTranslation } from '../index-BjSpTlX0.js';
+import { PageFragment, ExpressionProperty } from '../ScrollContainer-DYUj9_Ay.js';
+import { ActionButton, TextProperty, ActionProperty } from '../ActionButton-dNbAsczi.js';
+import { listItemProperty, DatabaseObjectListProperty } from '../XQdQuDNG-DT5jvNDi.js';
+import { getCurrentRefObjectItem$ } from '../AssociationProperty-ofkzE30k.js';
+import '../BkqAssms-D3I0Q7ya.js';
+import '../77kgvjgm-4HZvSliz.js';
+import { ListAttributeProperty } from '../ListAttributeProperty-BqFtOePf.js';
+import { ListExpressionProperty } from '../ListExpressionProperty-8MjkvJ9b.js';
+import { TemplatedWidgetProperty } from '../TemplatedWidgetProperty-eR6-5GQS.js';
+import { WebIconProperty } from '../WebIconProperty-B82XOhEa.js';
+import { ConditionalVisibilityWrapper } from '../ConditionalVisibilityWrapper-C8wONAJZ.js';
+import { Container, Text } from '../Text-CHYWFktZ.js';
+import * as DatagridWidgetModule from '../../../../../../../../Poslovna/e2-Poslovna/PoslovnaProjekat/deployment/web/widgets/com/mendix/widget/web/datagrid/Datagrid.mjs';
+import * as DatagridDateFilterWidgetModule from '../../../../../../../../Poslovna/e2-Poslovna/PoslovnaProjekat/deployment/web/widgets/com/mendix/widget/web/datagriddatefilter/DatagridDateFilter.mjs';
+import '../../../../../../../../Poslovna/e2-Poslovna/PoslovnaProjekat/deployment/web/widgets/com/mendix/widget/web/datagriddatefilter/DatagridDateFilter.css';
+import * as DatagridDropdownFilterWidgetModule from '../../../../../../../../Poslovna/e2-Poslovna/PoslovnaProjekat/deployment/web/widgets/com/mendix/widget/web/datagriddropdownfilter/DatagridDropdownFilter.mjs';
+import * as DatagridTextFilterWidgetModule from '../../../../../../../../Poslovna/e2-Poslovna/PoslovnaProjekat/deployment/web/widgets/com/mendix/widget/web/datagridtextfilter/DatagridTextFilter.mjs';
+import { Div } from '../Div-Dyf4zdHI.js';
+import { useLegacyResize, getBox } from '../DmsI6saM-Dj1PYIQI.js';
+import { usePersistentState, content as content$1 } from '../Atlas_Core.Atlas_Default-C-ZwRMe1.js';
+import '../InlineText-BMWFPLMA.js';
+import '../WebStaticImageProperty-CFK2IFXG.js';
+import '../../../../../../../../Poslovna/e2-Poslovna/PoslovnaProjekat/deployment/web/widgets/com/mendix/widget/web/image/Image.mjs';
+import '../../../../../../../../Poslovna/e2-Poslovna/PoslovnaProjekat/deployment/web/widgets/com/mendix/widget/web/image/Image.css';
+import '../../../../../../../../Poslovna/e2-Poslovna/PoslovnaProjekat/deployment/web/widgets/com/mendix/widget/web/languageselector/LanguageSelector.mjs';
+import '../../../../../../../../Poslovna/e2-Poslovna/PoslovnaProjekat/deployment/web/widgets/com/mendix/widget/web/languageselector/LanguageSelector.css';
 
 const AssociationMetaDataProperty = asProperty((config) => {
   const { id, filterable } = listAssociationMetaData(config);
   return fromConstant$({ id, filterable });
 });
 function listAssociationMetaData(config) {
-  const endPointPath = `${config.attribute}/${config.endpointEntity}`, associationPath = config.path ? `${config.path}/${endPointPath}` : endPointPath, id = ensureAssociationId(associationPath, config.dataSourceId, config.selectableObjectsId), filterable = config.filterable && !(mx.isOffline() && config.path);
+  const endPointPath = `${config.attribute}/${config.endpointEntity}`, associationPath = config.path ? `${config.path}/${endPointPath}` : endPointPath, id = ensureAssociationId(associationPath, config.dataSourceId, config.selectableObjectsId), filterable = config.filterable && !(isOffline() && config.path);
   return registerAssociationType(id, config.type), registerFilterAttribute(id, filterable), { id, filterable, associationPath };
 }
 
@@ -241,32 +248,47 @@ function useRovingTabIndex(elementRef, navigationKeys, childQuery) {
 }
 
 function TabContainer(props) {
-  const id = reactExports.useState(() => newId())[0], [activeTab, activeTabChanged, setActiveTab] = function(activeTab2, defaultTab) {
-    const previousCurrentValueRef = reactExports.useRef(void 0), setActiveTab2 = reactExports.useCallback((newTab) => {
-      activeTab2 && !activeTab2.readOnly && activeTab2.setValue(new Big(newTab + 1));
-    }, [activeTab2?.readOnly, activeTab2?.setValue]);
-    if (!activeTab2)
-      return [defaultTab, false, () => {
-      }];
-    const currentValue = Math.max(activeTab2.value?.toNumber() ?? 0, 0), activeTabChanged2 = previousCurrentValueRef.current !== currentValue;
-    activeTabChanged2 && (previousCurrentValueRef.current = currentValue);
-    return [currentValue - 1, activeTabChanged2, setActiveTab2];
-  }(props.activeTab, props.defaultTab), [selectedTabIndex, selectionHasChanged, setSelectedTabIndex] = function(tabs, activeTab2, activeTabChanged2, setActiveTab2) {
-    const [selectedTabIndex2, setSelectedTabIndex2] = usePersistentState("selectedTab", activeTab2);
-    let visibleTabToSelect = selectedTabIndex2 >= tabs.length ? -1 : selectedTabIndex2;
-    if (-1 !== visibleTabToSelect) {
-      for (; !isVisible(ensure(tabs[visibleTabToSelect])) && (visibleTabToSelect = (visibleTabToSelect + 1) % tabs.length, visibleTabToSelect !== selectedTabIndex2); )
-        ;
-      visibleTabToSelect !== selectedTabIndex2 && setSelectedTabIndex2(visibleTabToSelect);
+  const id = reactExports.useState(() => newId())[0], [selectedTabIndex, selectionHasChanged, setSelectedTabIndex] = function(tabs, defaultTab, controlValue, onSelectedTabChange) {
+    const isControlled = void 0 !== controlValue, [currentIndex, setCurrentIndex] = usePersistentState("selectedTab", isControlled ? -1 : defaultTab), isInitialized = reactExports.useRef(false), isLoaded = function(tabs2, controlValue2) {
+      const loaded2 = reactExports.useRef(false);
+      if (!loaded2.current) {
+        const tabsLoaded = tabs2.every((tab) => !tab.isVisible || "available" === tab.isVisible.status), controlAttrLoaded = void 0 === controlValue2 || "available" === controlValue2.status;
+        loaded2.current = tabsLoaded && controlAttrLoaded;
+      }
+      return loaded2.current;
+    }(tabs, controlValue), controlledIndex = function(tabs2, activeTab) {
+      const getIndex = () => {
+        if (!activeTab)
+          return -1;
+        const index = activeTab.value?.toNumber() ?? 0;
+        return inRange(index, 1, tabs2.length) ? index - 1 : -1;
+      };
+      return useSyncBox(getIndex());
+    }(tabs, controlValue);
+    let updatedIndex = -1;
+    if (isInitialized.current)
+      updatedIndex = computeVisibleIndex(tabs, currentIndex), currentIndex !== updatedIndex && setCurrentIndex(updatedIndex);
+    else if (isLoaded) {
+      updatedIndex = computeVisibleIndex(tabs, isControlled ? controlledIndex.get() : currentIndex), setCurrentIndex(updatedIndex), isInitialized.current = true;
     }
-    const previousSelectionRef = reactExports.useRef(visibleTabToSelect), selectionHasChanged2 = previousSelectionRef.current !== visibleTabToSelect;
-    previousSelectionRef.current = visibleTabToSelect, activeTabChanged2 && -1 !== activeTab2 && activeTab2 + 1 <= tabs.length && previousSelectionRef.current !== activeTab2 && selectTabIndex(activeTab2, false);
-    const forceUpdate = useForceUpdate();
-    function selectTabIndex(tabIndex, updateAttribute = true) {
-      tabIndex === visibleTabToSelect ? (previousSelectionRef.current = -1, forceUpdate()) : (setSelectedTabIndex2(tabIndex), updateAttribute && setActiveTab2(tabIndex));
-    }
-    return tuple(visibleTabToSelect, selectionHasChanged2, selectTabIndex);
-  }(props.tabs, activeTab, activeTabChanged, setActiveTab), tabsState = function(tabs, selectedTabIndex2, selectionHasChanged2) {
+    const selectedIndex = useSyncBox(updatedIndex), loaded = useSyncBox(isLoaded);
+    return useWhen(() => loaded.get(), () => reaction(() => controlledIndex.get(), (index) => {
+      -1 !== index && setCurrentIndex(index);
+    })), useWhen(() => loaded.get(), () => reaction(() => selectedIndex.get(), onSelectedTabChange)), function(currentIndex2, setIndex) {
+      const forceUpdate = useForceUpdate(), [changed, markAsChanged] = function(value) {
+        const ref = reactExports.useRef(value), purge = reactExports.useRef(() => {
+          ref.current = {};
+        }).current;
+        return [ref.current !== (ref.current = value), purge];
+      }(currentIndex2);
+      function selectTabIndex(tabIndex) {
+        tabIndex === currentIndex2 ? (markAsChanged(), forceUpdate()) : setIndex(tabIndex);
+      }
+      return tuple(currentIndex2, changed, selectTabIndex);
+    }(selectedIndex.get(), setCurrentIndex);
+  }(props.tabs, props.defaultTab, props.activeTab, (tabIndex) => {
+    props.activeTab && !props.activeTab.readOnly && props.activeTab.setValue(new Big(tabIndex + 1)), executeAction(props.onTabChange);
+  }), tabsState = function(tabs, selectedTabIndex2, selectionHasChanged2) {
     const tabStateRef = reactExports.useRef(tabs.map((tab) => !tab.isDelayed && isVisible(tab) ? { key: 0 } : "hidden"));
     if (-1 !== selectedTabIndex2) {
       const selectedTabState = ensure(tabStateRef.current[selectedTabIndex2]);
@@ -307,6 +329,36 @@ function TabContainer(props) {
 function isVisible(tab) {
   return !tab.isVisible || "loading" === tab.isVisible.status && void 0 === tab.isVisible.value || Boolean(tab.isVisible.value);
 }
+const inRange = (n, min, max) => n >= min && n <= max;
+function computeVisibleIndex(tabs, startIndex) {
+  if (!inRange(startIndex, 0, tabs.length - 1))
+    return -1;
+  const index = function(tabs2, start) {
+    let index2 = start;
+    for (; !isVisible(ensure(tabs2[index2])); )
+      if (index2 = (index2 + 1) % tabs2.length, index2 === start)
+        return -1;
+    return index2;
+  }(tabs, startIndex);
+  return -1 === index ? startIndex : index;
+}
+function useWhen(cond, cb) {
+  reactExports.useEffect(() => {
+    const disposeFns = [];
+    return disposeFns.push(when(cond, () => {
+      disposeFns.push(cb());
+    })), () => {
+      disposeFns.forEach((dispose) => dispose());
+    };
+  }, []);
+}
+function useSyncBox(value) {
+  const [box] = reactExports.useState(() => observable.box(value));
+  return runInAction(() => box.set(value)), box;
+}
+const executeAction = (action) => {
+  action && action.canExecute && !action.isExecuting && action.execute();
+};
 
 const React = { createElement: reactExports.createElement };
 const Datagrid = Object.getOwnPropertyDescriptor(DatagridWidgetModule, "Datagrid")?.value || Object.getOwnPropertyDescriptor(DatagridWidgetModule, "default")?.value;

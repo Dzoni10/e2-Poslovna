@@ -1,0 +1,48 @@
+/*C2*/SET SCHEMA PUBLIC
+DELETE FROM "mendixsystem$version" WHERE "versionnumber"='4.2'
+INSERT INTO "mendixsystem$version" VALUES('4.2','2025-10-09 17:50:51.176000','4.4.0','unversioned','MagacineSale','11.2.0.77998')
+COMMIT
+DELETE FROM "system$userrole" WHERE "id"=15199648742375562
+INSERT INTO "system$userrole" VALUES(15199648742375562,'8dd52bfa-6d7e-453b-b506-303c0a3d9567','Administrator','')
+DELETE FROM "system$userrole" WHERE "id"=15199648742375743
+INSERT INTO "system$userrole" VALUES(15199648742375743,'53f5d6fa-6da9-4a71-b011-454ec052cce8','User','')
+COMMIT
+DELETE FROM "system$user" WHERE "id"=7318349394477208
+INSERT INTO "system$user" VALUES(7318349394477208,'demo_administrator','{BCrypt}$2a$12$8vqerLbYjrGPyv2sWKp6iuswCznj0W4uOHbZHo.RV/Htd7.pQgcM.','2025-09-27 19:09:02.617000',FALSE,NULL,TRUE,0,FALSE,FALSE,'2025-08-29 08:22:52.982000','2025-10-09 16:25:39.652000','Administration.Account',NULL,7318349394477208)
+COMMIT
+DELETE FROM "system$user" WHERE "id"=7318349394477412
+INSERT INTO "system$user" VALUES(7318349394477412,'demo_user','{BCrypt}$2a$12$ioGglJZ7K3oWmohpAUQh4eyl.sWdgkjlIoCe4.v4dl/6Z58m4QibO','2025-09-27 19:08:58.345000',FALSE,NULL,TRUE,0,FALSE,FALSE,'2025-08-29 08:22:54.504000','2025-10-09 16:25:40.252000','Administration.Account',NULL,7318349394477412)
+COMMIT
+DELETE FROM "mendixsystem$properties" WHERE "key"='Mendix.Runtime.DeploymentID'
+INSERT INTO "mendixsystem$properties" VALUES('Mendix.Runtime.DeploymentID','638956311016856202')
+COMMIT
+DELETE FROM "mendixsystem$entityidentifier" WHERE "id"='d4154981-8dac-4150-aec5-efa3ef62a7a2'
+INSERT INTO "mendixsystem$entityidentifier" VALUES('d4154981-8dac-4150-aec5-efa3ef62a7a2',49,901)
+COMMIT
+INSERT INTO "system$xasinstance" VALUES(13792273858924740,'d4d17283-bc64-497c-9f6a-78cc9e1fadab','2025-10-09 16:25:40.576000',NULL,NULL,NULL,'2025-10-09 16:25:40.574000')
+COMMIT
+DELETE FROM "mendixsystem$properties" WHERE "key"='ScheduledEventsExecution'
+INSERT INTO "mendixsystem$properties" VALUES('ScheduledEventsExecution','NONE:638956311016856202')
+COMMIT
+/*C3*/SET SCHEMA PUBLIC
+DELETE FROM "system$queuedtask" WHERE "id"=14355223834409015
+INSERT INTO "system$queuedtask" VALUES(14355223834409015,172850,'Running','59651013-f9bc-4fc1-b435-276439b07899','System.ScheduledEventsQueue','ScheduledEvent',NULL,NULL,'ClusterManagement-CleanupProcessedTasks','[]','d4d17283-bc64-497c-9f6a-78cc9e1fadab',87,'2025-10-09 16:20:28.754000','2025-10-09 16:25:28.582000','2025-10-09 16:25:41.950000',0,NULL,'ClusterManagement-CleanupProcessedTasks',NULL)
+COMMIT
+DELETE FROM "mendixsystem$entityidentifier" WHERE "id"='c6c131c8-8779-4213-9b26-a64e141f26a8'
+INSERT INTO "mendixsystem$entityidentifier" VALUES('c6c131c8-8779-4213-9b26-a64e141f26a8',51,173343)
+COMMIT
+ALTER SEQUENCE PUBLIC."system$queuedtask_sequence_mxseq" RESTART WITH 172861
+/*C4*/SET SCHEMA PUBLIC
+DELETE FROM "mendixsystem$entityidentifier" WHERE "id"='eb5c32a1-85ec-49d1-8bca-ecca779cd539'
+INSERT INTO "mendixsystem$entityidentifier" VALUES('eb5c32a1-85ec-49d1-8bca-ecca779cd539',47,174180)
+COMMIT
+DELETE FROM "system$xasinstance" WHERE "id"=13792273858924740
+INSERT INTO "system$xasinstance" VALUES(13792273858924740,'d4d17283-bc64-497c-9f6a-78cc9e1fadab','2025-10-09 16:25:42.438000',NULL,NULL,NULL,'2025-10-09 16:25:40.574000')
+COMMIT
+/*C3*/INSERT INTO "system$queuedtask" VALUES(14355223834418573,172860,'Idle','59651013-f9bc-4fc1-b435-276439b07899','System.ScheduledEventsQueue','ScheduledEvent',NULL,NULL,'ClusterManagement-CleanupProcessedTasks','[]',NULL,NULL,'2025-10-09 16:25:42.289000','2025-10-09 16:30:28.582000',NULL,0,NULL,'ClusterManagement-CleanupProcessedTasks',NULL)
+INSERT INTO "system$processedqueuetask" VALUES(13229323927683108,172850,'Completed','59651013-f9bc-4fc1-b435-276439b07899','System.ScheduledEventsQueue','ScheduledEvent',NULL,NULL,'ClusterManagement-CleanupProcessedTasks','[]','d4d17283-bc64-497c-9f6a-78cc9e1fadab',87,'2025-10-09 16:20:28.754000','2025-10-09 16:25:28.582000','2025-10-09 16:25:41.950000','2025-10-09 16:25:42.346000',396,0,NULL,'ClusterManagement-CleanupProcessedTasks',NULL)
+DELETE FROM "system$queuedtask" WHERE "id"=14355223834409015
+COMMIT
+DELETE FROM "system$user" WHERE "id"=13510798882137299
+INSERT INTO "system$user" VALUES(13510798882137299,'admin','{BCrypt}$2a$12$RauOe0OUy61bYDbC3TI2KONmyUjtkj.yAdGFTVwbstR2pUEVs08T.','2025-09-27 19:08:30.558000',FALSE,NULL,TRUE,0,FALSE,FALSE,'2025-08-29 08:22:59.457000','2025-10-09 16:25:42.550000','System.User',NULL,13510798882137299)
+COMMIT

@@ -1,14 +1,14 @@
-import { reactExports, asPluginWidgets, selectTranslation } from '../index-DZt3m621.js';
-import { PageFragment, ExpressionProperty } from '../ScrollContainer-7frAKGuI.js';
-import { ActionButton, TextProperty, ActionProperty } from '../ActionButton-BQrt5gjh.js';
-import { AssociationObjectProperty } from '../AssociationObjectProperty-DSzCzEgI.js';
-import { FormGroup, TextBox, DerivedUniqueIdProperty, ValidationProperty } from '../TextBox-C4Rxgxl0.js';
-import { ConditionalVisibilityWrapper } from '../ConditionalVisibilityWrapper-B5muaSIa.js';
-import { DataView } from '../DataView-DyQ1T7EQ.js';
-import { content as content$1 } from '../Atlas_Core.PopupLayout-CjwEn0XB.js';
-import { AttributeProperty } from '../D5tDSKpV-ByBhIBck.js';
-import '../uEIG9e6s-HNK6i9V0.js';
-import '../bdxqAC6d-CZjPKQHD.js';
+import { reactExports, asPluginWidgets, selectTranslation } from '../index-BjSpTlX0.js';
+import { PageFragment, ExpressionProperty } from '../ScrollContainer-DYUj9_Ay.js';
+import { ActionButton, TextProperty, ActionProperty } from '../ActionButton-dNbAsczi.js';
+import { AssociationObjectProperty } from '../AssociationObjectProperty-qKRNUhwW.js';
+import { FormGroup, TextBox, DerivedUniqueIdProperty, ValidationProperty } from '../TextBox-EdR2-wgr.js';
+import { ConditionalVisibilityWrapper } from '../ConditionalVisibilityWrapper-C8wONAJZ.js';
+import { DataView } from '../DataView-PQPsNCJf.js';
+import { content as content$1 } from '../Atlas_Core.PopupLayout-D-AdFqBx.js';
+import { AttributeProperty } from '../77kgvjgm-4HZvSliz.js';
+import '../BkqAssms-D3I0Q7ya.js';
+import '../DmsI6saM-Dj1PYIQI.js';
 
 const React = { createElement: reactExports.createElement };
 const { $DataView, $FormGroup, $TextBox, $ConditionalVisibilityWrapper, $ActionButton } = asPluginWidgets({ DataView, FormGroup, TextBox, ConditionalVisibilityWrapper, ActionButton });

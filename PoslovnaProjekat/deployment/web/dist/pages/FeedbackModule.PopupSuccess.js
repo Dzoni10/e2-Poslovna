@@ -1,14 +1,16 @@
-import { reactExports, asPluginWidgets, selectTranslation } from '../index-DZt3m621.js';
-import { PageFragment, ExpressionProperty } from '../ScrollContainer-7frAKGuI.js';
-import { ActionButton, TextProperty, ActionProperty } from '../ActionButton-BQrt5gjh.js';
-import { AssociationObjectProperty } from '../AssociationObjectProperty-DSzCzEgI.js';
-import { WebStaticImageProperty } from '../WebStaticImageProperty-D06_LAui.js';
-import { ImageWidgetModule, Container, Text } from '../Image-B1CdR09q.js';
-import { DataView } from '../DataView-DyQ1T7EQ.js';
-import { Div } from '../Div-CyIrW3s-.js';
-import { content as content$1 } from '../Atlas_Core.PopupLayout-CjwEn0XB.js';
-import '../InlineText-Bj8eFZTT.js';
-import '../bdxqAC6d-CZjPKQHD.js';
+import { reactExports, asPluginWidgets, selectTranslation } from '../index-BjSpTlX0.js';
+import { PageFragment, ExpressionProperty } from '../ScrollContainer-DYUj9_Ay.js';
+import { ActionButton, TextProperty, ActionProperty } from '../ActionButton-dNbAsczi.js';
+import { AssociationObjectProperty } from '../AssociationObjectProperty-qKRNUhwW.js';
+import { WebStaticImageProperty } from '../WebStaticImageProperty-CFK2IFXG.js';
+import { Container, Text } from '../Text-CHYWFktZ.js';
+import { DataView } from '../DataView-PQPsNCJf.js';
+import { Div } from '../Div-Dyf4zdHI.js';
+import * as ImageWidgetModule from '../../../../../../../../Poslovna/e2-Poslovna/PoslovnaProjekat/deployment/web/widgets/com/mendix/widget/web/image/Image.mjs';
+import '../../../../../../../../Poslovna/e2-Poslovna/PoslovnaProjekat/deployment/web/widgets/com/mendix/widget/web/image/Image.css';
+import { content as content$1 } from '../Atlas_Core.PopupLayout-D-AdFqBx.js';
+import '../InlineText-BMWFPLMA.js';
+import '../DmsI6saM-Dj1PYIQI.js';
 
 const React = { createElement: reactExports.createElement };
 const Image = Object.getOwnPropertyDescriptor(ImageWidgetModule, "Image")?.value || Object.getOwnPropertyDescriptor(ImageWidgetModule, "default")?.value;
